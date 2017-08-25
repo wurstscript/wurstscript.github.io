@@ -4,8 +4,8 @@
 plugins:
   - jekyll-seo-tag
 
-url: https://wurstscript.github.io/WurstScript/
-baseurl: /WurstScript
+url: https://wurstscript.github.io/
+baseurl: /
 highlighter: rouge
 title: &site_title WurstScript
 description: &site_description Programming language that compiles to Jass

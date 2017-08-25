@@ -17,7 +17,7 @@ navigation:
 
 **Note**: WurstScript and its tools are in constant development.
 
-If you run into bugs or problems, please report them with our [Issue Tracker](https://github.com/peq/WurstScript/issues/new).
+If you run into bugs or problems, please report them with our [Issue Tracker](https://github.com/wurstscript/WurstScript/issues/new).
 
 <div class="cta-container">
 

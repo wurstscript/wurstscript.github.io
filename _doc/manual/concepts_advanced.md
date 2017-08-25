@@ -4,7 +4,6 @@ sections:
 - Enums
 - Tuple Types
 - Extension Functions
-- Packages
 - Lambdas and Closures
 - Function Overloading
 - Operator Overloading
