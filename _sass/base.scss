@@ -44,14 +44,19 @@ a {
 
 
 code {
-    background: #222;
-    color: #fff;
-    font-size: 14px;
-    font-weight: bold;
+    // font-weight: bold;
+    color: #000;
+    background-color: #fcfcfc;
+    border: 1px solid #eee;
+    border-radius: 10px;
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     padding:2px 8px;
     padding-top: 4px;
     display: inline-block;
+}
+
+pre > code {
+    border: none;
 }
 
 .btn, a.btn {
