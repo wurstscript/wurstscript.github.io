@@ -49,10 +49,10 @@ collections:
 #
 # Default values
 #
-#defaults:
-#  -
-#    scope:
-#      path: ""
-#      type: doc
-#    values:
-#      layout: doc
+defaults:
+  -
+    scope:
+      path: ""
+      type: doc
+    values:
+      layout: doc
