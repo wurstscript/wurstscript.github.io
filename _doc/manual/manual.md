@@ -144,7 +144,7 @@ One useful way of working with legacy maps is by extracting existing vJass to Ju
 In Eclipse, you can right-click on a map and export all the custom text triggers into Jurst files.
 The files will be stored in the `wurst/exported/` folder.
 
-![Extract to Files](assets/images/extractToFiles.png)
+![Extract to Files](/assets/images/extractToFiles.png)
 
 After doing this you'll want to manually delete the members in the trigger editor.
 Be warned that the extract-to-files feature is likely to produce at least some files with syntax errors, so be sure to back up your map before proceeding.

@@ -19,11 +19,11 @@ Once finished, open VSCode and continue to the next step
 
 Press F1 to open the VSCode command prompt and run the task **>Install Extensions**:
 
-![](/WurstScript/assets/images/setup/InstallExtensions.png){: .img-responsive}
+![](/assets/images/setup/InstallExtensions.png){: .img-responsive}
 
 In the panel that opened on the left, type **Wurst** into the search bar and press enter. Install the **Wurst language support** plugin.
 
-![](/WurstScript/assets/images/setup/InstallWurstExtension.png){: .img-responsive}
+![](/assets/images/setup/InstallWurstExtension.png){: .img-responsive}
 
 Reload the window to activate the plugin.
 
