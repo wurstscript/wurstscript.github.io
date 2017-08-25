@@ -3,7 +3,7 @@
 #
 plugins:
   - jekyll-seo-tag
-
+gems: [jekyll-seo-tag]
 url: https://wurstscript.github.io/
 baseurl: /
 highlighter: rouge
@@ -26,7 +26,6 @@ kramdown:
   parse_block_html: true
   syntax_highlighter_opts:
     disable : true
-
 google_site_verification: googlee4f4af3121cc4c25.html
 
 #
@@ -50,10 +49,10 @@ collections:
 #
 # Default values
 #
-defaults:
-  -
-    scope:
-      path: ""
-      type: doc
-    values:
-      layout: doc
+#defaults:
+#  -
+#    scope:
+#      path: ""
+#      type: doc
+#    values:
+#      layout: doc

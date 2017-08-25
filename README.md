@@ -20,3 +20,19 @@ To create a new tutorial:
     - Edit the title, excerpt, date, icon, color.
     - Change the `sections` to match the uri of the pages of your tutorial.
 * Write your tutorial pages, being sure to update the heading sections as necessary.
+
+
+## Building the page locally:
+
+1. Check whether you have Ruby 2.1.0 or higher installed:
+
+    ruby --version
+
+2. Install Bundler:
+
+    gem install bundler
+
+3. Execute `bundle install` in this repository.
+4. Run the server with:
+
+    bundle exec jekyll serve -b ""
