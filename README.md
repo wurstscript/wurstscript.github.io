@@ -1,8 +1,8 @@
-# WurstScript Documentation
+# WurstScript Webpage & Documentation
 
-Live at https://wurstscript.github.io/WurstScript/
+Live at https://wurstscript.github.io/
 
-This folder contains the complete documentation of the WurstScript language configured as jekyll project and deployed via github-pages.
+This folder contains the complete source of the WurstScript website, configured as jekyll project and deployed via github-pages.
 
 The design is based on https://github.com/xriley/PrettyDocs-Theme
 
@@ -22,17 +22,17 @@ To create a new tutorial:
 * Write your tutorial pages, being sure to update the heading sections as necessary.
 
 
-## Building the page locally:
+## Serving the page locally:
 
 1. Check whether you have Ruby 2.1.0 or higher installed:
 
-    ruby --version
+    `ruby --version`
 
 2. Install Bundler:
 
-    gem install bundler
+    `gem install bundler`
 
 3. Execute `bundle install` in this repository.
 4. Run the server with:
 
-    bundle exec jekyll serve -b ""
+    `bundle exec jekyll serve`
