@@ -1,0 +1,16 @@
+
+<!-- NAVIGATION -->
+<div id="cards-wrapper" class="cards-wrapper row">
+    {% for navigation in include.navigation %}
+    {% assign post = site.doc | where: "id", navigation | first %}
+    <div class="item item-{{ post.color }} col-md-6 col-sm-6 col-xs-6">
+        <div class="item-inner">
+            <h3 class="title" style="font-size: 26px;">{{ post.title }}</h3>
+            <div class="author"><i class="fa fa-user"></i> {{ post.author }} <i class="fa fa-calendar"></i> {{ post.date | date: '%B %d, %Y' }}</div>
+            <br>
+            <p class="intro"> {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+            <a class="link" href="{{ post.url | prepend: site.baseurl }}"><span></span></a>
+        </div>
+    </div>
+    {% endfor %}
+</div>

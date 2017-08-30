@@ -9,6 +9,7 @@ gems:
   - jekyll-redirect-from
 url: https://wurstscript.github.io/
 baseurl: 
+blogurl: /blog
 highlighter: rouge
 title: &site_title WurstScript
 description: &site_description Programming language that compiles to Jass

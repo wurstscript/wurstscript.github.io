@@ -6,11 +6,13 @@ tagline: |
   
   *"Puts power, efficiency, and speed at your fingertips"*
 heading: Get started using Wurst
+redirect_from:
+  - /WurstScript/
 navigation:
   - /start
   - /tutorials
   - /manual
-  - /behind
+  - /blog
   - /showcase
   - /contact
 ---

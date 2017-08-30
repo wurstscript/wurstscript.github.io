@@ -136,7 +136,7 @@ and
 As you can see, Jurst is able to access wurst code including packages from the wurst standard library, such as `print`.
 However, you should not try to access Jurst (or jass/vjass) code from Wurst packages.
 
-The especially keen can read the [Jurst Language Definition](https://github.com/peq/WurstScript/blob/master/de.peeeq.wurstscript/parserspec/Jurst.g4) for an exact reference of legal Jurst.
+The especially keen can read the [Jurst Language Definition](https://github.com/wurstscript/WurstScript/blob/master/de.peeeq.wurstscript/parserspec/Jurst.g4) for an exact reference of legal Jurst.
 
 ### Automatic Extraction of vJass to Jurst
 
