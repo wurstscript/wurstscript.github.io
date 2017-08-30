@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>{{ page.title }}</title>
-    <meta http-equiv="refresh" content="0; url={{ page.redirect }}">
-</head>
-<body>
-    <h1>{{ page.title }}</h1>
-    <h3> Redirecting to <a href="{{ page.redirect }}">{{ page.redirect }}</a> ...</h3>
-    {{ content }}
-</body>
+<html lang="en-US">
+  <meta charset="utf-8">
+  <title>Redirecting&hellip;</title>
+  <link rel="canonical" href="{{ page.redirect.to }}">
+  <meta http-equiv="refresh" content="0; url={{ page.redirect.to }}">
+  <meta name="robots" content="noindex">
+  <h1>Redirecting&hellip;</h1>
+  <a href="{{ page.redirect.to }}">Click here if you are not redirected.</a>
+  <script>location="{{ page.redirect.to }}"</script>
 </html>

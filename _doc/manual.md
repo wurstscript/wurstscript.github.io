@@ -5,6 +5,8 @@ date: 2017-07-04
 icon:
   name: icon_info
 color: blue
+redirect_from:
+  - /WurstScript/manual/
 sections:
   - /manual/introduction
   - /manual/concepts
