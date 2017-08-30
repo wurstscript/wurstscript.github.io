@@ -3,7 +3,10 @@
 #
 plugins:
   - jekyll-seo-tag
-gems: [jekyll-seo-tag]
+  - jekyll-redirect-from
+gems: 
+  - jekyll-seo-tag
+  - jekyll-redirect-from
 url: https://wurstscript.github.io/
 baseurl: 
 highlighter: rouge
@@ -14,6 +17,7 @@ branding:
     name: icon_documents_alt
   highlight: Wurst
   bold: Script
+  blog: Blog
 markdown: kramdown
 kramdown:
   auto_ids: true
