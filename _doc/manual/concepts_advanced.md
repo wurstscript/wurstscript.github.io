@@ -458,6 +458,35 @@ function doInit()
 			// place item on map
 ```
 
+### Compiletime Expressions
+
+Similar to compiletime functions, Wurst also has compiletime expressions.
+As the name suggests, these are expressions, which are evaluated at compiletime.
+The result of executing the expression is the placed into the mapscript instead of the original expression.
+
+The syntax for compiletime expressions is a simple function call to the `compiletime` function defined in package `MagicFunctions` in the standard library.
+This function takes one argument, which is the expression to evaluate.
+
+For example the following defines a global variable `blub` and initializes it with the compiletime expression `fac(5)`:
+
+```wurst
+int blub = compiletime(fac(5))
+
+function fac(int x) returns int
+    if x <= 1
+        return 1
+    return x*fac(x-1)
+```
+
+The factorial function is evaluated at compiletime and returns `120`.
+The number `120` then replaces the compiletime expression in the generated mapscript.
+
+Just like compiletime functions, it is also possible to use compiletime expressions with object editing natives (see below).
+
+Compiletime expressions have the restriction, that it is not possible to compile the map without the `-runcompiletimefunctions` flag.
+
+
+
 ### Object Editing Natives
 
 The standard library provides some functions to edit objects in compiletime functions.
