@@ -10,7 +10,7 @@
             </div>
             <h3 class="title">{{ post.title }}</h3>
             <p class="intro">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-            <a class="link" href="{{ post.permalink | prepend: site.baseurl }}"><span></span></a>
+            <a class="link" href="{{ post.url | prepend: site.baseurl }}"><span></span></a>
         </div>
     </div>
   {% endfor %}
