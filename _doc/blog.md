@@ -9,7 +9,8 @@ icon:
 layout: blog
 tagline: The Best of the Wurst!
 heading: Latest Posts
-permalink: /blog/
+redirect_from:
+  - /blog/
 navigation:
   - /blog/hellowurst
 ---
