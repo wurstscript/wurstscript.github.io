@@ -464,6 +464,9 @@ Similar to compiletime functions, Wurst also has compiletime expressions.
 As the name suggests, these are expressions, which are evaluated at compiletime.
 The result of executing the expression is the placed into the mapscript instead of the original expression.
 
+Compiletime expressions are evaluated before compiletime functions.
+The order in which compiletime expressions are evaluated is not specified.
+
 The syntax for compiletime expressions is a simple function call to the `compiletime` function defined in package `MagicFunctions` in the standard library.
 This function takes one argument, which is the expression to evaluate.
 
