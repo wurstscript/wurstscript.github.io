@@ -18,13 +18,19 @@ Once the download has finished, run the .jar to begin.
 The setup will check if the compiler has already been installed. If not, you are required to install it
 before you can create a project.
 
-To install the compiler simply click the **Install Wurst** button.
+To install the compiler simply click the **Install Wurst** button. 
+When everything is done, the setup should tell you that your installation is up to date and the **Create Project** button is now enabled:
+
+![](/assets/images/setup/WurstInstallDone.png){: .img-responsive}
 
 ### Create Project
 
 Now that the compiler is installed you can go ahead and create your Wurst project.
 Select your desired project folder and name and start the process by clicking the **Create Project** button.
 The setup will now create a wurst project structure and download the neccessary dependencies.
+If everything setup correctly, you should see the following message:
+
+![](/assets/images/setup/ProjectSetupDone.png){: .img-responsive}
 
 When the setup has finished, you can now open the project's root folder in VSCode.
 Open the Hello.wurst file to activate the Wurst plugin. The code should compile and the setup should be done.
