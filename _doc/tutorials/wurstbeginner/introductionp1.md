@@ -21,7 +21,11 @@ This guide will **not** explain the core principles of programming, i.e. how fun
 
 ## Project Structure
 
-If you setup your project correctly using the setup app, there will be many folders and files generated in the project folder you chose. Otheriwse setup your project now. Opened in VSCode it should look something like this:
+If you setup your project correctly using the setup app, there will be many folders and files generated in the project folder you chose.
+Otherwise setup your project now.
+Load the project in VSCode by opening the project folder (`File` -> `Open Folder...`).
+It is important to open the project folder so that Wurst can detect the project.
+After opening you should see something like this:
 
 ![](/assets/images/beginner/ProjectExplorer.png){: .img-rounded .img-responsive}
 
