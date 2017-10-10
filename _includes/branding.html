@@ -3,8 +3,8 @@
 <div class="branding">
     <h1 class="logo">
         <a href="{{ '/' | prepend: site.baseurl }}">
-            <img src="/assets/images/wurst_icon64.png" style="margin:0px 0px 15px 00px">
-            <span class="text-highlight"><br>{{ site.branding.highlight }}</span><span class="text-bold">{{ site.branding.bold }}<br></span>
+            {% if include.home %} <img src="/assets/images/wurst_icon64.png" style="margin:0px 0px 15px 00px"><br>{% else %}{% include icon.html icon=site.branding.icon %}{% endif %} 
+            <span class="text-highlight">{{ site.branding.highlight }}</span><span class="text-bold">{{ site.branding.bold }}<br></span>
         </a>
     </h1>
 </div>
