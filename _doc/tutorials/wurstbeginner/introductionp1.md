@@ -7,7 +7,7 @@ sections:
 ---
 
 {: .question}
-### *&nbsp;*{: .fa .fa-question-circle} Wurst not installed yet? Follow the __[Setup Guide](../start.html)__
+### *&nbsp;*{: .fa .fa-question-circle} Wurst not installed yet? Follow the __[Setup Guide](../start.html)__ and create a new Project.
 
 {: .answer}
 ### *&nbsp;*{: .fa .fa-exclamation-circle} This guide expects the reader to have **basic** knowledge of functions and variables.
@@ -40,6 +40,9 @@ Let's go through all the files:
 - **wurst.build** Contains project information
 - **wurst.dependencies** Generated file that links libraries. Shouldn't be touched.
 - **wurst/Hello.wurst** Demo package
+
+{: .answer}
+### *&nbsp;*{: .fa .fa-exclamation-circle} Make sure to always open a .wurst file. Otherwise the vscode plugin will not load.
 
 ## Hello Wurst
 
