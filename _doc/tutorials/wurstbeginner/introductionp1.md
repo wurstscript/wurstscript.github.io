@@ -15,7 +15,7 @@ sections:
 
 ## Welcome
 
-Hello and welcome to WurstScript. This guide is an informal introduction to the Wurst Workflow.
+Hello and welcome to WurstScript. This guide is an informal introduction to the Wurst Workflow and an easy way to verify your installation.
 We will cover how to structure code, use the standard library, create data objects through code and run the final product in warcraft 3.
 This guide will **not** explain the core principles of programming, i.e. how functions and variables work and how we use them.
 
