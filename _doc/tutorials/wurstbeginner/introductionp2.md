@@ -4,7 +4,7 @@ sections:
 - Explanation
 - The Standard Library
 - Coding Conventions
-- How to build, deploy, and release a map
+- Build, deploy, and release
 - How to find library code
 ---
 
@@ -92,7 +92,7 @@ GetTriggerUnit()..setXY(1000., 2000.)
 
 Vectors are a very useful construct for positional calculations in 3d space. However, they add a lot of overhead if implemented as a class, which is why even vJass doesn't use them in any common libraries. Warcraft provides the `location` type - however, it is painful to use, and permanently leaks.
 
-Wurst implements vectors via a [tuple-type](linkto://manual), which don't need to be allocated and deallocated like classes/structs, but can still provide an elegant API.
+Wurst implements vectors via a [tuple-type](/manual.html#tuple-types), which don't need to be allocated and deallocated like classes/structs, but can still provide an elegant API.
 
 vJass example:
 
@@ -127,7 +127,7 @@ class PreviousPointTracker
 
 Note that we used the type `angle` instead of a plain real. This is a tuple-type and is as efficient as a normal real, but provides domain specific methods for working with angles. It also avoids some common mistakes like confusing angles in radians and degrees.
 
-# How to build, deploy, and release a map
+# Build, deploy, and release
 
 Think of `MyMap.w3x` as a "terrain" map. It's the place you go to make terrain, doodad, and destructable changes; and wurst uses that as a starting point when compiling a mapfile for test or release. Other changes like gameplay constants also go in the terrain map, but the point remains the same.
 
