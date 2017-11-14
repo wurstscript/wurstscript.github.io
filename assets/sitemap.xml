@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://wurstscript.github.io/</loc>
+</url>
+<url>
+  <loc>https://wurstscript.github.io/start.html</loc>
+</url>
+<url>
+  <loc>https://wurstscript.github.io/tutorials.html</loc>
+</url>
+<url>
+  <loc>https://wurstscript.github.io/manual.html</loc>
+</url>
+<url>
+  <loc>https://wurstscript.github.io/blog.html</loc>
+</url>
+<url>
+  <loc>https://wurstscript.github.io/showcase.html</loc>
+</url>
+<url>
+  <loc>https://wurstscript.github.io/contact.html</loc>
+</url>
+<url>
+  <loc>https://wurstscript.github.io/tutorials/wurstbeginner.html</loc>
+</url>
+<url>
+  <loc>https://wurstscript.github.io/tutorials/legacymaps.html</loc>
+</url>
+<url>
+  <loc>https://wurstscript.github.io/tutorials/wurst_for_vjass_users.html</loc>
+</url>
+<url>
+  <loc>https://wurstscript.github.io/blog/hellowurst.html</loc>
+</url>
+</urlset>
