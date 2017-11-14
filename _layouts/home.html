@@ -33,7 +33,7 @@ layout: compress
 
 
     {% include google_analytics.html %}
-
+    {% seo %}
 </head>
 
 <body class="landing-page">
@@ -78,6 +78,19 @@ layout: compress
     <script type="text/javascript" src="{{ '/assets/plugins/bootstrap/js/bootstrap.min.js'                 | prepend: site.baseurl }}"></script>
     <script type="text/javascript" src="{{ '/assets/plugins/jquery-match-height/jquery.matchHeight-min.js' | prepend: site.baseurl }}"></script>
     <script type="text/javascript" src="{{ '/assets/js/main.js'                                            | prepend: site.baseurl }}"></script>
+
+    <script type="application/ld+json">
+        { "@context": "http://schema.org", 
+        "@type": "Programming Language",
+        "keywords": "wurst wurstscript jass vjass java programming warcraft", 
+        "url": "https://wurstscript.github.io/",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://wurstscript.github.io/"
+        },
+        "logo": "https://wurstscript.github.io/assets/images/wurst_icon64.png"
+        }
+    </script>
 
 </body>
 </html>
