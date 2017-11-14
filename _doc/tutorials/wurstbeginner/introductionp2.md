@@ -133,7 +133,10 @@ Think of `MyMap.w3x` as a "terrain" map. It's the place you go to make terrain, 
 
 The terrain map is used read-only by wurst, meaning that wurst never edits or saves over that file. This is nice because it means you can edit the terrain in the world editor and the code in vscode at the same time.
 
-When you execute `runmap`, the output mapfile - based on the terrain file, but including all your compiled code - is generated in the `/_build` folder. It's this which you can use to release your map online.
+When you execute `buildmap` in vscode, the output mapfile - based on the terrain and wurst.build files, including all of your compiled code - is generated into the `/_build` folder. It's this which you can use to release and distribute your map online.
+The `runmap` command functions similar, however the map is named __WurstRunMap.w3x__, get copied into your warcraft maps folder and wc3 gets run with the appropriate arguments to run the map.  
+
+It's this which you can use to release your map online.
 
 One other cool feature is that wurst will automatically import contents of the `imports/` directory into the built mapfile. This can be convenient for quickly adding a model file for use in a spell, for example.
 

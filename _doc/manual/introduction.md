@@ -175,6 +175,11 @@ var y = 5
 int z = 7
 // declaring an array
 int array a
+// arrays can be initialized as well. 
+// However this is just a shorthand assignment and doesn't provide a length attribute.
+int array b = [1, 2, 3]
+// however it allows having constant arrays
+constant c = ["A", "B", "C"]
 
 // inside a function
 function getUnitInfo( unit u )
