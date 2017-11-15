@@ -8,12 +8,14 @@ plugins:
 gems: 
   - jekyll-seo-tag
   - jekyll-redirect-from
+  - jekyll-sitemap
 url: https://wurstscript.github.io/
 baseurl: 
 blogurl: /blog
 highlighter: rouge
 title: &site_title WurstScript
-description: &site_description Programming language that compiles to Jass
+description: &site_description Programming language and IDE that compiles to Jass which is used in WarCraft III. The first complete, all-in-one warcraft modding environment.
+Get starting making your own warcraft 3 maps today - cross platform and editor independant.
 branding:
   icon:
     name: icon_documents_alt
