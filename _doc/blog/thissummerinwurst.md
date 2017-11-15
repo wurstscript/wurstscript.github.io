@@ -6,7 +6,7 @@ icon:
   type: fa
   name: fa-sun-o
 color: orange
-author: Cokemonkey11, Frotty, peq
+author: Cokemonkey11
 date: 2017-11-15
 ---
 ------
@@ -23,7 +23,7 @@ Background on wurst: wurstscript is a programming language that compiles to JASS
 
 Unlike vJass, wurstscript is a higher level programming language with a strict type system and a powerful optimiser. The result tends to be shorter code written quicker, without any sacrifice to performance.
 
-__So, what’s changed recently?__
+### So, what’s changed recently?
 
 The Wurstscript community has been steadily active with frequent and regular changes, not only in the Wurstscript language, but across the whole map editing toolchain.
 
@@ -54,8 +54,10 @@ Alongside great improvements to the [JMPQ](https://github.com/inwc3/JMPQ3) libra
 * Better integration with existing maps that have JASS/vJass, because wurst can reuse the existing map script without mutating the source file.
 * Building and compiling wurst maps is now done independently in vscode by default - thus there is no need to use a custom editor (apart from for terraining) or even have warcraft3 installed at all. 
 
-## Map metadata in `wurst.build`
+## Map metadata in __wurst.build__
+
 ![](https://i.imgur.com/c2Jd8z9.png)
+
 The overall structure of a wurst map project has changed, and now comprises two new metadata files: `wurst.build` and `wurst_run.args` - the first providing build artifacts, and the second for passing arguments to the wurst compiler.
 
 One advantage of using the `wurst.build` file is that consistency is maintained from build to build - dependencies are segregated, and maintaining library code can be more modular and convenient.
