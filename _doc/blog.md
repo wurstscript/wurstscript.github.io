@@ -12,5 +12,6 @@ heading: Latest Posts
 redirect_from:
   - /blog/
 navigation:
+  - /blog/thissummerinwurst
   - /blog/hellowurst
 ---
