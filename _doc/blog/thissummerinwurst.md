@@ -10,7 +10,7 @@ author: Cokemonkey11
 date: 2017-11-15
 ---
 ------
-![](https://i.imgur.com/yT2hgM8.png)
+![](https://i.imgur.com/yT2hgM8.png){: .img-responsive}
 
 Hello! This is the first issue in a regular series of news posts about wurst and the wurstscript community. Actual years have passed since we last summarised wurst-related content for hive workshop news, so keep in mind that this is a very sparse summary, whereas our future news posts will more densely discuss current events.
 
@@ -36,7 +36,7 @@ With that context in mind, we hope this will be the first of many “Best of the
 
 # GUI tool for compiler updates and map project setup
 
-![](https://i.imgur.com/oQDohHx.png)
+![](https://i.imgur.com/oQDohHx.png){: .img-responsive}
 
 Probably the most major development this summer is a new tool for maintaining your installation of wurst, bootstrapping new map projects using a template and importing existing projects.
 
@@ -56,7 +56,7 @@ Alongside great improvements to the [JMPQ](https://github.com/inwc3/JMPQ3) libra
 
 ## Map metadata in __wurst.build__
 
-![](https://i.imgur.com/c2Jd8z9.png)
+![](https://i.imgur.com/c2Jd8z9.png){: .img-responsive}
 
 The overall structure of a wurst map project has changed, and now comprises two new metadata files: `wurst.build` and `wurst_run.args` - the first providing build artifacts, and the second for passing arguments to the wurst compiler.
 
