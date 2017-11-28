@@ -51,8 +51,8 @@ layout: compress
                     {{ page.tagline | markdownify }}
                 </div>
             </div>
-            <a href="https://github.com/{{ site.share.github.repo }}">
-                View the source <i class="fa fa-github" style="font-size: 1.25em;"></i>
+            <a href="https://github.com/{{ site.share.github.repo }}" title="Source code on Github">
+                Star me on Github <i class="fa fa-github" style="font-size: 1.25em;"></i>
             </a>
         </header>
 
@@ -67,7 +67,10 @@ layout: compress
                 {% include navigation.html navigation=page.navigation %}
 
             </div>
+            Please report any bugs, issues or requests on our <a href="https://github.com/{{ site.share.github.repo }}/issues/new" title="Issue Tracker on Github">
+                Issue Tracker</a>.
         </section>
+
 
     </div>
 
@@ -80,15 +83,20 @@ layout: compress
     <script type="text/javascript" src="{{ '/assets/js/main.js'                                            | prepend: site.baseurl }}"></script>
 
     <script type="application/ld+json">
-        { "@context": "http://schema.org", 
-        "@type": "Programming Language",
-        "keywords": "wurst wurstscript jass vjass java programming warcraft", 
-        "url": "https://wurstscript.github.io/",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://wurstscript.github.io/"
-        },
-        "logo": "https://wurstscript.github.io/assets/images/wurst_icon64.png"
+        { 
+            "@context": "http://schema.org", 
+            "@type": "ComputerLanguage",
+            "name": "WurstScript",
+            "alternateName": "wurst",
+            "image": "https://wurstscript.github.io/assets/images/wurst_icon64.png",
+            "description": "Statically typed, imperative, delicious programming languages for modern warcraft 3 modding.",
+            "keywords": "wurstscript wurst java jass vjass zinc jasshelper programming language warcraft warcraft3 warcraftIII modding", 
+            "url": "https://wurstscript.github.io/",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://wurstscript.github.io/"
+            },
+            "logo": "https://wurstscript.github.io/assets/images/wurst_icon64.png"
         }
     </script>
 
