@@ -12,6 +12,7 @@ gems:
   - jekyll-sitemap
 
 url: https://wurstscript.github.io/
+logo: /assets/images/wurst_icon64.png
 baseurl: 
 blogurl: /blog
 highlighter: rouge
@@ -40,6 +41,11 @@ google_site_verification: googlee4f4af3121cc4c25.html
 #
 # Social
 #
+social:
+  name: WurstScript
+  links:
+    - https://github.com/wurstscript
+    - https://www.reddit.com/r/wc3modding
 
 share:
   github:
