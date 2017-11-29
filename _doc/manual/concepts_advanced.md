@@ -464,9 +464,6 @@ Similar to compiletime functions, Wurst also has compiletime expressions.
 As the name suggests, these are expressions, which are evaluated at compiletime.
 The result of executing the expression is the placed into the mapscript instead of the original expression.
 
-Compiletime expressions are evaluated before compiletime functions.
-The order in which compiletime expressions are evaluated is not specified.
-
 The syntax for compiletime expressions is a simple function call to the `compiletime` function defined in package `MagicFunctions` in the standard library.
 This function takes one argument, which is the expression to evaluate.
 
@@ -487,6 +484,19 @@ The number `120` then replaces the compiletime expression in the generated mapsc
 Just like compiletime functions, it is also possible to use compiletime expressions with object editing natives (see below).
 
 Compiletime expressions have the restriction, that it is not possible to compile the map without the `-runcompiletimefunctions` flag.
+
+### Execution order
+
+Compiletime expressions and functions are executed from top to bottom inside a package.
+Imported packages are executed before the importing package if the import-relation is one directional.
+Otherwise the execution order is not specified and depends on implementation details.
+
+### Functions available at compiletime
+
+Not all functions which can be used in the game can be used at compiletime.
+Only a few functions are implemented in the Wurst compiler and emulate the respective functions from `common.j`.
+
+The currently implemented functions can be found in the compiler code in the class [NativeFunctionsIO](https://github.com/wurstscript/WurstScript/blob/master/de.peeeq.wurstscript/src/main/java/de/peeeq/wurstio/jassinterpreter/NativeFunctionsIO.java).
 
 
 
