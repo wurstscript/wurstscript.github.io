@@ -7,6 +7,7 @@ sections:
 - Lambdas and Closures
 - Function Overloading
 - Operator Overloading
+- Compiletime Execution
 ---
 
 # Enums
@@ -416,12 +417,9 @@ In order to define an overloading function it has to be named as following:
 *  "op_mult"
 /  "op_divReal"
 ```
-# Object Editing
+# Compiletime Execution
 
-Creating Object-Editor Objects via Wurst code.
-
-*NOTE:* Object Editing hardly works at the moment, so you should only use it for fun but not for profit.
-Do not use it for a real project yet!
+Wurst includes an interpreter and can execute code at compiletime, which can be useful for testing and for object editing.
 
 ## Compiletime Functions
 
