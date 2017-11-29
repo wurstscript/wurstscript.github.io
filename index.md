@@ -19,6 +19,6 @@ navigation:
 
 <div class="cta-container">
 
-[*&nbsp;*{: .fa .fa-cloud-download} Download Setup App](http://peeeq.de/hudson/job/Wurst/lastSuccessfulBuild/artifact/downloads/WurstSetup.jar){: .btn .btn-primary .btn-cta}
+[*&nbsp;*{: .fa .fa-cloud-download} Download Setup App](http://peeeq.de/hudson/job/WurstSetup/lastSuccessfulBuild/artifact/downloads/WurstSetup.jar){: .btn .btn-primary .btn-cta}
 
 </div>

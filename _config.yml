@@ -17,7 +17,7 @@ baseurl:
 blogurl: /blog
 highlighter: rouge
 title: &site_title WurstScript
-description: &site_description Programming language and IDE that compiles to Jass which is used in WarCraft III. The first complete, all-in-one warcraft modding environment. Get starting making your own warcraft 3 maps today - cross platform and editor independant.
+description: &site_description Programming language and IDE that compiles to Jass which is used in WarCraft III. The first complete, all-in-one warcraft modding environment. Get starting making your own warcraft 3 maps today - cross platform and editor independent.
 branding:
   icon:
     name: icon_documents_alt
