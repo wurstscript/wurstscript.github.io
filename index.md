@@ -1,6 +1,8 @@
 ---
 layout: home
 title: Home
+image: /assets/images/wurst_icon64.png
+og:image: /assets/images/wurst_icon64.png
 tagline: |
   Delicious programming language that compiles to Jass.
   
