@@ -7,6 +7,9 @@ tagline: |
   
   *"Puts power, efficiency, and speed at your fingertips"*
 heading: Get started using Wurst.
+
+description: Modern Warcraft 3 modding toolchain
+
 redirect_from:
   - /WurstScript/
 navigation:
