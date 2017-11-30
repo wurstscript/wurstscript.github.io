@@ -13,6 +13,8 @@ gems:
 
 url: https://wurstscript.github.io/
 logo: /assets/images/wurst_icon64.png
+image: /assets/images/wurst_icon64.png
+og:image: /assets/images/wurst_icon64.png
 baseurl: 
 blogurl: /blog
 highlighter: rouge
