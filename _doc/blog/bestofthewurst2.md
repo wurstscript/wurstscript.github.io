@@ -10,7 +10,7 @@ author: Cokemonkey11, Frotty
 date: 2017-12-03
 ---
 ------
-![https://wurstscript.github.io](/assets/images/bestof2/bestOfTheWurst2Banner.jpg)
+![https://wurstscript.github.io](/assets/images/blog/bestof2/bestOfTheWurst2Banner.jpg)
 
 This is the second issue in a regular series of news posts about wurst and the wurstscript community. Unlike [the previous issue](https://wurstscript.github.io/blog/thissummerinwurst.html), this one is short, and focused on this month's progress. We intend to use this format for all future posts.
 
@@ -44,7 +44,7 @@ One achievement on this front is the addition of the Wurst tag, now enabled for 
 * Triggers & Scripts posts.
 * JASS (code) submissions.
 
-![](/assets/images/bestof2/hiveTag.jpg)
+![](/assets/images/blog/bestof2/hiveTag.jpg)
 
 We were also excited to see [multiple](https://www.hiveworkshop.com/threads/snippet-initpackage.300738/) [submissions](https://www.hiveworkshop.com/threads/quest.300223/) before this was even announced!
 
