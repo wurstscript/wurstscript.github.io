@@ -12,7 +12,7 @@ heading: Latest Posts
 redirect_from:
   - /blog/
 navigation:
+  - /blog/bestofthewurst2
   - /blog/thissummerinwurst
   - /blog/hellowurst
-  - /blog/bestofthewurst2
 ---
