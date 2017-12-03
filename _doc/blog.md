@@ -14,4 +14,5 @@ redirect_from:
 navigation:
   - /blog/thissummerinwurst
   - /blog/hellowurst
+  - /blog/bestofthewurst2
 ---
