@@ -15,7 +15,7 @@ Download the Java Runtime appropriate for your system and follow the installatio
 
 Once finished, continue to the next step
 
-### Verify Java Intallation
+### Verify Java Installation
 
 Many tasks rely on a environment variable called **JAVA_HOME** which might not have been set by the installer.
 To verify your installation, open a command prompt and enter `java -version`
