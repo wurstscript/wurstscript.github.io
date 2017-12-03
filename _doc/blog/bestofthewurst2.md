@@ -10,7 +10,7 @@ author: Cokemonkey11, Frotty
 date: 2017-12-03
 ---
 ------
-![https://wurstscript.github.io](https://i.imgur.com/CCSGNeg.jpg)
+![https://wurstscript.github.io](/assets/bestOfTheWurst2Banner.jpg)
 
 This is the second issue in a regular series of news posts about wurst and the wurstscript community. Unlike [the previous issue](https://wurstscript.github.io/blog/thissummerinwurst.html), this one is short, and focused on this month's progress. We intend to use this format for all future posts.
 
