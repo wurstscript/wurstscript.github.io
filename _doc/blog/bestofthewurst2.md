@@ -94,7 +94,7 @@ init
 	registerSpellEffectEvent(ID_BLINK, function onEffect)
 ```
 
-Then when the wurst compiler is run, the above emits nicely readable Jass (see below). This is just one example of wurst providing zero-cost abstraction - a topic we will discuss more in future posts.
+Then when the wurst compiler is run, the above emits nicely readable Jass (see below). This is just one example of wurst providing zero-cost abstraction, since the inliner would ultimately inline e.g. getSpellTargetPos into 2 local definitions - a topic we will discuss more in future posts.
 
 ```wurst
 function getSpellTargetPos takes nothing returns real
