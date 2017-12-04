@@ -1,7 +1,7 @@
 ---
 title: This Summer in Wurst
 layout: post
-excerpt: Summary of all the changes and updates to wurst during this summer
+excerpt: Summary of all the changes and updates to wurst during this summer.
 icon:
   type: fa
   name: fa-sun-o
