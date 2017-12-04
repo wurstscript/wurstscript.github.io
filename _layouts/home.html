@@ -15,12 +15,7 @@ layout: compress
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     <meta name="author" content="{{ site.owner.name }}">
 
-    <meta property="og:locale" content="en_US">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="{{ site.title }} &bull; {{ page.title }}">
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-    <meta property="og:image" content="{{ site.image }}" />
-    <meta property="og:site_name" content="WurstScript">
+    
     <!-- <meta property="article:publisher" content="http://www.facebook.com/webjeda" />
     <meta property="article:author" content="https://www.facebook.com/sharu725" />
     <meta property="article:published_time" content="{{ page.date }}" /> -->
@@ -42,7 +37,7 @@ layout: compress
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-
+    {% include meta_properties.html %}
     {% include google_analytics.html %}
     {% seo %}
 </head>
