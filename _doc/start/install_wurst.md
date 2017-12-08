@@ -7,7 +7,7 @@ sections:
 
 Now we will setup a Wurst compiler environment and create a project using the the Wurst Setup.
 
-[*&nbsp;*{: .fa .fa-download} Download WurstSetup](http://peeeq.de/hudson/job/WurstSetup/lastSuccessfulBuild/artifact/downloads/WurstSetup.jar){: .btn .btn-green}
+[*&nbsp;*{: .fa .fa-download} Download WurstSetup](https://peeeq.de/hudson/job/WurstSetup/lastSuccessfulBuild/artifact/downloads/WurstSetup.jar){: .btn .btn-green}
 
 Once the download has finished, run the .jar to begin.
 

@@ -9,7 +9,7 @@ WurstScript and it's related tools require Java 8 to run. Please install or veri
 
 ### Download JRE
 
-[*&nbsp;*{: .fa .fa-download} Download Java](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html){: .btn .btn-orange} ![](/assets/images/setup/java_powered.png) 
+[*&nbsp;*{: .fa .fa-download} Download Java](https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html){: .btn .btn-orange} ![](/assets/images/setup/java_powered.png) 
 
 Download the Java Runtime appropriate for your system and follow the installation procedure.
 

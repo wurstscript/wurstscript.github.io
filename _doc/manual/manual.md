@@ -15,7 +15,7 @@ must be generated with the magic function `function error(string msg)`.
 # Standard Library
 
 Wurst comes with a library of some useful standard functions
-You can find the generated HotDoc pages here: [The Wurstscript Standardlibrary](http://peeeq.de/hudson/job/Wurst/HotDoc_Standard_Library_Documentation/index.html)
+You can find the generated HotDoc pages here: [The Wurstscript Standardlibrary](https://peeeq.de/hudson/job/Wurst/HotDoc_Standard_Library_Documentation/index.html)
 However, the best way to learn about the library is still to look at the source code.
 
 # Wurst Style
@@ -58,7 +58,7 @@ Example:
 ## Rule 2: Write checkable code
 
 Your code should be checkable by the compiler. The Wurst compiler provides you with some powerful typechecking tools. Use
-them wisely to reduce the mistakes you can do in your program. You might also want to watch [this awesome talk by Yaron Minsky](http://vimeo.com/14313378) who summarizes it pretty nicely: "make invalid state unrepresentable". Of course Wurst is not as sophisticated as ML
+them wisely to reduce the mistakes you can do in your program. You might also want to watch [this awesome talk by Yaron Minsky](https://vimeo.com/14313378) who summarizes it pretty nicely: "make invalid state unrepresentable". Of course Wurst is not as sophisticated as ML
 but there are still a lot of things you can do.
 
 - avoid the castTo expression whenever possible
