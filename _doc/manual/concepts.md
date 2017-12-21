@@ -427,9 +427,9 @@ The initialization rules for Wurst are simple:
     then the initializer of package B is run before A's.
     Cyclic imports without `initlater` are not allowed.
 
-If you get a Cyclic init dependency between packages, you have to manually define which package can be
-initialized later.
-This is done by adding the keyword `initlater` to the import of the package:
+In general you should avoid cylcic dependencies between packages by moving the affected code. However if you must, you can manually define which package can be
+initialized later by adding the keyword `initlater` to the import of the package:
+
 ```wurst
 package A
 import initlater B
@@ -469,5 +469,4 @@ package Example
 package Example_config
 @config public function math(int x, int y) returns int
     return x*y
-
 ```
