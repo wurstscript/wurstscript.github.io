@@ -428,9 +428,9 @@ They mainly offer the possibility to create Object-Editor Objects via code.
 
 A compiletime function is just a normal Wurst function annotated with @compiletime.
 ```wurst
-@compiltetime function foo()
+@compiletime function foo()
 ```
-Compiltetime functions have no parameters and no return value.
+Compiletime functions have no parameters and no return value.
 
 In order to run compiletime functions you have to enable the checkbox in the Wurstpack Menu.
 When you use compiletime functions to generate objects, Wurst will generate the object files
