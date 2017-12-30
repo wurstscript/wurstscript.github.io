@@ -1,6 +1,6 @@
 # WurstScript Webpage & Documentation
 
-Live at https://wurstscript.github.io/
+Live at https://wurstlang.org/
 
 This folder contains the complete source of the WurstScript website, configured as jekyll project and deployed via github-pages.
 

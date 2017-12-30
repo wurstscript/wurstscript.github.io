@@ -10,9 +10,9 @@ author: Cokemonkey11, Frotty
 date: 2017-12-03
 ---
 ------
-![https://wurstscript.github.io](/assets/images/blog/bestof2/bestOfTheWurst2Banner.jpg){: .img-responsive}
+![https://wurstlang.org](/assets/images/blog/bestof2/bestOfTheWurst2Banner.jpg){: .img-responsive}
 
-This is the second issue in a regular series of news posts about wurst and the wurstscript community. Unlike [the previous issue](https://wurstscript.github.io/blog/thissummerinwurst.html), this one is short, and focused on this month's progress. We intend to use this format for all future posts.
+This is the second issue in a regular series of news posts about wurst and the wurstscript community. Unlike [the previous issue](https://wurstlang.org/blog/thissummerinwurst.html), this one is short, and focused on this month's progress. We intend to use this format for all future posts.
 
 __What is wurst?__ Wurstscript is a programming language that compiles to JASS (the language used for scripting warcraft 3 custom games), and is developed alongside a suite of tools, which provide a coherent and modern modding development experience. It can even work alongside maps written in vJass. Wurstscript is designed to make hard problems easier and more elegant, and easy problems dead simple.
 
@@ -21,8 +21,8 @@ The theme of this issue is __"wurstscript in practice"__, where we want to show 
 
 # Toolchain updates
 
-* The [setup tool](https://wurstscript.github.io/start.html) has been moved to a separate repository. It now checks for new versions of itself as well as silently checking for compiler and project dependency updates. To get these __critical__ new features, please do update your tool by downloading at the link above.
-* [Unit Tests](https://wurstscript.github.io/manual.html#automated-unit-tests) now have map-wide read access to compiletime resources. This allows the author to unit-test some behaviors that were previously not possible.
+* The [setup tool](https://wurstlang.org/start.html) has been moved to a separate repository. It now checks for new versions of itself as well as silently checking for compiler and project dependency updates. To get these __critical__ new features, please do update your tool by downloading at the link above.
+* [Unit Tests](https://wurstlang.org/manual.html#automated-unit-tests) now have map-wide read access to compiletime resources. This allows the author to unit-test some behaviors that were previously not possible.
 * Added "hashtable mocks" for string data operations, which allows them to work at compiletime and in unit tests.
 * Bug fixes:
     - Fixed some edge cases where vscode autocomplete would misbehave.

@@ -67,9 +67,9 @@ Another advantage is that the world editor is no longer needed for some metadata
 The setup tool also interacts with this metadata by importing the `wurst.build` file, thus updating the project's dependencies to keep the standard library and other used packages up-to-date.
 
 
-# New docs and website, at a new address
+# New docs and website, at a new address (updated 30.12.2017)
 
-Documentation and tutorials for wurstscript now live at [wurstscript.github.io](https://wurstscript.github.io/) - a new landing page which we believe provides a much more consistent and attractive experience for consuming wurst. We’re encouraging community-written tutorials, and indeed the [Wurst Introduction for vJass users](https://wurstscript.github.io/tutorials/wurst_for_vjass_users.html) is one such tutorial.
+Documentation and tutorials for wurstscript now live at [wurstlang.org](https://wurstlang.org) - a new landing page which we believe provides a much more consistent and attractive experience for consuming wurst. We’re encouraging community-written tutorials, and indeed the [Wurst Introduction for vJass users](https://wurstlang.org/tutorials/wurst_for_vjass_users.html) is one such tutorial.
 
 Take a look here as well for the wurst setup tool mentioned above!
 
