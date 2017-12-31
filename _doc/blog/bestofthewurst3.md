@@ -10,7 +10,7 @@ author: Frotty
 date: 2018-01-01
 ---
 ------
-![https://wurstlang.org](/assets/images/blog/bestOfTheWurst3Banner.jpg){: .img-responsive}
+![https://wurstlang.org](/assets/images/blog/bestof3/bestOfTheWurst3Banner.jpg){: .img-responsive}
 
 Welcome to the third issue of our Wurstscript blog! And happy new year!
 
