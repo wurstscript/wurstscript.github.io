@@ -1,7 +1,7 @@
 ---
 title: Blog
 excerpt: Home of 'This week in wurst' and more
-date: 2017-06-29
+date: 2018-01-01
 color: pink
 icon:
   type: fa
@@ -12,6 +12,7 @@ heading: Latest Posts
 redirect_from:
   - /blog/
 navigation:
+  - /blog/bestofthewurst3
   - /blog/bestofthewurst2
   - /blog/thissummerinwurst
   - /blog/hellowurst
