@@ -16,11 +16,14 @@ The compiler then extracts that script when performing the **runmap** command an
 
 ### vJass and others
 
-vJass and other precompilers are usually run with an editor extension called JNGP or WEX.
-If you use such a tool that automatically injects the modified script into the map, the integration stays the same as with regular Jass.
-Wurst will extract the existing code and just add it's own to it.
+To prevent any confusion: __Wurst does not support vJass directly!__ and it never will. 
+You are required to run JassHelper (or any other preprocessor) yourself and then pass the generated Jass to wurst.
+Either by saving inside an Editor with Jasshelper (JNGP, WEX) or manually including JassHelper into your buildchain.
+Your only other solution is to convert your vJass to Jurst, which will require some manual code adjustments.
 
-However this prohibits saving in the normal WorldEditor.
+If you use such a tool like JNGP or WEX that automatically injects the modified script into the map, wurst will extract the generated jass code from the map and use it.
+This is the same as with using regular Jass explained above, however it prohibits saving in the vanilla WorldEditor, 
+since it will overwrite the map's script.
 
 ## Using legacy code within wurst
 
@@ -30,8 +33,8 @@ To do this you must extract the war3map.j file from your legacy map and place it
 
 ![](/assets/images/legacy/war3map.j.png){: .img-responsive .img-rounded}
 
-This file will however not be constantly parsed, so you need to clean your workspace for a recheck.
-If you want to make changes to the war3map.j and have them applied to the map, you have to add the RunArg **-noExtractMapScript**
+This file as __all .j files will not be autmatically reconciled__. This means wurst will use a cached version and not detect errors nor take changes into account unless you clean your workspace via `F1 -> clean`.
+Also, if you make changes to the war3map.j and want them applied to the map, you have to add the RunArg **-noExtractMapScript**
 to your wurst_run.args file, which will prevent the script extraction from the map and use the provided war3map.j inside the wurst folder instead.
 
 ![](/assets/images/legacy/uselegacycode.png){: .img-responsive .img-rounded}

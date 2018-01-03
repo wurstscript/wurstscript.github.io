@@ -11,7 +11,7 @@ sections:
 
 ## Welcome
 
-This guide will explain how to use regular Jass (including GUI) and vJass resources next to Wurst.
+This guide will explain how to use regular Jass (or GUI, which is translated to Jass) and vJass resources next to Wurst.
 This guide will **not** explain how to convert (v)Jass to Wurst.
 
 ## Motivation
