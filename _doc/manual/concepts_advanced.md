@@ -7,6 +7,7 @@ sections:
 - Lambdas and Closures
 - Function Overloading
 - Operator Overloading
+- Annotations
 - Compiletime Execution
 ---
 
@@ -417,6 +418,25 @@ In order to define an overloading function it has to be named as following:
 *  "op_mult"
 /  "op_divReal"
 ```
+
+# Annotations
+
+Almost any definition in wurst can be annotated with one or more optionally named annotations.
+Annotations are compiletime only metadata which can be used for compiletime function, tests and `callFunctionsWithAnnotation`.
+In most cases annotations are generally disregarded unless you use them yourself. 
+List of all wurst reserved annotations:
+
+```wurst
+@configurable constant SOME_VAR = 12
+@config constant SOME_VAR = 24
+
+@compiletime function foo()
+
+@test function someTest()
+
+@deprecated("Use .size() instead") function getSize() returns int
+```
+
 # Compiletime Execution
 
 Wurst includes an interpreter and can execute code at compiletime, which can be useful for testing and for object editing.
