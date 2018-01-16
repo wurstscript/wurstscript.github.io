@@ -51,14 +51,14 @@ Due to increased usage of the Wurst Tools, several critical bugs have been found
 ## Introducing Wurstbin
 An elegant and simple way to share your wurst and jass code snippets. No login required.
 [Check it out](https://bin.wurstlang.org/)
-![](https://i.imgur.com/8bVnUT1.png)
+![](https://i.imgur.com/8bVnUT1.png){: .img-responsive}
 
 
 # ObjectEditing 101
 
 WurstScript ships with a jass "interpreter", which can evaluate Jass code outside of wc3. This is usually done when compiling the project - hence we name the timeslot it occupies "__compiletime__". This is the opposite of running the map inside the game, which we refer to as "__runtime__".
 
-![](https://i.imgur.com/bJA1su0.png)
+![](https://i.imgur.com/bJA1su0.png){: .img-responsive}
 
 You can mark any function to be executed at compiletime, by simply annotating it with `@compiletime`. The only caveat of this is that you can only use jass natives that have been implemented for compiletime, and you only have access to resources from your script that have also been initialized at compiletime.
 
