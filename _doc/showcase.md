@@ -1,6 +1,6 @@
 ---
 title: Showcase
-excerpt: Maps achieved with WurstScript. (soon)
+excerpt: Maps achieved with WurstScript.
 date: 2016-01-25
 icon:
   name: icon_genius

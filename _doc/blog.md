@@ -1,6 +1,6 @@
 ---
 title: Blog
-excerpt: Home of 'This week in wurst' and more
+excerpt: Home of 'This week in wurst' and more.
 date: 2018-01-01
 color: pink
 icon:

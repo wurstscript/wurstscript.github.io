@@ -1,6 +1,6 @@
 ---
 title: Tutorials
-excerpt: Wurst guides for specific topics
+excerpt: Wurst guides for specific topics.
 date: 2017-07-26
 icon:
   name: icon_lifesaver
