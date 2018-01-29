@@ -6,14 +6,11 @@ icon:
   name: icon_genius
 color: primary
 sections:
-  - /showcase/onemap
+  - /showcase/mapshowcase
 ---
 
 <div class="jumbotron">
 # *&nbsp;*{: .fa .fa-twitter} Submit your own map!
 
-If you have a project made with Wurst that isn't showcased yet,
-please submit it using our issue tracker.
-
-[Submit Now](https://github.com)
+You can submit your own map using our [Issue Tracker](https://github.com/wurstscript/wurstscript.github.io/issues)!
 </div>
