@@ -1,7 +1,7 @@
 ---
 title: Credits & Contact
 excerpt: See people involved in Wurst and contact them.
-date: 2017-07-18
+date: 2018-01-29
 icon:
   name: icon_gift
 color: orange

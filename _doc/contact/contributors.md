@@ -10,3 +10,6 @@ Wurst is great due to contributions from:
 - Cokemonkey11
 - lep
 - Menag
+- HappyTauren
+- SirMoriarty
+- WaterKnight
