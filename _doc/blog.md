@@ -1,6 +1,6 @@
 ---
 title: Blog
-excerpt: Home of 'Best of the Wurst' and more. (Last post February '18)
+excerpt: Home of 'Best of the Wurst' (Last post Feb '18).
 date: 2018-02-01
 color: pink
 icon:
