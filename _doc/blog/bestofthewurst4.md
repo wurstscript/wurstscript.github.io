@@ -10,8 +10,7 @@ author: Frotty
 date: 2018-02-01
 ---
 ------
-Best of the Wurst 4
-===
+
 ![](/assets/images/blog/bestof4/februaryBanner.png){: .img-responsive}
 
 In this fourth issue of our blog we look at wurstscript's start into 2018, and our roadmap. Once again we're excited to mention that users within our awesome community are getting involved and contribute to the wurst.
