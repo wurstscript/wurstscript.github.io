@@ -53,6 +53,8 @@ A TD where players controls a fragile runner which must evade the creeps while g
 
 </div>
 <!-- End Row -->
+
+
 <div class="row">
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
@@ -73,7 +75,6 @@ Allows player to build and escape mazes created ingamed. Basically an ingame edi
 </div>
 
 
-</div>
 </div>
 <!-- End Card -->
 </div>
