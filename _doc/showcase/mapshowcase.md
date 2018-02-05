@@ -74,7 +74,6 @@ Allows player to build and escape mazes created ingamed. Basically an ingame edi
 
 
 </div>
-</div>
 <!-- End Card -->
 </div>
 <!-- Begin Card -->
