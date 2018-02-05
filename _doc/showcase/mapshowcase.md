@@ -1,5 +1,5 @@
 ---
-title: Showcase
+title: Maps
 ---
 
 <!-- Start Row -->
@@ -69,6 +69,29 @@ A TD where players controls a fragile runner which must evade the creeps while g
 Allows player to build and escape mazes created ingamed. Basically an ingame editor for escape-style maps.
 
 [*&nbsp;*{: .fa .fa-external-link-square} Hive Thread](https://www.hiveworkshop.com/threads/escape-builder-r-0-90s.184964/) [*&nbsp;*{: .fa .fa-external-link-square} Git Repo](https://github.com/Frotty/EBR)
+
+</div>
+
+
+</div>
+</div>
+<!-- End Card -->
+</div>
+<!-- Begin Card -->
+<div class="col-sm-6 col-xs-12">
+<div class="card">
+
+[![screenshot](/assets/images/showcase/draftpreview.png){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/warcraft-3-ability-draft.291422/)
+
+<div class="card-block">
+
+{: .card-title}
+#### Wc3 Ability Draft
+
+{: .card-text}
+Brings the popular gamemmode from dota2 to wc3 melee maps
+
+[*&nbsp;*{: .fa .fa-external-link-square} Hive Thread](https://www.hiveworkshop.com/threads/warcraft-3-ability-draft.291422/)
 
 </div>
 
