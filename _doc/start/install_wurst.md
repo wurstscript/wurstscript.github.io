@@ -27,7 +27,7 @@ When everything is done, the setup should tell you that your installation is up 
 
 Now that the compiler is installed you can go ahead and create your Wurst project.
 Select your desired project folder and name and start the process by clicking the **Create Project** button.
-The setup will now create a wurst project structure and download the neccessary dependencies.
+The setup will now create a wurst project structure and download the necessary dependencies.
 If everything setup correctly, you should see the following message:
 
 ![](/assets/images/setup/ProjectSetupDone.png){: .img-responsive}
@@ -36,5 +36,11 @@ When the setup has finished, you can now open the project's root folder in VSCod
 Open the Hello.wurst file to activate the Wurst plugin. The code should compile and the setup should be done.
 
 If you are new to WurstScript but not new to programming, you probably want to continue with the [*&nbsp;*{: .fa .fa-external-link-square} Beginner's Guide](tutorials/wurstbeginner.html)
+
+### Updating and importing Projects
+
+By clicking the import button you can load an existing wurst.build file. After a successful load clicking the `Update Project` button will update your dependencies and generate local files as necessary. You should use this feature to update your existing projects and to import newly cloned projects.
+
+
 
 

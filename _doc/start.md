@@ -1,7 +1,7 @@
 ---
 title: Setup Guide
 excerpt: Download, installation and setup of a wurst project.
-date: 2017-07-19
+date: 2018-02-09
 icon:
   type: fa
   name: fa-paper-plane

@@ -24,7 +24,8 @@ A valid installation will return something like this:
 
 ![](/assets/images/setup/JavaVerify.png){: .img-responsive}
 
-Make sure your minor version `1.8.0_xxx` (xxx) is higher than **101** to avoid any certificate issues. If it is lower, make sure to update your Java installation.
+Make sure your minor version `1.8.0_xxx` (xxx) is higher than **101** to avoid any certificate issues. 
+If it is lower, make sure to update your Java installation, otherwise your connection will be insecure.
 
 If you get an error or get a lower version displayed even though you installed a newer one, your **JAVA_HOME** is either missing or configured wrong.
 
