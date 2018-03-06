@@ -468,8 +468,6 @@ This is especially useful for saving all instances from classes that inherit 1 i
 
 ## Defender methods
 
-*NOTE:* Defender methods are a very experimental feature and will probably be removed from the language.
-
 An interface can have functions with an implementation. This implementation is used, when a class implementing the interface
 does not provide an implementation of the method itself. Usually this is not needed but in some cases it might
 be necessary in order to evolve an interface without breaking its implementing classes.
@@ -572,13 +570,11 @@ function LinkedList<T>.forall<T>(LinkedListPredicate<T> pred) returns boolean
 
 # Modules
 
-*NOTE:* It is likely that the concept of modules will change in later versions of the language. If you want to be on the safe side you should not create modules which use other modules themselves. Plain, flat modules will most likely stay in the language.
-
 A _module_ is a small package which provides some functionality for classes. Classes can _use_ modules to inherit the functionality of the module.
 
 You can use the functions from the used module as if they were declared in the class. You can also _override_ functions defined in a module to adjust its behavior.
 
-If you know object oriented languages like Java or C#: Modules are like abstract classes and using a module is like inheriting from an abstract class but *without the sub-typing*. (WurstScript takes a different approach to enable polymorphism, but this is not implemented yet)
+If you know object oriented languages like Java or C#: Modules are like abstract classes and using a module is like inheriting from an abstract class but *without the sub-typing*. Modules encapsulate behaviour that you might want to add to several classes, without overhead and hierarchical structure. 
 
 ## Example 1
 
