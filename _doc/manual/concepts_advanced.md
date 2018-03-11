@@ -242,7 +242,7 @@ The arrow `->` of the lambda expression must then be followed by a newline and a
 For example, the begin-end-block above can be replaced as follows:
 
 ```wurst
-doLater(10.0) -> begin
+doLater(10.0) ->
 	KillUnit(u)
 	createNiceExplosion()
 	doMoreStuff()
