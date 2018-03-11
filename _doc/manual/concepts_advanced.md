@@ -202,6 +202,18 @@ Remember that, because closures are just like normal objects, you also have to d
 like normal objects. And you can do all the other stuff you can do with
 other objects like putting them in a list or into a table.
 
+## Type inference
+
+It is not necessary to provide the parameter types for Lambda-parameters, if they can be inferred from the context.
+Moreover, parenthesis are optional, when there is only one parameter without type or no parameter.
+
+Therefore the following definitions are equivalent:
+
+```wurst
+Predicate<int> pred = (int x) -> x mod 2 == 0
+Predicate<int> pred = (x) -> x mod 2 == 0
+Predicate<int> pred = x -> x mod 2 == 0
+```
 
 ## begin-end expression
 
@@ -219,6 +231,34 @@ end)
 It is also possible to have a return statement inside a begin-end expression
 but only the very last statement can be a return.
 
+## Lambda blocks
+
+Often a lambda expression with begin-end-block is given as the last argument in a line.
+Wurst offers a special Syntax for this case, which fits better with the general indentation based Syntax used in Wurst.
+
+A lambda expression can be used after an assignment, local variable definition, return statement or function call.
+The arrow `->` of the lambda expression must then be followed by a newline and an indented block of statements.
+
+For example, the begin-end-block above can be replaced as follows:
+
+```wurst
+doLater(10.0) -> begin
+	KillUnit(u)
+	createNiceExplosion()
+	doMoreStuff()
+```
+
+The following examples uses a lambda with parameter `u` to iterate over all units owned by a player:
+
+```wurst
+forUnitsOfPlayer(lastRinger) u ->
+	if u.getTypeId() == TOWER_ID
+		let pos = u.getPos()
+		let facing = u.getFacingAngle()
+		addEffect(UI.goldCredit, pos).destr()
+		u.remove()
+		createUnit(players[8], DUMMY_ID, pos, facing)
+```
 
 ## Capturing of Variables
 
