@@ -68,9 +68,9 @@ nextStatements
 In general newlines come at the end of a statement, except for the following cases:
 
 - A newline is ignored if the line ends with `(` or `[`
-- A newline is ignored before a line beginning with `)`, `]`,`.` or `..`
+- A newline is ignored before a line beginning with `)`, `]`,`.`, `..`, or `begin`
 - A newline is ignored, if the line ends of begins with:
-    `,`, `+`, `*`, `-`, `div`, `/`, `mod`, `%`, `and`, `or`, `->`, `?`, `:`
+    `,`, `+`, `*`, `-`, `div`, `/`, `mod`, `%`, `and`, `or`, `?`, `:`
 
 You can use this to break longer expressions or long parameter lists over several lines, or to chain method invocations:
 ```wurst
