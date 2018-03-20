@@ -222,7 +222,7 @@ expression can be used. It allows to have statements inside an expression. The
 begin keyword has to be followed by a newline and an increase in indentation.
 It is possible to have multiple lines of statements within:
 ```wurst
-doLater(10.0, () -> begin
+doAfter(10.0, () -> begin
 	KillUnit(u)
 	createNiceExplosion()
 	doMoreStuff()
@@ -242,7 +242,7 @@ The arrow `->` of the lambda expression must then be followed by a newline and a
 For example, the begin-end-block above can be replaced as follows:
 
 ```wurst
-doLater(10.0) ->
+doAfter(10.0) ->
 	KillUnit(u)
 	createNiceExplosion()
 	doMoreStuff()
@@ -283,7 +283,7 @@ on the respective other copy of the variable.
 This can be observed when a variable is changed after the closure is created:
 ```wurst
 var s = "Hello!"
-CallbackFunc f = () -> begin
+let func = () -> begin
 	print(s)
 	s = s + "!"
 end

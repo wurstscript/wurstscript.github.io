@@ -86,9 +86,8 @@ A typical use is as a shorthand for choosing between two alternatives like in th
 
 ```wurst
 // handle the special case of one enemy left:
-string enemyCount = n.toString() + " " + (n == 1 ? "enemy" : "enemies")
+let enemyCount = n.toString() + " " + (n == 1 ? "enemy" : "enemies")
 ```
-
 
 ## Statements
 
@@ -295,16 +294,10 @@ packages define the code organization and separate name-spaces.
 Packages can also have global variables - every variable that is not inside another block (function/class/module)
 is declared global for that package.
 
-When working in WurstWE, packages have to end with the **endpackage** keyword and the code inside has to be indent.
+When creating a new `.wurst` file in vscode, the package header is automatically added:
 
-In WurstEclipse however, the **endpackage** can be omitted when the code inside is not indented.
 ```wurst
-package SomeWurstWePackage
-    // Only for legacy WurstWE
-    ...
-endpackage
-
-package SomeWursteclipsePackage
+package SomeVSCodePackage
 ...
 ```
 
@@ -320,7 +313,6 @@ package SomePackage
 package Blub
 import SomePackage
 import AnotherPackge // importing more than 1 package
-import MyExternalWurstFile // Import a scriptfile from the eclipseProject
 import public PackageX // public import (see below)
 ```
 

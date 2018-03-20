@@ -14,7 +14,7 @@ Classes are easy, powerful and very helpful constructs. A _class_ defines data a
 
 
 ```wurst
-Caster dummyCaster = new Caster(200.0, 400.0)
+let dummyCaster = new Caster(200.0, 400.0)
 dummyCaster.castFlameStrike(500.0, 30.0)
 destroy dummyCaster
 ```
@@ -55,16 +55,16 @@ class Pair
     int b
 
     construct(int pA, int pB)
-            a = pA
-            b = pB
+        a = pA
+        b = pB
 
     function add() returns int
-            return a + b
+        return a + b
 
 
 function test()
-    Pair p = new Pair(2,4)
-    int sum = p.add()
+    let pair = new Pair(2,4)
+    let sum = p.add()
     print(sum)
 ```
 
@@ -89,8 +89,8 @@ class Pair
         b += pC
 
 function test()
-    Pair p = new Pair(2,4)
-    Pair p2 = new Pair(3,4,5)
+    let p = new Pair(2,4)
+    let p2 = new Pair(3,4,5)
 ```
 
 
@@ -135,17 +135,17 @@ other elements belong to instances of the class. So you can call static function
 
 ```wurst
 class Terrain
-    static real someVal = 12.
+    static var someVal = 12.
 
     static int array someArr
 
-    static function getZ( real x, real y ) returns real
+    static function getZ(real x, real y) returns real
         ...
 
 function foo()
-    real z = Terrain.getZ( 0, 0 ) // call with $Classname$.$StaticFunctionName$()
-    real r = Terrain.someVal // Same with members
-    real s = Terrain.someArr[0]
+    let z = Terrain.getZ( 0, 0 ) // call with $Classname$.$StaticFunctionName$()
+    let r = Terrain.someVal // Same with members
+    let s = Terrain.someArr[0]
 ```
 
 ## Array Members
@@ -179,9 +179,7 @@ which defines the arguments for the super constructor. There can not be any stat
 
 If a constructor does not provide a super call, the compiler tries to insert a super call with no arguments.
 
-
 Functions inherited from super classes can be overridden in the subclass. Such functions have to be annotated with _override_.
-
 
 ### Example
 ```wurst
@@ -190,9 +188,7 @@ class Missile
         // ...
 
     function onCollide(unit u)
-        skip
 
-    // ...
 
 // a fireball missile is a special kind of missile
 class FireballMissile extends Missile
@@ -203,7 +199,6 @@ class FireballMissile extends Missile
     // with a unit, so we override the onCollide method
     override function onCollide(unit u)
         // create a big explosion here ;)
-        //...
 ```
 
 ## Typecasting
@@ -220,8 +215,8 @@ class Test
     int val
 
 init
-    Test t = new Test()
-    int i = t castTo int
+    let t = new Test()
+    let i = t castTo int
 ```
 
 
@@ -236,9 +231,9 @@ class B extends A
         ...
 
 init
-    A a = new B()
+    let a = new B()
     // we know that a is actually of type B, so we can safely cast it to B:
-    B b = a castTo B
+    let b = a castTo B
     // now we can call functions from class B
     b.special()
 ```
@@ -267,7 +262,7 @@ class B extends A
         print("I'm B")
 
 init
-    A a = new B()
+    let a = new B()
     a.printOut()
     // this will print "I'm B", even though it's a type A variable
 ```
@@ -292,7 +287,7 @@ class B extends A
         print("Instance of B named: " + name )
 
 init
-    A a = new B("first") // This works because B extends A
+    let a = new B("first") // This works because B extends A
     a.printName() // This will print "Instance of B named: first", because a is an Instance of B.
 ```
 
@@ -357,7 +352,7 @@ class A
 class B extends A
 
 init
-    A a = new B()
+    let a = new B()
 
     if a instanceof B
         print("It's a B")
@@ -442,7 +437,7 @@ from its superclass, it has to be abstract, too.
 interface Listener
     function onClick()
 
-    function onAttack( real x, real y ) returns boolean
+    function onAttack(real x, real y) returns boolean
 
 
 class ExpertListener implements Listener
@@ -450,8 +445,8 @@ class ExpertListener implements Listener
         print("clicked")
 
 
-    function onAttack( real x, real y ) returns boolean
-        flashEffect(EFFECT_STRING, x ,y)
+    function onAttack(real x, real y) returns boolean
+        flashEffect(EFFECT_STRING, x, y)
 ```
 
 

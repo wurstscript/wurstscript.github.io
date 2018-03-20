@@ -1,16 +1,17 @@
 ---
 title: Showcase
 excerpt: Maps achieved with WurstScript.
-date: 2018-01-29
+date: 2018-03-20
 icon:
   name: icon_genius
 color: primary
 sections:
   - /showcase/mapshowcase
+  - /showcase/libshowcase
 ---
 
 <div class="jumbotron">
-# *&nbsp;*{: .fa .fa-twitter} Submit your own map!
+# *&nbsp;*{: .fa .fa-twitter} Submit your own project!
 
-You can submit your own map using our [Issue Tracker](https://github.com/wurstscript/wurstscript.github.io/issues)!
+You can submit your own resource using our [Issue Tracker](https://github.com/wurstscript/wurstscript.github.io/issues)!
 </div>
