@@ -1,30 +1,30 @@
 ---
-title: Install VSCode
+title: 安装 VSCode
 sections:
-  - Download JRE
-  - Install Wurst Plugin
+  - 安装 VSCode
+  - 安装 Wurst 插件
 ---
 
-VSCode is a free, open source, cross platform code editor. WurstScript support is provided through a VSCode plugin.
+VSCode 是一个免费、开源、跨平台的代码编辑器。在VSCode中，我们有一个插件来支持WurstScript。
 
-### Install VSCode
+### 安装 VSCode
 
-[*&nbsp;*{: .fa .fa-download} Download VSCode](https://code.visualstudio.com/){: .btn .btn-blue}
+[*&nbsp;*{: .fa .fa-download} 下载 VSCode](https://code.visualstudio.com/){: .btn .btn-blue}
 
-Download and install VSCode on your system.
+在你的系统中下载并安装VSCode。
 
-Once finished, open VSCode and continue to the next step
+完成后，打开VSCode并继续下一步。
 
-### Install Wurst Plugin
+### 安装 Wurst 插件
 
-Press F1 to open the VSCode command prompt and run the task **>Install Extensions**:
+按下F1键打开VSCode的命令窗口，输入指令：`> Install Extensions`：
 
 ![](/assets/images/setup/InstallExtensions.png){: .img-responsive}
 
-In the panel that opened on the left, type **Wurst** into the search bar and press enter. Install the **Wurst language support** plugin.
+左侧打开的面板中，在搜索栏中输入 **Wurst** 然后按下回车键，安装 **Wurst language support** 插件。
 
 ![](/assets/images/setup/InstallWurstExtension.png){: .img-responsive}
 
-Reload the window to activate the plugin.
+重新加载窗口以激活插件。
 
-You can minimize VSCode now and continue with the next steps
+随后你可以最小化VSCode并继续执行下一步。

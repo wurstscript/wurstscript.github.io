@@ -1,6 +1,6 @@
 ---
-title: Manual
-excerpt: Formal description of all language features.
+title: 手册
+excerpt: Wurst所有语法的官方介绍。
 date: 2018-03-20
 icon:
   name: icon_info

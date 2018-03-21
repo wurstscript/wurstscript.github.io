@@ -1,6 +1,6 @@
 ---
-title: Blog
-excerpt: Home of 'Best of the Wurst' (Last post Feb '18).
+title: 博客
+excerpt: "'Best of the Wurst' 的首页<br>(最近更新：Feb '18)."
 date: 2018-02-01
 color: pink
 icon:

@@ -1,46 +1,44 @@
 ---
-title: Install Wurst
+title: 安装 Wurst
 sections:
-  - Install Compiler
-  - Create Project
+  - 安装编译器
+  - 创建项目
+  - 更新和导入项目
 ---
 
-Now we will setup a Wurst compiler environment and create a project using the the Wurst Setup.
+现在我们将配置一个Wurst编译器环境，并使用Wurst安装程序创建一个项目。
 
-[*&nbsp;*{: .fa .fa-download} Download WurstSetup](https://peeeq.de/hudson/job/WurstSetup/lastSuccessfulBuild/artifact/downloads/WurstSetup.jar){: .btn .btn-green}
+[*&nbsp;*{: .fa .fa-download} 下载 Wurst安装程序](https://peeeq.de/hudson/job/WurstSetup/lastSuccessfulBuild/artifact/downloads/WurstSetup.jar){: .btn .btn-green}
 
-Once the download has finished, run the .jar to begin.
+下载完成后，运行.jar开始。
 
 ![](/assets/images/setup/WurstSetup.png){: .img-responsive}
 
-### Install Compiler
+### 安装编译器
 
-The setup will check if the compiler has already been installed. If not, you are required to install it
-before you can create a project.
+该设置将检查编译器是否已经安装。 如果没有，则需要先安装它，然后才能创建项目。
 
-To install the compiler simply click the **Install Wurst** button. 
-When everything is done, the setup should tell you that your installation is up to date and the **Create Project** button is now enabled:
+要安装编译器，只需点击 **Install Wurst** 按钮。
+当一切完成后，安装程序应该会显示你的安装是最新的，现在 **Create Project** 按钮可以使用了：
 
 ![](/assets/images/setup/WurstInstallDone.png){: .img-responsive}
 
-### Create Project
+### 创建项目
 
-Now that the compiler is installed you can go ahead and create your Wurst project.
-Select your desired project folder and name and start the process by clicking the **Create Project** button.
-The setup will now create a wurst project structure and download the necessary dependencies.
-If everything setup correctly, you should see the following message:
+编译器安装完成，你可以继续创建你的Wurst项目了。
+选择你想要的项目文件夹和名称，然后单击 **Create Project** 按钮启动该过程。
+安装程序现在将创建一个Wurst项目结构，并下载必要的依赖项。
+如果一切安装正确，你应该会看到下方的消息：
 
 ![](/assets/images/setup/ProjectSetupDone.png){: .img-responsive}
 
-When the setup has finished, you can now open the project's root folder in VSCode.
-Open the Hello.wurst file to activate the Wurst plugin. The code should compile and the setup should be done.
+安装完成后，你现在可以在VSCode中打开项目的根文件夹。
+打开Hello.wurst文件来激活Wurst插件，代码应该会开始编译，并且完成项目搭建。
 
-If you are new to WurstScript but not new to programming, you probably want to continue with the [*&nbsp;*{: .fa .fa-external-link-square} Beginner's Guide](tutorials/wurstbeginner.html)
+如果你只是WurstScript的新手，但并不是编程的新手，那么你可能会需要[*&nbsp;*{: .fa .fa-external-link-square} Wurst入门指南](tutorials/wurstbeginner.html)。
 
-### Updating and importing Projects
+### 更新和导入项目
 
-By clicking the import button you can load an existing wurst.build file. After a successful load clicking the `Update Project` button will update your dependencies and generate local files as necessary. You should use this feature to update your existing projects and to import newly cloned projects.
-
-
-
-
+通过点击导入按钮，你可以加载一个现有的wurst.build文件。
+点击“更新项目”按钮后，将更新你的项目依赖关系并根据需要生成必要的本地文件。
+你应该使用此功能来更新现有项目并导入新克隆的项目。

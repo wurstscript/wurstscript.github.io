@@ -1,7 +1,12 @@
 #
+# Github settings
+#
+repository: LazyKnightX/wurstscript.github.io
+
+#
 # Site settings
 #
-plugins:
+plugins_dir:
   - jekyll-seo-tag
   - jekyll-redirect-from
   - jekyll-sitemap
@@ -17,7 +22,7 @@ image: /assets/images/wurst_icon256.png
 baseurl: 
 blogurl: /blog
 highlighter: rouge
-title: &site_title WurstScript
+title: &site_title WurstScript (CN)
 description: &site_description Programming language and IDE that compiles to Jass which is used in WarCraft III. The first complete, all-in-one warcraft modding environment. Get starting making your own warcraft 3 maps today - cross platform and editor independent.
 branding:
   icon:
