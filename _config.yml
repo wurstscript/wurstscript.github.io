@@ -24,7 +24,7 @@ baseurl:
 blogurl: /blog
 highlighter: rouge
 title: &site_title WurstScript (CN)
-description: &site_description Programming language and IDE that compiles to Jass which is used in WarCraft III. The first complete, all-in-one warcraft modding environment. Get starting making your own warcraft 3 maps today - cross platform and editor independent.
+description: &site_description 一款为魔兽争霸3打造的编译语言和IDE，首个完整的一体化魔兽MOD开发环境。立即开始制作你自己的魔兽争霸3地图！同时也支持跨平台和独立编辑器。
 branding:
   icon:
     name: icon_documents_alt
