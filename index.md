@@ -8,7 +8,7 @@ tagline: |
   *“释放你指尖的力量、效率，与速度！”*
 heading: 立即开始使用Wurst！
 
-description: Modern Warcraft 3 modding toolchain
+description: 一个现代化的魔兽争霸3 MOD开发工具链。
 
 redirect_from:
   - /WurstScript/
