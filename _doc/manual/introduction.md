@@ -1,34 +1,31 @@
 ---
-title: Introduction
+title: 介绍
 sections:
-- Philosophy
-- Values and Types
-- Syntax
-- Basics
+- 概念
+- 值与类型
+- 语法
+- 基础
 ---
 
-### Philosophy
+### 概念
 
-WurstScript is an imperative, object-oriented, statically-typed, beginner-friendly programming language.
+WurstScript是一种命令式的，面向对象的，静态类型的，对初学者友好的编程语言。
 
-WurstScript provides a comfortable workflow to produce readable and maintainable code.
-Ease of use and stress-free map development take higher priority than execution speed of the final product.
-WurstScript is easy to use and learn, especially with prior knowledge of Jass or any other programming language, while still staying
-simple and readable to non-programmers.
+WurstScript提供了一个舒适的工作流程来生成可读和可维护的代码。 易于使用和无压力地图开发优先于最终产品的执行速度。 WurstScript易于使用和学习，特别是对于Jass或任何其他编程语言的先前知识，同时仍然对非程序员保持简单和易读性。
 
-While we know that WurstScript won't replace vJass in the WC3 mapping scene (one reason being tons of vJass scripts that can't be easily ported), we still hope it will  serve as a very good alternative, in particular for users that are trying to learn Jass.
+虽然我们知道WurstScript不会替换WC3映射场景中的vJass（原因之一是vJass脚本无法轻松移植），但我们仍然希望它能成为一个非常好的选择，特别是对于那些试图学习Jass的人。
 
-> Note that this manual is not a beginner's tutorial and expects the reader to have prior knowledge in programming. 
-[Click here for a beginner's guide.](tutorials.html)
+> 请注意，本手册不是新手入门教程，需要读者具有编程知识。 
+[点此查看入门教程](tutorials.html)
 
-### Values and Types
+### 值与类型
 
-WurstScript is a statically typed language. This means variables can only hold values of the same type. Additionally since all types are determined at compiletime,
-incorrect assignments will throw errors.
+WurstScript是一种静态类型语言。这意味着变量只能保存相同类型的值。
+此外，由于所有类型都是在编译时确定的，不正确的赋值会抛出错误。
 
-Wurst has the same 5 basic types (or primitives) as Jass: **null, boolean, int, real, string**
+Wurst有与Jass相同的5种基本变量类型：**null, boolean, int, real, string**。
 
-In this example you can see the static types of the variables on the left. If the assignment on the right isn't of the same type, it will throw an error.
+在这个例子中，你可以看到左侧变量的静态类型。如果右侧的赋值与左侧不属于同一类型，则会引发错误。
 ```wurst
 boolean b = true // true or false
 int i = 1337 // integer, i.e. value without decimals
@@ -42,10 +39,10 @@ string r = "yes" // OK
 string s = i // Error
 ```
 
-### Syntax
+### 语法
 
-WurstScript uses indentation based syntax to define Blocks. You can use either spaces or tabs for indentation, but mixing both will throw a warning.
-In the following we use the word "tab" to refer to the tab character or to 4 space characters.
+WurstScript使用基于缩进的语法来定义块。您可以使用空格或制表符进行缩进，但将两者混合会引发警告。
+在下面我们使用单词“tab”来指代制表符或4个空格字符。
 
 ```wurst
 // Wurst example. 'ifStatements' need to be indented
@@ -65,14 +62,14 @@ endif
 nextStatements
 ```
 
-In general newlines come at the end of a statement, except for the following cases:
+一般而言，除了以下情况，换行符会在语句末出现：
 
-- A newline is ignored if the line ends with `(` or `[`
-- A newline is ignored before a line beginning with `)`, `]`,`.`, `..`, or `begin`
-- A newline is ignored, if the line ends or begins with:
+- 当一行语句以 `(` 或 `[` 结束时。
+- 当下一行以 `)`, `]`,`.`, `..`, 或 `begin` 开始时。
+- 当行尾以下方符号结束时：
     `,`, `+`, `*`, `-`, `div`, `/`, `mod`, `%`, `and`, `or`, `?`, `:`
 
-You can use this to break longer expressions or long parameter lists over several lines, or to chain method invocations:
+您可以使用它们来打破一些过长的表达式或长参数列表，或链式方法调用：
 ```wurst
 someFunction(param1, param2,
 	param3, param4)
@@ -86,19 +83,19 @@ new Object()
 	..doSomething()
 ```
 
-WurstScript tries to avoid excessive verbosity and symbols, to stay concise and readable.
+WurstScript试图避免过度冗长的语句和符号，以保持代码的简洁和可读性。
 
+### 基础
 
-### Basics
+以下是Wurst的核心功能的简要概述，阅读这些概述以便你可以立即开始编程。
 
-The following is a short overview of the core language features so you can get coding in no time. For a more detailed documentation of each topic,
-refer to the dedicated chapters further down the page.
+关于每个主题的更详细的文档，请参阅页面下方的专用章节。
 
-Wurst code is organized into **packages**. Any piece of code must be inside a package in order to be recognized.
-Packages can **import** other packages in order to gain access to variables, functions, classes, defined in the imported package.
-Packages have an optional _init_ block that is executed when the map is run.
+Wurst代码被组织成**包**。 任何一段代码都必须放在包中才能被识别。
+包可以**导入**其他包，以访问导入包中定义的变量，函数和类。
+包有一个可选的_init_块，在地图运行时执行。
 
-Let's look at a classic **Hello World** example.
+我们来看一个经典的 **Hello World** 示例。
 
 ```wurst
 package HelloWurst
@@ -111,22 +108,23 @@ init
 	print("Hello Wurst!")
 ```
 
-If you run this example, the message "Hello Wurst!" will be displayed after the map has loaded.
+如果你运行这个例子，地图加载后将会显示 “Hello Wurst！” 。
 
-As you might have noticed, the ```import Printing``` will throw a warning, because it is already automatically imported. 
-You can remove the import, it just served as illustration on how to import packages.
+正如你可能已经注意到的那样，```import Printing```会引发警告，因为它已经被自动导入。
+您可以删除导入，它只是用来说明如何导入包。
 
-For more information about packages, refer to the packages section.
+有关包的更多信息，请参阅**包**章节。
 
-You can still use normal Jass syntax/code outside of packages - the Wurst World Editor will parse jass (and vjass, if jasshelper is enabled), in addition to compiling your Wurst code.
+你仍然可以在包之外使用普通的 Jass语法/代码 - Wurst World Editor 将解析Jass（如果启用了JassHelper，则为vJass），并且编译你的Wurst代码。
 
-For more information about using maps with mixed wurst/jass code, refer to the "Using Wurst with legacy maps" section.
+有关使用具有混合 Wurst/Jass 代码的地图的更多信息，请参阅“在传统地图中使用Wurst”部分。
 
-#### Functions
+#### 函数
 
-A **function** definition consists of a name, a list of formal parameters and a return
-type. The return type is declared after the formal parameters using the **returns** keyword.
-If the function does not return a value this part is omitted.
+**function** 定义由名称，形式参数列表和返回值类型组成。
+返回类型是在使用 **returns** 关键字的参数之后声明的。
+如果该函数没有返回值，则该部分将被忽略。
+
 ```wurst
 // this function returns the maximum of two integers
 function max(int a, int b) returns int
@@ -157,12 +155,13 @@ function foobar()
 	int i2 = i // support for locals anywhere inside a function
 ```
 
-#### Variables
+#### 变量
 
-Global variables can be declared anywhere in the top level of a package.
-Local variables can be declared anywhere inside a function.
-A constant value may be declared using the _constant_ or _let_ keyword.
-Mutable variables are declared by using the _var_ keyword or the name of it's type.
+全局变量可以在包内的任何顶级层声明。
+局部变量可以在函数内的任何地方声明。
+常量可以使用 _constant_ 或 _let_ 关键字来声明。
+变量通过使用 _var_ 关键字或其类型的名称来声明。
+
 ```wurst
 // declaring a constant - the type is inferred from the initial expression
 constant x = 5
@@ -191,6 +190,5 @@ function getUnitInfo( unit u )
 	let sum = x + y
 ```
 
-
-With these basic concepts you should be able to do anything you already know from Jass.
-We will touch on more advanced topics in the next chapters.
+有了这些基本概念，你应该可以做任何你在Jass学到的事情。
+我们将在接下来的章节中谈谈更深入的话题。
