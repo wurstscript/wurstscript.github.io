@@ -1,7 +1,8 @@
 #
 # Github settings
 #
-repository: LazyKnightX/wurstscript.github.io
+repository: LazyKnightX/wurst.wow8.org
+destination: docs
 
 #
 # Site settings
@@ -16,7 +17,7 @@ gems:
   - jekyll-redirect-from
   - jekyll-sitemap
 
-url: https://wurstlang.org/
+url: http://wurst.wow8.org/
 logo: /assets/images/wurst_icon64.png
 image: /assets/images/wurst_icon256.png
 baseurl: 
@@ -42,7 +43,7 @@ kramdown:
   parse_block_html: true
   syntax_highlighter_opts:
     disable : true
-google_site_verification: googlee4f4af3121cc4c25.html
+# google_site_verification: googlee4f4af3121cc4c25.html
 
 #
 # Social
@@ -55,7 +56,7 @@ social:
 
 share:
   github:
-    repo: wurstscript/WurstScript
+    repo: LazyKnightX/wurst.wow8.org
     position: center
 
 #
@@ -65,7 +66,6 @@ collections:
   doc:
     output: true
     permalink: /:path.html
-
 
 #
 # Default values

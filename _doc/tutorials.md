@@ -7,7 +7,7 @@ icon:
 color: purple
 layout: home
 tagline: |
-  使用美味的编程语言来撰写Jass。
+  使用劲道十足的“香肠”来撰写Jass。
   
   *“释放你指尖的力量、效率，与速度！”*
 heading: 选择一个教程
