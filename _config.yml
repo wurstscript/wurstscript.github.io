@@ -1,7 +1,13 @@
 #
+# Github settings
+#
+repository: LazyKnightX/wurst.wow8.org
+destination: docs
+
+#
 # Site settings
 #
-plugins:
+plugins_dir:
   - jekyll-seo-tag
   - jekyll-redirect-from
   - jekyll-sitemap
@@ -11,14 +17,14 @@ gems:
   - jekyll-redirect-from
   - jekyll-sitemap
 
-url: https://wurstlang.org/
+url: http://wurst.wow8.org/
 logo: /assets/images/wurst_icon64.png
 image: /assets/images/wurst_icon256.png
 baseurl: 
 blogurl: /blog
 highlighter: rouge
-title: &site_title WurstScript
-description: &site_description Programming language and IDE that compiles to Jass which is used in WarCraft III. The first complete, all-in-one warcraft modding environment. Get starting making your own warcraft 3 maps today - cross platform and editor independent.
+title: &site_title WurstScript (CN)
+description: &site_description 一款为魔兽争霸3打造的编译语言和IDE，首个完整的一体化魔兽MOD开发环境。立即开始制作你自己的魔兽争霸3地图！同时也支持跨平台和独立编辑器。
 branding:
   icon:
     name: icon_documents_alt
@@ -37,7 +43,7 @@ kramdown:
   parse_block_html: true
   syntax_highlighter_opts:
     disable : true
-google_site_verification: googlee4f4af3121cc4c25.html
+# google_site_verification: googlee4f4af3121cc4c25.html
 
 #
 # Social
@@ -50,7 +56,7 @@ social:
 
 share:
   github:
-    repo: wurstscript/WurstScript
+    repo: LazyKnightX/wurst.wow8.org
     position: center
 
 #
@@ -60,7 +66,6 @@ collections:
   doc:
     output: true
     permalink: /:path.html
-
 
 #
 # Default values

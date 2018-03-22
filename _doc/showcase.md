@@ -1,6 +1,6 @@
 ---
-title: Showcase
-excerpt: Maps achieved with WurstScript.
+title: 陈列馆
+excerpt: 使用WurstScript完成的地图。
 date: 2018-03-20
 icon:
   name: icon_genius

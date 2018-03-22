@@ -1,6 +1,6 @@
 ---
-title: Setup Guide
-excerpt: Download, installation and setup of a wurst project.
+title: 搭建教程
+excerpt: 下载、安装并搭建一个Wurst项目。
 date: 2018-02-09
 icon:
   type: fa

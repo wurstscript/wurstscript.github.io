@@ -1,14 +1,14 @@
 ---
 layout: home
-title: Home
+title: 首页
 image: /assets/images/wurst_icon64.png
 tagline: |
-  Delicious programming language that compiles to Jass.
+  使用劲道十足的“香肠”来撰写Jass。
   
-  *"Puts power, efficiency, and speed at your fingertips"*
-heading: Get started using Wurst.
+  *“释放你指尖的力量、效率，与速度！”*
+heading: 立即开始使用Wurst！
 
-description: Modern Warcraft 3 modding toolchain
+description: 一个现代化的魔兽争霸3 MOD开发工具链。
 
 redirect_from:
   - /WurstScript/
@@ -23,6 +23,6 @@ navigation:
 
 <div class="cta-container">
 
-[*&nbsp;*{: .fa .fa-cloud-download} Download Setup App](http://peeeq.de/hudson/job/WurstSetup/lastSuccessfulBuild/artifact/downloads/WurstSetup.jar){: .btn .btn-primary .btn-cta}
+[*&nbsp;*{: .fa .fa-cloud-download} 下载安装程序](http://peeeq.de/hudson/job/WurstSetup/lastSuccessfulBuild/artifact/downloads/WurstSetup.jar){: .btn .btn-primary .btn-cta}
 
 </div>

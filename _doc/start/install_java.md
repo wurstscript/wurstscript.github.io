@@ -1,34 +1,34 @@
 ---
-title: Install Java
+title: 安装Java
 sections:
-  - Download JRE
-  - Verify/Update Java Intallation
+  - 下载JRE
+  - 验证/更新Java
 ---
 
-WurstScript and it's related tools require Java 8 to run. Please install or verify your installation.
+WurstScript以及其相关工具需要Java8来正常运行，因此你需要确保你的电脑上安装了Java8。
 
-### Download JRE
+### 下载 JRE
 
-[*&nbsp;*{: .fa .fa-download} Download Java](https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html){: .btn .btn-orange} ![](/assets/images/setup/java_powered.png) 
+[*&nbsp;*{: .fa .fa-download} 下载 Java](https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html){: .btn .btn-orange} ![](/assets/images/setup/java_powered.png) 
 
-Download the Java Runtime appropriate for your system and follow the installation procedure.
+下载适合你系统的Java Runtime，并跟随下方的安装步骤来安装。
 
-Once finished, continue to the next step
+一旦完成后，就可进入下一步。
 
-### Verify/Update Java Installation
+### 验证/更新Java
 
-Many tasks rely on a environment variable called **JAVA_HOME** which might not have been set by the installer.
-To verify your installation, open a command prompt and enter `java -version`
+WurstScript的许多功能依赖于电脑上的环境变量 **JAVA_HOME** ，但这个变量可能并没有在安装过程中自动被添加。
+打开你的命令行窗口，输入 `java -version` 来验证你当前安装的JAVA版本。
 
-A valid installation will return something like this:
+如果你的Java正确安装了，就应该能够看到如下的消息：
 
 ![](/assets/images/setup/JavaVerify.png){: .img-responsive}
 
-Make sure your minor version `1.8.0_xxx` (xxx) is higher than **101** to avoid any certificate issues. 
-If it is lower, make sure to update your Java installation, otherwise your connection will be insecure.
+注意需要确保你的最小版本号 `1.8.0_xxx` (xxx部分) 大于 **101** ，从而避免一些证书问题。
+如果最小版本号小于**101**，你应该更新你的Java，否则你的连接可能会不安全。
 
-If you get an error or get a lower version displayed even though you installed a newer one, your **JAVA_HOME** is either missing or configured wrong.
+如果你输入了上方指令后得到了一个错误提示，或者在你安装了新版Java后，你的版本号仍然显示的是旧版本的话，有可能你的 **JAVA_HOME** 环境变量还没有设置，或者设置错了路径。
 
-Refer to [*&nbsp;*{: .fa .fa-external-link-square} These Tutorials](http://www.baeldung.com/java-home-on-windows-7-8-10-mac-os-x-linux) in order to setup your **JAVA_HOME** correctly.
+参考 [*&nbsp;*{: .fa .fa-external-link-square} 这些教程](http://www.baeldung.com/java-home-on-windows-7-8-10-mac-os-x-linux) 来正确设置你的 **JAVA_HOME** 环境变量。
 
-Once you have setup Java correctly, continue by installing VSCode.
+当你正确安装完Java后，接着安装VSCode。
