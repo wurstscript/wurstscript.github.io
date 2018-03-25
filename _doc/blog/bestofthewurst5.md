@@ -22,7 +22,7 @@ At this time, we do not plan to have a separate branch to support PTR installs. 
 We are actively thinking about what the PTR changes will mean for us and how it should affect 2018's timeline. For example, now that 24-player maps are coming, we will prioritize support for editing map player metadata from vscode.
 
 
-![](/assets/images/blog/bestof5/24players.png){: .img-responsive}
+![](/assets/images/blog/bestof5/24players.jpg){: .img-responsive}
 Above: 24 unique player-colors, in wurst!
 
 Updates
