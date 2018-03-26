@@ -21,10 +21,11 @@ When I (evangelize?) discuss wurst, I tend to hear weird arguments against using
 Some of them are interesting, like "well I can't justify learning it", or "my map is already using vJass", but other arguments tend to be outlandish and worth some education.
 More concretely, lots of arguments about wurst are spoilt by misunderstanding or misinformation.
 
-For what it's worth, wurst is an easy language to learn, and you can write wurst in a map that use vJass, but I digress.
+For what it's worth, wurst is an easy language to learn, and you can write wurst in a map alongside vJass, but I digress.
 
 As background: I switched to using wurst in the last couple years after fairly extensive experience writing vJass.
 The switch was easy - I decided to "try" wurst on a toy map, and immediately realized that I was previously wearing blinders, and indeed was *misled* by the public opinion of others.
+Not only me, but also many other developers have since come into contact with wurst and appreciate it as a high level alternative to vjass or zinc.
 
 So this tutorial is about learning, but it's also about justice.
 
@@ -37,7 +38,7 @@ The more interesting discussion revolves around understanding what vJass is not,
 
 ### Preprocessor
 
-Fundamentally, vJass is a pre-processed language that gets simply transformed into Jass, and this has lots of side-effects:
+Fundamentally, vJass is a pre-processed language that gets very naively transformed into Jass, which has lots of side-effects:
 
 {: .answer}
 ### *&nbsp;*{: .fa .fa-exclamation-circle} Key point: Type-Safety is the concept of checking that the values and functions a programmer uses are *consistent* - e.g. that the user never tries to give a timer to a function that takes an integer.
@@ -45,8 +46,8 @@ Fundamentally, vJass is a pre-processed language that gets simply transformed in
 * vJass Generates code for you, but otherwise is very limited to abstraction - you just can't express higher level concepts safely in vJass because instances of structs are always integers - the compiler can't check anything for you - so type-safety is lost entirely.
   vJass does at least have some validation, but that's not being done by JassHelper - PJass is checking the emitted jass, but can't do anything smart at the vJass level.
 * No "abstract syntax tree" (building blocks of code that a compiler understands) - so adding new features to JassHelper is very expensive and requires detailed knowledge of the system, which makes it hard for anyone else to take up ownership.
-* Compiler-aided optimisation is impossible.  Wurst can inline functions, cull unused code, automatically null variables, etc.
-  JassHelper can inline 1-line functions, but this is pushing the boundaries of JassHelper's capabilities.
+* Compiler-aided optimisation is impossible. Wurst can inline functions, cull unused code, automatically null variables, etc.
+  JassHelper can inline 1-line functions, but this is pushing the boundaries of its capabilities.
 
 ### Limited tooling
 
@@ -55,8 +56,8 @@ JNGP/WEX are excellent tools because they attempt to *centralise tooling* into a
 Wurst also centralises tooling - to your code editor, intead of to your world editor.
 This adds boundless value because code editors are designed from scratch to be extensible, whereas our world editors have to hack the blizzard interface using Grimoire.
 
-* You can work on your map without wc3 or any particular OS - and you can even get compiler feedback.
-* Code highlighting, autocomplete, Jump-to-declaration - these are features that TESH *can't* do.
+* You can work on your map without wc3 or any particular OS - and you still get compiler feedback.
+* Code highlighting, autocomplete, Jump-to-declaration for all code - these are features that TESH *can't* do.
 * Code gets parsed live - the feedback loop for warnings and errors is in real time.
 
 It can feel unapproachable to be launching a map magicaly using a code editor, but it becomes second nature very fast.
@@ -71,9 +72,10 @@ Indeed, some very ubiquitous vJass libraries don't even work with the original J
 Because vjass can only expand your code into Jass, it can't make any guarantees about the type of values.
 This leads to tricky attaching and detaching of struct intances to timers and the like.
 
-Indeed, it's possible to cast instances of objects to integer in Wurst too - but that's frowned upon!
+Indeed, it's possible to cast instances of objects to integer in Wurst too - but it's not a recommended technique 
+and problems should instead be solved via dynamic dispatch or closures!
 
-Wurst at least gives you the capability to prevent entire classes of error like this.
+Wurst, like this, grants you the capability to prevent entire classes of errors.
 
 ### No Scope for Improvement
 
@@ -85,16 +87,17 @@ Of course, there are costs to using a language that's actively developed too - s
 
 ## Why wurst?
 
-### integrated developer experience with *code* first
+### Integrated developer experience with *code* first
 
 As discussed above, wurst also provides a sleek development experience - but unlike vJass, it puts the code first.
+Using object editing, compiletime functionality and the vast standard library, all objects can be represented in code and be versioned using git.
 
 ### A true compiler
 
 Wurst is a compiled language, which fundamentally gives it advantages and scope for enormous, leaping improvements, like:
 
-* updates that improve performance, by way of optimiser changes
-* debug information for failure scenarios - including in-game stack traces
+* Ipdates that improve performance, by way of optimiser changes
+* Debug information for failure scenarios - including in-game stack traces
 * Automatic nulling of variables to prevent tedious leaks
 
 ### Higher levels of abstraction
@@ -116,6 +119,9 @@ Most of the basic requirements like data structures and familiar systems like da
 `import DamageType` and done.
 Don't like the implementation?
 Implement your own and publish it for use with the wurst dependency manager, offer your own improvements upstream to the standard library, or even write your own standard library - why not?
+
+We already received many very valuable additions to the stdnard library. By peer review and contributions it ensures a flawless beginner experience,
+without needing to worry about dependencies before starting a map.
 
 ### Object editing
 

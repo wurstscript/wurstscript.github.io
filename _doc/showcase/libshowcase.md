@@ -17,7 +17,7 @@ title: Libraries
 #### Frentity
 
 {: .card-text}
-A lightweight entity framework for your bootstrapped map development experience.
+Lightweight entity framework for a sleek, bootstrapped map development experience.
 
 [*&nbsp;*{: .fa .fa-external-link-square} Git Repo](https://github.com/Frotty/Frentity)
 

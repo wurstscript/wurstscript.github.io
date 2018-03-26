@@ -156,8 +156,5 @@ If you're looking for an equivalent to some vJass library found on hiveworkshop,
 * Ask around. Chances are, one of us have already translated the vJass library you like. Cokemonkey11 in particular maintains a number of maps that were previously vJass.
 * Write it yourself! We love contributions.
 
-# Part 3
-
-Coming soon!
 
 
