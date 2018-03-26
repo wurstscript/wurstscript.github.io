@@ -1,11 +1,12 @@
 ---
 title: Introduction Part Three
 sections:
-- Explanation
-- The Standard Library
-- Coding Conventions
-- Build, deploy, and release
+- Let's make a spell
+- Imports
+- Buff Effect
+- Buff Map
 - How to find library code
+- Closing Words
 ---
 
 ------
@@ -64,7 +65,7 @@ In case the unit already has the affect, we apply some extra damage and flash an
 The next if branch checks whether the buffmap already has an entry for our unit - if that's the case, we destroy the existing timer to end the buff.
 Then we start the new timer to end the buff when it exceeded it's duration.
 
-## Buffmap
+## Buff Map
 
 `let buffMap = new HashMap<unit, CallbackSingle>()` Here we create the buffmap we talked about. Basically it allows us to save one closures instance from `ClosureTimers` per unit, that refers to a running timer for a buffs duration.
 

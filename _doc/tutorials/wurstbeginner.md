@@ -1,6 +1,6 @@
 ---
 title: Wurst Beginner Guide
-excerpt: Create your first map with Wurst (wip)
+excerpt: Create your first map with Wurst!
 date: 2018-03-26
 icon:
   type: fa
