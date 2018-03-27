@@ -90,7 +90,7 @@ Allows player to build and escape mazes created ingamed. Basically an ingame edi
 #### Wc3 Ability Draft
 
 {: .card-text}
-Brings the popular gamemmode from dota2 to wc3 melee maps
+Brings the immensely popular gamemmode from Dota 2 to Warcraft 3 melee maps.
 
 [*&nbsp;*{: .fa .fa-external-link-square} Hive Thread](https://www.hiveworkshop.com/threads/warcraft-3-ability-draft.291422/)
 
@@ -99,6 +99,35 @@ Brings the popular gamemmode from dota2 to wc3 melee maps
 
 </div>
 </div>
+<!-- End Card -->
+</div>
+<!-- End Row -->
+
+<div class="row">
+<!-- Begin Card -->
+<div class="col-sm-6 col-xs-12">
+<div class="card">
+
+[![screenshot](/assets/images/showcase/goldrushPreview.jpg){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/gold-rush-v1-1.269852/)
+
+<div class="card-block">
+
+{: .card-title}
+#### Gold Rush
+
+{: .card-text}
+A tag-style FFA map where players switch between hunter and hunted. Each player must collect 400 gold to win.  
+
+[*&nbsp;*{: .fa .fa-external-link-square} Hive Thread](https://www.hiveworkshop.com/threads/gold-rush-v1-1.269852/)
+
+</div>
+
+
+</div>
+<!-- End Card -->
+</div>
+<!-- Begin Card -->
+
 <!-- End Card -->
 </div>
 <!-- End Row -->
