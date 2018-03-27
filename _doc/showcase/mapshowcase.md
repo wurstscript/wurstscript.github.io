@@ -118,7 +118,7 @@ Brings the immensely popular gamemmode from Dota 2 to Warcraft 3 melee maps.
 {: .card-text}
 A tag-style FFA map where players switch between hunter and hunted. Each player must collect 400 gold to win.  
 
-[*&nbsp;*{: .fa .fa-external-link-square} Hive Thread](https://www.hiveworkshop.com/threads/gold-rush-v1-1.269852/)
+[*&nbsp;*{: .fa .fa-external-link-square} Hive Thread](https://www.hiveworkshop.com/threads/gold-rush-v1-1.269852/) [*&nbsp;*{: .fa .fa-external-link-square} Git Repo](https://github.com/HannesHaglund/Gold-Rush)
 
 </div>
 
