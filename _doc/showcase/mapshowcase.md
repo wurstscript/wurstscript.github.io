@@ -40,7 +40,7 @@ A fast paced mix of coop TD and Survival. Players build walls and towers to defe
 #### Microrunner TD
 
 {: .card-text}
-A TD where players controls a fragile runner which must evade the creeps while guiding them to their towers.
+A TD where players controls a fragile runner which must evade enemy creeps while guiding them to their towers.
 
 [*&nbsp;*{: .fa .fa-external-link-square} Hive Thread](https://www.hiveworkshop.com/threads/microrunnertd-1-0-2.286363/#resource-67601) [*&nbsp;*{: .fa .fa-external-link-square} Git Repo](https://bitbucket.org/Cokemonkey11/microrunnertd/src)
 
@@ -68,7 +68,7 @@ A TD where players controls a fragile runner which must evade the creeps while g
 #### Escape Builder Reloaded
 
 {: .card-text}
-Allows player to build and escape mazes created ingamed. Basically an ingame editor for escape-style maps.
+Allows players to build and escape mazes created ingame. Basically an ingame editor for escape-style maps.
 
 [*&nbsp;*{: .fa .fa-external-link-square} Hive Thread](https://www.hiveworkshop.com/threads/escape-builder-r-0-90s.184964/) [*&nbsp;*{: .fa .fa-external-link-square} Git Repo](https://github.com/Frotty/EBR)
 
