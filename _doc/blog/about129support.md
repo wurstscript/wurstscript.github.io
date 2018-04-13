@@ -14,7 +14,9 @@ date: 2018-04-13
 
 As of yesterday the 1.29 compatability changes have been merged and are available as update via the setup tool.
 This also contains the new natives and classes with instance limit increased to 32768.
+
 Community member @crojewsk already created a Pull Request for the standard library containing extension function wrappers for the new natives, which will soon be merged.
+
 With everything up to date, runmap should work as expected.
 
 ## 24 Players

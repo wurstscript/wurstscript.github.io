@@ -15,7 +15,7 @@ layout: compress
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <!-- <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"> -->
     <meta name="author" content="{{ site.owner.name }}">
 
 
@@ -41,7 +41,7 @@ layout: compress
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    {% include meta_properties.html %} {% include google_analytics.html %} {% seo %}
+    {% include meta_properties.html %} {% include google_analytics.html %} {% seo title=false %}
 </head>
 
 <body class="landing-page">
