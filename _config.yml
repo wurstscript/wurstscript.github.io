@@ -13,7 +13,7 @@ gems:
 
 url: https://wurstlang.org/
 logo: /assets/images/wurst_icon64.png
-image: /assets/images/wurst_icon256.png
+image: /assets/images/wurst_icon300.png
 baseurl: 
 blogurl: /blog
 highlighter: rouge
