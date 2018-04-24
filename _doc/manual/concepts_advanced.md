@@ -4,6 +4,7 @@ sections:
 - Enums
 - Tuple Types
 - Extension Functions
+- Vararg Functions
 - Lambdas and Closures
 - Function Overloading
 - Operator Overloading
@@ -145,6 +146,27 @@ public function BlubClass.getPrivateMember() returns real
 public function vec2.lengthSquared returns real
 	return this.x*this.x+this.y*this.y
 ```
+
+# Vararg Functions
+
+Variable argument functions can be passed an arbitrary amount of parameters of the same type. They are mostl commonly used to prevent boilerplate code and provide better API.
+Inside the function, the variable arguments can be accessed via a `for .. in` loop.
+
+Example:
+```wurst
+function asNumberList(vararg int numbers) returns LinkedList<int>
+	let list = new LinkedList<int>()
+	for number in numbers
+		list.add(number)
+	return list
+
+init
+	asNumberList(1,2,3)
+	asNumberList(44,14,651,23)
+	asNumberList(10)
+```
+
+All the calls to `asNumberList` are valid in this example and the benefit is apparent. We can pass any amount of integers to the function but we only need to implement it once.
 
 # Lambdas and Closures
 
