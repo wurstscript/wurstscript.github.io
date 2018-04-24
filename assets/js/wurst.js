@@ -19,5 +19,5 @@ Prism.languages.wurst= {
 	'number' : /\b-?(?:0[bo])?(?:(?:\d|0x[\da-f])[\da-f]*\.?\d*|\.\d+)(?:e[+-]?\d+)?j?\b/i,
 	'operator' : /[-+%=]=?|!=|\*\*?=?|\/\/?=?|<[<=>]?|>[=>]?|[&|^~]|\b(?:or|and|not)\b/,
 	'punctuation' : /(\.|[..]|->)/,
-	'annotation' : /@\w+\s/
+	'annotation' : /@\w+(\s|[(])/
 };
