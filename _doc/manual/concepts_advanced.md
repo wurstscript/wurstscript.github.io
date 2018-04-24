@@ -23,7 +23,7 @@ enum State
 	WATER
 
 init
-	State s = State.GROUND
+	let s = State.GROUND
 ```
 You can also use enums inside of classes
 ```wurst
@@ -73,11 +73,11 @@ tuple vec(real x, real y, real z)
 
 init
 	// create a new tuple value
-	vec v = vec(1,2,3)
+	let v = vec(1,2,3)
 	// change parts of the tuple
 	v.x = 4
 	// create a copy of v and call it u
-	vec u = v
+	let u = v
 	u.y = 5
 	if v.x == 4 and v.y == 2 and u.y == 5
 		testSuccess()
@@ -87,7 +87,7 @@ init
 
 tuple pair(real x, real y)
 init
-	pair p = pair(1,2)
+	var p = pair(1,2)
 	// swap the values of p.x and p.y
 	p = pair(p.y, p.x)
 	if p.x == 2 and p.y == 1
@@ -134,9 +134,9 @@ public function int.add( int value )
 	return this + value
 
 // Usage
-unit u = CreateUnit(...)
+let u = CreateUnit(...)
 ...
-print( u.getX().half() )
+print(u.getX().half())
 
 // Also classes, e.g. setter and getter for private vars
 public function BlubClass.getPrivateMember() returns real
@@ -245,7 +245,7 @@ begin keyword has to be followed by a newline and an increase in indentation.
 It is possible to have multiple lines of statements within:
 ```wurst
 doAfter(10.0, () -> begin
-	KillUnit(u)
+	u.kill()
 	createNiceExplosion()
 	doMoreStuff()
 end)
@@ -265,7 +265,7 @@ For example, the begin-end-block above can be replaced as follows:
 
 ```wurst
 doAfter(10.0) ->
-	KillUnit(u)
+	u.kill()
 	createNiceExplosion()
 	doMoreStuff()
 ```
@@ -305,10 +305,10 @@ on the respective other copy of the variable.
 This can be observed when a variable is changed after the closure is created:
 ```wurst
 var s = "Hello!"
-let func = () -> begin
+let func = () ->
 	print(s)
 	s = s + "!"
-end
+
 s = "Bye!"
 f.run()  // will print "Hello!"
 f.run()  // will print "Hello!!"
@@ -341,7 +341,7 @@ class Closure implements CallbackFunc
 		s = s + "!"
 
 var s = "Hello!"
-CallbackFunc f = new Closure()
+let f = new Closure()
 // captured fields are set
 f.s = s
 s = "Bye!"
