@@ -1132,7 +1132,7 @@ body {
 	display: inline-block;
   }
   .cards-section {
-	padding: 60px 0;
+	padding: 40px 0;
 	background: #f9f9fb;
   }
   .cards-section .title {
@@ -1263,7 +1263,21 @@ body {
 	.cards-section .item-inner {
 	  padding: 30px 15px;
 	}
+  
+  .hr {
+    display:inline-block;
+    border-top: 0px solid lightgoldenrodyellow !important;
+    padding: 0;
+    margin-top: 0.5em !important;
+    border-width: 6px !important;
+  }  
+  .centerBox {
+    display:inline-block;
+    text-align:center;
   }
+}
   /* Small devices (tablets, 768px and up) */
   /* Medium devices (desktops, 992px and up) */
   /* Large devices (large desktops, 1200px and up) */
+
+

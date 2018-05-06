@@ -70,7 +70,7 @@ layout: compress
         </header>
 
         <section class="cards-section text-center">
-            <div class="container">
+            <div class="container text-center">
 
                 <h2 class="title">{{ page.heading }}</h2>
 
@@ -79,15 +79,20 @@ layout: compress
 
                 {% include navigation.html navigation=page.navigation %}
 
+                <div class="alert alert-info" style="display:inline-block;">
+                Please report any bugs, issues or requests on our
+                <a href="https://github.com/{{ site.share.github.repo }}/issues/new"
+                    title="Issue Tracker on Github">
+                    Issue Tracker</a>.
+                </div>
+
             </div>
-            Please report any bugs, issues or requests on our
-            <a href="https://github.com/{{ site.share.github.repo }}/issues/new"
-                title="Issue Tracker on Github">
-                Issue Tracker</a>.
+            
         </section>
 
 
     </div>
+    {% include whywurst.html %}
 
     {% include footer.html %}
 
