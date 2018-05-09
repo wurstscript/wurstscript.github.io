@@ -2,11 +2,14 @@ language: ruby
 rvm:
 - 2.3.3
 
+before_script:
+  - sudo rm Gemfile.lock
+
 script: 
-  - bundle lock --add-platform ruby
-  - bundle lock --add-platform x86_64-linux
   - bundle exec jekyll build
 
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true #
+
+sudo: required
