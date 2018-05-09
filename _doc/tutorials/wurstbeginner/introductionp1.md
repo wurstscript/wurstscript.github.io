@@ -35,7 +35,7 @@ Let's go through all the files:
 - **/imports** All files inside this folder will be imported into your map upon saving.
 - **/wurst** All files in this folder that end with **.wurst, .jurst, .j** will be parsed as code.
 - **.gitignore** Useful template if you want to make your wurst project a git repo as well
-- **MyMap.w3x** An example tft map containing a Bloodmage
+- **ExampleMap.w3x** An example tft map containing a Bloodmage
 - **wurst_run.args** Defines a set of flags to use when running a map from VSCode
 - **wurst.build** Contains project information
 - **wurst.dependencies** Generated file that links libraries. Shouldn't be touched.
@@ -61,26 +61,38 @@ Let's take a look at the code:
 ```wurst
 package Hello
 
-// Wurst demo package
+/* Hello and welcome to Wurst!
+This is just a demo package. 
+You can modify it to tests things out 
+and then later delete it and create your own, new packages.
+Enjoy WurstScript? Consider starring our repo https://github.com/wurstscript/WurstScript */ 
 init
 	print("Hello World")
 ```
+
 The first line 
-```wurst 
-package Wurst
 
+```wurst 
+package Hello
 ```
-is the package declaration. Each file contains exactly one package that is named like the file without the ending. Apart from comments this must be the first line
-in any .wurst file.
+
+is the package declaration. Each file contains exactly one package that is named like the file without the ending. Apart from comments this must be the first line in any .wurst file. The next bunch of lines
 
 ```wurst 
-// Wurst demo package
+/* Hello and welcome to Wurst!
+This is just a demo package. 
+You can modify it to tests things out 
+and then later delete it and create your own, new packages.
+Enjoy WurstScript? Consider starring our repo https://github.com/wurstscript/WurstScript */ 
+```
+
+are comments. The final two lines
+
+```wurst 
 init
 	print("Hello World")
 ```
-The third line is a comment, and the fourth line starts an **init**-block by just containing the **init** keyword without indentation.
-Everything indented after this keyword is inside it's block of contents, such as the **print** statement in line 5, which displays the given text on the screen for all players.
+
+starts an **init**-block by just containing the **init** keyword without indentation.
+Everything indented after this keyword is inside it's block of contents, such as the **print** statement, which displays the given text on the screen for all players.
 All blocks automatically end at the end of the file, such as the **init** and **package** blocks in this example.
-
-
-
