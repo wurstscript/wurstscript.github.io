@@ -3,6 +3,8 @@ rvm:
 - 2.3.3
 
 script: 
+  - bundle lock --add-platform ruby
+  - bundle lock --add-platform x86_64-linux
   - bundle exec jekyll build
 
 env:
