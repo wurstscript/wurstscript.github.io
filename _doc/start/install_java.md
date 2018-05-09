@@ -29,6 +29,6 @@ If it is lower, make sure to update your Java installation, otherwise your conne
 
 If you get an error or get a lower version displayed even though you installed a newer one, your **JAVA_HOME** is either missing or configured wrong.
 
-Refer to [*&nbsp;*{: .fa .fa-external-link-square} These Tutorials](http://www.baeldung.com/java-home-on-windows-7-8-10-mac-os-x-linux) in order to setup your **JAVA_HOME** correctly.
+Refer to [*&nbsp;*{: .fa .fa-external-link-square} These Tutorials](https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html) in order to setup your **JAVA_HOME** correctly.
 
 Once you have setup Java correctly, continue by installing VSCode.
