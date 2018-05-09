@@ -35,7 +35,7 @@ Let's go through all the files:
 - **/imports** All files inside this folder will be imported into your map upon saving.
 - **/wurst** All files in this folder that end with **.wurst, .jurst, .j** will be parsed as code.
 - **.gitignore** Useful template if you want to make your wurst project a git repo as well
-- **MyMap.w3x** An example tft map containing a Bloodmage
+- **ExampleMap.w3x** An example tft map containing a Bloodmage
 - **wurst_run.args** Defines a set of flags to use when running a map from VSCode
 - **wurst.build** Contains project information
 - **wurst.dependencies** Generated file that links libraries. Shouldn't be touched.
