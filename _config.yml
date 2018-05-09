@@ -11,6 +11,7 @@ gems:
   - jekyll-redirect-from
   - jekyll-sitemap
 
+exclude: [vendor]
 repository: wurstscript/wurstscript.github.io
 url: https://wurstlang.org/
 logo: /assets/images/wurst_icon64.png
