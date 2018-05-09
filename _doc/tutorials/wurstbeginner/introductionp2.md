@@ -129,7 +129,7 @@ Note that we used the type `angle` instead of a plain real. This is a tuple-type
 
 # Build, deploy, and release
 
-Think of `MyMap.w3x` as a "terrain" map. It's the place you go to make terrain, doodad, and destructable changes; and wurst uses that as a starting point when compiling a mapfile for test or release. Other changes like gameplay constants also go in the terrain map, but the point remains the same.
+Think of `ExampleMap.w3x` as a "terrain" map. It's the place you go to make terrain, doodad, and destructable changes; and wurst uses that as a starting point when compiling a mapfile for test or release. Other changes like gameplay constants also go in the terrain map, but the point remains the same.
 
 The terrain map is used read-only by wurst, meaning that wurst never edits or saves over that file. This is nice because it means you can edit the terrain in the world editor and the code in vscode at the same time.
 
