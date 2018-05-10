@@ -5,7 +5,8 @@ rvm:
 before_script:
   - sudo rm Gemfile.lock
 
-script: 
+script:
+  - bundle install --no-deployment
   - bundle exec jekyll build
 
 env:
