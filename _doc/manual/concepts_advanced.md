@@ -15,7 +15,7 @@ sections:
 # Enums
 
 In Wurst, __Enums__ are a shorthand wrapper for collections of named integer constants.
-Enums are no related to classes and are directly translated into the integers they represent.
+Enums are not related to classes and are directly translated into the integers they represent.
 The main purpose is to add safe, comfortable API in places where otherwise ints would be used.
 
 Usage is similar to static class members via the Enum's name:
@@ -35,7 +35,7 @@ Enums can be used as class members
 class C
 	State currentState
 
-	construct( State state )
+	construct(State state)
 		currentState = state
 ```
 
@@ -56,7 +56,7 @@ Note that in switch statements and variable assignments the qualifier `MyUnitSta
 
 To retrieve the int an enum member represents, simply cast it to the int type:
 
-```
+```wurst
 print((MyUnitState.GROUND castTo int).toString()) // Will print "1"
 ```
 
