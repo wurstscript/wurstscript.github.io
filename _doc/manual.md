@@ -1,7 +1,7 @@
 ---
 title: Manual
-excerpt: Formal description of all language features.
-date: 2018-04-24
+excerpt: Formal documentation of all language features.
+date: 2018-05-15
 icon:
   name: icon_info
 color: blue
