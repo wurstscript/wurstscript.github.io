@@ -14,18 +14,23 @@ sections:
 
 # Enums
 
-In Wurst, _Enums_ can be used to set up collections of named (int) constants.
-These Constants can then be accessed via the Enum's name:
+In Wurst, __Enums__ are a shorthand wrapper for collections of named integer constants.
+Enums are no related to classes and are directly translated into the integers they represent.
+The main purpose is to add safe, comfortable API in places where otherwise ints would be used.
+
+Usage is similar to static class members via the Enum's name:
+
 ```wurst
-enum State
+enum MyUnitState
 	FLYING
 	GROUND
 	WATER
 
-init
-	let s = State.GROUND
+let currentState = MyUnitState.GROUND
 ```
-You can also use enums inside of classes
+
+Enums can be used as class members
+
 ```wurst
 class C
 	State currentState
@@ -33,19 +38,12 @@ class C
 	construct( State state )
 		currentState = state
 ```
+
 To check the current value of an enum, you can use the switch statement.
 Note that all Enummembers have to be checked (or a defaut).
+
 ```wurst
-switch currentState
-	case State.FLYING
-		print("flying")
-	case State.GROUND
-		print("ground")
-	case State.WATER
-		print("water")
-```
-In switch statements and variable assignments the qualifier can be ommited so you can also write:
-```wurst
+let currentState = MyUnitState.GROUND
 switch currentState
 	case FLYING
 		print("flying")
@@ -54,6 +52,16 @@ switch currentState
 	case WATER
 		print("water")
 ```
+Note that in switch statements and variable assignments the qualifier `MyUnitState` can be ommited.
+
+To retrieve the int an enum member represents, simply cast it to the int type:
+
+```
+print((MyUnitState.GROUND castTo int).toString()) // Will print "1"
+```
+
+The count starts at 0, incrementing with each succeeding enum member. So for `MyUnitState` `FLYING` will be 0, `GROUND` 1 and `WATER` 2.
+
 
 # Tuple Types
 
