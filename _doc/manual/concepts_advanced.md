@@ -60,7 +60,7 @@ To retrieve the int an enum member represents, simply cast it to the int type:
 print((MyUnitState.GROUND castTo int).toString()) // Will print "1"
 ```
 
-The count starts at 0, incrementing with each succeeding enum member. So for `MyUnitState` `FLYING` will be 0, `GROUND` 1 and `WATER` 2.
+The coalescent integer value starts at 0, incrementing with each succeeding enum member. So for `MyUnitState` `FLYING` will be 0, `GROUND` 1 and `WATER` 2.
 
 
 # Tuple Types
@@ -157,7 +157,7 @@ public function vec2.lengthSquared returns real
 
 # Vararg Functions
 
-Variable argument functions can be passed an arbitrary amount of parameters of the same type. They are mostl commonly used to prevent boilerplate code and provide better API.
+Variable argument functions can be passed an arbitrary amount of parameters of the same type. They are most commonly used to prevent boilerplate code and provide better API.
 Inside the function, the variable arguments can be accessed via a `for .. in` loop.
 
 Example:
@@ -174,7 +174,7 @@ init
 	asNumberList(10)
 ```
 
-All the calls to `asNumberList` are valid in this example and the benefit is apparent. We can pass any amount of integers to the function but we only need to implement it once.
+All the calls to `asNumberList` are valid in this example and the benefit is apparent. We can pass any amount of integers to the function, but we only need to implement it once.
 
 # Lambdas and Closures
 
