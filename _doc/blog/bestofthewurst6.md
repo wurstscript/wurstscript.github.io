@@ -5,13 +5,13 @@ excerpt: This time we check out our new vararg functions and take a look at vect
 icon:
   type: fa
   name: fa-servicestack
-color: blue
+color: purple
 author: Frotty
 date: 2018-05-17
 ---
 ------
 
-![](/assets/images/blog/bestof6/wurstbanner6.png)){: .img-responsive}
+![](/assets/images/blog/bestof6/wurstbanner6.png){: .img-responsive}
 
 Wurst goes 1.29 and beyond
 ---
@@ -87,7 +87,9 @@ Want to be most efficient with wurst? Under the 'Protip' slogan we will regularl
 
 * __Use Vector Tuples__
 Instead of working with either locations, which leak and shouldn't be used, or x and y coordinates, which doubles the amount of code you have to write and the amount of mistakes you can make, Wurst provides `vec2` and `vec3` vector tuples which, unlike classes, don't have an identity and therefore are translated with zero overhead. This means you get the speed of using coordinates directly, but the comfort of class-like syntax and functionality.
+
 Some common uses:
+
 ```wurst
 // Event response
 getSpellTargetPos() // instead of GetSpellTargetX/Y
