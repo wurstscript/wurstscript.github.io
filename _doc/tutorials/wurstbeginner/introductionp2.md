@@ -8,8 +8,6 @@ sections:
 - How to find library code
 ---
 
-------
-
 # Explanation
 
 Let's go into further detail about what we just did.
@@ -18,11 +16,12 @@ Let's go into further detail about what we just did.
 
 If you have used (v)Jass before, you might wonder where the **print** came from in use above.
 
-It is neither a hardcoded wrapper around `BJDebugMsg()`, nor internal to the wurst language, but instead a function defined in *the standard library* (aka stdlib/stl).
+It is neither a hardcoded wrapper around `BJDebugMsg()`, nor internal to the wurst language. Instead it simply is a function defined in a package inside __the standard library__ (aka stdlib/stl).
 
-WurstScript ships with a standard library that contains a vast collection of convenient wrappers, utility packages, and powerful systems, which help in the creation of almost any map, and aid in maintaining a consistent syntax for high-level programming.
+WurstScript ships with a standard library that contains a vast collection of convenient wrappers, utility packages, and powerful systems, which help in the creation of any map, let you focus on content and aid in maintaining a consistent syntax for high-level programming.
 
 It has been automatically imported when you created your project using the setup tool and is now inside the `_build/dependencies/wurststdlib2` folder in your project's root. Since this is an external dependency, you should not modify these files. However, feel free to look at and learn from them.
+To update your stdanrd library dependency, use the setup's `Import` functionality.
 
 You can visit the `Printing` package in vscode by holding down the ctrl key and then clicking the function call, i.e. anywhere on the
 word **print**. 
@@ -125,7 +124,7 @@ class PreviousPointTracker
         angleToLast = pos.angleTo(oldPos)
 ```
 
-Note that we used the type `angle` instead of a plain real. This is a tuple-type and is as efficient as a normal real, but provides domain specific methods for working with angles. It also avoids some common mistakes like confusing angles in radians and degrees.
+Note that we used the type `angle` instead of a plain real. This is also a tuple-type and therefore as efficient as a normal real, but provides domain specific methods for working with angles. It also avoids some common mistakes like confusing angles in radians and degrees.
 
 # Build, deploy, and release
 
@@ -133,12 +132,13 @@ Think of `ExampleMap.w3x` as a "terrain" map. It's the place you go to make terr
 
 The terrain map is used read-only by wurst, meaning that wurst never edits or saves over that file. This is nice because it means you can edit the terrain in the world editor and the code in vscode at the same time.
 
-When you execute `buildmap` in vscode, the output mapfile - based on the terrain and wurst.build files, including all of your compiled code - is generated into the `/_build` folder. It's this which you can use to release and distribute your map online.
-The `runmap` command functions similar, however the map is named __WurstRunMap.w3x__, get copied into your warcraft maps folder and wc3 gets run with the appropriate arguments to run the map.  
+When you execute the `buildmap` task in vscode, the output mapfile - based on the terrain and `wurst.build` file, including all of your compiled code - is generated into the `/_build` folder. 
 
-It's this which you can use to release your map online.
+It's this which you can use to release and distribute your map online.
 
-One other cool feature is that wurst will automatically import contents of the `imports/` directory into the built mapfile. This can be convenient for quickly adding a model file for use in a spell, for example.
+The `runmap` command functions similar, however the map is named __WurstRunMap.w3x__, gets copied into your warcraft maps folder and Warcraft III gets executed with the appropriate arguments to run the map. Use this command to test your map.
+
+One other cool feature is that wurst will automatically import contents of the `imports/` directory into the built mapfile. This can be convenient for quickly adding a model file for use in a spell, for example. The folder paths inside the imports folder will be retained.
 
 If you want to use the imported resources inside the terrain map, copy the built mapfile from the `/_build` folder over to the project's root. Open it with the World Editor, and save it, clearing wurst's generated code. Now you'll have a terrain map with imports, which is also suitable as a starting point for the wurst editor.
 

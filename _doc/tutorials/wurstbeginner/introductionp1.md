@@ -15,7 +15,7 @@ sections:
 
 ## Welcome
 
-Hello and welcome to WurstScript. This guide is an informal introduction to the Wurst Workflow and an easy way to verify your installation.
+Hello and welcome to WurstScript. This guide is an informal introduction to the Wurst workflow and an easy way to verify your installation.
 We will cover how to structure code, use the standard library, create data objects through code and run the final product in warcraft 3.
 This guide will **not** explain the core principles of programming, i.e. how functions and variables work and how we use them.
 
@@ -24,20 +24,20 @@ This guide will **not** explain the core principles of programming, i.e. how fun
 If you setup your project correctly using the setup app, there will be many folders and files generated in the project folder you chose.
 Otherwise setup your project now.
 Load the project in VSCode by opening the project folder (`File` -> `Open Folder...`).
-It is important to open the project folder so that Wurst can detect the project.
+It is important to open the project **folder** so that Wurst can detect the project.
 After opening you should see something like this:
 
 ![](/assets/images/beginner/ProjectExplorer.png){: .img-rounded .img-responsive}
 
 Let's go through all the files:
-- **/_build** Contains dynamically generated content and shouldn't be touched by the user.
+- **/_build** Contains dynamically generated content and shouldn't be touched by the user, except for copying the compiled map.
 - **/.vscode** Contains a **settings.json** file that links vscode to the wurst tools. You can add additional project-wide configuration here.
-- **/imports** All files inside this folder will be imported into your map upon saving.
+- **/imports** All files inside this folder will be imported into your map upon saving, retaining paths.
 - **/wurst** All files in this folder that end with **.wurst, .jurst, .j** will be parsed as code.
 - **.gitignore** Useful template if you want to make your wurst project a git repo as well
 - **ExampleMap.w3x** An example tft map containing a Bloodmage
 - **wurst_run.args** Defines a set of flags to use when running a map from VSCode
-- **wurst.build** Contains project information
+- **wurst.build** Contains project build information
 - **wurst.dependencies** Generated file that links libraries. Shouldn't be touched.
 - **wurst/Hello.wurst** Demo package
 
