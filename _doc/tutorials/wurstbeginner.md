@@ -1,7 +1,7 @@
 ---
 title: Wurst Beginner Guide
 excerpt: Get started and create your first map using Wurst!
-date: 2018-03-26
+date: 2018-05-24
 icon:
   type: fa
   name: fa-graduation-cap

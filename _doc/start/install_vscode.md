@@ -1,7 +1,7 @@
 ---
 title: Install VSCode
 sections:
-  - Download JRE
+  - Install VSCode
   - Install Wurst Plugin
 ---
 
