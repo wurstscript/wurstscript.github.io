@@ -5,7 +5,7 @@ date: 2017-07-26
 icon:
   name: icon_lifesaver
 color: purple
-layout: home
+layout: tutorials
 tagline: |
   Programming language that compiles to Jass.
 
