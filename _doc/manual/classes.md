@@ -231,7 +231,7 @@ class B extends A
         ...
 
 init
-    let a = new B()
+    let a = new A()
     // we know that a is actually of type B, so we can safely cast it to B:
     let b = a castTo B
     // now we can call functions from class B
