@@ -66,7 +66,7 @@ The data collected in this way is in turn used by Google to provide us with an e
 
 Google states that it will not connect your IP address to other data. In addition, Google provides further information with regard to its data protection practices at
 
-<https://www.google.com/intl/de/policies/privacy/partners,>
+<https://www.google.com/intl/de/policies/privacy/partners>,
 
 including options you can exercise to prevent such use of your data.
 

@@ -1,6 +1,4 @@
---- 
-layout: compress 
----
+--- layout: compress ---
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
@@ -69,8 +67,8 @@ layout: compress
             </a>
         </header>
 
-        <section class="cards-section text-center">
-            <div class="container text-center">
+        <section class="cards-section container-pad text-center">
+            <div class="container container-pad text-center">
 
                 <h2 class="title">{{ page.heading }}</h2>
 
@@ -79,20 +77,19 @@ layout: compress
 
                 {% include navigation.html navigation=page.navigation %}
 
-                <div class="alert alert-info" style="display:inline-block;">
-                Please report any bugs, issues or requests on our
-                <a href="https://github.com/{{ site.share.github.repo }}/issues/new"
-                    title="Issue Tracker on Github">
-                    Issue Tracker</a>.
-                </div>
-
             </div>
-            
-        </section>
 
+        </section>
+        <div class="cards-section text-center secondWrap">
+
+            {% include whywurst.html %}
+
+            <div class="alert alert-info" style="display:inline-flex;">
+                Please report any bugs, issues or requests on our <a href="https://github.com/{{ site.share.github.repo }}/issues/new" title="Issue Tracker on Github"> Issue Tracker</a>.
+            </div>
+        </div>
 
     </div>
-    {% include whywurst.html %}
 
     {% include footer.html %}
 
