@@ -1,5 +1,7 @@
 ---
 title: Maps
+kramdown: 
+  parse_block_html: true
 ---
 
 <!-- Start Row -->
