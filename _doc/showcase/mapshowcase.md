@@ -137,7 +137,7 @@ A tag-style FFA map where players switch between hunter and hunted. Each player 
 
 {: .card-title}
 
-#### Gold Rush
+#### The Gorge
 
 {: .card-text}
 Battleships-style aos that focuses on simplicity. Uses automatically firing weapons and interesting systems.
