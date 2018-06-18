@@ -88,12 +88,12 @@ layout: compress
 
                             {{ content | markdownify }} {% for id in page.sections %} {% assign section = site.doc | where: "id", id | first %}
 
-                            <section id="{{ section.title | slugify }}" class="doc-section">
+                            <div id="{{ section.title | slugify }}" class="doc-section">
                                 <h2 class="section-title">{{ section.title }}</h2>
                                 <div class="section-block">
                                     {{ section.content | markdownify }}
                                 </div>
-                            </section>
+                            </div>
 
                             {% endfor %}
 
