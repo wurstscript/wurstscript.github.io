@@ -28,6 +28,10 @@ branding:
   bold: Script
   blog: Blog
 markdown: kramdown
+
+sass:
+    sass_dir: _sass
+
 kramdown:
   auto_ids: true
   entity_output: as_char

@@ -1,3 +1,4 @@
+
 /* ======= Base ======= */
 body {
     font-family: 'Open Sans', arial, sans-serif;
@@ -215,9 +216,6 @@ select {
     }
 }
 
-.container-pad {
-    margin: 0px 0px 28px 0px;
-}
 
 .video-container iframe {
     max-width: 100%;
@@ -229,7 +227,7 @@ select {
     background: $text-color;
     color: rgba(255, 255, 255, 0.85);
     border-top: 5px solid $color-primary;
-    padding: 0px 0px 20px 30px;
+    padding: 20px 0px 20px 0px;
     a {
         color: #fff;
     }
