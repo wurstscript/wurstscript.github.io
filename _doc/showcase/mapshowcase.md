@@ -131,7 +131,7 @@ A tag-style FFA map where players switch between hunter and hunted. Each player 
 <div class="col-sm-6 col-xs-12">
 <div class="card">
 
-[![screenshot](/assets/images/showcase/gorgepreview.jpg){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/the-gorge-0-9-1.292325/)
+[![screenshot](/assets/images/showcase/gorgepreview.png){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/the-gorge-0-9-1.292325/)
 
 <div class="card-block">
 
