@@ -224,18 +224,19 @@ Typecasting is sometimes useful when using subtyping. If you have an object of s
 that the dynamic type of the object is B, you can cast the object to B to change the static type.
 
 ```wurst
-class A
+class Shape
 
-class B extends A
-    function special()
+class Triangle extends Shape
+    function calculate()
         ...
 
 init
-    let a = new B()
-    // we know that a is actually of type B, so we can safely cast it to B:
-    let b = a castTo B
-    // now we can call functions from class B
-    b.special()
+    // Triangle is assignable to Shape
+    Shape myShape = new Triangle()
+    // Since we know that 'myShape' is actually of type Triangle, so we can safely cast it
+    Triangle tri = myShape castTo Triangle
+    // Now we can call functions from class Triangle
+    b.calculate()
 ```
 
 
@@ -253,18 +254,18 @@ It is easier to understand with an example:
 
 ### Example 1
 ```wurst
-class A
+class Recipe
     function printOut()
-        print("I'm A")
+        print("I'm a recipe")
 
-class B extends A
+class SwordRecipe extends Recipe
     override function printOut()
-        print("I'm B")
+        print("I'm a sword recipe")
 
 init
-    let a = new B()
-    a.printOut()
-    // this will print "I'm B", even though it's a type A variable
+    Recipe recipe = new SwordRecipe()
+    recipe.printOut()
+    // This will print "I'm a sword recipe", even though it's a type Recipe variable
 ```
 ### Example 2
 ```wurst
@@ -287,7 +288,7 @@ class B extends A
         print("Instance of B named: " + name )
 
 init
-    let a = new B("first") // This works because B extends A
+    A a = new B("first") // This works because B extends A
     a.printName() // This will print "Instance of B named: first", because a is an Instance of B.
 ```
 
@@ -352,7 +353,7 @@ class A
 class B extends A
 
 init
-    let a = new B()
+    A a = new B()
 
     if a instanceof B
         print("It's a B")
