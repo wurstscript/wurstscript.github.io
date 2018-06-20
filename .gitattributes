@@ -1,3 +1,1 @@
-assets/css/* linguist-vendored=true
-assets/js/* linguist-vendored=true
-assets/plugins/** linguist-vendored=true
+assets/* linguist-vendored
