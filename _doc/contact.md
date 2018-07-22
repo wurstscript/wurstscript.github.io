@@ -8,5 +8,5 @@ color: orange
 sections:
   - /contact/creators
   - /contact/contributors
-
+  - /contact/credits
 ---
