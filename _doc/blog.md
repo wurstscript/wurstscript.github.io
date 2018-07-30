@@ -1,6 +1,6 @@
 ---
 title: Blog
-excerpt: Home of 'Best of the Wurst' (Last post May '17).
+excerpt: Home of 'Best of the Wurst' (Last post Jul '30).
 date: 2018-05-17
 color: pink
 icon:
@@ -12,6 +12,7 @@ heading: Latest Posts
 redirect_from:
   - /blog/
 navigation:
+  - /blog/bestofthewurst7
   - /blog/bestofthewurst6
   - /blog/about129support
   - /blog/bestofthewurst5
