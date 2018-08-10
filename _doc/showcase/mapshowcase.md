@@ -83,19 +83,18 @@ Allows players to build and escape mazes created ingame. Basically an ingame edi
 <div class="col-sm-6 col-xs-12">
 <div class="card">
 
-[![screenshot](/assets/images/showcase/draftpreview.png){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/warcraft-3-ability-draft.291422/)
+[![screenshot](/assets/images/showcase/ittpreview.png){: .img-responsive .center-block}](https://github.com/island-troll-tribes/island-troll-tribes)
 
 <div class="card-block">
 
 {: .card-title}
 
-#### Wc3 Ability Draft
+#### Island Troll Tribes
 
 {: .card-text}
-Brings the immensely popular gamemmode from Dota 2 to Warcraft 3 melee maps.
+Combines survival and PvP melee combat in a fight to the death for domination of the islands.
 
-[_&nbsp;_{: .fa .fa-external-link-square} Hive Thread](https://www.hiveworkshop.com/threads/warcraft-3-ability-draft.291422/)
-
+[_&nbsp;_{: .fa .fa-external-link-square} Hive Thread](https://www.hiveworkshop.com/threads/island-troll-tribes-v2-99f.297609/) [_&nbsp;_{: .fa .fa-external-link-square} Git Repo](https://github.com/island-troll-tribes/island-troll-tribes)
 </div>
 
 </div>
@@ -150,5 +149,34 @@ Battleships-style aos that focuses on simplicity. Uses automatically firing weap
 <!-- End Card -->
 </div>
 <!-- End Card -->
+</div>
+<!-- End Row -->
+
+<div class="row">
+
+
+<!-- Begin Card -->
+<div class="col-sm-6 col-xs-12">
+<div class="card">
+
+[![screenshot](/assets/images/showcase/draftpreview.png){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/warcraft-3-ability-draft.291422/)
+
+<div class="card-block">
+
+{: .card-title}
+
+#### Wc3 Ability Draft
+
+{: .card-text}
+Brings the immensely popular gamemmode from Dota 2 to Warcraft 3 melee maps.
+
+[_&nbsp;_{: .fa .fa-external-link-square} Hive Thread](https://www.hiveworkshop.com/threads/warcraft-3-ability-draft.291422/)
+
+</div>
+
+</div>
+</div>
+<!-- End Card -->
+
 </div>
 <!-- End Row -->
