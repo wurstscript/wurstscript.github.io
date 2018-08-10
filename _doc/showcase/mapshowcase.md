@@ -83,7 +83,7 @@ Allows players to build and escape mazes created ingame. Basically an ingame edi
 <div class="col-sm-6 col-xs-12">
 <div class="card">
 
-[![screenshot](/assets/images/showcase/ittpreview.png){: .img-responsive .center-block}](https://github.com/island-troll-tribes/island-troll-tribes)
+[![screenshot](/assets/images/showcase/ittpreview.png){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/island-troll-tribes-v2-99f.297609/)
 
 <div class="card-block">
 
