@@ -1,6 +1,6 @@
 ---
 title: Maps
-kramdown: 
+kramdown:
   parse_block_html: true
 ---
 
@@ -95,6 +95,7 @@ Allows players to build and escape mazes created ingame. Basically an ingame edi
 Combines survival and PvP melee combat in a fight to the death for domination of the islands.
 
 [_&nbsp;_{: .fa .fa-external-link-square} Hive Thread](https://www.hiveworkshop.com/threads/island-troll-tribes-v2-99f.297609/) [_&nbsp;_{: .fa .fa-external-link-square} Git Repo](https://github.com/island-troll-tribes/island-troll-tribes)
+
 </div>
 
 </div>
@@ -153,7 +154,6 @@ Battleships-style aos that focuses on simplicity. Uses automatically firing weap
 <!-- End Row -->
 
 <div class="row">
-
 
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
