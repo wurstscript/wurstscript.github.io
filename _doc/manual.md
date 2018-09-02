@@ -1,7 +1,7 @@
 ---
 title: Manual
 excerpt: Formal documentation of all language features.
-date: 2018-06-20
+date: 2018-09-03
 icon:
   name: icon_info
 color: blue
@@ -12,4 +12,5 @@ sections:
   - /manual/concepts
   - /manual/classes
   - /manual/concepts_advanced
+  - /manual/convetions
 ---
