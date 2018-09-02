@@ -9,15 +9,11 @@ sections:
 - Idiomatic use of language features
 ---
 
-
-## Coding Conventions
-
 ### About
 
 Coding Conventions describe a set of rules that aren't directly enforced as errors by the language, but still commonly accepted guidelines among developers to produce consistently structured and formatted code.
 
 ### Source Code Organization
-
 
 #### Directory structure
 
