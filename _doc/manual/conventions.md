@@ -87,7 +87,7 @@ Put spaces between control flow keywords (`if`, `switch`, `for` and `while`) and
 Do not put a space before an opening parenthesis in a method declaration or method call.
 
 ```wurst
-fun foo(int x)
+function foo(int x)
 
 init
     foo(1)
