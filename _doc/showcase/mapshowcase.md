@@ -6,8 +6,10 @@ title: Maps
 <div class="row">
 
 <!-- Begin Card -->
+{% raw %}
 <div class="col-sm-6 col-xs-12">
 <div class="card">
+{% endraw %}
 
 [![screenshot](/assets/images/showcase/fdefpreview.png){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/forest-defense-0-18w.300554/)
 
