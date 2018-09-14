@@ -40,7 +40,6 @@ kramdown:
   input: GFM
   hard_wrap: false
   footnote_nr: 1
-  parse_block_html: true
   syntax_highlighter_opts:
     disable : true
 google_site_verification: googlee4f4af3121cc4c25.html

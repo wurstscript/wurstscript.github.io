@@ -6,11 +6,11 @@ title: Maps
 <div class="row">
 
 <div class="col-sm-6 col-xs-12">
-<div class="card">
+<div class="card" markdown="1">
 
 [![screenshot](/assets/images/showcase/fdefpreview.png){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/forest-defense-0-18w.300554/)
 
-<div class="card-block">
+<div class="card-block" markdown="1">
 
 {: .card-title}
 
