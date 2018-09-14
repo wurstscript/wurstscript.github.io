@@ -1,22 +1,26 @@
 ---
 title: Introduction
 sections:
-- Philosophy
+- About
 - Values and Types
 - Syntax
 - Basics
 ---
 
-### Philosophy
+### About
+
+Wurst (/vʊʁst/), is the german word for sausage.
 
 WurstScript is an imperative, object-oriented, statically-typed, beginner-friendly programming language.
+
+Both are delicious.
 
 WurstScript provides a comfortable workflow to produce readable and maintainable code.
 Ease of use and stress-free map development take higher priority than execution speed of the final product.
 WurstScript is easy to use and learn, especially with prior knowledge of Jass or any other programming language, while still staying
-simple and readable to non-programmers.
+simple and understandable for non-programmers.
 
-While we know that WurstScript won't replace vJass in the WC3 mapping scene (one reason being tons of vJass scripts that can't be easily ported), we still hope it will  serve as a very good alternative, in particular for users that are trying to learn Jass.
+Syntax and vocabulary were designed with Jass in mind, the scripting language of Warcraft III.
 
 > Note that this manual is not a beginner's tutorial and expects the reader to have prior knowledge in programming. 
 [Click here for a beginner's guide.](tutorials.html)
