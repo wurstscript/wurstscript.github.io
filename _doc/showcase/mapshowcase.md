@@ -5,11 +5,8 @@ title: Maps
 <!-- Start Row -->
 <div class="row">
 
-<!-- Begin Card -->
-{% raw %}
 <div class="col-sm-6 col-xs-12">
 <div class="card">
-{% endraw %}
 
 [![screenshot](/assets/images/showcase/fdefpreview.png){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/forest-defense-0-18w.300554/)
 
@@ -28,9 +25,6 @@ A fast paced mix of coop TD and Survival. Players build walls and towers to defe
 
 </div>
 </div>
-<!-- End Card -->
-
-<!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
 <div class="card">
 
