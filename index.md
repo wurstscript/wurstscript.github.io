@@ -21,7 +21,7 @@ navigation:
   - /contact
 ---
 
-<div class="cta-container">
+<div class="cta-container" markdown="1">
 
 [*&nbsp;*{: .fa .fa-cloud-download} Download Setup App](https://grill.wurstlang.org/hudson/job/WurstSetup/lastSuccessfulBuild/artifact/downloads/WurstSetup.jar){: .btn .btn-primary .btn-cta}
 
