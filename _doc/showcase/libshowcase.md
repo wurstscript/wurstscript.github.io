@@ -28,7 +28,5 @@ Lightweight entity framework for a sleek, bootstrapped map development experienc
 </div>
 <!-- End Card -->
 
-
 </div>
 <!-- End Row -->
-
