@@ -26,11 +26,11 @@ A fast paced mix of coop TD and Survival. Players build walls and towers to defe
 </div>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div class="card">
+<div class="card" markdown="1">
 
 [![screenshot](/assets/images/showcase/microtdpreview.png){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/microrunnertd-1-0-2.286363/#resource-67601)
 
-<div class="card-block">
+<div class="card-block" markdown="1">
 
 {: .card-title}
 
@@ -53,11 +53,11 @@ A TD where players controls a fragile runner which must evade enemy creeps while
 <div class="row">
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
-<div class="card">
+<div class="card" markdown="1">
 
 [![screenshot](/assets/images/showcase/ebrpreview.png){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/escape-builder-r-0-90s.184964/)
 
-<div class="card-block">
+<div class="card-block" markdown="1">
 
 {: .card-title}
 
@@ -75,11 +75,11 @@ Allows players to build and escape mazes created ingame. Basically an ingame edi
 </div>
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
-<div class="card">
+<div class="card" markdown="1">
 
 [![screenshot](/assets/images/showcase/ittpreview.png){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/island-troll-tribes-v2-99f.297609/)
 
-<div class="card-block">
+<div class="card-block" markdown="1">
 
 {: .card-title}
 
@@ -101,11 +101,11 @@ Combines survival and PvP melee combat in a fight to the death for domination of
 <div class="row">
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
-<div class="card">
+<div class="card" markdown="1">
 
 [![screenshot](/assets/images/showcase/goldrushPreview.jpg){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/gold-rush-v1-1.269852/)
 
-<div class="card-block">
+<div class="card-block" markdown="1">
 
 {: .card-title}
 
@@ -123,11 +123,11 @@ A tag-style FFA map where players switch between hunter and hunted. Each player 
 </div>
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
-<div class="card">
+<div class="card" markdown="1">
 
 [![screenshot](/assets/images/showcase/gorgepreview.png){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/the-gorge-0-9-1.292325/)
 
-<div class="card-block">
+<div class="card-block" markdown="1">
 
 {: .card-title}
 
@@ -151,11 +151,11 @@ Battleships-style aos that focuses on simplicity. Uses automatically firing weap
 
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
-<div class="card">
+<div class="card" markdown="1">
 
 [![screenshot](/assets/images/showcase/draftpreview.png){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/warcraft-3-ability-draft.291422/)
 
-<div class="card-block">
+<div class="card-block" markdown="1">
 
 {: .card-title}
 
