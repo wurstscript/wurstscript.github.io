@@ -3,15 +3,15 @@ title: Libraries
 ---
 
 <!-- Start Row -->
-<div class="row">
+<div class="row" markdown="1">
 
 <!-- Begin Card -->
-<div class="col-sm-6 col-xs-12">
-<div class="card">
+<div class="col-sm-6 col-xs-12" markdown="1">
+<div class="card" markdown="1">
 
 [![screenshot](/assets/images/showcase/frentitypreview.png){: .img-responsive .center-block}](https://github.com/Frotty/Frentity)
 
-<div class="card-block">
+<div class="card-block" markdown="1">
 
 {: .card-title}
 #### Frentity
