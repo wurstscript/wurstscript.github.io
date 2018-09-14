@@ -105,7 +105,7 @@ As a general rule, avoid horizontal alignment of any kind. Renaming an identifie
 
 #### Lambda formatting
 
-In lambda expressions, spaces should be used around the `begin` and `end` keywords, as well as around the arrow which separates the parameters from the body. If a call takes a single lambda, it should be passed outside of parentheses whenever possible.
+In lambda expressions, spaces should be used around the `begin` and `end` keywords, as well as around the arrow which separates the parameters from the body. If a call takes a single lambda, it should be passed outside of parentheses whenever possible. Prefer putting lambda parameters as the last argument, so it can be written without `begin` and `end`.
 
 ```wurst
 list.filter(t -> t > 10) 
@@ -148,5 +148,7 @@ When making a choice between a complex expression using multiple higher-order fu
 
 ### Unit Testing
 
-Prefer test driven development if the feature is not too dependent from wc3 game mechanics. Create small, self-contained functions, annotate them with `@Test` individually and give them a descriptive name.
+Prefer test driven development if the feature is not too dependent on wc3 game mechanics. Create small, self-contained functions, annotate them with `@Test` individually and give them a descriptive name.
 Make sure to have at least one **assertion** inside your test to verify the behavior.
+
+Tests should either be placed at the end of a package, or into a separate package suffixed `Tests` which will be ignored for autocomplete suggestions. Code and Tests should not be mixed.
