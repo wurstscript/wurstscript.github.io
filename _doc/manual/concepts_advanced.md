@@ -157,7 +157,7 @@ public function vec2.lengthSquared returns real
 
 # Vararg Functions
 
-Variable argument functions can be passed an arbitrary amount of parameters of the same type. They are most commonly used to prevent boilerplate code and provide better API.
+Variable argument functions can be passed an variable amount of parameters of the same type. They are most commonly used to prevent boilerplate code and provide better API.
 Inside the function, the variable arguments can be accessed via a `for .. in` loop.
 
 Example:
@@ -174,7 +174,13 @@ init
 	asNumberList(10)
 ```
 
-All the calls to `asNumberList` are valid in this example and the benefit is apparent. We can pass any amount of integers to the function, but we only need to implement it once.
+All the calls to `asNumberList` are valid in this example and the benefit is apparent. We can pass any amount of integers (up to 31 arguments) to the function, but we only need to implement it once.
+
+### Limitations
+
+The current implementation creates a specialized function with the right number of parameters.
+Since Jass allows at most 31 parameters, function calls must not use more than 31 arguments in total.
+
 
 # Lambdas and Closures
 
