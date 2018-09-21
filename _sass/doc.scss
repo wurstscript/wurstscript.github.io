@@ -439,9 +439,22 @@ code {
     width: 200px;
 }
 
+#doc-menu {
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.doc-menu-scroll {
+    margin-right: -50px; /* maximum width of scrollbar */
+    padding-right: 50px; /* maximum width of scrollbar */
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
 .doc-menu {
     list-style: none;
     padding-left: 0;
+    margin-bottom: 30px;
 
     & > li {
         margin-bottom: 5px;
