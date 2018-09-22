@@ -404,8 +404,8 @@ init
     print("this is the initblock")
 ```
 
-*Note:* Since wc3 has a micro op limitation, too many operations inside the map's main function stop it from fully executing. In order to avoid this problem, Wurst executes package inits in separate threads using `TriggerEvaluate` to determine whether the package was successfully initialized.
-Issues can still occur with excessive computation inside package inits and in this case a warning is displayed.
+*Note:* Wurst executes each package init in a separate thread using `TriggerEvaluate` to determine whether the package was successfully initialized.
+If an issue occurs inside the package init (exception, excessive computation) the map initialization will stop and an error is displayed.
 
 
 ## Initialization and initlater
