@@ -6,7 +6,7 @@ plugins_dir:
   - jekyll-redirect-from
   - jekyll-sitemap
 
-gems: 
+plugins: 
   - jekyll-seo-tag
   - jekyll-redirect-from
   - jekyll-sitemap

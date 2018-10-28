@@ -15,4 +15,4 @@ sections:
 You can submit your own resource using our [Issue Tracker](https://github.com/wurstscript/wurstscript.github.io/issues)!
 </div>
 
-Here you will find a selection of the map and resources available, powered by wurst.
+Here you will find a selection of the maps and resources available, powered by wurst.
