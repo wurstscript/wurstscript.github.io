@@ -145,7 +145,7 @@ code {
 	color: #111;
 	border-radius: 3px;
 	font-weight: normal;
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-family: 'SFMono-Regular', 'Roboto Mono', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
 	padding: 0.2em 0.4em;
 	display: inline-block;
 }
@@ -274,6 +274,9 @@ code {
         margin-top: 0;
         margin-bottom: 20px;
     }
+
+	padding-top: 32px;
+    padding-bottom: 16px;
 }
 
 .author-profile {
