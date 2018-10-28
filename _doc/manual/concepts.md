@@ -222,7 +222,7 @@ Most often the iterator just destroys itself in the close function.
 
 Look at the 2 examples from the standard library:
 
-**Group-Iterator**
+#### Group-Iterator
 ```wurst
 public function group.iterator() returns group
     // return a copy of the group:
@@ -244,7 +244,8 @@ public function group.close()
 As you can see, the iterator is a group, therefore the group needs to provide the functions mentioned above.
 This is done via extension functions.
 
-**LinkedList-Iterator**
+#### LinkedList-Iterator
+
 ```wurst
 public class LinkedList<T>
     ...
@@ -288,7 +289,7 @@ x /= y      // x = x / y
 Because these shorthands simply get translated into their equivalents, they can
 be used with overloaded operators, too.
 
-# Packages
+## Packages
 As mentioned above every code-segment written in Wurst has to be inside a _package_,
 packages define the code organization and separate name-spaces.
 Packages can also have global variables - every variable that is not inside another block (function/class/module)
@@ -301,7 +302,7 @@ package SomeVSCodePackage
 ...
 ```
 
-## Imports
+### Imports
 
 Packages can import other packages to access classes, functions, variables, etc. that are defined public.
 
@@ -358,11 +359,11 @@ If you do not want this standard import you can disable it by importing a packag
 resolve some cyclic dependencies in the standard library.
 
 
-## Public declarations
+### Public declarations
 All members of a package are private by default.
 If you want to make them visible inside packages that import that package you have to add the keyword "public".
 
-## Constants
+### Constants
 You can declare a variable constant to prohibit changes after initialization.
 This has no impact on the generated code but throws an error when trying to compile.
 
@@ -391,7 +392,7 @@ public constant int myPrivateNumber2 = 123 // Correct keyword order
 ```
 
 
-## Init blocks
+### Init blocks
 Another package feature are init blocks.
 Every package can have one or multiple init blocks anywhere inside it.
 All operations inside the init block of a package are executed at mapstart.
@@ -408,7 +409,7 @@ init
 If an issue occurs inside the package init (exception, excessive computation) the map initialization will stop and an error is displayed.
 
 
-## Initialization and initlater
+### Initialization and initlater
 
 The initialization rules for Wurst are simple:
 
@@ -431,7 +432,7 @@ import D
 Here only package `D` is guaranteed to be initialized before package `A`.
 Packages `B` and `C` are allowed to be initialized later.
 
-## Configuring Packages
+### Configuring Packages
 
 Global variables and functions can be configured.
 Configuration is done via configuration packages.

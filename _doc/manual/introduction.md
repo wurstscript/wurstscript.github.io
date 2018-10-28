@@ -7,7 +7,7 @@ sections:
 - Basics
 ---
 
-### About
+## About
 
 Wurst (/vʊʁst/), is the german word for sausage.
 
@@ -25,7 +25,7 @@ Syntax and vocabulary were designed with Jass in mind, the scripting language of
 > Note that this manual is not a beginner's tutorial and expects the reader to have prior knowledge in programming. 
 [Click here for a beginner's guide.](tutorials.html)
 
-### Values and Types
+## Values and Types
 
 WurstScript is a statically typed language. This means variables can only hold values of the same type. Additionally since all types are determined at compiletime,
 incorrect assignments will throw errors.
@@ -46,7 +46,7 @@ string r = "yes" // OK
 string s = i // Error
 ```
 
-### Syntax
+## Syntax
 
 WurstScript uses indentation based syntax to define Blocks. You can use either spaces or tabs for indentation, but mixing both will throw a warning.
 In the following we use the word "tab" to refer to the tab character or to 4 space characters.
@@ -93,7 +93,7 @@ new Object()
 WurstScript tries to avoid excessive verbosity and symbols, to stay concise and readable.
 
 
-### Basics
+## Basics
 
 The following is a short overview of the core language features so you can get coding in no time. For a more detailed documentation of each topic,
 refer to the dedicated chapters further down the page.
@@ -126,7 +126,7 @@ You can still use normal Jass syntax/code outside of packages - the Wurst World 
 
 For more information about using maps with mixed wurst/jass code, refer to the "Using Wurst with legacy maps" section.
 
-#### Functions
+### Functions
 
 A **function** definition consists of a name, a list of formal parameters and a return
 type. The return type is declared after the formal parameters using the **returns** keyword.
@@ -161,7 +161,7 @@ function foobar()
 	int i2 = i // support for locals anywhere inside a function
 ```
 
-#### Variables
+### Variables
 
 Global variables can be declared anywhere in the top level of a package.
 Local variables can be declared anywhere inside a function.

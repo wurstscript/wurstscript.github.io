@@ -12,7 +12,7 @@ sections:
 - Compiletime Execution
 ---
 
-# Enums
+## Enums
 
 In Wurst, __Enums__ are a shorthand wrapper for collections of named integer constants.
 Enums are not related to classes and are directly translated into the integers they represent.
@@ -63,7 +63,7 @@ print((MyUnitState.GROUND castTo int).toString()) // Will print "1"
 The coalescent integer value starts at 0, incrementing with each succeeding enum member. So for `MyUnitState` `FLYING` will be 0, `GROUND` 1 and `WATER` 2.
 
 
-# Tuple Types
+## Tuple Types
 
 With _tuple_ types you can group several variables into one bundle. This can be used to return more than one value from a function, to create custom types and of course for better readability.
 
@@ -112,7 +112,7 @@ examples. (Math/Vectors.wurst)
 
 
 
-# Extension Functions
+## Extension Functions
 
 Extension functions enable you to "add" functions to existing types without
 creating a new derived type, recompiling, or otherwise modifying the original
@@ -120,13 +120,13 @@ type.
 Extension functions are a special kind of static function, but they are called
 as if they were instance functions of the extended type.
 
-## Declaration
+### Declaration
 ```wurst
 public function TYPE.EXTFUNCTIONNAME(PARAMETERS) returns ...
 	BODY
 	// The keyword "this" inside the body refers to the instance of the extended type
 ```
-## Examples
+### Examples
 
 ```wurst
 // Declaration
@@ -155,7 +155,7 @@ public function vec2.lengthSquared returns real
 	return this.x*this.x+this.y*this.y
 ```
 
-# Vararg Functions
+## Vararg Functions
 
 Variable argument functions can be passed an variable amount of parameters of the same type. They are most commonly used to prevent boilerplate code and provide better API.
 Inside the function, the variable arguments can be accessed via a `for .. in` loop.
@@ -182,7 +182,7 @@ The current implementation creates a specialized function with the right number 
 Since Jass allows at most 31 parameters, function calls must not use more than 31 arguments in total.
 
 
-# Lambdas and Closures
+## Lambdas and Closures
 
 A lambda expression (also called anonymous function) is a lightweight way to provide an implementation
 of a functional interface or abstract class (To keep the text simple, the following
@@ -238,7 +238,7 @@ Remember that, because closures are just like normal objects, you also have to d
 like normal objects. And you can do all the other stuff you can do with
 other objects like putting them in a list or into a table.
 
-## Type inference
+### Type inference
 
 It is not necessary to provide the parameter types for Lambda-parameters, if they can be inferred from the context.
 Moreover, parenthesis are optional, when there is only one parameter without type or no parameter.
@@ -251,7 +251,7 @@ Predicate<int> pred = (x) -> x mod 2 == 0
 Predicate<int> pred = x -> x mod 2 == 0
 ```
 
-## begin-end expression
+### begin-end expression
 
 Sometimes one expression is not enough for a closure. In this case, the begin-end
 expression can be used. It allows to have statements inside an expression. The
@@ -267,7 +267,7 @@ end)
 It is also possible to have a return statement inside a begin-end expression
 but only the very last statement can be a return.
 
-## Lambda blocks
+### Lambda blocks
 
 Often a lambda expression with begin-end-block is given as the last argument in a line.
 Wurst offers a special Syntax for this case, which fits better with the general indentation based Syntax used in Wurst.
@@ -296,7 +296,7 @@ forUnitsOfPlayer(lastRinger) u ->
 		createUnit(players[8], DUMMY_ID, pos, facing)
 ```
 
-## Capturing of Variables
+### Capturing of Variables
 
 
 The really cool feature with lambda expressions is, that they create a *closure*.
@@ -329,7 +329,7 @@ f.run()  // will print "Hello!!"
 print(s) // will print "Bye!"
 ```
 
-## Behind the scenes
+### Behind the scenes
 
 The compiler will just create a new class for every lambda expression in your code.
 This class implements the interface which is given by the context in which
@@ -363,7 +363,7 @@ f.run()  // will print "Hello!"
 f.run()  // will print "Hello!!"
 print(s) // will print "Bye!"
 ```
-## Function types
+### Function types
 
 A lambda expression has a special type which captures the type of the parameter
 and the return type. This type is called a *function type*. Here are some examples with their type:
@@ -391,7 +391,7 @@ However it is not possible to use lambda expressions if the type of the variable
 // will not compile, error "Could not get super class for closure"
 let pred = (int x) -> x mod 2 == 0
 ```
-## Lambda expressions as code-type
+### Lambda expressions as code-type
 
 Lambda expressions can also be used where an expression of type `code` is expected.
 The prerequisite for this is, that the lambda expression does not have any parameters
@@ -416,7 +416,7 @@ thus there is no object which has to be destroyed. The lambda expression will ju
 be translated to a normal Jass function, so there is no performance overhead when
 using lambda expressions in this way.
 
-# Function Overloading
+## Function Overloading
 
 Function overloading allows you to have several functions with the same name.
 The compiler will then decide which function to call based on the static type
@@ -469,7 +469,7 @@ with a value of type B, both functions would be viable. Other languages just tak
 "most specific type" but Wurst does not allow this. If A and B are incomparable types, the overloading is allowed.
 
 
-# Operator Overloading
+## Operator Overloading
 
 Operator Overloading allows you to change the behavior of internal operators +, -, \* and / for custom arguments.
 A quick example from the standard library (Vectors.wurst):
@@ -495,7 +495,7 @@ In order to define an overloading function it has to be named as following:
 /  "op_divReal"
 ```
 
-# Annotations
+## Annotations
 
 Almost any definition in wurst can be annotated with one or more optionally named annotations.
 Annotations are compiletime only metadata which can be used for compiletime function, tests and `callFunctionsWithAnnotation`.
@@ -513,11 +513,11 @@ List of all wurst reserved annotations:
 @deprecated("Use .size() instead") function getSize() returns int
 ```
 
-# Compiletime Execution
+## Compiletime Execution
 
 Wurst includes an interpreter and can execute code at compiletime, which can be useful for testing and for object editing.
 
-## Compiletime Functions
+### Compiletime Functions
 
 Compiletime Functions are functions, that are executed when compiling your script/map.
 They mainly offer the possibility to create Object-Editor Objects via code.

@@ -98,6 +98,7 @@
             margin-bottom: 15px;
         }
 
+
     }
     .item-inner {
         padding: 45px 30px;
@@ -116,8 +117,11 @@
             background-image: url("../images/empty.png"); /* for IE8 */
         }
 
+		transition: .4s ease;
+
         &:hover {
-            background: $smoky-white;
+      		transform: translateY(-1px);
+      		box-shadow: 0 8px 16px rgba(0,30,84,.1), 0 3px 6px rgba(0,30,84,.08);
         }
 
     }

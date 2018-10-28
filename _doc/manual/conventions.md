@@ -9,15 +9,13 @@ sections:
 - Idiomatic use of language features
 ---
 
-### About
-
 Coding Conventions describe a set of rules that aren't directly enforced as errors by the language, but still commonly accepted guidelines among developers to produce consistently structured and formatted code.
 
 ### Source Code Organization
 
 #### Directory structure
 
-All your packages should be inside the `wurst/` folder of your project. You can have any folder structure inside the `wurst/` folder as packages are not affected by it. Folders should be used to group together packages and files.
+All your packages should be inside the `wurst/` folder of your project. You can have any custom folder structure inside the `wurst/` folder, as packages are not affected by it. Folders should be used to group together packages and files.
 
 #### Source file names
 

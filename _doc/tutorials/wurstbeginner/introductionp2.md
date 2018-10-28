@@ -8,8 +8,6 @@ sections:
 - How to find library code
 ---
 
-# Explanation
-
 Let's go into further detail about what we just did.
 
 ## The Standard Library
