@@ -81,7 +81,7 @@ tuple vec(real x, real y, real z)
 
 init
 	// create a new tuple value
-	let v = vec(1,2,3)
+	let v = vec(1, 2, 3)
 	// change parts of the tuple
 	v.x = 4
 	// create a copy of v and call it u
@@ -95,7 +95,7 @@ init
 
 tuple pair(real x, real y)
 init
-	var p = pair(1,2)
+	var p = pair(1, 2)
 	// swap the values of p.x and p.y
 	p = pair(p.y, p.x)
 	if p.x == 2 and p.y == 1
@@ -169,8 +169,8 @@ function asNumberList(vararg int numbers) returns LinkedList<int>
 	return list
 
 init
-	asNumberList(1,2,3)
-	asNumberList(44,14,651,23)
+	asNumberList(1, 2, 3)
+	asNumberList(44, 14, 651, 23)
 	asNumberList(10)
 ```
 
@@ -371,11 +371,11 @@ and the return type. This type is called a *function type*. Here are some exampl
 () -> 1
 	// type: () -> integer
 
-(real r) -> 2*r
+(real r) -> 2 * r
 	// type: (real) -> real
 
 (int x, string s) -> s + I2S(x)
-	// type: (int,string) -> string
+	// type: (int, string) -> string
 ```
 
 While function types are part of the type system, Wurst has no way to write down
@@ -479,10 +479,10 @@ public function vec3.op_plus( vec3 v ) returns vec3
 	return vec3(this.x + v.x, this.y + v.y, this.z + v.z)
 
 // Usage example
-vec3 a = vec3(1.,1.,1.)
-vec3 b = vec3(1.,1.,1.)
+vec3 a = vec3(1., 1., 1.)
+vec3 b = vec3(1., 1., 1.)
 // Without Operator Overloading (the add function was replaced by it)
-vec3 c = a.add( b )
+vec3 c = a.add(b)
 // With operator Overloading
 vec3 c = a + b
 ```
@@ -564,12 +564,12 @@ This function takes one argument, which is the expression to evaluate.
 For example the following defines a global variable `blub` and initializes it with the compiletime expression `fac(5)`:
 
 ```wurst
-int blub = compiletime(fac(5))
+let blub = compiletime(fac(5))
 
 function fac(int x) returns int
     if x <= 1
         return 1
-    return x*fac(x-1)
+    return x * fac(x - 1)
 ```
 
 The factorial function is evaluated at compiletime and returns `120`.
@@ -621,7 +621,7 @@ import AbilityObjEditing
 	// change the name
 	a.setName("Wurst Bolt")
 	a.setTooltipLearn("The Wurstinator throws a Salami at the target.")
-	for i=1 to 3
+	for i = 1 to 3
 		// 400 damage, increase by 100 every level
 		a.setDamage(i, 400. + i*100)
 		// 10 seconds cooldown
@@ -648,14 +648,14 @@ package Test
 import Wurstunit
 
 @test public function a()
-	12 .assertEquals (3*4)
+	12 .assertEquals(3 * 4)
 
 @test public function b()
-	12 .assertEquals (5+8)
+	12 .assertEquals(5 + 8)
 ```
 If you run this, you get the following output:
 ```wurst
-> 1+1
+> 1 + 1
 res = 2     // integer
 > tests
 1 tests OK, 1 tests failed

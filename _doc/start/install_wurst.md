@@ -1,8 +1,9 @@
 ---
-title: Install Wurst
+title: Install WurstScript
 sections:
   - Install Compiler
   - Create Project
+  - Update and import Projects
 ---
 
 Now we will setup a Wurst compiler environment and create a project using the the Wurst Setup.
@@ -37,10 +38,7 @@ Open the Hello.wurst file to activate the Wurst plugin. The code should compile 
 
 If you are new to WurstScript but not new to programming, you probably want to continue with the [*&nbsp;*{: .fa .fa-external-link-square} Beginner's Guide](tutorials/wurstbeginner.html)
 
-### Updating and importing Projects
+### Update and import Projects
 
-By clicking the import button you can load an existing wurst.build file. After a successful load clicking the `Update Project` button will update your dependencies and generate local files as necessary. You should use this feature to update your existing projects and to import newly cloned projects.
-
-
-
+By clicking the import button you can load an existing wurst.build file. After a successful load clicking the `Update Project` button will update your dependencies and generate local files as necessary. Use this feature to update your existing projects and to import projects which you didn't create.
 

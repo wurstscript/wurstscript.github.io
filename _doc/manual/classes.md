@@ -63,7 +63,7 @@ class Pair
 
 
 function test()
-    let pair = new Pair(2,4)
+    let pair = new Pair(2, 4)
     let sum = p.add()
     print(sum)
 ```
@@ -89,8 +89,8 @@ class Pair
         b += pC
 
 function test()
-    let p = new Pair(2,4)
-    let p2 = new Pair(3,4,5)
+    let p = new Pair(2, 4)
+    let p2 = new Pair(3, 4, 5)
 ```
 
 
@@ -143,7 +143,7 @@ class Terrain
         ...
 
 function foo()
-    let z = Terrain.getZ( 0, 0 ) // call with $Classname$.$StaticFunctionName$()
+    let z = Terrain.getZ(0, 0) // call with $Classname$.$StaticFunctionName$()
     let r = Terrain.someVal // Same with members
     let s = Terrain.someArr[0]
 ```
@@ -314,7 +314,7 @@ class PowerFireBall extends FireBall
         // first we create a big explosion effect
         createSomeBigExplosionEffect(u)
         // then we call the original hitUnit function but with doubled damage
-        super.hitUnit(u, damage*2)
+        super.hitUnit(u, damage * 2)
 ```
 The **super** keyword also should be used when defining custom constructors. The Constructor of the superclass has to be called in the constructor of the subclass. When no super constructor call is given, the compiler will try to call a constructor with no arguments. If no such constructor exists, then you will get an error like: "Incorrect call to super constructor: Missing parameters."
 ```wurst

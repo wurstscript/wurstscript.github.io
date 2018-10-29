@@ -1,7 +1,7 @@
 ---
-title: Setup Guide
-excerpt: Download, installation and setup of a wurst project.
-date: 2018-02-09
+title: Installation
+excerpt: Install WurstScript and setup your first project.
+date: 2018-10-29
 icon:
   type: fa
   name: fa-paper-plane

@@ -186,10 +186,10 @@ int array b = [1, 2, 3]
 constant c = ["A", "B", "C"]
 
 // inside a function
-function getUnitInfo( unit u )
+function getUnitInfo(unit u)
 	let p = u.getOwner()
 	var name = u.getName()
-	print( name )
+	print(name)
 	var x = u.getX()
 	var y = u.getY()
 	let sum = x + y
