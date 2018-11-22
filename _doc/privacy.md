@@ -5,5 +5,4 @@ icon:
   name: icon_gift
 sections:
   - /privacy/policy
-
 ---

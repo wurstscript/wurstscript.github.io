@@ -10,5 +10,4 @@ sections:
   - /start/install_java
   - /start/install_vscode
   - /start/install_wurst
-
 ---

@@ -508,7 +508,7 @@ List of all wurst reserved annotations:
 
 @compiletime function foo()
 
-@test function someTest()
+@Test function someTest()
 
 @deprecated("Use .size() instead") function getSize() returns int
 ```
@@ -631,14 +631,14 @@ import AbilityObjEditing
 		// ... and so on
 ```
 
-*NOTE* There are also packages for other object types, but those packages are even more WIP.
+*NOTE* Packages exist for all object types.
 
 
 
 ## Automated Unit Tests
 
-You can add the annotation @test to a function. Then when you type "tests" into the Wurst Console all functions
-annotated with @test are executed.
+You can add the annotation `@Test` to a function. Then when you type "tests" into the Wurst Console all functions
+annotated with @Test are executed.
 
 You have to import the Wurstunit package to use functions like assertEquals.
 
@@ -647,10 +647,10 @@ Example:
 package Test
 import Wurstunit
 
-@test public function a()
+@Test public function a()
 	12 .assertEquals(3 * 4)
 
-@test public function b()
+@Test public function b()
 	12 .assertEquals(5 + 8)
 ```
 If you run this, you get the following output:
@@ -666,4 +666,4 @@ function b (Test.wurst, line 8)
 ```
 The first line is just to check whether the console is working ;)
 
-You can search the standard library for "@test" to get some more examples.
+You can search the standard library for "@Test" to get some more examples.
