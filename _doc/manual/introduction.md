@@ -9,9 +9,9 @@ sections:
 
 ## About
 
-Wurst (/vʊʁst/), is the german word for sausage.
+__Wurst__ (/vʊʁst/), is the german word for sausage.
 
-WurstScript is an imperative, object-oriented, statically-typed, beginner-friendly programming language.
+__WurstScript__ is an imperative, object-oriented, statically-typed, beginner-friendly programming language.
 
 Both are delicious.
 

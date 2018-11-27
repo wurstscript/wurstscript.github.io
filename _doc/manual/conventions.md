@@ -34,9 +34,9 @@ In general, the contents of a class are sorted in the following order:
 
 Do not sort the function declarations alphabetically, and do not separate regular functions from extension methods. Instead, put related stuff together, so that someone reading the class from top to bottom would be able to follow the logic of what's happening. Choose an order (either higher-level stuff first, or vice versa) and stick to it. The API of a package should be at the top, immediately visible once opening it, including a hot doc description.
 
-Put nested classes next to the code that uses those classes. If the classes are intended to be used externally and aren't referenced inside the class, put them in the end, after the companion object.
+Put nested classes next to the code that uses those classes. If the classes are intended to be used externally and aren't referenced inside the class, put them in the end.
 
-#### Interface implementation 
+#### Interface implementation
 
 When implementing an interface, keep the implementing members in the same order as members of the interface (if necessary, interspersed with additional private methods used for the implementation)
 
@@ -80,7 +80,7 @@ Put spaces around binary operators (`a + b`).
 
 Do not put spaces around unary operators (`a++`)
 
-Put spaces between control flow keywords (`if`, `switch`, `for` and `while`) and the corresponding opening parenthesis.
+Put single spaces between control flow keywords (`if`, `switch`, `for` and `while`) and the following expression. Do not use parenthesis unless it improves the readability of big terms.
 
 Do not put a space before an opening parenthesis in a method declaration or method call.
 
@@ -106,11 +106,11 @@ As a general rule, avoid horizontal alignment of any kind. Renaming an identifie
 In lambda expressions, spaces should be used around the `begin` and `end` keywords, as well as around the arrow which separates the parameters from the body. If a call takes a single lambda, it should be passed outside of parentheses whenever possible. Prefer putting lambda parameters as the last argument, so it can be written without `begin` and `end`.
 
 ```wurst
-list.filter(t -> t > 10) 
+list.filter(t -> t > 10)
 
-execute() -> 
-	hash = hash() 
-``` 
+execute() ->
+	hash = hash()
+```
 
 ### Documentation comments (hot doc)
 

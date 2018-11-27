@@ -72,7 +72,7 @@ Indeed, some very ubiquitous vJass libraries don't even work with the original J
 Because vjass can only expand your code into Jass, it can't make any guarantees about the type of values.
 This leads to tricky attaching and detaching of struct intances to timers and the like.
 
-Indeed, it's possible to cast instances of objects to integer in Wurst too - but it's not a recommended technique 
+Indeed, it's possible to cast instances of objects to integer in Wurst too - but it's not a recommended technique
 and problems should instead be solved via dynamic dispatch or closures!
 
 Wurst, like this, grants you the capability to prevent entire classes of errors.
@@ -200,7 +200,7 @@ For many reasons vJass is still better than plain jass, but JassHelper is inhere
 
 More to the point: there was a time when vJass was absolutely the best option for mapping in wc3 - let this be a lesson in economics about being first to market :)
 
-## Is wurst good?
+## Is wurst good
 
 Yes.
 Wurst is more in line with modern, widely accepted programming language design goals.
@@ -233,7 +233,7 @@ Furthermore, it's a goal of the wurst community to be explicitly about productiv
 I get this question a lot, but it comes at a weird angle and surprises me.
 Let's talk about four different things related to this:
 
-#### The value of syntax
+### The value of syntax
 
 The syntax of a programming language does have implications - what's possible, what's convenient, aesthetics, etc, and indeed wurst's syntax style affects how we write wurst, but I tend to get this question when people aren't actually thinking about these properties.
 
@@ -243,7 +243,7 @@ Programmers who use one language exclusively tend to develop strong expectations
 Indeed, this is different for wurst for those highly familiar excluively with c or JASS.
 I would compel the reader to bite the bullet and dive into wurst anyway, as these *behavioral* reading and thinking patterns are a small factor in writing and maintaining code, and your ability to understand code will broaden as you experience other styles.
 
-#### Functional and Imperative style
+### Functional and Imperative style
 
 I'm not going to talk about the value of Functional programming here, but rather, about style.
 In my experience, people tend to have visited functional programming style briefly, and then *unintentionally* dismissing code or programming style that reminds them of that experience, even if the code/style under scrutiny is vastly different.
@@ -267,14 +267,14 @@ Casual users of wurst would have a hard time deciding "how strongly typed" or "h
 One last thought: just because wurst supports some abstract concepts like generics, closures, and iterators, doesn't mean you're forced to use them.
 On the contrary, I would claim that even very basic, imperative looking wurst will have fewer bugs and run faster than similarly styled vJass.
 
-#### Picking your battles
+### Picking your battles
 
 This is more fundamental.
 It isn't interesting to say that wurst's whitespace/block/mutability *style* is grounds for dismissal, because the arguments I have to raise to discuss this are so far beyond what's necessary to talk about the value of wurst.
 
 Wurst's killer features are just *more interesting to talk about*, so dismissing them by talking about python style is (usually unintentionally) a worthless strawman.
 
-#### Jurst
+### Jurst
 
 I've saved the best for last, because this is such a middle finger to the whitepace argument.
 *You can write wurst with block-style formatting. It's allowed.*

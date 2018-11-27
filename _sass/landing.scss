@@ -3,10 +3,28 @@
     .header {
         background: $text-color;
         color: rgba(256, 256, 256, 0.85);
-        padding: 45px 0;
+        padding: 30px 0px 25px 0px;
         a {
             color: #fff;
+			text-decoration: none;
         }
+
+		.header-links-container {
+			font-size: 21px;
+			font-weight: 600;
+
+			& a {
+				color: rgba(223, 252, 255, 0.75);
+				text-decoration: none;
+				transition: 0.3s;
+				letter-spacing: 0.04em;
+				font-size: 20px;
+
+				&:hover {
+					color:white;
+				}
+			}
+		}	
     }
     .branding {
         text-transform: uppercase;
@@ -27,12 +45,13 @@
     }
 
     .tagline {
+		text-decoration: none;
         font-weight: 600;
         font-size: 20px;
         p {
-            margin-bottom: 2px;
+            margin-bottom: 0px;
         }
-        .text-highlight{
+        .text-highlight {
             color: darken($color-primary, 20%);
         }
     }
@@ -93,6 +112,7 @@
         .title {
             font-size: 16px;
             font-weight: 600;
+			transition: 0.3s
         }
         .intro {
             margin-bottom: 15px;
