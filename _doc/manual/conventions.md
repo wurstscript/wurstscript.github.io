@@ -80,7 +80,7 @@ Put spaces around binary operators (`a + b`).
 
 Do not put spaces around unary operators (`a++`)
 
-Put single spaces between control flow keywords (`if`, `switch`, `for` and `while`) and the following expression. Do not use parenthesis unless it improves the readability of big bool terms.
+Put single spaces between control flow keywords (`if`, `switch`, `for` and `while`) and the following expression. Do not use parenthesis unless it improves the readability of big terms.
 
 Do not put a space before an opening parenthesis in a method declaration or method call.
 

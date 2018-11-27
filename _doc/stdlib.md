@@ -6,8 +6,6 @@ color: pink
 icon:
   type: fa
   name: fa-cubes
-tagline: Standard Library Documentation
-heading: Latest Posts
-navigation:
-  - /blog/bestofthewurst8
+sections:
+  - /stdlib/intro
 ---
