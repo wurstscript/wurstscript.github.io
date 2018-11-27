@@ -1,7 +1,7 @@
 ---
 title: Standard Library
 excerpt: Overview and documentation for the wurst standard library.
-date: 2018-05-17
+date: 2018-11-27
 color: pink
 icon:
   type: fa
