@@ -82,7 +82,7 @@ Let's enhance our example from above with an automatically generated id which  i
 
 ```wurst
 import ObjectIdGenerator
-constant MY_UNIT_ID = compiletime(UNIT_ID_GEN.next()) 
+constant MY_UNIT_ID = compiletime(UNIT_ID_GEN.next())
 
 @compiletime function createUnit()
     new UnitDefinition(MY_UNIT_ID, 'ewsp')
@@ -111,7 +111,7 @@ import ChannelAbilityPreset
 @compiletime function generateLeap()
     new ChannelAbilityPreset(MY_LEAP_ID, LEVELS, true)
         ..presetTargetTypes(Targettype.POINT)
-        ..presetCooldown((int lvl) -> 30 - (level * 2))
+        ..presetCooldown(lvl -> 30 - (level * 2))
 ```
 
 Notice the `presetCooldown` call with the lambda expression. Next to normal setters, the standard library provides `preset*` functions that are either convenience wrappers or take closure parameters to fill multiple levels using only one call.

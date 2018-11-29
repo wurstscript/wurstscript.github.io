@@ -11,6 +11,8 @@ date: 2018-03-23
 ---
 ------
 
+> **Updated** November 29th 2018
+
 ![](/assets/images/blog/bestof5/bestof5banner.png){: .img-responsive}
 
 # 1.29 and PTR
@@ -42,7 +44,7 @@ Types are now optional when writing lambda expressions:
 ```wurst
 interface UnitFunction
     function run(unit u)
-    
+
 function group.foreach(UnitFunction closure)
     ...
 
@@ -51,7 +53,7 @@ g.foreach((unit u) -> print(u.getName()))
 // Now also possible:
 g.foreach(u -> print(u.getName()))
 // Works for multiple params too:
-list.foldl((x,y) -> x+y)
+list.foldl((x, y) -> x + y)
 ```
 Additionally, you can now get rid of `begin` and `end` keywords for statement lambdas if the lambda is the last argument in the current line. The lambda is them moved behind the function call like so:
 ```wurst
@@ -141,41 +143,38 @@ public let BUFF_OBJ = compiletime(createDummyBuffObject(BUFF_NAME, BUFF_TT,	Icon
 @compiletime function genObj()
     new ChannelAbilityPreset(SPELL_ID, 4, true)
     ..setName(SPELL_NAME)
-    ..presetTooltipNormal((int lvl) -> SPELL_TT_NORMAL)
-    ..presetTooltipNormalExtended((int lvl) -> SPELL_TT_EXTENDED)
+    ..presetTooltipNormal(lvl -> SPELL_TT_NORMAL)
+    ..presetTooltipNormalExtended(lvl -> SPELL_TT_EXTENDED)
     ..presetIcon(SPELL_ICON)
     ..presetButtonPosNormal(0, 0)
-    ..presetManaCost((int lvl) -> 0)
-    ..presetCooldown((int lvl) -> 4.)
+    ..presetManaCost(lvl -> 0)
+    ..presetCooldown(lvl -> 4.)
     ..presetHotkey("Q")
     ..presetTargetTypes(Targettype.POINT)
-    ..presetAreaofEffect((int lvl) -> SPELL_RADIUS)
+    ..presetAreaofEffect(lvl -> SPELL_RADIUS)
     ..presetOption(Option.TARGETIMAGE, true)
 ```
 
 Spell effect
 ---
 
-Finally we create the actual effect. At the map's initialization we register a spell event listener, which will fire when any unit casts our generated spell. 
+Finally we create the actual effect. At the map's initialization we register a spell event listener, which will fire when any unit casts our generated spell.
 
 ```wurst
 package Conflagration
 import ConflagrationObjects
 import ClosureTimers
 import ClosureForGroups
-import RegisterEvents
-import EventHelper
 import HashMap
+import ClosureEvents
 
 let buffId = BUFF_OBJ.abilId
 let buffMap = new HashMap<unit, CallbackSingle>()
 init
-	registerSpellEffectEvent(SPELL_ID) ->
-		let caster = GetTriggerUnit()
-		let tpos = getSpellTargetPos()
+	EventListener.onPointCast(SPELL_ID) (caster, tpos) ->
 		flashEffect(SPELL_EFFECT_PATH, tpos)
 		doAfter(SPELL_EFFECT_DURATION) ->
-			forUnitsInRange(tpos, SPELL_RADIUS)  u ->
+			forUnitsInRange(tpos, SPELL_RADIUS) u ->
 				if u.hasAbility(buffId)
 					caster.damageTarget(u, BONUS_DAMAGE)
 					flashEffect(BONUS_EFFECT_PATH, tpos)
@@ -188,8 +187,10 @@ init
 					if buffMap.has(u)
 						buffMap.remove(u)
 						u.removeAbility(buffId)
-				buffMap.put(caster, cb)
+				buffMap.put(u, cb)
 ```
+
+We are using `EventListener.onPointCast` from `ClosureEvents.wurst` to do do the event listening for casts of `SPELL_ID`. On a `SPELL_EFFECT` event with the right id, the following indented codeblock will be executed. The lambda parameters `(caster, tpos)` will be filled appropriately with the caster unit and the target point.
 
 ![](/assets/images/blog/bestof5/spellAction.gif){: .img-responsive}
 The spell in action
