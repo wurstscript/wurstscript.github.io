@@ -13,7 +13,7 @@ The Wurst expressions in semi-formal syntax:
 ```wurst
 Expr ::=
       Expr + Expr       // addition
-    | Expr - Expr       // suctraction
+    | Expr - Expr       // subtraction
     | Expr / Expr       // real division
     | Expr div Expr     // integer division
     | Expr % Expr       // real modulo
