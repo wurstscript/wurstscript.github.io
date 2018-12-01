@@ -22,19 +22,16 @@ package Conflagration
 import ConflagrationObjects
 import ClosureTimers
 import ClosureForGroups
-import RegisterEvents
-import EventHelper
 import HashMap
+import ClosureEvents
 
 let buffId = BUFF_OBJ.abilId
 let buffMap = new HashMap<unit, CallbackSingle>()
 init
-	registerSpellEffectEvent(SPELL_ID) ->
-		let caster = GetTriggerUnit()
-		let tpos = getSpellTargetPos()
+	EventListener.onPointCast(SPELL_ID) (caster, tpos) ->
 		flashEffect(SPELL_EFFECT_PATH, tpos)
 		doAfter(SPELL_EFFECT_DURATION) ->
-			forUnitsInRange(tpos, SPELL_RADIUS)  u ->
+			forUnitsInRange(tpos, SPELL_RADIUS) u ->
 				if u.hasAbility(buffId)
 					caster.damageTarget(u, BONUS_DAMAGE)
 					flashEffect(BONUS_EFFECT_PATH, tpos)
@@ -47,16 +44,16 @@ init
 					if buffMap.has(u)
 						buffMap.remove(u)
 						u.removeAbility(buffId)
-				buffMap.put(caster, cb)
+				buffMap.put(u, cb)
 ```
 
 ## Imports
 
-We import various packages to make the process of spell creation easier. `ClosureTimers` and `ClosureForGroups` allow us to easily handle delayed code (`doAfter`) and group enums(`forUnitsInRange`). `RegisterEvents` and `EventHelper` give us a nicer API to trigger events. At last `HashMap` allows us to attach arbitrary data to other data - in this example we attach our Buff effect to the target unit.
+We import various packages to make the process of spell creation easier. `ClosureTimers` and `ClosureForGroups` allow us to easily handle delayed code (`doAfter`) and group enums(`forUnitsInRange`). `ClosureEvents` gives us a nicer API to wc3 events, including closures. At last `HashMap` allows us to attach arbitrary data to other data - in this example we attach our Buff effect to the target unit.
 
 ## Buff Effect
 
-The spell works like this: We listen to a specific spell event using `registerSpellEffectEvent`. The lambda block contains our event callback. Inside the callback we create the meteor effect using `flashEffect` at the appropriate positions. Since the effect takes some time to hit the ground, we also want our damage effect to be delayed. Thus we start a timer using `doAfter(SPELL_EFFECT_DURATION) ->`.
+The spell works like this: We listen to a specific spell event using `EventListener.onPointCast`. The lambda block contains our event callback. Inside the callback we create the meteor effect using `flashEffect` at the appropriate positions. Since the effect takes some time to hit the ground, we also want our damage effect to be delayed. Thus we start a timer using `doAfter(SPELL_EFFECT_DURATION) ->`.
 In this case the lambda block is executed once the chosen amount of time has passed. Now that the special effect has landed on the ground, we apply damage to all units inside a circular area around the target position.
 We use `forUnitsInRange(tpos, SPELL_RADIUS) u ->` to have all units inside the range near the target possition passed to the lambda function. This is the `u` in front of the arrow `->` in `SPELL_RADIUS) u ->`.
 Inside the lambda block we now refer to u as one of the units that is in range, and apply our effects.
