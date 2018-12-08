@@ -16,3 +16,5 @@ The WurstScript standard library provides a vast amount of useful packages to de
 ### *&nbsp;*{: .fa .fa-folder-open} Closures
 
 &nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*{: .fa .fa-file} [Closure Events](stdlib/closure_events)
+
+&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*{: .fa .fa-file} [Closure Timers](stdlib/closure_timers)
