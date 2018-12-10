@@ -3,8 +3,7 @@ title: Timers with Closures
 sections:
 - Intro
 - Delayed actions
-- Special events
-- Cast events
+- Periodic actions
 ---
 
 ### Intro
