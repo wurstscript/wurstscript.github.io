@@ -1,6 +1,7 @@
 ---
 title: Closure Events
 color: blue
+date: 2018-12-03
 sections:
   - /stdlib/closures/event_listening
 ---

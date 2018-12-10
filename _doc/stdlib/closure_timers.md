@@ -1,6 +1,7 @@
 ---
 title: Closure Timers
 color: blue
+date: 2018-10-8
 sections:
   - /stdlib/closures/delayed_actions
 ---
