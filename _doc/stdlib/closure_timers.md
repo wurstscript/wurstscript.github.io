@@ -1,5 +1,6 @@
 ---
 title: Closure Timers
+layout: stdlibdoc
 color: blue
 date: 2018-10-8
 sections:

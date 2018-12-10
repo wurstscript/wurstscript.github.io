@@ -1,5 +1,6 @@
 ---
 title: Closure Events
+layout: stdlibdoc
 color: blue
 date: 2018-12-03
 sections:
