@@ -9,11 +9,14 @@ sections:
 
 ### Intro
 
-The WurstScript standard library provides a vast amount of useful packages to developers starting out with Wurst. Many commonly used data structures, wc3 specific utility packages, Object Editing and extension wrappers for the blizzard natives have been implemented, are unit tested and ready to use in production immediately.
+The WurstScript standard library provides a vast amount of useful packages to developers starting out with Wurst.
+Many commonly used data structures, wc3-specific utility packages, Object Editing, and extension wrappers for the blizzard natives have been implemented.
+These tools are unit tested, and ready to use in production immediately.
 
 ### Overview
 
-> This section is incomplete and WIP. Any help would be appreciated, please open an issue or pull request.
+> This section is incomplete and WIP.
+> Any help would be appreciated - please open an [issue](https://github.com/wurstscript/wurstscript.github.io/issues/new), or make a [pull request](https://github.com/wurstscript/wurstscript.github.io/pulls).
 
 ### *&nbsp;*{: .fa .fa-folder-open} Object Editing
 
