@@ -27,3 +27,6 @@ These tools are unit tested, and ready to use in production immediately.
 &nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*{: .fa .fa-file} [Closure Events](stdlib/closure_events)
 
 &nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*{: .fa .fa-file} [Closure Timers](stdlib/closure_timers)
+
+&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*{: .fa .fa-file} [Closure For Groups](stdlib/closure_for_groups)
+
