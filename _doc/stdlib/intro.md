@@ -18,6 +18,10 @@ These tools are unit tested, and ready to use in production immediately.
 > This section is incomplete and WIP.
 > Any help would be appreciated - please open an [issue](https://github.com/wurstscript/wurstscript.github.io/issues/new), or make a [pull request](https://github.com/wurstscript/wurstscript.github.io/pulls).
 
+### *&nbsp;*{: .fa .fa-folder-open} Data
+
+&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*{: .fa .fa-file} [Hash Map](stdlib/hash_map)
+
 ### *&nbsp;*{: .fa .fa-folder-open} Object Editing
 
 &nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*{: .fa .fa-file} [Unit Object Editing](stdlib/unit_objed)
@@ -29,4 +33,6 @@ These tools are unit tested, and ready to use in production immediately.
 &nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*{: .fa .fa-file} [Closure Timers](stdlib/closure_timers)
 
 &nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*{: .fa .fa-file} [Closure For Groups](stdlib/closure_for_groups)
+
+
 
