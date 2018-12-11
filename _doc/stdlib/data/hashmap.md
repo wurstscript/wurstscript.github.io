@@ -4,6 +4,7 @@ sections:
 - Intro
 - Basic Usage
 - Other Examples
+- Iterable Map
 ---
 
 ### Intro
@@ -29,6 +30,8 @@ class B
 	map.put(a, b)
 	// Check if the map contains a value associated with the key
 	map.has(a).assertTrue()
+	// Get a value
+	let a2 = map.get(a)
 	// Remove the entry
 	map.remove(a)
 	map.has(a).assertFalse()
@@ -43,4 +46,22 @@ For example attaching classes to units by using `unit` as key type and your clas
 class SomeDataClass
 
 let dataMap = new HashMap<unit, SomeDataClass>
+```
+
+### Iterable Map
+
+Since a normal `HashMap` does not know it's entries, you cannot iterate over them.
+For this case there is `IterableMap` which extends `HashMap` and combines it with a `HashList` storing the keys.
+Via those keys you can then access your values.
+
+```wurst
+let iterMap = new IterableMap<int, int>
+iterMap.put(0, 3)
+iterMap.put(1, 2)
+iterMap.put(2, 1)
+iterMap.put(3, 0)
+
+for key in iterMap
+	let val = iterMap.get(val)
+	Log.info("key: " +  key.toString() + " val: " + val.toString())
 ```
