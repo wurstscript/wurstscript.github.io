@@ -2,8 +2,9 @@
 title: Groups, enumerations, and iterating
 sections:
 - Intro
-- Delayed actions
-- Periodic actions
+- All you ever needed
+- The API overview
+- More advanced stuff
 ---
 
 ### Intro
