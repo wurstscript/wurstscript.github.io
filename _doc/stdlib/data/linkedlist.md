@@ -84,3 +84,53 @@ ll.sortWith((u1, u2) -> (u1.getPos().distanceTo(target) - u2.getPos().distanceTo
 // Get closest unit
 let closest = ll.pop()
 ```
+
+### The Linked List Module
+
+If you encounter the case that you always want to iterate over all instances of a class, creating LinkedList objects and storing the instances in it is unnecessary overhead.
+
+```wurst
+// external
+let list = new LinkedList<A>
+class A
+  construct()
+    list.add(this)
+
+...
+for a in list
+
+```
+
+Instead the class itself can act as a linked list, so that each instance knows it's next and previous neighbour.
+
+```wurst
+// better, but still allocating iterators
+class A
+  use LinkedListModule
+
+...
+for a in A
+
+```
+
+### Efficiently Iterating LinkedLists
+
+If you have a for each loop over a list like so:
+
+```wurst
+LinkedList<X> list
+for elem in list
+```
+
+Then wurst will create and destroy an iterator object each time you execute the loop.
+
+If you know that your loop is not nested, you can use the static iterator instead and save the overhead.
+
+```wurst
+# better, but limited
+LinkedList<X> list
+for elem from list.staticItr()
+```
+
+**Note** that it has to be a for .. *from* loop now.
+
