@@ -18,7 +18,7 @@ containing more examples, potentially images, further links and looks behind the
 Hotdoc in nature should be short and precise, providing concise documentation about single entities, such as a function.
 It should contain only one or very few usages examples to illustrate the API.
 
-Both should be used in conjuction for a quick familiarisation with the standard library and wurst best practises.
+Both hotdoc and these pages should be used in conjuction for a quick familiarisation with the standard library and wurst best practises.
 All packages in the standard library follow the [coding conventions](https://wurstlang.org/manual.html#coding-conventions) and should be inspected for guidance and inspiration for writing your own code.
 
 ### Overview
@@ -43,6 +43,10 @@ All packages in the standard library follow the [coding conventions](https://wur
 ### *&nbsp;*{: .fa .fa-folder-open} Dummy
 
 &nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*{: .fa .fa-file} [Dummy Casting](stdlib/dummy_caster)
+
+### *&nbsp;*{: .fa .fa-folder-open} Math
+
+&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*{: .fa .fa-file} [Vectors](stdlib/vectors)
 
 ### *&nbsp;*{: .fa .fa-folder-open} Object Editing
 
