@@ -2,6 +2,8 @@
 title: Dummy Casting
 sections:
 - Intro
+- Instant spells
+- Delayed spells
 ---
 
 ### Intro
