@@ -2,7 +2,7 @@
 title: Dummy Casters
 layout: stdlibdoc
 color: blue
-date: 2018-12-18
+date: 2018-12-20
 sections:
   - /stdlib/dummy/dummycaster
 ---
