@@ -3,10 +3,12 @@
 <div id="cards-wrapper" class="cards-wrapper row">
     {% for navigation in include.navigation %}
     {% assign post = site.doc | where: "id", navigation | first %}
-    <div class="item item-{{ post.color }} col-md-6 col-sm-6 col-xs-6">
+    <div class="item item-{{ post.color }} col-md-12 col-sm-12 col-xs-12">
         <div class="item-inner">
+			<img src="{{ post.banner | prepend: site.baseurl }}" class="img-responsive" alt="Responsive image">
             <h3 class="title" style="font-size: 26px;">{{ post.title }}</h3>
-            <div class="author"><i class="fa fa-user"></i> {{ post.author }} <i class="fa fa-calendar"></i> {{ post.date | date: '%B %d, %Y' }}</div>
+            <div><i class="fa fa-user"></i><p style="margin: 0.5em;display: inline;">{{ post.author }}</p> 
+			<i class="fa fa-calendar"></i> <p style="margin: 0.5em;display: inline;">{{ post.date | date: '%B %d, %Y' }}</p></div>
             <br>
             <p class="intro"> {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
             <a class="link" href="{{ post.url | prepend: site.baseurl }}"><span></span></a>
