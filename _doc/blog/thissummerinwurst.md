@@ -8,6 +8,7 @@ icon:
 color: orange
 author: Cokemonkey11
 date: 2017-11-15
+banner: /assets/images/blog/bestof1/ThisSummerInWurstBanner.png
 ---
 ------
 ![](/assets/images/blog/bestof1/ThisSummerInWurstBanner.png){: .img-responsive}
@@ -52,7 +53,7 @@ Alongside great improvements to the [JMPQ](https://github.com/inwc3/JMPQ3) libra
 * Map files can more safely be version controlled since they’re accessed read-only by the wurst compiler.
 * In the extreme case, alongside native objediting, you can maintain your map end-to-end using your checked-in mapfile only for terraining purposes.
 * Better integration with existing maps that have JASS/vJass, because wurst can reuse the existing map script without mutating the source file.
-* Building and compiling wurst maps is now done independently in vscode by default - thus there is no need to use a custom editor (apart from for terraining) or even have warcraft3 installed at all. 
+* Building and compiling wurst maps is now done independently in vscode by default - thus there is no need to use a custom editor (apart from for terraining) or even have warcraft3 installed at all.
 
 ## Map metadata in __wurst.build__
 

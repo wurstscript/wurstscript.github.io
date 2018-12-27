@@ -8,6 +8,7 @@ icon:
 color: blue
 author: Frotty
 date: 2018-02-01
+banner: /assets/images/blog/bestof4/februaryBanner.png
 ---
 ------
 
@@ -15,7 +16,7 @@ date: 2018-02-01
 
 In this fourth issue of our blog we look at wurstscript's start into 2018, and our roadmap. Once again we're excited to mention that users within our awesome community are getting involved and contribute to the wurst.
 
-The theme for this months code snippet is **unit testing in wurst**. 
+The theme for this months code snippet is **unit testing in wurst**.
 
 WurstScript, or *Wurst* for short, aims to be a completely integrated wc3 modding solution, with a focus on higher level programming and IDE experience, without sacrificing efficiency of the generated map script.
 
@@ -27,7 +28,7 @@ Updates
 * Removed obsolete temp file creation when handling MPQ files, which prevents permission problems on certain systems.
 * Compiletime mocks added for `force` and `gamecache`, enabling them to be ued in object editing and unit tests.
 * The compiletime implementation of`StringHash` now returns values identical to those at runtime, thanks to @lep
-* We merged many awesome pull requests for the standard library ([#23](https://github.com/wurstscript/WurstStdlib2/pull/23), [#25](https://github.com/wurstscript/WurstStdlib2/pull/25), [#26](https://github.com/wurstscript/WurstStdlib2/pull/26), [#27](https://github.com/wurstscript/WurstStdlib2/pull/27), [#28](https://github.com/wurstscript/WurstStdlib2/pull/28), [#30](https://github.com/wurstscript/WurstStdlib2/pull/30), [#31](https://github.com/wurstscript/WurstStdlib2/pull/31), [#33](https://github.com/wurstscript/WurstStdlib2/pull/33), [#34](https://github.com/wurstscript/WurstStdlib2/pull/34), [#35](https://github.com/wurstscript/WurstStdlib2/pull/35), [#36](https://github.com/wurstscript/WurstStdlib2/pull/36), [#37](https://github.com/wurstscript/WurstStdlib2/pull/37), [#38](https://github.com/wurstscript/WurstStdlib2/pull/38), [#41](https://github.com/wurstscript/WurstStdlib2/pull/41), [#42](https://github.com/wurstscript/WurstStdlib2/pull/42)) 
+* We merged many awesome pull requests for the standard library ([#23](https://github.com/wurstscript/WurstStdlib2/pull/23), [#25](https://github.com/wurstscript/WurstStdlib2/pull/25), [#26](https://github.com/wurstscript/WurstStdlib2/pull/26), [#27](https://github.com/wurstscript/WurstStdlib2/pull/27), [#28](https://github.com/wurstscript/WurstStdlib2/pull/28), [#30](https://github.com/wurstscript/WurstStdlib2/pull/30), [#31](https://github.com/wurstscript/WurstStdlib2/pull/31), [#33](https://github.com/wurstscript/WurstStdlib2/pull/33), [#34](https://github.com/wurstscript/WurstStdlib2/pull/34), [#35](https://github.com/wurstscript/WurstStdlib2/pull/35), [#36](https://github.com/wurstscript/WurstStdlib2/pull/36), [#37](https://github.com/wurstscript/WurstStdlib2/pull/37), [#38](https://github.com/wurstscript/WurstStdlib2/pull/38), [#41](https://github.com/wurstscript/WurstStdlib2/pull/41), [#42](https://github.com/wurstscript/WurstStdlib2/pull/42))
     * Big thanks to @HappyTauren @Trokkin @Jampi0n @Karlek @Krankx and @Chaosy
     * Special thanks to @Sir Moriarty for providing us with new and improved FileIO and Sync packages. The biggest PR we have merged so far!
 * We have made some improvements to our continuous integration process, so standard library changes, and pull requests to it are more seamless and powerful.
@@ -79,8 +80,8 @@ The easiest units to test are the ones that don't include warcraft specific elem
 	let v = linear(vec2(3,4), vec2(6,2), 0.5)
 	v.x.assertEquals(4.5)
 	v.y.assertEquals(3)
-  
-@Test function testJoin() 
+
+@Test function testJoin()
     new LinkedList<string>()..add("this")..add("is")..add("a")..add("string")
     .joinBy(" ").assertEquals("this is a string")
 ```
@@ -110,7 +111,7 @@ Running Unit Tests
 In VScode, use F1 to open the task prompt and enter "run test" and choose one of the options.
 ![](/assets/images/blog/bestof4/runTestVS.png){: .img-responsive}
 
-You can see the result inside the __Output__ tab. 
+You can see the result inside the __Output__ tab.
 
 ![](/assets/images/blog/bestof4/testOutputVS.png){: .img-responsive}
 

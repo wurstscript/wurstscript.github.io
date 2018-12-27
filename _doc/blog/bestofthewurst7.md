@@ -8,6 +8,7 @@ icon:
 color: orange
 author: Frotty
 date: 2018-07-30
+banner: /assets/images/blog/bestof7/wurstbanner7.png
 ---
 ------
 
@@ -59,7 +60,7 @@ This month we have added *numerous* new optimizer improvements, making this feat
 * Consecutive statements of `set` and `exitwhen` are now merged into one if applicable.
 * Sums of the same variable or function are now rewritten (`a + a => a*2`) which improves the effectiveness of other optimizations.
 
-The great thing about new optimizations is that they cause something like an avalanche effect. Meaning that due to these 'minor' changes in the output code, other already existing optimizations can now be applied over again successfully, where they didn't change anything before. 
+The great thing about new optimizations is that they cause something like an avalanche effect. Meaning that due to these 'minor' changes in the output code, other already existing optimizations can now be applied over again successfully, where they didn't change anything before.
 
 You can always check the output code in the `_build/output.j.txt` file. Here is a small example:
 

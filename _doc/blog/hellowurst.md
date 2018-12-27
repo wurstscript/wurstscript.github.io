@@ -8,6 +8,7 @@ icon:
 color: green
 author: Frotty
 date: 2017-08-30
+banner: /assets/images/empty.png
 ---
 ------
 # Hello

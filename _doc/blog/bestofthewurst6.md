@@ -8,6 +8,7 @@ icon:
 color: purple
 author: Frotty
 date: 2018-05-17
+banner: /assets/images/blog/bestof6/wurstbanner6.png
 ---
 ------
 
@@ -29,7 +30,7 @@ Updates
 * Fixed two unusual exceptions related to extended unicode characters
 * Implemented additional natives for compiletime such as timers, triggers, rects and more, enabling those to be used in unit tests.
 * Modified standard units get printed into `WurstExportedObjects` again, for easier transfer to generated objects
-* The operator precedence of `or` in Wursts Jass parsing is now correct 
+* The operator precedence of `or` in Wursts Jass parsing is now correct
 
 __Standard Library__
 
@@ -66,7 +67,7 @@ Several functions in the standard library are now implemented via varargs, and a
     new UnitObjDefinition('buil', 'hfoo')
     ..setNormalAbilities(asList(ID_FIREBALL, ID_FIRE_NOVA))
     ..setStructuresBuilt(asList(ID_GUARD_TOWER, ID_CANNON_TOWER))
-    
+
 init
     CreateGroup().addUnit(u1, u2, u3)
 ```
@@ -95,11 +96,11 @@ Some common uses:
 getSpellTargetPos() // instead of GetSpellTargetX/Y
 getOrderPos() // instead of GetOrderPointX/Y
 getOrderTargetPos()  // instead of GetWidgetX(GetOrderTarget()) etc.
-    
+
 // As class member, e.g. position, velocity
 class A
     vec2 position
-    
+
 // Angle between points & Polar projection
 function onEvent()
     let casterPos = GetTriggerUnit().getPos()

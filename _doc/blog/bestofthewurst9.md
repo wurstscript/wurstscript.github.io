@@ -6,8 +6,9 @@ icon:
   type: fa
   name: fa-servicestack
 color: blue
-author: Frotty
+author: Frotty & Coke
 date: 2018-12-27
+banner: /assets/images/blog/bestof9/wurstbanner9.png
 ---
 ------
 
@@ -33,10 +34,11 @@ Standard library highlights
 * We have newly-added [code conventions](https://wurstlang.org/manual.html#coding-conventions) - go align your formatting!
 * We have begun writing in-depth [package documentation](https://wurstlang.org/stdlib)
 
-Spotlight: Stack traces?
+Spotlight: Stack traces
 ---
 
-Wurst generates stack traces for calls of `error(string msg)` from the `ErrorHandling` package. This means it will show you which lines in your code were executed in what order before the error occured.
+Did you know that WurstScript generates stack traces for calls of `error(string msg)` from the `ErrorHandling` package?
+You might have seen this from a wurst error before - it will show you which lines in your code were executed in what order before the error occured.
 
 Take a look at this example:
 

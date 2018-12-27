@@ -8,6 +8,7 @@ icon:
 color: blue
 author: Cokemonkey11, Frotty
 date: 2017-12-03
+banner: /assets/images/blog/bestof2/bestOfTheWurst2Banner.jpg
 ---
 ------
 ![https://wurstlang.org](/assets/images/blog/bestof2/bestOfTheWurst2Banner.jpg){: .img-responsive}

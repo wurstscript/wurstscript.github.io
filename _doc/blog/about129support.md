@@ -8,6 +8,7 @@ icon:
 color: green
 author: Frotty
 date: 2018-04-13
+banner: /assets/images/empty.png
 ---
 ------
 ## Patch Compatability
@@ -24,7 +25,7 @@ With everything up to date, runmap should work as expected.
 Our wurst.build integration still doesn't support configuring players, forces and loadingscreen options.
 These features will soon be implemented however, and then provide direct access to all new features from this patch.
 
-For more information on the new patch [click here](https://www.hiveworkshop.com/threads/warcraft-iii-patch-1-29.304803/). 
+For more information on the new patch [click here](https://www.hiveworkshop.com/threads/warcraft-iii-patch-1-29.304803/).
 
 ## Troubleshooting
 

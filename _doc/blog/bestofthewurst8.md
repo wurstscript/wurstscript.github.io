@@ -8,10 +8,11 @@ icon:
 color: blue
 author: Frotty
 date: 2018-09-15
+banner: /assets/images/blog/bestof8/wurstbanner8.png
 ---
 ------
 
-![](https://i.imgur.com/uZ7qZFg.png){: .img-responsive}
+![](/assets/images/blog/bestof8/wurstbanner8.png){: .img-responsive}
 
 This month we addressed some older issues, as well as adding juicy new features. Our spotlight this time is about new *vscode features*.
 
