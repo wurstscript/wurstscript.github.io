@@ -7,8 +7,7 @@ title: Manual
 
 ## Stacktraces
 
-You can enable stacktraces in the the menu of WurstPack or with the commandline
-switch `-stacktraces`. Each error will then be displayed with a stacktrace showing
+You can enable with the commandline switch `-stacktraces`. Each error will then be displayed with a stacktrace showing
 the line number and filename of each function-call leading to the error. Errors
 must be generated with the magic function `function error(string msg)`.
 

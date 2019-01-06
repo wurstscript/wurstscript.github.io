@@ -499,7 +499,7 @@ In order to define an overloading function it has to be named as following:
 
 Almost any definition in wurst can be annotated with one or more optionally named annotations.
 Annotations are compiletime only metadata which can be used for compiletime function, tests and `callFunctionsWithAnnotation`.
-In most cases annotations are generally disregarded unless you use them yourself. 
+In most cases annotations are generally disregarded unless you use them yourself.
 List of all wurst reserved annotations:
 
 ```wurst
@@ -528,7 +528,7 @@ A compiletime function is just a normal Wurst function annotated with @compileti
 ```
 Compiletime functions have no parameters and no return value.
 
-In order to run compiletime functions you have to enable the checkbox in the Wurstpack Menu.
+Compiletime functions are run by default. You can change this with the cmdline arguments `-runcompiletimefunctions` and `-injectobjects`.
 When you use compiletime functions to generate objects, Wurst will generate the object files
 next to your map and you can import them into your map using the object editors normal import
 function. Compared to ObjectMerger this has the advantage, that you can directly see your new
