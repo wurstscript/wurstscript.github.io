@@ -1,6 +1,6 @@
 ---
 title: Tutorials
-excerpt: Wurst guides on specific topics for all skill ranges.
+excerpt: Wurst guides on specific topics for aspiring developers.
 date: 2017-07-26
 icon:
   name: icon_lifesaver

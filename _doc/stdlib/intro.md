@@ -36,6 +36,8 @@ All packages in the standard library follow the [coding conventions](https://wur
 
 ### *&nbsp;*{: .fa .fa-folder-open} Data
 
+&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*{: .fa .fa-file} [Bit Set](stdlib/bitset)
+
 &nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*{: .fa .fa-file} [Hash Map](stdlib/hash_map)
 
 &nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*{: .fa .fa-file} [Linked List](stdlib/linked_list)
