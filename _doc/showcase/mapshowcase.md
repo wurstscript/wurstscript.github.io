@@ -172,5 +172,28 @@ Brings the immensely popular gamemmode from Dota 2 to Warcraft 3 melee maps.
 </div>
 <!-- End Card -->
 
+<!-- Begin Card -->
+<div class="col-sm-6 col-xs-12">
+<div class="card" markdown="1">
+
+[![screenshot](/assets/images/showcase/snowballpreview.png){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/snowball-fight-1-33g.311681/)
+
+<div class="card-block" markdown="1">
+
+{: .card-title}
+
+#### Snowball Fight
+
+{: .card-text}
+A charmful skirmish between two teams in a snowy landscape.
+
+[_&nbsp;_{: .fa .fa-external-link-square} Hive Thread](https://www.hiveworkshop.com/threads/snowball-fight-1-33g.311681/) [_&nbsp;_{: .fa .fa-external-link-square} Git Repo](https://github.com/Frotty/Snowball-Fight)
+
+</div>
+
+</div>
+<!-- End Card -->
+</div>
+
 </div>
 <!-- End Row -->
