@@ -26,6 +26,11 @@ All packages in the standard library follow the [coding conventions](https://wur
 > This section is incomplete and WIP.
 > Any help would be appreciated - please open an [issue](https://github.com/wurstscript/wurstscript.github.io/issues/new), or make a [pull request](https://github.com/wurstscript/wurstscript.github.io/pulls).
 
+### *&nbsp;*{: .fa .fa-folder-open} _wurst
+
+&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*{: .fa .fa-file} [Wurst Unit](stdlib/wurstunit)
+
+
 ### *&nbsp;*{: .fa .fa-folder-open} Closures
 
 &nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*{: .fa .fa-file} [Closure Events](stdlib/closure_events)
