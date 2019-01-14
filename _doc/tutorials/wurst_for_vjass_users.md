@@ -7,6 +7,7 @@ icon:
   name: fa-code
 color: green
 author: Cokemonkey11
+layout: tutorialdoc
 sections:
   - /tutorials/wurst_for_vjass_users/page_1
 ---

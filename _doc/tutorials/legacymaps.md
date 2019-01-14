@@ -7,6 +7,7 @@ icon:
   name: fa-puzzle-piece
 color: blue
 author: Frotty
+layout: tutorialdoc
 sections:
   - /tutorials/legacymaps/introduction
   - /tutorials/legacymaps/legacycode

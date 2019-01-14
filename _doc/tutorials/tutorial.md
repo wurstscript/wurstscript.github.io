@@ -6,6 +6,7 @@ icon:
   type: fa
   name: fa-puzzle-piece
 color: blue
+layout: tutorialdoc
 sections:
   - /tutorials/legacymaps/introduction
   - /tutorials/legacymaps/legacycode

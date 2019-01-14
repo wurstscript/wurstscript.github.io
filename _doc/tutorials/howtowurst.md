@@ -7,6 +7,7 @@ icon:
   name: fa-themeisle
 color: orange
 author: Frotty
+layout: tutorialdoc
 sections:
   - /tutorials/howtowurst/chapter1
 ---

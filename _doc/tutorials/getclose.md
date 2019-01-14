@@ -7,6 +7,7 @@ icon:
   name: fa-star
 color: pink
 author: HappyTauren & Frotty
+layout: tutorialdoc
 sections:
   - /tutorials/closewithclosure/intro
   - /tutorials/closewithclosure/closures
