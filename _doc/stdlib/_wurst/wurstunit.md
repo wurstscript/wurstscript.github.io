@@ -14,7 +14,7 @@ We already discussed unit testing in [BOTW 4](https://wurstlang.org/blog/bestoft
 The first three functions of the package are annotated with `@compiletimenative` and have no implementation.
 They are named that way because they are a custom native that is implemented inside the wurst compiler and only available at compiletime, disjuct from warcraft and Jass.
 
-```
+```wurst
 @compiletimenative public function println(string msg)
 	DisplayTimedTextToPlayer(GetLocalPlayer(), 0, 0, 60, msg)
 @compiletimenative public function testFail(string msg)
