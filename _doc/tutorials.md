@@ -13,4 +13,5 @@ navigation:
   - /tutorials/wurstbeginner
   - /tutorials/legacymaps
   - /tutorials/wurst_for_vjass_users
+  - /tutorials/getclose
 ---
