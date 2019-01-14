@@ -51,6 +51,8 @@ All packages in the standard library follow the [coding conventions](https://wur
 
 &nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*{: .fa .fa-file} [Dummy Casting](stdlib/dummy_caster)
 
+&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*{: .fa .fa-file} [Dummy Recycler](stdlib/dummy_recycler)
+
 ### *&nbsp;*{: .fa .fa-folder-open} Math
 
 &nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*{: .fa .fa-file} [Vectors](stdlib/vectors)
