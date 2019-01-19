@@ -2,7 +2,7 @@
 title: Hash Map
 layout: stdlibdoc
 color: blue
-date: 2018-12-11
+date: 2019-01-19
 sections:
   - /stdlib/data/hashmap
 ---

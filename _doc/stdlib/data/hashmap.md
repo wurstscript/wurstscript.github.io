@@ -9,7 +9,7 @@ sections:
 
 ### Intro
 
-A hash table, also known as hash map is a data structure that can map keys to values. It should be used instead of the if you don't require two keys.
+A hash table, also known as hash map is a data structure that can map keys to values. It should be used instead of the `hashtable` type if you don't require two keys.
 Unlike the Jass `hashtable` which exposes a wide amount of functions to load, save and remove values,
 the `class HashMap<K, V>` is generic with `K` being the type of the key and `V` being the type of the value you want to save.
 
