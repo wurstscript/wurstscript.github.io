@@ -54,11 +54,11 @@ For cast events there exist comfort wrappers starting with `EventListener.on`. F
 
 ```wurst
 EventListener.onCast(MY_SPELL_ID) caster ->
-	<some non target spell event for all units>
+	print(caster.getName() + " casted my spell.")
 
-EventListener.onCast(myUnit, MY_SPELL_ID) caster ->
-	<some non target spell for 'myUnit'>
+EventListener.onTargetCast(myUnit, MY_SPELL_ID) (caster, target) ->
+	caster.damageTarget(target, 50.)
 
 EventListener.onPointCast(myUnit, MY_SPELL_ID) (caster, target) ->
-	<actions for a point cast spell. 'target' is the vec2 target point>
+	flashEffect(Abilities.frostNovaTarget, target)
 ```
