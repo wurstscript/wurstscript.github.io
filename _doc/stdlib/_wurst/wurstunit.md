@@ -24,20 +24,20 @@ They are named that way because they are a custom native that is implemented ins
 `println` is just a function to print something to vscode's output tab.
 You can use it and `print` to perform logs in your code that will show up in tests.
 `testFail` and `testSuccess` are the functions that make a unit test fail or succeed, depending on which one is called first.
-Tests succeed by default and you should usually use asertions instead of these natives directly.
+Tests succeed by default and you should thus make sure to use asertions instead of these natives directly.
 
 ### Assertions
 
-Below the natives we have a list of assert functions that build upon `testFail` and `testSuccess` providing better API and error output.
-As by code conventions you should prefer the typed extension functions over lower level ones.
-Let's look an one example, first a bad assertion of two integers:
+After the compiletime natives we have a list of __assertXX__ functions that build upon `testFail` and `testSuccess`, providing better API and debug output.
+As by code conventions you should prefer the typed extension functions over the lower level ones.
+Let's look at one example, first a not ideal assertion of two integers:
 
 ```wurst
-// Bad
+// Not ideal
 assertTrue(someInt == someOtherInt)
 ```
 
-If the test fails, you will only get a failed assertion:
+If the test fails, you will only get a failed assertion without further information:
 
 ```
 	FAILED assertion:
@@ -46,14 +46,14 @@ If the test fails, you will only get a failed assertion:
 ... when calling assertTrue(false) in Wurstunit.wurst:18
 ```
 
-If you use the proper assertion:
+On the other hand if you use the proper assertion:
 
 ```wurst
-// Good
+// Better
 someInt.assertEquals(someOtherInt)
 ```
 
-You will get better code and a better output:
+The result will be better styled code and improved debug output:
 
 ```
 	FAILED assertion:
@@ -62,7 +62,14 @@ You will get better code and a better output:
 ... when calling real_assertEquals(1, 2) in Wurstunit.wurst:18
 ```
 
-You can write custom `equals` assertions for your own classes. Just take a look at the existing ones and duplicate the functionality.
+To make assertions on custom data types you can write a custom `assertEquals` assertions that classes. Just take a look at the existing ones and duplicate the functionality.
 
+```wurst
+class MyData
+	var x = 0
+	var y = player[0]
 
+public function MyData.assertEquals(MyData other) returns boolean
+	return this.x == other.x and this.y == other.y
+```
 
