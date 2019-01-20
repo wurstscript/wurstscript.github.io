@@ -2,7 +2,7 @@
 title: Wurst Unit
 layout: stdlibdoc
 color: blue
-date: 2019-01-14
+date: 2019-01-20
 sections:
   - /stdlib/_wurst/wurstunit
 ---

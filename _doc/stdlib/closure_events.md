@@ -2,7 +2,7 @@
 title: Closure Events
 layout: stdlibdoc
 color: blue
-date: 2018-12-03
+date: 2019-01-20
 sections:
   - /stdlib/closures/event_listening
 ---
