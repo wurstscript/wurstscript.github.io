@@ -73,8 +73,8 @@ The output will be in the Output->wurstLangServer log tab.
 The linked list comes with an in place merge sort that allows you to efficiently sort lists of any type using a `Comparator<T>`.
 Int and Real comparators are provided. To sort arbitrary types, implement a custom comparator.
 A comparator is a closure that takes two parameters `(p1, p2)` of the same type and returns an integer, indicating the result of the comparison.
-If the result is negative, `p1` will be considered smaller than `p2`. If it is positive, `u1` is considered bigger than `p2`.
-Zero indicates two indentical positions and the resulting position is undefined.
+If the result is negative, `p1` will be considered smaller than `p2`. If it is positive, `p1` is considered bigger than `p2`.
+Zero indicates two indentical values and the position in the resulting list is undefined.
 In the following example we sort a list of units by distance to a target. The closest unit is then popped off the list.
 
 ```wurst
