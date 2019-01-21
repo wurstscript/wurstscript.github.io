@@ -14,7 +14,11 @@ The standard library definitions are therefore split into `UnitDefinition`, `Her
 
 ### UnitDefinition
 
-`UnitDefinition` incorporates all units that are neither a hero nor a building. To avoid having to deal with raw ids and id collision, you should use the provided preset Id Generators from the `IdGenerator` package. Example from `DummyRecycler`:
+`UnitDefinition` incorporates all units that are neither a hero nor a building. To avoid having to deal with raw ids and id collision, you should use the provided preset Id Generators from the `IdGenerator` package.
+
+> Note that Warcraft III considers any unit with an id starting with an uppercase letter a hero, even when not using HeroDefinition
+
+Example from `DummyRecycler`:
 
 ```wurst
 let DUMMY_UNIT_ID = compiletime(UNIT_ID_GEN.next())
