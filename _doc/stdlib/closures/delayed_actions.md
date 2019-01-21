@@ -8,7 +8,7 @@ sections:
 
 ### Intro
 
-The `ClosureTimers.wurst` package wraps wc3 timer mechanics using wurst closures. The usage of closures allows you to carry over data and save the callbacks in a variable.
+The `ClosureTimers.wurst` package wraps Warcraft III timer mechanics using Wurst closures. The usage of closures allows you to carry over data and save the callbacks in a variable.
 
 > While ClosureTimers are great and fit for most tasks, in performance critical situations, the TimedLoop module can yield better results.
 
@@ -41,12 +41,31 @@ The other typical usecase for timers is periodical execution of a certain action
 
 ```wurst
 doPeriodically(ANIMATION_PERIOD) cb ->
-	for missile in missiles
-		missile.update()
+	if missiles.size() == 0
+		destroy cb
+	else
+		for missile in missiles
+			missile.update()
 
 // Countdown
 doPeriodicallyCounted(1, 3) cb ->
 	print(cb.getCount().toString() + "..")
 ```
 
+As you can see, in this variants the callback received the closure object as parameter, so you can destroy or modify it.
+You can also save the callback in a variable, to destroy it e.g. when the related unit dies.
+
+```wurst
+class MyClass
+	CallbackPeriodic cb
+
+	construct()
+		cb = doPeriodically(0.5, () -> checkAura())
+
+	function checkAura()
+		...
+
+	ondestroy
+		destroy cb
+```
 

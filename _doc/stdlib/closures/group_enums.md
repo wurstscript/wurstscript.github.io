@@ -11,7 +11,7 @@ sections:
 
 The wurst standard library provides a convenience wrapper for iterating over units.
 
-Nominally, this is a convenience wrapper for the `ForUnitsInRange` family, and creates an abstraction over the `group` handle type.
+Nominally the `ForUnitsInXXX` function family creates an abstraction over the `group` handle type.
 
 
 ### All you ever needed
