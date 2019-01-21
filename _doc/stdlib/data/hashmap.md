@@ -62,6 +62,6 @@ iterMap.put(2, 1)
 iterMap.put(3, 0)
 
 for key in iterMap
-	let val = iterMap.get(val)
+	let val = iterMap.get(key)
 	Log.info("key: " +  key.toString() + " val: " + val.toString())
 ```
