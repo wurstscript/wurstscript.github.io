@@ -9,7 +9,7 @@ sections:
 ### Intro
 
 In Warcraft III buffs are negative or positive status effects on units.
-However they are usually only the visual part of an ability that the unit posesses.
+However they are often only the visual part of an ability that the unit posesses.
 
 ### Regular Buff Editing
 
@@ -26,20 +26,20 @@ public constant MY_BUFF_ID = compiletime(BUFF_ID_GEN.next())
 		..setIcon(Icons.bTNAcorn)
 ```
 
-However often we want to generate buffs for custom abilities that don't have any ill effects and add/remove them dynamically.
-
 ### Dummy Tornado Buffs
 
-To easily create dummy buffs for visual display without effect, use the `createDummyBuffObject` functions.
-The functions will generate an ability and a buff which you can apply by adding the ability to a unit.
+When dealing with buffs we usually want to generate them for custom abilities without any side effects.
+To do exactly that, we use the `createDummyBuffObject` functions.
+These functions will generate an ability and a buff which you can apply by adding the ability to a unit.
+They return a tuple containing both of those ids.
 
 ```wurst
-let MY_BUFF_OBJ = createDummyBuffObject("My Buff", "This unit is buffed", Icons.btnAcorn)
+let MY_BUFF = compiletime(createDummyBuffObject("My Buff", "This unit is buffed", Icons.btnAcorn))
 
 function add()
-	GetTriggerUnit().addAbility(MY_BUFF_OBJ.abilId)
+	GetTriggerUnit().addAbility(MY_BUFF.abilId)
 
 function remove()
-	GetTriggerUnit().removeAbility(MY_BUFF_OBJ.abilId)
+	GetTriggerUnit().removeAbility(MY_BUFF.abilId)
 ```
 
