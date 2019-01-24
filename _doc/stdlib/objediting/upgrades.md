@@ -21,7 +21,7 @@ Example:
 ```wurst
 let MY_UPGRADE_ID = compiletime(UPGD_ID_GEN.next())
 
-init
+@compiletime function genUpg()
 	new UpgradeDefinition(MY_UPGRADE_ID)
 	..setLevels(10)
 	..presetName(lvl -> "Damage Upgrade level -" + lvl.toString())

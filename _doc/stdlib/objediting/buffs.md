@@ -18,11 +18,12 @@ To generate a regular buff just use `BuffDefinition` and pass the id of the buff
 ```wurst
 public constant MY_BUFF_ID = compiletime(BUFF_ID_GEN.next())
 
-new BuffDefinition(MY_BUFF_ID, 'Basl')
-	..setName(1, "My Buff")
-	..setTooltipNormal(1, "Hello there")
-	..setTooltipNormalExtended(1, "This unit is buffed")
-	..setIcon(Icons.bTNAcorn)
+@compiletime function genBuff()
+	new BuffDefinition(MY_BUFF_ID, 'Basl')
+		..setName(1, "My Buff")
+		..setTooltipNormal(1, "Hello there")
+		..setTooltipNormalExtended(1, "This unit is buffed")
+		..setIcon(Icons.bTNAcorn)
 ```
 
 However often we want to generate buffs for custom abilities that don't have any ill effects and add/remove them dynamically.
