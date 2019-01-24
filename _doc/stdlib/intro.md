@@ -65,6 +65,8 @@ All packages in the standard library follow the [coding conventions](https://wur
 
 &nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*{: .fa .fa-file} [Unit Object Editing](stdlib/unit_objed)
 
+&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*{: .fa .fa-file} [Upgrade Object Editing](stdlib/upg_objed)
+
 
 
 
