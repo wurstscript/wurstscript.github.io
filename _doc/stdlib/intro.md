@@ -55,6 +55,8 @@ All packages in the standard library follow the [coding conventions](https://wur
 
 ### *&nbsp;*{: .fa .fa-folder-open} Math
 
+&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*{: .fa .fa-file} [Angle](stdlib/angle)
+
 &nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*{: .fa .fa-file} [Vectors](stdlib/vectors)
 
 ### *&nbsp;*{: .fa .fa-folder-open} Object Editing
