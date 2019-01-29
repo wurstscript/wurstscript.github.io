@@ -69,7 +69,9 @@ public constant JUMP_ID = compiletime(ABIL_ID_GEN.next())
 
 ### Tooltip Generation
 
-The standard library provides an interface to listen to each data field that has been set on an ability definition. Using a snippet like https://github.com/Frotty/Ability-Tooltip-Generator you can easily generate tooltips.
+The standard library provides an interface to listen to each data field that has been set on an ability definition. Using a snippet like [Ability-Tooltip-Generator](https://github.com/Frotty/Ability-Tooltip-Generator) you can easily generate tooltips.
+
+![](/assets/images/stdlib/tooltipgen.png){: .img-responsive}
 
 ```wurst
 	let tgen = new AbilityTooltipGenerator("An ordinary snowball.")
