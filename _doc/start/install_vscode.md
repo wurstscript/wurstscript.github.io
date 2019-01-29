@@ -27,4 +27,6 @@ In the panel that opened on the left, type **Wurst** into the search bar and pre
 
 Reload the window to activate the plugin.
 
+If you want fitting icons for `.wurst` files you may also install the [vscode-icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons) plugin.
+
 You can minimize VSCode now and continue with the next steps
