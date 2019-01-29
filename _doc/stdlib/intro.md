@@ -28,8 +28,9 @@ All packages in the standard library follow the [coding conventions](https://wur
 
 ### *&nbsp;*{: .fa .fa-folder-open} _wurst
 
-&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*{: .fa .fa-file} [Wurst Unit](stdlib/wurstunit)
+&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*{: .fa .fa-file} [Assets](stdlib/assets)
 
+&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*{: .fa .fa-file} [Wurst Unit](stdlib/wurstunit)
 
 ### *&nbsp;*{: .fa .fa-folder-open} Closures
 
