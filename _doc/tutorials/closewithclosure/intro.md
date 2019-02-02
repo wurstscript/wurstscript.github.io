@@ -16,7 +16,8 @@ This tutorial is for intermediate developers who are familiar with the basics of
 
 In map development you often encounter situations where you want to provide custom event listeners, delay execution of code, use a function to filter units during an enum, or simply store functions like objects in variables, without the limitations of the `code` type.
 
-All of those examples are dealing with functions in one way or the other, and Jass is not very good at dealing with functions. Luckily Wurst is.
+All of those examples are dealing with functions in one way or the other, and Jass is not very good at dealing with functions.
+Luckily Wurst is and therefore in almost all cases where you would use `trigger` or `code`, you should use closures instead.
 
 In Jass, it is possible to store functions (type `code`) in a variable, but afterwards, it is not possible to do a whole lot with them. A major limitation is that `code array` isn't allowed by jass, and it is not possible to put `code` into a `hashtable`, either.
 

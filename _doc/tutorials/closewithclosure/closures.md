@@ -4,6 +4,7 @@ sections:
 - Closures
 - Data Retention
 - Saving Closures in Variables
+- Don't get triggered
 ---
 
 ## Closures
@@ -134,6 +135,41 @@ function spellEffect()
 
 As you can see we save the listener returned by `EventListener.add` in a variable to destroy it after 10 seconds.
 Remember that closures are not destroyed automatically unless the underlying system does it for you. The standard library packages destroy the closures after use if intended temporary.
+
+## Don't get triggered
+
+As mentioned in the introduction, closures are also a replacement for triggers, which are often used to provide custom events in Jass.
+Instead of using `addAction` and providing a reference to a callback function we again define a closure interface/class and save it as needed.
+
+Consider a map in which we have a bunch of levels which are expressed in our code via a `Level` class, and we want to register some custom event when the level is finished. You can copy and paste this package into your map and run it to see the print output:
+
+```wurst
+package Level
+
+interface LevelFinishedListener
+	function onFinish()
+
+class Level
+	private LevelFinishedListener listener
+
+	function addFinishListener(LevelFinishedListener listener)
+		this.listener = listener
+
+	function finishLevel()
+		print("Level finished")
+		listener.onFinish()
+
+init
+	let lvl1 = new Level()
+	..addFinishListener() ->
+		print("You beat level 1 - prepare to die")
+	let lvl1 = new Level()
+	..addFinishListener() ->
+		print("You beat level 2 - how unexpected")
+
+	// To test the listener
+	lvl1.finishLevel()
+```
 
 ## Closing words
 

@@ -1,7 +1,7 @@
 ---
 title: Get close with closures
 excerpt: Learn how to master this advanced technique.
-date: 2019-01-14
+date: 2019-02-01
 icon:
   type: fa
   name: fa-star
