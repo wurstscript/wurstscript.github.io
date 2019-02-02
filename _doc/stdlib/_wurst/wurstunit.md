@@ -3,6 +3,7 @@ title: Wurst Unit
 sections:
 - Intro
 - Magic functions
+- Assertions
 ---
 
 ### Intro
@@ -40,10 +41,8 @@ assertTrue(someInt == someOtherInt)
 If the test fails, you will only get a failed assertion without further information:
 
 ```
-	FAILED assertion:
-	Test failed: Assertion failed
-... when calling foo() in Test.wurst:6
-... when calling assertTrue(false) in Wurstunit.wurst:18
+FAILED assertion:
+Test failed: Assertion failed
 ```
 
 On the other hand if you use the proper assertion:
@@ -56,20 +55,19 @@ someInt.assertEquals(someOtherInt)
 The result will be better styled code and improved debug output:
 
 ```
-	FAILED assertion:
-	Test failed: Expected <2>, Actual <1>
-... when calling foo() in Wurstunit.wurst:17
-... when calling real_assertEquals(1, 2) in Wurstunit.wurst:18
+FAILED assertion:
+Test failed: Expected <2>, Actual <1>
 ```
 
-To make assertions on custom data types you can write a custom `assertEquals` assertions that classes. Just take a look at the existing ones and duplicate the functionality.
+To make assertions on custom data types you can write a custom `assertEquals` extension function for that class.
+Just take a look at the existing ones and duplicate the functionality.
 
 ```wurst
 class MyData
 	var x = 0
-	var y = player[0]
+	var p = players[0]
 
 public function MyData.assertEquals(MyData other) returns boolean
-	return this.x == other.x and this.y == other.y
+	return this.x == other.x and this.p == other.p
 ```
 
