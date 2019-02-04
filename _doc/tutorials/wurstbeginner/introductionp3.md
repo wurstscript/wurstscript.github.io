@@ -13,7 +13,7 @@ sections:
 
 # Let's make a spell
 
-We created an example spell in [march's blog post](https://wurstlang.org/blog/bestofthewurst5.html).
+We created an example spell in [march's blog post](https://wurstlang.org/blog/bestofthewurst5.html). You should check it out!
 
 Let's take a closer look at the code.
 
@@ -69,4 +69,4 @@ Then we start the new timer to end the buff when it exceeded it's duration.
 # Closing Words
 
 We hope this guide helped you to get started right away with developing your map on wurst.
-If you have further questions or would like to hang out with wurst people, drop by our [IRC channel](https://webchat.quakenet.org/?channels=#inwc.de-maps).
+If you have further questions or would like to hang out with wurst people, drop by our [Chat](https://webchat.quakenet.org/?channels=#inwc.de-maps).

@@ -18,11 +18,13 @@ It is neither a hardcoded wrapper around `BJDebugMsg()`, nor internal to the wur
 
 WurstScript ships with a standard library that contains a vast collection of convenient wrappers, utility packages, and powerful systems, which help in the creation of any map, let you focus on content and aid in maintaining a consistent syntax for high-level programming.
 
+> The standard library documentation can be found [HERE](https://wurstlang.org/stdlib)
+
 It has been automatically imported when you created your project using the setup tool and is now inside the `_build/dependencies/wurststdlib2` folder in your project's root. Since this is an external dependency, you should not modify these files. However, feel free to look at and learn from them.
 To update your stdanrd library dependency, use the setup's `Import` functionality.
 
 You can visit the `Printing` package in vscode by holding down the ctrl key and then clicking the function call, i.e. anywhere on the
-word **print**. 
+word **print**.
 
 ![](/assets/images/beginner/jumptodecl.gif){: .img-rounded .img-responsive}
 
@@ -53,6 +55,8 @@ let id = GetTriggerUnit().getOwner().getId()
 ```
 
 In the wurst counterpart the code is executed in the same order it is read. Implicit meanings are omitted and there are no nested brackets. Users of Java and other higher level programming languages will find this as no surprise, and indeed new users too will probably agree this way of coding feels more natural. This functionality arises from another automatic import from the standard library - the `Unit` API.
+
+For a complete list of all coding conventions, visit the [manual](https://wurstlang.org/manual.html#coding-conventions).
 
 ### Function Chaining
 
@@ -98,7 +102,7 @@ struct PreviousPointTracker
     real x = 0.
     real y = 0.
     real angleToLast = 0.
-    
+
     method add(real addX, real addY) returns nothing
         local real oldX = x
         local real oldY = y
@@ -115,7 +119,7 @@ In the wurst pendant below, you can see that the vector types provide overridden
 class PreviousPointTracker
     var pos = vec2(0., 0.)
     var angleToLast = angle(0.)
-    
+
     function add(vec2 addedVec)
         let oldPos = pos
         pos += addedVec
@@ -130,7 +134,7 @@ Think of `ExampleMap.w3x` as a "terrain" map. It's the place you go to make terr
 
 The terrain map is used read-only by wurst, meaning that wurst never edits or saves over that file. This is nice because it means you can edit the terrain in the world editor and the code in vscode at the same time.
 
-When you execute the `buildmap` task in vscode, the output mapfile - based on the terrain and `wurst.build` file, including all of your compiled code - is generated into the `/_build` folder. 
+When you execute the `buildmap` task in vscode, the output mapfile - based on the terrain and `wurst.build` file, including all of your compiled code - is generated into the `/_build` folder.
 
 It's this which you can use to release and distribute your map online.
 
@@ -144,14 +148,15 @@ If you want to use the imported resources inside the terrain map, copy the built
 
 As you can see, wurst has a powerful API for the types and functions exposed by jass to write code at a slightly higher level. As a beginner, one of the your first questions will be about how to find the right library code to do what you want without resorting to jass natives. Three quick tips on that:
 
+* Visit the [documentation](https://wurstlang.org/stdlib)
 * Take a look at the subfolders in the standard library directory to get an idea of what you might expect to find standard library code for
 * Try using autocomplete. If you have a unit `u` and you want to kill it, see what vscode can offer you by typing `u.k` followed by `ctrl-space`.
 * Avoid writers block. Sometimes it's better to write it the jass way and come back afterwards in case you can't find the wurst equivalent. After all, there's no reason wurst would disallow this! Keep in mind as well that wurst doesn't have fancy API equivalents for every single jass call.
 
 If you're looking for an equivalent to some vJass library found on hiveworkshop, your approach might differ a bit.
 
-* Consider if there might be something better. For example, instead of `Table`, wurst users are encouraged to use the generic `HashMap<k, v>` which makes much nicer and more type-safe code.
-* Ask around. Chances are, one of us have already translated the vJass library you like. Cokemonkey11 in particular maintains a number of maps that were previously vJass.
+* Consider if there might be something better. For example, instead of `Table`, wurst users are encouraged to use the generic `HashMap<K, V>` which makes much nicer and more type-safe code.
+* Ask around. Chances are, one of us have already translated the vJass library you like. Cokemonkey11 in particular maintains a number of maps that were previously vJass. Visit the Chat!
 * Write it yourself! We love contributions.
 
 

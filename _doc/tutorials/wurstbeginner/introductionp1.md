@@ -42,7 +42,7 @@ Let's go through all the files:
 - **wurst/Hello.wurst** Demo package
 
 {: .answer}
-### *&nbsp;*{: .fa .fa-exclamation-circle} Make sure to always open a .wurst file. Otherwise the vscode plugin will not load.
+### *&nbsp;*{: .fa .fa-exclamation-circle} Make sure to always open a .wurst file. Otherwise the vscode plugin might not load.
 
 ## Hello Wurst
 
@@ -62,37 +62,37 @@ Let's take a look at the code:
 package Hello
 
 /* Hello and welcome to Wurst!
-This is just a demo package. 
-You can modify it to tests things out 
+This is just a demo package.
+You can modify it to tests things out
 and then later delete it and create your own, new packages.
-Enjoy WurstScript? Consider starring our repo https://github.com/wurstscript/WurstScript */ 
+Enjoy WurstScript? Consider starring our repo https://github.com/wurstscript/WurstScript */
 init
 	print("Hello World")
 ```
 
-The first line 
+The first line
 
-```wurst 
+```wurst
 package Hello
 ```
 
 is the package declaration. Each file contains exactly one package that is named like the file without the ending. Apart from comments this must be the first line in any .wurst file. The next bunch of lines
 
-```wurst 
+```wurst
 /* Hello and welcome to Wurst!
-This is just a demo package. 
-You can modify it to tests things out 
+This is just a demo package.
+You can modify it to tests things out
 and then later delete it and create your own, new packages.
-Enjoy WurstScript? Consider starring our repo https://github.com/wurstscript/WurstScript */ 
+Enjoy WurstScript? Consider starring our repo https://github.com/wurstscript/WurstScript */
 ```
 
 are comments. The final two lines
 
-```wurst 
+```wurst
 init
 	print("Hello World")
 ```
 
-starts an **init**-block by just containing the **init** keyword without indentation.
-Everything indented after this keyword is inside it's block of contents, such as the **print** statement, which displays the given text on the screen for all players.
+consist of an **init**-block by just containing the **init** keyword without indentation.
+And then everything indented after this keyword is inside it's block of contents, such as the **print** statement, which displays the given text on the screen for all players.
 All blocks automatically end at the end of the file, such as the **init** and **package** blocks in this example.
