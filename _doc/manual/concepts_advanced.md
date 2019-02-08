@@ -638,12 +638,12 @@ import AbilityObjEditing
 
 ## Automated Unit Tests
 
-You can add the annotation `@Test` to a function. Then when you type "tests" into the Wurst Console all functions
-annotated with @Test are executed.
+You can add the annotation `@Test` to any function. Open the task runner `F1` and type `run test` to see the available commands. You can either run the test under cursour, all in the package or all tests overall.
 
-You have to import the Wurstunit package to use functions like assertEquals.
+To perform assertions you need to import the `Wurstunit` package.
 
 Example:
+
 ```wurst
 package Test
 import Wurstunit
@@ -654,17 +654,20 @@ import Wurstunit
 @Test public function b()
 	12 .assertEquals(5 + 8)
 ```
+
 If you run this, you get the following output:
-```wurst
-> 1 + 1
-res = 2     // integer
-> tests
-1 tests OK, 1 tests failed
-function b (Test.wurst, line 8)
-	test failed: expected 13 but was 12
-	at stmtreturn  (.../lib/primitives/Integer.wurst, line 25)
->
+
 ```
-The first line is just to check whether the console is working ;)
+Running <PlayerData:114 - a>..
+	OK!
+Running <PlayerData:117 - b>..
+	FAILED assertion:
+	Test failed: Expected <13>, Actual <12>
+... when calling b() in PlayerData.wurst:117
+... when calling int_assertEquals(12, 13) in PlayerData.wurst:118
+
+Tests succeeded: 1/2
+>> 1 Tests have failed!
+```
 
 You can search the standard library for "@Test" to get some more examples.
