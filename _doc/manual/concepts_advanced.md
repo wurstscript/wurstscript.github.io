@@ -594,7 +594,6 @@ Only a few functions are implemented in the Wurst compiler and emulate the respe
 The currently implemented functions can be found in the compiler code in the class [NativeFunctionsIO](https://github.com/wurstscript/WurstScript/blob/master/de.peeeq.wurstscript/src/main/java/de/peeeq/wurstio/jassinterpreter/NativeFunctionsIO.java).
 
 
-
 ### Object Editing Natives
 
 The standard library provides some functions to edit objects in compiletime functions.
@@ -609,32 +608,31 @@ can be found right next to your map file. You can use this code as a starting po
 Wurst also provides a higher level of abstraction. For example the package AbilityObjEditing provides many classes
 for the different base abilities of Wc3 with readable method names. That way you do not have to look up the IDs.
 
-The following example creates a new spell based on "Thunder Bolt". The created spell has the ID "A005".
+The following example creates a new spell based on "Thunder Bolt". The created spell has the ID "A005" for illustratory purpose.
+In proper code you should generate your IDs so you don't have to deal with them directly. See [this blog entry](https://wurstlang.org/blog/bestofthewurst3.html#objectediting%20)
 In the next line the name of the spell is changed to "Test Spell".
-Level specific properties are changed inside the loop.
+Level specific properties are changed using level closures, which calculate values for all levels.
+
 ```wurst
 package Objects
 import AbilityObjEditing
 
 @compiletime function myThunderBolt()
 	// create new spell based on thunder bolt from mountain king
-	let a = new AbilityDefinitionMountainKingThunderBolt("A005")
+	new AbilityDefinitionMountainKingThunderBolt("A005")
 	// change the name
-	a.setName("Wurst Bolt")
-	a.setTooltipLearn("The Wurstinator throws a Salami at the target.")
-	for i = 1 to 3
-		// 400 damage, increase by 100 every level
-		a.setDamage(i, 400. + i*100)
-		// 10 seconds cooldown
-		a.setCooldown(i, 10.)
-		// 0 mana, because no magic is needed to master Wurst
-		a.setManaCost(i, 0)
-		// ... and so on
+	..setName("Wurst Bolt")
+	..setTooltipLearn("The Wurstinator throws a Salami at the target.")
+	// 400 damage, increase by 100 every level
+	..presetDamage(lvl -> 400. + lvl * 100)
+	// 10 seconds cooldown
+	..presetCooldown(lvl -> 10.)
+	// 0 mana, because no magic is needed to master Wurst
+	..presetManaCost(lvl -> 0)
+	// ... and so on
 ```
 
-*NOTE* Packages exist for all object types.
-
-
+> *NOTE* Packages exist for all object types.
 
 ## Automated Unit Tests
 
