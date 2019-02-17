@@ -45,7 +45,7 @@ InstantDummyCaster.castTarget(DUMMY_PLAYER, POLY_DUMMY_ID, 1, OrderIds.polymorph
 Channeled spells, impale, or any that do damage after the cast has occured, should be cast with a `DummyCaster` object which will stay for a while.
 Therefore damage will be dealt from the correct player and effects attached to the caster such as chainlightning will stay intact.
 Adjust the delay parameter according to your spell's duration. You can cast multiple spells with one object, as long as they all happen before the last spell's delay time expires. `BLIZZARD_DUMMY_ID` refers to a blizzard dummy spell created equally to the polymorph one above.
-Never destroy `DummyCaster` instances manually and allcoate them on the spot.
+Never destroy `DummyCaster` instances manually and allocate them on the spot.
 
 ```wurst
 // Casts blizzard 4 times in cross formation around target point
