@@ -69,4 +69,4 @@ Then we start the new timer to end the buff when it exceeded it's duration.
 # Closing Words
 
 We hope this guide helped you to get started right away with developing your map on wurst.
-If you have further questions or would like to hang out with wurst people, drop by our [Chat](https://webchat.quakenet.org/?channels=#inwc.de-maps).
+If you have further questions or would like to hang out with wurst people, drop by our [Chat](https://kiwiirc.com/nextclient/#irc://irc.quakenet.org/#inwc.de-maps).

@@ -21,5 +21,5 @@ If you have any questions regarding Wurst-related tools or the language itself, 
 ---
 #### IRC
 
-Feel free to drop by the [IRC channel we usually hang out](https://webchat.quakenet.org/?channels=#inwc.de-maps) to chat.
+Feel free to drop by the [IRC channel we usually hang out](https://kiwiirc.com/nextclient/#irc://irc.quakenet.org/#inwc.de-maps) to chat.
 Quakenet, channel: #inwc.de-maps
