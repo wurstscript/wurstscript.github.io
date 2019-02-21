@@ -6,7 +6,7 @@ sections:
 - Anonymous functions
 ---
 
-![](/assets/images/tutorials/closure.png){: .img-responsive}
+![](/assets/images/tutorials/closure.jpg){: .img-responsive}
 
 ## Preamble
 
