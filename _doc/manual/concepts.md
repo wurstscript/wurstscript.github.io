@@ -139,6 +139,23 @@ switch i
 As you see in the example, a switch statement is basically a nicer syntax for
 nesting ifs and else ifs, with the special default case.
 
+**Abbreviations**: Several cases can be combined using a pipe symbol (`|`) and enum members can be referenced by just using the case name instead of the full name.
+
+```wurst
+enum Animal
+    Sheep
+    Dog
+    Eagle
+
+function canFly(Animal animal) returns boolean
+    switch animal
+        case Dog | Sheep
+            return false
+        case Eagle
+            return true
+```
+
+
 ### Loops
 ```wurst
 while a > b // while-loop with input condition
