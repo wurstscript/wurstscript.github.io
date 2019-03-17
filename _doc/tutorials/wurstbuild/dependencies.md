@@ -63,5 +63,7 @@ buildMapData:
 The setup does no version locking for now, but this is planned for a future version. Transitive dependencies will not be resolved.
 
 A dependency is a simple url to a public git repo, which can be pulled by the setup.
-Projects created by the setup include the standard library dependency by default: `https://github.com/wurstscript/wurstStdlib2`
+Projects created by the setup include the standard library dependency by default: `https://github.com/wurstscript/wurstStdlib2`.
+
+To add a dependency, add an entry with a valid git https url. Then update your project via the setup UI or CLI `grill -projectDir ~./Documents/MyProject/ update`.
 
