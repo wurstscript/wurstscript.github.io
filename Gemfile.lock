@@ -254,6 +254,7 @@ DEPENDENCIES
   jekyll-redirect-from
   jekyll-seo-tag
   jekyll-sitemap
+  nokogiri (>= 1.8.5)
   wdm (>= 0.1.0)
 
 RUBY VERSION
