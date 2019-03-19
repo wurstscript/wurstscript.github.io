@@ -45,7 +45,7 @@ buildMapData:
 	name: DefaultPlayer
     race: HUMAN
 	controller: USER
-    fixedStartLoc: true
+    fixedStartLoc: false
   forces:
   - name: DefaultForce
     playerIds:
