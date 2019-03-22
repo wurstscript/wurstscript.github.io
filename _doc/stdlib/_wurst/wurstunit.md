@@ -67,7 +67,8 @@ class MyData
 	var x = 0
 	var p = players[0]
 
-public function MyData.assertEquals(MyData other) returns boolean
-	return this.x == other.x and this.p == other.p
+public function MyData.assertEquals(MyData expected) returns boolean
+		if  this.x != expected.x or this.p != expected.p
+			testFail("Expected <" + expected.toString() + ">, Actual <" + this.toString() + ">")
 ```
 
