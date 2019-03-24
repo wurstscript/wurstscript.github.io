@@ -2,7 +2,7 @@
 title: Unit Object Editing
 layout: stdlibdoc
 color: blue
-date: 2018-12-10
+date: 2019-03-24
 sections:
   - /stdlib/objediting/units
 ---
