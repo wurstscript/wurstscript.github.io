@@ -1,7 +1,7 @@
 ---
 title: Standard Library
 excerpt: __Documentation__ for packages in the wurst standard library.
-date: 2019-02-15
+date: 2019-03-25
 color: pink
 icon:
   type: fa
