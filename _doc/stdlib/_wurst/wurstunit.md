@@ -12,8 +12,8 @@ We already discussed unit testing in [BOTW 4](https://wurstlang.org/blog/bestoft
 
 ### Magic functions
 
-The first three functions of the package are annotated with `@compiletimenative` and have no implementation.
-They are named that way because they are a custom native that is implemented inside the wurst compiler and only available at compiletime, disjuct from warcraft and Jass.
+The first three functions of the package are annotated with `@compiletimenative` and the latter two have no implementation.
+They have that annotation to indicate that they are a custom native that is implemented inside the wurst compiler and only available at compiletime, disjuct from warcraft and Jass. In case of `println` it has an implementation when used in Jass (DisplayTimedTextToPlayer) but another one at runtime, inside the compiler.
 
 ```wurst
 @compiletimenative public function println(string msg)
