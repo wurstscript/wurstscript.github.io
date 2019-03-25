@@ -58,6 +58,8 @@ let DUMMY_UNIT_ID = compiletime(UNIT_ID_GEN.next())
 
 Use `HeroDefinition` for heroes that aren't buildings. Additionaly to using `HeroDefinition` you also need to provide an id that starts with an uppercase letter. Use the `HERO_ID_GEN` Id Generator. Example hero based on paladin:
 
+> If the id provided does not start with an uppercase letter, the unit will not be a hero.
+
 ```wurst
 let ESC_STRONG_ID = compiletime(HERO_ID_GEN.next())
 
