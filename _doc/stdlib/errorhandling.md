@@ -1,5 +1,5 @@
 ---
-title: Wurst Unit
+title: Error Handling
 layout: stdlibdoc
 color: blue
 date: 2019-03-25
