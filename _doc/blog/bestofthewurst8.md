@@ -48,13 +48,13 @@ Spotlight: VSCode Integration
 
 One of the more noticable improvements these last months have been on making the wurst vscode development experience more feature rich and integrated. We implemented several more features of the language protocol, which we will preset here. Additionally, the wurst file icon is now an offical part of the [vscode-icons extension](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons).
 
-![](https://i.imgur.com/AUrSWqt.png)
+![](https://i.imgur.com/AUrSWqt.png){: .img-responsive}
 
 ### Breadcrumbs
 
-![](https://i.imgur.com/6Mj0tIC.png)
+![](https://i.imgur.com/6Mj0tIC.png){: .img-responsive}
 
-![](https://i.imgur.com/fQbsyQi.png)
+![](https://i.imgur.com/fQbsyQi.png){: .img-responsive}
 
 Breadcrumbs show the model hiearachy from your cursor positon.
 You can turn them on via `View->Toggle Breadcrumbs`.
@@ -64,29 +64,29 @@ You can also search for symbols using the *Goto symbol in workspace* command (`C
 
 ### Outline View
 
-![](https://i.imgur.com/M0S88xJ.png)
+![](https://i.imgur.com/M0S88xJ.png){: .img-responsive}
 
 The outline gives you a searchable overview over all elements in that file. Turn it on by rightclicking on the Explorer headline.
 
-![](https://i.imgur.com/an0TDoP.png)
+![](https://i.imgur.com/an0TDoP.png){: .img-responsive}
 
 ### Symbol Renaming
 
 VSCode recognizes Wurst's symbols, allowing for consistent renaming.
 
-![](https://i.imgur.com/93MPgE3.gif)
+![](https://i.imgur.com/93MPgE3.gif){: .img-responsive}
 
 ### Color Preview
 
-![](https://i.imgur.com/mpQ0jmd.png)
+![](https://i.imgur.com/mpQ0jmd.png){: .img-responsive}
 
-![](https://i.imgur.com/uCIl2T3.gif)
+![](https://i.imgur.com/uCIl2T3.gif){: .img-responsive}
 
 Wurst color tuples and wc3 color strings are now previewed and you can use the vscode color picker to adjust them.
 
 ### Import Quickfix
 
-![](https://i.imgur.com/wHPvvrn.gif)
+![](https://i.imgur.com/wHPvvrn.gif){: .img-responsive}
 
 When using types which are not imported into a given package yet, Wurst will suggest importing a package which will fulfill that type. If applied, the quickfix will add the import statement automatically.
 
@@ -94,7 +94,7 @@ When using types which are not imported into a given package yet, Wurst will sug
 
 While not a Wurst feature, it should be noted that everything style related you see here can be customized in some way. There are default and user created themes, take a look:
 
-![](https://i.imgur.com/xYnqc7L.png)![](https://i.imgur.com/T1Icm60.png)![](https://i.imgur.com/HVT0A5m.png)![](https://i.imgur.com/I0wWnCT.png)![](https://i.imgur.com/kpUzuSc.png)
+![](https://i.imgur.com/xYnqc7L.png){: .img-responsive}![](https://i.imgur.com/T1Icm60.png){: .img-responsive}![](https://i.imgur.com/HVT0A5m.png){: .img-responsive}![](https://i.imgur.com/I0wWnCT.png){: .img-responsive}![](https://i.imgur.com/kpUzuSc.png){: .img-responsive}
 
 The theme used for the screenshots above, is called "Atom One Dark"
 
