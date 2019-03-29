@@ -15,4 +15,5 @@ navigation:
   - /tutorials/wurst_for_vjass_users
   - /tutorials/getclose
   - /tutorials/wurstbuild
+  - /tutorials/jhcr
 ---
