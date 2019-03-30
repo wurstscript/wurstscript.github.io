@@ -1,7 +1,7 @@
 ---
 title: Hot Code Reload Guide
 excerpt: Learn how to update code in a running map with JHCR
-date: 2019-03-14
+date: 2019-03-29
 icon:
   type: fa
   name: fa-share-square
