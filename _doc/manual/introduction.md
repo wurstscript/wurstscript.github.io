@@ -22,7 +22,7 @@ simple and understandable for non-programmers.
 
 Syntax and vocabulary were designed with Jass in mind, the scripting language of Warcraft III.
 
-> Note that this manual is not a beginner's tutorial and expects the reader to have prior knowledge in programming. 
+> Note that this manual is not a beginner's tutorial and expects the reader to have prior knowledge in programming.
 [Click here for a beginner's guide.](tutorials.html)
 
 ## Values and Types
@@ -117,7 +117,7 @@ init
 
 If you run this example, the message "Hello Wurst!" will be displayed after the map has loaded.
 
-As you might have noticed, the ```import Printing``` will throw a warning, because it is already automatically imported. 
+As you might have noticed, the ```import Printing``` will throw a warning, because it is already automatically imported.
 You can remove the import, it just served as illustration on how to import packages.
 
 For more information about packages, refer to the packages section.
@@ -179,11 +179,14 @@ var y = 5
 int z = 7
 // declaring an array
 int array a
-// arrays can be initialized as well. 
-// however this is just a shorthand assignment and doesn't provide a length attribute
+// arrays can be initialized as well.
+// however this is just a shorthand assignment
 int array b = [1, 2, 3]
 // but it allows having constant arrays
 constant c = ["A", "B", "C"]
+// Initialized arrays provide a length attribute which is equal to the initial amount of items in the array
+// It is not updated when you modify the array and mostly intended for interation
+constant blen = b.length
 
 // inside a function
 function getUnitInfo(unit u)
