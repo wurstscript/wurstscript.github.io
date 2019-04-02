@@ -5,6 +5,8 @@ sections:
 - The DialogBox
 ---
 
+![https://wurstlang.org](/assets/images/stdlib/dialogbox.jpg){: .img-responsive}
+
 ### Intro
 
 In warcraft III a dialog refers to a modal dialog that is shown to players with a message text and various buttons to click.
