@@ -92,9 +92,6 @@ Passing any command-line argument to `grill` ensures that no user interface will
 
 Use `grill install wurstscript` to install, or update an existing installation of, the WurstScript tools. The installation will be the same as for the setup, inside your user's home folder `~/.wurst`.
 
-> I like it
-> [name=Cokemonkey11]
-
 ### Generating a new project
 
 `grill generate <project_name>` will create a new directory with your chosen name, and generate a new wurst project inside. The generation includes an up-to-date copy of the default standard library dependency, and basic vscode project configuration metadata.
