@@ -25,8 +25,6 @@ Tooling
 * Upgrades to the `wurst.build` configuration workflow. You can now modify scenario data such as players, teams, and loading screens, all without opening the world-editor. See the [Tutorial](https://wurstlang.org/tutorials/wurstbuild.html) for more information.
 * The WurstSetup received a face lift, including auto-update, better async tasks, and complete CLI functionality for power users.
 * Objects and other allocations inside `compiletime` expressions are now retained for use during runtime.
-> Needs example
-> [name=Cokemonkey11]
 * Updated `switch` statement with joined cases, duplicate case detection, and control flow improvements.
 * Experimental support for @lep's ["hot code reload"](https://wurstlang.org/tutorials/jhcr.html), which enables code modifications while the map is running.
 
