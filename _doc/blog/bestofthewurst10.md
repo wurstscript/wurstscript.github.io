@@ -1,20 +1,20 @@
 ---
 title: Best of the Wurst 10
 layout: post
-excerpt: Big spring update
+excerpt: Big spring update & 420
 icon:
   type: fa
   name: fa-servicestack
 color: blue
 author: Frotty & Coke
 date: 2019-04-20
-banner: /assets/images/blog/bestof9/wurstbanner10.png
+banner: /assets/images/blog/bestof10/wurstbanner10.png
 ---
 ------
 
 Best of the Wurst 10
 ===
-![](/assets/images/blog/bestof10/banner.png){: .img-responsive}
+![](/assets/images/blog/bestof10/wurstbanner10.png){: .img-responsive}
 
 In March and early April, we rolled out the previously announced `wurst.build` configuration file improvements, allowing for further code-based map metadata customization, and also laying additional groundwork for the independent map generation pipeline we envisage for the future of wurst.
 
@@ -144,8 +144,8 @@ That machine then comes with all the tools and dependencies installed and precon
 $ docker run --rm -it frotty/wurstscript /bin/sh -c "grill help"
 ```
 
-Travis CI example: https://github.com/wurstscript/WurstStdlib2/blob/master/.travis.yml
+[Travis CI example](https://github.com/wurstscript/WurstStdlib2/blob/master/.travis.yml)
 
-Circle CI example: https://github.com/island-troll-tribes/island-troll-tribes/blob/master/.circleci/config.yml
+[Circle CI example](https://github.com/island-troll-tribes/island-troll-tribes/blob/master/.circleci/config.yml)
 
 That's it. We hope you enjoyed the tenth entry in the BotW series.
