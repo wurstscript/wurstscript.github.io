@@ -18,7 +18,7 @@ Best of the Wurst 10
 
 In March and early April, we rolled out the previously announced `wurst.build` configuration file improvements, allowing for further code-based map metadata customization, and also laying additional groundwork for the independent map generation pipeline we envisage for the future of wurst.
 
-You can now make full use of the toolsuite from the command line with our new Grill paclage manager. Additionally, welcome `DamageEvent` to the standard library: a new damage detection and modification API, which supports and uses the new 1.29 natives.
+You can now make full use of the toolsuite from the command line with our new Grill package manager. Additionally, welcome `DamageEvent` to the standard library: a new damage detection and modification API, which supports and uses the new 1.29 natives.
 
 Tooling
 ---
