@@ -47,7 +47,7 @@ Let's go through all the files:
 ## Hello Wurst
 
 Open the **Hello.wurst** file inside the **wurst** folder to start the wurst plugin.
-Run the project using the `>runmap` command.
+Run the project by opening the command console `F1` and using the `>runmap` command.
 
 ![](/assets/images/beginner/RunMap.png){: .img-responsive .img-rounded}
 

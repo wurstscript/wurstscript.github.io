@@ -79,7 +79,7 @@ After you finished installation and project setup, you can open the project's ro
 {: .answer}
 ### *&nbsp;*{: .fa .fa-exclamation-circle} Make sure you are opening the project's root folder (contains wurst.build file) using `File -> Open Folder`
 
-Once the project is opened, you can click the Hello.wurst file on the left to activate the Wurst plugin. The code should compile and the setup should be done.
+Once the project is opened, you can click the Hello.wurst file on the left to activate the Wurst plugin. The code should compile and the setup should be done. Using VSCode's command console (`F1`) you can execute wurst commands such as running or building your map.
 
 If you are new to WurstScript but not new to programming, you probably want to continue with the [*&nbsp;*{: .fa .fa-external-link-square} Beginner's Guide](tutorials/wurstbeginner.html)
 
