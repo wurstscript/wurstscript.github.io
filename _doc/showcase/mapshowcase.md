@@ -227,7 +227,7 @@ Build a maze of towers to protect your lives from invading creeps. Send creeps t
 <div class="col-sm-6 col-xs-12">
 <div class="card" markdown="1">
 
-[![screenshot](/assets/images/showcase/etcpreview.png){: .img-responsive .center-block}](https://www.epicwar.com/maps/291953/)
+[![screenshot](/assets/images/showcase/etcpreview.png){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/escape-the-crab-0-23a.316415/)
 
 <div class="card-block" markdown="1">
 
