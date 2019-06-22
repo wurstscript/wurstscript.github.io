@@ -223,5 +223,28 @@ Build a maze of towers to protect your lives from invading creeps. Send creeps t
 </div>
 <!-- End Card -->
 
+<!-- Begin Card -->
+<div class="col-sm-6 col-xs-12">
+<div class="card" markdown="1">
+
+[![screenshot](/assets/images/showcase/etcpreview.png){: .img-responsive .center-block}](https://www.epicwar.com/maps/291953/)
+
+<div class="card-block" markdown="1">
+
+{: .card-title}
+
+#### Escape the Crab
+
+{: .card-text}
+Based in ancient japan, you and your pals try to escape from a Giant Enemy Crab. Remember to attack its weak point for massive damage.
+
+[_&nbsp;_{: .fa .fa-external-link-square} Hive Thread](https://www.hiveworkshop.com/threads/escape-the-crab-0-23a.316415/) [_&nbsp;_{: .fa .fa-external-link-square} Git Repo](https://github.com/Frotty/EscapeTheCrab)
+
+</div>
+
+</div>
+</div>
+<!-- End Card -->
+
 </div>
 <!-- End Row -->
