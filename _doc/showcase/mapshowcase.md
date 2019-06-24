@@ -248,3 +248,55 @@ Based in ancient japan, you and your pals try to escape from a Giant Enemy Crab.
 
 </div>
 <!-- End Row -->
+
+<div class="row">
+
+<!-- Begin Card -->
+<div class="col-sm-6 col-xs-12">
+<div class="card" markdown="1">
+
+[![screenshot](/assets/images/showcase/gargonachpreview.png){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/gargonach-0-1-0.216521/)
+
+<div class="card-block" markdown="1">
+
+{: .card-title}
+
+#### Gargonach
+
+{: .card-text}
+This map is inspired from a boss in the original Half- Life story called "Gonarch".
+
+[_&nbsp;_{: .fa .fa-external-link-square} Hive Thread](https://www.hiveworkshop.com/threads/gargonach-0-1-0.216521/)
+[_&nbsp;_{: .fa .fa-external-link-square} Git Repo](https://bitbucket.org/Cokemonkey11/gargonach/)
+
+</div>
+
+</div>
+</div>
+<!-- End Card -->
+
+<!-- Begin Card -->
+<div class="col-sm-6 col-xs-12">
+<div class="card" markdown="1">
+
+[![screenshot](/assets/images/showcase/hunterpreview.png){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/hunters-hall-1-6-0.164630/)
+
+<div class="card-block" markdown="1">
+
+{: .card-title}
+
+#### Hunter's hall
+
+{: .card-text}
+Hunter's Hall is a team-oriented PvP game which consists of short, objective-based rounds.
+
+[_&nbsp;_{: .fa .fa-external-link-square} Hive Thread](https://www.hiveworkshop.com/threads/hunters-hall-1-6-0.164630/) [_&nbsp;_{: .fa .fa-external-link-square} Git Repo](https://bitbucket.org/Cokemonkey11/hunters-hall/)
+
+</div>
+
+</div>
+</div>
+<!-- End Card -->
+
+</div>
+<!-- End Row -->
