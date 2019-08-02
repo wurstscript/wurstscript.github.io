@@ -52,8 +52,17 @@ Never destroy `DummyCaster` instances manually and allocate them on the spot.
 new DummyCaster(casterPos)
 	..owner(caster)
 	..delay(15)
-	..castPoint(BLIZZARD_DUMMY_ID, 1, OrderIds.OrderIds.blizzard, target + vec2(128, 0))
-	..castPoint(BLIZZARD_DUMMY_ID, 1, OrderIds.OrderIds.blizzard, target + vec2(-128, 0))
-	..castPoint(BLIZZARD_DUMMY_ID, 1, OrderIds.OrderIds.blizzard, target + vec2(0, 128))
-	..castPoint(BLIZZARD_DUMMY_ID, 1, OrderIds.OrderIds.blizzard, target + vec2(0, -128))
+	..castPoint(BLIZZARD_DUMMY_ID, 1, OrderIds.blizzard, target + vec2(128, 0))
+	..castPoint(BLIZZARD_DUMMY_ID, 1, OrderIds.blizzard, target + vec2(-128, 0))
+	..castPoint(BLIZZARD_DUMMY_ID, 1, OrderIds.blizzard, target + vec2(0, 128))
+	..castPoint(BLIZZARD_DUMMY_ID, 1, OrderIds.blizzard, target + vec2(0, -128))
+```
+
+### Applying orb effects
+
+Using `DummyCaster`, you can also apply orb effects, like frost attack or poison attack, to a target unit. You should use the `attackonce` order.
+
+```wurst
+// Poisons target unit
+new DummyCaster().castTarget(AbilityIds.poisonSting, 1, OrderIds.attackonce, target)
 ```
