@@ -30,32 +30,32 @@ buildMapData:
     description: WurstScript powered! # The map's description
     suggestedPlayers: DefaultSuggestedPlayers # Hint text displayed in lobby
     loadingScreen:
-	  model: Generic.mdx
-	  title: DefaultTitle
-	  subTitle: DefaultSubtitle
-	  text: DefaultText
+      model: Generic.mdx
+      title: DefaultTitle
+      subTitle: DefaultSubtitle
+      text: DefaultText
   optionsFlags:
-	hideMinimapPreview: false
-	maskedAreasPartiallyVisible: true
-	showWavesOnCliffShores: true
-	showWavesOnRollingShores: true
-	useItemClassificationSystem: true
+    hideMinimapPreview: false
+    maskedAreasPartiallyVisible: true
+    showWavesOnCliffShores: true
+    showWavesOnRollingShores: true
+    useItemClassificationSystem: true
   players:
   - id: 0
-	name: DefaultPlayer
+    name: DefaultPlayer
     race: HUMAN
-	controller: USER
+    controller: USER
     fixedStartLoc: false
   forces:
   - name: DefaultForce
     playerIds:
     - 0
-	flags:
-	  allied: true
-	  alliedVictory: true
-	  sharedVision: true
-	  sharedControl: false
-	  sharedControlAdvanced: false
+    flags:
+      allied: true
+      alliedVictory: true
+      sharedVision: true
+      sharedControl: false
+      sharedControlAdvanced: false
 ```
 
 ## Dependencies
