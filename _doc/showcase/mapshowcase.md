@@ -125,18 +125,18 @@ A tag-style FFA map where players switch between hunter and hunted. Each player 
 <div class="col-sm-6 col-xs-12">
 <div class="card" markdown="1">
 
-[![screenshot](/assets/images/showcase/gorgepreview.png){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/the-gorge-0-9-1.292325/)
+[![screenshot](/assets/images/showcase/gorgepreview.png){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/battle-planes-0-14-5.292325/)
 
 <div class="card-block" markdown="1">
 
 {: .card-title}
 
-#### The Gorge
+#### Battle Planes
 
 {: .card-text}
 Battleships-style aos that focuses on simplicity. Uses automatically firing weapons and interesting systems.
 
-[_&nbsp;_{: .fa .fa-external-link-square} Hive Thread](https://www.hiveworkshop.com/threads/the-gorge-0-9-1.292325/) [_&nbsp;_{: .fa .fa-external-link-square} Git Repo](https://bitbucket.org/Cokemonkey11/the-gorge/src)
+[_&nbsp;_{: .fa .fa-external-link-square} Hive Thread](https://www.hiveworkshop.com/threads/battle-planes-0-14-5.292325/) [_&nbsp;_{: .fa .fa-external-link-square} Git Repo](https://bitbucket.org/Cokemonkey11/the-gorge/src)
 
 </div>
 
