@@ -1,5 +1,5 @@
 ---
-title: Vetors
+title: Vectors
 sections:
 - Intro
 - Basic Usage
