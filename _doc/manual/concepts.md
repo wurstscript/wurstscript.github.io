@@ -54,7 +54,7 @@ contain letters, numbers and underscores.
 **Note**: For calls to generic functions refer to the Generics chapter.
 
 
-### Cascade operator (dot-dot-operator)
+### Cascade operator
 
 The cascade operator `..` is similar to the normal `.` operator and can be used for calling methods, but instead of returning the result
 of the called method, the cascade operator returns the receiver. This makes it possible to easily chain function calls on the same variable.
