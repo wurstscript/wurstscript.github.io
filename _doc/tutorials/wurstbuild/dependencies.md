@@ -36,10 +36,11 @@ buildMapData:
       text: DefaultText
   optionsFlags:
     hideMinimapPreview: false
-    maskedAreasPartiallyVisible: true
-    showWavesOnCliffShores: true
-    showWavesOnRollingShores: true
-    useItemClassificationSystem: true
+	forcesFixed: false
+    maskedAreasPartiallyVisible: false
+    showWavesOnCliffShores: false
+    showWavesOnRollingShores: false
+    useItemClassificationSystem: false
   players:
   - id: 0
     name: DefaultPlayer
