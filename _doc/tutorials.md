@@ -16,4 +16,5 @@ navigation:
   - /tutorials/getclose
   - /tutorials/wurstbuild
   - /tutorials/jhcr
+  - /tutorials/saveload
 ---
