@@ -23,7 +23,7 @@ simple and understandable for non-programmers.
 Syntax and vocabulary were designed with Jass in mind, the scripting language of Warcraft III.
 
 > Note that this manual is not a beginner's tutorial and expects the reader to have prior knowledge in programming.
-[Click here for a beginner's guide.](tutorials.html)
+[Click here for a beginner's guide.](https://wurstlang.org/tutorials/wurstbeginner.html)
 
 ## Values and Types
 
