@@ -320,7 +320,7 @@ on the respective other copy of the variable.
 This can be observed when a variable is changed after the closure is created:
 ```wurst
 var s = "Hello!"
-let func = () ->
+let f = () ->
 	print(s)
 	s = s + "!"
 
@@ -565,7 +565,7 @@ function doInit()
 
 Similar to compiletime functions, Wurst also has compiletime expressions.
 As the name suggests, these are expressions, which are evaluated at compiletime.
-The result of executing the expression is the placed into the mapscript instead of the original expression.
+The result of executing the expression is placed into the mapscript instead of the original expression.
 
 The syntax for compiletime expressions is a simple function call to the `compiletime` function defined in package `MagicFunctions` in the standard library.
 This function takes one argument, which is the expression to evaluate.
