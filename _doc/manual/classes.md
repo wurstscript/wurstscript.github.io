@@ -246,7 +246,7 @@ Casts can be avoided by using high level libraries and object oriented programmi
 
 ## Dynamic dispatch
 
-Wurst features dynamic dispatching when accessing classinstances.
+Wurst features dynamic dispatching when accessing class instances.
 What this means is simple: If you have a classinstance of a subclass B, casted into a variable of
 the superclass A, calling a function with that reference will automatically call the overridden function from
 the original type.
