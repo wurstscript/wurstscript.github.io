@@ -300,3 +300,32 @@ Hunter's Hall is a team-oriented PvP game which consists of short, objective-bas
 
 </div>
 <!-- End Row -->
+
+<div class="row">
+
+<!-- Begin Card -->
+<div class="col-sm-6 col-xs-12">
+<div class="card" markdown="1">
+
+[![screenshot](/assets/images/showcase/sheeppreview.jpg){: .img-responsive .center-block}](https://www.epicwar.com/maps/287076/)
+
+<div class="card-block" markdown="1">
+
+{: .card-title}
+
+#### Sheep Tag Relapse
+
+{: .card-text}
+A new direction for Sheep Tag Revolution powered by Wurst.
+
+[_&nbsp;_{: .fa .fa-external-link-square} Epicwar](https://www.epicwar.com/maps/287076/)
+[_&nbsp;_{: .fa .fa-external-link-square} Git Repo](https://github.com/W3Madhatters/Sheep-Tag-Relapse)
+
+</div>
+
+</div>
+</div>
+<!-- End Card -->
+
+</div>
+<!-- End Row -->
