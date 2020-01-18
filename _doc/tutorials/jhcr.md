@@ -22,7 +22,7 @@ If you have not installed Wurst and Visual Studio Code yet, you should first che
 Then to setup JHCR:
 
 1. [Download JHCR](https://www.hiveworkshop.com/threads/jass-hot-code-reload.313811/) and extract it to a folder on your machine.
-2. Open the Visual Studio Code settings and change the entry for `wurst.jhcrExe` to the jhcr executable you extracted in step 1. For exaple `C:\apps\jhcr.exe`. (This step is not necessary if you make jhcr.exe available on your system path)
+2. Open the Visual Studio Code settings and change the entry for `wurst.jhcrExe` to the jhcr executable you extracted in step 1. For example `C:\apps\jhcr.exe`. (This step is not necessary if you make jhcr.exe available on your system path)
 3. (Not sure if necessary) Enable `Allow Local Files` by changing your registry.
 4. (optional) Change the Visual Studio Code setting `wurst.customMapDataPath` to point to the path where Warcraft stores custom map data.
     This is usually something like `C:\Users\YourName\Documents\Warcraft III\CustomMapData` or `C:\Users\YourName\OneDrive\Dokumente\Warcraft III\CustomMapData`. This path will be passed to the `--preload-path` option of Jass Hot Code Reload (JHCR).
