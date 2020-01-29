@@ -356,3 +356,14 @@ select {
         color: $color-pink;
     }
 }
+
+.tag-container {
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+	margin-bottom: 2rem;
+}
+
+.tag {
+	margin-right: 1rem;
+}
