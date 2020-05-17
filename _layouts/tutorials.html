@@ -1,5 +1,5 @@
---- 
-layout: compress 
+---
+layout: compress
 ---
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
@@ -48,25 +48,7 @@ layout: compress
 
     <div class="page-wrapper">
 
-        <!-- HEADER -->
-        <header class="header text-center">
-            <div class="container" style="padding-bottom: 6px;">
-
-                {% include branding.html home=true %}
-
-                <!-- TAGLINE -->
-                <div class="tagline">
-                    {{ page.tagline | markdownify }}
-                </div>
-            </div>
-			<br>
-			<div class="header-links-container">
-				<a href="https://wurstlang.org/blog.html" title="The Wurst Blog">BLOG</a> /
-				<a href="https://github.com/{{ site.share.github.repo }}" title="Visit us on Github">GITHUB</a> /
-				<a href="https://bin.wurstlang.org" title="Wurst and Jass Pastebin">PASTEBIN</a> /
-				<a href="https://kiwiirc.com/nextclient/#irc://irc.quakenet.org/#inwc.de-maps" title="IRC Quakenet #inwc.de-maps">CHAT</a>
-			</div>
-        </header>
+        {% include fullheader.html %}
 
         <div class="cards-section text-center">
             <div class="container text-center">
@@ -79,7 +61,7 @@ layout: compress
                 {% include navigation.html navigation=page.navigation %}
 
             </div>
-            
+
         </div>
 
 
@@ -94,8 +76,8 @@ layout: compress
     <script type="text/javascript" src="{{ '/assets/js/main.js'                                            | prepend: site.baseurl }}"></script>
 
     <script type="application/ld+json">
-        { 
-            "@context": "http://schema.org", 
+        {
+            "@context": "http://schema.org",
             "@type": "ComputerLanguage",
             "name": "WurstScript",
             "alternateName": "wurst",

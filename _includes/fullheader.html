@@ -1,0 +1,22 @@
+<!-- HEADER -->
+<header class="header text-center">
+    <div class="container" style="padding-bottom: 6px;">
+
+        {% include branding.html home=true %}
+
+        <!-- TAGLINE -->
+        <div class="tagline">
+            {{ site.tagline | markdownify }}
+        </div>
+        <br>
+        <div class="header-links-container">
+            <a href="https://wurstlang.org/blog.html" title="The Wurst Blog">BLOG</a> /
+            <a href="https://github.com/{{ site.share.github.repo }}" title="Visit us on Github">GITHUB</a> /
+            <a href="https://bin.wurstlang.org" title="Wurst and Jass Pastebin">PASTEBIN</a> /
+            <a href="https://kiwiirc.com/nextclient/#irc://irc.quakenet.org/#inwc.de-maps" title="IRC Quakenet #inwc.de-maps">IRC</a> /
+            <a href="https://matrix.to/#/!qppIznMkBZgRaYJNYA:matrix.org?via=matrix.org" title="matrix.org chat">MATRIX</a>
+        </div>
+
+    </div>
+
+</header>

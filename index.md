@@ -2,8 +2,6 @@
 layout: home
 title: Home
 image: /assets/images/wurst_icon64.png
-tagline: |
-  Delicious programming language that compiles to JASS
 heading: Get started using Wurst.
 
 description: Modern Warcraft 3 modding toolchain

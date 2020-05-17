@@ -6,8 +6,6 @@ icon:
   name: icon_lifesaver
 color: purple
 layout: tutorials
-tagline: |
-  Delicious Programming language that compiles to Jass.
 heading: Select a Tutorial
 navigation:
   - /tutorials/wurstbeginner
