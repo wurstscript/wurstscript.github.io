@@ -1,12 +1,11 @@
 source "https://rubygems.org"
-ruby RUBY_VERSION
 
-gem "jekyll", ">= 3.6.3"
-gem "nokogiri", ">= 1.8.5"
-gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+gem "jekyll", ">= 3.9.0"
+gem "nokogiri", ">= 1.10.10"
+gem 'wdm', '>= 0.1.1' if Gem.win_platform?
 
 group :jekyll_plugins do
-  gem "github-pages"
+  gem "github-pages", ">= 209"
   gem 'jekyll-seo-tag'
   gem 'jekyll-redirect-from'
   gem 'jekyll-sitemap'
