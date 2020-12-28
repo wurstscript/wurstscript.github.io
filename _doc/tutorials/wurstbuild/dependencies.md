@@ -30,7 +30,7 @@ buildMapData:
     description: WurstScript powered! # The map's description
     suggestedPlayers: DefaultSuggestedPlayers # Hint text displayed in lobby
     loadingScreen:
-      model: Generic.mdx
+      background: Generic
       title: DefaultTitle
       subTitle: DefaultSubtitle
       text: DefaultText
@@ -62,9 +62,10 @@ buildMapData:
 ## Dependencies
 
 The setup does no version locking for now, but this is planned for a future version. Transitive dependencies will not be resolved.
+You can target specific branches using a suffix, e.g. `https://github.com/wurstscript/wurstStdlib2:pre1.29`.
 
 A dependency is a simple url to a public git repo, which can be pulled by the setup.
 Projects created by the setup include the standard library dependency by default: `https://github.com/wurstscript/wurstStdlib2`.
 
-To add a dependency, add an entry with a valid git https url. Then update your project via the setup UI or CLI `grill -projectDir ~./Documents/MyProject/ update`.
+To add a dependency run `grill install` with a valid, accesible git repo url, e.g. `grill install https://github.com/frotty/frentity`.
 
