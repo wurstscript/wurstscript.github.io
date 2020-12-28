@@ -36,7 +36,7 @@ buildMapData:
       text: DefaultText
   optionsFlags:
     hideMinimapPreview: false
-	forcesFixed: false
+    forcesFixed: false
     maskedAreasPartiallyVisible: false
     showWavesOnCliffShores: false
     showWavesOnRollingShores: false
