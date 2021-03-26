@@ -331,7 +331,7 @@ A new direction for Sheep Tag Revolution powered by Wurst.
 <div class="col-sm-6 col-xs-12">
 <div class="card" markdown="1">
 
-[![screenshot](https://github.com/jlfarris91/TheLastStand/blob/master/wiki/LoadingScreenWithBanner512x512.jpg){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/the-last-stand-v0-4-0.330674/)
+[![screenshot](/assets/images/showcase/lastStandPreview.jpg){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/the-last-stand-v0-4-0.330674/)
 
 <div class="card-block" markdown="1">
 
@@ -340,9 +340,8 @@ A new direction for Sheep Tag Revolution powered by Wurst.
 #### The Last Stand
 
 {: .card-text}
-The Last Stand is a multiplayer post-apocalyptic base-building survival game for up to 8 players. Build your base during the day and try to survive the hordes of the undead at night.
+The Last Stand is a multiplayer post-apocalyptic base-building survival game for up to 8 players. Build your base during the day and survive the hordes of undead at night.
 
-[_&nbsp;_{: .fa .fa-external-link-square} W3Reforged](https://maps.w3reforged.com/maps/categories/hero-defense-and-survival/The%20Last%20Stand%20by%20Ozymandias)
 [_&nbsp;_{: .fa .fa-external-link-square} Hive](https://www.hiveworkshop.com/threads/the-last-stand-v0-4-0.330674/)
 [_&nbsp;_{: .fa .fa-external-link-square} Git Repo](https://github.com/jlfarris91/TheLastStand)
 
