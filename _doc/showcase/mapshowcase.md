@@ -340,7 +340,7 @@ A new direction for Sheep Tag Revolution powered by Wurst.
 #### The Last Stand
 
 {: .card-text}
-The Last Stand is a multiplayer post-apocalyptic base-building survival game for up to 8 players. Build your base during the day and survive the hordes of undead at night.
+Multiplayer post-apocalyptic base-building survival game. Build your base during the day and survive the hordes of undead at night.
 
 [_&nbsp;_{: .fa .fa-external-link-square} Hive](https://www.hiveworkshop.com/threads/the-last-stand-v0-4-0.330674/)
 [_&nbsp;_{: .fa .fa-external-link-square} Git Repo](https://github.com/jlfarris91/TheLastStand)
