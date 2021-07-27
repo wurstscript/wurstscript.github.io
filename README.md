@@ -19,7 +19,11 @@ The design is based on https://github.com/xriley/PrettyDocs-Theme
 
     `gem install bundler`
 
-3. Execute `bundle install` in this repository.
+3. Execute
+
+    `bundle install`
+
+
 4. Run the server with:
 
     `bundle exec jekyll serve`
