@@ -62,7 +62,7 @@
   h2,
   h3,
   h4 {
-    color: #24282e;
+    color: var(--text-color-dark);
     clear: both;
   }
 
@@ -159,7 +159,7 @@
 
 code {
 	background: rgba(27,31,35,0.05);
-	color: #111;
+	color: var(--text-color-dark);
 	border-radius: 3px;
 	font-weight: normal;
 	font-family: 'SFMono-Regular', 'Roboto Mono', Consolas, 'Liberation Mono', Menlo, Courier, monospace;

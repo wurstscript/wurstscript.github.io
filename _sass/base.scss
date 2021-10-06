@@ -17,6 +17,10 @@ hr {
     border-top: 1px solid var(--divider);
 }
 
+.jumbotron {
+    background-color: var(--smoky-white);
+}
+
 .page-wrapper {
 	background: var(--smoky-grey);
     min-height: 100%;
@@ -29,7 +33,7 @@ hr {
 }
 
 blockquote {
-	background: rgba(255, 255, 255, 0.8);
+	background: var(--smoky-white);
 	.body-green & {
 		border-left: 5px solid var(--color-green);
 	}
