@@ -3,7 +3,7 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	letter-spacing: -0.025em;
-    color: $text-color;
+    color: var(--text-color);
     font-size: 14px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -13,8 +13,12 @@ html, body {
     height: 100%;
 }
 
+hr {
+    border-top: 1px solid var(--divider);
+}
+
 .page-wrapper {
-	background: #fafafa;
+	background: var(--smoky-grey);
     min-height: 100%;
     /* equal to footer height */
     &:after {
@@ -27,22 +31,22 @@ html, body {
 blockquote {
 	background: rgba(255, 255, 255, 0.8);
 	.body-green & {
-		border-left: 5px solid $color-green;
+		border-left: 5px solid var(--color-green);
 	}
 	.body-blue & {
-		border-left: 5px solid $color-blue;
+		border-left: 5px solid var(--color-blue);
 	}
 	.body-orange & {
-		border-left: 5px solid $color-orange;
+		border-left: 5px solid var(--color-orange);
 	}
 	.body-red & {
-		border-left: 5px solid $color-red;
+		border-left: 5px solid var(--color-red);
 	}
 	.body-pink & {
-		border-left: 5px solid $color-pink;
+		border-left: 5px solid var(--color-pink);
 	}
 	.body-purple & {
-		border-left: 5px solid $color-purple;
+		border-left: 5px solid var(--color-purple);
 	}
 }
 
@@ -67,11 +71,11 @@ p {
 }
 
 a {
-    color: darken($color-primary, 5%);
+    color: var(--color-primary-dark);
     @include transition(all 0.4s ease-in-out);
     &:hover {
         text-decoration: underline;
-        color: darken($color-primary, 10%);
+        color: var(--color-primary-darker);
     }
     &:focus {
         text-decoration: none;
@@ -112,24 +116,24 @@ pre > code {
 }
 
 .btn-primary, a.btn-primary {
-    background: $color-primary;
-    border: 1px solid $color-primary;
+    background: var(--color-primary);
+    border: 1px solid var(--color-primary);
     color: #fff !important;
     &:hover, &:focus, &:active, &.active, &.hover {
-        background: darken($color-primary, 5%);
+        background: var(--color-primary-dark);
         color: #fff !important;
-        border: 1px solid darken($color-primary, 5%);
+        border: 1px solid var(--color-primary-dark);
     }
 }
 
 .btn-green, a.btn-green {
-    background: $color-green;
-    border: 1px solid $color-green;
+    background: var(--color-green);
+    border: 1px solid var(--color-green);
     color: #fff !important;
     &:hover, &:focus, &:active, &.active, &.hover {
-        background: darken($color-green, 5%);
+        background: var(--color-green-dark);
         color: #fff !important;
-        border: 1px solid darken($color-green, 5%);
+        border: 1px solid var(--color-green-dark);
     }
     .body-green & {
         color: #fff !important;
@@ -140,58 +144,58 @@ pre > code {
 }
 
 .btn-blue, a.btn-blue {
-    background: $color-blue;
-    border: 1px solid $color-blue;
+    background: var(--color-blue);
+    border: 1px solid var(--color-blue);
     color: #fff !important;
     &:hover, &:focus, &:active, &.active, &.hover {
-        background: darken($color-blue, 5%);
+        background: var(--color-blue-dark);
         color: #fff !important;
-        border: 1px solid darken($color-blue, 5%);
+        border: 1px solid var(--color-blue-dark);
     }
 }
 
 .btn-orange, a.btn-orange {
-    background: $color-orange;
-    border: 1px solid $color-orange;
+    background: var(--color-orange);
+    border: 1px solid var(--color-orange);
     color: #fff !important;
     &:hover, &:focus, &:active, &.active, &.hover {
-        background: darken($color-orange, 5%);
+        background: var(--color-orange-dark);
         color: #fff !important;
-        border: 1px solid darken($color-orange, 5%);
+        border: 1px solid var(--color-orange-dark);
     }
 }
 
 .btn-red, a.btn-red {
-    background: $color-red;
-    border: 1px solid $color-red;
+    background: var(--color-red);
+    border: 1px solid var(--color-red);
     color: #fff !important;
     &:hover, &:focus, &:active, &.active, &.hover {
-        background: darken($color-red, 5%);
+        background: var(--color-red-dark);
         color: #fff !important;
-        border: 1px solid darken($color-red, 5%);
+        border: 1px solid var(--color-red-dark);
     }
 }
 
 .btn-pink, a.btn-pink {
-    background: $color-pink;
-    border: 1px solid $color-pink;
+    background: var(--color-pink);
+    border: 1px solid var(--color-pink);
     color: #fff !important;
     &:hover, &:focus, &:active, &.active, &.hover {
-        background: darken($color-pink, 5%);
+        background: var(--color-pink-dark);
         color: #fff !important;
-        border: 1px solid darken($color-pink, 5%);
+        border: 1px solid var(--color-pink-dark);
     }
 
 }
 
 .btn-purple, a.btn-purple {
-    background: $color-purple;
-    border: 1px solid $color-purple;
+    background: var(--color-purple);
+    border: 1px solid var(--color-purple);
     color: #fff !important;
     &:hover, &:focus, &:active, &.active, &.hover {
-        background: darken($color-purple, 5%);
+        background: var(--color-purple-dark);
         color: #fff !important;
-        border: 1px solid darken($color-purple, 5%);
+        border: 1px solid var(--color-purple-dark);
     }
 }
 
@@ -202,10 +206,10 @@ pre > code {
 .form-control {
     @include box-shadow(none);
     height: 40px;
-    border-color: $divider;
-    @include placeholder(lighten($grey, 5%));
+    border-color: var(--divider);
+    @include placeholder(var(--light-grey));
     &:focus {
-        border-color: darken($divider, 5%);
+        border-color: var(--divider-dark);
         @include box-shadow(none);
     }
 }
@@ -222,7 +226,7 @@ select {
 }
 
 #topcontrol {
-    background: $color-primary;
+    background: var(--color-primary);
     color: #fff;
     text-align: center;
     display: inline-block;
@@ -233,7 +237,7 @@ select {
     @include transition (all 0.4s ease-in-out);
     z-index: 30;
     &:hover {
-        background: lighten($color-primary, 5%);
+        background: var(--color-primary-light);
     }
     .fa {
         position: relative;
@@ -250,9 +254,9 @@ select {
 
 /* ====== Header ====== */
 .header {
-    background: $text-color;
+    background: var(--banner-color);
     color: rgba(255, 255, 255, 0.85);
-    border-top: 5px solid $color-primary;
+    border-top: 5px solid var(--color-primary);
     padding: 20px 0px 20px 0px;
 
 }
@@ -269,24 +273,24 @@ select {
         }
     }
     .text-highlight {
-        color: $color-primary;
+        color: var(--color-primary);
         .body-green & {
-            color: $color-green;
+            color: var(--color-green);
         }
         .body-blue & {
-            color: $color-blue;
+            color: var(--color-blue);
         }
         .body-orange & {
-            color: $color-orange;
+            color: var(--color-orange);
         }
         .body-red & {
-            color: $color-red;
+            color: var(--color-red);
         }
         .body-pink & {
-            color: $color-pink;
+            color: var(--color-pink);
         }
         .body-purple & {
-            color: $color-purple;
+            color: var(--color-purple);
         }
     }
     .text-bold {
@@ -295,24 +299,24 @@ select {
     }
     .icon {
         font-size: 24px;
-        color: $color-primary;
+        color: var(--color-primary);
         .body-green & {
-            color: $color-green;
+            color: var(--color-green);
         }
         .body-blue & {
-            color: $color-blue;
+            color: var(--color-blue);
         }
         .body-orange & {
-            color: $color-orange;
+            color: var(--color-orange);
         }
         .body-red & {
-            color: $color-red;
+            color: var(--color-red);
         }
         .body-pink & {
-            color: $color-pink;
+            color: var(--color-pink);
         }
         .body-purple & {
-            color: $color-purple;
+            color: var(--color-purple);
         }
     }
 }
@@ -346,14 +350,14 @@ select {
 
 /* ====== Footer ====== */
 .footer {
-    background: darken($text-color, 15%);
+    background: var(--banner-color);
     color: rgba(255, 255, 255, 0.6);
     padding: 15px 0;
     a {
-        color: $color-primary;
+        color: var(--color-primary);
     }
     .fa-heart {
-        color: $color-pink;
+        color: var(--color-pink);
     }
 }
 

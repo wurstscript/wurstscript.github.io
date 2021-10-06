@@ -1,26 +1,112 @@
-/* Theme default */
-$color-primary: #40babd;
-$color-green: #75c181;
-$color-red: #f77b6b;
-$color-blue: #58bbee;
-$color-orange: #F88C30;
-$color-pink: #EA5395;
-$color-purple: #8A40A7;
+:root {
 
-$text-color: #3c4b62;
-$text-color-secondary: lighten($text-color, 10%);
-$text-grey: lighten($text-color-secondary, 25%);
-$grey: lighten($text-color-secondary, 25%);
-$light-grey: #c3c3c3;
-$dark-grey: #666;
-$black: #000;
-$smoky-white: #f5f5f5;
-$smoky-grey: #fafafa;
-$divider: #f0f0f0;
+    --color-primary: hsl(181, 49%, 50%);
+    --color-primary-light: hsl(181, 49%, 55%);
+    --color-primary-lightest: hsl(181, 49%, 70%);
+    --color-primary-dark: hsl(181, 49%, 45%);
+    --color-primary-darker: hsl(181, 49%, 40%);
+    --color-primary-darkest: hsl(181, 49%, 35%);
+    --color-green: hsl(129, 38%, 61%);
+    --color-green-lightest: hsl(129, 38%, 81%);
+    --color-green-dark: hsl(129, 38%, 56%);
+    --color-green-darker: hsl(129, 38%, 51%);
+    --color-green-darkest: hsl(129, 38%, 46%);
+    --color-red: hsl(7, 90%, 69%);
+    --color-red-lightest: hsl(7, 90%, 89%);
+    --color-red-dark: hsl(7, 90%, 64%);
+    --color-red-darker: hsl(7, 90%, 59%);
+    --color-red-darkest: hsl(7, 90%, 54%);
+    --color-blue: hsl(200, 82%, 64%);
+    --color-blue-lightest: hsl(200, 82%, 84%);
+    --color-blue-dark: hsl(200, 82%, 59%);
+    --color-blue-darker: hsl(200, 82%, 54%);
+    --color-blue-darkest: hsl(200, 82%, 49%);
+    --color-orange: hsl(28, 93%, 58%);
+    --color-orange-lightest: hsl(28, 93%, 78%);
+    --color-orange-dark: hsl(28, 93%, 53%);
+    --color-orange-darker: hsl(28, 93%, 48%);
+    --color-orange-darkest: hsl(28, 93%, 43%);
+    --color-pink: hsl(334, 78%, 62%);
+    --color-pink-lightest: hsl(334, 78%, 82%);
+    --color-pink-dark: hsl(334, 78%, 57%);
+    --color-pink-darker: hsl(334, 78%, 52%);
+    --color-pink-darkest: hsl(334, 78%, 47%);
+    --color-purple: hsl(283, 45%, 45%);
+    --color-purple-lightest: hsl(283, 45%, 65%);
+    --color-purple-dark: hsl(283, 45%, 40%);
+    --color-purple-darker: hsl(283, 45%, 35%);
+    --color-purple-darkest: hsl(283, 45%, 30%);
 
-$new: #60A823;
-$error: #E65348;
-$facebook: #3b5998;
-$twitter: #55acee;
-$google: #dd4b39;
-$github: #444;
+    --banner-color: hsl(216, 24%, 31%);
+    --text-color: hsl(216, 24%, 31%);
+    --text-color-dark: hsl(216, 24%, 16%);
+    --text-color-secondary: hsl(216, 24%, 41%);
+    --grey: hsl(216, 24%, 41%);
+    --light-grey: hsl(216, 24%, 46%);
+    --black: #000;
+    --smoky-white: #f5f5f5;
+    --smoky-grey: #fafafa;
+    --divider: hsl(0, 0%, 94%);
+    --divider-dark: hsl(0, 0%, 89%);
+    --divider-darker: hsl(0, 0%, 84%);
+}
+
+@media (prefers-color-scheme: dark) {
+  /*
+   * Dark Colors
+   * -------------------------------------------
+   */
+
+  body {
+    --color-primary: hsl(181, 49%, 50%);
+    --color-primary-light: hsl(181, 49%, 55%);
+    --color-primary-lightest: hsl(181, 49%, 70%);
+    --color-primary-dark: hsl(181, 49%, 45%);
+    --color-primary-darker: hsl(181, 49%, 40%);
+    --color-primary-darkest: hsl(181, 49%, 35%);
+    --color-green: hsl(129, 38%, 61%);
+    --color-green-lightest: hsl(129, 38%, 81%);
+    --color-green-dark: hsl(129, 38%, 56%);
+    --color-green-darker: hsl(129, 38%, 51%);
+    --color-green-darkest: hsl(129, 38%, 46%);
+    --color-red: hsl(7, 90%, 69%);
+    --color-red-lightest: hsl(7, 90%, 89%);
+    --color-red-dark: hsl(7, 90%, 64%);
+    --color-red-darker: hsl(7, 90%, 59%);
+    --color-red-darkest: hsl(7, 90%, 54%);
+    --color-blue: hsl(200, 82%, 64%);
+    --color-blue-lightest: hsl(200, 82%, 84%);
+    --color-blue-dark: hsl(200, 82%, 59%);
+    --color-blue-darker: hsl(200, 82%, 54%);
+    --color-blue-darkest: hsl(200, 82%, 49%);
+    --color-orange: hsl(28, 93%, 58%);
+    --color-orange-lightest: hsl(28, 93%, 78%);
+    --color-orange-dark: hsl(28, 93%, 53%);
+    --color-orange-darker: hsl(28, 93%, 48%);
+    --color-orange-darkest: hsl(28, 93%, 43%);
+    --color-pink: hsl(334, 78%, 62%);
+    --color-pink-lightest: hsl(334, 78%, 82%);
+    --color-pink-dark: hsl(334, 78%, 57%);
+    --color-pink-darker: hsl(334, 78%, 52%);
+    --color-pink-darkest: hsl(334, 78%, 47%);
+    --color-purple: hsl(283, 45%, 45%);
+    --color-purple-lightest: hsl(283, 45%, 65%);
+    --color-purple-dark: hsl(283, 45%, 40%);
+    --color-purple-darker: hsl(283, 45%, 35%);
+    --color-purple-darkest: hsl(283, 45%, 30%);
+
+    --banner-color: hsl(216, 24%, 31%);
+    --text-color: hsl(225, 25%, 97%);
+    --text-color-dark: hsl(225, 25%, 82%);
+    --text-color-secondary: hsl(216, 24%, 41%);
+    --grey: hsl(216, 24%, 41%);
+    --light-grey: hsl(216, 24%, 46%);
+    --black: #000;
+    --smoky-white: #1e2023;
+    --smoky-grey: #222428;
+    --divider: #383a3e;
+    --divider-dark: #222428;
+    --divider-darker: #1e2023;
+  }
+}
+

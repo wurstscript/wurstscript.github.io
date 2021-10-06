@@ -1,7 +1,7 @@
 /* ======= Landing Page ======= */
 .landing-page {
     .header {
-        background: $text-color;
+        background: var(--banner-color);
         color: rgba(256, 256, 256, 0.85);
         padding: 30px 0px 25px 0px;
         a {
@@ -40,7 +40,7 @@
         }
         .icon {
             font-size: 32px;
-            color: $color-primary;
+            color: var(--color-primary);
         }
     }
 
@@ -52,12 +52,12 @@
             margin-bottom: 0px;
         }
         .text-highlight {
-            color: darken($color-primary, 20%);
+            color: var(--color-primary-darkest);
         }
     }
 
     .fa-heart {
-        color: $color-pink;
+        color: var(--color-pink);
     }
 
     .cta-container {
@@ -81,7 +81,7 @@
 
 .cards-section {
     padding: 40px 0;
-    background: $smoky-grey;
+    background: var(--smoky-grey);
 
     .title {
         margin-top: 0;
@@ -93,7 +93,7 @@
         margin: 0 auto;
         max-width: 800px;
         margin-bottom: 40px;
-        color: $text-color-secondary;
+        color: var(--text-color)-secondary;
     }
     .cards-wrapper {
         max-width: 860px;
@@ -122,9 +122,9 @@
     }
     .item-inner {
         padding: 45px 30px;
-        background:#fff;
+        background:var(--smoky-white);
         position: relative;
-        border: 1px solid $divider;
+        border: 1px solid var(--divider);
         @include border-radius(4px);
 
         .link {
@@ -148,98 +148,98 @@
 
     .item-primary {
         .item-inner {
-            border-top: 3px solid $color-primary;
+            border-top: 3px solid var(--color-primary);
             &:hover {
                 .title {
-                    color: darken($color-primary, 15%);
+                    color: var(--color-primary-darkest);
                 }
             }
         }
         .icon {
-            color: $color-primary;
+            color: var(--color-primary);
         }
 
     }
 
     .item-green {
         .item-inner {
-            border-top: 3px solid $color-green;
+            border-top: 3px solid var(--color-green);
             &:hover {
                 .title {
-                    color: darken($color-green, 15%);
+                    color: var(--color-green-darkest);
                 }
             }
         }
         .icon {
-            color: $color-green;
+            color: var(--color-green);
         }
 
     }
 
     .item-blue {
         .item-inner {
-            border-top: 3px solid $color-blue;
+            border-top: 3px solid var(--color-blue);
             &:hover {
                 .title {
-                    color: darken($color-blue, 15%);
+                    color: var(--color-blue-darkest);
                 }
             }
         }
         .icon {
-            color: $color-blue;
+            color: var(--color-blue);
         }
     }
     .item-orange {
         .item-inner {
-            border-top: 3px solid $color-orange;
+            border-top: 3px solid var(--color-orange);
             &:hover {
                 .title {
-                    color: darken($color-orange, 15%);
+                    color: var(--color-orange-darkest);
                 }
             }
         }
         .icon {
-            color: $color-orange;
+            color: var(--color-orange);
         }
     }
     .item-red {
         .item-inner {
-            border-top: 3px solid $color-red;
+            border-top: 3px solid var(--color-red);
             &:hover {
                 .title {
-                    color: darken($color-red, 15%);
+                    color: var(--color-red-darkest);
                 }
             }
         }
         .icon {
-            color: $color-red;
+            color: var(--color-red);
         }
     }
     .item-pink {
         .item-inner {
-            border-top: 3px solid $color-pink;
+            border-top: 3px solid var(--color-pink);
             &:hover {
                 .title {
-                    color: darken($color-pink, 15%);
+                    color: var(--color-pink-darkest);
                 }
             }
         }
         .icon {
-            color: $color-pink;
+            color: var(--color-pink);
         }
     }
 
     .item-purple {
         .item-inner {
-            border-top: 3px solid $color-purple;
+            border-top: 3px solid var(--color-purple);
             &:hover {
                 .title {
-                    color: darken($color-purple, 15%);
+                    color: var(--color-purple-darkest);
                 }
             }
         }
         .icon {
-            color: $color-purple;
+            color: var(--color-purple);
         }
     }
 
