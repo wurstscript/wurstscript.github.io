@@ -1,7 +1,7 @@
 /* ======= Doc Styling ======= */
 .doc-wrapper {
     padding: 45px 0;
-    background: $smoky-grey;
+    background: var(--smoky-grey);
 }
 
 .doc-body {
@@ -11,33 +11,33 @@
 .doc-header {
     margin-bottom: 30px;
     .doc-title {
-        color: $color-primary;
+        color: var(--color-primary);
         margin-top: 0;
         font-size: 36px;
         .body-green & {
-            color: $color-green;
+            color: var(--color-green);
         }
         .body-blue & {
-            color: $color-blue;
+            color: var(--color-blue);
         }
         .body-orange & {
-            color: $color-orange;
+            color: var(--color-orange);
         }
         .body-red & {
-            color: $color-red;
+            color: var(--color-red);
         }
         .body-pink & {
-            color: $color-pink;
+            color: var(--color-pink);
         }
         .body-purple & {
-            color: $color-purple;
+            color: var(--color-purple);
         }
     }
     .icon {
         font-size: 30px;
     }
     .meta {
-        color: $grey;
+        color: var(--grey);
     }
 }
 
@@ -55,14 +55,14 @@
         margin-bottom: 0;
         font-weight: bold;
         padding-bottom: 10px;
-        border-bottom: 1px solid darken($divider, 10%);
+        border-bottom: 1px solid var(--divider-darker);
     }
 
   h1,
   h2,
   h3,
   h4 {
-    color: #24282e;
+    color: var(--text-color-dark);
     clear: both;
   }
 
@@ -121,21 +121,21 @@
     margin: 4px !important;
     padding: 4px !important;
     font-weight: 400 !important;
-    color: darken($color-primary, 5%);
+    color: var(--color-primary-dark);
     .body-green {
-        color: darken($color-green, 5%);
+        color: var(--color-green-dark);
     }
     .body-blue & {
-        color: darken($color-blue, 5%);
+        color: var(--color-blue-dark);
     }
     .body-orange &{
-        color: darken($color-orange, 5%);
+        color: var(--color-orange-dark);
     }
     .body-pink &{
-        color: darken($color-pink, 5%);
+        color: var(--color-pink-dark);
     }
     .body-purple &{
-        color: darken($color-purple, 5%);
+        color: var(--color-purple-dark);
     }
     .fa {
         @include opacity(0.6);
@@ -147,7 +147,7 @@
 }
 
 .answer {
-    color: $color-primary;
+    color: var(--color-primary);
 	margin: 4px !important;
     padding: 4px !important;
 }
@@ -159,7 +159,7 @@
 
 code {
 	background: rgba(27,31,35,0.05);
-	color: #111;
+	color: var(--text-color-dark);
 	border-radius: 3px;
 	font-weight: normal;
 	font-family: 'SFMono-Regular', 'Roboto Mono', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
@@ -201,41 +201,41 @@ code {
 }
 
 .callout-info {
-    background: $color-blue;
+    background: var(--color-blue);
     color: #fff;
 }
 
 .callout-success {
-    background: $color-green;
+    background: var(--color-green);
     color: #fff;
 }
 
 .callout-warning {
-    background: $color-orange;
+    background: var(--color-orange);
     color: #fff;
 }
 
 .callout-danger {
-    background: $color-red;
+    background: var(--color-red);
     color: #fff;
 }
 
 .table>thead>tr>th {
-    border-bottom-color: lighten($color-primary, 20%);
+    border-bottom-color: var(--color-primary-lightest);
     .body-green & {
-        border-bottom-color: lighten($color-green, 20%);
+        border-bottom-color: var(--color-green-lightest);
     }
     .body-blue & {
-        border-bottom-color: lighten($color-blue, 20%);
+        border-bottom-color: var(--color-blue-lightest);
     }
     .body-orange & {
-        border-bottom-color: lighten($color-orange, 20%);
+        border-bottom-color: var(--color-orange-lightest);
     }
     .body-pink & {
-        border-bottom-color: lighten($color-pink, 20%);
+        border-bottom-color: var(--color-pink-lightest);
     }
     .body-purple & {
-        border-bottom-color: lighten($color-purple, 20%);
+        border-bottom-color: var(--color-purple-lightest);
     }
 }
 .table-bordered>thead>tr>th {
@@ -243,7 +243,7 @@ code {
 }
 
 .table-striped>tbody>tr:nth-of-type(odd) {
-    background-color: $smoky-white;
+    background-color: var(--smoky-white);
 }
 
 
@@ -253,7 +253,7 @@ code {
     position: relative;
     text-align: center;
     img {
-        border: 1px solid $divider;
+        border: 1px solid var(--divider);
     }
     .mask {
         display: block;
@@ -321,7 +321,7 @@ code {
         p {
             font-size: 14px;
             font-weight: normal;
-            color: $text-color-secondary;
+            color: var(--text-color)-secondary;
         }
     }
 
@@ -343,7 +343,7 @@ code {
 
 .card {
     text-align: center;
-    border: 1px solid darken($divider, 5%);
+    border: 1px solid var(--divider-dark);
     @include border-radius(4px);
     margin-bottom: 30px;
     position: relative;
@@ -380,71 +380,71 @@ code {
 /* Color Schemes */
 .body-green {
     .header {
-        border-color: $color-green;
+        border-color: var(--color-green);
     }
     a {
-        color: $color-green;
+        color: var(--color-green);
         &:hover {
-            color: darken($color-green, 10%);
+            color: var(--color-green-darker);
         }
     }
 }
 .body-blue {
     .header {
-        border-color: $color-blue;
+        border-color: var(--color-blue);
     }
     a {
-        color: $color-blue;
+        color: var(--color-blue);
         &:hover {
-            color: darken($color-blue, 10%);
+            color: var(--color-blue-darker);
         }
     }
 }
 
 .body-orange {
     .header {
-        border-color: $color-orange;
+        border-color: var(--color-orange);
     }
     a {
-        color: $color-orange;
+        color: var(--color-orange);
         &:hover {
-            color: darken($color-orange, 10%);
+            color: var(--color-orange-dark);
         }
     }
 }
 
 .body-pink {
     .header {
-        border-color: $color-pink;
+        border-color: var(--color-pink);
     }
     a {
-        color: $color-pink;
+        color: var(--color-pink);
         &:hover {
-            color: darken($color-pink, 10%);
+            color: var(--color-pink-dark);
         }
     }
 }
 
 .body-purple {
     .header {
-        border-color: $color-purple;
+        border-color: var(--color-purple);
     }
     a {
-        color: $color-purple;
+        color: var(--color-purple);
         &:hover {
-            color: darken($color-purple, 10%);
+            color: var(--color-purple-dark);
         }
     }
 }
 
 .body-red {
     .header {
-        border-color: $color-red;
+        border-color: var(--color-red);
     }
     a {
-        color: $color-red;
+        color: var(--color-red);
         &:hover {
-            color: darken($color-red, 10%);
+            color: var(--color-red-dark);
         }
     }
 }
@@ -482,60 +482,60 @@ code {
             display: block;
             padding: 5px 15px;
             border-left: 4px solid transparent;
-            color: $text-color-secondary;
+            color: var(--text-color)-secondary;
             &:hover, &:focus {
-                color: $color-primary;
+                color: var(--color-primary);
                 text-decoration: none;
                 background: none;
                 .body-green & {
-                    color: $color-green;
+                    color: var(--color-green);
                 }
                 .body-blue & {
-                    color: $color-blue;
+                    color: var(--color-blue);
                 }
                 .body-orange & {
-                    color: $color-orange;
+                    color: var(--color-orange);
                 }
                 .body-red & {
-                    color: $color-red;
+                    color: var(--color-red);
                 }
                 .body-pink & {
-                    color: $color-pink;
+                    color: var(--color-pink);
                 }
                 .body-purple & {
-                    color: $color-purple;
+                    color: var(--color-purple);
                 }
             }
         }
         &.active {
             & > a {
                 background: none;
-                border-left: 4px solid $color-primary;
-                color: $color-primary;
+                border-left: 4px solid var(--color-primary);
+                color: var(--color-primary);
                 font-weight: 600;
                 .body-green & {
-                    color: $color-green;
-                    border-color: $color-green;
+                    color: var(--color-green);
+                    border-color: var(--color-green);
                 }
                 .body-blue & {
-                    color: $color-blue;
-                    border-color: $color-blue;
+                    color: var(--color-blue);
+                    border-color: var(--color-blue);
                 }
                 .body-orange & {
-                    color: $color-orange;
-                    border-color: $color-orange;
+                    color: var(--color-orange);
+                    border-color: var(--color-orange);
                 }
                 .body-red & {
-                    color: $color-red;
-                    border-color: $color-red;
+                    color: var(--color-red);
+                    border-color: var(--color-red);
                 }
                 .body-pink & {
-                    color: $color-pink;
-                    border-color: $color-pink;
+                    color: var(--color-pink);
+                    border-color: var(--color-pink);
                 }
                 .body-purple & {
-                    color: $color-purple;
-                    border-color: $color-purple;
+                    color: var(--color-purple);
+                    border-color: var(--color-purple);
                 }
             }
 
@@ -554,31 +554,31 @@ code {
         }
         & > a {
             display: block;
-            color: $text-color-secondary;
+            color: var(--text-color)-secondary;
             padding: 0;
             padding-left: 34px;
             background: none;
             &:hover{
-                color: $color-primary;
+                color: var(--color-primary);
                 text-decoration: none;
                 background: none;
                 .body-green & {
-                    color: $color-green;
+                    color: var(--color-green);
                 }
                 .body-blue & {
-                    color: $color-blue;
+                    color: var(--color-blue);
                 }
                 .body-orange & {
-                    color: $color-orange;
+                    color: var(--color-orange);
                 }
                 .body-red & {
-                    color: $color-red;
+                    color: var(--color-red);
                 }
                 .body-pink & {
-                    color: $color-pink;
+                    color: var(--color-pink);
                 }
                 .body-purple & {
-                    color: $color-purple;
+                    color: var(--color-purple);
                 }
             }
             &:focus {
@@ -588,24 +588,24 @@ code {
         &.active {
             & > a {
                 background: none;
-                color: $color-primary;
+                color: var(--color-primary);
                 .body-green & {
-                    color: $color-green;
+                    color: var(--color-green);
                 }
                 .body-blue & {
-                    color: $color-blue;
+                    color: var(--color-blue);
                 }
                 .body-orange & {
-                    color: $color-orange;
+                    color: var(--color-orange);
                 }
                 .body-red & {
-                    color: $color-red;
+                    color: var(--color-red);
                 }
                 .body-pink & {
-                    color: $color-pink;
+                    color: var(--color-pink);
                 }
                 .body-purple & {
-                    color: $color-purple;
+                    color: var(--color-purple);
                 }
             }
         }
@@ -633,21 +633,21 @@ code {
 
 /* ===== Promo block ===== */
 .promo-block {
-    background: darken($color-primary, 5%);
+    background: var(--color-primary-dark);
     .body-green & {
-        background: darken($color-green, 5%);
+        background: var(--color-green-dark);
     }
     .body-blue & {
-        background: darken($color-blue, 5%);
+        background: var(--color-blue-dark);
     }
     .body-orange &{
-        background: darken($color-orange, 5%);
+        background: var(--color-orange-dark);
     }
     .body-pink &{
-        background: darken($color-pink, 5%);
+        background: var(--color-pink-dark);
     }
     .body-purple &{
-        background: darken($color-purple, 5%);
+        background: var(--color-purple-dark);
     }
 
 
@@ -701,7 +701,7 @@ code {
                 top: 50%;
                 margin-top: -21px;
                 &.pink {
-                    color: $color-pink;
+                    color: var(--color-pink);
                 }
 
             }
