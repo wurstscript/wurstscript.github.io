@@ -23,7 +23,7 @@ Wurst wraps all this behind a simple API, so you don't need to worry about the d
 
 To save data for a specific player, simplye invoke `saveData` with the data you want to save.
 Existing file contents will be overriden.
-Since saving does not require syning, it is the simpler operation.
+Since saving does not require synchronizing, it is a simple, blocking operation.
 
 ```wurst
 init
@@ -35,9 +35,9 @@ This will save `someDataString` into the file `MyFileName.pld` in the CustomMapD
 ## Load Data
 
 To load data for a specific player, invoke the `loadData` function with the same file name you used to save.
-Because loading does require syncing, `loadData` expect a closure as second parameter which will be invoked once the loading and syncing has finished.
-Loading may also fail if the file is empty or corrupted, so you should check the `status` parameter for validity.
-If the status is `SUCCESS`, the `data` parameter will contain the synced version of the file's contents, which you can immediately use in a synchronous context.
+Because loading does require synchronizing, `loadData` expects a closure as second parameter which will be invoked once the loading and synchronizing has finished.
+Loading may also fail if the file is empty, corrupted, or the player disconnects during loading - so you should always check the `status` parameter for validity first.
+If the status is `SUCCESS`, the `data` parameter will contain the synchronized version of the file's contents, which you can immediately use in a synchronous context.
 
 ```wurst
 init
