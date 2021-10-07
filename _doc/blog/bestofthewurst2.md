@@ -123,4 +123,4 @@ endfunction
 
 Next month we'll return to a more hardcore example, demonstrating `@compiletime function`s + expressions, and their uses.
 
-We look forward to your comments! As usual, we chat all things wurst at the [#inwc.de-maps](https://kiwiirc.com/client/irc.quakenet.org/#inwc.de-maps) IRC channel.
+We look forward to your comments! As usual, we chat all things wurst at the [Discord](https://discord.gg/mSHZpWcadz).

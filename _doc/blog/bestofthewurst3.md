@@ -123,4 +123,4 @@ Notice the `presetCooldown` call with the lambda expression. Next to normal sett
 * @Frotty and @Cokemonkey11 are now approved code reviewers for Wurst on hive workshop.
 * The setup app is now an approved resource in the tools section
 
-As always, come and chat with us on [IRC](https://kiwiirc.com/nextclient/#irc://irc.quakenet.org/#inwc.de-maps) or post on this thread to provide us feedback for these monthy blog posts, as well as requesting what you want us to cover next.
+As always, come and chat with us on [Discord](https://discord.gg/mSHZpWcadz) or post on this thread to provide us feedback for these monthy blog posts, as well as requesting what you want us to cover next.

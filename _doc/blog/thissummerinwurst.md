@@ -87,4 +87,4 @@ As a lightning recap of the last few years, here’s more:
 
 We hope you’ll find this summary informative. Please do give us some feedback as we plan to write curated content like this more frequently in the future.
 
-As usual, we chat all things wurst at the [#inwc.de-maps](https://kiwiirc.com/client/irc.quakenet.org/#inwc.de-maps) IRC channel.
+As usual, we chat all things wurst at the [Discord](https://discord.gg/mSHZpWcadz).

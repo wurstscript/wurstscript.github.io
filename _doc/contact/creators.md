@@ -19,7 +19,6 @@ If you have any questions regarding Wurst-related tools or the language itself, 
 [*&nbsp;*{: .fa .fa-external-link-square} Hiveworkshop](https://www.hiveworkshop.com/forums/members/peq/)
 
 ---
-#### IRC
+#### Chat
 
-Feel free to drop by the [IRC channel we usually hang out](https://kiwiirc.com/nextclient/#irc://irc.quakenet.org/#inwc.de-maps) to chat.
-Quakenet, channel: #inwc.de-maps
+Feel free to drop by the [Discord](https://discord.gg/mSHZpWcadz) to chat.
