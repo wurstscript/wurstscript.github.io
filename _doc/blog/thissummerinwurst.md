@@ -15,7 +15,7 @@ banner: /assets/images/blog/bestof1/ThisSummerInWurstBanner.png
 
 Hello! This is the first issue in a regular series of news posts about wurst and the wurstscript community. Actual years have passed since we last summarised wurst-related content for hive workshop news, so keep in mind that this is a very sparse summary, whereas our future news posts will more densely discuss current events.
 
-Background on wurst: wurstscript is a programming language that compiles to JASS, and is developed alongside a suite of tools for a coherent development experience. It can even work alongside maps written in vJass. A usual workflow looks like this:
+Background on wurst: wurstscript is a programming language that compiles to JASS/Lua, and is developed alongside a suite of tools for a coherent development experience. It can even work alongside maps written in vJass. A usual workflow looks like this:
 
 * Design a terrain in a world editor (vanilla editor, WEX, or anything really)
 * Define objects, either using the object editor, or using the wurst “objectediting” subsystem

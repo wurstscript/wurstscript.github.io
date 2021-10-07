@@ -15,7 +15,7 @@ banner: /assets/images/blog/bestof2/bestOfTheWurst2Banner.jpg
 
 This is the second issue in a regular series of news posts about wurst and the wurstscript community. Unlike [the previous issue](https://wurstlang.org/blog/thissummerinwurst.html), this one is short, and focused on this month's progress. We intend to use this format for all future posts.
 
-__What is wurst?__ Wurstscript is a programming language that compiles to JASS (the language used for scripting warcraft 3 custom games), and is developed alongside a suite of tools, which provide a coherent and modern modding development experience. It can even work alongside maps written in vJass. Wurstscript is designed to make hard problems easier and more elegant, and easy problems dead simple.
+__What is wurst?__ Wurstscript is a programming language that compiles to JASS/Lua (the language used for scripting warcraft 3 custom games), and is developed alongside a suite of tools, which provide a coherent and modern modding development experience. It can even work alongside maps written in vJass. Wurstscript is designed to make hard problems easier and more elegant, and easy problems dead simple.
 
 The theme of this issue is __"wurstscript in practice"__, where we want to show how regular ordinary maps use wurstscript, instead of focusing on higher level language features.
 
