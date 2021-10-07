@@ -5,6 +5,59 @@ title: Maps
 <!-- Start Row -->
 <div class="row">
 
+<!-- Begin Card -->
+<div class="col-sm-6 col-xs-12">
+<div class="card" markdown="1">
+
+[![screenshot](/assets/images/showcase/zombiedef.png){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/the-last-stand-v0-4-0.330674/)
+
+<div class="card-block" markdown="1">
+
+{: .card-title}
+
+#### Zombie Defense
+
+{: .card-text}
+Defend against the undead! PvE Survival base building map with ranomized terrain.
+
+[_&nbsp;_{: .fa .fa-external-link-square} Maps Reforged](https://maps.w3reforged.com/maps/categories/castle-defense/Zombie%20Defense%20by%20Eejin%20%26%20Frotty)
+
+</div>
+
+</div>
+</div>
+<!-- End Card -->
+
+<!-- Begin Card -->
+<div class="col-sm-6 col-xs-12">
+<div class="card" markdown="1">
+
+[![screenshot](/assets/images/showcase/lastStandPreview.jpg){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/the-last-stand-v0-4-0.330674/)
+
+<div class="card-block" markdown="1">
+
+{: .card-title}
+
+#### The Last Stand
+
+{: .card-text}
+Multiplayer post-apocalyptic base-building survival game. Build your base during the day and survive the hordes of undead at night.
+
+[_&nbsp;_{: .fa .fa-external-link-square} Hive](https://www.hiveworkshop.com/threads/the-last-stand-v0-4-0.330674/)
+[_&nbsp;_{: .fa .fa-external-link-square} Git Repo](https://github.com/jlfarris91/TheLastStand)
+
+</div>
+
+</div>
+</div>
+<!-- End Card -->
+
+</div>
+<!-- End Row -->
+
+<!-- Start Row -->
+<div class="row">
+
 <div class="col-sm-6 col-xs-12">
 <div class="card" markdown="1">
 
@@ -327,29 +380,6 @@ A new direction for Sheep Tag Revolution powered by Wurst.
 </div>
 <!-- End Card -->
 
-<!-- Begin Card -->
-<div class="col-sm-6 col-xs-12">
-<div class="card" markdown="1">
-
-[![screenshot](/assets/images/showcase/lastStandPreview.jpg){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/the-last-stand-v0-4-0.330674/)
-
-<div class="card-block" markdown="1">
-
-{: .card-title}
-
-#### The Last Stand
-
-{: .card-text}
-Multiplayer post-apocalyptic base-building survival game. Build your base during the day and survive the hordes of undead at night.
-
-[_&nbsp;_{: .fa .fa-external-link-square} Hive](https://www.hiveworkshop.com/threads/the-last-stand-v0-4-0.330674/)
-[_&nbsp;_{: .fa .fa-external-link-square} Git Repo](https://github.com/jlfarris91/TheLastStand)
-
-</div>
-
-</div>
-</div>
-<!-- End Card -->
-
 </div>
 <!-- End Row -->
+

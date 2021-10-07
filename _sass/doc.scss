@@ -343,7 +343,7 @@ code {
 
 .card {
     text-align: center;
-    border: 1px solid var(--divider-dark);
+    border: 1px solid var(--divider-darker);
     @include border-radius(4px);
     margin-bottom: 30px;
     position: relative;
