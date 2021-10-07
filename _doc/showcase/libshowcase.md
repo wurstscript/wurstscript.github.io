@@ -53,3 +53,33 @@ Functional Programming Utilities for WurstScript inspired by Lodash.
 
 </div>
 <!-- End Row -->
+
+<!-- Start Row -->
+<div class="row" >
+
+<!-- Begin Card -->
+<div class="col-sm-6 col-xs-12">
+<div class="card" markdown="1">
+
+[![screenshot](/assets/images/showcase/itemshop2.png){: .img-responsive .center-block}](https://github.com/Frotty/wurst-item-shop)
+
+<div class="card-block" markdown="1">
+
+{: .card-title}
+#### Wurst Item Shop
+
+{: .card-text}
+A minimal non-intrusive shop UI and item management system.
+
+[*&nbsp;*{: .fa .fa-external-link-square} Git Repo](https://github.com/Frotty/wurst-item-shop)
+
+</div>
+
+
+</div>
+</div>
+<!-- End Card -->
+
+
+</div>
+<!-- End Row -->

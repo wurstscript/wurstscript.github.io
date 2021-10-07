@@ -9,7 +9,7 @@ title: Maps
 <div class="col-sm-6 col-xs-12">
 <div class="card" markdown="1">
 
-[![screenshot](/assets/images/showcase/zombiedef.png){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/the-last-stand-v0-4-0.330674/)
+[![screenshot](/assets/images/showcase/zombiedef.png){: .img-responsive .center-block}](https://maps.w3reforged.com/maps/categories/castle-defense/Zombie%20Defense%20by%20Eejin%20%26%20Frotty)
 
 <div class="card-block" markdown="1">
 
