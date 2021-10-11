@@ -5,11 +5,11 @@ sections:
   - Verify / Update Java Intallation
 ---
 
-WurstScript and its related tools require Java 8 to run. Please install or verify your installation.
+WurstScript and its related tools require Java to run. Please install or verify your installation.
 
 ### Download JRE
 
-[*&nbsp;*{: .fa .fa-download} Download Java 8](https://adoptopenjdk.net/){: .btn .btn-orange} ![](/assets/images/setup/java_powered.png)
+[*&nbsp;*{: .fa .fa-download} Download Java from Adoptium](https://adoptium.net/?variant=openjdk11){: .btn .btn-orange}
 
 Download the Java Runtime appropriate for your system and follow the installation procedure.
 

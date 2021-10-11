@@ -9,9 +9,9 @@ VSCode is a free, open source, cross platform code editor. WurstScript support i
 
 ### Install VSCode
 
-[*&nbsp;*{: .fa .fa-download} Download VSCodium (recommended)](https://vscodium.com/){: .btn .btn-blue} or [*&nbsp;*{: .fa .fa-download} Download VSCode](https://code.visualstudio.com/){: .btn .btn-blue}
+[*&nbsp;*{: .fa .fa-download} Download VSCode](https://code.visualstudio.com/){: .btn .btn-blue}
 
-Download and install VSCode on your system. (VSCodium are FOSS binaries of the VSCode source)
+Download and install VSCode on your system.
 
 Once finished, open VSCode and continue to the next step
 
@@ -29,4 +29,4 @@ Reload the window to activate the extension.
 
 Packaged with the Wurst extension are two other extensions, [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) and [vscode-icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons).
 
-You can minimize VSCode now and continue with the next steps
+You can minimize VSCode now and continue with the next steps.

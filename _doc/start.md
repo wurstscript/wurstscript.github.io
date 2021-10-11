@@ -1,7 +1,7 @@
 ---
 title: Installation
 excerpt: Install WurstScript and setup your first project.
-date: 2020-01-21
+date: 2021-10-11
 icon:
   type: fa
   name: fa-paper-plane
