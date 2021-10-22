@@ -63,7 +63,7 @@ layout: compress
 			</div>
 
 		</div>
-		<div class="cards-section text-center secondWrap">
+		<div class="cards-section text-center">
 
 			{% include whywurst.html %}
 
@@ -72,7 +72,8 @@ layout: compress
 					<img src="https://travis-ci.org/wurstscript/WurstScript.svg?branch=master" alt="Build Status" />
 				</a>
 				<a class="tag" href='https://coveralls.io/github/wurstscript/WurstScript?branch=master'><img src='https://coveralls.io/repos/github/wurstscript/WurstScript/badge.svg?branch=master' alt='Coverage Status' /></a>
-				<a class="github-button tag" href="https://github.com/wurstscript/wurstscript" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star wurstscript/wurstscript on GitHub">Star</a>
+				<!-- Place this tag where you want the button to render. -->
+				<a class="github-button" href="https://github.com/wurstscript/wurstscript" data-color-scheme="no-preference: dark; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star wurstscript/wurstscript on GitHub">Star</a>
 			</div>
 			<div class="alert alert-info" style="display:inline-flex;">
 				Please report any bugs, issues or requests on our&nbsp;<a href="https://github.com/{{ site.share.github.repo }}/wurstscript/issues/new"
@@ -89,7 +90,7 @@ layout: compress
 	<script type="text/javascript" src="{{ '/assets/plugins/bootstrap/js/bootstrap.min.js'                 | prepend: site.baseurl }}"></script>
 	<script type="text/javascript" src="{{ '/assets/plugins/jquery-match-height/jquery.matchHeight-min.js' | prepend: site.baseurl }}"></script>
 	<script type="text/javascript" src="{{ '/assets/js/main.js'                                            | prepend: site.baseurl }}"></script>
-	<script async defer src="https://buttons.github.io/buttons.js"></script>
+	<script type="text/javascript" src="{{ '/assets/js/buttons.js'                                         | prepend: site.baseurl }}"></script>
 	<script type="application/ld+json">
         {
             "@context": "http://schema.org",

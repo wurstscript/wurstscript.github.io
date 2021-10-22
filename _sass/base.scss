@@ -17,6 +17,11 @@ hr {
     border-top: 1px solid var(--divider);
 }
 
+.alert {
+    background-color: var(--smoky-white);
+    border-color: var(--divider);
+}
+
 .jumbotron {
     background-color: var(--smoky-white);
 }
@@ -58,12 +63,6 @@ blockquote {
     padding-bottom: 4px;
 	padding-top: 6px;
 	margin-top: -100px;
-}
-
-.secondWrap {
-    padding: 0;
-    margin-bottom: -50px;
-    margin-top: -10px;
 }
 
 .footer {
