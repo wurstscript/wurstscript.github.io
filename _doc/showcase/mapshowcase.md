@@ -81,18 +81,18 @@ A fast paced mix of coop TD and Survival. Players build walls and towers to defe
 <div class="col-sm-6 col-xs-12">
 <div class="card" markdown="1">
 
-[![screenshot](/assets/images/showcase/microtdpreview.png){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/microrunnertd-1-0-2.286363/#resource-67601)
+[![screenshot](/assets/images/showcase/godsarenapreview.png){: .img-responsive .center-block}](https://github.com/Overkane/gods-arena)
 
 <div class="card-block" markdown="1">
 
 {: .card-title}
 
-#### Microrunner TD
+#### Gods' Arena
 
 {: .card-text}
-A TD where players controls a fragile runner which must evade enemy creeps while guiding them to their towers.
+A PvE Hero Survival where you fight each god in their arena. Comes with a fancy shop.
 
-[_&nbsp;_{: .fa .fa-external-link-square} Hive Thread](https://www.hiveworkshop.com/threads/microrunnertd-1-0-2.286363/#resource-67601) [_&nbsp;_{: .fa .fa-external-link-square} Git Repo](https://bitbucket.org/Cokemonkey11/microrunnertd/src)
+[_&nbsp;_{: .fa .fa-external-link-square} Git Repo](https://github.com/Overkane/gods-arena)
 
 </div>
 
@@ -379,7 +379,25 @@ A new direction for Sheep Tag Revolution powered by Wurst.
 </div>
 </div>
 <!-- End Card -->
+<div class="col-sm-6 col-xs-12">
+<div class="card" markdown="1">
+
+[![screenshot](/assets/images/showcase/microtdpreview.png){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/microrunnertd-1-0-2.286363/#resource-67601)
+
+<div class="card-block" markdown="1">
+
+{: .card-title}
+
+#### Microrunner TD
+
+{: .card-text}
+A TD where players controls a fragile runner which must evade enemy creeps while guiding them to their towers.
+
+[_&nbsp;_{: .fa .fa-external-link-square} Hive Thread](https://www.hiveworkshop.com/threads/microrunnertd-1-0-2.286363/#resource-67601) [_&nbsp;_{: .fa .fa-external-link-square} Git Repo](https://bitbucket.org/Cokemonkey11/microrunnertd/src)
 
 </div>
-<!-- End Row -->
 
+</div>
+</div>
+</div>
+<!-- End Row -->

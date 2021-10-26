@@ -1,13 +1,13 @@
 ---
 title: Showcase
 excerpt: Maps and Libraries achieved with WurstScript.
-date: 2021-10-07
+date: 2021-10-26
 icon:
-  name: icon_genius
+    name: icon_genius
 color: primary
 sections:
-  - /showcase/mapshowcase
-  - /showcase/libshowcase
+    - /showcase/mapshowcase
+    - /showcase/libshowcase
 ---
 
 <div class="jumbotron" markdown="1">
