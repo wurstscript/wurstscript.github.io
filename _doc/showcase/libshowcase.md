@@ -14,15 +14,15 @@ title: Libraries
 <div class="card-block" markdown="1">
 
 {: .card-title}
+
 #### Frentity
 
 {: .card-text}
 Lightweight entity framework for a sleek, bootstrapped map development experience.
 
-[*&nbsp;*{: .fa .fa-external-link-square} Git Repo](https://github.com/Frotty/Frentity)
+[_&nbsp;_{: .fa .fa-external-link-square} Git Repo](https://github.com/Frotty/Frentity)
 
 </div>
-
 
 </div>
 </div>
@@ -37,15 +37,15 @@ Lightweight entity framework for a sleek, bootstrapped map development experienc
 <div class="card-block" markdown="1">
 
 {: .card-title}
+
 #### Wurst Lodash
 
 {: .card-text}
 Functional Programming Utilities for WurstScript inspired by Lodash.
 
-[*&nbsp;*{: .fa .fa-external-link-square} Git Repo](https://github.com/theQuazz/wurst-lodash)
+[_&nbsp;_{: .fa .fa-external-link-square} Git Repo](https://github.com/theQuazz/wurst-lodash)
 
 </div>
-
 
 </div>
 </div>
@@ -61,25 +61,47 @@ Functional Programming Utilities for WurstScript inspired by Lodash.
 <div class="col-sm-6 col-xs-12">
 <div class="card" markdown="1">
 
-[![screenshot](/assets/images/showcase/itemshop2.png){: .img-responsive .center-block}](https://github.com/Frotty/wurst-item-shop)
+[![screenshot](/assets/images/showcase/wursttablelayout.png){: .img-responsive .center-block}](https://github.com/Frotty/wurst-table-layout)
 
 <div class="card-block" markdown="1">
 
 {: .card-title}
-#### Wurst Item Shop
+
+#### Wurst Table Layout
 
 {: .card-text}
-A minimal non-intrusive shop UI and item management system.
+A lightweight and easy to use API for creating stunning custom user interfaces. Frames without the hassle.
 
-[*&nbsp;*{: .fa .fa-external-link-square} Git Repo](https://github.com/Frotty/wurst-item-shop)
+[_&nbsp;_{: .fa .fa-external-link-square} Git Repo](https://github.com/Frotty/wurst-table-layout)
 
 </div>
-
 
 </div>
 </div>
 <!-- End Card -->
 
+<!-- Begin Card -->
+<div class="col-sm-6 col-xs-12">
+<div class="card" markdown="1">
+
+[![screenshot](/assets/images/showcase/itemshop2.png){: .img-responsive .center-block}](https://github.com/Frotty/wurst-item-shop)
+
+<div class="card-block" markdown="1">
+
+{: .card-title}
+
+#### Wurst Item Shop
+
+{: .card-text}
+A minimal, non-intrusive shop UI and item management system. Uses wurst-table-layout.
+
+[_&nbsp;_{: .fa .fa-external-link-square} Git Repo](https://github.com/Frotty/wurst-item-shop)
+
+</div>
+
+</div>
+</div>
+<!-- End Card -->
 
 </div>
 <!-- End Row -->
