@@ -105,3 +105,32 @@ A minimal, non-intrusive shop UI and item management system. Uses wurst-table-la
 
 </div>
 <!-- End Row -->
+
+<!-- Start Row -->
+<div class="row" >
+
+<!-- Begin Card -->
+<div class="col-sm-6 col-xs-12">
+<div class="card" markdown="1">
+
+[![screenshot](/assets/images/showcase/bountypreview.png){: .img-responsive .center-block}](https://github.com/HerlySQR/Bounty_Controller)
+
+<div class="card-block" markdown="1">
+
+{: .card-title}
+
+#### Bounty Controller
+
+{: .card-text}
+This library allows you to have control over almost everything related to bounties.
+
+[_&nbsp;_{: .fa .fa-external-link-square} Git Repo](https://github.com/HerlySQR/Bounty_Controller)
+
+</div>
+
+</div>
+</div>
+<!-- End Card -->
+
+</div>
+<!-- End Row -->
