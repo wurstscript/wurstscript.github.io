@@ -185,7 +185,7 @@ int array b = [1, 2, 3]
 // but it allows having constant arrays
 constant c = ["A", "B", "C"]
 // Initialized arrays provide a length attribute which is equal to the initial amount of items in the array
-// It is not updated when you modify the array and mostly intended for interation
+// It is not updated when you modify the array and mostly intended for iteration
 constant blen = b.length
 
 // inside a function
