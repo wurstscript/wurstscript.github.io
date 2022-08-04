@@ -32,7 +32,7 @@ public constant FIREBOLT_ID = compiletime(ABIL_ID_GEN.next())
 #### Level dependent values
 
 Another specialty of abilities is that they have multiple levels, which allow some fields to have different values depending on the level.
-In the example above we used `lvl -> 100. * lvl` to atuomatically fill levels based on a simple calculation.
+In the example above we used `lvl -> 100. * lvl` to automatically fill levels based on a simple calculation.
 Essentially it is the same as writing the following lines:
 
 ```wurst
