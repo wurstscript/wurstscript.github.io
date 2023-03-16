@@ -112,7 +112,7 @@ execute() ->
 	hash = hash()
 ```
 
-### Documentation comments (hot doc)
+### Documentation comments
 
 For documentation comments, also known as hot doc, that will show up in auto-completion, place the opening `/**` and close them with `*/`. Short comments can be placed on a single line.
 
