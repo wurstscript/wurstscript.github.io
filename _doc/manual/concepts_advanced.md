@@ -597,9 +597,9 @@ Otherwise the execution order is not specified and depends on implementation det
 ### Functions available at compiletime
 
 Not all functions which can be used in the game can be used at compiletime.
-Only a few functions are implemented in the Wurst compiler and emulate the respective functions from `common.j`.
+Many functions from the `common.j` are implemented in the Wurst compiler to emulate the respective function behavior in the game for use at compiletime and unit tests.
 
-The currently implemented functions can be found in the compiler code in the class [NativeFunctionsIO](https://github.com/wurstscript/WurstScript/blob/master/de.peeeq.wurstscript/src/main/java/de/peeeq/wurstio/jassinterpreter/NativeFunctionsIO.java).
+The currently implemented functions can be found their respective classes in the [Providers](https://github.com/wurstscript/WurstScript/tree/68e0abc2f2c1913aabad4cc15e3623778db9e022/de.peeeq.wurstscript/src/main/java/de/peeeq/wurstio/jassinterpreter/providers) package.
 
 
 ### Object Editing Natives
