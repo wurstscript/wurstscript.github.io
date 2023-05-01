@@ -1,7 +1,7 @@
 ---
 title: Tutorials
 excerpt: Wurst guides on specific topics for aspiring developers.
-date: 2017-07-26
+date: 2021-12-04
 icon:
   name: icon_lifesaver
 color: purple
