@@ -6,16 +6,16 @@ sections:
   - Update and import Projects
 ---
 
-Now we will setup a Wurst compiler environment and create a project using the the Wurst Setup.
+Now we will setup a Wurst compiler environment and create a project using the the WurstSetup, also known as `grill`.
 
-[*&nbsp;*{: .fa .fa-download} Download WurstSetup](https://grill.wurstlang.org/hudson/job/WurstSetup/lastSuccessfulBuild/artifact/downloads/WurstSetup.jar){: .btn .btn-green}
+[_&nbsp;_{: .fa .fa-download} Download WurstSetup](https://grill.wurstlang.org/hudson/job/WurstSetup/lastSuccessfulBuild/artifact/downloads/WurstSetup.jar){: .btn .btn-green}
 
-The Wurstsetup can be used from either the commandline or a graphical application.
+The Wurstsetup can be used either from the commandline or as a graphical application.
 
 ## Commandline
 
-To use the setup from the commandline you need to complete the initial installation once.
-After that you can make use of the setup via the `grill` executable.
+Usage by invoking `grill` via the commandline is recommended and provides a similar user experience to tools such as `npm`, `maven`. etc. To use the setup from the commandline you need to complete the initial installation once.
+After that you can invoke `grill` from your commandline.
 
 ### Initial installation
 
@@ -34,66 +34,46 @@ The `grill` command should now be recognized by your terminal of choice.
 
 If not, a restart might be required.
 
-## Graphical UI
-
-If you prefer not using the commandline, simply running the setup without any arguments will open the graphical user interface (double-click).
-
-![](/assets/images/setup/WurstSetup.png){: .img-responsive}
-
-### Install & Update Compiler
-
-#### Grill
+### Updating the Compiler
 
 Use the special `wurstscript` keyword to install or update wurst on your system for the current user.
 
 `grill install wurstscript`
 
-#### UI
-
-To install or update the compiler simply click the **Install Wurst** button.
-When everything is done, the setup should tell you that your installation is up to date and the **Create Project** button is now enabled:
-
-![](/assets/images/setup/WurstInstallDone.png){: .img-responsive}
-
-### Create Project
-
-#### Grill
+### Create a Wurst Project
 
 Use `generate` to create new projects. The project will be generated in a folder inside your current location with the name provided.
 
-`grill generate myProjectName`
-
-#### UI
-
-Now that the compiler is installed you can go ahead and create your Wurst project.
-Select your desired project folder and name and start the process by clicking the **Create Project** button.
-The setup will now create a wurst project structure and download the necessary dependencies.
-If everything setup correctly, you should see the following message:
-
-![](/assets/images/setup/ProjectSetupDone.png){: .img-responsive}
+`grill generate my-wurst-project`
 
 ### Open in VSCode
 
 After you finished installation and project setup, you can open the project's root folder in VSCode.
 
+`code my-wurst-project`
+
 {: .answer}
-### *&nbsp;*{: .fa .fa-exclamation-circle} Make sure you are opening the project's root folder (contains wurst.build file) using `File -> Open Folder`
 
-Once the project is opened, you can click the Hello.wurst file on the left to activate the Wurst plugin. The code should compile and the setup should be done. Using VSCode's command console (`F1`) you can execute wurst commands such as running or building your map.
+### _&nbsp;_{: .fa .fa-exclamation-circle} Make sure you are opening the project's root folder (contains wurst.build file) using `File -> Open Folder`
 
-If you are new to WurstScript but not new to programming, you probably want to continue with the [*&nbsp;*{: .fa .fa-external-link-square} Beginner's Guide](tutorials/wurstbeginner.html)
+Once the project is opened, you can click the `Hello.wurst` file on the left to activate the Wurst plugin. The code should compile and the setup should be done. Using VSCode's command console (`F1`) you can execute wurst commands such as running or building your map.
 
-### Updating existing projects
+If you are new to WurstScript but not new to programming, you probably want to continue with the [_&nbsp;_{: .fa .fa-external-link-square} Beginner's Guide](tutorials/wurstbeginner.html)
 
-If you want to import someone else's project or work on a different machine, you need to setup the project with local configuration and pull dependencies first.
+### Installing and Updating a project
 
-#### Grill
-
-Navigate to the project's root and run `install` to update dependencies and configuration of the wurst project.
+Run the `install` command to update your project's dependencies, or to initially setup a fresly cloned project to work on your machine.
 
 `grill install`
 
-#### UI
+### Adding dependencies
 
-By clicking the import button you can load an existing wurst.build file. After a successful load clicking the `Update Project` button will update your dependencies and generate local files as necessary.
+To add a new dependency, run the `install` command with a second parameter that points to a git repo.
 
+`grill install https://github.com/Frotty/wurst-astar-jps`
+
+## Graphical User Interface
+
+By running the `WurstSetup.jar` without any arguments or simply by double-clicking, you can alternatively use the deprecated, graphical user interface.
+
+![](/assets/images/setup/WurstSetup.png){: .img-responsive}

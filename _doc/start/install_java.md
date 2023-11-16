@@ -5,11 +5,11 @@ sections:
   - Verify / Update Java Intallation
 ---
 
-WurstScript and its related tools require Java to run. Please install or verify your installation.
+WurstScript and its related tools require Java 11+ to run. Please install or verify your installation.
 
 ### Download JRE
 
-[*&nbsp;*{: .fa .fa-download} Download Java from Adoptium](https://adoptium.net/?variant=openjdk11){: .btn .btn-orange}
+[_&nbsp;_{: .fa .fa-download} Download Java from Adoptium](https://adoptium.net/?variant=openjdk11){: .btn .btn-orange}
 
 Download the Java Runtime appropriate for your system and follow the installation procedure.
 
@@ -24,14 +24,15 @@ A valid installation will return something like this:
 
 ```powershell
 > java -version
-java version "1.8.0_131"
+openjdk version "11.0.17" 2022-10-18
+OpenJDK Runtime Environment Temurin-11.0.17+8 (build 11.0.17+8)
+OpenJDK 64-Bit Server VM Temurin-11.0.17+8 (build 11.0.17+8, mixed mode)
 ```
 
-Make sure your minor version `1.8.0_xxx` (xxx) is higher than **101** to avoid any certificate issues.
-If it is lower, make sure to update your Java installation, otherwise your connection will be insecure.
+The major version should be `11` or higher. If it is lower, you must update your Java installation.
 
 If you get an error or get a lower versions displayed, even though you installed a newer one, your **JAVA_HOME** is either missing or configured wrong.
 
-Refer to this [*&nbsp;*{: .fa .fa-external-link-square} Windows tutorial](https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html) in order to setup your **JAVA_HOME** correctly.
+Refer to this [_&nbsp;_{: .fa .fa-external-link-square} Windows tutorial](https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html) in order to setup your **JAVA_HOME** correctly.
 
 Once you have setup Java correctly, continue by installing VSCode.
