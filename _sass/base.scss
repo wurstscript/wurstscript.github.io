@@ -367,7 +367,7 @@ select {
 
 .tag-container {
 	display: flex;
-	align-items: center;
+    align-items: flex-start;
   	justify-content: center;
 	margin-bottom: 2rem;
 }
