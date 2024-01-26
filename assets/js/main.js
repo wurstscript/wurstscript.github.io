@@ -85,9 +85,12 @@ $(document).ready(function () {
   );
 
   const headings = document.querySelectorAll("h2, h3");
-  const navContainer = document.getElementsByClassName("doc-menu")[0];
+  const scrollContainer = document.querySelector(".doc-inner");
+  const navContainer = document.querySelector(".doc-menu");
 
   var h2List;
+
+  const offsetMap = [];
 
   headings.forEach((heading, index) => {
     if (heading.tagName == "H2") {
@@ -96,6 +99,7 @@ $(document).ready(function () {
 
       navContainer.appendChild(navItem);
       h2List = undefined;
+      offsetMap[index] = { nav: navItem, offset: heading.getBoundingClientRect().top };
     } else if (heading.tagName == "H3") {
       if (!h2List) {
         h2List = document.createElement("ul");
@@ -105,10 +109,13 @@ $(document).ready(function () {
       const navItem = document.createElement("li");
       navItem.innerHTML = `<a class="scrollto" href="#${heading.textContent}">${heading.textContent}</a>`;
       h2List.appendChild(navItem);
+      offsetMap[index] = { nav: navItem, offset: heading.getBoundingClientRect().top };
     }
   });
 
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  const navLinks = document.querySelectorAll('a[href^="#"]');
+
+  navLinks.forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault(); // Prevent default anchor behavior
 
@@ -122,28 +129,18 @@ $(document).ready(function () {
     });
   });
 
-  const innerContainer = document.querySelector(".doc-inner");
-  innerContainer.addEventListener("scroll", function() {
-    const sections = document.querySelectorAll("h2, h3");
-    const navLinks = document.querySelectorAll('a[href^="#"]');
 
-    let currentActiveIndex = -1;
-
-    sections.forEach((section, index) => {
-      const sectionTop = section.getBoundingClientRect().top;
-      const offset = 200; // Adjust as needed based on your layout
-
-      if (sectionTop - offset < 0) {
-        currentActiveIndex = index;
+  scrollContainer.addEventListener("scroll", function () {
+    var selected = offsetMap[0].nav;
+    for (const section of offsetMap) {
+      if (section.offset < scrollContainer.scrollTop) {
+        selected = section.nav;
       }
-    });
+      section.nav.classList.remove("active");
+    }
 
-    navLinks.forEach((link, index) => {
-      if (index === currentActiveIndex) {
-        link.classList.add("active");
-      } else {
-        link.classList.remove("active");
-      }
-    });
+    if (selected) {
+      selected.classList.add("active");
+    }
   });
 });
