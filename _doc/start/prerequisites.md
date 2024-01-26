@@ -1,11 +1,11 @@
 ---
-title: Install Java
+title: Prerequisites
 sections:
-  - Download JRE
-  - Verify / Update Java Intallation
+  - Java
+  - VSCode
 ---
 
-WurstScript and its related tools require Java 11+ to run. Please install or verify your installation.
+WurstScript and its related tools require Java 11+ to run. Editor support is provided via a VSCode extension.
 
 ### Download JRE
 

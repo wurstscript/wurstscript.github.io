@@ -60,51 +60,56 @@ layout: compress
         </header>
 
         <div class="doc-wrapper">
-            <div class="container">
+            {% include sidebar.html sections=page.sections %}
 
-                <!-- DOCUMENT HEADER -->
-                <div id="doc-header" class="doc-header text-center">
+            <div class="doc-inner">
+                <div class="doc-container">
 
-                    <h1 class="doc-title">
-                        {% include icon.html icon=page.icon %} {{ page.title }}
-                    </h1>
+                    <!-- DOCUMENT HEADER -->
+                    <div id="doc-header" class="doc-header text-center">
 
-                    {% if page.date %}
-                    <div class="meta">
-                        <i class="fa fa-clock-o"></i> Last updated: {{ page.date | date: '%B %d, %Y' }}</div>
-                    {% endif %} {% if page.author %}
-                    <div class="author">
-                        <i class="fa fa-user"></i> Author: {{ page.author }}</div>
-                    {% endif %}
+                        <h1 class="doc-title">
+                            {% include icon.html icon=page.icon %} {{ page.title }}
+                        </h1>
 
-                </div>
+                        {% if page.date %}
+                        <div class="meta">
+                            <i class="fa fa-clock-o"></i> Last updated: {{ page.date | date: '%B %d, %Y' }}</div>
+                        {% endif %} {% if page.author %}
+                        <div class="author">
+                            <i class="fa fa-user"></i> Author: {{ page.author }}</div>
+                        {% endif %}
 
-                <!-- DOCUMENT BODY -->
-                <div id="{{ page.id | slugify }}" class="doc-body">
-
-                    <!-- CONTENT -->
-                    <div class="doc-content">
-                        <div class="content-inner">
-
-                            {{ content | markdownify }} {% for id in page.sections %} {% assign section = site.doc | where: "id", id | first %}
-
-                            <div id="{{ section.title | slugify }}" class="doc-section">
-                                <h2 class="section-title">{{ section.title }}</h2>
-                                <div class="section-block">
-                                    {{ section.content | markdownify }}
-                                </div>
-                            </div>
-
-                            {% endfor %}
-
-                        </div>
                     </div>
 
-                    {% include sidebar.html sections=page.sections %}
+                    <!-- DOCUMENT BODY -->
+                    <div id="{{ page.id | slugify }}" class="doc-body">
+
+                        <!-- CONTENT -->
+                        <div class="doc-content">
+                            <div class="content-inner">
+
+                                {{ content | markdownify }} {% for id in page.sections %} {% assign section = site.doc | where: "id", id | first %}
+
+                                <div id="{{ section.title | slugify }}" class="doc-section">
+                                    <h2 class="section-title">{{ section.title }}</h2>
+                                    <div class="section-block">
+                                        {{ section.content | markdownify }}
+                                    </div>
+                                </div>
+
+                                {% endfor %}
+
+                            </div>
+                        </div>
+
+                    </div>
 
                 </div>
 
             </div>
+
+
         </div>
 
     </div>

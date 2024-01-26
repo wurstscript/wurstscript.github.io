@@ -1,15 +1,32 @@
 /* ======= Doc Styling ======= */
 .doc-wrapper {
-  padding: 45px 0;
+  display: flex;
+  justify-content: space-between;
   background: var(--smoky-grey);
 }
 
-.doc-body {
+body {
+  overflow: hidden;
+}
+
+.doc-inner {
+  width: 100%;
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
   position: relative;
 }
 
+.doc-container {
+  width: 870px;
+  padding-top: 42px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
 .doc-header {
-  margin-bottom: 30px;
+  margin-bottom: 48px;
   .doc-title {
     color: var(--color-primary);
     margin-top: 0;
@@ -42,7 +59,6 @@
 }
 
 .doc-content {
-  margin-left: 230px;
 }
 
 .doc-section {
@@ -50,7 +66,7 @@
   padding-top: 15px;
   padding-bottom: 15px;
   .section-title {
-    font-size: 26px;
+    font-size: 32px;
     margin-top: 0;
     margin-bottom: 0;
     font-weight: bold;
@@ -62,7 +78,7 @@
   h2,
   h3,
   h4 {
-    color: var(--text-color-dark);
+    color: var(--text-color);
     clear: both;
   }
 
@@ -445,8 +461,11 @@ code {
 
 /* Sidebar */
 .doc-sidebar {
-  width: 200px;
+  width: 310px;
+  border-right: 1px solid #474749;
+  padding-top: 42px;
 }
+
 
 #doc-menu {
   max-height: 100vh;
@@ -536,7 +555,7 @@ code {
   padding-left: 0;
   & > li {
     margin-bottom: 10px;
-    font-size: 12px;
+    font-size: 14px;
     &:first-child {
       padding-top: 5px;
     }
@@ -598,11 +617,6 @@ code {
       }
     }
   }
-}
-
-.affix-top {
-  position: absolute;
-  top: 15px;
 }
 
 .affix {
