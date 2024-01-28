@@ -99,7 +99,7 @@ $(document).ready(function () {
 
       navContainer.appendChild(navItem);
       h2List = undefined;
-      offsetMap[index] = { nav: navItem, offset: heading.getBoundingClientRect().top };
+      offsetMap[index] = { nav: navItem, offset: heading.getBoundingClientRect().top + scrollContainer.scrollTop };
     } else if (heading.tagName == "H3") {
       if (!h2List) {
         h2List = document.createElement("ul");
@@ -109,7 +109,7 @@ $(document).ready(function () {
       const navItem = document.createElement("li");
       navItem.innerHTML = `<a class="scrollto" href="#${heading.textContent}">${heading.textContent}</a>`;
       h2List.appendChild(navItem);
-      offsetMap[index] = { nav: navItem, offset: heading.getBoundingClientRect().top };
+      offsetMap[index] = { nav: navItem, offset: heading.getBoundingClientRect().top + scrollContainer.scrollTop };
     }
   });
 
@@ -129,14 +129,26 @@ $(document).ready(function () {
     });
   });
 
+  var selected;
+
 
   scrollContainer.addEventListener("scroll", function () {
-    var selected = offsetMap[0].nav;
-    for (const section of offsetMap) {
-      if (section.offset < scrollContainer.scrollTop) {
-        selected = section.nav;
+    selected?.classList.remove("active");
+    selected = offsetMap[0].nav;
+    console.log("top: " + scrollContainer.scrollTop);
+    for (var i = 1; i < offsetMap.length; i++) {
+      const section = offsetMap[i];
+      if (section.offset < scrollContainer.scrollTop + 220) {
+        const section2 = offsetMap[i + 1];
+        if (!section2) {
+          selected = section.nav;
+          break;
+        }
+        if (!(section2.offset < scrollContainer.scrollTop + 220)) {
+          selected = section.nav;
+          break;
+        }
       }
-      section.nav.classList.remove("active");
     }
 
     if (selected) {

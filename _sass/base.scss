@@ -42,9 +42,28 @@ color: var(--text-color-dark);
 font-size: 16px;
 }
 
-html, body {
-    height: 100%;
-    overflow: hidden;
+
+.content-inner {
+    padding-bottom: 200px;
+}
+
+.github-propose {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    padding: 6px;
+    border: 1px solid #d7d7d7;
+    border-radius: 4px;
+    width: 120px;
+    margin-bottom: 12px;
+
+    svg {
+        width: 24px;
+        height: 24px;
+        background-color: white;
+        border-radius: 100%;
+    }
 }
 
 .nav-heading {

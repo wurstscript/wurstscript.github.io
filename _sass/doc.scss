@@ -1,3 +1,9 @@
+
+.doc-body {
+  height: 100%;
+  overflow: hidden;
+}
+
 /* ======= Doc Styling ======= */
 .doc-wrapper {
   display: flex;
@@ -738,6 +744,14 @@ code {
 
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
+  .doc-sidebar {
+    display: none;
+  }
+
+  .doc-container {
+    width: 100%;
+    padding: 10px;
+  }
   .doc-content {
     margin-left: 0;
   }

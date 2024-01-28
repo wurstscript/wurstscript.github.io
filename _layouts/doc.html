@@ -38,7 +38,7 @@ layout: compress
     {% include meta_properties.html %} {% include google_analytics.html %} {% seo %}
 </head>
 
-<body class="body-{{ page.color }}">
+<body class="body-{{ page.color }} doc-body">
 
     <div class="page-wrapper">
 
@@ -88,6 +88,10 @@ layout: compress
                         <!-- CONTENT -->
                         <div class="doc-content">
                             <div class="content-inner">
+                                <span class="github-propose">
+                                    <svg viewBox="0 0 24 24" class="wt-icon wt-icon_size_m sub-title__editing-icon"><path d="m20.9 12.2a8.94 8.94 0 0 1 -6.4 8.6.39176.39176 0 0 1 -.4-.4v-3a1.58066 1.58066 0 0 0 -.5-1.2 3.7342 3.7342 0 0 0 3.9-3.4 4.24447 4.24447 0 0 0 -.9-3.5 2.8554 2.8554 0 0 0 -.2-2.4 7.23943 7.23943 0 0 0 -2.4.9 8.21667 8.21667 0 0 0 -4.4 0 4.61924 4.61924 0 0 0 -2.3-.9h-.1a2.74943 2.74943 0 0 0 -.2 2.4 4.07472 4.07472 0 0 0 -.9 3.5 3.81064 3.81064 0 0 0 3.9 3.4 1.08192 1.08192 0 0 0 -.4.6 2.63862 2.63862 0 0 0 -.1.7 1.94273 1.94273 0 0 1 -2.2-.5c-.5-.8-.9-1.2-1.4-1.3s-.6.2-.6.2a1.00419 1.00419 0 0 0 .5.6 1.69523 1.69523 0 0 1 .8 1 1.82656 1.82656 0 0 0 1.2 1.2 3.9156 3.9156 0 0 0 1.9 0v1.7a.29725.29725 0 0 1 -.4.3 8.82071 8.82071 0 0 1 -6.3-8.5 8.95014 8.95014 0 0 1 17.9 0z"></path></svg>
+                                    <a href="https://github.com/wurstscript/wurstscript.github.io/edit/master/_doc{{ page.url | replace: ".html", ".md" }}" target="_blank">Edit page</a>
+                                </span>
 
                                 {{ content | markdownify }} {% for id in page.sections %} {% assign section = site.doc | where: "id", id | first %}
 
