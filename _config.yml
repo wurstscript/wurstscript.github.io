@@ -16,7 +16,6 @@ repository: wurstscript/wurstscript.github.io
 url: https://wurstlang.org/
 logo: /assets/images/wurst_icon64.png
 image: /assets/images/wurst_icon300.png
-baseurl:
 blogurl: /blog
 highlighter: rouge
 title: &site_title WurstScript
@@ -66,6 +65,8 @@ collections:
   doc:
     output: true
     permalink: /:path.html
+  news:
+    output: true
 
 
 #
@@ -78,3 +79,7 @@ defaults:
       type: doc
     values:
       layout: doc
+
+algolia:
+  index_name: wurstscript
+  application_id: 'A2BO3OY80G'
