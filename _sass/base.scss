@@ -423,6 +423,31 @@ nav {
     }
 }
 
+.post-list {
+    max-width: 600px;
+    position: absolute;
+    right: 32px;
+    background-color: var(--divider);
+    padding: 12px;
+    border-radius: 6px;
+    z-index: 10;
+    max-height: 100%;
+    overflow: scroll;
+}
+
+.doc-header-container {
+    display: flex;
+}
+
+.ais-search-box {
+    color: var(--text-color-secondary);
+}
+
+.ais-search-box--powered-by {
+    top: 42px !important;
+    position: absolute !important;
+}
+
 .breadcrumb {
     background: none;
     margin-bottom: 0;

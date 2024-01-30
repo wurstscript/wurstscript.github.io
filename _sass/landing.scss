@@ -95,6 +95,12 @@
   justify-content: space-between;
   margin-bottom: 48px;
 
+  .img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   img {
     margin-right: 32px;
   }
@@ -139,8 +145,8 @@
 
   .card {
     padding: 0;
-    width: 224px;
-    height: 232px;
+    width: 254px;
+    height: 254px;
     border-radius: 6px;
 
     &:hover {

@@ -83,3 +83,4 @@ defaults:
 algolia:
   index_name: wurstscript
   application_id: 'A2BO3OY80G'
+  search_only_api_key: 'dab955d0d2f46d0fa72e845eb9ea0ff2'

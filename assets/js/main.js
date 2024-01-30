@@ -1,3 +1,7 @@
+---
+---
+
+
 function slugify(str) {
   return String(str)
     .normalize("NFKD") // split accented characters into their base characters and diacritical marks
@@ -88,6 +92,10 @@ $(document).ready(function () {
   const scrollContainer = document.querySelector(".doc-inner");
   const navContainer = document.querySelector(".doc-menu");
 
+  if (!navContainer){
+    return;
+  }
+
   var h2List;
 
   const offsetMap = [];
@@ -156,3 +164,62 @@ $(document).ready(function () {
     }
   });
 });
+
+
+// Instanciating InstantSearch.js with Algolia credentials
+const search = instantsearch({
+  appId: "A2BO3OY80G",
+  indexName: "wurstscript",
+  apiKey: "dab955d0d2f46d0fa72e845eb9ea0ff2",
+  searchFunction(helper) {
+    const container = document.querySelector("#search-hits");
+    container.style.display = helper.state.query === "" ? "none" : "";
+
+    helper.search();
+  },
+});
+
+const hitTemplate = function (hit) {
+
+  let url = `${hit.url}#${hit.anchor}`;
+
+  const title = hit._highlightResult.title?.value;
+
+  let breadcrumbs = "";
+  if (hit._highlightResult.headings) {
+    breadcrumbs = hit._highlightResult.headings
+      .map((match) => {
+        return `<span class="post-breadcrumb">${match.value}</span>`;
+      })
+      .join(" > ");
+  }
+
+  const content = hit._highlightResult.html?.value;
+
+  return `
+    <div class="post-item">
+      <h2><a class="post-link" href="${url}">${title}</a></h2>
+      {{#breadcrumbs}}<a href="${url}" class="post-breadcrumbs">${breadcrumbs}</a>{{/breadcrumbs}}
+      <div class="post-snippet">${content}</div>
+    </div>
+  `;
+};
+// Adding searchbar and results widgets
+search.addWidget(
+  instantsearch.widgets.searchBox({
+    container: "#search-searchbar",
+    placeholder: "Search Documentation",
+    poweredBy: true, // This is required if you're on the free Community plan
+  })
+);
+search.addWidget(
+  instantsearch.widgets.hits({
+    container: "#search-hits",
+    templates: {
+      item: hitTemplate,
+    },
+  })
+);
+
+// Starting the search
+search.start();
