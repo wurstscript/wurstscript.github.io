@@ -87,11 +87,6 @@ hr {
 	background: var(--smoky-grey);
     min-height: 100%;
     /* equal to footer height */
-    &:after {
-        content: "";
-        display: block;
-        height: 30px;
-    }
 }
 
 blockquote {
