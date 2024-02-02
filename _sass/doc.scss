@@ -466,25 +466,24 @@ code {
   width: 310px;
   border-right: 1px solid #474749;
   padding-top: 42px;
+  max-height: calc(100vh - 121px);
 }
 
 
 #doc-menu {
-  max-height: 100vh;
-  overflow: hidden;
+  max-height: calc(100vh - 122px);
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .doc-menu-scroll {
-  margin-right: -50px; /* maximum width of scrollbar */
-  padding-right: 50px; /* maximum width of scrollbar */
-  overflow-y: auto;
-  max-height: 100vh;
+  // max-height: 100%;
 }
 
 .doc-menu {
   list-style: none;
   padding-left: 0;
-  margin-bottom: 30px;
+  padding-bottom: 72px;
 
   & > li {
     margin-bottom: 5px;
@@ -621,17 +620,9 @@ code {
   }
 }
 
-.affix {
-  top: 15px;
-}
-
 .affix,
 .affix-bottom {
   width: 230px;
-}
-
-.affix-bottom {
-  position: absolute;
 }
 
 /* ===== Promo block ===== */
