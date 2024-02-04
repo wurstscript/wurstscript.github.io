@@ -1,12 +1,110 @@
 ---
-title: Introduction Part Two
+title: Wurst Beginner Guide
+excerpt: Get started and create your first map using Wurst!
+date: 2021-10-07
+icon:
+  type: fa
+  name: fa-graduation-cap
+color: orange
+author: Frotty, Cokemonkey11, peq
+layout: tutorialdoc
 sections:
-- Explanation
-- The Standard Library
-- Coding Conventions
-- Build, deploy, and release
-- How to find library code
+  - /tutorials/wurstbeginner/introductionp1
+  - /tutorials/wurstbeginner/introductionp2
+  - /tutorials/wurstbeginner/introductionp3
 ---
+
+{: .question}
+### *&nbsp;*{: .fa .fa-question-circle} Wurst not installed yet? Follow the __[Setup Guide](../start.html)__ and create a new Project.
+
+{: .answer}
+### *&nbsp;*{: .fa .fa-exclamation-circle} This guide expects the reader to have **basic** knowledge of functions and variables.
+------
+
+## Welcome
+
+Hello and welcome to WurstScript. This guide is an informal introduction to the Wurst workflow and an easy way to verify your installation.
+We will cover how to structure code, use the standard library, create data objects through code and run the final product in warcraft 3.
+This guide will **not** explain the core principles of programming, i.e. how functions and variables work and how we use them.
+
+## Project Structure
+
+If you setup your project correctly using the setup app, there will be many folders and files generated in the project folder you chose.
+Otherwise setup your project now.
+Load the project in VSCode by opening the project folder (`File` -> `Open Folder...`).
+It is important to open the project **folder** so that Wurst can detect the project.
+After opening you should see something like this:
+
+![](/assets/images/beginner/ProjectExplorer.png){: .img-rounded .img-responsive}
+
+Let's go through all the files:
+- **/_build** Contains dynamically generated content and shouldn't be touched by the user, except for copying the compiled map.
+- **/.vscode** Contains a **settings.json** file that links vscode to the wurst tools. You can add additional project-wide configuration here.
+- **/imports** All files inside this folder will be imported into your map upon saving, retaining paths.
+- **/wurst** All files in this folder that end with **.wurst, .jurst, .j** will be parsed as code.
+- **.gitignore** Useful template if you want to make your wurst project a git repo as well
+- **ExampleMap.w3x** An example tft map containing a Bloodmage
+- **wurst_run.args** Defines a set of flags to use when running a map from VSCode
+- **wurst.build** Contains project build information
+- **wurst.dependencies** Generated file that links libraries. Shouldn't be touched.
+- **wurst/Hello.wurst** Demo package
+
+{: .answer}
+### *&nbsp;*{: .fa .fa-exclamation-circle} Make sure to always open a .wurst file. Otherwise the vscode plugin might not load.
+
+## Hello Wurst
+
+Open the **Hello.wurst** file inside the **wurst** folder to start the wurst plugin.
+Run the project by opening the command console `F1` and using the `>runmap` command.
+
+![](/assets/images/beginner/RunMap.png){: .img-responsive .img-rounded}
+
+The text **Hello World** will be displayed.
+
+![](/assets/images/beginner/HelloWorld.png){: .img-responsive .img-rounded}
+
+Let's take a look at the code:
+
+{: .line-numbers}
+```wurst
+package Hello
+
+/* Hello and welcome to Wurst!
+This is just a demo package.
+You can modify it to tests things out
+and then later delete it and create your own, new packages.
+Enjoy WurstScript? Consider starring our repo https://github.com/wurstscript/WurstScript */
+init
+	print("Hello World")
+```
+
+The first line
+
+```wurst
+package Hello
+```
+
+is the package declaration. Each file contains exactly one package that is named like the file without the ending. Apart from comments this must be the first line in any .wurst file. The next bunch of lines
+
+```wurst
+/* Hello and welcome to Wurst!
+This is just a demo package.
+You can modify it to tests things out
+and then later delete it and create your own, new packages.
+Enjoy WurstScript? Consider starring our repo https://github.com/wurstscript/WurstScript */
+```
+
+are comments. The final two lines
+
+```wurst
+init
+	print("Hello World")
+```
+
+consist of an **init**-block by just containing the **init** keyword without indentation.
+And then everything indented after this keyword is inside it's block of contents, such as the **print** statement, which displays the given text on the screen for all players.
+All blocks automatically end at the end of the file, such as the **init** and **package** blocks in this example.
+
 
 Let's go into further detail about what we just did.
 
@@ -159,5 +257,62 @@ If you're looking for an equivalent to some vJass library found on hiveworkshop,
 * Ask around. Chances are, one of us have already translated the vJass library you like. Cokemonkey11 in particular maintains a number of maps that were previously vJass. Visit the Chat!
 * Write it yourself! We love contributions.
 
+# Let's make a spell
 
+We created an example spell in [march's blog post](https://wurstlang.org/blog/bestofthewurst5.html). You should check it out!
 
+Let's take a closer look at the code.
+
+```wurst
+package Conflagration
+import ConflagrationObjects
+import ClosureTimers
+import ClosureForGroups
+import HashMap
+import ClosureEvents
+
+let buffId = BUFF_OBJ.abilId
+let buffMap = new HashMap<unit, CallbackSingle>()
+init
+	EventListener.onPointCast(SPELL_ID) (caster, tpos) ->
+		flashEffect(SPELL_EFFECT_PATH, tpos)
+		doAfter(SPELL_EFFECT_DURATION) ->
+			forUnitsInRange(tpos, SPELL_RADIUS) u ->
+				if u.hasAbility(buffId)
+					caster.damageTarget(u, BONUS_DAMAGE)
+					flashEffect(BONUS_EFFECT_PATH, tpos)
+
+				caster.damageTarget(u, BASE_DAMAGE)
+				u.addAbility(buffId)
+				if buffMap.has(u)
+					destroy buffMap.get(u)
+				let cb = doAfter(BUFF_DURATION) ->
+					if buffMap.has(u)
+						buffMap.remove(u)
+						u.removeAbility(buffId)
+				buffMap.put(u, cb)
+```
+
+## Imports
+
+We import various packages to make the process of spell creation easier. `ClosureTimers` and `ClosureForGroups` allow us to easily handle delayed code (`doAfter`) and group enums(`forUnitsInRange`). `ClosureEvents` gives us a nicer API to wc3 events, including closures. At last `HashMap` allows us to attach arbitrary data to other data - in this example we attach our Buff effect to the target unit.
+
+## Buff Effect
+
+The spell works like this: We listen to a specific spell event using `EventListener.onPointCast`. The lambda block contains our event callback. Inside the callback we create the meteor effect using `flashEffect` at the appropriate positions. Since the effect takes some time to hit the ground, we also want our damage effect to be delayed. Thus we start a timer using `doAfter(SPELL_EFFECT_DURATION) ->`.
+In this case the lambda block is executed once the chosen amount of time has passed. Now that the special effect has landed on the ground, we apply damage to all units inside a circular area around the target position.
+We use `forUnitsInRange(tpos, SPELL_RADIUS) u ->` to have all units inside the range near the target possition passed to the lambda function. This is the `u` in front of the arrow `->` in `SPELL_RADIUS) u ->`.
+Inside the lambda block we now refer to u as one of the units that is in range, and apply our effects.
+
+In case the unit already has the affect, we apply some extra damage and flash an effect in the following if-statement. After that we apply the normal spell damage and add the dummybuff ability to the target (if the unit already has the ability it just has no effect).
+The next if branch checks whether the buffmap already has an entry for our unit - if that's the case, we destroy the existing timer to end the buff.
+Then we start the new timer to end the buff when it exceeded it's duration.
+
+## Buff Map
+
+`let buffMap = new HashMap<unit, CallbackSingle>()` Here we create the buffmap we talked about. Basically it allows us to save one closures instance from `ClosureTimers` per unit, that refers to a running timer for a buffs duration.
+
+# Closing Words
+
+We hope this guide helped you to get started right away with developing your map on wurst.
+If you have further questions or would like to hang out with wurst people, drop by our [Discord](https://discord.gg/mSHZpWcadz).
