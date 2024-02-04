@@ -201,6 +201,15 @@
 	display: block;
 }
 
+.why-list {
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+.v-space {
+  margin-bottom: 160px;
+}
+
 .news {
   display: flex;
   flex-direction: column;

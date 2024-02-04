@@ -1,0 +1,114 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+{% include head.html %}
+
+<body class="landing-page">
+
+	<div class="page-wrapper">
+
+		{% include header.html %}
+
+		<div class="page-content">
+
+			<div class="greeting">
+				<div>
+					<h1 class="name">Documentation</h1>
+					<div class="tagline">Learn WurstScript.</div>
+				</div>
+			</div>
+
+			<div class="news">
+				<h2 class="title">Basics</h2>
+
+				<div class="cards">
+					<a class="btn card" href="/tutorials/wurstbeginner" target="_blank">
+						<div class="card-image"><img src=""></div>
+						<div class="card-content">
+							<h3>Beginner's Guide</h3>
+							<p>Create your first spell and run your first map.</p>
+						</div>
+					</a>
+
+					<a class="btn card" href="/stdlib" target="_blank">
+						<div class="card-image"><img src=""></div>
+						<div class="card-content">
+							<h3>Standard Library</h3>
+							<p>Get to know useful packages that WurstScript provides out of the box.</p>
+						</div>
+					</a>
+
+					<a class="btn card" href="/manual" target="_blank">
+						<div class="card-image"><img src=""></div>
+						<div class="card-content">
+							<h3>Manual</h3>
+							<p>Formal definition of all language features.</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="v-space"></div>
+
+			</div>
+
+			<div class="news">
+				<h2 class="title">Tutorials</h2>
+
+				<div class="cards">
+					{% assign posts = site.tutorials | sort: 'date' | reverse %}
+					{% for post in posts %}
+					<a class="btn card" href="{{ post.url }}">
+						<div class="card-image"><img src="{{ post.image }}"></div>
+						<div class="card-content">
+							<h3>{{ post.title }}</h3>
+							<p>{{ post.excerpt }}</p>
+						</div>
+					</a>
+					{% endfor %}
+				</div>
+
+				<div class="v-space"></div>
+
+			</div>
+
+		</div>
+
+
+	
+	{% include footer.html %}
+	
+	<!-- Main Javascript -->
+	<script type="text/javascript" src="{{ '/assets/plugins/jquery-1.12.3.min.js'                          | prepend: site.baseurl }}"></script>
+	<script type="text/javascript" src="{{ '/assets/plugins/bootstrap/js/bootstrap.min.js'                 | prepend: site.baseurl }}"></script>
+	<script type="text/javascript" src="{{ '/assets/plugins/jquery-match-height/jquery.matchHeight-min.js' | prepend: site.baseurl }}"></script>
+	 <script type="text/javascript" src="{{ '/assets/plugins/prism/prism.min.js'                                | prepend: site.baseurl }}"></script>
+	<script type="text/javascript" src="{{ '/assets/js/instantsearch.min.js'                               | prepend: site.baseurl }}"></script>
+	<script type="text/javascript" src="{{ '/assets/js/wurst.js'                                           | prepend: site.baseurl }}"></script>
+	<script type="text/javascript" src="{{ '/assets/js/main.js'                                            | prepend: site.baseurl }}"></script>
+	<script type="text/javascript" src="{{ '/assets/js/buttons.js'                                         | prepend: site.baseurl }}"></script>
+	<script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "ComputerLanguage",
+            "name": "WurstScript",
+            "alternateName": "wurst",
+            "image": "https://wurstlang.org/assets/images/wurst_icon64.png",
+            "description": "Delicious, fully featured Warcraft III map development toolkit.",
+            "url": "https://wurstlang.org",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://wurstlang.org"
+            }
+        }
+    </script>
+
+</body>
+
+</html>

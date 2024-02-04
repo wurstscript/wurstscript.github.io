@@ -67,6 +67,8 @@ collections:
     permalink: /:path.html
   news:
     output: true
+  tutorials:
+    output: true
 
 
 #
