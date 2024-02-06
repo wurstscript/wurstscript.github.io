@@ -8,10 +8,7 @@ icon:
 color: orange
 author: Frotty, Cokemonkey11, peq
 layout: tutorialdoc
-sections:
-  - /tutorials/wurstbeginner/introductionp1
-  - /tutorials/wurstbeginner/introductionp2
-  - /tutorials/wurstbeginner/introductionp3
+image: /assets/images/wurst-beginner.jpg
 ---
 
 {: .question}
