@@ -8,7 +8,7 @@ icon:
 color: blue
 author: Frotty
 date: 2018-09-15
-banner: /assets/images/blog/bestof8/wurstbanner8.png
+image: /assets/images/blog/bestof8/wurstbanner8.png
 ---
 ------
 

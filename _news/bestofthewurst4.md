@@ -8,7 +8,7 @@ icon:
 color: blue
 author: Frotty
 date: 2018-02-01
-banner: /assets/images/blog/bestof4/februaryBanner.png
+image: /assets/images/blog/bestof4/februaryBanner.png
 ---
 ------
 

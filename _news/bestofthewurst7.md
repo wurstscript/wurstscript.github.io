@@ -8,7 +8,7 @@ icon:
 color: orange
 author: Frotty
 date: 2018-07-30
-banner: /assets/images/blog/bestof7/wurstbanner7.png
+image: /assets/images/blog/bestof7/wurstbanner7.png
 ---
 ------
 

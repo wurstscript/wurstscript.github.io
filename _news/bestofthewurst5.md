@@ -8,7 +8,7 @@ icon:
 color: blue
 author: Frotty
 date: 2018-03-23
-banner: /assets/images/blog/bestof5/bestof5banner.png
+image: /assets/images/blog/bestof5/bestof5banner.png
 ---
 ------
 

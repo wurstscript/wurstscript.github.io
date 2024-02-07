@@ -8,7 +8,7 @@ icon:
 color: purple
 author: Frotty
 date: 2018-05-17
-banner: /assets/images/blog/bestof6/wurstbanner6.png
+image: /assets/images/blog/bestof6/wurstbanner6.png
 ---
 ------
 

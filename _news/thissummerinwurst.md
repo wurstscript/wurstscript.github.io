@@ -8,7 +8,7 @@ icon:
 color: orange
 author: Cokemonkey11
 date: 2017-11-15
-banner: /assets/images/blog/bestof1/ThisSummerInWurstBanner.png
+image: /assets/images/blog/bestof1/ThisSummerInWurstBanner.png
 ---
 ------
 ![](/assets/images/blog/bestof1/ThisSummerInWurstBanner.png){: .img-responsive}

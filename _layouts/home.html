@@ -35,7 +35,7 @@ layout: compress
 				<h2 class="title">Latest Updates</h2>
 				<div class="cards">
 					{% assign posts = site.news | sort: 'date' | reverse %}
-					{% for post in posts %}
+					{% for post in posts limit:3 %}
 					<a class="btn card" href="{{ post.url }}">
 						<div class="card-image"><img src="{{ post.image }}"></div>
 						<div class="card-content">

@@ -8,7 +8,7 @@ icon:
 color: blue
 author: Frotty & Coke
 date: 2019-04-20
-banner: /assets/images/blog/bestof10/wurstbanner10.png
+image: /assets/images/blog/bestof10/wurstbanner10.png
 ---
 ------
 

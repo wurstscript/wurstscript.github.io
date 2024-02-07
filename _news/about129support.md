@@ -8,7 +8,7 @@ icon:
 color: green
 author: Frotty
 date: 2018-04-13
-banner: /assets/images/empty.png
+image: /assets/images/empty.png
 ---
 ------
 ## Patch Compatability

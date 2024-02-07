@@ -1,0 +1,56 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+{% include head.html %}
+
+<body class="landing-page">
+
+	<div class="page-wrapper">
+
+		{% include header.html %}
+
+		<div class="page-content">
+
+			<div class="greeting">
+				<div>
+					<h1 class="name">News</h1>
+					<div class="tagline">Occasional Updates & Blog posts</div>
+				</div>
+			</div>
+
+			
+			<div class="news">
+				<h2 class="title">Posts</h2>
+				<div class="cards">
+					{% assign posts = site.news | sort: 'date' | reverse %}
+					{% for post in posts %}
+					<a class="btn card" href="{{ post.url }}">
+						<div class="card-image"><img src="{{ post.image }}"></div>
+						<div class="card-content">
+							<h3>{{ post.title }}</h3>
+							<p>{{ post.excerpt }}</p>
+						</div>
+					</a>
+					{% endfor %}
+				</div>
+
+				<div class="v-space"></div>
+			</div>
+
+			<div class="v-space"></div>
+
+		</div>
+
+	
+	{% include footer.html %}
+	
+</body>
+
+</html>
