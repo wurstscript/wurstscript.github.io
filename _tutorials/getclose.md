@@ -7,7 +7,7 @@ icon:
   name: fa-star
 color: pink
 author: HappyTauren & Frotty
-layout: tutorialdoc
+layout: doc
 ---
 
 ![](/assets/images/tutorials/closure.jpg){: .img-responsive}

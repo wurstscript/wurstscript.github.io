@@ -7,7 +7,7 @@ icon:
   name: fa-puzzle-piece
 color: blue
 author: Frotty
-layout: tutorialdoc
+layout: doc
 ---
 
 {: .answer}

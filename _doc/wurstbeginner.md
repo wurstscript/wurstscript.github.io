@@ -7,7 +7,7 @@ icon:
   name: fa-graduation-cap
 color: orange
 author: Frotty, Cokemonkey11, peq
-layout: tutorialdoc
+layout: doc
 image: /assets/images/wurst-beginner.jpg
 ---
 

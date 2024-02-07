@@ -7,7 +7,7 @@ icon:
   name: fa-map
 color: purple
 author: Frotty
-layout: tutorialdoc
+layout: doc
 ---
 
 

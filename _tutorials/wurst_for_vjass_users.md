@@ -7,7 +7,7 @@ icon:
   name: fa-code
 color: green
 author: Cokemonkey11
-layout: tutorialdoc
+layout: doc
 ---
 
 {: .answer}

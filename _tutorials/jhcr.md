@@ -7,7 +7,7 @@ icon:
   name: fa-share-square
 color: green
 author: peq
-layout: tutorialdoc
+layout: doc
 ---
 
 # Jass Hot Code Reload

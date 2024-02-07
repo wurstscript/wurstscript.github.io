@@ -6,7 +6,7 @@ icon:
   type: fa
   name: fa-save
 color: blue
-layout: tutorialdoc
+layout: doc
 ---
 
 ## Welcome
