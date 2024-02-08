@@ -1,7 +1,7 @@
 ---
 title: Installation
 excerpt: Install WurstScript and setup your first project.
-date: 2023-11-16
+date: 2024-02-08
 icon:
   type: fa
   name: fa-paper-plane
@@ -15,35 +15,15 @@ In this guide we will show you how to install WurstScript and set up your first 
 
 WurstScript and its related tools require Java 11+ to run. Editor support is provided via a VSCode extension.
 
-### Download JRE
+### Java
 
 [_&nbsp;_{: .fa .fa-download} Download Java from Adoptium](https://adoptium.net/?variant=openjdk11){: .btn .btn-orange}
 
 Download the Java Runtime appropriate for your system and follow the installation procedure.
 
-Once finished, continue to the next step.
+### VSCode
 
-### Verify Java Installation
-
-Many tasks rely on a environment variable called **JAVA_HOME** which might not have been set by the installer.
-To verify your installation, open a command prompt and enter `java -version`.
-
-A valid installation will return something like this:
-
-```powershell
-> java -version
-openjdk version "11.0.17" 2022-10-18
-OpenJDK Runtime Environment Temurin-11.0.17+8 (build 11.0.17+8)
-OpenJDK 64-Bit Server VM Temurin-11.0.17+8 (build 11.0.17+8, mixed mode)
-```
-
-The major version should be `11` or higher. If it is lower, you must update your Java installation.
-
-If you get an error or get a lower versions displayed, even though you installed a newer one, your **JAVA_HOME** is either missing or configured wrong.
-
-Refer to this [_&nbsp;_{: .fa .fa-external-link-square} Windows tutorial](https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html) in order to setup your **JAVA_HOME** correctly.
-
-Once you have setup Java correctly, continue by installing VSCode.
+[_&nbsp;_{: .fa .fa-download} Download VSCode](https://code.visualstudio.com/){: .btn .btn-primary}
 
 ## Install Wurstscript
 
@@ -51,29 +31,14 @@ Now we will setup a Wurst compiler environment and create a project using the th
 
 [_&nbsp;_{: .fa .fa-download} Download WurstSetup](https://grill.wurstlang.org/hudson/job/WurstSetup/lastSuccessfulBuild/artifact/downloads/WurstSetup.jar){: .btn .btn-green}
 
-The Wurstsetup can be used either from the commandline or as a graphical application.
+Download WurstSetup and perform installation by running `java -jar WurstSetup.jar install wurstscript` or double-clicking to start the graphical user interface.
 
-## Commandline
+Now you need to add the `~/.wurst` folder to your PATH environment variable, so that `grill` is recognized from the commandline.
+Refer to this [tutorial](https://www.java.com/en/download/help/path.xml).
 
-Usage by invoking `grill` via the commandline is recommended and provides a similar user experience to tools such as `npm`, `maven`. etc. To use the setup from the commandline you need to complete the initial installation once.
-After that you can invoke `grill` from your commandline.
+## Commandline Usage
 
-### Initial installation
-
-For the first time you have to run the .jar file directly, because the executable hasn't been installed yet.
-
-`java -jar WurstSetup.jar install wurstscript`
-
-Now you need to add the `~/.wurst` folder to your PATH environment variable, so you can use it from the commandline.
-Refer to this [tutorial](https://www.java.com/en/download/help/path.xml). On Windows 10, the result should look like this:
-
-![](https://i.imgur.com/8bFJJVT.jpg){: .img-responsive}
-
-The `grill` command should now be recognized by your terminal of choice.
-
-![](https://i.imgur.com/FNSBYgD.jpg){: .img-responsive}
-
-If not, a restart might be required.
+Using `grill` from the commandline you can now start with generating a new project or installing an existing project. The user experience is similar to tools such as `npm`, `mvn`. etc.
 
 ### Updating the Compiler
 
@@ -81,7 +46,7 @@ Use the special `wurstscript` keyword to install or update wurst on your system 
 
 `grill install wurstscript`
 
-### Create a Wurst Project
+### Create a new Wurst Project
 
 Use `generate` to create new projects. The project will be generated in a folder inside your current location with the name provided.
 
@@ -117,4 +82,3 @@ To add a new dependency, run the `install` command with a second parameter that 
 
 By running the `WurstSetup.jar` without any arguments or simply by double-clicking, you can alternatively use the deprecated, graphical user interface.
 
-![](/assets/images/setup/WurstSetup.png){: .img-responsive}
