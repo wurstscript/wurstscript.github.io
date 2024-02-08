@@ -114,11 +114,13 @@ h4 {
     margin-bottom: 8px;
   }
 
+
+}
+
   code {
     font-size: 14px;
-    color: var(--blackish);
+    color: var(--text-color);
   }
-}
 
 .section-block {
   padding-top: 15px;
@@ -179,13 +181,13 @@ h4 {
 }
 
 code {
-  background: rgba(27, 31, 35, 0.05);
+  background: var(--divider);
   color: var(--text-color-dark);
   border-radius: 3px;
   font-weight: normal;
   font-family: "SFMono-Regular", "Roboto Mono", Consolas, "Liberation Mono",
     Menlo, Courier, monospace;
-  padding: 0px 2px 0px 2px;
+  padding: 0px 3px;
   display: inline-block;
 }
 

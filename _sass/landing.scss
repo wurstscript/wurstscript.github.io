@@ -163,7 +163,7 @@
 	margin-bottom: -1px;
 	padding: 12px 15px;
 	border: 1px solid #ccc;
-	background: var(--lt-color-gray-700);
+	background: var(--divider-darker);
 	color: var(--text-color);
 	font-size: 12px; 
 	font-weight: 600;
@@ -263,7 +263,7 @@
   }
 
   .card-content {
-    background-color: var(--lt-color-gray-700);
+    background-color: var(--divider-dark);
     height: 50%;
     width: 100%;
     border-bottom-right-radius: 6px;
