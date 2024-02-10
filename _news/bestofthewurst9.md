@@ -1,6 +1,6 @@
 ---
 title: Best of the Wurst 9 - Happy Holidays
-layout: post
+layout: newsarticle
 excerpt: We take a look at stack traces
 icon:
   type: fa

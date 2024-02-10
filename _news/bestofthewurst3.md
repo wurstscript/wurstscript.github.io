@@ -1,6 +1,6 @@
 ---
 title: Best of the Wurst 3 - January Update
-layout: post
+layout: newsarticle
 excerpt: Wurst enters another year with many changes
 icon:
   type: fa

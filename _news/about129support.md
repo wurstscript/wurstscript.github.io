@@ -1,6 +1,6 @@
 ---
 title: About 1.29 Support
-layout: post
+layout: newsarticle
 excerpt: Short headsup about 1.29 and Wurst
 icon:
   type: fa

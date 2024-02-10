@@ -1,6 +1,6 @@
 ---
 title: Best of the Wurst 7 - Summer Slumber
-layout: post
+layout: newsarticle
 excerpt: After a small summer break we return this month with many bugfixes and improvements
 icon:
   type: fa

@@ -1,6 +1,6 @@
 ---
 title: This Summer in Wurst
-layout: post
+layout: newsarticle
 excerpt: Summary of all the changes and updates to wurst during this summer.
 icon:
   type: fa

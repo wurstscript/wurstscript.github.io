@@ -1,6 +1,6 @@
 ---
 title: Best of the Wurst 8 - August Updates
-layout: post
+layout: newsarticle
 excerpt: The spotlight this month is VSCode integration
 icon:
   type: fa

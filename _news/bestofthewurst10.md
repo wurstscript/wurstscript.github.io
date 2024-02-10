@@ -1,6 +1,6 @@
 ---
 title: Best of the Wurst 10
-layout: post
+layout: newsarticle
 excerpt: Big spring update & 420
 icon:
   type: fa

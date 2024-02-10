@@ -1,6 +1,6 @@
 ---
 title: Best of the Wurst 2 - December Update
-layout: post
+layout: newsarticle
 excerpt: Our first timely blog post for the holidays.
 icon:
   type: fa

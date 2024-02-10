@@ -1,6 +1,6 @@
 ---
 title: Best of the Wurst 6 - April Augmentations
-layout: post
+layout: newsarticle
 excerpt: This time we check out our new vararg functions and take a look at vector tuples
 icon:
   type: fa

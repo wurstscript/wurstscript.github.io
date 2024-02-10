@@ -1,6 +1,6 @@
 ---
 title: Hello Wurst
-layout: post
+layout: newsarticle
 excerpt: This is the beginning of the Wurst Blog and we talk about it.
 icon:
   type: fa

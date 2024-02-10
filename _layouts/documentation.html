@@ -65,7 +65,11 @@ layout: compress
 					{% assign posts = site.tutorials | sort: 'date' | reverse %}
 					{% for post in posts %}
 					<a class="btn card" href="{{ post.url }}">
-						<div class="card-image"><img src="{{ post.image }}"></div>
+						
+						<div class="card-image">
+							{% if post.image %}<img src="{{ post.image }}">
+							{% endif %}
+						</div>
 						<div class="card-content">
 							<h3>{{ post.title }}</h3>
 							<p>{{ post.excerpt }}</p>
