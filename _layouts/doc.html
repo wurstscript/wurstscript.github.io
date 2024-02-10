@@ -26,6 +26,9 @@ layout: compress
                         <li>
                             <a href="{{ '/' | prepend: site.baseurl }}">Home</a>
                         </li>
+                        <li>
+                            <a href="{{ '/documentation' | prepend: site.baseurl }}">Documentation</a>
+                        </li>
                         <li class="active">{{ page.title }}</li>
                     </ol>
                 </div>
@@ -56,7 +59,7 @@ layout: compress
                             <i class="fa fa-clock-o"></i> Last updated: {{ page.date | date: '%B %d, %Y' }}</div>
                         {% endif %} {% if page.author %}
                         <div class="author">
-                            <i class="fa fa-user"></i> Author: {{ page.author }}</div>
+                            <i class="fa fa-user"></i> {{ page.author }}</div>
                         {% endif %}
 
                     </div>

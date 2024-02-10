@@ -1,5 +1,5 @@
 ---
-title: Best of the Wurst 3 - January Update
+title: BotW 3 - January Update
 layout: newsarticle
 excerpt: Wurst enters another year with many changes
 icon:

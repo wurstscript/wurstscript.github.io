@@ -1,5 +1,5 @@
 ---
-title: Best of the Wurst 2 - December Update
+title: BotW 2 - December Update
 layout: newsarticle
 excerpt: Our first timely blog post for the holidays.
 icon:

@@ -1,7 +1,7 @@
 ---
-title: Best of the Wurst 6 - April Augmentations
+title: BotW 6 - April Augmentations
 layout: newsarticle
-excerpt: This time we check out our new vararg functions and take a look at vector tuples
+excerpt: This time we check out our new vararg functions and vector tuples
 icon:
   type: fa
   name: fa-servicestack

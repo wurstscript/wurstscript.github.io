@@ -1,7 +1,7 @@
 ---
-title: Best of the Wurst 5 - Late March Update
+title: BotW 5 - Late March Update
 layout: newsarticle
-excerpt: This month we go through some techniques when creating a wurst spell
+excerpt: This month we go through techniques when creating a spell
 icon:
   type: fa
   name: fa-servicestack

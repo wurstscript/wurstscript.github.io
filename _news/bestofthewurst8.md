@@ -1,5 +1,5 @@
 ---
-title: Best of the Wurst 8 - August Updates
+title: BotW 8 - August Updates
 layout: newsarticle
 excerpt: The spotlight this month is VSCode integration
 icon:

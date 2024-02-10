@@ -1,7 +1,7 @@
 ---
-title: Best of the Wurst 7 - Summer Slumber
+title: BotW 7 - Summer Slumber
 layout: newsarticle
-excerpt: After a small summer break we return this month with many bugfixes and improvements
+excerpt: After a summer break we return with bugfixes and improvements
 icon:
   type: fa
   name: fa-servicestack

@@ -33,7 +33,8 @@ layout: compress
 					{% for post in posts %}
 					<a class="btn card" href="{{ post.url }}">
 						<div class="card-image"><img src="{{ post.image }}"></div>
-						<div class="card-content">
+						<div class="card-content date">
+							<p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
 							<h3>{{ post.title }}</h3>
 							<p>{{ post.excerpt }}</p>
 						</div>

@@ -1,5 +1,5 @@
 ---
-title: Best of the Wurst 9 - Happy Holidays
+title: BotW 9 - Happy Holidays
 layout: newsarticle
 excerpt: We take a look at stack traces
 icon:

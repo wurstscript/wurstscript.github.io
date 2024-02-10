@@ -1,5 +1,5 @@
 ---
-title: Best of the Wurst 10
+title: BotW 10
 layout: newsarticle
 excerpt: Big spring update & 420
 icon:
@@ -138,8 +138,6 @@ That machine then comes with all the tools and dependencies installed and precon
 ```
 $ docker run --rm -it frotty/wurstscript /bin/sh -c "grill help"
 ```
-
-[Travis CI example](https://github.com/wurstscript/WurstStdlib2/blob/master/.travis.yml)
 
 [Circle CI example](https://github.com/island-troll-tribes/island-troll-tribes/blob/master/.circleci/config.yml)
 

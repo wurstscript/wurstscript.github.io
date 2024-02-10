@@ -1,5 +1,5 @@
 ---
-title: Best of the Wurst 4 - February Update
+title: BotW 4 - February Update
 layout: newsarticle
 excerpt: This month we show our roadmap and explain unit testing
 icon:
