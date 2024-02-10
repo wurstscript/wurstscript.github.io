@@ -181,6 +181,7 @@
 	display: none;
 	color: #777;
   width: 100%;
+  min-height: 260px;
 }
 
 /* As we cannot replace the numbers with variables or calls to element properties, the number of this selector parts is our tab count limit */
