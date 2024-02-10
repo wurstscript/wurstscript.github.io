@@ -141,24 +141,30 @@ h4 {
 }
 
 .question {
-  margin: 4px !important;
-  padding: 4px !important;
+  padding: 10px 20px;
   font-weight: 400 !important;
-  color: var(--color-primary-dark);
+  color: #fff;
+  border-radius: 6px;
+  font-size: 22px;
+  background-color: var(--color-primary-dark);
   .body-green {
-    color: var(--color-green-dark);
+    background-color: var(--color-green-dark);
   }
   .body-blue & {
-    color: var(--color-blue-dark);
+    background-color: var(--color-blue-dark);
   }
   .body-orange & {
-    color: var(--color-orange-dark);
+    background-color: var(--color-orange-dark);
   }
   .body-pink & {
-    color: var(--color-pink-dark);
+    background-color: var(--color-pink-dark);
   }
   .body-purple & {
-    color: var(--color-purple-dark);
+    background-color: var(--color-purple-dark);
+  }
+  a {
+    color: #fff !important;
+    text-decoration: underline !important;
   }
   .fa {
     @include opacity(0.6);
@@ -170,9 +176,12 @@ h4 {
 }
 
 .answer {
-  color: var(--color-primary);
-  margin: 4px !important;
-  padding: 4px !important;
+  background-color: var(--color-primary);
+  padding: 10px 20px;
+  font-weight: 400 !important;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 22px;
 }
 
 .code-block {

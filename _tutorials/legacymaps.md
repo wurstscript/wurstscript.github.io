@@ -11,8 +11,7 @@ layout: doc
 ---
 
 {: .answer}
-### *&nbsp;*{: .fa .fa-exclamation-circle} This guide expects the reader to know map development with Jass.
-------
+*&nbsp;*{: .fa .fa-exclamation-circle} This guide expects the reader to know map development with Jass.
 
 ## Welcome
 
@@ -28,7 +27,7 @@ There are many different cases in which users might want to use legacy resources
 - Maintaining legacy maps with Jurst instead of performing a complete re-write
 
 {: .answer}
-### *&nbsp;*{: .fa .fa-exclamation-circle} However, it is strongly advised to only do this for legacy maps. New projects should be developed in Wurst only.
+*&nbsp;*{: .fa .fa-exclamation-circle} However, it is strongly advised to only do this for legacy maps. New projects should be developed in Wurst only.
 
 ## Compiling with legacy code
 

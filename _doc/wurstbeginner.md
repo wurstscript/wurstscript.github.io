@@ -12,11 +12,10 @@ image: /assets/images/wurst-beginner.jpg
 ---
 
 {: .question}
-### *&nbsp;*{: .fa .fa-question-circle} Wurst not installed yet? Follow the __[Setup Guide](../start.html)__ and create a new Project.
+*&nbsp;*{: .fa .fa-question-circle} Wurst not installed yet? Follow the __[Setup Guide](../start.html)__ and create a new Project.
 
 {: .answer}
-### *&nbsp;*{: .fa .fa-exclamation-circle} This guide expects the reader to have **basic** knowledge of functions and variables.
-------
+*&nbsp;*{: .fa .fa-exclamation-circle} This guide expects the reader to have **basic** knowledge of functions and variables.
 
 ## Welcome
 
@@ -47,7 +46,7 @@ Let's go through all the files:
 - **wurst/Hello.wurst** Demo package
 
 {: .answer}
-### *&nbsp;*{: .fa .fa-exclamation-circle} Make sure to always open a .wurst file. Otherwise the vscode plugin might not load.
+*&nbsp;*{: .fa .fa-exclamation-circle} Make sure to always open a .wurst file. Otherwise the vscode plugin might not load.
 
 ## Hello Wurst
 

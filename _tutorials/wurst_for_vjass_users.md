@@ -11,11 +11,11 @@ layout: doc
 ---
 
 {: .answer}
-### *&nbsp;*{: .fa .fa-exclamation-circle} This guide expects the reader to be familiar with vJass.
+*&nbsp;*{: .fa .fa-exclamation-circle} This guide expects the reader to be familiar with vJass.
 
 {: .answer}
-### *&nbsp;*{: .fa .fa-exclamation-circle} This tutorial is in the format of an informal discussion, but many of the key points are backed by well understood, high-level programming paradigms.
-------
+*&nbsp;*{: .fa .fa-exclamation-circle} This tutorial is in the format of an informal discussion, but many of the key points are backed by well understood, high-level programming paradigms.
+
 
 When I (evangelize?) discuss wurst, I tend to hear weird arguments against using it.
 Some of them are interesting, like "well I can't justify learning it", or "my map is already using vJass", but other arguments tend to be outlandish and worth some education.
@@ -41,7 +41,7 @@ The more interesting discussion revolves around understanding what vJass is not,
 Fundamentally, vJass is a pre-processed language that gets very naively transformed into Jass, which has lots of side-effects:
 
 {: .answer}
-### *&nbsp;*{: .fa .fa-exclamation-circle} Key point: Type-Safety is the concept of checking that the values and functions a programmer uses are *consistent* - e.g. that the user never tries to give a timer to a function that takes an integer.
+*&nbsp;*{: .fa .fa-exclamation-circle} Key point: Type-Safety is the concept of checking that the values and functions a programmer uses are *consistent* - e.g. that the user never tries to give a timer to a function that takes an integer.
 
 * vJass Generates code for you, but otherwise is very limited to abstraction - you just can't express higher level concepts safely in vJass because instances of structs are always integers - the compiler can't check anything for you - so type-safety is lost entirely.
   vJass does at least have some validation, but that's not being done by JassHelper - PJass is checking the emitted jass, but can't do anything smart at the vJass level.
@@ -171,7 +171,7 @@ Let's get some basics down:
 * In the past, higher level languages that still provide system-level interaction tended to dominate this area (c++), although advances in compiler technologies has led to languages like rust and go, that manage to show how a programming language can very well provide a high level of abstraction while also being blazing fast.
 
 {: .answer}
-### *&nbsp;*{: .fa .fa-exclamation-circle} Key point: Performance and Level of Abstraction are orthogonal concepts - and writing higher level code does not necessarily make it slower.
+*&nbsp;*{: .fa .fa-exclamation-circle} Key point: Performance and Level of Abstraction are orthogonal concepts - and writing higher level code does not necessarily make it slower.
 
 Standards:
 
@@ -189,10 +189,10 @@ This encompasses things like:
 The reason this is better is because *any level of readability improvement, documentation, or comfort* is better than none/flat (as in the case of vJass).
 
 {: .answer}
-### *&nbsp;*{: .fa .fa-exclamation-circle} Key point: Thinking about performance in wurst, and indeed many high level programming languages, is a pitfall, and for newcomers this may feel unfamiliar - you have to actively change your behavior to get the most out of wurst.
+*&nbsp;*{: .fa .fa-exclamation-circle} Key point: Thinking about performance in wurst, and indeed many high level programming languages, is a pitfall, and for newcomers this may feel unfamiliar - you have to actively change your behavior to get the most out of wurst.
 
 {: .answer}
-### *&nbsp;*{: .fa .fa-exclamation-circle} Key point: Let the compiler/optimiser do the work for you. Instead, write the code that feels right.
+*&nbsp;*{: .fa .fa-exclamation-circle} Key point: Let the compiler/optimiser do the work for you. Instead, write the code that feels right.
 
 ## Is vJass bad then?
 
@@ -228,7 +228,7 @@ Furthermore, it's a goal of the wurst community to be explicitly about productiv
 ## FAQs
 
 {: .question}
-### *&nbsp;*{: .fa .fa-question-circle} Wurst seems cool and worth checking out, but I can't get past the syntax. Why does it look like python? I prefer the style of [c, Java, ECMA]
+*&nbsp;*{: .fa .fa-question-circle} Wurst seems cool and worth checking out, but I can't get past the syntax. Why does it look like python? I prefer the style of [c, Java, ECMA]
 
 I get this question a lot, but it comes at a weird angle and surprises me.
 Let's talk about four different things related to this:
@@ -262,7 +262,7 @@ Because you'll leave yourself misunderstanding a very wide range of concepts.
 Casual users of wurst would have a hard time deciding "how strongly typed" or "how functional" the language is - so they also shouldn't feel qualified to dismiss it in the context of one of those topics.
 
 {: .answer}
-### *&nbsp;*{: .fa .fa-exclamation-circle} Key point: Wurst provides the *capability* to write high-level code, but isn't otherwise anything like python or Javascript - wurst is a strongly typed language.
+*&nbsp;*{: .fa .fa-exclamation-circle} Key point: Wurst provides the *capability* to write high-level code, but isn't otherwise anything like python or Javascript - wurst is a strongly typed language.
 
 One last thought: just because wurst supports some abstract concepts like generics, closures, and iterators, doesn't mean you're forced to use them.
 On the contrary, I would claim that even very basic, imperative looking wurst will have fewer bugs and run faster than similarly styled vJass.
