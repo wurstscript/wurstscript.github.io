@@ -19,14 +19,11 @@ __WurstScript__ is an imperative, object-oriented, statically-typed, beginner-fr
 
 Both are delicious.
 
-WurstScript provides a comfortable workflow to produce readable and maintainable code.
-Ease of use and stress-free map development take higher priority than execution speed of the final product.
-WurstScript is easy to use and learn, especially with prior knowledge of Jass or any other programming language, while still staying
-simple and understandable for non-programmers.
+WurstScript is a robust programming language and toolkit developed to enhance the Warcraft III modding experience. It was initially created to improve upon Jass, Warcraft III's original scripting language, by introducing modern programming features while maintaining syntax similarity to Jass for ease of transition.
 
-Because WurstScript was created as a way to enhance Warcraft III's original scripting language Jass, syntax and vocabulary were designed to be close to Jass to aid easy adoption.
-However, for some time now, WurstScript also support outputting Lua code instead of Jass, which has been supported by Warcraft III since the release of "Reforged", which natively offers many features which were not available in Jass at the time. Nonetheless Wurst can be a valuable choice to offer an easy and complete way to enter Warcraft III map development.
-It adds type safety and some additional features to Lua which can often be preferred in development of larger projects.
+With a focus on a code-first approach, WurstScript is built from developers for developers. It extends Jass by adding static typing, classes, and more, bringing these advanced features to a familiar environment. Beyond Jass, WurstScript also supports Lua output, expanding its applicability to Warcraft III: Reforged. This integration also enhances the development of Lua with static types and compile-time execution, among other features, providing a richer, more robust development experience.
+
+By bridging traditional scripting with advanced programming concepts, WurstScript streamlines the Warcraft III modding process. It offers tools and features that boost productivity, improve code quality, and encourage innovative game development. The language's support for both Jass and Lua outputs enables developers to maintain a single codebase while targeting multiple environments, leveraging the strengths of each language.
 
 > Note that this manual is not a beginner's tutorial and expects the reader to have prior knowledge in programming.
 [Click here for a beginner's guide.](https://wurstlang.org/tutorials/wurstbeginner.html)
