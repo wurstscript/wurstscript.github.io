@@ -5,4 +5,6 @@ color: primary
 layout: documentation
 sections:
   - /stdlib/intro
+redirect_from:
+- /documentation/
 ---

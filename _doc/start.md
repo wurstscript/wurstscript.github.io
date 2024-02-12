@@ -6,6 +6,8 @@ icon:
   type: fa
   name: fa-paper-plane
 color: green
+redirect_from:
+- /start/
 ---
 
 WurstScript is a programming language and modding toolkit working in unison to create awesome Warcraft 3 maps.
