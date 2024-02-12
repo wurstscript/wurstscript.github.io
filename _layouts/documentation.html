@@ -1,0 +1,93 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+{% include head.html %}
+
+<body class="landing-page">
+
+	<div class="page-wrapper">
+
+		{% include header.html %}
+
+		<div class="page-content">
+
+			<div class="greeting">
+				<div>
+					<h1 class="name">Documentation</h1>
+					<div class="tagline">Learn WurstScript.</div>
+				</div>
+			</div>
+
+			<div class="news">
+				<h2 class="title">Basics</h2>
+
+				<div class="cards">
+					<a class="btn card" href="/wurstbeginner">
+						<div class="card-image"><img src="/assets/images/wurst-beginner.jpg"></div>
+						<div class="card-content">
+							<h3>Beginner's Guide</h3>
+							<p>Create your first spell and run your first map.</p>
+						</div>
+					</a>
+
+					<a class="btn card" href="/stdlib">
+						<div class="card-image"><img src="/assets/images/wurst-stdlib.jpg"></div>
+						<div class="card-content">
+							<h3>Standard Library</h3>
+							<p>Get to know useful packages that WurstScript provides out of the box.</p>
+						</div>
+					</a>
+
+					<a class="btn card" href="/manual">
+						<div class="card-image"><img src="/assets/images/wurst-manual.jpg"></div>
+						<div class="card-content">
+							<h3>Manual</h3>
+							<p>Formal definition of all language features.</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="v-space"></div>
+
+			</div>
+
+			<div class="news">
+				<h2 class="title">Tutorials</h2>
+
+				<div class="cards">
+					{% assign posts = site.tutorials | sort: 'date' | reverse %}
+					{% for post in posts %}
+					<a class="btn card" href="{{ post.url }}">
+						
+						<div class="card-image">
+							{% if post.image %}<img src="{{ post.image }}">
+							{% endif %}
+						</div>
+						<div class="card-content">
+							<h3>{{ post.title }}</h3>
+							<p>{{ post.excerpt }}</p>
+						</div>
+					</a>
+					{% endfor %}
+				</div>
+
+				<div class="v-space"></div>
+
+			</div>
+
+		</div>
+
+
+	
+	{% include footer.html %}
+	
+</body>
+
+</html>

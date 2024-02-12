@@ -1,0 +1,76 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+{% include head.html %}
+
+<body class="landing-page">
+
+	<div class="page-wrapper">
+
+		{% include header.html %}
+
+		<div class="page-content">
+
+			<div class="greeting">
+				<div>
+					<h1 class="name">Community</h1>
+					<div class="tagline">Get involved.</div>
+				</div>
+			</div>
+
+			<div class="news">
+				<h2 class="title">Join the Community</h2>
+
+				<div class="cards">
+					<a class="btn card" href="https://github.com/wurstscript" target="_blank">
+						<div class="card-image"><img src="/assets/images/github-mark-white.png"></div>
+						<div class="card-content">
+							<h3>GitHub</h3>
+							<p>Report bugs, suggest features, contribute code.</p>
+						</div>
+					</a>
+
+					<a class="btn card" href="https://discord.gg/mSHZpWcadz" target="_blank">
+						<div class="card-image"><img src="/assets/images/icon_clyde_blurple_RGB.png"></div>
+						<div class="card-content">
+							<h3>Discord</h3>
+							<p>General chat for WurstScript and Warcraft mapping. Bridged to matrix.</p>
+						</div>
+					</a>
+
+					<a class="btn card" href="https://matrix.to/#/!qppIznMkBZgRaYJNYA:matrix.org?via=matrix.org" target="_blank">
+						<div class="card-image"><img src="/assets/images/Matrix_icon.png"></div>
+						<div class="card-content">
+							<h3>Matrix</h3>
+							<p>General chat for WurstScript and Warcraft mapping. Bridged to discord.</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="v-space"></div>
+
+			</div>
+
+			<div class="news">
+				<h2 class="title">Showcase</h2>
+
+				{{ content }}
+
+			</div>
+
+		</div>
+
+
+	
+	{% include footer.html %}
+	
+</body>
+
+</html>

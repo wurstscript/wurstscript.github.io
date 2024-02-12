@@ -59,3 +59,9 @@ Adding a standard library doc page works almost the same as tutorials.
     - Edit the title, excerpt, date, color.
     - Change the `sections` to match the uri of the pages of your tutorial.
 * Write your new_doc pages, being sure to update the heading sections as necessary.
+
+## Building Search Index
+
+1. Set the key as environment variable `$env:ALGOLIA_API_KEY='PRIVATE_KEY'`
+
+2. Run `bundle exec jekyll algolia`

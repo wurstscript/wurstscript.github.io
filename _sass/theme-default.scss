@@ -52,6 +52,22 @@
 }
 
 @media (prefers-color-scheme: dark) {
+  /* For the scrollbar track (background) */
+  ::-webkit-scrollbar {
+      background-color: #2e2e2e; /* Dark grey background */
+  }
+
+  /* For the scrollbar handle */
+  ::-webkit-scrollbar-thumb {
+      background-color: #555; /* Darker grey scrollbar handle */
+      border-radius: 6px; /* Rounded corners on the scrollbar handle */
+      border: 3px solid #2e2e2e; /* Creates a small border with the same color as the track */
+  }
+
+  /* For the scrollbar handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+      background-color: #888; /* Lighter grey on hover */
+  }
   /*
    * Dark Colors
    * -------------------------------------------

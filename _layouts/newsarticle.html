@@ -1,0 +1,104 @@
+--- 
+layout: compress 
+---
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="doc-body">
+<!--<![endif]-->
+
+{% include head.html %}
+
+<body class="body-{{ page.color }} doc-body">
+
+    <div class="page-wrapper">
+
+        <!-- HEADER -->
+        <header id="header" class="header">
+            <div class="container doc-header-container">
+
+                <div>
+                    {% include branding.html home=false %}
+
+                    <!-- BREADCRUMB -->
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="{{ '/' | prepend: site.baseurl }}">Home</a>
+                        </li>
+                        <li>
+                            <a href="{{ '/news' | prepend: site.baseurl }}">News</a>
+                        </li>
+                        <li class="active">{{ page.title }}</li>
+                    </ol>
+                </div>
+
+                <div style="flex:1"></div>
+                <div id="search-searchbar"></div>
+            </div>
+
+        </header>
+
+        <div class="post-list" id="search-hits"></div>
+
+        <div class="doc-wrapper">
+
+            <div class="doc-inner">
+                <div class="doc-container">
+
+                    <!-- DOCUMENT HEADER -->
+                    <div id="doc-header" class="doc-header text-center">
+
+                        <h1 class="doc-title">
+                            {{ page.title }}
+                        </h1>
+
+                        {% if page.date %}
+                        <div class="meta">
+                            <i class="fa fa-clock"></i> {{ page.date | date: '%B %d, %Y' }}
+                        </div>
+                        {% endif %} {% if page.author %}
+                        <div class="author">
+                            <i class="fa fa-user"></i> {{ page.author }}
+                        </div>
+                        {% endif %}
+
+                    </div>
+
+                    <!-- DOCUMENT BODY -->
+                    <div id="{{ page.id | slugify }}" class="post-content">
+
+                        <!-- CONTENT -->
+                        <div class="doc-content">
+                            <div class="">
+                                {{ content | markdownify }} {% for id in page.sections %} {% assign section = site.doc | where: "id", id | first %}
+
+                                <div id="{{ section.title | slugify }}" class="doc-section">
+                                    <h2 class="section-title">{{ section.title }}</h2>
+                                    <div class="section-block">
+                                        {{ section.content | markdownify }}
+                                    </div>
+                                </div>
+
+                                {% endfor %}
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    {% include footer.html %}
+
+
+</body>
+
+</html>

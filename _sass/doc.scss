@@ -1,15 +1,34 @@
+
+.doc-body {
+  height: 100%;
+  overflow: hidden;
+}
+
 /* ======= Doc Styling ======= */
 .doc-wrapper {
-  padding: 45px 0;
+  display: flex;
+  justify-content: space-between;
   background: var(--smoky-grey);
 }
 
-.doc-body {
+.doc-inner {
+  width: 100%;
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
   position: relative;
 }
 
+.doc-container {
+  width: 870px;
+  padding-top: 42px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
 .doc-header {
-  margin-bottom: 30px;
+  margin-bottom: 48px;
   .doc-title {
     color: var(--color-primary);
     margin-top: 0;
@@ -42,7 +61,10 @@
 }
 
 .doc-content {
-  margin-left: 230px;
+}
+
+h4 {
+  color: var(--text-color);
 }
 
 .doc-section {
@@ -50,7 +72,7 @@
   padding-top: 15px;
   padding-bottom: 15px;
   .section-title {
-    font-size: 26px;
+    font-size: 32px;
     margin-top: 0;
     margin-bottom: 0;
     font-weight: bold;
@@ -62,7 +84,7 @@
   h2,
   h3,
   h4 {
-    color: var(--text-color-dark);
+    color: var(--text-color);
     clear: both;
   }
 
@@ -92,11 +114,13 @@
     margin-bottom: 8px;
   }
 
+
+}
+
   code {
     font-size: 14px;
-    color: var(--blackish);
+    color: var(--text-color);
   }
-}
 
 .section-block {
   padding-top: 15px;
@@ -117,24 +141,30 @@
 }
 
 .question {
-  margin: 4px !important;
-  padding: 4px !important;
+  padding: 10px 20px;
   font-weight: 400 !important;
-  color: var(--color-primary-dark);
+  color: #fff;
+  border-radius: 6px;
+  font-size: 22px;
+  background-color: var(--color-primary-dark);
   .body-green {
-    color: var(--color-green-dark);
+    background-color: var(--color-green-dark);
   }
   .body-blue & {
-    color: var(--color-blue-dark);
+    background-color: var(--color-blue-dark);
   }
   .body-orange & {
-    color: var(--color-orange-dark);
+    background-color: var(--color-orange-dark);
   }
   .body-pink & {
-    color: var(--color-pink-dark);
+    background-color: var(--color-pink-dark);
   }
   .body-purple & {
-    color: var(--color-purple-dark);
+    background-color: var(--color-purple-dark);
+  }
+  a {
+    color: #fff !important;
+    text-decoration: underline !important;
   }
   .fa {
     @include opacity(0.6);
@@ -146,9 +176,12 @@
 }
 
 .answer {
-  color: var(--color-primary);
-  margin: 4px !important;
-  padding: 4px !important;
+  background-color: var(--color-primary);
+  padding: 10px 20px;
+  font-weight: 400 !important;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 22px;
 }
 
 .code-block {
@@ -157,13 +190,13 @@
 }
 
 code {
-  background: rgba(27, 31, 35, 0.05);
+  background: var(--divider);
   color: var(--text-color-dark);
   border-radius: 3px;
   font-weight: normal;
   font-family: "SFMono-Regular", "Roboto Mono", Consolas, "Liberation Mono",
     Menlo, Courier, monospace;
-  padding: 0px 2px 0px 2px;
+  padding: 0px 3px;
   display: inline-block;
 }
 
@@ -337,7 +370,17 @@ code {
   }
 }
 
-.card {
+.showcase-box {
+  padding: 16px 32px;
+  border-radius: 12px;
+  background-color: var(--smoky-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;  
+}
+
+.card-showcase {
   text-align: center;
   border: 1px solid var(--divider-darker);
   @include border-radius(4px);
@@ -445,25 +488,27 @@ code {
 
 /* Sidebar */
 .doc-sidebar {
-  width: 200px;
+  width: 310px;
+  border-right: 1px solid #474749;
+  padding-top: 42px;
+  max-height: calc(100vh - 121px);
 }
 
+
 #doc-menu {
-  max-height: 100vh;
-  overflow: hidden;
+  max-height: calc(100vh - 122px);
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .doc-menu-scroll {
-  margin-right: -50px; /* maximum width of scrollbar */
-  padding-right: 50px; /* maximum width of scrollbar */
-  overflow-y: auto;
-  max-height: 100vh;
+  // max-height: 100%;
 }
 
 .doc-menu {
   list-style: none;
   padding-left: 0;
-  margin-bottom: 30px;
+  padding-bottom: 72px;
 
   & > li {
     margin-bottom: 5px;
@@ -536,7 +581,7 @@ code {
   padding-left: 0;
   & > li {
     margin-bottom: 10px;
-    font-size: 12px;
+    font-size: 14px;
     &:first-child {
       padding-top: 5px;
     }
@@ -600,22 +645,9 @@ code {
   }
 }
 
-.affix-top {
-  position: absolute;
-  top: 15px;
-}
-
-.affix {
-  top: 15px;
-}
-
 .affix,
 .affix-bottom {
   width: 230px;
-}
-
-.affix-bottom {
-  position: absolute;
 }
 
 /* ===== Promo block ===== */
@@ -728,6 +760,14 @@ code {
 
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
+  .doc-sidebar {
+    display: none;
+  }
+
+  .doc-container {
+    width: 100%;
+    padding: 10px;
+  }
   .doc-content {
     margin-left: 0;
   }
