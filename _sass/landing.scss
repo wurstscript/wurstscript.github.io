@@ -461,9 +461,29 @@
 }
 
 /* Extra small devices (phones, less than 768px) */
+@media (max-width: 876px) {
+  .branding-text {
+    display: none;
+  }
+
+  .page-content {
+    width: 100%;
+    padding: 0px 14px;
+  }
+
+  .greeting {
+    flex-direction: column;
+  }
+}
+
+/* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
   .cards-section .item-inner {
     padding: 30px 15px;
+  }
+
+  .branding {
+    flex-direction: column;
   }
 }
 
