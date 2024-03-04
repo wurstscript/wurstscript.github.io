@@ -473,6 +473,16 @@
 
   .greeting {
     flex-direction: column;
+    
+
+    .name {
+      font-size: 42px;
+    }
+  }
+
+  .doc-header-container {
+    flex-direction: column;
+    gap: 14px;
   }
 }
 
