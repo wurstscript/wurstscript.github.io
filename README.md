@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/wurstscript/wurstscript.github.io.svg?branch=master)](https://travis-ci.org/wurstscript/wurstscript.github.io)
+[![pages-build-deployment](https://github.com/wurstscript/wurstscript.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/wurstscript/wurstscript.github.io/actions/workflows/pages/pages-build-deployment)
 # WurstScript Webpage & Documentation
 
 Live at https://wurstlang.org/
