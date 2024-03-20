@@ -25,6 +25,10 @@ Download the Java Runtime appropriate for your system and follow the installatio
 
 [_&nbsp;_{: .fa .fa-download} Download VSCode](https://code.visualstudio.com/){: .btn .btn-primary}
 
+### Wurst Extension
+
+Install the VScode [Wurst language support extension](https://marketplace.visualstudio.com/items?itemName=peterzeller.wurst).
+
 ## Install Wurstscript
 
 Now we will setup a Wurst compiler environment and create a project using the the WurstSetup, also known as `grill`.
