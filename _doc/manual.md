@@ -1911,7 +1911,7 @@ Wurst also provides a higher level of abstraction. For example the package Abili
 for the different base abilities of Wc3 with readable method names. That way you do not have to look up the IDs.
 
 The following example creates a new spell based on "Thunder Bolt". The created spell has the ID "A005" for illustratory purpose.
-In proper code you should generate your IDs so you don't have to deal with them directly. See [this blog entry](https://wurstlang.org/blog/bestofthewurst3.html#objectediting%20)
+In proper code you should generate your IDs so you don't have to deal with them directly. See [this blog entry](https://wurstlang.org/news/bestofthewurst3.html#objectediting%20)
 In the next line the name of the spell is changed to "Test Spell".
 Level specific properties are changed using level closures, which calculate values for all levels.
 

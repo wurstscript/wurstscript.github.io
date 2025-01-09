@@ -255,7 +255,7 @@ If you're looking for an equivalent to some vJass library found on hiveworkshop,
 
 # Let's make a spell
 
-We created an example spell in [march's blog post](https://wurstlang.org/blog/bestofthewurst5.html). You should check it out!
+We created an example spell in [march's blog post](https://wurstlang.org/news/bestofthewurst5.html). You should check it out!
 
 Let's take a closer look at the code.
 

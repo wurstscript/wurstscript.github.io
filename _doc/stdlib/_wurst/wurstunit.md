@@ -8,7 +8,7 @@ sections:
 
 ### Intro
 
-We already discussed unit testing in [BOTW 4](https://wurstlang.org/blog/bestofthewurst4.html) so let's take a closer look at the package.
+We already discussed unit testing in [BOTW 4](https://wurstlang.org/news/bestofthewurst4.html) so let's take a closer look at the package.
 
 ### Magic functions
 
