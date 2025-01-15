@@ -2,7 +2,7 @@
 title: Dialog Box
 layout: stdlibdoc
 color: blue
-date: 2019-02-04
+date: 2025-01-15
 sections:
   - /stdlib/util/dialogbox
 ---
