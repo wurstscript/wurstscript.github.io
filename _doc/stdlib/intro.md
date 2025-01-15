@@ -42,6 +42,8 @@ All packages in the standard library follow the [coding conventions](https://wur
 
 &nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*{: .fa .fa-file} [Closure Timers](stdlib/closure_timers)
 
+&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*{: .fa .fa-file} [Execute](stdlib/execute)
+
 ### *&nbsp;*{: .fa .fa-folder-open} Data
 
 &nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*{: .fa .fa-file} [Bit Set](stdlib/bitset)
