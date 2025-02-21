@@ -545,3 +545,32 @@ This library allows you to have control over almost everything related to bounti
 
 </div>
 <!-- End Row -->
+
+<!-- Start Row -->
+<div class="row" >
+
+<!-- Begin Card -->
+<div class="col-sm-6 col-xs-12">
+<div class="card-showcase" markdown="1">
+
+[![screenshot](/assets/images/showcase/tevef.png){: .img-responsive .center-block}](https://github.com/Code-Fixxers/teve_final_fixxed)
+
+<div class="card-block" markdown="1">
+
+{: .card-title}
+
+#### Twilight's Eve Final Fixxed
+
+{: .card-text}
+The original Twilight's Eve, reworked, remastered and fixxed.
+
+[_&nbsp;_{: .fa .fa-external-link-square} Git Repo](https://github.com/Code-Fixxers/teve_final_fixxed) [_&nbsp;_{: .fa .fa-external-link-square} Web](https://tever.xyz/tevef)
+
+</div>
+
+</div>
+</div>
+<!-- End Card -->
+
+</div>
+<!-- End Row -->
