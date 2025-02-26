@@ -543,12 +543,6 @@ This library allows you to have control over almost everything related to bounti
 </div>
 <!-- End Card -->
 
-</div>
-<!-- End Row -->
-
-<!-- Start Row -->
-<div class="row" >
-
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
 <div class="card-showcase" markdown="1">
