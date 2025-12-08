@@ -1,87 +1,110 @@
 ---
 title: Installation
-excerpt: Install WurstScript and setup your first project.
-date: 2024-02-08
+excerpt: Install WurstScript and set up your first project.
+date: 2025-12-08
 icon:
-  type: fa
-  name: fa-paper-plane
+  type: fa
+  name: fa-paper-plane
 color: green
----
+------------
 
-WurstScript is a programming language and modding toolkit working in unison to create awesome Warcraft 3 maps.
-In this guide we will show you how to install WurstScript and set up your first project.
+WurstScript is a programming language and modding toolkit working in unison to create Warcraft 3 maps.
+This guide explains the streamlined setup using the updated VSCode extension, which now manages compiler updates and the CLI automatically.
 
 ## Prerequisites
 
-WurstScript and its related tools require Java 11+ to run. Editor support is provided via a VSCode extension.
-
-### Java
-
-[_&nbsp;_{: .fa .fa-download} Download Java from Adoptium](https://adoptium.net/?variant=openjdk11){: .btn .btn-orange}
-
-Download the Java Runtime appropriate for your system and follow the installation procedure.
+WurstScript editor support is provided via the VSCode extension.
+The extension now **downloads, installs, and updates both the compiler and the CLI (`grill`) automatically**, requiring no manual setup for most users.
 
 ### VSCode
 
-[_&nbsp;_{: .fa .fa-download} Download VSCode](https://code.visualstudio.com/){: .btn .btn-primary}
+[* *{: .fa .fa-download} Download VSCode](https://code.visualstudio.com/){: .btn .btn-primary}
 
 ### Wurst Extension
 
-Install the VScode [Wurst language support extension](https://marketplace.visualstudio.com/items?itemName=peterzeller.wurst).
+Install the VSCode [Wurst language support extension](https://marketplace.visualstudio.com/items?itemName=peterzeller.wurst).
 
-## Install Wurstscript
+## Activate the Extension
 
-Now we will setup a Wurst compiler environment and create a project using the the WurstSetup, also known as `grill`.
+After installation, open a Wurst project or any `.wurst` file.
+The extension initializes itself and installs all required components.
+You can also trigger setup manually via the command palette (F1):
 
-[_&nbsp;_{: .fa .fa-download} Download WurstSetup](https://grill.wurstlang.org/hudson/job/WurstSetup/lastSuccessfulBuild/artifact/downloads/WurstSetup.jar){: .btn .btn-green}
+* `>wurst: Install`
+* `>wurst: New Wurst Project`
 
-Download WurstSetup and perform installation by running `java -jar WurstSetup.jar install wurstscript` or double-clicking to start the graphical user interface.
+Once activated, the extension will keep your compiler up-to-date in the background.
 
-Now you need to add the `~/.wurst` folder to your PATH environment variable, so that `grill` is recognized from the commandline.
-Refer to this [tutorial](https://www.java.com/en/download/help/path.xml).
+## Creating and Working With Projects
 
-## Commandline Usage
+The extension ships with `grill`, which it installs for you.
+Add the `~/.wurst` folder to your PATH so the `grill` command is available everywhere.
+See this guide: [https://www.java.com/en/download/help/path.xml](https://www.java.com/en/download/help/path.xml)
 
-Using `grill` from the commandline you can now start with generating a new project or installing an existing project. The user experience is similar to tools such as `npm`, `mvn`. etc.
+For regular users, the only grill command you normally need is:
 
-### Updating the Compiler
+### Install project dependencies
 
-Use the special `wurstscript` keyword to install or update wurst on your system for the current user.
+Run inside your project root:
 
-`grill install wurstscript`
+```
+grill install
+```
 
-### Create a new Wurst Project
+This sets up dependencies for a new project or updates an existing one.
 
-Use `generate` to create new projects. The project will be generated in a folder inside your current location with the name provided.
+### Add a new dependency
 
-`grill generate my-wurst-project`
+```
+grill install https://github.com/Frotty/wurst-astar-jps
+```
 
-### Open in VSCode
+This adds the dependency to your project and updates it.
 
-After you finished installation and project setup, you can open the project's root folder in VSCode.
+### Opening a project
 
-`code my-wurst-project`
+Open the project’s root folder in VSCode:
+
+```
+code my-wurst-project
+```
 
 {: .answer}
-_&nbsp;_{: .fa .fa-exclamation-circle} Make sure you are opening the project's root folder (contains wurst.build file) using `File -> Open Folder`
+* *{: .fa .fa-exclamation-circle} Open the folder containing your `wurst.build` file.
 
-Once the project is opened, you can click the `Hello.wurst` file on the left to activate the Wurst plugin. The code should compile and the setup should be done. Using VSCode's command console (`F1`) you can execute wurst commands such as running or building your map.
+After opening the project, selecting a `.wurst` file will activate the language server.
+Compilation, map building, and other workflows are available directly through VSCode commands (`F1` → search for “wurst”).
 
-If you are new to WurstScript but not new to programming, you probably want to continue with the [_&nbsp;_{: .fa .fa-external-link-square} Beginner's Guide](tutorials/wurstbeginner.html)
+---
 
-### Installing and Updating a project
+## Optional: CLI Usage for Non-VSCode Users
 
-Run the `install` command to update your project's dependencies, or to initially setup a fresly cloned project to work on your machine.
+If you prefer using WurstScript without VSCode, or you want full manual control, you can enable standalone CLI usage.
 
-`grill install`
+### Create a new project (CLI-only)
 
-### Adding dependencies
+```
+grill generate my-wurst-project
+```
 
-To add a new dependency, run the `install` command with a second parameter that points to a git repo.
+### Update the compiler manually
 
-`grill install https://github.com/Frotty/wurst-astar-jps`
+```
+grill install wurstscript
+```
+
+This is no longer required when using VSCode, as the extension manages compiler updates automatically.
+
+---
 
 ## Graphical User Interface
 
-By running the `WurstSetup.jar` without any arguments or simply by double-clicking, you can alternatively use the deprecated, graphical user interface.
+> Deprecated
 
+Running `WurstSetup.jar` without arguments opens the legacy GUI installer.
+This workflow is no longer recommended.
+
+---
+
+If you are new to WurstScript but not new to programming, continue with the
+[* *{: .fa .fa-external-link-square} Beginner's Guide](tutorials/wurstbeginner.html).
