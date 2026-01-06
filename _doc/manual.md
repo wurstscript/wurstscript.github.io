@@ -19,23 +19,20 @@ __WurstScript__ is an imperative, object-oriented, statically-typed, beginner-fr
 
 Both are delicious.
 
-WurstScript is a robust programming language and toolkit developed to enhance the Warcraft III modding experience. It was initially created to improve upon Jass, Warcraft III's original scripting language, by introducing modern programming features while maintaining syntax similarity to Jass for ease of transition.
+WurstScript is a programming language and toolkit for Warcraft III modding. It started as a way to make Jass development faster and safer: Adding modern features like static typing and classes while keeping a Jass-like feel so existing map makers could adopt it easily.
 
-With a focus on a code-first approach, WurstScript is built from developers for developers. It extends Jass by adding static typing, classes, and more, bringing these advanced features to a familiar environment. Beyond Jass, WurstScript also supports Lua output, expanding its applicability to Warcraft III: Reforged. This integration also enhances the development of Lua with static types and compile-time execution, among other features, providing a richer, more robust development experience.
-
-By bridging traditional scripting with advanced programming concepts, WurstScript streamlines the Warcraft III modding process. It offers tools and features that boost productivity, improve code quality, and encourage innovative game development. The language's support for both Jass and Lua outputs enables developers to maintain a single codebase while targeting multiple environments, leveraging the strengths of each language.
+Historically, Warcraft III scripting meant Jass. When Reforged introduced Lua as an additional scripting option, WurstScript extended its compiler to target Lua too. Today you can write WurstScript once and compile to either Jass or Lua, depending on your map and game version, while still benefiting from WurstScript’s type system and tooling.
 
 > Note that this manual is not a beginner's tutorial and expects the reader to have prior knowledge in programming.
 [Click here for a beginner's guide.](https://wurstlang.org/tutorials/wurstbeginner.html)
 
 ### Values and Types
 
-WurstScript is a statically typed language. This means variables can only hold values of the same type. Additionally since all types are determined at compiletime,
-incorrect assignments will throw errors.
+WurstScript is statically typed: every variable has a fixed type known at compile time. That lets the compiler catch type mistakes early - for example, assigning a value of the wrong type results in a compile-time error.
 
-Wurst has the same 5 basic types (or primitives) as Jass: **null, boolean, int, real, string**
+Wurst shares Jass’s basic types: boolean, int, real and string.
 
-In this example you can see the static types of the variables on the left. If the assignment on the right isn't of the same type, it will throw an error.
+In the example below, the variable types are shown on the left. If the expression on the right doesn’t match the variable’s type, the compiler reports an error.
 ```wurst
 boolean b = true // true or false
 int i = 1337 // integer, i.e. value without decimals
@@ -212,7 +209,7 @@ The Wurst expressions in semi-formal syntax:
 Expr ::=
       Expr + Expr       // addition
     | Expr - Expr       // subtraction
-	| Expr * Expr       // multiplication
+	  | Expr * Expr       // multiplication
     | Expr / Expr       // real division
     | Expr div Expr     // integer division
     | Expr % Expr       // real modulo
