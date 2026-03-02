@@ -9,9 +9,11 @@ This folder contains the complete source of the WurstScript website, configured 
 
 ## Serving the page locally:
 
-1. Check whether you have Ruby 2.7.4 installed:
+1. Check whether you have Ruby 3.2+ installed:
 
     `ruby --version`
+
+    This project currently uses Bundler 4.x (see `Gemfile.lock`), which requires Ruby >= 3.2.
 
 2. Install Bundler:
 
@@ -19,12 +21,12 @@ This folder contains the complete source of the WurstScript website, configured 
 
 3. Execute
 
-    `bundle install`
+    `bundler install`
 
 
 4. Run the server with:
 
-    `bundle exec jekyll serve`
+    `bundler exec jekyll serve`
 
 ## Styling
 
@@ -59,7 +61,7 @@ The site now uses `pagefind` for fully local static search. No external API key 
 
 1. Build the site:
 
-    `bundle exec jekyll build`
+    `bundler exec jekyll build`
 
 2. Generate the search index into `_site/pagefind`:
 
@@ -67,12 +69,14 @@ The site now uses `pagefind` for fully local static search. No external API key 
 
 3. Serve `_site` (or deploy it). Search will load from `/pagefind/pagefind.js`.
 
+Prerequisite for indexing: Node.js (for `npx pagefind`).
+
 ### Jenkins
 
 This repo now includes a root-level `Jenkinsfile` that automatically:
 
-1. Installs Ruby gems (`bundle install`)
-2. Builds the site (`bundle exec jekyll build`)
+1. Installs Ruby gems (`bundler install`)
+2. Builds the site (`bundler exec jekyll build`)
 3. Generates Pagefind index (`npx -y pagefind --site _site`)
 4. Archives `_site/**` as build artifacts
 
