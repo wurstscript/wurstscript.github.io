@@ -1,3 +1,5 @@
+@use "mixins" as *;
+
 /* ======= Landing Page ======= */
 .landing-page {
   .header {
@@ -82,7 +84,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 870px;
+  width: min(960px, 100%);
+  padding: 0 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -90,10 +93,11 @@
 .greeting {
   display: flex;
   align-items: center;
-  margin-top: 32px;
+  margin-top: 44px;
   width: 100%;
   justify-content: space-between;
-  margin-bottom: 48px;
+  margin-bottom: 56px;
+  gap: 28px;
 
   .img-container {
     display: flex;
@@ -106,20 +110,21 @@
   }
 
   .name {
-    font-size: 52px;
+    font-size: clamp(40px, 7vw, 56px);
     font-weight: 700;
+    line-height: 1.05;
   }
 
   .tagline {
-    font-size: 24px;
-    color: var(--lt-color-gray-500);
+    font-size: clamp(20px, 3vw, 26px);
+    color: var(--text-color-secondary);
   }
 
   .btn {
     margin-top: 24px;
     font-size: 18px;
     border-radius: 12px;
-    padding: 8px 14px;
+    padding: 10px 16px;
   }
 
 }
@@ -131,7 +136,7 @@
   width: 100%;
 
   .title {
-    font-size: 32px;
+    font-size: clamp(28px, 5vw, 36px);
     font-weight: 500;
     align-self: flex-start;
     margin-bottom: 24px;
@@ -140,7 +145,7 @@
 }
 
 .tabbed {
-	overflow-x: hidden; /* so we could easily hide the radio inputs */
+	overflow-x: visible;
 	margin: 32px 0;
 	padding-bottom: 16px;
   width: 100%;
@@ -156,13 +161,15 @@
 	align-items: stretch;
 	list-style: none;
 	padding: 0;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid var(--divider-dark);
+  gap: 2px;
+  flex-wrap: wrap;
 }
 .tab > label {
 	display: block;
 	margin-bottom: -1px;
 	padding: 12px 15px;
-	border: 1px solid #ccc;
+	border: 1px solid var(--divider-dark);
 	background: var(--divider-darker);
 	color: var(--text-color);
 	font-size: 12px; 
@@ -171,17 +178,24 @@
 	letter-spacing: 1px;
 	cursor: pointer;	
 	transition: all 0.3s;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 .tab:hover label {
-	border-top-color: #333;
-	color: #333;
+	border-top-color: var(--text-color-secondary);
+	color: var(--text-color-dark);
 }
 
 .tab-content {
 	display: none;
-	color: #777;
+	color: var(--text-color-secondary);
   width: 100%;
   min-height: 260px;
+  border: 1px solid var(--divider-dark);
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  padding: 16px 20px;
+  background: var(--smoky-white);
 }
 
 /* As we cannot replace the numbers with variables or calls to element properties, the number of this selector parts is our tab count limit */
@@ -190,9 +204,9 @@
 .tabbed [type="radio"]:nth-of-type(3):checked ~ .tabs .tab:nth-of-type(3) label,
 .tabbed [type="radio"]:nth-of-type(4):checked ~ .tabs .tab:nth-of-type(4) label,
 .tabbed [type="radio"]:nth-of-type(5):checked ~ .tabs .tab:nth-of-type(5) label {
-	border-bottom-color: #fff;
-	background: #fff;
-	color: #222;
+	border-bottom-color: var(--smoky-white);
+	background: var(--smoky-white);
+	color: var(--text-color-dark);
 }
 
 .tabbed [type="radio"]:nth-of-type(1):checked ~ .tab-content:nth-of-type(1),
@@ -222,7 +236,7 @@
   width: 100%;
 
   .title {
-    font-size: 32px;
+    font-size: clamp(28px, 5vw, 36px);
     font-weight: 500;
     align-self: flex-start;
     margin-bottom: 24px;
@@ -230,25 +244,31 @@
 
   .cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 100%;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 20px;
   }
 
   .card {
     padding: 0;
-    width: 254px;
-    height: 254px;
-    border-radius: 6px;
+    width: clamp(250px, 31%, 300px);
+    min-height: 220px;
+    border-radius: 10px;
+    border: 1px solid var(--divider-dark);
+    background-color: var(--smoky-white);
+    box-shadow: 0 2px 8px rgba(20, 30, 40, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 
     &:hover {
-      border: 1px solid var(--text-color);
+      border: 1px solid var(--color-primary-light);
+      box-shadow: 0 12px 26px rgba(20, 30, 40, 0.16);
+      transform: translateY(-2px);
     }
   }
 
   .card-image {
-    height: 50%;
+    height: 150px;
     overflow: hidden;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
@@ -264,13 +284,13 @@
   }
 
   .card-content {
-    background-color: var(--divider);
-    height: 50%;
+    background-color: var(--smoky-white);
+    min-height: 0;
     width: 100%;
-    border-bottom-right-radius: 6px;
-    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     white-space: break-spaces;
-    padding: 20px 16px;
+    padding: 14px 16px 16px;
     text-align: start;
     display: flex;
     align-items: start;
@@ -283,10 +303,11 @@
       font-size: 16px;
       font-weight: 600;
       margin-top: 0;
+      margin-bottom: 8px;
     }
 
     p {
-      color: var(--lt-color-gray-500);
+      color: var(--text-color-secondary);
       font-size: 14px;
     }
 
@@ -314,7 +335,7 @@
     margin: 0 auto;
     max-width: 800px;
     margin-bottom: 40px;
-    color: var(--text-color)-secondary;
+    color: var(--text-color-secondary);
   }
   .cards-wrapper {
     max-width: 860px;
@@ -478,6 +499,10 @@
     .name {
       font-size: 42px;
     }
+  }
+
+  .news .card {
+    width: 100%;
   }
 
   .doc-header-container {

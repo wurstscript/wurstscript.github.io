@@ -24,7 +24,7 @@ layout: compress
                     <!-- BREADCRUMB -->
                     <ol class="breadcrumb">
                         <li>
-                            <a href="{{ '/' | prepend: site.baseurl }}">Home</a>
+                            <a href="{{ '/' | relative_url }}">Home</a>
                         </li>
                         <li class="active">{{ page.title }}</li>
                     </ol>
@@ -61,7 +61,8 @@ layout: compress
 
                     <!-- CONTENT -->
                     <div class="doc-content">
-                        <div class="content-inner">
+                        <div class="content-inner" data-pagefind-body>
+                            <span class="pagefind-meta" data-pagefind-meta="title">{{ page.title }}</span>
 
                             {{ content | markdownify }} {% for id in page.sections %} {% assign section = site.doc | where: "id", id | first %}
 

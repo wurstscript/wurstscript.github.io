@@ -1,10 +1,18 @@
 <!-- SIDEBAR -->
 <div class="doc-sidebar">
     <nav id="doc-nav">
-        <div id="doc-menu" data-spy="affix">
+        <div id="doc-menu">
           <div class="doc-menu-scroll">
-            <ul class="nav doc-menu hidden-xs">
+            <ul class="nav doc-menu">
               <li class="nav-heading"><a class="scrollto" href="{{page.url}}">{{ page.title }}</a></li>
+              {% if include.sections %}
+                {% for id in include.sections %}
+                  {% assign section = site.doc | where: "id", id | first %}
+                  {% if section %}
+                    <li><a class="scrollto" href="#{{ section.title | slugify }}">{{ section.title }}</a></li>
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
             </ul>
           </div>
         </div>

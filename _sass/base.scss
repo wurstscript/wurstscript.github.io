@@ -1,3 +1,5 @@
+@use "mixins" as *;
+
 @font-face {
     font-family: 'Open Sans';
     src: url('/assets/fonts/OpenSans-Medium.woff2') format('woff2'),
@@ -44,10 +46,10 @@ body {
     font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	letter-spacing: -0.025em;
     color: var(--text-color);
-    font-size: 14px;
+    font-size: 15px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    line-height: unset;
+    line-height: 1.6;
 }
 
 p {
@@ -58,6 +60,7 @@ font-size: 16px;
 
 .content-inner {
     padding-bottom: 200px;
+    animation: fade-in-up 0.35s ease-out;
 }
 
 .github-propose {
@@ -70,6 +73,13 @@ font-size: 16px;
     border-radius: 4px;
     width: 120px;
     margin-bottom: 12px;
+    background-color: var(--smoky-white);
+    transition: border-color 0.2s ease, transform 0.2s ease;
+
+    &:hover {
+        border-color: var(--divider-dark);
+        transform: translateY(-1px);
+    }
 
     svg {
         width: 24px;
@@ -81,6 +91,7 @@ font-size: 16px;
 
 .nav-heading {
     font-size: 16px;
+    font-weight: 600;
 }
 
 hr {
@@ -151,6 +162,15 @@ a {
     }
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
 .imgr {
     max-width: 100%;
     height: auto;    
@@ -163,10 +183,10 @@ pre {
 
 
 code {
-    border-radius: 10px;
+    border-radius: 6px;
     font-family: 'SFMono-Regular', 'Roboto Mono', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
     padding:2px 8px;
-    padding-top: 4px;
+    padding-top: 2px;
     display: inline-block;
 }
 
@@ -327,10 +347,11 @@ select {
 
 /* ====== Header ====== */
 .header {
-    background: var(--banner-color);
+    background: linear-gradient(120deg, var(--banner-color) 0%, #2e4963 100%);
     color: rgba(255, 255, 255, 0.85);
     border-top: 5px solid var(--color-primary);
-    padding: 16px 0px 16px 0px;
+    padding: 14px 0px 14px 0px;
+    box-shadow: 0 4px 18px rgba(18, 24, 31, 0.2);
 
 }
 
@@ -354,12 +375,16 @@ nav {
     .nav-link {
         font-size: 16px;
         font-weight: 500;
-        color: white;
+        color: rgba(255, 255, 255, 0.9);
         cursor: pointer;
         text-decoration: none;
+        border-radius: 6px;
+        padding: 4px 8px;
+        transition: background-color 0.2s ease, color 0.2s ease;
         &:hover {
             text-decoration: none;
-            color: var(--color-primary)
+            color: #fff;
+            background-color: rgba(255, 255, 255, 0.12);
         }
         &:focus {
             text-decoration: none;
@@ -367,11 +392,15 @@ nav {
     }
 }
 
+.header-spacer {
+    flex: 1;
+}
+
 .branding {
     background-color: var(--banner-color);
     text-transform: uppercase;
     margin-bottom: 10px;
-    padding: 12px;
+    padding: 12px 16px;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -380,7 +409,7 @@ nav {
         height: 32px;
     }
     .logo {
-        font-size: 28px;
+        font-size: 30px;
         margin-top: 0;
         margin-bottom: 0;
         a {
@@ -436,20 +465,118 @@ nav {
     }
 }
 
-.post-list {
-    max-width: 600px;
+.local-search-shell {
+    position: relative;
+    width: min(640px, 90vw);
+    z-index: 20;
+}
+
+#search-searchbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#search-hits {
     position: absolute;
-    right: 32px;
-    background-color: var(--divider);
+    top: calc(100% + 10px);
+    right: 0;
+    width: 100%;
+    background-color: var(--smoky-white);
     padding: 12px;
-    border-radius: 6px;
-    z-index: 10;
-    max-height: 100%;
-    overflow: scroll;
+    border-radius: 8px;
+    z-index: 30;
+    max-height: min(68vh, 640px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid var(--divider-dark);
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.18);
+}
+
+.local-search-input {
+    width: 100%;
+    border: 1px solid var(--divider-dark);
+    background-color: var(--smoky-white);
+    color: var(--text-color);
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.local-search-item {
+    border-bottom: 1px solid var(--divider);
+    padding: 12px 4px;
+    border-radius: 8px;
+    transition: background-color 0.15s ease;
+}
+
+.local-search-item:hover {
+    background-color: var(--divider);
+}
+
+.local-search-item:last-child {
+    border-bottom: none;
+}
+
+.local-search-link {
+    text-decoration: none;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.local-search-title {
+    margin: 0 0 4px;
+    font-size: 17px;
+    line-height: 1.25;
+}
+
+.local-search-snippet {
+    margin: 2px 0 0;
+    font-size: 13px;
+    color: var(--text-color-secondary);
+}
+
+.local-search-page {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-color-secondary);
+    margin-bottom: 2px;
+}
+
+.local-search-path {
+    margin: 6px 0 0;
+    font-size: 12px;
+    color: var(--light-grey);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.local-search-tag {
+    display: inline-block;
+    margin-bottom: 6px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    background-color: var(--divider);
+    color: var(--text-color-secondary);
+}
+
+.local-search-empty {
+    padding: 10px 0;
+    color: var(--text-color-secondary);
+}
+
+.pagefind-meta {
+    display: none !important;
 }
 
 .doc-header-container {
     display: flex;
+    align-items: flex-start;
 }
 
 .ais-search-box {
@@ -488,9 +615,15 @@ nav {
     width: 400px;
 }
 
+@media (max-width: 900px) {
+    .local-search-shell {
+        width: min(520px, 92vw);
+    }
+}
+
 /* ====== Footer ====== */
 .footer {
-    background: var(--banner-color);
+    background: linear-gradient(120deg, var(--banner-color) 0%, #2e4963 100%);
     color: rgba(255, 255, 255, 0.6);
     padding: 15px 0;
     a {
@@ -510,4 +643,15 @@ nav {
 
 .tag {
 	margin-right: 1rem;
+}
+
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

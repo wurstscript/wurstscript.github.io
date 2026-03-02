@@ -10,7 +10,7 @@ layout: compress
 
 {% include head.html %}
 
-<body class="body-{{ page.color }} doc-body">
+<body class="body-{{ page.color }} doc-body news-article-page">
 
     <div class="page-wrapper">
 
@@ -24,10 +24,10 @@ layout: compress
                     <!-- BREADCRUMB -->
                     <ol class="breadcrumb">
                         <li>
-                            <a href="{{ '/' | prepend: site.baseurl }}">Home</a>
+                            <a href="{{ '/' | relative_url }}">Home</a>
                         </li>
                         <li>
-                            <a href="{{ '/news' | prepend: site.baseurl }}">News</a>
+                            <a href="{{ '/news' | relative_url }}">News</a>
                         </li>
                         <li class="active">{{ page.title }}</li>
                     </ol>
@@ -41,51 +41,65 @@ layout: compress
 
         <div class="post-list" id="search-hits"></div>
 
-        <div class="doc-wrapper">
+        <div class="doc-wrapper news-article-wrapper">
 
             <div class="doc-inner">
                 <div class="doc-container">
 
                     <!-- DOCUMENT HEADER -->
-                    <div id="doc-header" class="doc-header text-center">
-
-                        <h1 class="doc-title">
-                            {{ page.title }}
-                        </h1>
-
-                        {% if page.date %}
-                        <div class="meta">
-                            <i class="fa fa-clock"></i> {{ page.date | date: '%B %d, %Y' }}
-                        </div>
-                        {% endif %} {% if page.author %}
-                        <div class="author">
-                            <i class="fa fa-user"></i> {{ page.author }}
+                    <div id="doc-header" class="doc-header news-hero">
+                        {% if page.image and page.image != "/assets/images/empty.png" %}
+                        <div class="news-hero-image">
+                            <img src="{{ page.image }}" alt="{{ page.title }}">
                         </div>
                         {% endif %}
 
+                        <div class="news-hero-meta">
+                            <span class="news-kicker">News</span>
+                            <h1 class="doc-title">
+                                {{ page.title }}
+                            </h1>
+
+                            {% if page.excerpt %}
+                            <p class="news-excerpt">{{ page.excerpt }}</p>
+                            {% endif %}
+
+                            <div class="news-meta-row">
+                                {% if page.date %}
+                                <span class="meta">
+                                    <i class="fa fa-clock"></i> {{ page.date | date: '%B %d, %Y' }}
+                                </span>
+                                {% endif %}
+                                {% if page.author %}
+                                <span class="author">
+                                    <i class="fa fa-user"></i> {{ page.author }}
+                                </span>
+                                {% endif %}
+                            </div>
+                        </div>
                     </div>
 
                     <!-- DOCUMENT BODY -->
-                    <div id="{{ page.id | slugify }}" class="post-content">
+                    <article id="{{ page.id | slugify }}" class="post-content news-post-content">
 
                         <!-- CONTENT -->
                         <div class="doc-content">
-                            <div class="">
-                                {{ content | markdownify }} {% for id in page.sections %} {% assign section = site.doc | where: "id", id | first %}
-
-                                <div id="{{ section.title | slugify }}" class="doc-section">
-                                    <h2 class="section-title">{{ section.title }}</h2>
-                                    <div class="section-block">
-                                        {{ section.content | markdownify }}
-                                    </div>
-                                </div>
-
-                                {% endfor %}
-
+                            <div class="news-article-content" data-pagefind-body>
+                                <span class="pagefind-meta" data-pagefind-meta="title">{{ page.title }}</span>
+                                {% assign news_html = content | markdownify %}
+                                {% if page.image %}
+                                {% capture image_p_1 %}<p><img src="{{ page.image }}" alt="" class="img-responsive" /></p>{% endcapture %}
+                                {% capture image_p_2 %}<p><img src="{{ page.image }}" alt="" /></p>{% endcapture %}
+                                {% capture image_p_3 %}<p><img src="{{ page.image }}" alt="" class="img-responsive"></p>{% endcapture %}
+                                {% assign news_html = news_html | replace_first: image_p_1, "" %}
+                                {% assign news_html = news_html | replace_first: image_p_2, "" %}
+                                {% assign news_html = news_html | replace_first: image_p_3, "" %}
+                                {% endif %}
+                                {{ news_html }}
                             </div>
                         </div>
 
-                    </div>
+                    </article>
 
                 </div>
 

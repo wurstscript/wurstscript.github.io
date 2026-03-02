@@ -16,7 +16,8 @@ layout: compress
 
 		{% include header.html %}
 
-		<div class="page-content">
+		<div class="page-content" data-pagefind-body>
+			<span class="pagefind-meta" data-pagefind-meta="title">{{ page.title | default: "Home" }}</span>
 
 			<div class="greeting">
 				<div>

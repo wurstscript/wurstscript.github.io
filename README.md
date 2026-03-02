@@ -55,6 +55,43 @@ Adding a standard library doc page works almost the same as tutorials.
 
 ## Building Search Index
 
-1. Set the key as environment variable `$env:ALGOLIA_API_KEY='PRIVATE_KEY'`
+The site now uses `pagefind` for fully local static search. No external API key is required.
 
-2. Run `bundle exec jekyll algolia`
+1. Build the site:
+
+    `bundle exec jekyll build`
+
+2. Generate the search index into `_site/pagefind`:
+
+    `npx -y pagefind --site _site`
+
+3. Serve `_site` (or deploy it). Search will load from `/pagefind/pagefind.js`.
+
+### Jenkins
+
+This repo now includes a root-level `Jenkinsfile` that automatically:
+
+1. Installs Ruby gems (`bundle install`)
+2. Builds the site (`bundle exec jekyll build`)
+3. Generates Pagefind index (`npx -y pagefind --site _site`)
+4. Archives `_site/**` as build artifacts
+
+To use it:
+
+1. Create a Jenkins Pipeline (or Multibranch Pipeline) job for this repository.
+2. Keep script source as `Jenkinsfile` in SCM.
+3. Ensure the Jenkins agent has Ruby/Bundler and Node.js/npm available.
+
+### Local dev with `jekyll serve`
+
+`jekyll serve` rebuilds `_site`. To keep local search working:
+
+1. Start Jekyll:
+
+    `bundler exec jekyll serve`
+
+2. In a second terminal, generate Pagefind index:
+
+    `npx -y pagefind --site _site`
+
+3. Repeat step 2 after content changes that should be searchable.
