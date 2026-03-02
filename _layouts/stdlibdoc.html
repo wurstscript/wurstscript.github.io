@@ -10,7 +10,7 @@ layout: compress
 
 {% include head.html %}
 
-<body class="body-{{ page.color }}">
+<body class="body-{{ page.color }} doc-body">
 
     <div class="page-wrapper">
 
@@ -23,10 +23,10 @@ layout: compress
                 <!-- BREADCRUMB -->
                 <ol class="breadcrumb">
                     <li>
-                        <a href="{{ '/' | prepend: site.baseurl }}">Home</a>
+                        <a href="{{ '/' | relative_url }}">Home</a>
                     </li>
 					<li>
-                        <a href="{{ '/stdlib' | prepend: site.baseurl }}">Standard Library</a>
+                        <a href="{{ '/stdlib' | relative_url }}">Standard Library</a>
                     </li>
                     <li class="active">{{ page.title }}</li>
                 </ol>

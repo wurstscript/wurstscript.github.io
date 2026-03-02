@@ -11,9 +11,18 @@ plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
 
-exclude: [vendor]
+exclude:
+  - vendor
+  - assets/plugins/elegant_font/css/index.html
+  - assets/plugins/jquery-match-height/test.html
+  - assets/plugins/jquery-scrollTo/demo
+  - assets/plugins/jquery-scrollTo/tests
+  - assets/plugins/lightbox/examples
+keep_files:
+  - pagefind
 repository: wurstscript/wurstscript.github.io
-url: https://wurstlang.org/
+url: https://wurstlang.org
+baseurl: ""
 logo: /assets/images/wurst_icon64.png
 image: /assets/images/wurst_icon300.png
 blogurl: /blog
@@ -82,7 +91,6 @@ defaults:
     values:
       layout: doc
 
-algolia:
-  index_name: wurstscript
-  application_id: 'A2BO3OY80G'
-  search_only_api_key: 'dab955d0d2f46d0fa72e845eb9ea0ff2'
+search:
+  provider: pagefind
+  pagefind_path: /pagefind/pagefind.js
