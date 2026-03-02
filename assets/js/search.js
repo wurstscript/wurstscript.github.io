@@ -28,6 +28,7 @@
   let pagefindModule = null;
   let loadingIndex = null;
   let lastQuery = "";
+  let activeSearchRun = 0;
 
   function escapeHtml(text) {
     return String(text)
@@ -248,6 +249,7 @@
     const query = input.value.trim();
     if (query === lastQuery) return;
     lastQuery = query;
+    const runId = ++activeSearchRun;
 
     if (!query) {
       renderResults("", []);
@@ -293,8 +295,10 @@
         .sort((a, b) => b.score - a.score)
         .slice(0, 12);
 
+      if (runId !== activeSearchRun || input.value.trim() !== query) return;
       renderResults(query, picked);
     } catch (_error) {
+      if (runId !== activeSearchRun || input.value.trim() !== query) return;
       renderError(
         "Search index not found. Run pagefind after jekyll build."
       );
