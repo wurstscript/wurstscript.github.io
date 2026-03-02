@@ -59,6 +59,8 @@ Adding a standard library doc page works almost the same as tutorials.
 
 The site now uses `pagefind` for fully local static search. No external API key is required.
 
+For GitHub Pages compatibility, the generated `pagefind/` folder is committed to this repository.
+
 1. Build the site:
 
     `bundler exec jekyll build`
@@ -67,9 +69,38 @@ The site now uses `pagefind` for fully local static search. No external API key 
 
     `npx -y pagefind --site _site`
 
-3. Serve `_site` (or deploy it). Search will load from `/pagefind/pagefind.js`.
+3. Sync the generated index into tracked `pagefind/`:
+
+    `rm -rf pagefind && cp -R _site/pagefind ./pagefind`
+
+   PowerShell equivalent:
+
+    `if (Test-Path pagefind) { Remove-Item -Recurse -Force pagefind }; Copy-Item -Recurse _site/pagefind ./pagefind`
+
+4. Serve `_site` (or deploy it). Search will load from `/pagefind/pagefind.js`.
 
 Prerequisite for indexing: Node.js (for `npx pagefind`).
+
+### Pre-commit Hook For Indexing
+
+Set up repo hooks once:
+
+`git config core.hooksPath .githooks`
+
+Then every commit will:
+
+1. Build Jekyll
+2. Generate Pagefind index
+3. Sync `_site/pagefind` to tracked `pagefind/`
+4. Auto-stage `pagefind/`
+
+To bypass once:
+
+`SKIP_PAGEFIND_HOOK=1 git commit ...`
+
+PowerShell equivalent:
+
+`$env:SKIP_PAGEFIND_HOOK='1'; git commit ...; Remove-Item Env:SKIP_PAGEFIND_HOOK`
 
 ### Jenkins
 

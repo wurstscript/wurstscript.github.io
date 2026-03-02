@@ -1,0 +1,70 @@
+#!/usr/bin/env sh
+
+set -eu
+
+if [ "${SKIP_PAGEFIND_HOOK:-}" = "1" ]; then
+  echo "[pre-commit] Skipping Pagefind hook (SKIP_PAGEFIND_HOOK=1)."
+  exit 0
+fi
+
+is_windows=0
+case "$(uname -s 2>/dev/null || echo unknown)" in
+  MINGW*|MSYS*|CYGWIN*) is_windows=1 ;;
+esac
+
+if [ "$is_windows" -eq 1 ]; then
+  POWERSHELL_EXE="${SystemRoot:-C:\\Windows}\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+  if [ ! -x "$POWERSHELL_EXE" ]; then
+    POWERSHELL_EXE="powershell.exe"
+  fi
+
+  echo "[pre-commit] Building site + index via PowerShell..."
+  "$POWERSHELL_EXE" -NoProfile -ExecutionPolicy Bypass -Command "\
+    \$ErrorActionPreference = 'Stop'; \
+    if (Get-Command bundler.bat -ErrorAction SilentlyContinue) { \$bundle = 'bundler.bat' } \
+    elseif (Get-Command bundle.bat -ErrorAction SilentlyContinue) { \$bundle = 'bundle.bat' } \
+    elseif (Get-Command bundler -ErrorAction SilentlyContinue) { \$bundle = 'bundler' } \
+    elseif (Get-Command bundle -ErrorAction SilentlyContinue) { \$bundle = 'bundle' } \
+    else { throw 'Bundler executable not found.' }; \
+    if (Get-Command npx.cmd -ErrorAction SilentlyContinue) { \$npx = 'npx.cmd' } \
+    elseif (Get-Command npx -ErrorAction SilentlyContinue) { \$npx = 'npx' } \
+    else { throw 'npx executable not found. Install Node.js.' }; \
+    & \$bundle exec jekyll build | Out-Null; \
+    & \$npx -y pagefind --site _site | Out-Null; \
+    if (Test-Path pagefind) { Remove-Item -Recurse -Force pagefind }; \
+    Copy-Item -Recurse _site/pagefind ./pagefind; \
+    git add pagefind; \
+  "
+  echo "[pre-commit] Pagefind index staged."
+  exit 0
+else
+  if command -v bundler >/dev/null 2>&1; then
+    BUNDLE_CMD="bundler"
+  elif command -v bundle >/dev/null 2>&1; then
+    BUNDLE_CMD="bundle"
+  else
+    echo "[pre-commit] bundler/bundle is required but was not found."
+    exit 1
+  fi
+
+  if command -v npx >/dev/null 2>&1; then
+    NPX_CMD="npx"
+  else
+    echo "[pre-commit] npx is required but was not found."
+    echo "[pre-commit] Install Node.js, or set SKIP_PAGEFIND_HOOK=1 to bypass."
+    exit 1
+  fi
+fi
+
+echo "[pre-commit] Building Jekyll site..."
+$BUNDLE_CMD exec jekyll build >/dev/null
+
+echo "[pre-commit] Generating Pagefind index..."
+$NPX_CMD -y pagefind --site _site >/dev/null
+
+echo "[pre-commit] Syncing pagefind/ directory..."
+rm -rf pagefind
+cp -R _site/pagefind ./pagefind
+
+git add pagefind
+echo "[pre-commit] Pagefind index staged."
