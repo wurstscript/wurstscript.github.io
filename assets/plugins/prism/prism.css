@@ -34,30 +34,32 @@ pre[class*="language-"] {
 	border-radius: 0.3em;
 }
 
-:not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: var(--smoky-white);
+	background: var(--code-bg);
+	border: 1px solid var(--code-border);
 }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
+	background: var(--code-inline-bg);
+	border: 1px solid var(--code-inline-border);
+	padding: .08em .4em;
+	border-radius: .35em;
 }
 
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	color: #608b4e;
+	color: var(--prism-comment);
 }
 
 .token.punctuation {
-	color: #569cd6;
+	color: var(--prism-punctuation);
 }
 
 .token.annotation {
-	color: #569cd6;
+	color: var(--prism-annotation);
 }
 
 .namespace {
@@ -67,76 +69,76 @@ pre[class*="language-"] {
 .token.property,
 .token.keyword,
 .token.tag {
-    color: #c586c0;
+    color: var(--prism-keyword);
 }
 
 .token.class-name {
-	color: #FFFFB6;
-	text-decoration: underline;
+	color: var(--prism-class-name);
+	text-decoration: none;
 }
 
 .token.boolean,
 .token.constant {
-    color: #99CC99;
+    color: var(--prism-boolean);
 }
 
 .token.symbol,
 .token.deleted {
-	color: #f92672;
+	color: var(--prism-symbol);
 }
 
 .token.number {
-	color: #b5cea8;
+	color: var(--prism-number);
 }
 .token.string,
 .token.char {
-	color: #ce9169;
+	color: var(--prism-string);
 }
 
 .token.selector,
 .token.attr-name,
 .token.builtin,
 .token.inserted {
-	color: #569cd6;
+	color: var(--prism-selector);
 }
 
 .token.variable {
-	color: #C6C5FE;
+	color: var(--prism-variable);
 }
 
 .token.operator {
-    color: #d7ba7d;
+    color: var(--prism-operator);
 }
 
 .token.entity {
-    color: #FFFFB6;
+    color: var(--prism-operator);
     /* text-decoration: underline; */
 }
 
 .token.url {
-    color: #96CBFE;
+    color: var(--prism-url);
 }
 
 .language-css .token.string,
 .style .token.string {
-	color: #87C38A;
+	color: var(--prism-css-string);
 }
 
 .token.atrule,
 .token.attr-value {
-    color: #F9EE98;
+    color: var(--prism-atrule);
 }
 
 .token.function {
-	color: #c5c8c6;
+	color: var(--prism-function);
 }
 
 .token.regex {
-    color: #E9C062;
+    color: var(--prism-regex);
 }
 
 .token.important {
-	color: #fd971f;
+	color: var(--prism-important);
 }
 
 .token.important,
@@ -186,7 +188,7 @@ pre.line-numbers > code {
 
 .line-numbers-rows > span:before {
 	content: counter(linenumber);
-	color: #5C6370;
+	color: var(--code-line-number);
 	display: block;
 	padding-right: 0.8em;
 	text-align: right;

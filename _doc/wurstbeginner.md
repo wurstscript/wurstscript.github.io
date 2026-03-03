@@ -12,7 +12,7 @@ image: /assets/images/wurst-beginner.jpg
 ---
 
 {: .question}
-*&nbsp;*{: .fa .fa-question-circle} Wurst not installed yet? Follow the __[Setup Guide](../start.html)__ and create a new Project.
+*&nbsp;*{: .fa .fa-question-circle} Wurst not installed yet? Follow the __[Setup Guide](https://wurstlang.org/start)__ and create or open a project in VSCode.
 
 {: .answer}
 *&nbsp;*{: .fa .fa-exclamation-circle} This guide expects the reader to have **basic** knowledge of functions and variables.
@@ -25,13 +25,17 @@ This guide will **not** explain the core principles of programming, i.e. how fun
 
 ## Project Structure
 
-If you setup your project correctly using the setup app, there will be many folders and files generated in the project folder you chose.
-Otherwise setup your project now.
-Load the project in VSCode by opening the project folder (`File` -> `Open Folder...`).
-It is important to open the project **folder** so that Wurst can detect the project.
-After opening you should see something like this:
+Wurst projects are now set up through the VSCode extension.
+Create a new project via `F1` -> `Wurst: New Wurst Project`, or open an existing project folder.
+If you opened an existing project with dependencies, run:
 
-![](/assets/images/beginner/ProjectExplorer.png){: .img-rounded .img-responsive}
+```bash
+grill install
+```
+
+Open the project folder in VSCode (`File` -> `Open Folder...`). After opening, you should see something like this:
+
+![](/assets/images/beginner/initial-project.png){: .img-rounded .img-responsive}
 
 Let's go through all the files:
 - **/_build** Contains dynamically generated content and shouldn't be touched by the user, except for copying the compiled map.
@@ -42,7 +46,6 @@ Let's go through all the files:
 - **ExampleMap.w3x** An example tft map containing a Bloodmage
 - **wurst_run.args** Defines a set of flags to use when running a map from VSCode
 - **wurst.build** Contains project build information
-- **wurst.dependencies** Generated file that links libraries. Shouldn't be touched.
 - **wurst/Hello.wurst** Demo package
 
 {: .answer}
@@ -50,10 +53,10 @@ Let's go through all the files:
 
 ## Hello Wurst
 
-Open the **Hello.wurst** file inside the **wurst** folder to start the wurst plugin.
-Run the project by opening the command console `F1` and using the `>runmap` command.
+Open the **Hello.wurst** file inside the **wurst** folder.
+To run your map, open any `.wurst` file or a `.w3x`/`.w3m` file and click the run button in VSCode.
 
-![](/assets/images/beginner/RunMap.png){: .img-responsive .img-rounded}
+![](/assets/images/news/run-btn.webp){: .img-responsive .img-rounded}
 
 The text **Hello World** will be displayed.
 
@@ -114,8 +117,7 @@ WurstScript ships with a standard library that contains a vast collection of con
 
 > The standard library documentation can be found [HERE](https://wurstlang.org/stdlib)
 
-It has been automatically imported when you created your project using the setup tool and is now inside the `_build/dependencies/wurststdlib2` folder in your project's root. Since this is an external dependency, you should not modify these files. However, feel free to look at and learn from them.
-To update your stdanrd library dependency, use the setup's `Import` functionality.
+The standard library is available as a project dependency and can be found under `_build/dependencies/` after project installation. Since this is external dependency code, you should not modify it directly. However, feel free to browse it and learn from it.
 
 You can visit the `Printing` package in vscode by holding down the ctrl key and then clicking the function call, i.e. anywhere on the
 word **print**.
@@ -228,11 +230,20 @@ Think of `ExampleMap.w3x` as a "terrain" map. It's the place you go to make terr
 
 The terrain map is used read-only by wurst, meaning that wurst never edits or saves over that file. This is nice because it means you can edit the terrain in the world editor and the code in vscode at the same time.
 
-When you execute the `buildmap` task in vscode, the output mapfile - based on the terrain and `wurst.build` file, including all of your compiled code - is generated into the `/_build` folder.
+Map metadata for build output is defined in `wurst.build`, for example:
+
+```yaml
+buildMapData:
+  name: My Wurst Map
+  fileName: my_wurst_map
+  author: YourName
+```
+
+When you run `F1` -> `Wurst: Build Wurst Map`, the output mapfile is generated into the `/_build` folder using that build data plus your compiled code.
 
 It's this which you can use to release and distribute your map online.
 
-The `runmap` command functions similar, however the map is named __WurstRunMap.w3x__, gets copied into your warcraft maps folder and Warcraft III gets executed with the appropriate arguments to run the map. Use this command to test your map.
+Running from the run button works similarly, but uses a temporary run map (`WurstRunMap.w3x`) and starts Warcraft III with the proper run arguments for quick testing.
 
 One other cool feature is that wurst will automatically import contents of the `imports/` directory into the built mapfile. This can be convenient for quickly adding a model file for use in a spell, for example. The folder paths inside the imports folder will be retained.
 

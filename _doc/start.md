@@ -79,5 +79,6 @@ grill install https://github.com/Frotty/wurst-astar-jps
 
 ---
 
-If you are new to WurstScript, continue with the
-[*&nbsp;*{: .fa .fa-external-link-square} Beginner's Guide](tutorials/wurstbeginner.html).
+If you are new to WurstScript, continue with the beginner walkthrough:
+
+[*&nbsp;*{: .fa .fa-external-link-square} Open Beginner Guide](https://wurstlang.org/wurstbeginner){: .btn .btn-primary}

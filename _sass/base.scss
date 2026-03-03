@@ -67,7 +67,7 @@ font-size: 16px;
     gap: 8px;
     font-size: 16px;
     padding: 6px;
-    border: 1px solid #d7d7d7;
+    border: 1px solid var(--divider-dark);
     border-radius: 4px;
     width: 120px;
     margin-bottom: 12px;
@@ -82,7 +82,7 @@ font-size: 16px;
     svg {
         width: 24px;
         height: 24px;
-        background-color: white;
+        background-color: var(--surface-1);
         border-radius: 100%;
     }
 }
@@ -181,6 +181,8 @@ pre {
 
 
 code {
+    background: var(--code-inline-bg);
+    color: var(--text-color-dark);
     border-radius: 6px;
     font-family: 'SFMono-Regular', 'Roboto Mono', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
     padding:2px 8px;
@@ -209,10 +211,10 @@ pre > code {
 .btn-primary, a.btn-primary {
     background: var(--color-primary);
     border: 1px solid var(--color-primary);
-    color: #fff !important;
+    color: var(--text-on-brand) !important;
     &:hover, &:focus, &:active, &.active, &.hover {
         background: var(--color-primary-dark);
-        color: #fff !important;
+        color: var(--text-on-brand) !important;
         border: 1px solid var(--color-primary-dark);
     }
 }
@@ -220,16 +222,16 @@ pre > code {
 .btn-green, a.btn-green {
     background: var(--color-green);
     border: 1px solid var(--color-green);
-    color: #fff !important;
+    color: var(--text-on-brand) !important;
     &:hover, &:focus, &:active, &.active, &.hover {
         background: var(--color-green-dark);
-        color: #fff !important;
+        color: var(--text-on-brand) !important;
         border: 1px solid var(--color-green-dark);
     }
     .body-green & {
-        color: #fff !important;
+        color: var(--text-on-brand) !important;
         &:hover, &:focus, &:active, &.active, &.hover {
-            color: #fff !important;
+            color: var(--text-on-brand) !important;
         }
     }
 }
@@ -237,10 +239,10 @@ pre > code {
 .btn-blue, a.btn-blue {
     background: var(--color-blue);
     border: 1px solid var(--color-blue);
-    color: #fff !important;
+    color: var(--text-on-brand) !important;
     &:hover, &:focus, &:active, &.active, &.hover {
         background: var(--color-blue-dark);
-        color: #fff !important;
+        color: var(--text-on-brand) !important;
         border: 1px solid var(--color-blue-dark);
     }
 }
@@ -248,10 +250,10 @@ pre > code {
 .btn-orange, a.btn-orange {
     background: var(--color-orange);
     border: 1px solid var(--color-orange);
-    color: #fff !important;
+    color: var(--text-on-brand) !important;
     &:hover, &:focus, &:active, &.active, &.hover {
         background: var(--color-orange-dark);
-        color: #fff !important;
+        color: var(--text-on-brand) !important;
         border: 1px solid var(--color-orange-dark);
     }
 }
@@ -259,10 +261,10 @@ pre > code {
 .btn-red, a.btn-red {
     background: var(--color-red);
     border: 1px solid var(--color-red);
-    color: #fff !important;
+    color: var(--text-on-brand) !important;
     &:hover, &:focus, &:active, &.active, &.hover {
         background: var(--color-red-dark);
-        color: #fff !important;
+        color: var(--text-on-brand) !important;
         border: 1px solid var(--color-red-dark);
     }
 }
@@ -270,10 +272,10 @@ pre > code {
 .btn-pink, a.btn-pink {
     background: var(--color-pink);
     border: 1px solid var(--color-pink);
-    color: #fff !important;
+    color: var(--text-on-brand) !important;
     &:hover, &:focus, &:active, &.active, &.hover {
         background: var(--color-pink-dark);
-        color: #fff !important;
+        color: var(--text-on-brand) !important;
         border: 1px solid var(--color-pink-dark);
     }
 
@@ -282,10 +284,10 @@ pre > code {
 .btn-purple, a.btn-purple {
     background: var(--color-purple);
     border: 1px solid var(--color-purple);
-    color: #fff !important;
+    color: var(--text-on-brand) !important;
     &:hover, &:focus, &:active, &.active, &.hover {
         background: var(--color-purple-dark);
-        color: #fff !important;
+        color: var(--text-on-brand) !important;
         border: 1px solid var(--color-purple-dark);
     }
 }
@@ -318,7 +320,7 @@ select {
 
 #topcontrol {
     background: var(--color-primary);
-    color: #fff;
+    color: var(--text-on-brand);
     text-align: center;
     display: inline-block;
     width: 35px;
@@ -345,11 +347,11 @@ select {
 
 /* ====== Header ====== */
 .header {
-    background: linear-gradient(120deg, var(--banner-color) 0%, #2e4963 100%);
-    color: rgba(255, 255, 255, 0.85);
+    background: linear-gradient(120deg, var(--header-grad-start) 0%, var(--header-grad-end) 100%);
+    color: var(--text-on-brand);
     border-top: 5px solid var(--color-primary);
     padding: 14px 0px 14px 0px;
-    box-shadow: 0 4px 18px rgba(18, 24, 31, 0.2);
+    box-shadow: var(--shadow-medium);
 
 }
 
@@ -373,7 +375,7 @@ nav {
     .nav-link {
         font-size: 16px;
         font-weight: 500;
-        color: rgba(255, 255, 255, 0.9);
+        color: var(--text-on-brand);
         cursor: pointer;
         text-decoration: none;
         border-radius: 6px;
@@ -381,8 +383,8 @@ nav {
         transition: background-color 0.2s ease, color 0.2s ease;
         &:hover {
             text-decoration: none;
-            color: #fff;
-            background-color: rgba(255, 255, 255, 0.12);
+            color: var(--text-on-brand);
+            background-color: var(--overlay-light-65);
         }
         &:focus {
             text-decoration: none;
@@ -395,7 +397,7 @@ nav {
 }
 
 .branding {
-    background-color: var(--banner-color);
+    background-color: transparent;
     text-transform: uppercase;
     margin-bottom: 10px;
     padding: 12px 16px;
@@ -437,7 +439,7 @@ nav {
     }
     .text-bold {
         font-weight: 800;
-        color: #fff;
+        color: var(--text-on-brand);
     }
     .icon {
         font-size: 24px;
@@ -487,7 +489,7 @@ nav {
     overflow-y: auto;
     overflow-x: hidden;
     border: 1px solid var(--divider-dark);
-    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.18);
+    box-shadow: var(--shadow-pop);
 }
 
 .local-search-input {
@@ -508,7 +510,7 @@ nav {
 }
 
 .local-search-item:hover {
-    background-color: var(--divider);
+    background-color: var(--search-item-hover-bg);
 }
 
 .local-search-item:last-child {
@@ -525,6 +527,7 @@ nav {
     margin: 0 0 4px;
     font-size: 17px;
     line-height: 1.25;
+    color: var(--text-color);
 }
 
 .local-search-snippet {
@@ -559,7 +562,7 @@ nav {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.04em;
-    background-color: var(--divider);
+    background-color: var(--search-tag-bg);
     color: var(--text-color-secondary);
 }
 
@@ -591,14 +594,14 @@ nav {
     margin-bottom: 0;
     padding: 0;
     li {
-        color: rgba(255, 255, 255, 0.5);
+        color: var(--text-on-brand-muted);
         &.active {
-            color: rgba(255, 255, 255, 0.5);
+            color: var(--text-on-brand-muted);
         }
         a {
-            color: rgba(255, 255, 255, 0.5);
+            color: var(--text-on-brand-muted);
             &:hover {
-                color: #fff;
+                color: var(--text-on-brand);
             }
         }
     }
@@ -606,7 +609,7 @@ nav {
 }
 
 .breadcrumb>li+li:before {
-    color: rgba(0, 0, 0, 0.4);
+    color: var(--text-on-brand-muted);
 }
 
 .alertbox {
@@ -621,8 +624,8 @@ nav {
 
 /* ====== Footer ====== */
 .footer {
-    background: linear-gradient(120deg, var(--banner-color) 0%, #2e4963 100%);
-    color: rgba(255, 255, 255, 0.6);
+    background: linear-gradient(120deg, var(--header-grad-start) 0%, var(--header-grad-end) 100%);
+    color: var(--text-on-brand-muted);
     padding: 15px 0;
     a {
         color: var(--color-primary);
@@ -641,6 +644,12 @@ nav {
 
 .tag {
 	margin-right: 1rem;
+}
+
+mark,
+.ais-Highlight {
+    background-color: var(--search-highlight-bg);
+    color: var(--search-highlight-fg);
 }
 
 @keyframes fade-in-up {

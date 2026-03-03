@@ -57,6 +57,17 @@ $(document).ready(function () {
     $(this).ekkoLightbox();
   });
 
+  // Apply Wurst syntax highlighting to inline code snippets in docs/news.
+  if (window.Prism) {
+    const inlineCodeNodes = document.querySelectorAll(
+      ".doc-content :not(pre) > code:not([class*='language-']), .news-article-content :not(pre) > code:not([class*='language-'])"
+    );
+    inlineCodeNodes.forEach((codeEl) => {
+      Prism.util.setLanguage(codeEl, "wurst");
+      Prism.highlightElement(codeEl);
+    });
+  }
+
   const navContainer = document.querySelector(".doc-menu");
   if (!navContainer) {
     return;
@@ -145,4 +156,3 @@ $(document).ready(function () {
   }
   updateActive();
 });
-

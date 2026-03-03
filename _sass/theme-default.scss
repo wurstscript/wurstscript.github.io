@@ -49,6 +49,85 @@
     --divider: hsl(216, 20%, 88%);
     --divider-dark: hsl(216, 20%, 80%);
     --divider-darker: hsl(216, 20%, 72%);
+
+    --text-on-brand: rgba(255, 255, 255, 0.9);
+    --text-on-brand-muted: rgba(255, 255, 255, 0.68);
+    --text-on-brand-soft: rgba(223, 252, 255, 0.82);
+
+    --surface-0: var(--smoky-grey);
+    --surface-1: var(--smoky-white);
+    --surface-2: #f7fafd;
+    --surface-3: #eef4f8;
+    --surface-overlay: rgba(255, 255, 255, 0.78);
+
+    --header-grad-start: var(--banner-color);
+    --header-grad-end: #2e4963;
+    --hero-grad-start: #2a3e57;
+    --hero-grad-mid: #335276;
+    --hero-grad-end: #3b6b86;
+
+    --shadow-soft: 0 2px 8px rgba(20, 30, 40, 0.08);
+    --shadow-medium: 0 10px 24px rgba(14, 24, 38, 0.08);
+    --shadow-strong: 0 12px 32px rgba(14, 24, 38, 0.1);
+    --shadow-pop: 0 14px 36px rgba(0, 0, 0, 0.18);
+
+    --overlay-dark-25: rgba(0, 0, 0, 0.25);
+    --overlay-dark-35: rgba(0, 0, 0, 0.35);
+    --overlay-dark-50: rgba(0, 0, 0, 0.5);
+    --overlay-light-65: rgba(255, 255, 255, 0.65);
+
+    --search-item-hover-bg: var(--divider);
+    --search-tag-bg: var(--divider);
+    --search-highlight-bg: #fff7d6;
+    --search-highlight-fg: #222;
+
+    --doc-shell-glow-1: rgba(70, 170, 210, 0.08);
+    --doc-shell-glow-2: rgba(46, 130, 180, 0.08);
+    --doc-header-bg-start: rgba(255, 255, 255, 0.98);
+    --doc-header-bg-end: rgba(246, 250, 253, 0.95);
+    --doc-pre-bg-start: #fcfdff;
+    --doc-pre-bg-end: #f6f9fc;
+    --doc-pre-inner-shine: rgba(255, 255, 255, 0.45);
+    --doc-table-bg: #fff;
+    --doc-sidebar-border: var(--divider-dark);
+    --doc-menu-bg: var(--surface-overlay);
+    --doc-active-bg: color-mix(in srgb, var(--color-primary) 15%, white);
+
+    --why-feature-bg-start: #f9fbfd;
+    --why-feature-bg-end: var(--surface-1);
+    --why-feature-icon-bg: #eef7f7;
+    --why-feature-icon-fg: #2ea9af;
+    --why-inline-code-border: #cde4e5;
+    --why-inline-code-bg: #f7fbfc;
+    --card-image-grad-start: #4158d0;
+    --card-image-grad-mid: #508ac8;
+    --card-image-grad-end: #3eb1be;
+    --drop-shadow-color: #000;
+
+    --code-bg: var(--surface-1);
+    --code-inline-bg: var(--divider);
+    --code-inline-border: #c2ccd9;
+    --code-border: var(--divider-dark);
+    --code-line-number: #5c6370;
+
+    --prism-comment: #3f5e36;
+    --prism-punctuation: #244668;
+    --prism-annotation: #0f4f78;
+    --prism-keyword: #7a1f78;
+    --prism-class-name: #5f4300;
+    --prism-boolean: #2f6b2f;
+    --prism-symbol: #c23865;
+    --prism-number: #1f5f7f;
+    --prism-string: #7a3f0f;
+    --prism-selector: #0f4f78;
+    --prism-variable: #4b2d8f;
+    --prism-operator: #6b4e00;
+    --prism-url: #0f4f78;
+    --prism-css-string: #2f6b2f;
+    --prism-atrule: #604a00;
+    --prism-function: #194287;
+    --prism-regex: #6f4300;
+    --prism-important: #9f4d00;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -112,17 +191,96 @@
     --color-purple-darkest: hsl(283, 45%, 30%);
 
     --banner-color: hsl(216, 24%, 31%);
-    --text-color: hsl(225, 25%, 97%);
-    --text-color-dark: hsl(225, 25%, 82%);
-    --text-color-secondary: hsl(216, 24%, 41%);
+    --text-color: hsl(222, 28%, 95%);
+    --text-color-dark: hsl(222, 26%, 89%);
+    --text-color-secondary: hsl(220, 21%, 70%);
     --grey: hsl(216, 24%, 41%);
     --light-grey: hsl(216, 24%, 46%);
     --black: #000;
     --smoky-white: #1e2023;
     --smoky-grey: #222428;
     --divider: #383a3e;
-    --divider-dark: #222428;
-    --divider-darker: #1e2023;
+    --divider-dark: #4b4f55;
+    --divider-darker: #5a6068;
+
+    --text-on-brand: rgba(238, 244, 255, 0.94);
+    --text-on-brand-muted: rgba(211, 223, 241, 0.72);
+    --text-on-brand-soft: rgba(177, 214, 235, 0.82);
+
+    --surface-0: #1b1e24;
+    --surface-1: #242830;
+    --surface-2: #2b3038;
+    --surface-3: #313843;
+    --surface-overlay: rgba(32, 36, 44, 0.92);
+
+    --header-grad-start: #1d2838;
+    --header-grad-end: #273b53;
+    --hero-grad-start: #1d2c40;
+    --hero-grad-mid: #27415d;
+    --hero-grad-end: #2f5371;
+
+    --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.35);
+    --shadow-medium: 0 10px 24px rgba(0, 0, 0, 0.4);
+    --shadow-strong: 0 12px 32px rgba(0, 0, 0, 0.45);
+    --shadow-pop: 0 14px 36px rgba(0, 0, 0, 0.55);
+
+    --overlay-dark-25: rgba(0, 0, 0, 0.35);
+    --overlay-dark-35: rgba(0, 0, 0, 0.45);
+    --overlay-dark-50: rgba(0, 0, 0, 0.62);
+    --overlay-light-65: rgba(255, 255, 255, 0.12);
+
+    --search-item-hover-bg: #2e333c;
+    --search-tag-bg: #313742;
+    --search-highlight-bg: #c4a64f;
+    --search-highlight-fg: #111;
+
+    --doc-shell-glow-1: rgba(74, 120, 168, 0.12);
+    --doc-shell-glow-2: rgba(59, 98, 142, 0.09);
+    --doc-header-bg-start: #313949;
+    --doc-header-bg-end: #293342;
+    --doc-pre-bg-start: #1a1f28;
+    --doc-pre-bg-end: #171c24;
+    --doc-pre-inner-shine: rgba(255, 255, 255, 0.06);
+    --doc-table-bg: #262b34;
+    --doc-sidebar-border: #4a5059;
+    --doc-menu-bg: rgba(36, 42, 52, 0.97);
+    --doc-active-bg: color-mix(in srgb, var(--color-primary) 22%, #1f2530);
+
+    --why-feature-bg-start: #2a3039;
+    --why-feature-bg-end: #232933;
+    --why-feature-icon-bg: #273640;
+    --why-feature-icon-fg: #4cc2cc;
+    --why-inline-code-border: #396777;
+    --why-inline-code-bg: #1d2530;
+    --card-image-grad-start: #24356f;
+    --card-image-grad-mid: #2f5f8f;
+    --card-image-grad-end: #2b7f90;
+    --drop-shadow-color: rgba(0, 0, 0, 0.95);
+
+    --code-bg: #1a1f28;
+    --code-inline-bg: #323844;
+    --code-inline-border: #4a5261;
+    --code-border: #4a5261;
+    --code-line-number: #8f9aad;
+
+    --prism-comment: #89b37a;
+    --prism-punctuation: #9fc1e6;
+    --prism-annotation: #7acde8;
+    --prism-keyword: #d493d7;
+    --prism-class-name: #e0c073;
+    --prism-boolean: #8cd08c;
+    --prism-symbol: #f37ea8;
+    --prism-number: #86c2e6;
+    --prism-string: #e2b07b;
+    --prism-selector: #7acde8;
+    --prism-variable: #ba9cff;
+    --prism-operator: #dfc07c;
+    --prism-url: #8ecff0;
+    --prism-css-string: #93d0a2;
+    --prism-atrule: #e1c37d;
+    --prism-function: #9fb7ff;
+    --prism-regex: #e4ba7a;
+    --prism-important: #ffac55;
   }
 }
 
