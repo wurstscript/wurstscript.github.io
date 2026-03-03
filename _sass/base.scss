@@ -396,6 +396,12 @@ nav {
     flex: 1;
 }
 
+header.branding {
+    background: linear-gradient(120deg, var(--header-grad-start) 0%, var(--header-grad-end) 100%);
+    border-top: 5px solid var(--color-primary);
+    box-shadow: var(--shadow-medium);
+}
+
 .branding {
     background-color: transparent;
     text-transform: uppercase;
