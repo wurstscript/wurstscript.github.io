@@ -1,13 +1,13 @@
 <header class="branding">
     <img src="/assets/images/wurst_icon64.png" class="logo">
-    <a class="branding-text" href="/">
+    <a class="branding-text" href="{{ '/' | relative_url }}">
         <span class="text-highlight">{{ site.branding.highlight }}</span><span class="text-bold">{{ site.branding.bold }}<br></span>
     </a>
     <nav>
-        <a class="nav-link" href="/start">Installation</a>
-        <a class="nav-link" href="/documentation">Documentation</a>
-        <a class="nav-link" href="/community">Community</a>
-        <a class="nav-link" href="/news">News</a>
+        <a class="nav-link" href="{{ '/start.html' | relative_url }}">Installation</a>
+        <a class="nav-link" href="{{ '/documentation.html' | relative_url }}">Documentation</a>
+        <a class="nav-link" href="{{ '/community.html' | relative_url }}">Community</a>
+        <a class="nav-link" href="{{ '/news.html' | relative_url }}">News</a>
         <a class="nav-link" href="https://bin.wurstlang.org/">Pastebin</a>
     </nav>
     <div class="header-spacer"></div>

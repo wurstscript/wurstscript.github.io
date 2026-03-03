@@ -55,51 +55,43 @@ layout: compress
 				<p>WurstScript is a programming language and modding toolkit used to create Warcraft III maps with ease.
 					It supports Warcraft III reforged and older versions by producing either Jass or Lua code.</p>
 
-				<div class="tabbed">
-					<input type="radio" id="tab1" name="css-tabs" checked>
-					<input type="radio" id="tab2" name="css-tabs">
-					<input type="radio" id="tab3" name="css-tabs">
-					
-					<ul class="tabs">
-						<li class="tab"><label for="tab1">Look and Feel</label></li>
-						<li class="tab"><label for="tab2">Compiletime</label></li>
-						<li class="tab"><label for="tab3">Optimizations</label></li>
-					</ul>
-					
-					<div class="tab-content">
-						<h4>WurstScript is a strongly typed language with indentation syntax. </h4>
-						<pre class="language-wurst">
-							<code class="language-wurst">init
-	EventListener.onCast(ABIL_ID) caster ->
-		forUnitsOfPlayer(caster.getOwner()) u ->
-			u..addMana(100)
-			..addHP(100)
-			..addEffect(Abilities.faerieFireTarget, AttachmentPoints.chest)</code>
-						</pre>
-					</div>
-					
-					<div class="tab-content">
-						<h4>WurstScript supports interpreting code at compiletime. This includes the generation of map data objects, such as units, abilities and items.</h4>
-						<pre class="language-wurst">
-							<code class="language-wurst">constant UNIT_ID = compiletime(UNIT_ID_GEN.next)
+				<p class="why-special">
+					Built for serious Warcraft III projects: expressive language design, compiletime generation, and performance-first compilation.
+				</p>
 
-@compiletime
-function createUnit()
-	new ZombieDefinition(UNIT_ID, UnitIds.dalaranmutant)
-	..setName("Custom Unit")
-	..setArmorType(ArmorType.Unarmored)
-	..setAttack1TargetsAllowed(commaList(TargetsAllowed.ground, TargetsAllowed.structure, TargetsAllowed.debris))
-							</code>
-						</pre>
-					</div>
-					<div class="tab-content">
-						<h4>WurstScript differentiates itself in the Warcraft III map development landscape through its powerful inbuilt optimizers and a robust build pipeline. This makes WurstScript an ideal choice for developers aiming for both performance and convenience.</h4>
-						<ul class="why-list">
-							<li><strong>Constant and Copy Propagation:</strong> Simplifies code by substituting variables with their known constant values, reducing runtime complexity.</li>
-							<li><strong>Branch & Variable Merging:</strong> Optimizes code structure by merging compatible variables and control flow branches, leading to more efficient execution paths. </li>
-							<li><strong>Function & Variable Inlining:</strong> Increases execution speed by integrating small functions directly into their calling locations, minimizing function call overhead. </li>
-						</ul>
-					</div>
+				<div class="why-feature-stack">
+					<article class="why-feature">
+						<div class="why-feature-icon"><i class="fa fa-code"></i></div>
+						<div class="why-feature-text">
+							<p class="why-feature-key">Type System</p>
+							<h3>Write map logic that stays maintainable.</h3>
+							<p>Strong typing + clean syntax + extension methods.</p>
+							<pre class="language-wurst why-inline-code"><code class="language-wurst">u..addMana(100)
+ ..addHP(100)</code></pre>
+						</div>
+					</article>
+
+					<article class="why-feature">
+						<div class="why-feature-icon"><i class="fa fa-cube"></i></div>
+						<div class="why-feature-text">
+							<p class="why-feature-key">Compiletime</p>
+							<h3>Generate map objects before runtime.</h3>
+							<p>Create units, abilities, and items from code with consistent IDs and less manual editor work.</p>
+							<pre class="language-wurst why-inline-code"><code class="language-wurst">@compiletime
+new ZombieDefinition(UNIT_ID, UnitIds.dalaranmutant)</code></pre>
+						</div>
+					</article>
+
+					<article class="why-feature">
+						<div class="why-feature-icon"><i class="fa fa-tachometer"></i></div>
+						<div class="why-feature-text">
+							<p class="why-feature-key">Optimization Pipeline</p>
+							<h3>Ship lean Jass or Lua output.</h3>
+							<p>Built-in propagation, inlining, and merge passes reduce overhead without hand-tuning every script.</p>
+							<pre class="language-wurst why-inline-code"><code class="language-wurst">// fewer calls after inlining
+fastDamage(target, amount)</code></pre>
+						</div>
+					</article>
 				</div>
 			</div>
 
