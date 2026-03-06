@@ -261,6 +261,67 @@ h4 {
   }
 }
 
+.gen-compare-widget {
+  margin: 14px 0 18px;
+  border: 1px solid var(--divider-dark);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  background: var(--smoky-white);
+}
+
+.gen-compare-row {
+  position: relative;
+  padding: 12px 14px 14px;
+  display: grid;
+  gap: 5px;
+  border-left: 4px solid transparent;
+  animation: genCompareGlow 2.8s ease-in-out infinite;
+
+  strong {
+    font-size: 14px;
+    color: var(--text-color-dark);
+  }
+
+  span {
+    color: var(--text-color);
+  }
+
+  code {
+    width: fit-content;
+    background: var(--surface-2);
+    border: 1px solid var(--divider);
+    border-radius: 8px;
+    padding: 3px 7px;
+    color: var(--text-color-dark);
+  }
+}
+
+.gen-compare-row + .gen-compare-row {
+  border-top: 1px solid var(--divider-dark);
+}
+
+.gen-compare-row.old {
+  border-left-color: var(--color-orange);
+}
+
+.gen-compare-row.new {
+  border-left-color: var(--color-primary);
+  animation-delay: 0.45s;
+}
+
+@keyframes genCompareGlow {
+  0% {
+    background: var(--smoky-white);
+  }
+  50% {
+    background: var(--surface-2);
+  }
+  100% {
+    background: var(--smoky-white);
+  }
+}
+
 .code-block {
   margin-top: 30px;
   margin-bottom: 30px;

@@ -1194,6 +1194,152 @@ function unitFromIndex(int index) returns unit
     data.saveFogState(0,ConvertFogState(index))
     return data.loadUnit(0)
 ```
+
+### New Generics (`T:`)
+
+Wurst also supports a newer generic system, identified by a colon after the type parameter:
+`class Reference<T:>`.
+
+The main difference is how generic types are lowered:
+
+* Old generics lower values through `int` casts.
+* New generics lower each concrete type into its own class type.
+
+Old generics were simple to implement and allowed direct `int` conversion tricks, but had several downsides:
+
+* Additional cast overhead, especially noticeable for some types like `string`.
+* Shared id space across all type instantiations.
+* No preserved static type information after erasure.
+
+New generics avoid these issues by generating separate lowered types per concrete generic type.
+This usually gives better performance and much better scaling for instance-heavy data structures.
+It also enables useful patterns such as per-type static array storage in generic containers.
+
+The tradeoff is that generated map script size can increase, and there are still language-level limitations:
+
+* No trait/typeclass system for generic constraints.
+* Not all casts are as straightforward as with old `int`-based lowering.
+* Some operations are only practical inside generic scope.
+
+#### Lowering Example (Old Generics)
+
+Source Wurst:
+
+```wurst
+class Ref<T>
+    T value
+
+    function set(T v)
+        value = v
+
+    function get() returns T
+        return value
+
+let ru = new Ref<unit>()
+let rs = new Ref<string>()
+ru.set(someUnit)
+rs.set("hello")
+let u = ru.get()
+let s = rs.get()
+```
+
+Lowered JASS (simplified):
+
+```jass
+integer array Ref_value
+
+function Ref_set takes integer this, integer v returns nothing
+    set Ref_value[this] = v
+endfunction
+
+function Ref_get takes integer this returns integer
+    return Ref_value[this]
+endfunction
+
+// Ref<unit> and Ref<string> share the same erased backing array:
+// Ref_value[this]
+call Ref_set(ru, unitToIndex(someUnit))
+call Ref_set(rs, stringToIndex("hello"))
+set u = unitFromIndex(Ref_get(ru))
+set s = stringFromIndex(Ref_get(rs))
+```
+
+With old generics, different type instantiations commonly share one erased `integer` storage array.
+
+#### Lowering Example (New Generics `T:`)
+
+Source Wurst:
+
+```wurst
+class Ref<T:>
+    T value
+
+    function set(T v)
+        value = v
+
+    function get() returns T
+        return value
+
+let ru = new Ref<unit>()
+let rs = new Ref<string>()
+ru.set(someUnit)
+rs.set("hello")
+let u = ru.get()
+let s = rs.get()
+```
+
+Lowered JASS (simplified):
+
+```jass
+unit array Ref_unit_value
+string array Ref_string_value
+integer Ref_unit_nextId = 0
+integer Ref_string_nextId = 0
+
+function Ref_unit_create takes nothing returns integer
+    set Ref_unit_nextId = Ref_unit_nextId + 1
+    return Ref_unit_nextId
+endfunction
+
+function Ref_string_create takes nothing returns integer
+    set Ref_string_nextId = Ref_string_nextId + 1
+    return Ref_string_nextId
+endfunction
+
+function Ref_unit_set takes integer this, unit v returns nothing
+    set Ref_unit_value[this] = v
+endfunction
+
+function Ref_unit_get takes integer this returns unit
+    return Ref_unit_value[this]
+endfunction
+
+function Ref_string_set takes integer this, string v returns nothing
+    set Ref_string_value[this] = v
+endfunction
+
+function Ref_string_get takes integer this returns string
+    return Ref_string_value[this]
+endfunction
+```
+
+With new generics, each concrete instantiation gets separate lowered storage (`Ref_unit_value` and `Ref_string_value`).
+
+<div class="gen-compare-widget">
+  <div class="gen-compare-row old">
+    <strong>Old generics (`T`)</strong>
+    <span>`Ref&lt;unit&gt;` and `Ref&lt;string&gt;` share one erased array.</span>
+    <code>integer array Ref_value</code>
+  </div>
+  <div class="gen-compare-row new">
+    <strong>New generics (`T:`)</strong>
+    <span>Each instantiation gets specialized arrays and functions.</span>
+    <code>unit array Ref_unit_value + string array Ref_string_value</code>
+  </div>
+</div>
+
+In performance-critical code, this can be a major win. With unchecked dispatch, inlining and optimizations enabled, simple methods like `ArrayList.get()` can compile down to direct array access.
+
 ### Generic Functions
 
 Functions can use generic types. The type parameter is written after the name of the function.
@@ -1878,6 +2024,30 @@ The number `120` then replaces the compiletime expression in the generated mapsc
 Just like compiletime functions, it is also possible to use compiletime expressions with object editing natives (see below).
 
 Compiletime expressions have the restriction, that it is not possible to compile the map without the `-runcompiletimefunctions` flag.
+
+### Compiletime Migration
+
+Wurst can migrate selected compiletime data into runtime data structures.
+This allows precomputation at compiletime and reuse at runtime.
+
+A practical example is `HashMap`: content prepared during compiletime can be migrated and used ingame at runtime.
+This is useful for lookup tables, pre-generated mappings, and other cached data that should not be recomputed ingame.
+
+```wurst
+package Example
+import HashMap
+
+let damageTable = new HashMap<int, int>()
+
+@compiletime function buildDamageTable()
+    for i = 1 to 100
+        damageTable.put(i, i * i)
+
+function getDamage(int level) returns int
+    return damageTable.get(level)
+```
+
+The exact set of migratable values depends on type support, but for supported cases this is a convenient way to move expensive setup work from runtime to compiletime.
 
 ### Execution order
 
