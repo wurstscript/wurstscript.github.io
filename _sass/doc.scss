@@ -1069,6 +1069,7 @@ code {
       font-size: 17px;
       line-height: 1.68;
       color: var(--text-color);
+      overflow-wrap: anywhere;
     }
 
     pre {
@@ -1103,9 +1104,13 @@ code {
 
     table {
       border-radius: 10px;
-      overflow: hidden;
       border: 1px solid var(--divider-dark);
       background: var(--doc-table-bg);
+      display: block;
+      width: max-content;
+      max-width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
     }
   }
 
@@ -1352,11 +1357,20 @@ code {
       font-size: 17px;
       line-height: 1.65;
       color: var(--text-color);
+      overflow-wrap: anywhere;
     }
 
     hr {
       margin: 26px 0;
       border-top: 1px solid var(--divider-dark);
+    }
+
+    table {
+      display: block;
+      width: max-content;
+      max-width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
     }
   }
 }

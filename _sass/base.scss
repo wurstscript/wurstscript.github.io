@@ -176,7 +176,9 @@ select:focus-visible {
 }
 
 pre {
-    display: flex;
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
 }
 
 

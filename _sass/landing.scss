@@ -105,6 +105,8 @@
 
   img {
     margin-right: 32px;
+    max-width: min(100%, 420px);
+    height: auto;
   }
 
   .name {
@@ -158,7 +160,7 @@
 
 .why-feature {
   display: grid;
-  grid-template-columns: 72px 1fr;
+  grid-template-columns: minmax(0, 72px) minmax(0, 1fr);
   gap: 14px;
   padding: 18px;
   border: 1px solid var(--divider-dark);
@@ -194,6 +196,11 @@
     line-height: 0.96;
     letter-spacing: -0.03em;
     color: var(--text-color);
+    overflow-wrap: anywhere;
+  }
+
+  .why-feature-text {
+    min-width: 0;
   }
 
   .why-feature-text > p:last-child {
@@ -205,16 +212,19 @@
 
 .why-inline-code {
   margin: 12px 0 0;
+  width: 100%;
   max-width: 560px;
   border: 1px solid var(--why-inline-code-border);
   border-left: 4px solid var(--why-feature-icon-fg);
   border-radius: 8px;
   background: var(--why-inline-code-bg);
+  overflow-x: auto;
 
   code {
     white-space: pre;
     display: block;
     padding: 10px 12px;
+    min-width: max-content;
   }
 }
 
@@ -500,6 +510,7 @@
 
   .news .card {
     width: 100%;
+    max-width: 100%;
   }
 
   .why-feature {
@@ -515,6 +526,20 @@
 
   .why-feature-stack {
     gap: 10px;
+  }
+
+  .why-inline-code {
+    max-width: 100%;
+  }
+
+  .why-inline-code code {
+    min-width: 0;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+
+  .greeting img {
+    margin-right: 0;
   }
 
   .doc-header-container {
