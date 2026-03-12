@@ -49,8 +49,9 @@ layout: compress
                     <!-- DOCUMENT HEADER -->
                     <div id="doc-header" class="doc-header news-hero">
                         {% if page.image and page.image != "/assets/images/empty.png" %}
+                        {% assign hero_image_url = page.image | relative_url %}
                         <div class="news-hero-image">
-                            <img src="{{ page.image }}" alt="{{ page.title }}">
+                            <img src="{{ hero_image_url }}" alt="{{ page.title }}">
                         </div>
                         {% endif %}
 
@@ -88,9 +89,10 @@ layout: compress
                                 <span class="pagefind-meta" data-pagefind-meta="title">{{ page.title }}</span>
                                 {% assign news_html = content | markdownify %}
                                 {% if page.image %}
-                                {% capture image_p_1 %}<p><img src="{{ page.image }}" alt="" class="img-responsive" /></p>{% endcapture %}
-                                {% capture image_p_2 %}<p><img src="{{ page.image }}" alt="" /></p>{% endcapture %}
-                                {% capture image_p_3 %}<p><img src="{{ page.image }}" alt="" class="img-responsive"></p>{% endcapture %}
+                                {% assign page_image_url = page.image | relative_url %}
+                                {% capture image_p_1 %}<p><img src="{{ page_image_url }}" alt="" class="img-responsive" /></p>{% endcapture %}
+                                {% capture image_p_2 %}<p><img src="{{ page_image_url }}" alt="" /></p>{% endcapture %}
+                                {% capture image_p_3 %}<p><img src="{{ page_image_url }}" alt="" class="img-responsive"></p>{% endcapture %}
                                 {% assign news_html = news_html | replace_first: image_p_1, "" %}
                                 {% assign news_html = news_html | replace_first: image_p_2, "" %}
                                 {% assign news_html = news_html | replace_first: image_p_3, "" %}

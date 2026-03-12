@@ -1341,6 +1341,17 @@ code {
       margin-bottom: 14px;
     }
 
+    // Keep inline code inside headings visually balanced with heading size.
+    h1 code,
+    h2 code,
+    h3 code {
+      font-size: 0.68em;
+      line-height: 1.1;
+      padding: 0.08em 0.42em;
+      border-radius: 0.28em;
+      vertical-align: 0.05em;
+    }
+
     h1 {
       font-size: clamp(34px, 5vw, 44px);
     }

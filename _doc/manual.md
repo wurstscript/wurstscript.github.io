@@ -375,6 +375,14 @@ for i in myList
     ...
 ```
 
+Inside loop bodies, `continue` can be used to skip the rest of the current iteration and proceed with the next one.
+```wurst
+for u in allUnits
+    if not u.isAlive()
+        continue
+    u.heal(25.)
+```
+
 ### For Loops
 
 The for-in loop lets you iterate over any object which provides an iterator.
@@ -1703,7 +1711,16 @@ doAfter(10.0, () -> begin
 end)
 ```
 It is also possible to have a return statement inside a begin-end expression
-but only the very last statement can be a return.
+and `return` can now be used anywhere inside the closure statement block.
+
+Inside a closure body, `it` refers to the closure object itself. This can be used for self-references, for example to destroy the closure from within its own body without passing it as a lambda parameter.
+```wurst
+let cb = doPeriodically(0.05) ->
+	if not missile.exists()
+		destroy it
+		return
+	missile.update()
+```
 
 ### Lambda blocks
 
@@ -1910,6 +1927,7 @@ with a value of type B, both functions would be viable. Other languages just tak
 ### Operator Overloading
 
 Operator Overloading allows you to change the behavior of internal operators +, -, \* and / for custom arguments.
+The index operator `[]` can also be overloaded now.
 A quick example from the standard library (Vectors.wurst):
 ```wurst
 // Defining the "+" operator for the tupletype vec3
