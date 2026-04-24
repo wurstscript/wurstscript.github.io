@@ -1,13 +1,12 @@
 ---
 title: Map Folders, MPQ Tooling, and Lua Jass Shimming
 excerpt: Map folder support, MPQ inspection and previews in VSCode, binary format read support, and the Jass shim pass for seamless Lua backend switching.
-date: 2026-04-10
+date: 2026-04-24
 image: /assets/images/news/lua.png
 layout: newsarticle
 author: Frotty
 ---
-
-This update brings map folder support for the Reforged editor, new MPQ tooling in the VSCode extension, rudimentary read support for most Warcraft III binary formats, and a significant Jass shim pass that makes the Lua backend behave like Jass for the cases that matter most.
+The recent updates added map folder support, MPQ tooling in the VSCode extension, rudimentary read support for most Warcraft III binary formats, and a significant Jass shim pass that makes the Lua backend behave like Jass for the cases that matter most.
 
 ## Map Folder Support
 
