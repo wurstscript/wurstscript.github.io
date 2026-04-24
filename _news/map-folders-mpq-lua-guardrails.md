@@ -2,7 +2,7 @@
 title: Map Folders, MPQ Tooling, and Lua Jass Shimming
 excerpt: Map folder support, MPQ inspection and previews in VSCode, binary format read support, and the Jass shim pass for seamless Lua backend switching.
 date: 2026-04-24
-image: /assets/images/news/lua.png
+image: /assets/images/news/mapfolder.png
 layout: newsarticle
 author: Frotty
 ---
