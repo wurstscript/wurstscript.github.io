@@ -22,7 +22,7 @@ layout: compress
 			<div class="greeting">
 				<div>
 					<h1 class="name">WurstScript</h1>
-					<div class="tagline">Efficient. Innovative. Delicious.</div>
+					<div class="tagline">A Warcraft III-first language and toolchain for serious map projects.</div>
 					<a class="btn btn-primary" href="/start">Get Started</a>
 				</div>
 				<div class="img-container">
@@ -50,46 +50,44 @@ layout: compress
 			</div>
 
 			<div class="why-wurst">
-				<h2 class="title">Why Wurst?</h2>
+				<h2 class="title">Why choose WurstScript?</h2>
 
-				<p>WurstScript is a programming language and modding toolkit used to create Warcraft III maps with ease.
-					It supports Warcraft III reforged and older versions by producing either Jass or Lua code.</p>
-
-				<p class="why-special">
-					Built for serious Warcraft III projects: expressive language design, compiletime generation, and performance-first compilation.
-				</p>
+				<p class="why-intro">WurstScript is a WC3-first workflow built around maps, object data, assets, builds, and Jass or Lua output.</p>
 
 				<div class="why-feature-stack">
 					<article class="why-feature">
-						<div class="why-feature-icon"><i class="fa fa-code"></i></div>
 						<div class="why-feature-text">
-							<p class="why-feature-key">Type System</p>
-							<h3>Write map logic that stays maintainable.</h3>
-							<p>Strong typing + clean syntax + extension methods.</p>
-							<pre class="language-wurst why-inline-code"><code class="language-wurst">u..addMana(100)
- ..addHP(100)</code></pre>
+							<p class="why-feature-key">WC3-first</p>
+							<h3>Made for map projects</h3>
+							<p>Map formats, object data, assets, builds, tests, and editor actions are part of the free open source toolchain.</p>
+							<img class="why-feature-shot" src="/assets/images/blog/bestof6/vscodeicons.png" alt="Wurst project structure in VS Code">
 						</div>
 					</article>
 
 					<article class="why-feature">
-						<div class="why-feature-icon"><i class="fa fa-cube"></i></div>
 						<div class="why-feature-text">
-							<p class="why-feature-key">Compiletime</p>
-							<h3>Generate map objects before runtime.</h3>
-							<p>Create units, abilities, and items from code with consistent IDs and less manual editor work.</p>
-							<pre class="language-wurst why-inline-code"><code class="language-wurst">@compiletime
-new ZombieDefinition(UNIT_ID, UnitIds.dalaranmutant)</code></pre>
+							<p class="why-feature-key">Language</p>
+							<h3>Modern code, WC3 output</h3>
+							<p>Use types, packages, classes, closures, and extension methods while compiling to Jass or Lua.</p>
+							<img class="why-feature-shot" src="/assets/images/blog/bestof4/runTestVS.png" alt="Wurst code and commands in VS Code">
 						</div>
 					</article>
 
 					<article class="why-feature">
-						<div class="why-feature-icon"><i class="fa fa-tachometer"></i></div>
 						<div class="why-feature-text">
-							<p class="why-feature-key">Optimization Pipeline</p>
-							<h3>Ship lean Jass or Lua output.</h3>
-							<p>Built-in propagation, inlining, and merge passes reduce overhead without hand-tuning every script.</p>
-							<pre class="language-wurst why-inline-code"><code class="language-wurst">// fewer calls after inlining
-fastDamage(target, amount)</code></pre>
+							<p class="why-feature-key">Object data</p>
+							<h3>Generate editor work</h3>
+							<p>Create abilities, units, items, upgrades, and other object edits from source-controlled code.</p>
+							<img class="why-feature-shot" src="/assets/images/whywurst/wurst-objgen.png" alt="Warcraft III spell created with Wurst">
+						</div>
+					</article>
+
+					<article class="why-feature">
+						<div class="why-feature-text">
+							<p class="why-feature-key">Tooling</p>
+							<h3>VS Code knows WC3</h3>
+							<p>Get diagnostics, completion, native docs, model and texture previews, MPQ browsing, build, and run on Windows, Linux, or macOS.</p>
+							<img class="why-feature-shot" src="/assets/images/news/model_viewer.png" alt="Wurst VS Code model preview">
 						</div>
 					</article>
 				</div>
