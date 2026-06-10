@@ -1,0 +1,4 @@
+# Local scratch output dirs
+_genout/
+_scratch/
+out/

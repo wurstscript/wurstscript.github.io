@@ -1,0 +1,169 @@
+/* =========================================================================
+   Standard library: API reference pages + capability landing polish
+   ========================================================================= */
+
+/* ----- Tables: the theme styled the frame but never the cells ----- */
+.doc-content table {
+  border-collapse: collapse;
+  display: table;
+  width: 100%;
+
+  th,
+  td {
+    padding: 9px 14px;
+    border-bottom: 1px solid var(--divider-dark);
+    text-align: left;
+    vertical-align: top;
+    line-height: 1.5;
+  }
+
+  thead th {
+    background: var(--surface-2);
+    color: var(--text-color-dark);
+    font-weight: 700;
+    border-bottom: 2px solid var(--divider-darker);
+  }
+
+  tbody tr:nth-child(even) {
+    background: var(--smoky-grey);
+  }
+
+  tbody tr:last-child td {
+    border-bottom: none;
+  }
+}
+
+/* ----- Reference pages need width: signatures are wide ----- */
+@media (min-width: 768px) {
+  .stdlibref-page .doc-container {
+    width: min(1180px, 100%);
+  }
+}
+
+.stdlibref-page {
+  .doc-content {
+    /* group headings: Classes / Enums / Functions … */
+    h2 {
+      font-size: clamp(20px, 2.2vw, 24px);
+      margin-top: 36px;
+      margin-bottom: 4px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid var(--divider-dark);
+    }
+
+    /* one entity (class / function / …) */
+    h3 {
+      font-size: clamp(16px, 1.8vw, 19px);
+      margin-top: 26px;
+      margin-bottom: 6px;
+      font-family: "SFMono-Regular", "Roboto Mono", Consolas, "Liberation Mono", Menlo, monospace;
+      color: var(--text-color-dark);
+    }
+
+    /* the signature block immediately under each entity heading */
+    h3 + pre {
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    /* "Members:" / "Values:" / "Re-exports:" labels */
+    p > strong:only-child {
+      display: inline-block;
+      margin: 6px 0 2px;
+      font-size: 13px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--text-color-secondary);
+    }
+
+    /* member list */
+    ul {
+      margin: 4px 0 10px;
+    }
+
+    li {
+      margin-bottom: 5px;
+
+      > code:first-child {
+        color: var(--text-color-dark);
+      }
+    }
+  }
+}
+
+/* ----- Badges: configurable / deprecated / detailed-guide blockquotes ----- */
+.doc-content blockquote {
+  p {
+    margin: 0;
+  }
+}
+
+/* ----- Capability landing card grid ----- */
+.cap-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin: 20px 0 10px;
+}
+
+@media (min-width: 760px) {
+  .cap-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cap-card--wide {
+    grid-column: 1 / -1;
+  }
+}
+
+.cap-card {
+  border: 1px solid var(--divider-dark);
+  border-radius: 14px;
+  padding: 18px 20px 16px;
+  background: var(--smoky-white);
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+
+  h4 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    line-height: 1.25;
+    color: var(--text-color-dark);
+
+    .fa {
+      margin-right: 9px;
+      color: var(--color-pink);
+    }
+  }
+
+  p {
+    margin: 0 0 10px;
+    font-size: 15px !important;
+    line-height: 1.55 !important;
+  }
+
+  ul {
+    margin: 2px 0 12px;
+    padding-left: 18px;
+  }
+
+  li {
+    font-size: 15px !important;
+    margin-bottom: 5px;
+  }
+
+  table {
+    margin-top: 2px;
+    font-size: 15px;
+  }
+
+  .cap-more {
+    margin-top: auto;
+    font-weight: 600;
+
+    .fa {
+      margin-right: 6px;
+    }
+  }
+}

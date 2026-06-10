@@ -1,0 +1,28 @@
+# Optional capability tags merged into each package's tags (in addition to its folder category).
+# Keep this small and only add tags that genuinely aid discovery / future search facets.
+#   PackageName: [tag, tag, ...]
+
+LinkedList: [collection, list]
+ArrayList: [collection, list]
+HashList: [collection, list]
+HashMap: [collection, map]
+HashSet: [collection, set]
+BitSet: [collection, flags]
+Table: [collection, map]
+
+ClosureEvents: [closure, event]
+ClosureTimers: [closure, timer]
+ClosureForGroups: [closure, group]
+
+DamageEvent: [damage, detection]
+DummyCaster: [wc3-quirk, dummy]
+DummyRecycler: [wc3-quirk, dummy]
+DummyDamage: [wc3-quirk, dummy, damage]
+UnitIndexer: [wc3-quirk, indexing]
+Fx: [wc3-quirk, effect]
+
+AbilityObjEditing: [object-data, abilities]
+UnitObjEditing: [object-data, units]
+ItemObjEditing: [object-data, items]
+BuffObjEditing: [object-data, buffs]
+UpgradeObjEditing: [object-data, upgrades]

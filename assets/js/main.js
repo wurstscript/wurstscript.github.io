@@ -77,7 +77,11 @@ $(document).ready(function () {
     scrollToElement(window.location.hash.substring(1));
   }
 
-  const headingNodes = Array.from(document.querySelectorAll(".doc-content h2, .doc-content h3"));
+  // On dense API-reference pages there can be hundreds of h3 entities; listing them all makes the
+  // sidebar unusable (and the scroll-spy slow), so fall back to just the h2 group headings.
+  const h3Count = document.querySelectorAll(".doc-content h3").length;
+  const headingSelector = h3Count > 80 ? ".doc-content h2" : ".doc-content h2, .doc-content h3";
+  const headingNodes = Array.from(document.querySelectorAll(headingSelector));
   const existingSectionLinks = navContainer.querySelectorAll('a.scrollto[href^="#"]');
 
   // Only auto-generate TOC when the template did not render one from frontmatter sections.
@@ -106,6 +110,13 @@ $(document).ready(function () {
   }
 
   const navLinks = Array.from(document.querySelectorAll("a.scrollto[href^='#']"));
+
+  // No in-page anchors means an empty table of contents; hide the sidebar rather than show a stub.
+  if (navLinks.length === 0) {
+    const emptySidebar = document.querySelector(".doc-sidebar");
+    if (emptySidebar) emptySidebar.style.display = "none";
+    return;
+  }
 
   navLinks.forEach((anchor) => {
     anchor.addEventListener("click", function (e) {

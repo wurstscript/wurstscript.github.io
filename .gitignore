@@ -2,3 +2,4 @@
 config.codekit
 _site
 .jekyll-metadata
+_stdlib

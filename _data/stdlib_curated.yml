@@ -1,0 +1,37 @@
+# Maps a stdlib package name to a hand-written "detailed guide" page on this site.
+# The docgen reads this (it never writes it) and adds a prominent "Detailed guide" link to
+# the matching auto-generated reference page. Add an entry when you write a longer-form guide.
+#   PackageName: /stdlib/<path-without-extension>
+
+# Data structures
+HashMap: /stdlib/hash_map
+HashList: /stdlib/hash_list
+LinkedList: /stdlib/linked_list
+BitSet: /stdlib/bitset
+
+# Closures
+ClosureEvents: /stdlib/closure_events
+ClosureForGroups: /stdlib/closure_for_groups
+ClosureTimers: /stdlib/closure_timers
+Execute: /stdlib/execute
+
+# Dummies
+DummyCaster: /stdlib/dummy_caster
+DummyRecycler: /stdlib/dummy_recycler
+
+# Math
+Angle: /stdlib/angle
+Vectors: /stdlib/vectors
+
+# Object editing
+AbilityObjEditing: /stdlib/abil_objed
+BuffObjEditing: /stdlib/buff_objed
+ItemObjEditing: /stdlib/item_objed
+UnitObjEditing: /stdlib/unit_objed
+UpgradeObjEditing: /stdlib/upg_objed
+
+# Core / util
+Assets: /stdlib/assets
+ErrorHandling: /stdlib/errorhandling
+Wurstunit: /stdlib/wurstunit
+DialogBox: /stdlib/dialogbox

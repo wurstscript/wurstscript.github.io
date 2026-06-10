@@ -1,0 +1,111 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="doc-body">
+<!--<![endif]-->
+
+{% include head.html %}
+
+<body class="body-{{ page.color }} doc-body stdlibref-page">
+
+    <div class="page-wrapper">
+
+        <!-- HEADER -->
+        <header id="header" class="header">
+            <div class="container doc-header-container">
+
+                <div>
+                    {% include branding.html home=false %}
+
+                    <!-- BREADCRUMB -->
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="{{ '/' | relative_url }}">Home</a>
+                        </li>
+                        <li>
+                            <a href="{{ '/stdlib.html' | relative_url }}">Standard Library</a>
+                        </li>
+                        <li>
+                            <a href="{{ '/stdlib/ref/' | relative_url }}">API Reference</a>
+                        </li>
+                        <li class="active">{{ page.title }}</li>
+                    </ol>
+                </div>
+
+                <div style="flex:1"></div>
+                <div id="search-searchbar"></div>
+            </div>
+
+        </header>
+
+        <div class="post-list" id="search-hits"></div>
+
+        <div class="doc-wrapper">
+
+            <!-- SIDEBAR: "On this page" - auto-populated from headings by assets/js/main.js -->
+            <div class="doc-sidebar">
+                <nav id="doc-nav">
+                    <div id="doc-menu">
+                        <div class="doc-menu-scroll">
+                            <ul class="nav doc-menu">
+                                <li class="nav-heading"><a class="scrollto" href="{{ page.url }}">On this page</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="doc-inner">
+                <div class="doc-container">
+
+                    <!-- DOCUMENT HEADER -->
+                    <div id="doc-header" class="doc-header">
+
+                        <h1 class="doc-title">{{ page.title }}</h1>
+
+                        <div class="doc-meta-row">
+                            <span class="meta">
+                                <i class="fa fa-cube"></i> {{ page.categoryLabel }}
+                            </span>
+                            {% if page.source %}
+                            <span class="author">
+                                <i class="fa fa-github"></i>
+                                <a href="{{ page.source }}" target="_blank">View source</a>
+                            </span>
+                            {% endif %}
+                        </div>
+
+                    </div>
+
+                    <!-- DOCUMENT BODY -->
+                    <div id="{{ page.id | slugify }}" class="doc-body">
+                        <div class="doc-content">
+                            <div class="content-inner" data-pagefind-body>
+                                <span class="pagefind-meta" data-pagefind-meta="title">{{ page.title }}</span>
+                                <span data-pagefind-filter="category:{{ page.categoryLabel }}"></span>
+                                {% for tag in page.tags %}
+                                <span data-pagefind-filter="tag:{{ tag }}"></span>
+                                {% endfor %}
+
+                                {{ content | markdownify }}
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    {% include footer.html %}
+
+</body>
+
+</html>

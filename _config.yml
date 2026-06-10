@@ -13,6 +13,7 @@ plugins:
 
 exclude:
   - vendor
+  - tools
   - assets/plugins/elegant_font/css/index.html
   - assets/plugins/jquery-match-height/test.html
   - assets/plugins/jquery-scrollTo/demo
