@@ -28,6 +28,8 @@ The extension now installs and updates the compiler and CLI for you.
 
 After installing the extension, use one of these paths:
 
+> **Important:** Open the Wurst project folder itself as the VS Code workspace root. Wurst projects do not work reliably when opened as a subfolder of a larger workspace. After `grill generate my-wurst-project`, either run `code ./my-wurst-project` as shown by `grill`, or use VS Code's `File -> Open Folder...` command and select the folder that `grill generate` created.
+
 ### A) Open an existing project
 
 1. Clone/open the project folder from version control.
