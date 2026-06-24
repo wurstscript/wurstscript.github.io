@@ -719,8 +719,11 @@ code {
   }
 }
 .doc-sub-menu {
+  display: none;
   list-style: none;
   padding-left: 0;
+  margin: 4px 0 6px;
+
   & > li {
     margin-bottom: 10px;
     font-size: 14px;
@@ -783,6 +786,20 @@ code {
           color: var(--color-purple);
         }
       }
+    }
+  }
+}
+
+.doc-sub-menu .doc-sub-menu {
+  margin-top: 6px;
+
+  & > li {
+    font-size: 13px;
+    margin-bottom: 7px;
+
+    & > a {
+      padding-left: 48px;
+      color: var(--text-color-secondary);
     }
   }
 }
@@ -1186,6 +1203,11 @@ code {
       font-weight: 600;
     }
   }
+}
+
+.doc-menu li.open > .doc-sub-menu,
+.doc-menu li.active > .doc-sub-menu {
+  display: block;
 }
 
 .doc-sidebar .affix,

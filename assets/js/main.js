@@ -48,6 +48,105 @@ function scrollToElement(id) {
   return true;
 }
 
+function ensureHeadingId(heading, usedIds) {
+  const fallback = slugify(heading.textContent) || "section";
+  const base = heading.id || fallback;
+  let id = base;
+  let suffix = 2;
+
+  while (
+    usedIds.has(id) ||
+    (document.getElementById(id) && document.getElementById(id) !== heading)
+  ) {
+    id = `${base}-${suffix}`;
+    suffix += 1;
+  }
+
+  heading.id = id;
+  usedIds.add(id);
+  return id;
+}
+
+function appendTocItem(parent, heading, id, depth) {
+  const item = document.createElement("li");
+  item.dataset.tocDepth = String(depth);
+
+  const link = document.createElement("a");
+  link.className = "scrollto";
+  link.href = `#${id}`;
+  link.textContent = heading.textContent.trim();
+
+  item.appendChild(link);
+  parent.appendChild(item);
+  return item;
+}
+
+function getSubMenu(parentItem) {
+  let subMenu = Array.from(parentItem.children).find((child) =>
+    child.classList.contains("doc-sub-menu")
+  );
+
+  if (!subMenu) {
+    subMenu = document.createElement("ul");
+    subMenu.className = "nav doc-sub-menu";
+    parentItem.appendChild(subMenu);
+  }
+
+  return subMenu;
+}
+
+function buildSidebarToc(navContainer) {
+  const content = document.querySelector(".doc-content");
+  if (!content) return false;
+
+  const headings = Array.from(content.querySelectorAll("h2, h3, h4")).filter(
+    (heading) => heading.textContent.trim().length > 0
+  );
+  if (headings.length === 0) return false;
+
+  const hasH2 = headings.some((heading) => heading.tagName === "H2");
+  const hasH3 = headings.some((heading) => heading.tagName === "H3");
+  const topLevel = hasH2 ? 2 : hasH3 ? 3 : 4;
+  const maxLevel = Math.min(topLevel + 2, 4);
+  const usedIds = new Set();
+  const stack = [];
+  let itemCount = 0;
+
+  Array.from(navContainer.children).forEach((child) => {
+    if (!child.classList.contains("nav-heading")) {
+      child.remove();
+    }
+  });
+
+  headings.forEach((heading) => {
+    const level = Number(heading.tagName.substring(1));
+    if (level < topLevel || level > maxLevel) return;
+
+    const id = ensureHeadingId(heading, usedIds);
+    const parentLevel = level - 1;
+    let parentItem = null;
+
+    for (let candidate = parentLevel; candidate >= topLevel; candidate -= 1) {
+      if (stack[candidate]) {
+        parentItem = stack[candidate];
+        break;
+      }
+    }
+
+    const depth = parentItem ? level - topLevel : 0;
+    const parent = parentItem ? getSubMenu(parentItem) : navContainer;
+    const item = appendTocItem(parent, heading, id, depth);
+
+    stack[level] = item;
+    for (let candidate = level + 1; candidate <= maxLevel; candidate += 1) {
+      stack[candidate] = null;
+    }
+    itemCount += 1;
+  });
+
+  return itemCount > 0;
+}
+
 $(document).ready(function () {
   $("#cards-wrapper .item-inner").matchHeight();
   $("#showcase .card").matchHeight();
@@ -77,37 +176,7 @@ $(document).ready(function () {
     scrollToElement(window.location.hash.substring(1));
   }
 
-  // On dense API-reference pages there can be hundreds of h3 entities; listing them all makes the
-  // sidebar unusable (and the scroll-spy slow), so fall back to just the h2 group headings.
-  const h3Count = document.querySelectorAll(".doc-content h3").length;
-  const headingSelector = h3Count > 80 ? ".doc-content h2" : ".doc-content h2, .doc-content h3";
-  const headingNodes = Array.from(document.querySelectorAll(headingSelector));
-  const existingSectionLinks = navContainer.querySelectorAll('a.scrollto[href^="#"]');
-
-  // Only auto-generate TOC when the template did not render one from frontmatter sections.
-  if (existingSectionLinks.length === 0 && headingNodes.length > 0) {
-    let currentSubList = null;
-    headingNodes.forEach((heading) => {
-      const id = heading.id || slugify(heading.textContent);
-      heading.id = id;
-
-      if (heading.tagName === "H2") {
-        const item = document.createElement("li");
-        item.innerHTML = `<a class="scrollto" href="#${id}">${heading.textContent}</a>`;
-        navContainer.appendChild(item);
-        currentSubList = null;
-      } else {
-        if (!currentSubList) {
-          currentSubList = document.createElement("ul");
-          currentSubList.className = "nav doc-sub-menu";
-          navContainer.appendChild(currentSubList);
-        }
-        const item = document.createElement("li");
-        item.innerHTML = `<a class="scrollto" href="#${id}">${heading.textContent}</a>`;
-        currentSubList.appendChild(item);
-      }
-    });
-  }
+  buildSidebarToc(navContainer);
 
   const navLinks = Array.from(document.querySelectorAll("a.scrollto[href^='#']"));
 
@@ -142,6 +211,20 @@ $(document).ready(function () {
 
   let selected = null;
 
+  function updateOpenGroups(current) {
+    navContainer
+      .querySelectorAll("li.open")
+      .forEach((item) => item.classList.remove("open"));
+
+    let item = current;
+    while (item && item !== navContainer) {
+      if (item.tagName === "LI") {
+        item.classList.add("open");
+      }
+      item = item.parentElement ? item.parentElement.closest("li") : null;
+    }
+  }
+
   function updateActive() {
     const marker = window.innerHeight * 0.24;
     let current = offsetMap[0].nav;
@@ -156,6 +239,7 @@ $(document).ready(function () {
       if (selected) selected.classList.remove("active");
       selected = current;
       selected.classList.add("active");
+      updateOpenGroups(selected);
     }
   }
 

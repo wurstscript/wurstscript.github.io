@@ -11,11 +11,21 @@ sections:
 ### Intro
 
 In Warcraft III most abilities, unlike units, are unique and thus the parent ability must be specified to gain access to custom data fields.
-The standard library wraps this nicely by providing classes for each unique spell in `AbilityObjEditing` and presets for channel based custom spells `ChannelAbilityPreset`.
+The standard library wraps this nicely with two object editing packages:
+
+- `AbilityObjEditing` provides generated classes for existing Warcraft III abilities, such as `AbilityDefinitionFireBolt`.
+- `ChannelAbilityPreset` provides a preset for channel-based custom spells.
+
+The examples below assume these imports:
+
+```wurst
+import AbilityObjEditing
+import ChannelAbilityPreset
+```
 
 ### Normal Spells
 
-To generate and modify normal spells, use the correspoding class from `AbilityObjEditing`.
+To generate and modify normal spells, use the corresponding class from `AbilityObjEditing`.
 E.g. if you want to generate a fireball ability, use `AbilityDefinitionFireBolt` or `AbilityDefinitionPaladinDivineShield` for divine shield.
 
 
@@ -45,7 +55,8 @@ But in a more condensed form, and one which automatically adapts if you change t
 
 ### Channel Spells
 
-Most custom spells are based on channel. It is a very customizable ability without an effect made exactly for this purpose.
+Most triggered custom spells are based on channel. This part uses the separate `ChannelAbilityPreset` package, which builds on the generated ability definitions from `AbilityObjEditing`.
+Channel is a very customizable ability without an effect made exactly for this purpose.
 By default channel spells emit some odd behaviour, like being invisible and having to "channel" the spell for a duration of time, like Blizzard or Fire Rain.
 You can reset all these properties by passing `true` as last argument in the constructor.
 
