@@ -579,6 +579,39 @@ header.branding {
     color: var(--text-color-secondary);
 }
 
+.local-search-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 2px;
+    color: var(--text-color-secondary);
+    font-size: 14px;
+}
+
+.local-search-error {
+    color: var(--text-color);
+}
+
+.local-search-spinner {
+    flex: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid var(--divider-dark);
+    border-top-color: var(--color-primary);
+    animation: local-search-spin 0.6s linear infinite;
+}
+
+@keyframes local-search-spin {
+    to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .local-search-spinner {
+        animation-duration: 1.6s;
+    }
+}
+
 .pagefind-meta {
     display: none !important;
 }

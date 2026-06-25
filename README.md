@@ -55,52 +55,36 @@ Adding a standard library doc page works almost the same as tutorials.
     - Change the `sections` to match the uri of the pages of your tutorial.
 * Write your new_doc pages, being sure to update the heading sections as necessary.
 
-## Building Search Index
+## Search Index
 
-The site now uses `pagefind` for fully local static search. No external API key is required.
+The site uses [`pagefind`](https://pagefind.app/) for fully local static search. No external API key is required.
 
-For GitHub Pages compatibility, the generated `pagefind/` folder is committed to this repository.
+**The index is generated automatically by CI on every deploy** — see
+[`.github/workflows/pages.yml`](.github/workflows/pages.yml). It builds the
+site, runs Pagefind against the *built* `_site`, and deploys the result to
+GitHub Pages. Because the index is rebuilt from the actual content on every
+deploy, it can never drift out of sync.
 
-1. Build the site:
+> **Do not commit a `pagefind/` folder.** It is `.gitignore`d on purpose. A
+> hand-committed index drifts from the content and breaks search (you get
+> "SEARCH INDEX NOT FOUND" on the live site). Let CI generate it.
 
-    `bundler exec jekyll build`
+### One-time GitHub setup
 
-2. Generate the search index into `_site/pagefind`:
+In repo **Settings → Pages → Build and deployment**, set **Source** to
+**"GitHub Actions"**. The workflow then publishes the site (custom domain
+`wurstlang.org` is preserved via the `CNAME` file).
 
-    `npx -y pagefind --site _site`
+### Local dev with `jekyll serve`
 
-3. Sync the generated index into tracked `pagefind/`:
+`jekyll serve` does not generate a search index. To preview search locally:
 
-    `rm -rf pagefind && cp -R _site/pagefind ./pagefind`
+1. Build the site: `bundle exec jekyll build`
+2. Generate the index into `_site/pagefind`: `npx -y pagefind@1.5.2 --site _site`
+3. Serve `_site` (e.g. `npx -y serve _site`). Search loads from `/pagefind/pagefind.js`.
 
-   PowerShell equivalent:
-
-    `if (Test-Path pagefind) { Remove-Item -Recurse -Force pagefind }; Copy-Item -Recurse _site/pagefind ./pagefind`
-
-4. Serve `_site` (or deploy it). Search will load from `/pagefind/pagefind.js`.
-
-Prerequisite for indexing: Node.js (for `npx pagefind`).
-
-### Pre-commit Hook For Indexing
-
-Set up repo hooks once:
-
-`git config core.hooksPath .githooks`
-
-Then every commit will:
-
-1. Build Jekyll
-2. Generate Pagefind index
-3. Sync `_site/pagefind` to tracked `pagefind/`
-4. Auto-stage `pagefind/`
-
-To bypass once:
-
-`SKIP_PAGEFIND_HOOK=1 git commit ...`
-
-PowerShell equivalent:
-
-`$env:SKIP_PAGEFIND_HOOK='1'; git commit ...; Remove-Item Env:SKIP_PAGEFIND_HOOK`
+Repeat steps 1–2 after content changes you want reflected in local search.
+Prerequisite: Node.js (for `npx pagefind`).
 
 ### Jenkins
 
@@ -116,17 +100,3 @@ To use it:
 1. Create a Jenkins Pipeline (or Multibranch Pipeline) job for this repository.
 2. Keep script source as `Jenkinsfile` in SCM.
 3. Ensure the Jenkins agent has Ruby/Bundler and Node.js/npm available.
-
-### Local dev with `jekyll serve`
-
-`jekyll serve` rebuilds `_site`. To keep local search working:
-
-1. Start Jekyll:
-
-    `bundler exec jekyll serve`
-
-2. In a second terminal, generate Pagefind index:
-
-    `npx -y pagefind --site _site`
-
-3. Repeat step 2 after content changes that should be searchable.

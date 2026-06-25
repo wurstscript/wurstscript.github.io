@@ -19,8 +19,6 @@ exclude:
   - assets/plugins/jquery-scrollTo/demo
   - assets/plugins/jquery-scrollTo/tests
   - assets/plugins/lightbox/examples
-keep_files:
-  - pagefind
 repository: wurstscript/wurstscript.github.io
 url: https://wurstlang.org
 baseurl: ""

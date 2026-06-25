@@ -24,11 +24,17 @@
     shell.appendChild(resultsContainer);
   }
   resultsContainer.style.display = "none";
+  resultsContainer.setAttribute("role", "region");
+  resultsContainer.setAttribute("aria-label", "Search results");
+  resultsContainer.setAttribute("aria-live", "polite");
+
+  const DEBOUNCE_MS = 130;
 
   let pagefindModule = null;
   let loadingIndex = null;
   let lastQuery = "";
   let activeSearchRun = 0;
+  let debounceTimer = null;
 
   function escapeHtml(text) {
     return String(text)
@@ -177,18 +183,40 @@
     };
   }
 
+  function renderEmpty() {
+    if (debounceTimer) {
+      clearTimeout(debounceTimer);
+      debounceTimer = null;
+    }
+    resultsContainer.style.display = "none";
+    resultsContainer.removeAttribute("aria-busy");
+    resultsContainer.innerHTML = "";
+  }
+
+  function renderLoading() {
+    resultsContainer.style.display = "block";
+    resultsContainer.setAttribute("aria-busy", "true");
+    resultsContainer.innerHTML =
+      '<div class="local-search-status" role="status">' +
+      '<span class="local-search-spinner" aria-hidden="true"></span>' +
+      "<span>Searching…</span>" +
+      "</div>";
+  }
+
   function renderResults(query, results) {
     if (!query) {
-      resultsContainer.style.display = "none";
-      resultsContainer.innerHTML = "";
+      renderEmpty();
       return;
     }
 
     resultsContainer.style.display = "block";
+    resultsContainer.removeAttribute("aria-busy");
 
     if (results.length === 0) {
       resultsContainer.innerHTML =
-        '<div class="local-search-empty">No matches found.</div>';
+        '<div class="local-search-empty">No matches for “' +
+        escapeHtml(query) +
+        "”.</div>";
       return;
     }
 
@@ -222,9 +250,11 @@
 
   function renderError(message) {
     resultsContainer.style.display = "block";
-    resultsContainer.innerHTML = `<div class="local-search-empty">${escapeHtml(
-      message
-    )}</div>`;
+    resultsContainer.removeAttribute("aria-busy");
+    resultsContainer.innerHTML =
+      '<div class="local-search-status local-search-error" role="alert">' +
+      escapeHtml(message) +
+      "</div>";
   }
 
   async function ensureIndexLoaded() {
@@ -235,32 +265,33 @@
     if (!loadingIndex) {
       loadingIndex = import(
         "{{ site.search.pagefind_path | default: '/pagefind/pagefind.js' | relative_url }}"
-      ).then(async (module) => {
-        pagefindModule = module;
-        await pagefindModule.options({ excerptLength: 22 });
-        return pagefindModule;
-      });
+      )
+        .then(async (module) => {
+          await module.options({ excerptLength: 22 });
+          pagefindModule = module;
+          return module;
+        })
+        .catch((error) => {
+          // Drop the cached rejected promise so the next keystroke can retry
+          // (e.g. after a transient network failure) rather than failing forever.
+          loadingIndex = null;
+          throw error;
+        });
     }
 
     return loadingIndex;
   }
 
-  async function onSearchInput() {
-    const query = input.value.trim();
-    if (query === lastQuery) return;
-    lastQuery = query;
-    const runId = ++activeSearchRun;
-
-    if (!query) {
-      renderResults("", []);
-      return;
-    }
-
+  async function runSearch(query, runId) {
     try {
       const pagefind = await ensureIndexLoaded();
       const tokens = tokenize(query);
       const exact = /^".+"$/.test(query);
       const searchResult = await pagefind.search(query, exact ? { exact: true } : {});
+
+      // Bail if a newer search started while we were loading the index / searching.
+      if (runId !== activeSearchRun || input.value.trim() !== query) return;
+
       const rawResults = searchResult.results.slice(0, 120);
       const hydrated = await Promise.all(
         rawResults.map(async (result) => {
@@ -297,12 +328,38 @@
 
       if (runId !== activeSearchRun || input.value.trim() !== query) return;
       renderResults(query, picked);
-    } catch (_error) {
+    } catch (error) {
       if (runId !== activeSearchRun || input.value.trim() !== query) return;
-      renderError(
-        "Search index not found. Run pagefind after jekyll build."
-      );
+      // Keep technical detail in the console; show users something actionable.
+      if (typeof console !== "undefined" && console.error) {
+        console.error("[search] query failed:", error);
+      }
+      renderError("Search is temporarily unavailable. Please try again in a moment.");
     }
+  }
+
+  function onSearchInput() {
+    const query = input.value.trim();
+
+    if (!query) {
+      lastQuery = "";
+      activeSearchRun++; // invalidate any in-flight run
+      renderEmpty();
+      return;
+    }
+
+    if (query === lastQuery) return;
+    lastQuery = query;
+
+    // Show the spinner immediately, then debounce the (async) search itself so
+    // we don't fire a request on every keystroke.
+    renderLoading();
+    if (debounceTimer) clearTimeout(debounceTimer);
+    const runId = ++activeSearchRun;
+    debounceTimer = setTimeout(() => {
+      debounceTimer = null;
+      runSearch(query, runId);
+    }, DEBOUNCE_MS);
   }
 
   input.addEventListener("input", onSearchInput);
@@ -313,7 +370,8 @@
       !resultsContainer.contains(event.target) &&
       !searchbarContainer.contains(event.target)
     ) {
-      renderResults("", []);
+      lastQuery = "";
+      renderEmpty();
     }
   });
 
@@ -338,7 +396,8 @@
           el.scrollIntoView({ behavior: "smooth", block: "start" });
         }
       }
-      renderResults("", []);
+      lastQuery = "";
+      renderEmpty();
     }
   });
 })();
