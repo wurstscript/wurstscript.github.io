@@ -128,6 +128,21 @@ The functions inside the `Printing` package then reference the original warcraft
 
 You can use the global vscode search or file search (`ctrl+p`) to find packages you're looking for.
 
+## Printing and Debugging
+
+The `print` function is your most basic debugging tool. It takes a `string` and displays it on screen.
+
+Unlike some scripting languages, Wurst does not implicitly convert other types to text. To print a number or any non-string value, convert it explicitly with `.toString()` and build the message with the `+` operator:
+
+```wurst
+let u = GetTriggerUnit()
+print("Unit " + u.getName() + " has " + u.getHP().toString() + " hp")
+```
+
+Most standard library types provide a `.toString()` method, and it is conventional to add one to your own classes for readable debug output (use a separate `display()`-style method if the text is meant for players rather than debugging).
+
+For longer-lived or filtered logging, the standard library also offers the `ErrorHandling` and `Execute` utilities, but `print` plus `.toString()` covers the vast majority of debugging needs.
+
 ## Coding Conventions
 
 In Wurst, it is generally not recommended to call most natives directly. Instead, an extension function should be used to make the code more concise, readable, consistent and documented. Extension functions can also be easier found via autocomplete.

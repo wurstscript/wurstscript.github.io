@@ -46,6 +46,14 @@ string r = "yes" // OK
 string s = i // Error
 ```
 
+Beyond these primitives, most of the values you work with in a map have *handle types* such as
+`unit`, `group`, `timer`, `effect` or `player`. These come from the Warcraft III API (defined in
+`common.j`) rather than from Wurst itself, and the standard library provides convenient wrappers
+and extension functions for them. You can browse the wrapped native API in the
+[standard library reference](https://wurstlang.org/stdlib) (see the *Handle Wrappers* section).
+There is also the Jass `code` type for function references, which is covered in
+[Interfacing with Jass](#interfacing-with-jass-code-boolexpr-and-filters-a-mini-jass-101).
+
 ### Syntax
 
 WurstScript uses indentation based syntax to define Blocks. You can use either spaces or tabs for indentation, but mixing both will throw a warning.
@@ -1058,7 +1066,7 @@ Or expressed differently: A and B are in the same partition if and only if their
 
 ### Abstract Classes
 
-An _abstract_ class is a class, that is declared abstract — it may or may not
+An _abstract_ class is a class, that is declared abstract. It may or may not
 include abstract functions. You cannot create an instance of an abstract class,
 but you can create subclasses for it which are not abstract.
 
@@ -1628,6 +1636,117 @@ The current implementation creates a specialized function with the right number 
 Since Jass allows at most 31 parameters, function calls must not use more than 31 arguments in total.
 
 
+### Interfacing with Jass: `code`, `boolexpr` and filters (a mini Jass 101)
+
+Wurst compiles down to Jass, and the Warcraft III API (`common.j`) is written in Jass.
+Most of the time you never see this, because the standard library wraps it for you.
+But when you read `common.j`, port an old map, or stare at a native signature that wants a
+`code` or `boolexpr`, it helps to understand a few Jass concepts. These types are fully
+available in Wurst, but for writing your own logic they are superseded by closures. This
+section is a short primer, followed by what to do *instead* in idiomatic Wurst.
+
+#### The `code` type
+
+Jass has no real first-class functions. The closest it offers is the `code` type: a bare
+reference to a top-level function that takes **no parameters and returns nothing**. You create
+one with the `function` keyword followed by a function name:
+
+```wurst
+function onExpire()
+    print("timer done")
+
+let t = CreateTimer()
+TimerStart(t, 1.0, false, function onExpire)
+```
+
+A value of type `code` is extremely limited. You can only:
+
+- pass it to a native, and
+- have the engine call it later.
+
+You **cannot**:
+
+- give it parameters,
+- make it return a value,
+- store it in an array (`code` arrays are not allowed in Jass),
+- capture local variables from around it.
+
+Because of these limitations, callbacks that need context have to fetch it from the engine
+through global "getter" natives at call time, e.g. `GetExpiredTimer()` inside a timer callback,
+or `GetEnumUnit()` / `GetFilterUnit()` inside an enumeration.
+
+#### `boolexpr`, `filterfunc` and `conditionfunc`
+
+Many natives that loop over things (groups, forces, events, regions) take a *filter* so they
+only act on units you care about. In Jass this filter is a `boolexpr` ("boolean expression").
+
+You don't build a `boolexpr` directly. You write a `code` function that returns a `boolean`, then
+wrap it with one of two natives:
+
+- `Filter(code)` returns a `filterfunc`
+- `Condition(code)` returns a `conditionfunc`
+
+Both `filterfunc` and `conditionfunc` are subtypes of `boolexpr`, so either can be passed where
+a `boolexpr` is expected. Inside the filter function you read the current unit with
+`GetFilterUnit()`:
+
+```wurst
+function isAliveFilter() returns boolean
+    return GetFilterUnit().isAlive()
+
+let g = CreateGroup()
+g.enumUnitsInRange(pos, 500.0, Filter(function isAliveFilter))
+```
+
+This is exactly the pattern behind the Jass the new user was porting:
+
+```wurst
+// Jass-style: a global filter function plus a manual group enum
+function filterEnemy() returns boolean
+    return GetFilterUnit().isEnemyOf(enumeratingPlayer)
+
+g.enumUnitsInRange(pos, radius, Filter(function filterEnemy))
+```
+
+Note how the filter has to read its "argument" (which player are we filtering for?) from a
+global, because `code` cannot capture or take parameters. That global juggling is the whole
+reason this style is awkward.
+
+#### Now that you know this, don't write it this way
+
+Understanding `code` and `boolexpr` is useful for *reading* Jass and `common.j`, but writing new
+Wurst this way means fighting the language. Wurst's whole paradigm is to write high-level,
+maintainable code and let the compiler do the tedious low-level work. The standard library
+therefore provides **closure wrappers** for these Jass primitives, and closures can do
+everything `code` cannot: take parameters, return values, be stored in lists and arrays, and
+capture local variables.
+
+So the idiomatic version of the group enum above is simply:
+
+```wurst
+import ClosureForGroups
+
+forUnitsInRange(pos, radius) u ->
+    if u.isEnemyOf(caster.getOwner())   // `caster` is captured directly, no global needed
+        caster.damageTarget(u, 50.0)
+```
+
+A few rules of thumb:
+
+- Prefer the closure wrappers (`ClosureForGroups`, `ClosureTimers`, `ClosureEvents`, …) over
+  raw `code`/`boolexpr` natives. See [Lambdas and Closures](#lambdas-and-closures) below and the
+  [Mastering Closures](https://wurstlang.org/tutorials/getclose.html) tutorial.
+- You almost never need a hand-written `boolexpr`. The enum natives have overloads without a
+  filter, and the closure wrappers let you filter inline with normal `if`.
+- Don't pre-optimize by reaching for the lowest-level construct. The compiler inlines and
+  optimizes high-level code; readability and correctness come first.
+- If you genuinely do need a `code` value (e.g. a native with no Wurst wrapper), remember a
+  parameterless, non-capturing lambda is also a valid `code` value. See
+  [Lambda expressions as code-type](#lambda-expressions-as-code-type).
+
+In short: `code` and `boolexpr` remain available in Wurst so it can talk to the engine, but when
+you write your own logic, use closures.
+
 ### Lambdas and Closures
 
 A lambda expression (also called anonymous function) is a lightweight way to provide an implementation
@@ -1710,8 +1829,8 @@ doAfter(10.0, () -> begin
 	doMoreStuff()
 end)
 ```
-It is also possible to have a return statement inside a begin-end expression
-and `return` can now be used anywhere inside the closure statement block.
+A `return` statement can be used anywhere inside a closure body, including inside
+a begin-end expression.
 
 Inside a closure body, `it` refers to the closure object itself. This can be used for self-references, for example to destroy the closure from within its own body without passing it as a lambda parameter.
 ```wurst

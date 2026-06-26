@@ -115,11 +115,11 @@ init
   print(i) // This will print "1"
 ```
 
-Here, the second print uses the value of `i` as it was initially. Setting it inside the closure only has an effect in the closure's context. To share changes, you can use a `Reference<T>` to wrap the variable:
+Here, the second print uses the value of `i` as it was initially. Setting it inside the closure only has an effect in the closure's context. To share changes, you can wrap the variable in a `Reference<T>`, created with the `reference()` helper:
 
 ```wurst
 init
-  var i = new Reference(1)
+  let i = reference(1)
   execute() ->
     i.val = 2
     print(i.val) // This will print "2"
@@ -128,7 +128,23 @@ init
   destroy i
 ```
 
-By using `Reference<T>`, both the closure and the rest of your code can work with the same underlying value.
+Because the reference is a normal object, the closure captures the same instance the outer code holds, so both work on the same underlying value. Remember to `destroy` it when you are done (or use `i.into()`, which returns the contained value and destroys the reference in one step).
+
+---
+
+## Early return inside a closure
+
+`return` works inside a closure body just like it does in a normal function: it exits the closure.
+
+This is useful for flattening with guard clauses. Instead of wrapping the rest of the body in an `if`, you return early on the cases you want to handle separately and keep the main logic unindented:
+
+```wurst
+EventListener.onTargetCast(myUnit, MY_SPELL_ID) (caster, target) ->
+    if not target.isAlive()
+        return
+    // main logic stays unindented
+    caster.damageTarget(target, 100.)
+```
 
 ---
 
