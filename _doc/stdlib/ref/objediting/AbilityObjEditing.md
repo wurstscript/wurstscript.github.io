@@ -397,6 +397,18 @@ public class AbilityDefinitionPaladinDivineShield extends AbilityDefinition
 - `setCanDeactivate(int level, bool value)`
 - `presetCanDeactivate(BooleanLevelClosure lc)`
 
+### AbilityDefinitionDivineShieldCreep
+
+```wurst
+public class AbilityDefinitionDivineShieldCreep extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setCanDeactivate(int level, bool value)`
+- `presetCanDeactivate(BooleanLevelClosure lc)`
+
 ### AbilityDefinitionPurgeCreep
 
 ```wurst
@@ -4451,6 +4463,26 @@ public class AbilityDefinitionOrbofAnnihilation extends AbilityDefinition
 - `setFullDamageRadius(int level, real value)`
 - `presetFullDamageRadius(RealLevelClosure lc)`
 
+### AbilityDefinitionOrbOfAnnihilationQuillSpray
+
+```wurst
+public class AbilityDefinitionOrbOfAnnihilationQuillSpray extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSmallDamageFactor(int level, real value)`
+- `presetSmallDamageFactor(RealLevelClosure lc)`
+- `setDamageBonus(int level, real value)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `setHalfDamageRadius(int level, real value)`
+- `presetHalfDamageRadius(RealLevelClosure lc)`
+- `setMediumDamageFactor(int level, real value)`
+- `presetMediumDamageFactor(RealLevelClosure lc)`
+- `setFullDamageRadius(int level, real value)`
+- `presetFullDamageRadius(RealLevelClosure lc)`
+
 ### AbilityDefinitionMaxManaBonusLeast
 
 ```wurst
@@ -6093,6 +6125,18 @@ public class AbilityDefinitionPitLordCleavingAttack extends AbilityDefinition
 - `setDistributedDamageFactor(int level, real value)`
 - `presetDistributedDamageFactor(RealLevelClosure lc)`
 
+### AbilityDefinitionCleavingAttackCreep
+
+```wurst
+public class AbilityDefinitionCleavingAttackCreep extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDistributedDamageFactor(int level, real value)`
+- `presetDistributedDamageFactor(RealLevelClosure lc)`
+
 ### AbilityDefinitionSilenceItem
 
 ```wurst
@@ -6895,6 +6939,20 @@ public class AbilityDefinitionItemRestoreAoe extends AbilityDefinition
 
 ```wurst
 public class AbilityDefinitionKeeperoftheGroveThornsAura extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageisPercentReceived(int level, bool value)`
+- `presetDamageisPercentReceived(BooleanLevelClosure lc)`
+- `setDamageDealttoAttackers(int level, real value)`
+- `presetDamageDealttoAttackers(RealLevelClosure lc)`
+
+### AbilityDefinitionThornsAuraCreep
+
+```wurst
+public class AbilityDefinitionThornsAuraCreep extends AbilityDefinition
 ```
 
 **Members:**
@@ -9303,6 +9361,24 @@ public class AbilityDefinitionShadowMeld extends AbilityDefinition
 - `setPermanentCloak(int level, bool value)`
 - `presetPermanentCloak(BooleanLevelClosure lc)`
 
+### AbilityDefinitionShadowMeldItem
+
+```wurst
+public class AbilityDefinitionShadowMeldItem extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDayNightDuration(int level, real value)`
+- `presetDayNightDuration(RealLevelClosure lc)`
+- `setActionDuration(int level, real value)`
+- `presetActionDuration(RealLevelClosure lc)`
+- `setFadeDuration(int level, real value)`
+- `presetFadeDuration(RealLevelClosure lc)`
+- `setPermanentCloak(int level, bool value)`
+- `presetPermanentCloak(BooleanLevelClosure lc)`
+
 ### AbilityDefinitionRoarAra2
 
 ```wurst
@@ -10636,7 +10712,7 @@ public class AbilityDefinitionChenDrunkenHaze extends AbilityDefinition
 
 - `construct(int newAbilityId)`
 - `setAttackSpeedModifier(int level, real value)`
-- `setAttacksPrevented(int level, string value)`
+- `setAttacksPrevented(int level, int value)`
 - `setChanceToMiss(int level, real value)`
 - `setMovementSpeedModifier(int level, real value)`
 
@@ -10729,7 +10805,7 @@ public class AbilityDefinitionSlowPoisonItem extends AbilityDefinition
 - `construct(int newAbilityId)`
 - `setDamagePerSecond(int level, real value)`
 - `setMovementSpeedFactor(int level, real value)`
-- `setStackingType(int level, string value)`
+- `setStackingType(int level, int value)`
 - `setAttackSpeedFactor(int level, real value)`
 
 ### AbilityDefinitionUnholyFrenzyItem
@@ -11073,7 +11149,7 @@ public class AbilityDefinitionParasiteEredar extends AbilityDefinition
 - `setAttackSpeedFactor(int level, real value)`
 - `setUnitType(int level, string value)`
 - `setDamageperSecond(int level, real value)`
-- `setStackingType(int level, string value)`
+- `setStackingType(int level, int value)`
 - `setSummonedUnitCount(int level, int value)`
 - `setSummonedUnitDuration(int level, real value)`
 
@@ -11420,7 +11496,7 @@ public class AbilityDefinitionBurrowBarbedArachnathid extends AbilityDefinition
 
 - `construct(int newAbilityId)`
 - `setAlternateFormUnit(int level, string value)`
-- `setMorphingFlags(int level, string value)`
+- `setMorphingFlags(int level, int value)`
 - `setLandingDelayTime(int level, real value)`
 - `setNormalFormUnit(int level, string value)`
 - `setAltitudeAdjustmentDuration(int level, real value)`
@@ -11635,7 +11711,7 @@ public class AbilityDefinitionColdArrows extends AbilityDefinition
 **Members:**
 
 - `construct(int newAbilityId)`
-- `setStackFlags(int level, string value)`
+- `setStackFlags(int level, int value)`
 - `setExtraDamage(int level, real value)`
 - `setMovementSpeedFactor(int level, real value)`
 - `setAttackSpeedFactor(int level, real value)`
@@ -12636,6 +12712,373 @@ public class AbilityDefinitionAlarm extends AbilityDefinition
 
 - `construct(int newAbilityId)`
 
+### AbilityDefinitionRally
+
+```wurst
+public class AbilityDefinitionRally extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionShadowHunterVoodooo
+
+```wurst
+public class AbilityDefinitionShadowHunterVoodooo extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionAcolyteHarvest
+
+```wurst
+public class AbilityDefinitionAcolyteHarvest extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionAwaken
+
+```wurst
+public class AbilityDefinitionAwaken extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionBuildNeutral
+
+```wurst
+public class AbilityDefinitionBuildNeutral extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionBuildHuman
+
+```wurst
+public class AbilityDefinitionBuildHuman extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionBuildOrc
+
+```wurst
+public class AbilityDefinitionBuildOrc extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionBuildNightElf
+
+```wurst
+public class AbilityDefinitionBuildNightElf extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionBuildNaga
+
+```wurst
+public class AbilityDefinitionBuildNaga extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionCreepSleep
+
+```wurst
+public class AbilityDefinitionCreepSleep extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionDropInstant
+
+```wurst
+public class AbilityDefinitionDropInstant extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionDrop
+
+```wurst
+public class AbilityDefinitionDrop extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionMeatDrop
+
+```wurst
+public class AbilityDefinitionMeatDrop extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionMeatLoad
+
+```wurst
+public class AbilityDefinitionMeatLoad extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionMilitiaConversion
+
+```wurst
+public class AbilityDefinitionMilitiaConversion extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionPurchaseItem
+
+```wurst
+public class AbilityDefinitionPurchaseItem extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionRevive
+
+```wurst
+public class AbilityDefinitionRevive extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionSacrificeSacrificialPit
+
+```wurst
+public class AbilityDefinitionSacrificeSacrificialPit extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionSacrificeAcolyte
+
+```wurst
+public class AbilityDefinitionSacrificeAcolyte extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionSellItem
+
+```wurst
+public class AbilityDefinitionSellItem extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionTreeOfLifeForAttachingArt
+
+```wurst
+public class AbilityDefinitionTreeOfLifeForAttachingArt extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionFlag
+
+```wurst
+public class AbilityDefinitionFlag extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionFlagHuman
+
+```wurst
+public class AbilityDefinitionFlagHuman extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionFlagOrc
+
+```wurst
+public class AbilityDefinitionFlagOrc extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionFlagNightElf
+
+```wurst
+public class AbilityDefinitionFlagNightElf extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionFlagUndead
+
+```wurst
+public class AbilityDefinitionFlagUndead extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionSoulTrap
+
+```wurst
+public class AbilityDefinitionSoulTrap extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionSoulPossession
+
+```wurst
+public class AbilityDefinitionSoulPossession extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionItemDamageAoe
+
+```wurst
+public class AbilityDefinitionItemDamageAoe extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionItemInvulNormal
+
+```wurst
+public class AbilityDefinitionItemInvulNormal extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setData(int level, bool value)`
+
+### AbilityDefinitionItemRitualDaggerInstant
+
+```wurst
+public class AbilityDefinitionItemRitualDaggerInstant extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setLeaveTargetAlive(int level, bool value)`
+- `setData(int level, bool value)`
+- `setData1(int level, bool value)`
+- `setData2(int level, string value)`
+- `setHitPointsGained(int level, int value)`
+
+### AbilityDefinitionItemRitualDaggerRegen
+
+```wurst
+public class AbilityDefinitionItemRitualDaggerRegen extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setLeaveTargetAlive(int level, bool value)`
+- `setData(int level, bool value)`
+- `setData1(int level, bool value)`
+- `setData2(int level, string value)`
+- `setHitPointsGained(int level, int value)`
+
+### AbilityDefinitionSlow2
+
+```wurst
+public class AbilityDefinitionSlow2 extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAlwaysAutocast(int level, bool value)`
+- `setAttackSpeedFactor(int level, real value)`
+- `setMovementSpeedFactor(int level, real value)`
+
+### AbilityDefinitionDeathKnightAnimateDead1
+
+```wurst
+public class AbilityDefinitionDeathKnightAnimateDead1 extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setInheritUpgrades(int level, bool value)`
+- `setRaisedUnitsAreInvulnerable(int level, bool value)`
+- `setNumberofCorpsesRaised(int level, int value)`
+
+### AbilityDefinitionResistantSkinCreep
+
+```wurst
+public class AbilityDefinitionResistantSkinCreep extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
 ### AbilityDefinitionResistantSkin31PosCreep
 
 ```wurst
@@ -12690,6 +13133,16 @@ public class AbilityDefinitionTornadoWander extends AbilityDefinition
 
 ```wurst
 public class AbilityDefinitionResistantSkin extends AbilityDefinition
+```
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionBuildUndead
+
+```wurst
+public class AbilityDefinitionBuildUndead extends AbilityDefinition
 ```
 
 **Members:**

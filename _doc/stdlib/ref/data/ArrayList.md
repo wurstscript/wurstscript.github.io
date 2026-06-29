@@ -87,7 +87,13 @@ MEMORY MANAGEMENT:
 ==================
 ArrayList uses section allocation in a shared static array per type.
 Destroyed lists return sections to a free pool for reuse.
-Free sections are compacted to reduce fragmentation.
+Reuse is first-fit and claims the whole freed section (sections are never split).
+Adjacent free sections are merged (compacted) when the store approaches its cap or
+when the free pool is full, so interior gaps may persist until then.
+The free pool itself is bounded (MAX_FREE_SECTIONS): if it is full and compaction
+cannot shrink it, a freed section's space is dropped (it leaks until the type's
+store is reset). Element references are always cleared, so this is a space leak, not
+a dangling-reference leak. Presize and reuse lists to avoid reaching this state.
 
 Fragmentation occurs when lists grow - the old section becomes a gap.
 This is why presizing matters: growth = copy to new location = wasted space.
@@ -190,15 +196,3 @@ public function ArrayList<string>.join() returns string
 ```
 
 Joins elements from a string list into one string
-
-### ArrayList<T>.op_index
-
-```wurst
-public function ArrayList<T>.op_index<T>(int index) returns T
-```
-
-### ArrayList<T>.op_indexAssign
-
-```wurst
-public function ArrayList<T>.op_indexAssign<T>(int index, T value)
-```
