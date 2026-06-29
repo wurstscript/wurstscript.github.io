@@ -113,7 +113,7 @@ public class UnitOrBuildingOrHeroDefinition extends W3UDefinition
 - `setNormalAbilities(string data)`
 - `setNameEditorSuffix(string data)`
 - `setMovementSound(string data)`
-- `setModelFileExtraVersions(string data)`
+- `setModelFileExtraVersions(int data)`
 - `setModelFile(string data)`
 - `setPortraitModelFile(string data)`
 - `setMinimumAttackRange(int data)`
