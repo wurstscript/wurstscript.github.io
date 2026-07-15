@@ -1090,6 +1090,14 @@ public function unit.setTimeScale(real scale)
 public function unit.setTimedLife(real time)
 ```
 
+### unit.setTimedLife
+
+```wurst
+public function unit.setTimedLife(real time, int buffId)
+```
+
+Applies a timed life over `time` seconds using the given decay buff id (instead of the default 'BTLF').
+
 ### unit.setTurnSpeed
 
 ```wurst
