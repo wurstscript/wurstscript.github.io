@@ -2,7 +2,7 @@
 title: Production-Ready Object Editing and Safer Calls
 excerpt: A production-ready object editor in VSCode, null-safe calls, smarter project generation, quieter tooling, and major object generation and standard library updates.
 date: 2026-07-16
-image: /assets/images/news/wscode.png
+image: /assets/images/news/w3u.png
 layout: newsarticle
 author: Frotty
 ---
@@ -13,9 +13,13 @@ The latest WurstScript updates bring one of our biggest VSCode workflows to prod
 
 The object editor inside the VSCode extension is now ready for production use. Warcraft III object data can be edited without leaving the editor, while the extension automatically keeps the map's binary object data and `.wts` string table in sync.
 
-The editor is designed for real map data rather than isolated forms. Object references link across files, making it easy to follow the relationship between abilities, units, buffs, upgrades, and other definitions. Rich tooltip fields also come with an in-game-style preview, so formatted text can be checked while it is being written instead of after launching Warcraft III.
+![Editing Warcraft III unit object data directly in VSCode](/assets/images/news/objeditor.png){: .img-responsive .center-block}
 
-<!-- TODO: Add a wide screenshot of the VSCode object editor here. A strong composition would show the object tree and field editor, a cross-file object link, and the rich tooltip preview at the same time. Suggested path: /assets/images/news/object-editor.png -->
+The editor is designed for real map data rather than isolated forms. Object references link across files, making it easy to follow the relationship between abilities, units, buffs, upgrades, and other definitions.
+
+Rich tooltip fields also come with an in-game-style preview, so formatted text can be checked while it is being written instead of after launching Warcraft III.
+
+![In-game-style preview of a rich Warcraft III tooltip](/assets/images/news/tooltip.webp){: .img-responsive .center-block}
 
 Together with map archive inspection, asset previews, and map folder support from earlier releases, this turns VSCode into an increasingly complete home for day-to-day Warcraft III map development.
 
