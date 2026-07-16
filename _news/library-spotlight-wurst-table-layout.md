@@ -11,6 +11,8 @@ author: Frotty
 
 It has now grown into something much bigger: a complete WurstScript UI toolkit for building polished WC3 interfaces from start to finish.
 
+![Wurst Table Layout components and interface showcase in Warcraft III](/assets/images/news/table-layout.webp){: .img-responsive .center-block}
+
 ## From Layout Engine to UI Toolkit
 
 At the core is still the table/flexbox-style layout engine. You build rows, add cells, set padding and gaps, opt into column alignment when a form or roster needs it, and let the library do the positioning work.

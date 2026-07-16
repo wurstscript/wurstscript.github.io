@@ -239,6 +239,8 @@ Expr ::=
     | Expr . IDENTIFIER(Expr, Expr, ...)    // member function
     | Expr .. IDENTIFIER(Expr, Expr, ...)   // member function, same as single dot
                                             // but returns the receiver type
+    | Expr ?. IDENTIFIER            // null-safe member variable access
+    | Expr ?. IDENTIFIER(Expr, Expr, ...)   // null-safe member function call
     | new IDENTIFIER(Expr, Expr, ...)       // constructor call
     | destroy Expr                  // destroy object
     | Expr castTo Type              // casting
@@ -275,6 +277,31 @@ temp.registerAnyUnitEvent(EVENT_PLAYER_UNIT_ISSUED_ORDER)
 temp.addCondition(Condition(function cond))
 temp.addAction(function action)
 ```
+
+### Null-safe operator
+
+The null-safe operator `?.` accesses a member only when the receiver is not `null`.
+The receiver is evaluated exactly once; if it is `null`, the access is skipped entirely — for a method call this means the arguments are not evaluated either — and the result of the whole expression is `null`.
+
+```wurst
+u?.kill()                    // only kills the unit if u is not null
+let owner = u?.getOwner()    // null if u is null
+if a?.next?.next == null     // accesses chain naturally
+    ...
+```
+
+The above call is equivalent to:
+
+```wurst
+if u != null
+    u.kill()
+```
+
+There are a few rules that keep the operator honest:
+
+- The receiver must be of a type that can actually be `null` (classes, interfaces, strings, handles, ...). Using `?.` on an `int` or via a static type reference is a compile error.
+- If the accessed member's type cannot represent `null` (e.g. `int`, `real`, `boolean`), the result may not be used as a value. A call like `a?.getCount()` is only allowed as a standalone statement that discards the result; use an explicit `if a != null` check when you need such a value.
+- `?.` cannot be used as an assignment target (`a?.x = 5` is invalid) and cannot be combined with array member access.
 
 ### Conditional operator
 
@@ -2405,6 +2432,21 @@ Prefer using `var` and `let` over explicit types whenever possible.
 #### Immutability
 
 Prefer using immutable data to mutable. Always declare local variables and members as `let` rather than `var` if they are not modified after initialization.
+
+#### Null-safe access
+
+Prefer the null-safe operator over an explicit null check when the null case simply does nothing:
+
+```wurst
+// prefer this
+target?.damage(50.)
+
+// over this
+if target != null
+    target.damage(50.)
+```
+
+Keep explicit `if x != null` checks when the null case needs its own handling or when the accessed value has a type that cannot represent null.
 
 #### Using loops
 
