@@ -81,6 +81,7 @@ Auto-generated reference for every package in the [Wurst standard library](https
 - [ChunkedString](/stdlib/ref/file/ChunkedString.html)
 - [FileIO](/stdlib/ref/file/FileIO.html)
 - [GameStatus](/stdlib/ref/file/GameStatus.html)
+- [MultibyteDiagnostics](/stdlib/ref/file/MultibyteDiagnostics.html)
 - [SaveLoadData](/stdlib/ref/file/SaveLoadData.html): Asynchronously loads the data from the file of the given player
 - [Serializable](/stdlib/ref/file/Serializable.html)
 - [SyncSimple](/stdlib/ref/file/SyncSimple.html)
@@ -140,7 +141,7 @@ Auto-generated reference for every package in the [Wurst standard library](https
 - [Reference](/stdlib/ref/_handles/Reference.html): A simple wrapper class which contains a reference to a value of the given type.
 - [Region](/stdlib/ref/_handles/Region.html)
 - [Sound](/stdlib/ref/_handles/Sound.html): Returns sound length in milliseconds.
-- [String](/stdlib/ref/_handles/String.html): returns the position of the char in the charset
+- [String](/stdlib/ref/_handles/String.html): A SubString slice that cuts a multibyte (non-latin) character in half does not
 - [Texttag](/stdlib/ref/_handles/Texttag.html)
 - [Timer](/stdlib/ref/_handles/Timer.html)
 - [TimerDialog](/stdlib/ref/_handles/TimerDialog.html): Multiplies the timer's tick rate and remaining time, so that the overall elapsed time stays the same.

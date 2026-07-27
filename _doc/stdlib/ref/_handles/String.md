@@ -9,9 +9,13 @@ source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/_handles/
 generated: true
 ---
 
-returns the position of the char in the charset
-	therefore converting a single char into an int that can
-	be converted back to a char with .toCharsetString()
+A SubString slice that cuts a multibyte (non-latin) character in half does not
+contain valid data. On current game versions such invalid slices are collapsed
+to a marker string with a constant string hash. Since this behavior is
+undocumented and has changed between game versions, the marker hash is computed
+at runtime from a known 2-byte character, so a future engine change degrades
+gracefully (multibyte detection turns off) instead of corrupting data.
+The historically observed hash 1843378377 is kept as an additional fallback.
 
 **[Source on GitHub](https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/_handles/primitives/String.wurst)**
 
@@ -60,6 +64,27 @@ Returns an integer result based on a lexicographic string comparison of strings 
 
 ## Extension Functions
 
+### string.isMultibytePartial
+
+```wurst
+public function string.isMultibytePartial() returns boolean
+```
+
+Returns true if this string is an invalid slice of a multibyte character.
+	Only meaningful when ENABLE_MULTIBYTE_SUPPORT is enabled.
+
+### string.isCharBoundary
+
+```wurst
+public function string.isCharBoundary(int pos) returns boolean
+```
+
+Returns true if this string can be split at the given position without
+	cutting a multibyte character in half, i.e. the byte at the given position
+	starts a new character instead of continuing a preceding one.
+	Positions at or outside the string's bounds count as boundaries.
+	Only meaningful when ENABLE_MULTIBYTE_SUPPORT is enabled.
+
 ### string.isNotBlank
 
 ```wurst
@@ -74,6 +99,10 @@ Returns true if this string is non-null and
 ```wurst
 public function string.toCharsetInt() returns int
 ```
+
+returns the position of the char in the charset
+	therefore converting a single char into an int that can
+	be converted back to a char with .toCharsetString()
 
 ### string.toReal
 
@@ -343,7 +372,29 @@ public function string.toLines() returns StringLines
 ### ENABLE_MULTIBYTE_SUPPORT
 
 ```wurst
-public constant ENABLE_MULTIBYTE_SUPPORT = false
+public constant ENABLE_MULTIBYTE_SUPPORT = true
 ```
 
 > 🔧 **Configurable.** Override it in your map's config package.
+
+### PARTIAL_CHAR_MARKER
+
+```wurst
+public constant PARTIAL_CHAR_MARKER = "ä".substring(0, 1)
+```
+
+### PARTIAL_CHAR_HASH
+
+```wurst
+public constant PARTIAL_CHAR_HASH = PARTIAL_CHAR_MARKER.getHash()
+```
+
+### LEAD4_HASH
+
+```wurst
+public constant LEAD4_HASH = "😀".substring(0, 1).getHash()
+```
+
+Hash of a slice containing only the lead byte 0xF0 of a 4-byte character
+	(emoji and other astral plane chars), which the game does not collapse
+	to the partial char marker.
