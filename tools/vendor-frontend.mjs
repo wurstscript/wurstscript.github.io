@@ -31,7 +31,7 @@ function copy(source, destination) {
 [
   "assets/plugins/bootstrap",
   "assets/plugins/font-awesome",
-  "assets/plugins/prism",
+  "assets/plugins/prism/prism.js",
   "assets/plugins/jquery-1.12.3.min.js",
   "assets/plugins/jquery-match-height",
   "assets/plugins/jquery-scrollTo",
@@ -68,5 +68,5 @@ copy(
   "node_modules/@fortawesome/fontawesome-free/webfonts",
   "assets/plugins/font-awesome/webfonts"
 );
+// prism.css is maintained locally because it follows the site's theme variables.
 copy("node_modules/prismjs/prism.js", "assets/plugins/prism/prism.js");
-copy("node_modules/prismjs/themes/prism.css", "assets/plugins/prism/prism.css");

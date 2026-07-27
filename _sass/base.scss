@@ -13,12 +13,12 @@
     margin-left: auto;
 }
 
-.col-xs-6 {
+:where(.col-xs-6) {
     flex: 0 0 auto;
     width: 50%;
 }
 
-.col-xs-12 {
+:where(.col-xs-12) {
     flex: 0 0 auto;
     width: 100%;
 }
@@ -680,6 +680,8 @@ header.branding {
 
 .breadcrumb>li+li:before {
     color: var(--text-on-brand-muted);
+    content: var(--bs-breadcrumb-divider, "/");
+    padding: 0 var(--bs-breadcrumb-item-padding-x, 0.5rem);
 }
 
 .alertbox {
