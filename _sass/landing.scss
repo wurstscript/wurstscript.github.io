@@ -1,3 +1,5 @@
+@use "mixins" as *;
+
 /* ======= Landing Page ======= */
 .landing-page {
   .header {
@@ -335,9 +337,12 @@
     max-width: 860px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
   }
   .item {
     margin-bottom: 30px;
+    display: flex;
 
     .icon-holder {
       margin-bottom: 15px;
@@ -358,6 +363,7 @@
     padding: 45px 30px;
     background: var(--smoky-white);
     position: relative;
+    width: 100%;
     border: 1px solid var(--divider);
     @include border-radius(4px);
 

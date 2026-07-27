@@ -1,0 +1,13 @@
+{
+  "name": "wurstscript-website",
+  "private": true,
+  "scripts": {
+    "test": "node tools/check-built-assets.mjs",
+    "vendor:frontend": "node tools/vendor-frontend.mjs"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "7.3.1",
+    "bootstrap": "5.3.8",
+    "prismjs": "1.30.0"
+  }
+}

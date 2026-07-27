@@ -8,3 +8,4 @@ _stdlib
 # every deploy. Never commit it — a hand-committed index drifts out of sync
 # with the content and breaks search.
 pagefind/
+node_modules/

@@ -32,6 +32,17 @@ This folder contains the complete source of the WurstScript website, configured 
 
 We use Sass as stylesheet language and you can find the files inside the `_sass` folder.
 
+Bootstrap, Font Awesome, and Prism are managed through `package.json`. After
+updating them, refresh the checked-in browser assets with:
+
+```shell
+npm install
+npm run vendor:frontend
+```
+
+Do not edit files under `assets/plugins/bootstrap`, `assets/plugins/font-awesome`,
+or `assets/plugins/prism` by hand.
+
 ## Tutorials
 
 Tutorials are included as part of the documentation in their own section.

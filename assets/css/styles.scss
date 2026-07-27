@@ -3,9 +3,8 @@
 
 
 @charset "utf-8";
-@import "mixins";
-@import "theme-default";
-@import "base";
-@import "doc";
-@import "landing";
-@import "stdlibref";
+@use "theme-default";
+@use "base";
+@use "doc";
+@use "landing";
+@use "stdlibref";

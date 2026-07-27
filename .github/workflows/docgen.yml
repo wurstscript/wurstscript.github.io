@@ -22,10 +22,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout website
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Checkout WurstStdlib2
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: wurstscript/WurstStdlib2
           ref: master
@@ -41,7 +41,7 @@ jobs:
         run: deno task gen --src "$GITHUB_WORKSPACE/_stdlib/wurst" --out "$GITHUB_WORKSPACE"
 
       - name: Open pull request
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: auto/stdlib-docgen

@@ -12,13 +12,12 @@ plugins:
   - jekyll-sitemap
 
 exclude:
-  - vendor
-  - tools
-  - assets/plugins/elegant_font/css/index.html
-  - assets/plugins/jquery-match-height/test.html
-  - assets/plugins/jquery-scrollTo/demo
-  - assets/plugins/jquery-scrollTo/tests
-  - assets/plugins/lightbox/examples
+- vendor
+- tools
+- node_modules
+- package.json
+- package-lock.json
+- assets/plugins/elegant_font/css/index.html
 repository: wurstscript/wurstscript.github.io
 url: https://wurstlang.org
 baseurl: ""
