@@ -147,15 +147,7 @@ function buildSidebarToc(navContainer) {
   return itemCount > 0;
 }
 
-$(document).ready(function () {
-  $("#cards-wrapper .item-inner").matchHeight();
-  $("#showcase .card").matchHeight();
-
-  $(document).delegate('*[data-toggle="lightbox"]', "click", function (e) {
-    e.preventDefault();
-    $(this).ekkoLightbox();
-  });
-
+document.addEventListener("DOMContentLoaded", () => {
   // Apply Wurst syntax highlighting to inline code snippets in docs/news.
   if (window.Prism) {
     const inlineCodeNodes = document.querySelectorAll(

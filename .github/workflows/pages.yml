@@ -1,27 +1,24 @@
 name: Build and deploy site
 
-# Builds the Jekyll site, generates the Pagefind search index from the *built*
-# site, and deploys the result to GitHub Pages. Because the index is generated
-# here on every deploy, it can never drift out of sync with the content (which
-# is what happened when the index was hand-committed into the repo).
+# Builds and verifies every pull request. Pushes to master are additionally
+# deployed to GitHub Pages. PR builds are retained as downloadable preview
+# artifacts so proposed changes can be tested locally before merging.
 #
 # Requires repo Settings -> Pages -> "Build and deployment" -> Source = "GitHub Actions".
 
 on:
   push:
     branches: [master]
+  pull_request:
+    branches: [master]
   workflow_dispatch:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
-# Allow one in-flight deploy at a time; let a running deploy finish rather than
-# cancelling it (cancelling a half-published deploy can leave Pages inconsistent).
 concurrency:
-  group: pages
-  cancel-in-progress: false
+  group: pages-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   build:
@@ -30,7 +27,7 @@ jobs:
       JEKYLL_ENV: production
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -39,12 +36,23 @@ jobs:
           bundler-cache: true
 
       - name: Set up Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: "20"
+          node-version: "24"
+
+      - name: Install frontend dependencies
+        run: npm ci
+
+      - name: Verify vendored frontend assets
+        run: |
+          npm run vendor:frontend
+          git diff --exit-code -- assets/plugins
 
       - name: Build site
         run: bundle exec jekyll build
+
+      - name: Verify built dependency assets
+        run: npm test
 
       - name: Generate Pagefind search index
         run: npx -y pagefind@1.5.2 --site _site
@@ -53,13 +61,41 @@ jobs:
         run: test -f _site/pagefind/pagefind.js && test -f _site/pagefind/pagefind-entry.json
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v4
         with:
           path: _site
 
+      - name: Upload PR preview
+        if: github.event_name == 'pull_request'
+        id: preview
+        uses: actions/upload-artifact@v7
+        with:
+          name: site-preview-pr-${{ github.event.pull_request.number }}
+          path: _site
+          retention-days: 7
+
+      - name: Add PR preview instructions
+        if: github.event_name == 'pull_request'
+        run: |
+          {
+            echo "### Site preview"
+            echo
+            echo "Download [site-preview-pr-${{ github.event.pull_request.number }}](${{ steps.preview.outputs.artifact-url }}), extract it, then serve the directory locally:"
+            echo
+            echo '```shell'
+            echo 'python -m http.server 4000'
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
   deploy:
+    if: github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
