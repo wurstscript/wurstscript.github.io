@@ -2231,6 +2231,8 @@ This allows precomputation at compiletime and reuse at runtime.
 A practical example is `HashMap`: content prepared during compiletime can be migrated and used ingame at runtime.
 This is useful for lookup tables, pre-generated mappings, and other cached data that should not be recomputed ingame.
 
+Compiletime functions can also prepare global scalar and array values. Their initialized entries are emitted into the generated runtime initialization, so the setup does not have to run again in the map.
+
 ```wurst
 package Example
 import HashMap
