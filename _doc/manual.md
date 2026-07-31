@@ -623,6 +623,24 @@ If you want to make them visible inside packages that import that package you ha
 You can declare a variable constant to prohibit changes after initialization.
 This has no impact on the generated code but throws an error when trying to compile.
 
+### Readonly variables
+
+The _readonly_ modifier restricts where a package or member variable may be changed without making the value constant.
+A readonly package variable can only be changed from its declaring package. A readonly class or module variable can only be changed by code declared in that class or module, not by subclasses, classes using the module, or other callers.
+
+Combine _public_ and _readonly_ to expose a value for reading while keeping control over its updates:
+
+```wurst
+package Counter
+
+public readonly int count
+
+public function increment()
+    count++ // allowed: this function belongs to the declaring package
+```
+
+Unlike a _constant_, a readonly variable may be changed repeatedly by its owner. The restriction also applies to compound assignments, increments, and array-element assignments.
+
 
 
 ### Examples
@@ -881,6 +899,21 @@ class Rectangle
 
 By default class elements are visible everywhere. You can add the modifiers _private_ or _protected_ in front of a variable or function definition to restrict its visibility.
 Private elements can only be seen from within the class. Protected elements can be seen within the enclosing package and in subclasses.
+
+Visibility controls who can read a member. The _readonly_ modifier independently controls who can write it. For example, a `public readonly` field can be read everywhere, but only methods declared in its class can assign it. Subclasses cannot assign it.
+
+```wurst
+class Counter
+    public readonly int value
+
+    function setValue(int newValue)
+        value = newValue // allowed
+
+init
+    let counter = new Counter()
+    print(counter.value.toString()) // allowed
+    counter.value = 42 // error
+```
 
 ### Inheritance
 A class can _extend_ an other class. The class then inherits all the non-private functions and variables from that class
@@ -1470,10 +1503,11 @@ module PositiveIntContainer
 
 ### Visibility & Usage Rules
 
- * Variables of modules are always private
+ * Module variables support the same visibility modifiers as class variables
+ * A _readonly_ module variable can only be changed by functions declared in that module; a class using the module cannot change it directly
  * private functions are only usable from the module itself
  * each function of a module must be declared public or private
- * if a class uses a module it inherits only the public functions of the module
+ * if a class uses a module it inherits only its public members
     * you can use a module with *private* (not implemented yet). This will let you use the functionality of the module without exposing its functions to the outside.
 
 
