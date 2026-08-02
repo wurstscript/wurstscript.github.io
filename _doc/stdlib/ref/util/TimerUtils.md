@@ -7,6 +7,7 @@ tags:
   - util
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/util/TimerUtils.wurst'
 generated: true
+toc: sections
 ---
 
 Get a new timer. Use this instead of "CreateTimer".

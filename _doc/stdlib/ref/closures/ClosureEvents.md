@@ -9,6 +9,7 @@ tags:
   - event
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/closures/ClosureEvents.wurst'
 generated: true
+toc: sections
 curated: /stdlib/closure_events
 ---
 

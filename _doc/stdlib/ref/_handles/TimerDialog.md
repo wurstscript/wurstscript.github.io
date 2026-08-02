@@ -7,6 +7,7 @@ tags:
   - handles
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/_handles/TimerDialog.wurst'
 generated: true
+toc: sections
 ---
 
 Multiplies the  timer's tick rate and remaining time, so that the overall elapsed time stays the same.

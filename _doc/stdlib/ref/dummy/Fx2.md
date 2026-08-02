@@ -7,6 +7,7 @@ tags:
   - dummy
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/dummy/Fx2.wurst'
 generated: true
+toc: sections
 ---
 
 **[Source on GitHub](https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/dummy/Fx2.wurst)**

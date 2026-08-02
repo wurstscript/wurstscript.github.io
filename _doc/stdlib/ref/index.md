@@ -2,9 +2,14 @@
 title: API Reference
 layout: doc
 permalink: /stdlib/ref/
+toc: sections
 ---
 
-Auto-generated reference for every package in the [Wurst standard library](https://github.com/wurstscript/WurstStdlib2). For orientation and guidance on _which_ package to use, see the [standard library overview](/stdlib.html).
+This is the complete, generated reference for the [Wurst standard library](https://github.com/wurstscript/WurstStdlib2). It is organized by package category and built from the hotdoc in the source repository.
+
+## Before you browse
+
+If you are choosing a capability, start with the [standard library overview](/stdlib.html). If you know what you need, use your browser's search or the package list below. Package pages lead with a summary, then group their declarations into classes, functions, extension functions, and constants.
 
 ## Object Editing
 
@@ -84,6 +89,7 @@ Auto-generated reference for every package in the [Wurst standard library](https
 - [MultibyteDiagnostics](/stdlib/ref/file/MultibyteDiagnostics.html)
 - [SaveLoadData](/stdlib/ref/file/SaveLoadData.html): Asynchronously loads the data from the file of the given player
 - [Serializable](/stdlib/ref/file/Serializable.html)
+- [SQLite](/stdlib/ref/file/SQLite.html)
 - [SyncSimple](/stdlib/ref/file/SyncSimple.html)
 
 ## Utilities
@@ -103,7 +109,7 @@ Auto-generated reference for every package in the [Wurst standard library](https
 - [Simulate3dSound](/stdlib/ref/util/Simulate3dSound.html)
 - [SoundUtils](/stdlib/ref/util/SoundUtils.html)
 - [StandardTextTags](/stdlib/ref/util/StandardTextTags.html)
-- [StringUtils](/stdlib/ref/util/StringUtils.html): Custom Function which can split strings and runs callback for each string.
+- [StringUtils](/stdlib/ref/util/StringUtils.html): Returns the width of the string.
 - [TerrainUtils](/stdlib/ref/util/TerrainUtils.html)
 - [Time](/stdlib/ref/util/Time.html): Type-safe wrappers to distinguish durations (an amount of time) from instants (a point in time), and the valid ways
 - [TimerUtils](/stdlib/ref/util/TimerUtils.html): Get a new timer.

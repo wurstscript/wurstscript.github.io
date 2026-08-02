@@ -7,6 +7,7 @@ tags:
   - math
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/math/Bitwise.wurst'
 generated: true
+toc: sections
 ---
 
 A tuple containing 4 bytes comprising a 4-byte integer.

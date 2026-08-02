@@ -9,6 +9,7 @@ tags:
   - flags
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/data/BitSet.wurst'
 generated: true
+toc: sections
 curated: /stdlib/bitset
 ---
 

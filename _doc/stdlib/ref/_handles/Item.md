@@ -7,6 +7,7 @@ tags:
   - handles
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/_handles/Item.wurst'
 generated: true
+toc: sections
 ---
 
 Updates the item's name, tooltip, extendedtooltip, description or icon for the specific player.

@@ -7,6 +7,7 @@ tags:
   - wurst
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/_wurst/Wurstunit.wurst'
 generated: true
+toc: sections
 curated: /stdlib/wurstunit
 ---
 

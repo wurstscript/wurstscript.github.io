@@ -7,6 +7,7 @@ tags:
   - util
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/util/Colors.wurst'
 generated: true
+toc: sections
 ---
 
 Mixes two colors, s would be a number 0<=s<=1 that determines

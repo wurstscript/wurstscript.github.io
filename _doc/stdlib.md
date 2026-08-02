@@ -1,7 +1,7 @@
 ---
 title: Standard Library
-excerpt: __Documentation__ for packages in the wurst standard library.
-date: 2021-10-07
+excerpt: Find the right package for your map, then look up its exact API in the generated reference.
+date: 2026-08-02
 color: pink
 icon:
   type: fa

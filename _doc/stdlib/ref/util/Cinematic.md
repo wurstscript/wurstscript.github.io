@@ -7,6 +7,7 @@ tags:
   - util
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/util/Cinematic.wurst'
 generated: true
+toc: sections
 ---
 
 Create a cinematic by composing cinematic sequences:

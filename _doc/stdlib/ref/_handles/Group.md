@@ -7,6 +7,7 @@ tags:
   - handles
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/_handles/Group.wurst'
 generated: true
+toc: sections
 ---
 
 Use this group for your non-nested group enum calls

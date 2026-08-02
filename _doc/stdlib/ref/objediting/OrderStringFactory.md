@@ -7,6 +7,7 @@ tags:
   - objediting
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/objediting/presets/OrderStringFactory.wurst'
 generated: true
+toc: sections
 ---
 
 **[Source on GitHub](https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/objediting/presets/OrderStringFactory.wurst)**

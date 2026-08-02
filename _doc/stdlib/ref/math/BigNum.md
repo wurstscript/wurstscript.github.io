@@ -7,6 +7,7 @@ tags:
   - math
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/math/BigNum.wurst'
 generated: true
+toc: sections
 ---
 
 **[Source on GitHub](https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/math/BigNum.wurst)**

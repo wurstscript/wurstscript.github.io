@@ -7,6 +7,7 @@ tags:
   - math
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/math/Maths.wurst'
 generated: true
+toc: sections
 ---
 
 Returns the length of the hypotenuse of a right-angle triangle with the

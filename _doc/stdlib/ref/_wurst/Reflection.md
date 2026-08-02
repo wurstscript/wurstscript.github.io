@@ -7,6 +7,7 @@ tags:
   - wurst
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/_wurst/Reflection.wurst'
 generated: true
+toc: sections
 ---
 
 This package is designed for debugging.

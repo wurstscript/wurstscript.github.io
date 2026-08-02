@@ -7,6 +7,7 @@ tags:
   - file
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/file/SaveLoadData.wurst'
 generated: true
+toc: sections
 ---
 
 Asynchronously loads the data from the file of the given player

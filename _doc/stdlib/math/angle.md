@@ -9,7 +9,7 @@ sections:
 ### Intro
 
 The `angle` tuple in wurst is used to describe angle values to prevent confusion between radians and degrees.
-Using `angle` instead of raw reals provides zero overhead safety and smooth api.
+Using `angle` instead of raw reals provides zero-overhead safety and a smooth API.
 
 ### Basic Usage
 

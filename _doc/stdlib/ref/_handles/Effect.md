@@ -7,6 +7,7 @@ tags:
   - handles
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/_handles/Effect.wurst'
 generated: true
+toc: sections
 ---
 
 Change the orientation of the special effect.

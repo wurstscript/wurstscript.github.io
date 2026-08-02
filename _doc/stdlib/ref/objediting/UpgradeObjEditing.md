@@ -9,6 +9,7 @@ tags:
   - upgrades
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/objediting/UpgradeObjEditing.wurst'
 generated: true
+toc: sections
 curated: /stdlib/upg_objed
 ---
 

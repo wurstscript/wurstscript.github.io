@@ -7,6 +7,7 @@ tags:
   - event
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/event/EventHelper.wurst'
 generated: true
+toc: sections
 ---
 
 This class exposes all Getters and Setters for trigger events.

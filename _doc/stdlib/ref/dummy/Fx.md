@@ -9,6 +9,7 @@ tags:
   - wc3-quirk
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/dummy/Fx.wurst'
 generated: true
+toc: sections
 ---
 
 *****************************************************

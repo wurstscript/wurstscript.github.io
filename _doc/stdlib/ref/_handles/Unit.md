@@ -7,6 +7,7 @@ tags:
   - handles
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/_handles/Unit.wurst'
 generated: true
+toc: sections
 ---
 
 Sets the unit's position using the SetUnitPosition native.

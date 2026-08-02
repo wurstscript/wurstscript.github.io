@@ -9,6 +9,7 @@ tags:
   - objediting
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/objediting/AbilityObjEditing.wurst'
 generated: true
+toc: sections
 curated: /stdlib/abil_objed
 ---
 

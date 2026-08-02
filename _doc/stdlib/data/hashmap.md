@@ -26,7 +26,7 @@ class B
 	let map = new HashMap<A, B>
 	let a = new A()
 	let b = new B()
-	// Add a value for the key. Existing values will be overriden
+	// Add a value for the key. Existing values will be overridden
 	map.put(a, b)
 	// Check if the map contains a value associated with the key
 	map.has(a).assertTrue()
@@ -50,7 +50,7 @@ let dataMap = new HashMap<unit, SomeDataClass>
 
 ### Iterable Map
 
-Since a normal `HashMap` does not know it's entries, you cannot iterate over them.
+Since a normal `HashMap` does not know its entries, you cannot iterate over them.
 For this case there is `IterableMap` which extends `HashMap` and combines it with a `HashList` storing the keys.
 Via those keys you can then access your values.
 

@@ -49,7 +49,7 @@ let numbers = asList(1, 2, 3, 4, 5)
 
 ### High Level Lambdas
 
-If performance doesn't matter and you want nice a nice high level list api similar to java and kotlin,
+If performance doesn't matter and you want a convenient high-level list API similar to Java and Kotlin,
 use the functions with closure parameters e.g.: `forEach`, `filter`, `map`, `foldl`.
 The results and usage are very similar to other languages.
 To see this unit test in action, copy it into a package in your project and run it using `F1 -> run unit tests in file`.
@@ -101,7 +101,7 @@ for a in list
 
 ```
 
-Instead the class itself can act as a linked list, so that each instance knows it's next and previous neighbour.
+Instead, the class itself can act as a linked list, so that each instance knows its next and previous neighbour.
 
 ```wurst
 // better, but still allocating iterators

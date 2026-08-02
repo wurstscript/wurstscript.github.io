@@ -9,6 +9,7 @@ tags:
   - list
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/data/ArrayList.wurst'
 generated: true
+toc: sections
 ---
 
 High-performance array-based list using static shared storage per type.

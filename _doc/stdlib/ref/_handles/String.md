@@ -7,6 +7,7 @@ tags:
   - handles
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/_handles/primitives/String.wurst'
 generated: true
+toc: sections
 ---
 
 A SubString slice that cuts a multibyte (non-latin) character in half does not
@@ -135,6 +136,8 @@ public function string.substring(int start, int stop) returns string
 ```
 
 returns a substring specified by end and start position.
+	Positions are byte offsets, so slicing a string containing multibyte
+	(non-latin) characters can cut one in half. See string.isCharBoundary.
 
 ### string.substring
 
@@ -143,6 +146,7 @@ public function string.substring(int start) returns string
 ```
 
 returns a substring specified by end and start position.
+	Positions are byte offsets, see string.substring(int, int).
 
 ### string.length
 
@@ -150,7 +154,9 @@ returns a substring specified by end and start position.
 public function string.length() returns int
 ```
 
-Length of the string
+Length of the string in bytes. Multibyte (non-latin) characters count as
+	2-4 bytes each, so this is not the number of characters. Iterate the string
+	to count those, e.g. `for c in s`.
 
 ### string.charAt
 
@@ -158,7 +164,9 @@ Length of the string
 public function string.charAt(int index) returns string
 ```
 
-Returns the char at the given position. 0 = first char
+Returns the byte at the given position. 0 = first byte.
+	This only returns a whole character for single byte (latin) characters,
+	iterate the string instead to read multibyte characters.
 
 ### string.toAbilityId
 
@@ -361,6 +369,9 @@ Formats the given string replacing {x} delimiters with the passed replacements.
 public function string.iterator() returns StringIterator
 ```
 
+Iterates the string one character at a time. With ENABLE_MULTIBYTE_SUPPORT
+	this yields whole multibyte (non-latin) characters, otherwise single bytes.
+
 ### string.toLines
 
 ```wurst
@@ -395,6 +406,7 @@ public constant PARTIAL_CHAR_HASH = PARTIAL_CHAR_MARKER.getHash()
 public constant LEAD4_HASH = "😀".substring(0, 1).getHash()
 ```
 
-Hash of a slice containing only the lead byte 0xF0 of a 4-byte character
-	(emoji and other astral plane chars), which the game does not collapse
-	to the partial char marker.
+Hash of a slice containing only the lead byte of a 4-byte character (emoji and
+other astral plane chars). Current game versions collapse these to the partial
+char marker like any other lead byte, making this equal to PARTIAL_CHAR_HASH.
+It is kept as a fallback for versions that hash them per byte instead.

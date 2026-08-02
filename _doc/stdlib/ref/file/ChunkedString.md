@@ -7,6 +7,7 @@ tags:
   - file
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/file/ChunkedString.wurst'
 generated: true
+toc: sections
 ---
 
 **[Source on GitHub](https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/file/ChunkedString.wurst)**
@@ -31,7 +32,9 @@ public class ChunkedString
 - `getChunkCount() returns int`
   Returns the number of chunks in the string. The buffer counts as one chunk
 - `getChunkSize() returns int`
-  Returns the length of every chunk in the string. The last chunk's size may be smaller than this number.
+  Returns the configured length of every chunk in the string, in bytes.
+  		The last chunk's size may be smaller than this number, and with
+  		ENABLE_MULTIBYTE_SUPPORT any chunk may be up to 3 bytes larger.
 - `length() returns int`
   Calculates the length of the whole string.
 - `getUnsafeString() returns string`
@@ -53,4 +56,5 @@ public constant DEFAULT_CHUNK_SIZE = 200
 
 > 🔧 **Configurable.** Override it in your map's config package.
 
-Maximum length of one chunk
+Maximum length of one chunk in bytes. With ENABLE_MULTIBYTE_SUPPORT a chunk
+	may exceed this by up to 3 bytes to avoid splitting a multibyte character.

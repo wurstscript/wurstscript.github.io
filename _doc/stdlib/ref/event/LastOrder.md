@@ -7,6 +7,7 @@ tags:
   - event
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/event/LastOrder.wurst'
 generated: true
+toc: sections
 ---
 
 If you import this package in any of your packages, each order

@@ -7,6 +7,7 @@ tags:
   - handles
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/_handles/Trigger.wurst'
 generated: true
+toc: sections
 ---
 
 Metakey is an integer based native parameter which is used as a bitfield.

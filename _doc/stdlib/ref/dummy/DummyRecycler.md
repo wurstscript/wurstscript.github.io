@@ -8,6 +8,7 @@ tags:
   - wc3-quirk
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/dummy/DummyRecycler.wurst'
 generated: true
+toc: sections
 curated: /stdlib/dummy_recycler
 ---
 

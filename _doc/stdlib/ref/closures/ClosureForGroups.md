@@ -9,6 +9,7 @@ tags:
   - group
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/closures/ClosureForGroups.wurst'
 generated: true
+toc: sections
 curated: /stdlib/closure_for_groups
 ---
 

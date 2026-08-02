@@ -7,6 +7,7 @@ tags:
   - util
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/util/GroupUtils.wurst'
 generated: true
+toc: sections
 ---
 
 The max number of recyclable groups. Even if this number is reached,

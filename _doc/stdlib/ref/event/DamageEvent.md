@@ -9,6 +9,7 @@ tags:
   - event
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/event/DamageEvent.wurst'
 generated: true
+toc: sections
 ---
 
 This package provides a light-weight damage detection system with priority-ordered listeners.

@@ -10,14 +10,14 @@ sections:
 
 ### Intro
 
-`ClosureEvents.wurst` is a generalized event listener wrapper around Warcraft III events, making us of closures as listeners.
+`ClosureEvents.wurst` is a generalized event-listener wrapper around Warcraft III events that uses closures as listeners.
 Using closures allows you to carry over data and save listeners in variables.
 
 > Make sure to always use the EVENT_UNIT_**PLAYER** variants of the events for Closure events, even if it's just for a single unit. Instead use an appropriate version of .add() with a unit parameter
 
 ### Generic events
 
-In most cases you will want to use the generic `EvenetListener.add(..)` api. A few examples:
+In most cases you will want to use the generic `EventListener.add(..)` API. A few examples:
 
 ```wurst
 EventListener.add(EVENT_PLAYER_UNIT_DEATH) ->
@@ -44,7 +44,7 @@ Even though `EVENT_PLAYER_CHAT = ConvertPlayerEvent(16)` exists, it isn't the ev
 ```wurst
 EventListener.add(EVENT_PLAYER_CHAT_FILTER) ->
 	let input = GetEventPlayerChatString()
-	let plyer = GetTriggerPlayer()
+	let player = GetTriggerPlayer()
 	...
 ```
 

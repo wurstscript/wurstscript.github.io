@@ -53,6 +53,7 @@ export function renderPackagePage(pkg: PackageDoc, ctx: EmitContext): string {
     tags: pkg.tags,
     source: pkg.githubUrl,
     generated: true,
+    toc: "sections",
   };
   const curatedPath = ctx.curated.get(pkg.package);
   if (curatedPath) fm.curated = curatedPath;
@@ -146,13 +147,15 @@ function renderMember(m: Entity): string[] {
 // --- reference index ---------------------------------------------------------
 
 export function renderIndex(packages: PackageDoc[]): string {
-  const fm = { title: "API Reference", layout: "doc", permalink: "/stdlib/ref/" };
+  const fm = { title: "API Reference", layout: "doc", permalink: "/stdlib/ref/", toc: "sections" };
   const body: string[] = [];
   body.push(
-    "Auto-generated reference for every package in the " +
-      "[Wurst standard library](https://github.com/wurstscript/WurstStdlib2). " +
-      "For orientation and guidance on _which_ package to use, see the " +
-      "[standard library overview](/stdlib.html).",
+    "This is the complete, generated reference for the " +
+      "[Wurst standard library](https://github.com/wurstscript/WurstStdlib2). It is organized by package category and built from the hotdoc in the source repository.",
+    "",
+    "## Before you browse",
+    "",
+    "If you are choosing a capability, start with the [standard library overview](/stdlib.html). If you know what you need, use your browser's search or the package list below. Package pages lead with a summary, then group their declarations into classes, functions, extension functions, and constants.",
     "",
   );
 

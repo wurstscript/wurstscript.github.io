@@ -7,6 +7,7 @@ tags:
   - math
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/math/Raycast.wurst'
 generated: true
+toc: sections
 ---
 
 An infinite 2D ray

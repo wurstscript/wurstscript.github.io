@@ -7,6 +7,7 @@ tags:
   - handles
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/_handles/primitives/Real.wurst'
 generated: true
+toc: sections
 ---
 
 The arctangent function with two arguments.

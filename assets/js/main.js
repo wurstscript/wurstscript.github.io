@@ -99,7 +99,9 @@ function buildSidebarToc(navContainer) {
   const content = document.querySelector(".doc-content");
   if (!content) return false;
 
-  const headings = Array.from(content.querySelectorAll("h2, h3, h4")).filter(
+  const tocMode = document.body.dataset.toc || "default";
+  const headingSelector = tocMode === "sections" ? "h2" : tocMode === "guide" ? "h2, h3" : "h2, h3, h4";
+  const headings = Array.from(content.querySelectorAll(headingSelector)).filter(
     (heading) => heading.textContent.trim().length > 0
   );
   if (headings.length === 0) return false;

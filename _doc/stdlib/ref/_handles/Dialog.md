@@ -7,6 +7,7 @@ tags:
   - handles
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/_handles/Dialog.wurst'
 generated: true
+toc: sections
 ---
 
 Dialogs are big dialog boxes at the center of the screen. The player can choose one button to click.

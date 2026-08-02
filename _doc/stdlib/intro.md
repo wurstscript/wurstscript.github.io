@@ -5,106 +5,107 @@ sections:
   - Overview
 ---
 
-### [SOURCECODE ON GITHUB](https://github.com/wurstscript/WurstStdlib2)
+The [WurstScript standard library](https://github.com/wurstscript/WurstStdlib2) is the set of ready-to-use packages that ships with Wurst. It wraps common Warcraft III operations, provides reusable data structures, and removes a lot of low-level boilerplate from map code.
 
-### Intro
+If you are new to the library, start with the task that matches what you are building. When you already know the package name, jump straight to the [full API reference](/stdlib/ref/).
 
-The WurstScript standard library provides a vast amount of useful packages to developers starting out with Wurst.
-Many commonly used data structures, wc3-specific utility packages, Object Editing, and extension wrappers for the blizzard natives have been implemented.
-These tools are unit tested, and ready to use in production immediately.
+### What to expect
 
-Its goal is to **abstract away Warcraft III's complexity** and give you bootstrapped, ready-to-use data structures and native wrappers, so you can focus on your map's content instead of boilerplate.
+The library is designed to be used from normal Wurst code. Most packages are already available through the standard imports; add an explicit `import` only when the package is not imported by default. The packages are tested as part of the standard library and are intended for use in real maps, but Warcraft III's native limits and lifecycle rules still apply.
 
-This documentation aims to be an informal, detailed description of packages from the standard library,
-containing more examples, potentially images, further links and looks behind the scenes than the in-package hotdoc.
-Hotdoc in nature should be short and precise, providing concise documentation about single entities, such as a function.
-It should contain only one or very few usages examples to illustrate the API.
-
-Both hotdoc and these pages should be used in conjuction for a quick familiarisation with the standard library and wurst best practises.
-All packages in the standard library follow the [coding conventions](https://wurstlang.org/manual.html#coding-conventions) and should be inspected for guidance and inspiration for writing your own code.
-
-> **[📚 Browse the full API Reference](/stdlib/ref/)**
-> Every package, auto-generated from the in-source hotdoc. The guide below groups the most important
-> packages by *what you are trying to do*.
+The pages in this section are hand-written guides with context and complete examples. The [API reference](/stdlib/ref/) is generated from the package hotdoc and is the better place to look up an exact function, type, or member.
 
 ### Find the right package
 
 <div class="cap-grid" markdown="1">
 
 <section class="cap-card cap-card--wide" markdown="1">
-#### *&nbsp;*{: .fa .fa-cubes} Generate WC3 object data from code
+#### *&nbsp;*{: .fa .fa-cubes} Define Warcraft III objects in code
 
-Wurst is **code-first**. Instead of clicking through the old Object Editor and committing binary `war3map.w3*` files, you define abilities, units, items, buffs and upgrades in code. You get version control, code reuse, generated IDs that cannot collide, and object data that is defined at compile time and available to your code at runtime.
+Use the object-editing packages when you want abilities, units, items, buffs, or upgrades to be created and configured at compile time. This keeps object data in version control and lets you reuse the same definitions across maps.
 
-- **[AbilityObjEditing](/stdlib/ref/objediting/AbilityObjEditing.html)** create and modify abilities. [Guide](/stdlib/abil_objed)
-- **[UnitObjEditing](/stdlib/ref/objediting/UnitObjEditing.html)** define units. [Guide](/stdlib/unit_objed)
-- **[ItemObjEditing](/stdlib/ref/objediting/ItemObjEditing.html)** define items. [Guide](/stdlib/item_objed)
-- **[BuffObjEditing](/stdlib/ref/objediting/BuffObjEditing.html)** define buffs and effects. [Guide](/stdlib/buff_objed)
-- **[UpgradeObjEditing](/stdlib/ref/objediting/UpgradeObjEditing.html)** define upgrades. [Guide](/stdlib/upg_objed)
-- **[ObjectIdGenerator](/stdlib/ref/objediting/ObjectIdGenerator.html)** generate collision-free object IDs.
+- **[AbilityObjEditing](/stdlib/ref/objediting/AbilityObjEditing.html)** creates and modifies abilities. [Guide](/stdlib/abil_objed)
+- **[UnitObjEditing](/stdlib/ref/objediting/UnitObjEditing.html)** defines units. [Guide](/stdlib/unit_objed)
+- **[ItemObjEditing](/stdlib/ref/objediting/ItemObjEditing.html)** defines items. [Guide](/stdlib/item_objed)
+- **[BuffObjEditing](/stdlib/ref/objediting/BuffObjEditing.html)** defines buffs and their effects. [Guide](/stdlib/buff_objed)
+- **[UpgradeObjEditing](/stdlib/ref/objediting/UpgradeObjEditing.html)** defines upgrades. [Guide](/stdlib/upg_objed)
+- **[ObjectIdGenerator](/stdlib/ref/objediting/ObjectIdGenerator.html)** generates collision-free object IDs.
 
 [*&nbsp;*{: .fa .fa-arrow-circle-right} Browse all Object Editing packages](/stdlib/ref/#object-editing){: .cap-more}
 </section>
 
 <section class="cap-card cap-card--wide" markdown="1">
-#### *&nbsp;*{: .fa .fa-database} Pick a data structure
+#### *&nbsp;*{: .fa .fa-database} Choose a collection
 
-The library ships bootstrapped, generic collections. Use this table to choose:
+Use this quick rule of thumb, then open the package page for the exact API and ownership details.
 
-| Package | Use this when |
+| Package | Start here when |
 | --- | --- |
-| [LinkedList](/stdlib/ref/data/LinkedList.html) | **Your default list, stack or queue.** Most versatile, fast at common operations. |
-| [HashList](/stdlib/ref/data/HashList.html) | You need fast `contains` or random access on big lists. |
-| [HashMap](/stdlib/ref/data/HashMap.html) | You map keys to values, including attaching data to handles via `TypeCasting`. |
-| [HashSet](/stdlib/ref/data/HashSet.html) | You need uniqueness, so each element appears at most once. |
+| [LinkedList](/stdlib/ref/data/LinkedList.html) | You need a general-purpose list, stack, or queue. |
+| [HashList](/stdlib/ref/data/HashList.html) | You need fast membership checks or indexed access on a large list. |
+| [HashMap](/stdlib/ref/data/HashMap.html) | You need to map keys to values, including attaching data to handles. |
+| [HashSet](/stdlib/ref/data/HashSet.html) | Each value should occur at most once. |
 | [BitSet](/stdlib/ref/data/BitSet.html) | You need a compact set of boolean flags. |
-| [ArrayList](/stdlib/ref/data/ArrayList.html) | You want array-backed storage with high throughput. |
+| [ArrayList](/stdlib/ref/data/ArrayList.html) | You want array-backed storage and predictable iteration. |
 
 [*&nbsp;*{: .fa .fa-arrow-circle-right} Browse all Data Structure packages](/stdlib/ref/#data-structures){: .cap-more}
 </section>
 
 <section class="cap-card" markdown="1">
-#### *&nbsp;*{: .fa .fa-bolt} Closures: events, groups & timers
+#### *&nbsp;*{: .fa .fa-bolt} React to events and schedule work
 
-React and schedule with lambdas instead of boilerplate trigger plumbing.
+Closures let you keep the action next to the event or timer without writing a separate trigger callback.
 
-- **[ClosureEvents](/stdlib/ref/closures/ClosureEvents.html)** listen to events, global or per unit. [Guide](/stdlib/closure_events)
-- **[ClosureTimers](/stdlib/ref/closures/ClosureTimers.html)** run delayed and periodic actions. [Guide](/stdlib/closure_timers)
-- **[ClosureForGroups](/stdlib/ref/closures/ClosureForGroups.html)** enumerate units with a closure. [Guide](/stdlib/closure_for_groups)
-- **[Execute](/stdlib/ref/closures/Execute.html)** error recovery and op-limit splitting. [Guide](/stdlib/execute)
+- **[ClosureEvents](/stdlib/ref/closures/ClosureEvents.html)** listens for global, unit, and spell events. [Guide](/stdlib/closure_events)
+- **[ClosureTimers](/stdlib/ref/closures/ClosureTimers.html)** runs delayed and periodic actions. [Guide](/stdlib/closure_timers)
+- **[ClosureForGroups](/stdlib/ref/closures/ClosureForGroups.html)** iterates over units with a closure. [Guide](/stdlib/closure_for_groups)
+- **[Execute](/stdlib/ref/closures/Execute.html)** splits expensive work and reports execution errors. [Guide](/stdlib/execute)
 
 [*&nbsp;*{: .fa .fa-arrow-circle-right} Browse all Closure packages](/stdlib/ref/#closures){: .cap-more}
 </section>
 
 <section class="cap-card" markdown="1">
-#### *&nbsp;*{: .fa .fa-wrench} Warcraft III engine wrappers
+#### *&nbsp;*{: .fa .fa-wrench} Build on Warcraft III's engine
 
-Reliable, battle-tested building blocks for common Warcraft III systems.
+These packages collect the recurring glue code behind common map systems.
 
-- **[DamageEvent](/stdlib/ref/event/DamageEvent.html)** robust damage detection with ordered listeners.
-- **[DummyCaster](/stdlib/ref/dummy/DummyCaster.html)** cast any ability from a throwaway unit. [Guide](/stdlib/dummy_caster)
-- **[DummyRecycler](/stdlib/ref/dummy/DummyRecycler.html)** pool and reuse dummy units. [Guide](/stdlib/dummy_recycler)
-- **[Fx](/stdlib/ref/dummy/Fx.html)** managed special effects.
-- **[UnitIndexer](/stdlib/ref/util/UnitIndexer.html)** per-unit index for attaching data.
+- **[DamageEvent](/stdlib/ref/event/DamageEvent.html)** provides ordered damage listeners.
+- **[DummyCaster](/stdlib/ref/dummy/DummyCaster.html)** casts an ability from a temporary unit. [Guide](/stdlib/dummy_caster)
+- **[DummyRecycler](/stdlib/ref/dummy/DummyRecycler.html)** reuses dummy units instead of creating them repeatedly. [Guide](/stdlib/dummy_recycler)
+- **[Fx](/stdlib/ref/dummy/Fx.html)** manages special effects.
+- **[UnitIndexer](/stdlib/ref/util/UnitIndexer.html)** gives units a stable index for attaching data.
 
-[*&nbsp;*{: .fa .fa-arrow-circle-right} Browse Event, Dummy &amp; Util packages](/stdlib/ref/#events){: .cap-more}
+[*&nbsp;*{: .fa .fa-arrow-circle-right} Browse Event, Dummy, and Utility packages](/stdlib/ref/#events){: .cap-more}
 </section>
 
 <section class="cap-card" markdown="1">
-#### *&nbsp;*{: .fa .fa-calculator} Math & geometry
+#### *&nbsp;*{: .fa .fa-calculator} Work with math and geometry
 
-- **[Vectors](/stdlib/ref/math/Vectors.html)** `vec2` and `vec3` math. [Guide](/stdlib/vectors)
-- **[Angle](/stdlib/ref/math/Angle.html)** safe angle type and helpers. [Guide](/stdlib/angle)
+- **[Vectors](/stdlib/ref/math/Vectors.html)** provides `vec2` and `vec3` types and operations. [Guide](/stdlib/vectors)
+- **[Angle](/stdlib/ref/math/Angle.html)** keeps angle values and conversions explicit. [Guide](/stdlib/angle)
 
 [*&nbsp;*{: .fa .fa-arrow-circle-right} Browse all Math packages](/stdlib/ref/#math){: .cap-more}
 </section>
 
 <section class="cap-card" markdown="1">
-#### *&nbsp;*{: .fa .fa-ellipsis-h} Everything else
+#### *&nbsp;*{: .fa .fa-ellipsis-h} Explore the rest of the library
 
-Files & networking, sound, terrain, printing, colors, and the full set of native handle wrappers (`unit`, `item`, `player`) round out the library.
+The remaining packages cover file and network helpers, sound, terrain, printing, colors, and wrappers for native handles such as `unit`, `item`, and `player`.
 
 [*&nbsp;*{: .fa .fa-arrow-circle-right} Browse the complete API Reference](/stdlib/ref/){: .cap-more}
 </section>
 
 </div>
+
+### How to read the reference
+
+1. Start with the overview above if you are choosing a capability rather than a specific package.
+2. Use the API reference's category list or search to open a package page.
+3. Read the package summary and any linked detailed guide before copying an example.
+4. Use the `Classes`, `Functions`, and `Extension Functions` sections to find the exact declaration, then open the source when you need implementation details.
+
+The standard library follows the [Wurst coding conventions](https://wurstlang.org/manual.html#coding-conventions). Its source is often the best reference for idiomatic patterns and for understanding which resources a package creates or destroys.
+
+### Source and contributions
+
+The standard library source lives on [GitHub](https://github.com/wurstscript/WurstStdlib2). If a package is missing an example or its description is unclear, improving the hotdoc or adding a hand-written guide improves the generated reference for everyone.

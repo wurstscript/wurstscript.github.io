@@ -9,6 +9,7 @@ tags:
   - map
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/data/HashMap.wurst'
 generated: true
+toc: sections
 curated: /stdlib/hash_map
 ---
 

@@ -7,6 +7,7 @@ tags:
   - handles
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/_handles/primitives/Reference.wurst'
 generated: true
+toc: sections
 ---
 
 A simple wrapper class which contains a reference to a value of the given type.

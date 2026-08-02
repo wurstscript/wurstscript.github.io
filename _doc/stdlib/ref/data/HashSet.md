@@ -9,6 +9,7 @@ tags:
   - set
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/data/HashSet.wurst'
 generated: true
+toc: sections
 ---
 
 Generic set implementation

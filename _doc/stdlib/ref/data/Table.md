@@ -9,6 +9,7 @@ tags:
   - map
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/data/Table.wurst'
 generated: true
+toc: sections
 ---
 
 Wraps a hashtable to provide single key tables

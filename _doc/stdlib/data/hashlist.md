@@ -8,7 +8,7 @@ sections:
 
 ### Intro
 
-A hash list is very similar to a linked list, but as the name suggests, it's backed by a hashtable. In most cases you should use `LinkedList` [instead](https://wurstlang.org/stdlib/linked_list) as it's faster in most operations. The main benefits of a hash list compared to a linked list are O(1) access to and contains checks for elements. This only really starts to matter with bigger lists. Hash lists can also have a bigger amount of maximum elements, since their entries dont consume an object.
+A hash list is very similar to a linked list, but as the name suggests, it is backed by a hashtable. In most cases you should use `LinkedList` [instead](https://wurstlang.org/stdlib/linked_list) because it is faster for common operations. The main benefits of a hash list compared to a linked list are O(1) access and membership checks. This only really starts to matter with bigger lists. Hash lists can also support more elements because their entries do not consume a separate object.
 
 ### Basic Usage
 

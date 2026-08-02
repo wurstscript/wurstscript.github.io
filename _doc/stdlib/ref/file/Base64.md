@@ -7,6 +7,7 @@ tags:
   - file
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/file/Base64.wurst'
 generated: true
+toc: sections
 ---
 
 Specifies how many characters to encode per a single `execute()` call.

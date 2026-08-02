@@ -53,7 +53,7 @@ if distSq < 256 * 256
 	caster.damageTarget(target, 32.)
 ```
 
-Additionally you can calculate a vectors distance to a linesegment and whether it's contained inside a triangle or polygon.
+Additionally, you can calculate a vector's distance to a line segment and whether it is contained inside a triangle or polygon.
 
 ### Polar Projection
 
@@ -66,7 +66,7 @@ Given an angle in radians, the `Sin` and `Cos` functions return the distance, on
 We know that the blue line is of length 1 because it is equal to the radius of the unit circle.
 Thus we can scale it to our desired distance simply by multiplying the x and y values, resulting in `vec2(Cos(this.radians) * len, Sin(this.radians) * len)`.
 
-Remember that in warcraft 3 a zero xy-angle points east, and a zero z-angle points upwards.
+Remember that in Warcraft III a zero xy-angle points east, and a zero z-angle points upwards.
 
 ```wurst
 // Blink caster a certain distance in the target direction

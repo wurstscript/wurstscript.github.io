@@ -7,6 +7,7 @@ tags:
   - util
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/util/Board.wurst'
 generated: true
+toc: sections
 ---
 
 This Board library allows you to create a simple multi board with dynamic cell values.

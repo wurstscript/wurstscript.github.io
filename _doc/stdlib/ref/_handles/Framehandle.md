@@ -7,6 +7,7 @@ tags:
   - handles
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/_handles/Framehandle.wurst'
 generated: true
+toc: sections
 ---
 
 Returns the origin frame of the given type.

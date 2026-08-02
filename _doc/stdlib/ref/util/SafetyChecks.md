@@ -7,6 +7,7 @@ tags:
   - util
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/util/SafetyChecks.wurst'
 generated: true
+toc: sections
 ---
 
 Enables or disables various safety checks in miscellaneous libraries in Wurst.

@@ -7,6 +7,7 @@ tags:
   - wurst
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/_wurst/assets/FramehandleNames.wurst'
 generated: true
+toc: sections
 ---
 
 These default frames templates can be created with createFrame(..) [BlzCreateFrame]

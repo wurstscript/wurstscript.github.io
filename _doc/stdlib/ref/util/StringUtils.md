@@ -7,13 +7,12 @@ tags:
   - util
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/util/StringUtils.wurst'
 generated: true
+toc: sections
 ---
 
-Custom Function which can split strings and runs callback for each string.
-	It can run even with no delimiter present (with single element).
-	Example usage:
-	"H001,H002".forEachIn(",") ->
-		doSomething()
+Returns the width of the string.
+	Only accounts for single byte (latin) characters, multibyte characters
+	contribute no width.
 
 **[Source on GitHub](https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/util/StringUtils.wurst)**
 
@@ -77,8 +76,6 @@ public function texttag.center(vec3 pos, string message, real size) returns text
 public function string.getWidth() returns int
 ```
 
-Returns the width of the string
-
 ### char.toString
 
 ```wurst
@@ -108,6 +105,9 @@ public function string.toChar() returns char
 ```wurst
 public function string.toCharList() returns LinkedList<char>
 ```
+
+Splits the string into chars. Only valid for single byte (latin) characters,
+	multibyte characters are split into their individual bytes.
 
 ### int.toChar
 
@@ -147,6 +147,12 @@ Replaces consecutive repeats of the whitespace character with a single instance
 ```wurst
 public function string.forEachIn(string delim, ForStringSplitCallback cb)
 ```
+
+Custom Function which can split strings and runs callback for each string.
+	It can run even with no delimiter present (with single element).
+	Example usage:
+	"H001,H002".forEachIn(",") ->
+		doSomething()
 
 ### string.isNumber
 

@@ -9,6 +9,7 @@ tags:
   - wc3-quirk
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/dummy/DummyDamage.wurst'
 generated: true
+toc: sections
 ---
 
 DummyDamage is used when you want to inflict damage from a certain player,

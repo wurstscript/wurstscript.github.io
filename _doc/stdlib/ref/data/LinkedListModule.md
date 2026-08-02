@@ -7,6 +7,7 @@ tags:
   - data
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/data/LinkedListModule.wurst'
 generated: true
+toc: sections
 ---
 
 Turns a class into a linked list where each instance knows it's previous

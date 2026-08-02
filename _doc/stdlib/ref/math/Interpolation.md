@@ -7,6 +7,7 @@ tags:
   - math
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/math/Interpolation.wurst'
 generated: true
+toc: sections
 ---
 
 Linear Interpolation

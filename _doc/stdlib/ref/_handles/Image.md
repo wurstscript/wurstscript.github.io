@@ -7,6 +7,7 @@ tags:
   - handles
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/_handles/Image.wurst'
 generated: true
+toc: sections
 ---
 
 ImageLayer influences the order in which the images are drawn above one another:

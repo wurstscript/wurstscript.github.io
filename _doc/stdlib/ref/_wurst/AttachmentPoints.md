@@ -7,6 +7,7 @@ tags:
   - wurst
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/_wurst/assets/AttachmentPoints.wurst'
 generated: true
+toc: sections
 ---
 
 Class that contains every known attachmentpoint in game

@@ -7,6 +7,7 @@ tags:
   - util
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/util/DialogBox.wurst'
 generated: true
+toc: sections
 curated: /stdlib/dialogbox
 ---
 

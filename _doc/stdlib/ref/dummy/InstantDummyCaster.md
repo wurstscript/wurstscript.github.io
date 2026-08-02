@@ -7,6 +7,7 @@ tags:
   - dummy
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/dummy/InstantDummyCaster.wurst'
 generated: true
+toc: sections
 ---
 
 Dummy caster for casting instant spells.

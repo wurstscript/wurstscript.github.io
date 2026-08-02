@@ -7,6 +7,7 @@ tags:
   - util
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/util/Knockback3.wurst'
 generated: true
+toc: sections
 ---
 
 Use the `Knockback3.add(..)` functions to apply 3D knockback to units.

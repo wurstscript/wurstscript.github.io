@@ -9,6 +9,7 @@ tags:
   - units
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/objediting/UnitObjEditing.wurst'
 generated: true
+toc: sections
 curated: /stdlib/unit_objed
 ---
 

@@ -25,7 +25,7 @@ init
 ### Return Value
 
 - `true`: If the callback executes successfully.
-- `false`: If an error occured.
+- `false`: If an error occurred.
 
 ### Example
 
@@ -33,7 +33,7 @@ init
 let result = try() ->
   print("hello")
 if not result
-	print("Error occured")
+	print("Error occurred")
 ```
 
 ### executeWhile

@@ -7,6 +7,7 @@ tags:
   - util
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/util/Time.wurst'
 generated: true
+toc: sections
 ---
 
 Type-safe wrappers to distinguish durations (an amount of time) from instants (a point in time), and the valid ways

@@ -7,6 +7,7 @@ tags:
   - file
 source: 'https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/file/GameStatus.wurst'
 generated: true
+toc: sections
 ---
 
 **[Source on GitHub](https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/file/GameStatus.wurst)**
