@@ -55,7 +55,8 @@ Wurst supports multiple Warcraft III generations from one toolchain. Grill can s
 
 This is useful for both ends of Warcraft III’s history:
 
-- **Classic and pre-Reforged patches** use Jass output and layered MPQ game data.
+- **Older MPQ-era classic patches** use Jass output and layered MPQ game data.
+- **Classic CASC-era patches such as 1.30/1.31** use Jass output and CASC game data.
 - **Reforged** projects can use Lua or Jass output and modern CASC game data.
 
 The VS Code extension detects the installed client when it can, and the asset and map tooling follows the same game-data selection. You can therefore work against an older MPQ installation without losing the modern Reforged workflow.

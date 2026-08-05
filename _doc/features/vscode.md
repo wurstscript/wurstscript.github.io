@@ -46,6 +46,8 @@ Open any of these files from the VS Code explorer and they are displayed inline.
 
 ## Installed Game Data
 
+Wurst supports both MPQ-era classic installations and CASC-backed clients such as Warcraft III 1.30/1.31 and Reforged.
+
 The extension is the editor-facing part of Wurst’s broader patch-aware workflow. It detects the available Warcraft III client when possible and uses the selected game data for previews and map tooling, whether the project targets classic Jass or modern Reforged Lua.
 
 Wurst can also read assets directly from the Warcraft III installation — not only from files inside your project. This works with both Reforged CASC storage and classic Warcraft III MPQ installations.
