@@ -8,7 +8,7 @@ icon:
 color: green
 ---
 
-WurstScript is a programming language and modding toolkit for Warcraft 3 maps.
+WurstScript is a patch-aware programming language and modding toolkit for Warcraft 3 maps.
 This guide covers the current streamlined setup with VS Code.
 
 ## Prerequisites
@@ -48,6 +48,17 @@ grill install
 3. Follow the prompts.
 
 For this flow, you usually do not need to run `grill install` manually right away.
+
+## Target a Warcraft III Patch
+
+Wurst supports multiple Warcraft III generations from one toolchain. Grill can select the patch your project targets and downloads the matching core Jass definitions and standard library version, keeping the compiler and dependencies aligned with the client you actually run.
+
+This is useful for both ends of Warcraft III’s history:
+
+- **Classic and pre-Reforged patches** use Jass output and layered MPQ game data.
+- **Reforged** projects can use Lua or Jass output and modern CASC game data.
+
+The VS Code extension detects the installed client when it can, and the asset and map tooling follows the same game-data selection. You can therefore work against an older MPQ installation without losing the modern Reforged workflow.
 
 ## Running Your Map
 

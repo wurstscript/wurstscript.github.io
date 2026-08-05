@@ -44,6 +44,18 @@ The extension can render common Warcraft III asset formats directly in the edito
 
 Open any of these files from the VS Code explorer and they are displayed inline.
 
+## Installed Game Data
+
+The extension is the editor-facing part of Wurst’s broader patch-aware workflow. It detects the available Warcraft III client when possible and uses the selected game data for previews and map tooling, whether the project targets classic Jass or modern Reforged Lua.
+
+Wurst can also read assets directly from the Warcraft III installation — not only from files inside your project. This works with both Reforged CASC storage and classic Warcraft III MPQ installations.
+
+For classic installations, Wurst follows the game’s layered archive model, resolving files through the base game, expansion, locale, and patch archives so patched assets override their older versions:
+
+`war3.mpq` → `war3local.mpq` → `war3x.mpq` → `war3xlocal.mpq` → `war3patch.mpq`
+
+That means the asset browser, object metadata, icons, model viewer, textures, and model thumbnails can use the same game data that an older Warcraft III installation uses. Set `wurst.wc3path` to your Warcraft III installation directory if it is not detected automatically.
+
 ## MPQ Inspector
 
 `.w3x` and `.w3m` map archives can be browsed directly in VS Code:
