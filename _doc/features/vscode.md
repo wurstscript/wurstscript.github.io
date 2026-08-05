@@ -52,7 +52,7 @@ The extension is the editor-facing part of Wurst’s broader patch-aware workflo
 
 Wurst can also read assets directly from the Warcraft III installation — not only from files inside your project. This works with both Reforged CASC storage and classic Warcraft III MPQ installations.
 
-For classic installations, Wurst follows the game’s layered archive model, resolving files through the base game, expansion, locale, and patch archives so patched assets override their older versions:
+For MPQ-era classic installations, Wurst follows the game’s layered archive model, resolving files through the base game, expansion, locale, and patch archives so patched assets override their older versions:
 
 `war3.mpq` → `war3local.mpq` → `war3x.mpq` → `war3xlocal.mpq` → `war3patch.mpq`
 

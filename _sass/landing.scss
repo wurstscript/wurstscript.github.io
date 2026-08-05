@@ -247,12 +247,17 @@
   }
 
   .card {
+    display: flex;
+    flex-direction: column;
     padding: 0;
     width: clamp(250px, 31%, 300px);
     min-height: 220px;
     border-radius: 10px;
     border: 1px solid var(--divider-dark);
     background-color: var(--smoky-white);
+    color: var(--text-color);
+    text-align: left;
+    text-decoration: none;
     box-shadow: var(--shadow-soft);
     transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 
@@ -260,6 +265,12 @@
       border: 1px solid var(--color-primary-light);
       box-shadow: var(--shadow-strong);
       transform: translateY(-2px);
+    }
+
+    &:focus-visible {
+      outline: 3px solid var(--color-primary-light);
+      outline-offset: 3px;
+      text-decoration: none;
     }
   }
 
@@ -280,6 +291,7 @@
   }
 
   .card-content {
+    flex: 1;
     background-color: var(--smoky-white);
     min-height: 0;
     width: 100%;
@@ -303,6 +315,7 @@
     }
 
     p {
+      margin-bottom: 0;
       color: var(--text-color-secondary);
       font-size: 14px;
     }
@@ -365,7 +378,7 @@
     position: relative;
     width: 100%;
     border: 1px solid var(--divider);
-    @include border-radius(4px);
+    @include border-radius(10px);
 
     .link {
       position: absolute;
@@ -375,6 +388,12 @@
       left: 0;
       z-index: 1;
       background-image: url("../images/empty.png"); /* for IE8 */
+
+      &:focus-visible {
+        outline: 3px solid var(--color-primary-light);
+        outline-offset: -3px;
+        border-radius: 10px;
+      }
     }
 
     transition: 0.2s ease;
@@ -494,7 +513,10 @@
 
   .greeting {
     flex-direction: column;
-    
+
+    > div:first-child {
+      text-align: center;
+    }
 
     .name {
       font-size: 42px;
