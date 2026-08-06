@@ -22,7 +22,7 @@ Set `compilationTarget` in your `wurst.build` file:
 compilationTarget: lua
 ```
 
-Jass is the default and requires no configuration. Lua targets Reforged and is required if you want to run on Battle.net with modern clients.
+Jass is the default and works well for classic and pre-Reforged patches. Lua targets Reforged and is required if you want to run on Battle.net with modern clients. The patch selected for the project determines which core Jass definitions and standard library revision Grill provides alongside the compiler.
 
 ## Why They Differ
 

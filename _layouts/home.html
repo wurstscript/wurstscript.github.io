@@ -26,7 +26,7 @@ layout: compress
 					<a class="btn btn-primary" href="/start">Get Started</a>
 				</div>
 				<div class="img-container">
-					<img src="/assets/images/wurst-scroll.png">
+					<img src="/assets/images/wurst-scroll.png" alt="WurstScript code scroll illustration">
 					<!-- Place this tag where you want the button to render. -->
 					<a class="github-button" href="https://github.com/wurstscript/wurstscript" data-color-scheme="no-preference: dark; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star wurstscript/wurstscript on GitHub">Star</a>
 				</div>
@@ -38,7 +38,7 @@ layout: compress
 					{% assign posts = site.news | sort: 'date' | reverse %}
 					{% for post in posts limit:3 %}
 					<a class="btn card" href="{{ post.url }}">
-						<div class="card-image"><img src="{{ post.image }}"></div>
+						<div class="card-image"><img src="{{ post.image }}" alt=""></div>
 						<div class="card-content date">
 							<p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
 							<h3>{{ post.title }}</h3>
@@ -97,24 +97,24 @@ layout: compress
 				<h2 class="title">Join the Community</h2>
 
 				<div class="cards">
-					<a class="btn card" href="https://github.com/wurstscript" target="_blank">
-						<div class="card-image"><img src="/assets/images/github-mark-white.png"></div>
+					<a class="btn card" href="https://github.com/wurstscript" target="_blank" rel="noopener noreferrer">
+						<div class="card-image"><img src="/assets/images/github-mark-white.png" alt=""></div>
 						<div class="card-content">
 							<h3>GitHub</h3>
 							<p>Report bugs, suggest features, contribute code.</p>
 						</div>
 					</a>
 
-					<a class="btn card" href="https://discord.gg/mSHZpWcadz" target="_blank">
-						<div class="card-image"><img src="/assets/images/icon_clyde_blurple_RGB.png"></div>
+					<a class="btn card" href="https://discord.gg/mSHZpWcadz" target="_blank" rel="noopener noreferrer">
+						<div class="card-image"><img src="/assets/images/icon_clyde_blurple_RGB.png" alt=""></div>
 						<div class="card-content">
 							<h3>Discord</h3>
 							<p>General chat for WurstScript and Warcraft mapping. Bridged to matrix.</p>
 						</div>
 					</a>
 
-					<a class="btn card" href="https://matrix.to/#/!qppIznMkBZgRaYJNYA:matrix.org?via=matrix.org" target="_blank">
-						<div class="card-image"><img src="/assets/images/Matrix_icon.png"></div>
+					<a class="btn card" href="https://matrix.to/#/!qppIznMkBZgRaYJNYA:matrix.org?via=matrix.org" target="_blank" rel="noopener noreferrer">
+						<div class="card-image"><img src="/assets/images/Matrix_icon.png" alt=""></div>
 						<div class="card-content">
 							<h3>Matrix</h3>
 							<p>General chat for WurstScript and Warcraft mapping. Bridged to discord.</p>
