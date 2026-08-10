@@ -939,6 +939,9 @@ in small, dedicated classes, avoid unsupported field kinds such as static fields
 format migration separate from the state model. See the [Save and Load tutorial](/tutorials/saveload.html) for
 integration with Warcraft III's file API.
 
+Identifiers beginning with `__wurst` are reserved for compiler-generated internals and must not be declared by
+user code.
+
 ### Array Members
 
 Wurstscript supports sized arrays as classmembers by translating it to SIZE times arrays and then resolve the array in a get/set function via binary search.
