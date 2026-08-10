@@ -61,7 +61,15 @@ public class StringLines
 public function stringCompare(string s1, string s2) returns int
 ```
 
-Returns an integer result based on a lexicographic string comparison of strings s1 and s2.
+Returns a negative number if s1 sorts before s2, a positive number if it
+sorts after, and 0 only if the two strings are equal.
+
+Alphanumerics keep their long standing order: digits, then lowercase, then
+uppercase, so "Hello" sorts after "hello". Every other printable ascii
+character sorts after all alphanumerics, ordered by ascii code point among
+themselves. Bytes outside printable ascii - control characters and the
+individual bytes of multibyte characters - sort last, tie-broken by string
+hash so the result stays consistent.
 
 ## Extension Functions
 
@@ -230,7 +238,7 @@ True when string contains only lowercase letters
 public function string.trim() returns string
 ```
 
-Returns the given string with whitespaces removed from both ends
+Returns the given string with whitespace (" ", \n, \t, \r) removed from both ends
 
 ### string.ltrim
 
@@ -238,7 +246,7 @@ Returns the given string with whitespaces removed from both ends
 public function string.ltrim() returns string
 ```
 
-Returns the given string with whitespaces removed from the left end
+Returns the given string with whitespace (" ", \n, \t, \r) removed from the left end
 
 ### string.rtrim
 
@@ -246,7 +254,7 @@ Returns the given string with whitespaces removed from the left end
 public function string.rtrim() returns string
 ```
 
-Returns the given string with whitespaces removed from the right end
+Returns the given string with whitespace (" ", \n, \t, \r) removed from the right end
 
 ### string.ltrim
 

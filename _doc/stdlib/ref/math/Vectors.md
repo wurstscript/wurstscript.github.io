@@ -88,7 +88,7 @@ Operator
 public function vec2.op_mult(vec2 v) returns vec2
 ```
 
-dot product Operator
+Operator, component-wise (Hadamard) product. For the dot product use vec2.dot
 
 ### vec2.op_divReal
 
@@ -291,8 +291,6 @@ Checks whether the point is in a triangle defined by 3 points.
 public function vec2.isInPolygon(vararg vec2 args) returns bool
 ```
 
-Checks whether the point is in a polygon defined by a sequence of connected points.
-
 ### vec3.op_plus
 
 ```wurst
@@ -339,7 +337,7 @@ Operator
 public function real.op_mult(vec3 v) returns vec3
 ```
 
-dot Operator
+Operator, scales the vector by this scalar
 
 ### vec3.add
 
@@ -379,7 +377,9 @@ Rotate this vector around an axis
 public function vec3.setLengthSq(real lengthSq) returns vec3
 ```
 
-Sets the length of the given Vector
+Returns this vector rescaled so that its *squared* length equals the given
+	value. Scaling by lengthSq/currentSq would give a squared length of
+	lengthSq^2/currentSq, so the factor has to be the square root of the ratio.
 
 ### vec3.setLength
 
@@ -435,7 +435,18 @@ Convert a vec3 to a vec2 (z-coordinate gets removed)
 public function vec3.inRange(vec3 v2, real radius) returns boolean
 ```
 
-Is this vector inside the given circle
+Is this vector inside the given circle. Only the x and y coordinates are
+	compared - the height difference is ignored. Use inRange3d for a spherical
+	test that includes z.
+
+### vec3.inRange3d
+
+```wurst
+public function vec3.inRange3d(vec3 v2, real radius) returns boolean
+```
+
+Is this vector inside the given sphere, taking the z coordinate into
+	account. Compare vec3.inRange, which only compares x and y.
 
 ### vec3.distanceTo
 
@@ -600,9 +611,6 @@ Works as for vec2.isInTriangle, Z-coords are discarded.
 ```wurst
 public function vec3.isInPolygon2d(vararg vec3 args) returns bool
 ```
-
-Checks whether the point is in a 2d polygon defined by a sequence of connected points.
-Works as for vec2.isInPolygon, Z-coords are discarded.
 
 ## Constants
 

@@ -76,7 +76,9 @@ This function returns the derivate of the 4-Point-Bezier curve on certain point.
 public function hermite(real start, real stop, real tangent1, real tangent2, real s) returns real
 ```
 
-Hermite Interpolation
+Cubic Hermite interpolation between `start` and `stop` for s in [0, 1],
+	with `tangent1` and `tangent2` as the derivatives at s = 0 and s = 1.
+	The basis is h00 = 2s^3-3s^2+1, h10 = s^3-2s^2+s, h01 = -2s^3+3s^2, h11 = s^3-s^2.
 
 ### inTan
 

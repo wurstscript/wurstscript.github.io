@@ -29,7 +29,11 @@ public class File
 - `write(player p, ChunkedString buffer)`
 - `close()`
 - `read(player p) returns ChunkedString`
+  Reads the file's contents. Only the given player actually reads from
+  		disk; every other client gets an empty ChunkedString, so the result is
+  		not synchronised - see the desync warning at the top of this package.
 - `readAsString(player p) returns string`
+  Reads the file's contents as one string. Not synchronised - see read().
 
 ## Constants
 

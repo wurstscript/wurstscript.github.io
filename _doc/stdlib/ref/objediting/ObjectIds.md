@@ -12,6 +12,8 @@ toc: sections
 
 **[Source on GitHub](https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/objediting/ObjectIds.wurst)**
 
+**Re-exports:** `TypeCasting`
+
 ## Functions
 
 ### toRawCode

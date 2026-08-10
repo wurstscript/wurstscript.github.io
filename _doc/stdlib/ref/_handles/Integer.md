@@ -10,6 +10,10 @@ generated: true
 toc: sections
 ---
 
+Returns this int to the power of the argument int.
+	A negative exponent yields 1, since the true result is not an integer.
+	Overflow wraps silently.
+
 **[Source on GitHub](https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/_handles/primitives/Integer.wurst)**
 
 ## Extension Functions
@@ -62,13 +66,20 @@ public function int.toString() returns string
 
 Returns the string representation of this int
 
+### int.toStringOrdinal
+
+```wurst
+public function int.toStringOrdinal() returns string
+```
+
+Returns this int with its English ordinal suffix, e.g. 1 -> "1st", 2 -> "2nd", 3 -> "3rd", 4 -> "4th".
+	Handles the 11/12/13 exceptions correctly.
+
 ### int.pow
 
 ```wurst
 public function int.pow(int x) returns int
 ```
-
-Returns this int to the power of the argument int
 
 ### int.lerp
 

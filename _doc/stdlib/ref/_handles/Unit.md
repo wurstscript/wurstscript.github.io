@@ -1386,6 +1386,16 @@ public function unit.disableAbility(int abilId, boolean flag, boolean hideUI)
 public function unit.disableAttack(boolean flag, boolean hideUI)
 ```
 
+### unit.disableAttackEx
+
+```wurst
+public function unit.disableAttackEx(int index, bool flag)
+```
+
+Enables/disables a single weapon by index (0 = the unit's first/regular attack).
+	Unlike disableAttack this toggles the weapon field directly, so it can disable one
+	weapon on a multi-weapon unit without hiding the attack command.
+
 ### unit.disableWorkQueue
 
 ```wurst

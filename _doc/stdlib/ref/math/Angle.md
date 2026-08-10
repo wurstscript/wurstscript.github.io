@@ -66,7 +66,7 @@ interpret this real as an angle given in degrees
 public function real.fromRad() returns angle
 ```
 
-interpret this real as an angle given in degrees
+interpret this real as an angle given in radians
 
 ### int.fromRad
 
@@ -74,7 +74,7 @@ interpret this real as an angle given in degrees
 public function int.fromRad() returns angle
 ```
 
-interpret this int as an angle given in degrees
+interpret this int as an angle given in radians
 
 ### int.asAngleRadians
 

@@ -118,7 +118,8 @@ Input string may contain whitespace for padding.
 public function int.toBitString() returns string
 ```
 
-Produces a bistring from this integer.
+Produces a bitstring from this integer. Zero yields "0", and negative
+values yield their full 32 bit two's complement representation.
 *
 
 ### int.not8
@@ -222,6 +223,8 @@ public function int.shiftl(int amount) returns int
 32-bit SHIFTL (<<)
 
 number.shiftl(amount) equivalent to (number << amount)
+Bits shifted past bit 31 are discarded, so a shift of 32 yields 0.
+`amount` must be in [0, 32]; other values read outside the shift table.
 *
 
 ### int.shiftr
@@ -230,7 +233,13 @@ number.shiftl(amount) equivalent to (number << amount)
 public function int.shiftr(int amount) returns int
 ```
 
-32-bit SHIFTR (>>)
+32-bit logical SHIFTR (>>>)
 
-number.shiftr(amount) equivalent to (number >> amount)
+number.shiftr(amount) equivalent to (number >>> amount): the sign bit is
+shifted in as data rather than replicated, so negative inputs produce a
+positive result for any amount > 0.
+
+`amount` must be in [0, 31] - one less than shiftl accepts. The shift table
+holds 2^32 as 0 after wrapping, so an amount of 32 divides by zero rather
+than returning 0. Guard the call if the amount is computed.
 *

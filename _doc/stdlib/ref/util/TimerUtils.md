@@ -41,13 +41,15 @@ public module TimedLoop
 - `abstract function onTimedLoop()`
 - `getPeriod() returns real`
   Returns the period of the timed loop.
-  		Ovewrite this to set a custom period
+  		Overwrite this to set a custom period. It is read once, when the first
+  		instance of this class starts its loop.
 - `stopTimedLoop()`
   Stops the periodic update of this object.
 - `stopTimedLoopAndDestroy()`
   Stops the periodic update and destroys the object.
 - `startTimedLoop()`
-  Starts the periodic updates for this object
+  Starts the periodic updates for this object.
+  		Calling this on an already running instance has no effect.
 
 ## Functions
 

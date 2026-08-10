@@ -285,6 +285,9 @@ public constant COLOR_WHITE = colorA(255,255,255,255)
 public constant COLOR_BLACK = colorA(0,0,0,0)
 ```
 
+Black with alpha 0, i.e. fully transparent. COLOR_BLACK_STR therefore
+	renders text invisible - use colorA(0, 0, 0, 255) for opaque black.
+
 ### COLOR_GOLD
 
 ```wurst

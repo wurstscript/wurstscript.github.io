@@ -326,7 +326,7 @@ Provides duration until an instant. Convenience for the negative of durationSinc
 public function instant.isOlderThan(instant other) returns bool
 ```
 
-Instant > instant ?
+True if this instant happened before `other`.
 
 ### instant.isNewerThan
 
@@ -334,7 +334,7 @@ Instant > instant ?
 public function instant.isNewerThan(instant other) returns bool
 ```
 
-Instant < instant ?
+True if this instant happens after `other`.
 
 ### duration.greaterThan
 
@@ -374,7 +374,7 @@ Convenience for checking if an instant comes before instantNow.
 public function duration.displayVerbose() returns string
 ```
 
-Tranform a duration to a verbose string. Example:
+Transform a duration to a verbose string. Example:
 
 61..seconds().displayVerbose()
 ```wurst
@@ -387,7 +387,7 @@ Tranform a duration to a verbose string. Example:
 public function duration.display(string prefix) returns string
 ```
 
-Tranform a duration to a short string. Example:
+Transform a duration to a short string. Example:
 
 61..minutes().display("T-")
 ```wurst

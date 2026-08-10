@@ -46,6 +46,8 @@ public constant HERO_ID_GEN = new IdGenerator('HM00')
 public constant ABIL_ID_GEN = new IdGenerator('AM00')
 ```
 
+> 🔧 **Configurable.** Override it in your map's config package.
+
 ### BUFF_ID_GEN
 
 ```wurst

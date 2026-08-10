@@ -31,7 +31,7 @@ public class Log
 - `static function warn(string msg)`
   Prints a warning logmessage
 - `static function error(string msg)`
-  Prints a warning logmessage
+  Prints an error logmessage
 - `static function setLevel(Loglevel lvl)`
 
 ## Enums
@@ -94,7 +94,7 @@ public function printLog(Loglevel loglvl, string msg)
 
 > 🔧 **Configurable.** Override it in your map's config package.
 
-Prints a special motification-message
+Prints a special notification-message
 
 ### printLog
 
