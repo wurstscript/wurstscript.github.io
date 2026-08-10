@@ -878,6 +878,33 @@ function foo()
     let s = Terrain.someArr[0]
 ```
 
+### Compiler-assisted field mapping
+
+For dedicated state classes, the compiler provides two save/load intrinsics that expand into direct field
+accesses:
+
+```wurst
+class PlayerState
+    int level = 1
+    string name = ""
+
+    function save(FieldWriter writer)
+        __wurst_forFields((fieldName, value) -> writer.write(fieldName, value))
+
+    function load(FieldReader reader)
+        __wurst_mapFields((fieldName, value) -> reader.read(fieldName, value))
+```
+
+`__wurst_forFields` invokes the callback once for every non-static instance field. The callback receives the
+field name and current value and must produce a statement. `__wurst_mapFields` invokes a reader callback and
+assigns its result back to each field. Leave the two callback parameter types inferred; overload the reader or
+writer for the field types used by the state class.
+
+These are compile-time transformations, not runtime reflection, and generate equivalent direct accesses in both
+Jass and Lua. Keep serializable state in a small class with mutable instance fields and keep the persistence
+codec separate from the rest of the game logic. See the [Save and Load tutorial](/tutorials/saveload.html) for
+integration with Warcraft III's file API.
+
 ### Array Members
 
 Wurstscript supports sized arrays as classmembers by translating it to SIZE times arrays and then resolve the array in a get/set function via binary search.

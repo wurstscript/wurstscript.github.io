@@ -62,6 +62,35 @@ Of course usually we don't want to save just strings, but data that is stored in
 For this purpose there is the `Serializable` class for simple saving and loading of primitive attribute values.
 The `serialize()` function returns a `ChunkedString`, which then can be passed to the data save function from above.
 
+## Compiler-assisted field mapping
+
+For small, dedicated state classes, Wurst can generate the repetitive field mapping for you. Use the
+compiler intrinsics `__wurst_forFields` when writing fields and `__wurst_mapFields` when reading them:
+
+```wurst
+class PlayerState
+    int level = 1
+    string name = ""
+
+    function save(FieldWriter writer)
+        __wurst_forFields((fieldName, value) -> writer.write(fieldName, value))
+
+    function load(FieldReader reader)
+        __wurst_mapFields((fieldName, value) -> reader.read(fieldName, value))
+```
+
+The callback receives the field name as a `string` and the current field value. The compiler expands these
+calls into ordinary direct field accesses, so there is no runtime reflection or metadata lookup. The same
+source works for both Jass and Lua.
+
+`__wurst_forFields` is for statement callbacks. `__wurst_mapFields` uses the callback result to assign each
+field, so the reader should return the value to store. Leave both callback parameter types inferred and use
+the reader/writer overload matching each field type. Static fields are not included.
+
+The `__wurst_` names are compiler intrinsics; ordinary user functions named `forFields` or `mapFields` are
+unaffected. Keep these state classes focused on their serializable data (normally direct mutable instance
+fields) and keep the persistence codec separate from the game logic.
+
 
 ## Usage
 
