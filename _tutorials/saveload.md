@@ -116,8 +116,9 @@ normally. Keep the generic loader as a free function: on Lua, a method cannot cu
 from its generic owning class with additional type parameters declared by the method itself. Do not call
 `newInstance<T>()` from a generic class constructor; construct the state in the loader and initialize nested state
 explicitly afterward. Avoid calling generic-construction methods directly on freshly constructed generic receivers
-on Lua. Dedicated state classes should also avoid nested modules with sibling fields sharing the same name; prefer
-direct fields or ordinary inheritance.
+on Lua, and keep the loader to one construction type parameter rather than multi-parameter generic-interface
+dispatch. `newInstance<T>()` is not supported inside `compiletime(...)` expressions. Dedicated state classes should
+also avoid nested modules with sibling fields sharing the same name; prefer direct fields or ordinary inheritance.
 
 
 ## Usage

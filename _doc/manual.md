@@ -934,9 +934,11 @@ Likewise, do not call `newInstance<T>()` from a generic class constructor. Const
 initialize nested state explicitly afterward.
 
 On Lua, do not invoke a generic-construction method directly on a freshly constructed generic receiver. Prefer the
-free loader above, or store the receiver in a typed local first. Field mapping also does not support nested modules
-whose sibling submodules declare fields with the same name; use direct fields, inheritance, or unique shallow
-module field names for dedicated state classes.
+free loader above, or store the receiver in a typed local first. Multi-parameter generic-interface dispatch is also
+outside this loader contract; use one construction type parameter. `newInstance<T>()` is for runtime Jass/Lua
+construction and is not supported inside `compiletime(...)` expressions. Field mapping also does not support
+nested modules whose sibling submodules declare fields with the same name; use direct fields, inheritance, or
+unique shallow module field names for dedicated state classes.
 
 These are compile-time transformations, not runtime reflection, and generate equivalent direct accesses in both
 Jass and Lua. They generate no runtime registry, type-name lookup, or reflection metadata. Keep serializable state
