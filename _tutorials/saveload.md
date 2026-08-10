@@ -115,7 +115,9 @@ mapping. Applicable ordinary visible overloads named `forFields`, `mapFields`, o
 normally. Keep the generic loader as a free function: on Lua, a method cannot currently combine type parameters
 from its generic owning class with additional type parameters declared by the method itself. Do not call
 `newInstance<T>()` from a generic class constructor; construct the state in the loader and initialize nested state
-explicitly afterward.
+explicitly afterward. Avoid calling generic-construction methods directly on freshly constructed generic receivers
+on Lua. Dedicated state classes should also avoid nested modules with sibling fields sharing the same name; prefer
+direct fields or ordinary inheritance.
 
 
 ## Usage
