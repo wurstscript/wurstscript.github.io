@@ -113,7 +113,9 @@ concrete, non-abstract class with an accessible zero-argument constructor. Keep 
 keep the persistence codec, schema versioning, validation, and migrations separate from construction and field
 mapping. Applicable ordinary visible overloads named `forFields`, `mapFields`, or `newInstance` still resolve
 normally. Keep the generic loader as a free function: on Lua, a method cannot currently combine type parameters
-from its generic owning class with additional type parameters declared by the method itself.
+from its generic owning class with additional type parameters declared by the method itself. Do not call
+`newInstance<T>()` from a generic class constructor; construct the state in the loader and initialize nested state
+explicitly afterward.
 
 
 ## Usage

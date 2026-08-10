@@ -930,6 +930,8 @@ unresolved type parameters, and classes without a usable constructor are rejecte
 
 Keep a generic loader in the free-function form shown above. On Lua, a method cannot currently combine type
 parameters from its generic owning class with additional type parameters declared by the method itself.
+Likewise, do not call `newInstance<T>()` from a generic class constructor. Construct the state in the loader and
+initialize nested state explicitly afterward.
 
 These are compile-time transformations, not runtime reflection, and generate equivalent direct accesses in both
 Jass and Lua. They generate no runtime registry, type-name lookup, or reflection metadata. Keep serializable state
