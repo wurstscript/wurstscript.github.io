@@ -880,29 +880,58 @@ function foo()
 
 ### Compiler-assisted field mapping
 
-For dedicated state classes, the compiler provides two save/load intrinsics that expand into direct field
-accesses:
+For dedicated state classes, import `MagicFunctions` to use compiler-assisted field iteration and generic
+construction. These operations expand to ordinary constructors and direct field accesses; serialization formats,
+hashes, and storage remain standard-library concerns.
 
 ```wurst
+import MagicFunctions
+
 class PlayerState
     int level = 1
     string name = ""
 
     function save(FieldWriter writer)
-        __wurst_forFields((fieldName, value) -> writer.write(fieldName, value))
+        forFields((fieldName, value) -> writer.write(fieldName, value))
 
     function load(FieldReader reader)
-        __wurst_mapFields((fieldName, value) -> reader.read(fieldName, value))
+        mapFields((fieldName, value) -> reader.read(fieldName, value))
 ```
 
-`__wurst_forFields` invokes the callback once for every non-static instance field. The callback receives the
-field name and current value and must produce a statement. `__wurst_mapFields` invokes a reader callback and
-assigns its result back to each field. Leave the two callback parameter types inferred; overload the reader or
-writer for the field types used by the state class.
+`forFields` invokes the callback once for every accessible, non-static instance field. This includes inherited,
+module-injected, readonly, and constant fields. The callback receives the field key and current value and must
+produce a statement. `mapFields` assigns each callback result back to its field, so it includes only accessible,
+mutable instance fields. Module field keys are qualified when necessary to disambiguate equal names.
+
+Both functions also accept an explicit target. The target is evaluated exactly once:
+
+```wurst
+forFields(state, (fieldName, value) -> writer.write(fieldName, value))
+mapFields(state, (fieldName, value) -> reader.read(fieldName, value))
+```
+
+Leave callback parameter types inferred and overload the reader or writer for every field type used by the state
+class. An ordinary visible function with one of these names is resolved normally and is not treated as compiler
+magic.
+
+Use `newInstance<T>()` when a specialized generic function needs to construct its concrete result type:
+
+```wurst
+function loadState<T:>(FieldReader reader) returns T
+    let result = newInstance<T>()
+    mapFields(result, (fieldName, oldValue) -> reader.read(fieldName, oldValue))
+    return result
+```
+
+At each concrete call such as `loadState<PlayerState>(reader)`, the compiler specializes the required path and
+lowers `newInstance<PlayerState>()` to its normal zero-argument constructor. `T` must resolve to a concrete,
+non-abstract class with an accessible zero-argument constructor. Interfaces, handles, primitives, tuples,
+unresolved type parameters, and classes without a usable constructor are rejected.
 
 These are compile-time transformations, not runtime reflection, and generate equivalent direct accesses in both
-Jass and Lua. Keep serializable state in a small class with mutable instance fields and keep the persistence
-codec separate from the rest of the game logic. See the [Save and Load tutorial](/tutorials/saveload.html) for
+Jass and Lua. They generate no runtime registry, type-name lookup, or reflection metadata. Keep serializable state
+in small, dedicated classes, avoid unsupported field kinds such as static fields, and keep persistence codecs and
+format migration separate from the state model. See the [Save and Load tutorial](/tutorials/saveload.html) for
 integration with Warcraft III's file API.
 
 ### Array Members

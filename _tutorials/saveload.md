@@ -64,32 +64,54 @@ The `serialize()` function returns a `ChunkedString`, which then can be passed t
 
 ## Compiler-assisted field mapping
 
-For small, dedicated state classes, Wurst can generate the repetitive field mapping for you. Use the
-compiler intrinsics `__wurst_forFields` when writing fields and `__wurst_mapFields` when reading them:
+For small, dedicated state classes, Wurst can generate the repetitive field mapping for you. Import
+`MagicFunctions`, then use `forFields` when writing fields and `mapFields` when reading them:
 
 ```wurst
+import MagicFunctions
+
 class PlayerState
     int level = 1
     string name = ""
 
     function save(FieldWriter writer)
-        __wurst_forFields((fieldName, value) -> writer.write(fieldName, value))
+        forFields((fieldName, value) -> writer.write(fieldName, value))
 
     function load(FieldReader reader)
-        __wurst_mapFields((fieldName, value) -> reader.read(fieldName, value))
+        mapFields((fieldName, value) -> reader.read(fieldName, value))
 ```
 
 The callback receives the field name as a `string` and the current field value. The compiler expands these
 calls into ordinary direct field accesses, so there is no runtime reflection or metadata lookup. The same
 source works for both Jass and Lua.
 
-`__wurst_forFields` is for statement callbacks. `__wurst_mapFields` uses the callback result to assign each
-field, so the reader should return the value to store. Leave both callback parameter types inferred and use
-the reader/writer overload matching each field type. Static fields are not included.
+`forFields` is for statement callbacks. It includes accessible non-static fields, including inherited,
+module-injected, readonly, and constant state. `mapFields` uses the callback result to assign each field, so the
+reader should return the value to store; readonly and constant fields are therefore excluded from mapping. Leave
+both callback parameter types inferred and use a reader/writer overload for each field type. Module field keys are
+qualified when equal names need disambiguation.
 
-The `__wurst_` names are compiler intrinsics; ordinary user functions named `forFields` or `mapFields` are
-unaffected. Keep these state classes focused on their serializable data (normally direct mutable instance
-fields) and keep the persistence codec separate from the game logic.
+The explicit-target forms work outside the state class and evaluate the target exactly once:
+
+```wurst
+forFields(state, (fieldName, value) -> writer.write(fieldName, value))
+mapFields(state, (fieldName, value) -> reader.read(fieldName, value))
+```
+
+For a generic load wrapper, `newInstance<T>()` constructs the specialized concrete class through its normal
+accessible zero-argument constructor:
+
+```wurst
+function loadState<T:>(FieldReader reader) returns T
+    let state = newInstance<T>()
+    mapFields(state, (fieldName, oldValue) -> reader.read(fieldName, oldValue))
+    return state
+```
+
+This works for Jass and Lua without runtime reflection, a type registry, or a type-id switch. `T` must resolve to a
+concrete, non-abstract class with an accessible zero-argument constructor. Keep state classes focused on data and
+keep the persistence codec, schema versioning, validation, and migrations separate from construction and field
+mapping. Ordinary visible functions named `forFields`, `mapFields`, or `newInstance` still resolve normally.
 
 
 ## Usage
