@@ -111,7 +111,9 @@ function loadState<T:>(FieldReader reader) returns T
 This works for Jass and Lua without runtime reflection, a type registry, or a type-id switch. `T` must resolve to a
 concrete, non-abstract class with an accessible zero-argument constructor. Keep state classes focused on data and
 keep the persistence codec, schema versioning, validation, and migrations separate from construction and field
-mapping. Ordinary visible functions named `forFields`, `mapFields`, or `newInstance` still resolve normally.
+mapping. Applicable ordinary visible overloads named `forFields`, `mapFields`, or `newInstance` still resolve
+normally. Keep the generic loader as a free function: on Lua, a method cannot currently combine type parameters
+from its generic owning class with additional type parameters declared by the method itself.
 
 
 ## Usage

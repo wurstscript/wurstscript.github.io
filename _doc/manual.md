@@ -911,8 +911,8 @@ mapFields(state, (fieldName, value) -> reader.read(fieldName, value))
 ```
 
 Leave callback parameter types inferred and overload the reader or writer for every field type used by the state
-class. An ordinary visible function with one of these names is resolved normally and is not treated as compiler
-magic.
+class. An applicable ordinary visible overload with one of these names is resolved normally and is not treated as
+compiler magic.
 
 Use `newInstance<T>()` when a specialized generic function needs to construct its concrete result type:
 
@@ -927,6 +927,9 @@ At each concrete call such as `loadState<PlayerState>(reader)`, the compiler spe
 lowers `newInstance<PlayerState>()` to its normal zero-argument constructor. `T` must resolve to a concrete,
 non-abstract class with an accessible zero-argument constructor. Interfaces, handles, primitives, tuples,
 unresolved type parameters, and classes without a usable constructor are rejected.
+
+Keep a generic loader in the free-function form shown above. On Lua, a method cannot currently combine type
+parameters from its generic owning class with additional type parameters declared by the method itself.
 
 These are compile-time transformations, not runtime reflection, and generate equivalent direct accesses in both
 Jass and Lua. They generate no runtime registry, type-name lookup, or reflection metadata. Keep serializable state
