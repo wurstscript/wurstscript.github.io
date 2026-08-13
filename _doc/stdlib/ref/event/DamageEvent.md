@@ -17,7 +17,10 @@ This package provides a light-weight damage detection system with priority-order
 **IMPORTANT**
     This package **doesn't** provide protection from cyclic damage.
     Damage from code **must** be declared by the user using DamageEvent.setNextDamageFromCode() before dealing damage.
-    If you set damage amount to zero or less in the unreduced listeners, reduced listeners will not fire.
+    Setting the damage amount to zero or less in the unreduced listeners does **not** skip the reduced
+    listeners: EVENT_PLAYER_UNIT_DAMAGED still fires and they run with an amount of zero.
+    (This corrects an older note here which claimed the opposite. Verified in game by check 10 of
+    package StdlibIngameTests.)
 
     if DETECT_NATIVE_ABILITIES is true:
 ```wurst
@@ -36,7 +39,7 @@ If the order of firing of the listeners is important, the user can give a priori
     DamageEvent.addListener(0) ->
         print("This fires before.")
 
-If you want to catch the damage instance before it has been reduced by any damage reducing effect (such as armor) you can use the unreduced verions of the listeners:
+If you want to catch the damage instance before it has been reduced by any damage reducing effect (such as armor) you can use the unreduced versions of the listeners:
 
     DamageEvent.addUnreducedListener() ->
         print("this fire before any damage reduction")
@@ -87,7 +90,7 @@ Each damage instance can have a DamageElement associated to it.
        DAMAGE_ELEMENT_FIRE  = new DamageElement("Fire", colorA(255, 0, 0, 255))
        DAMAGE_ELEMENT_WATER = new DamageElement("Water", colorA(0, 0, 255, 255))
 
-   The user can extends from DamageElement to add his own settings.
+   DamageElement can be extended to carry additional per-element settings.
 
 ### DamageEvent
 
@@ -156,4 +159,4 @@ public constant DAMAGE_ELEMENT_ATTACK = new DamageElement("Physical", colorA(223
 > 🔧 **Configurable.** Override it in your map's config package.
 
 A damage instance can have an element.
-   DAMAGE_ELEMENT_ATTACK is the defaut element added to any damage instances of DamageType ATTACK
+   DAMAGE_ELEMENT_ATTACK is the default element added to any damage instances of DamageType ATTACK

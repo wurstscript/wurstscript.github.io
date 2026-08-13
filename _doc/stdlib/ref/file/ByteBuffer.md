@@ -35,8 +35,13 @@ public class ByteBuffer
 - `writeInt(int n)`
   Writes a signed integer into the buffer.
 - `hasByte() returns bool`
+  Returns whether at least one unread byte remains.
+  		Compares against the total byte count rather than the internal int index,
+  		so a buffer whose size is an exact multiple of 4 does not report a
+  		phantom trailing byte from the empty write buffer.
 - `readByte() returns int`
-  Reads a single unsigned byte from this buffer. The returned value will be in the range [0, 255]. *
+  Reads a single unsigned byte from this buffer. The returned value will be in the range [0, 255].
+  		Reading past the end yields 0; guard with hasByte(). *
 - `readShort() returns int`
   Reads a single unsigned short from this buffer. The returned value will be in the range [0, 65535]. *
 - `readInt() returns int`
@@ -44,6 +49,8 @@ public class ByteBuffer
 - `resetRead()`
 - `getInt(int i) returns int`
 - `getIntCount() returns int`
+  Number of ints backing this buffer, counting the partially filled write
+  		buffer as one. An empty buffer therefore reports 1, not 0.
 - `size() returns int`
   Returns the number of bytes in the buffer. *
 - `getByte(int i) returns int`

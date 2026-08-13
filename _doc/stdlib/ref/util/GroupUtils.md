@@ -45,6 +45,32 @@ Recycles a group if it is created through GroupUtils, otherwise just destroys it
 public function group.recyclableIterator() returns group
 ```
 
+Copies this group's units into a freshly acquired recyclable group and
+	returns it, so the copy can be iterated while the original is modified.
+	The caller owns the result and must call .release() on it.
+
+	Not re-entrant: the copy is staged through a single package global, so this
+	must not be called again from inside an iteration over its own result.
+
+### group.getClosestUnit
+
+```wurst
+public function group.getClosestUnit(vec2 pos) returns unit
+```
+
+Returns the closest unit in this group to the given position.
+	Returns null if the group is empty.
+
+### group.filterAliveUnits
+
+```wurst
+public function group.filterAliveUnits(unit mustBeEnemyOf, int ownerId) returns group
+```
+
+Filters this group to include only alive units, optionally filtering by allegiance and owner.
+	mustBeEnemyOf: If not null, only units that are enemies of this unit are kept. Pass null to ignore allegiance.
+	ownerId: If not -1, only units owned by this player ID are kept. Pass -1 to ignore owner.
+
 ## Constants
 
 ### GROUP_NUMBER_LIMIT

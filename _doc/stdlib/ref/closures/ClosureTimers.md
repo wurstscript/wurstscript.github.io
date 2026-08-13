@@ -49,6 +49,10 @@ public abstract class CallbackPeriodic
 **Members:**
 
 - `abstract function call(thistype cb)`
+- `disable()`
+  Pauses this periodic callback without destroying it. Safe to call when already disabled.
+- `enable()`
+  Resumes a previously disabled periodic callback. Safe to call when already enabled.
 
 ### CallbackCounted
 
@@ -61,9 +65,14 @@ public abstract class CallbackCounted
 - `abstract function call(thistype cb)`
 - `isLast() returns boolean`
 - `getCount() returns int`
+  The number of this call, counting down: maxCount on the first call and
+  		1 on the last. Returns maxCount before the first call.
 - `progress() returns real`
-  Returns a value between 0 and 1.
+  Progress through the run as a value between 0 and 1.
+  		Returns 0 if the callback was started with a call count of 0.
 - `stop()`
+  Stops the callback. The remaining calls are skipped and the object is
+  		destroyed on the next tick, not immediately.
 - `callAndCount()`
 
 ## Interfaces

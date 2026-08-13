@@ -13,9 +13,9 @@ toc: sections
 curated: /stdlib/closure_for_groups
 ---
 
-Executes the given closure for every unit in this group,
-	removing the units from the group as processed.
-	Return true to continue iteration, false to stop.
+Executes the given closure for every unit of the given type.
+	Stops invoking the closure after *count* units. The underlying enumeration
+	cannot be aborted, so it still visits every match.
 
 **[Source on GitHub](https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/closures/ClosureForGroups.wurst)**
 
@@ -72,9 +72,6 @@ Executes the given closure for every unit of the given type.
 public function forUnitsOfTypeCounted(string unitname, int count, ForGroupCallback c)
 ```
 
-Executes the given closure for every unit of the given player.
-	Cancels itself after *count* iterations
-
 ### forUnitsOfPlayer
 
 ```wurst
@@ -106,7 +103,8 @@ public function forUnitsInRectCounted(rect r, int count, ForGroupCallback c)
 ```
 
 Executes the given closure for every unit in the given rect.
-	Cancels itself after *count* iterations
+	Stops invoking the closure after *count* units. The underlying enumeration
+	cannot be aborted, so it still visits every unit in the rect.
 
 ### forUnitsInRange
 
@@ -131,8 +129,9 @@ Executes the given closure for every unit in range of the given position
 public function forUnitsInRangeCounted(vec2 pos, real radius, int count, ForGroupCallback c)
 ```
 
-Executes the given closure for every unit in range of the given position
-	Cancels itself after *count* iterations
+Executes the given closure for every unit in range of the given position.
+	Stops invoking the closure after *count* units. The underlying enumeration
+	cannot be aborted, so it still visits every unit in range.
 
 ### forUnitsSelected
 
@@ -212,7 +211,7 @@ public function forDestructablesInRange(vec2 pos, real range, ForGroupCallbackD 
 ```
 
 Executes the given closure for all destructables in a rect
-	that incompasses the circle with the range radius at the given position.
+	that encompasses the circle with the range radius at the given position.
 
 ### forDestructablesInRange
 
@@ -221,7 +220,7 @@ public function forDestructablesInRange(vec2 pos, real range, boolexpr filter, F
 ```
 
 Executes the given closure for all destructables in a rect
-	that incompasses the circle with the range radius at the given position.
+	that encompasses the circle with the range radius at the given position.
 
 ### forDestructablesInRect
 
@@ -245,7 +244,7 @@ Executes the given closure for all destructables in the given rect
 public function forNearestDestructable(vec2 pos, real range, ForGroupCallbackD c)
 ```
 
-Executes the given closure for the closes destructable in the given rect.
+Executes the given closure for the closest destructable in the given range.
 	If there is no destructable in range, the closure will be run with "null"
 
 ## Extension Functions
@@ -273,6 +272,10 @@ Executes the given closure for every unit in this group,
 ```wurst
 public function group.forEachFromUntil(ForGroupCallbackUntil cb)
 ```
+
+Executes the given closure for every unit in this group,
+	removing the units from the group as processed.
+	Return true to continue iteration, false to stop.
 
 ### group.forEachInUntil
 

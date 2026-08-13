@@ -48,17 +48,19 @@ public class LinkedList<T>
   		It does not add/remove elements internally, only the internal pointers of the list nodes are re-pointed.
   		The other list will be empty, but not destroyed.
 - `get(int index) returns T`
-  Returns the element at the specified index
+  Returns the element at the specified index.
+  		Errors if the index is outside [0, size).
 - `indexOf(T t) returns int`
   Returns the index of the specified element or -1 is it doesn't exist
 - `set(int index, T elem)`
-  Sets the element at the specified index
+  Sets the element at the specified index.
+  		Errors if the index is outside [0, size).
 - `push(T elem)`
   Adds an element to the end of the list (top of stack, beginning of queue)
 - `getFirst() returns T`
-  Returns the first element in the list
+  Returns the first element in the list, or null if it is empty
 - `getLast() returns T`
-  Returns the last element in the list
+  Returns the last element in the list, or null if it is empty
 - `dequeue() returns T`
   Returns and removes the first added Element (FIFO)
 - `pop() returns T`
@@ -101,24 +103,29 @@ public class LinkedList<T>
 - `updateAll(LinkedListUpdater<T> f)`
   Updates all elements
 - `shuffle()`
-  Performs a Fisher–Yates shuffle on this list
+  Performs a Fisher-Yates shuffle on this list.
+  		Permutes the elements in place - no nodes are destroyed or reallocated.
 - `getRandomElement() returns T`
-  Returns a random element from this list or null, if empty
+  Returns a random element from this list, or null if it is empty
 - `addAt(T elem, int index)`
-  Adds the given element directly behind the element at the given index
+  Inserts the given element at the given index, shifting the element that
+  		was there (and everything after it) one position to the right.
+  		An index equal to the list's size appends to the end.
 - `sortWith(Comparator<T> comparator)`
   Sorts the list according the the comparator using merge sort
 - `map<Q>(MapClosure<T, Q> itr) returns LinkedList<Q>`
   Returns the list obtained by applying the given closure to each element of the original list
 - `filter(LinkedListPredicate<T> predicate) returns LinkedList<T>`
-  Returns a new list of the elements that satisfy the predicate
+  Returns a new list of the elements that satisfy the predicate.
+  		Builds the result directly instead of copying and pruning, so only the
+  		matching elements are ever allocated.
 - `foldl<Q>(Q startValue, FoldClosure<T, Q> predicate) returns Q`
   'Folds' this list into a single value of type Q
   		Example int-list sum: `list.foldl<int>(0, (i, q) -> q + i)`
 - `find(LinkedListPredicate<T> predicate) returns T`
   Returns the first element that satisfies the predicate, or null if none present
 - `toString() returns string`
-  Prints the content of the list
+  Prints the content of the list. Only meaningful for int-like element types.
 - `clear()`
   Removes all elements from the list
 

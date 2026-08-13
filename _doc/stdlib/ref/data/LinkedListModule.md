@@ -28,7 +28,9 @@ public module LinkedListModule
 - `construct()`
 - `static function getFirst() returns thistype`
 - `getNext() returns thistype`
+  The next instance, wrapping around to the first one at the end of the list
 - `getPrev() returns thistype`
+  The previous instance, wrapping around to the last one at the start of the list
 - `remove()`
 - `static function iterator() returns Iterator`
   An iterator which iterates over all instances of this class

@@ -57,7 +57,8 @@ public class HashList<T>
 - `isEmpty() returns bool`
   Return whether the list is empty
 - `get(int index) returns T`
-  Get the element at the given index from this list
+  Get the element at the given index from this list.
+  		Indices outside [0, size) are not validated and yield the null/zero value.
 - `has(T elem) returns bool`
   Return whether the element exists in the list
 - `hasAt(int index) returns bool`
@@ -71,7 +72,9 @@ public class HashList<T>
 - `staticItr() returns HLIterator<T>`
   get the static iterator for this list
 - `removeIf(RemovePredicate<T> predicate)`
-  Removes the element if the predicates returns true
+  Removes the element if the predicates returns true.
+  		Single pass compaction - removing through the iterator instead would
+  		shift the tail once per removal, making this O(n^2).
 - `getRandomElement() returns T`
 
 ### HLIterator

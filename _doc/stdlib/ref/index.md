@@ -38,16 +38,21 @@ If you are choosing a capability, start with the [standard library overview](/st
 - [HashSet](/stdlib/ref/data/HashSet.html): Generic set implementation
 - [LinkedList](/stdlib/ref/data/LinkedList.html): Doubly-linked list implementation that implements all common list, stack and queue operations.
 - [LinkedListModule](/stdlib/ref/data/LinkedListModule.html): Turns a class into a linked list where each instance knows it's previous
+- [PriorityQueue](/stdlib/ref/data/PriorityQueue.html): A binary heap priority queue.
+- [ShardedIntStorage](/stdlib/ref/data/ShardedIntStorage.html): A shared integer arena spanning multiple native JASS arrays.
+- [SparseSet](/stdlib/ref/data/SparseSet.html): A set with O(1) membership checks, insertion, and unordered removal.
+- [SparseSetBenchmark](/stdlib/ref/data/SparseSetBenchmark.html)
 - [Table](/stdlib/ref/data/Table.html): Wraps a hashtable to provide single key tables
 
 ## Closures
 
 - [ClosureEvents](/stdlib/ref/closures/ClosureEvents.html): This package is a comfort wrapper around wc3 events,
-- [ClosureForGroups](/stdlib/ref/closures/ClosureForGroups.html): Executes the given closure for every unit in this group,
+- [ClosureForGroups](/stdlib/ref/closures/ClosureForGroups.html): Executes the given closure for every unit of the given type.
 - [ClosureFrames](/stdlib/ref/closures/ClosureFrames.html)
 - [ClosureKeyPresses](/stdlib/ref/closures/ClosureKeyPresses.html)
 - [ClosureTimers](/stdlib/ref/closures/ClosureTimers.html): Execute an action after a certain time.
 - [Execute](/stdlib/ref/closures/Execute.html): This package exposes a single function execute(),
+- [SpatialIndexForUnits](/stdlib/ref/closures/SpatialIndexForUnits.html)
 
 ## Events
 
@@ -73,8 +78,11 @@ If you are choosing a capability, start with the [standard library overview](/st
 - [Bitwise](/stdlib/ref/math/Bitwise.html): A tuple containing 4 bytes comprising a 4-byte integer.
 - [BitwiseInit](/stdlib/ref/math/BitwiseInit.html)
 - [Interpolation](/stdlib/ref/math/Interpolation.html): Linear Interpolation
+- [LineGeometry](/stdlib/ref/math/LineGeometry.html)
 - [Maths](/stdlib/ref/math/Maths.html): Returns the length of the hypotenuse of a right-angle triangle with the
 - [Matrices](/stdlib/ref/math/Matrices.html): Matrix 2x2
+- [PathingGrid](/stdlib/ref/math/PathingGrid.html)
+- [Polygon](/stdlib/ref/math/Polygon.html): An immutable closed 2D path after seal().
 - [Quaternion](/stdlib/ref/math/Quaternion.html): Linear interpolation.
 - [Raycast](/stdlib/ref/math/Raycast.html): An infinite 2D ray
 - [Vectors](/stdlib/ref/math/Vectors.html): A vector is a geometric object that has a length and direction.
@@ -90,7 +98,7 @@ If you are choosing a capability, start with the [standard library overview](/st
 - [SaveLoadData](/stdlib/ref/file/SaveLoadData.html): Asynchronously loads the data from the file of the given player
 - [Serializable](/stdlib/ref/file/Serializable.html)
 - [SQLite](/stdlib/ref/file/SQLite.html)
-- [SyncSimple](/stdlib/ref/file/SyncSimple.html)
+- [SyncSimple](/stdlib/ref/file/SyncSimple.html): Generic sync listener for arbitrary types that can be cast to/from int.
 
 ## Utilities
 
@@ -99,7 +107,7 @@ If you are choosing a capability, start with the [standard library overview](/st
 - [Colors](/stdlib/ref/util/Colors.html): Mixes two colors, s would be a number 0<=s<=1 that determines
 - [DialogBox](/stdlib/ref/util/DialogBox.html): DialogBox lets you create dialogs more easily and associate its buttons with closures.
 - [EffectUtils](/stdlib/ref/util/EffectUtils.html)
-- [GameTimer](/stdlib/ref/util/GameTimer.html)
+- [GameTimer](/stdlib/ref/util/GameTimer.html): Seconds elapsed since map start.
 - [GroupUtils](/stdlib/ref/util/GroupUtils.html): The max number of recyclable groups.
 - [Knockback3](/stdlib/ref/util/Knockback3.html): Use the `Knockback3.add(..)` functions to apply 3D knockback to units.
 - [MapBounds](/stdlib/ref/util/MapBounds.html)
@@ -114,6 +122,8 @@ If you are choosing a capability, start with the [standard library overview](/st
 - [Time](/stdlib/ref/util/Time.html): Type-safe wrappers to distinguish durations (an amount of time) from instants (a point in time), and the valid ways
 - [TimerUtils](/stdlib/ref/util/TimerUtils.html): Get a new timer.
 - [UnitIndexer](/stdlib/ref/util/UnitIndexer.html): Returns the int index of this unit.
+- [UnitSpatialIndex](/stdlib/ref/util/UnitSpatialIndex.html): Registers or re-buckets one unit immediately.
+- [UnitSpatialIndexRemoval](/stdlib/ref/util/UnitSpatialIndexRemoval.html)
 
 ## Handle Wrappers
 
@@ -134,7 +144,7 @@ If you are choosing a capability, start with the [standard library overview](/st
 - [Group](/stdlib/ref/_handles/Group.html): Use this group for your non-nested group enum calls
 - [Hashtable](/stdlib/ref/_handles/Hashtable.html)
 - [Image](/stdlib/ref/_handles/Image.html): ImageLayer influences the order in which the images are drawn above one another
-- [Integer](/stdlib/ref/_handles/Integer.html)
+- [Integer](/stdlib/ref/_handles/Integer.html): Returns this int to the power of the argument int.
 - [Item](/stdlib/ref/_handles/Item.html): Updates the item's name, tooltip, extendedtooltip, description or icon for the specific player.
 - [Lightning](/stdlib/ref/_handles/Lightning.html)
 - [Multiboard](/stdlib/ref/_handles/Multiboard.html)

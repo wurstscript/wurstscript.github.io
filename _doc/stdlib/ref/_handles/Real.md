@@ -24,7 +24,7 @@ The arctangent function with two arguments.
 public function real.abs() returns real
 ```
 
-Returns the abolsute value of the given real.
+Returns the absolute value of the given real.
 This means, negative values will be return positive.
 
 ### real.squared

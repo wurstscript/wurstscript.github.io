@@ -140,6 +140,33 @@ public function rect.remove()
 public function rect.copy() returns rect
 ```
 
+### rect.toRegion
+
+```wurst
+public function rect.toRegion() returns region
+```
+
+Converts this rect to a region.
+	WARNING: Creates a new region; caller owns it and must call .destr() to avoid a handle leak.
+
+### rect.fromCenter
+
+```wurst
+public function rect.fromCenter(real sizeX, real sizeY) returns rect
+```
+
+Creates a rect centered at this rect's center with the given full width and height.
+	Example: A rect at (100,100) with sizeX=20, sizeY=30 spans from (90,85) to (110,115).
+
+### rect.fromCenterWithOffset
+
+```wurst
+public function rect.fromCenterWithOffset(real sizeX, real sizeY, vec2 offset) returns rect
+```
+
+Creates a rect centered at this rect's center plus offset, with the given full width and height.
+	Example: A rect at (100,100) with offset (10,0), sizeX=20, sizeY=30 spans from (100,85) to (120,115).
+
 ### rect.setRectFromLoc
 
 ```wurst

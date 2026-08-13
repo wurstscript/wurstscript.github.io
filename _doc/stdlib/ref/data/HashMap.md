@@ -64,7 +64,9 @@ Iterable generic Table Wrapper
 - `override function flush()`
   Remove all data from this map
 - `override function getAndRemove(K key) returns V`
-  Retrieves the value saved under the given key and removes it
+  Retrieves the value saved under the given key and removes it.
+  		super.getAndRemove dispatches back into this class's remove(), which
+  		already drops the key, so no second keys.remove() is needed here.
 - `iterator() returns HLIterator<K>`
   Returns an iterator that iterates over the map's keys
 - `hasKey(K key) returns bool`

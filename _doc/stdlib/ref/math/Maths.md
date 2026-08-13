@@ -99,7 +99,7 @@ PI constant
 ### PI2
 
 ```wurst
-public constant real PI2 = 6.28318
+public constant real PI2 = 6.283185307
 ```
 
 PI * 2 constant

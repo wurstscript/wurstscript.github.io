@@ -10,6 +10,10 @@ generated: true
 toc: sections
 ---
 
+Generic sync listener for arbitrary types that can be cast to/from int.
+	Only works for values representable as an int (class instances, handle ids).
+	The synced object must already be in sync across all clients.
+
 **[Source on GitHub](https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/file/SyncSimple.wurst)**
 
 ## Interfaces
@@ -64,6 +68,16 @@ public interface BufferSyncListener
 
 - `onDataSynced(ChunkedString buffer)`
 
+### AnySyncListener
+
+```wurst
+public interface AnySyncListener<T>
+```
+
+**Members:**
+
+- `onDataSynced(T data)`
+
 ## Extension Functions
 
 ### bool.sync
@@ -89,6 +103,16 @@ public function real.sync(player p, RealSyncListener listener)
 ```
 
 Syncs a real from the given player.
+
+### player.sync
+
+```wurst
+public function player.sync<T>(T data, AnySyncListener<T> listener)
+```
+
+Syncs an arbitrary type from the given player.
+	Only works for values representable as an int handle/index (class instances, handle ids).
+	The synced object must already be in sync across clients. Listener is destroyed after firing.
 
 ### string.sync
 

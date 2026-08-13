@@ -11,8 +11,10 @@ toc: sections
 ---
 
 Returns the width of the string.
-	Only accounts for single byte (latin) characters, multibyte characters
-	contribute no width.
+	Only meaningful for single byte (latin) characters. Each byte of a
+	multibyte (non-latin) character is looked up individually and falls back to
+	the width of a space, so the result for non-latin text is an approximation
+	rather than a true width.
 
 **[Source on GitHub](https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/util/StringUtils.wurst)**
 
@@ -160,7 +162,9 @@ Custom Function which can split strings and runs callback for each string.
 public function string.isNumber() returns bool
 ```
 
-Checks whether a string is a number or not.
+Checks whether a string is a decimal number: an optional leading "-",
+	at least one digit, and at most one decimal point.
+	"", "-", "." and "-." are not numbers.
 
 ### string.isValidDescription
 

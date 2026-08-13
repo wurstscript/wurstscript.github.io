@@ -197,3 +197,23 @@ public function ArrayList<string>.join() returns string
 ```
 
 Joins elements from a string list into one string
+
+## Constants
+
+### intComparator
+
+```wurst
+public constant Comparator<int> intComparator = (i1, i2) -> i1 < i2 ? -1 : (i1 > i2 ? 1 : 0)
+```
+
+### realComparator
+
+```wurst
+public constant Comparator<real> realComparator = (r1, r2) -> r1 < r2 ? -1 : (r1 > r2 ? 1 : 0)
+```
+
+### stringComparator
+
+```wurst
+public constant Comparator<string> stringComparator = (s1, s2) -> stringCompare(s1, s2)
+```

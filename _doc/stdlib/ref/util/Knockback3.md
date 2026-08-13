@@ -52,16 +52,29 @@ public class Knockback3
   Apply a knockback vector to unit u. `velocity` is initial speed in units
   per second. `groundAngle` and `airAngle` are the direction and trajectory
   parameters, respectively. Example:
+  
+  ```wurst
+  Knockback3.add(u, 1000., 0 .fromDeg(), 45 .fromDeg())
+  ```
 - `static function add(unit u, vec2 target, real groundSpeed)`
   Apply a knockback vector to unit u. If the unit is stopped, this vector will
   throw the unit to the position at vec2 `target`. Along the XY-plane, the
   unit will move `groundSpeed` units per second. Note that the more vertical
   angle will always be used from the pair of possible trajectories. Example:
+  
+  ```wurst
+  Knockback3.add(caster, getSpellTargetPos(), 500.)
+  ```
 - `static function setVel(unit u, real velocity, angle groundAngle, angle airAngle)`
   Setter for the knockback vector on unit u. If the unit is not already tracked, this has the same behavior as
   `add`.
 - `static function getVel(unit u) returns vec3`
-  Getter for the knockback vector on unit u.  If the unit is not already tracked, returns (0, 0, 0).
+  Getter for the knockback vector on unit u, as a per-tick displacement
+  (speed * ANIMATION_PERIOD) - note that `add` and `setVel` take units per
+  *second*. Returns (0, 0, 0) if the unit is not tracked.
+- `static function getVelPerSecond(unit u) returns vec3`
+  Getter for the knockback velocity on unit u in units per second, i.e. in
+  the same units that `add` and `setVel` accept.
 - `static function forget(unit u)`
   Stop tracking unit u. If the unit is middair it will simply stop moving. If the unit is already untracked,
   nothing happens.
