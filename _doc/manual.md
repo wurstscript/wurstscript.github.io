@@ -880,9 +880,10 @@ function foo()
 
 ### Compiler-assisted field mapping
 
-For dedicated state classes, import `MagicFunctions` to use compiler-assisted field iteration and generic
-construction. These operations expand to ordinary constructors and direct field accesses; serialization formats,
-hashes, and storage remain standard-library concerns.
+Import `MagicFunctions` to use the compiler-provided `wurstForFields`, `wurstMapFields`, and
+`wurstNewInstance<T>()` helpers. Their `@compilerintrinsic` declarations provide completion, hover information,
+and definition navigation. Calls are replaced at compile time with ordinary field accesses or constructor calls;
+the declarations themselves do not remain in generated Jass or Lua.
 
 ```wurst
 import MagicFunctions
@@ -892,59 +893,71 @@ class PlayerState
     string name = ""
 
     function save(FieldWriter writer)
-        forFields((fieldName, value) -> writer.write(fieldName, value))
+        wurstForFields((fieldName, value) -> writer.write(fieldName, value))
 
     function load(FieldReader reader)
-        mapFields((fieldName, value) -> reader.read(fieldName, value))
+        wurstMapFields((fieldName, value) -> reader.read(fieldName, value))
 ```
 
-`forFields` invokes the callback once for every accessible, non-static instance field. This includes inherited,
-module-injected, readonly, and constant fields. The callback receives the field key and current value and must
-produce a statement. `mapFields` assigns each callback result back to its field, so it includes only accessible,
-mutable instance fields. Module field keys are qualified when necessary to disambiguate equal names.
+`wurstForFields` emits one callback invocation for each accessible, non-static instance field. This includes
+inherited, module-injected, readonly, and constant fields. The callback must produce a statement.
+`wurstMapFields` assigns each callback result back to its field, so every visited field must be mutable; a readonly
+or constant field produces a compile-time diagnostic. Static fields are never visited.
 
-Both functions also accept an explicit target. The target is evaluated exactly once:
+The callback receives a field key and the field's current value. The value parameter has a different concrete type
+for each generated invocation, despite the `int` placeholder shown by the tooling interface. Leave callback
+parameter types inferred and use overloads for the field types your mapper supports. Field iteration itself is
+shallow: nested classes, tuples, collections, nullable values, and other composite types require matching library
+or user-provided overloads. The compiler does not recursively serialize them.
 
-```wurst
-forFields(state, (fieldName, value) -> writer.write(fieldName, value))
-mapFields(state, (fieldName, value) -> reader.read(fieldName, value))
-```
-
-Leave callback parameter types inferred and overload the reader or writer for every field type used by the state
-class. An applicable ordinary visible overload with one of these names is resolved normally and is not treated as
-compiler magic.
-
-Use `newInstance<T>()` when a specialized generic function needs to construct its concrete result type:
+Both operations also accept an explicit target as their first argument. Class targets are evaluated exactly once.
+Class and tuple targets are supported. A tuple passed to `wurstMapFields` must be a variable so the compiler can
+write the mapped tuple back once after updating its components.
 
 ```wurst
-function loadState<T:>(FieldReader reader) returns T
-    let result = newInstance<T>()
-    mapFields(result, (fieldName, oldValue) -> reader.read(fieldName, oldValue))
+tuple Position(int x, int y)
+
+function savePosition(Position position, FieldWriter writer)
+    wurstForFields(position, (fieldName, value) -> writer.write(fieldName, value))
+
+function loadPosition(Position position, FieldReader reader) returns Position
+    var result = position
+    wurstMapFields(result, (fieldName, value) -> reader.read(fieldName, value))
     return result
 ```
 
-At each concrete call such as `loadState<PlayerState>(reader)`, the compiler specializes the required path and
-lowers `newInstance<PlayerState>()` to its normal zero-argument constructor. `T` must resolve to a concrete,
-non-abstract class with an accessible zero-argument constructor. Interfaces, handles, primitives, tuples,
-unresolved type parameters, and classes without a usable constructor are rejected.
+Use `wurstNewInstance<T>()` in a generic loader when the concrete result type is known at specialization time:
 
-Keep a generic loader in the free-function form shown above. On Lua, a method cannot currently combine type
-parameters from its generic owning class with additional type parameters declared by the method itself.
-Likewise, do not call `newInstance<T>()` from a generic class constructor. Construct the state in the loader and
-initialize nested state explicitly afterward.
+```wurst
+function loadState<T:>(FieldReader reader) returns T
+    let result = wurstNewInstance<T>()
+    wurstMapFields(result, (fieldName, oldValue) -> reader.read(fieldName, oldValue))
+    return result
+```
 
-On Lua, do not invoke a generic-construction method directly on a freshly constructed generic receiver. Prefer the
-free loader above, or store the receiver in a typed local first. Multi-parameter generic-interface dispatch is also
-outside this loader contract; use one construction type parameter. `newInstance<T>()` is for runtime Jass/Lua
-construction and is not supported inside `compiletime(...)` expressions. Field mapping also does not support
-nested modules whose sibling submodules declare fields with the same name; use direct fields, inheritance, or
-unique shallow module field names for dedicated state classes.
+The helper invokes the normal accessible zero-argument constructor of a concrete, non-abstract class. It does not
+allocate an uninitialized object or look up a class by name. Constructor initializers run normally, which lets a
+serialization library retain defaults for fields missing from older records.
 
-These are compile-time transformations, not runtime reflection, and generate equivalent direct accesses in both
-Jass and Lua. They generate no runtime registry, type-name lookup, or reflection metadata. Keep serializable state
-in small, dedicated classes, avoid unsupported field kinds such as static fields, and keep persistence codecs and
-format migration separate from the state model. See the [Save and Load tutorial](/tutorials/saveload.html) for
-integration with Warcraft III's file API.
+These helpers provide no wire format, stable field IDs, versioning, migration policy, integrity checks, runtime
+reflection metadata, or type registry. Those remain library concerns. In particular, field keys are source names,
+not stable persisted identities; a library must translate them to its own schema identity if renames need to remain
+compatible.
+
+The original unprefixed `forFields`, `mapFields`, and `newInstance<T>()` spellings remain available as compatibility
+fallbacks. New code should use the `wurst`-prefixed names to avoid accidental collisions. If an applicable ordinary
+function with the same name is visible, normal overload resolution selects that function instead of the compiler
+operation.
+
+For Lua, keep generic construction in a free function with one construction type parameter. Do not combine type
+parameters from a generic owning class with independent method type parameters, call `wurstNewInstance<T>()` from
+a generic class constructor, invoke a generic-construction method directly on a freshly constructed generic
+receiver, or use multi-parameter generic-interface dispatch. `wurstNewInstance<T>()` is a runtime Jass/Lua helper
+and is not supported inside `compiletime(...)`. Field mapping does not support nested modules whose sibling
+submodules declare equal field names.
+
+See the [Save and Load tutorial](/tutorials/saveload.html) for integration with Warcraft III's file API and the
+standard library serialization layers.
 
 Identifiers beginning with `__wurst` are reserved for compiler-generated internals and must not be declared by
 user code.
