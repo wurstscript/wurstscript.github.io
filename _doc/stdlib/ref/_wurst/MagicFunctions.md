@@ -17,6 +17,34 @@ The called functions must not take any parameters.
 
 **[Source on GitHub](https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/_wurst/MagicFunctions.wurst)**
 
+## Interfaces
+
+### WurstFieldCallback
+
+```wurst
+public interface WurstFieldCallback
+```
+
+Tooling signature used by the field-iteration compiler intrinsics.
+The compiler specializes `value` to the concrete type of each visited field.
+
+**Members:**
+
+- `apply(string fieldName, int value)`
+
+### WurstFieldMapper
+
+```wurst
+public interface WurstFieldMapper
+```
+
+Tooling signature used by the field-mapping compiler intrinsic.
+The compiler specializes both the parameter and result to each concrete field type.
+
+**Members:**
+
+- `apply(string fieldName, int value) returns int`
+
 ## Functions
 
 ### compileError
@@ -74,6 +102,62 @@ public function compiletime<T:>(T expr) returns T
 
 This is a builtin magic function.
 * It evaluates it's argument at compiletime and replaces the call with the result.
+
+### wurstForFields
+
+```wurst
+public function wurstForFields(WurstFieldCallback _callback)
+```
+
+Emits the callback once for every accessible non-static field of the enclosing class.
+
+The callback receives the source field name and its concrete value. This is compile-time code
+generation: the generated Jass or Lua contains direct field accesses and no runtime reflection.
+Use the explicit-target form `wurstForFields(target, callback)` for classes and tuples.
+
+### wurstForFields
+
+```wurst
+public function wurstForFields<T:>(T _target, WurstFieldCallback _callback)
+```
+
+Emits the callback once for every accessible non-static field of `target`.
+
+This overload supports class instances and tuple values. The target expression is evaluated
+once, and the compiler specializes the callback value to each field's concrete type.
+
+### wurstMapFields
+
+```wurst
+public function wurstMapFields(WurstFieldMapper _callback)
+```
+
+Maps every accessible mutable non-static field of the enclosing class.
+
+Each callback result is assigned back to its field. Use the explicit-target form
+`wurstMapFields(target, callback)` for classes and tuple variables.
+
+### wurstMapFields
+
+```wurst
+public function wurstMapFields<T:>(T _target, WurstFieldMapper _callback)
+```
+
+Maps every accessible mutable non-static field of `target`.
+
+This overload supports class instances and tuple variables. The target expression is evaluated
+once, and each specialized callback result is assigned directly back to its field.
+
+### wurstNewInstance
+
+```wurst
+public function wurstNewInstance<T:>() returns T
+```
+
+Constructs the concrete class `T` through its accessible zero-argument constructor.
+
+This is an intrinsic rather than runtime reflection. Consequently `T` must be known concretely
+at the call site and normal constructor visibility and abstract-class checks still apply.
 
 ## Constants
 
