@@ -36,6 +36,7 @@ If you are choosing a capability, start with the [standard library overview](/st
 - [HashList](/stdlib/ref/data/HashList.html): HashLists are used if you require quick contains operations
 - [HashMap](/stdlib/ref/data/HashMap.html): Generic Table Wrapper
 - [HashSet](/stdlib/ref/data/HashSet.html): Generic set implementation
+- [IntMap](/stdlib/ref/data/IntMap.html): O(1) integer-keyed map with compiler-specialized value storage.
 - [LinkedList](/stdlib/ref/data/LinkedList.html): Doubly-linked list implementation that implements all common list, stack and queue operations.
 - [LinkedListModule](/stdlib/ref/data/LinkedListModule.html): Turns a class into a linked list where each instance knows it's previous
 - [PriorityQueue](/stdlib/ref/data/PriorityQueue.html): A binary heap priority queue.
@@ -98,6 +99,8 @@ If you are choosing a capability, start with the [standard library overview](/st
 - [SaveLoadData](/stdlib/ref/file/SaveLoadData.html): Asynchronously loads the data from the file of the given player
 - [Serializable](/stdlib/ref/file/Serializable.html)
 - [SQLite](/stdlib/ref/file/SQLite.html)
+- [StructuredSerialization](/stdlib/ref/file/StructuredSerialization.html): Standard tuple codecs.
+- [StructuredSerializationCore](/stdlib/ref/file/StructuredSerializationCore.html): Default integrity key for structured saves.
 - [SyncSimple](/stdlib/ref/file/SyncSimple.html): Generic sync listener for arbitrary types that can be cast to/from int.
 
 ## Utilities
@@ -170,7 +173,7 @@ If you are choosing a capability, start with the [standard library overview](/st
 
 - [Abilities](/stdlib/ref/_wurst/Abilities.html)
 - [AbilityIds](/stdlib/ref/_wurst/AbilityIds.html)
-- [Annotations](/stdlib/ref/_wurst/Annotations.html)
+- [Annotations](/stdlib/ref/_wurst/Annotations.html): Marks a documented declaration whose calls are expanded by the compiler.
 - [Assets](/stdlib/ref/_wurst/Assets.html)
 - [AttachmentPoints](/stdlib/ref/_wurst/AttachmentPoints.html): Class that contains every known attachmentpoint in game
 - [Basics](/stdlib/ref/_wurst/Basics.html)
