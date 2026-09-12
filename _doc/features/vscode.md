@@ -10,17 +10,17 @@ author: Frotty
 layout: doc
 ---
 
-The [Wurst VS Code extension](https://marketplace.visualstudio.com/items?itemName=peterzeller.wurst) turns VS Code into a full Warcraft III development environment. Installing it is all that is needed to get started — the extension manages the compiler and CLI automatically.
+The [Wurst VS Code extension](https://marketplace.visualstudio.com/items?itemName=peterzeller.wurst) turns VS Code into a full Warcraft III development environment. Installing it is all that is needed to get started because the extension manages the compiler and CLI automatically.
 
 ## Language Support
 
 The extension provides first-class editing support for `.wurst` files:
 
 - **Syntax highlighting** and semantic tokens
-- **Hover documentation** for functions, types, and variables — including native documentation pulled from [JassDoc](https://github.com/lep/jassdoc) where available
+- **Hover documentation** for functions, types, and variables, including native documentation pulled from [JassDoc](https://github.com/lep/jassdoc) where available
 - **Inlay hints** for type information and code flow
 - **Go-to-definition** and **find references** across the full project
-- **Inline diagnostics** from the compiler — errors and warnings appear in the editor as you type
+- **Inline diagnostics** from the compiler; errors and warnings appear in the editor as you type
 - **Code completion** for identifiers, packages, and native functions
 
 ## Build and Run
@@ -50,7 +50,7 @@ Wurst supports both MPQ-era classic installations and CASC-backed clients such a
 
 The extension is the editor-facing part of Wurst’s broader patch-aware workflow. It detects the available Warcraft III client when possible and uses the selected game data for previews and map tooling, whether the project targets classic Jass or modern Reforged Lua.
 
-Wurst can also read assets directly from the Warcraft III installation — not only from files inside your project. This works with both Reforged CASC storage and classic Warcraft III MPQ installations.
+Wurst can also read assets directly from the Warcraft III installation, not only from files inside your project. This works with both Reforged CASC storage and classic Warcraft III MPQ installations.
 
 For MPQ-era classic installations, Wurst follows the game’s layered archive model, resolving files through the base game, expansion, locale, and patch archives so patched assets override their older versions:
 
@@ -64,13 +64,13 @@ That means the asset browser, object metadata, icons, model viewer, textures, an
 
 - **Browse** the archive file tree without unpacking
 - **Extract** individual files from the archive
-- **Export to Folder** — unpacks the entire archive into a `.w3x` or `.w3m` folder for use with version control or the map folder workflow (see [Map Formats](/features/map-formats.html))
+- **Export to Folder**: unpacks the entire archive into a `.w3x` or `.w3m` folder for use with version control or the map folder workflow (see [Map Formats](/features/map-formats.html))
 
 ## Command Palette
 
 Common Wurst actions are available via `F1`:
 
-- `Wurst: Run` — build and launch the map
-- `Wurst: Build` — compile without running
-- `Wurst: Install` — install/update the toolchain
-- `Wurst: New Wurst Project` — project scaffolding
+- `Wurst: Run`: build and launch the map
+- `Wurst: Build`: compile without running
+- `Wurst: Install`: install/update the toolchain
+- `Wurst: New Wurst Project`: project scaffolding

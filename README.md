@@ -70,7 +70,7 @@ Adding a standard library doc page works almost the same as tutorials.
 
 The site uses [`pagefind`](https://pagefind.app/) for fully local static search. No external API key is required.
 
-**The index is generated automatically by CI on every deploy** — see
+**The index is generated automatically by CI on every deploy.** See
 [`.github/workflows/pages.yml`](.github/workflows/pages.yml). It builds the
 site, runs Pagefind against the *built* `_site`, and deploys the result to
 GitHub Pages. Because the index is rebuilt from the actual content on every
@@ -94,7 +94,7 @@ In repo **Settings → Pages → Build and deployment**, set **Source** to
 2. Generate the index into `_site/pagefind`: `npx -y pagefind@1.5.2 --site _site`
 3. Serve `_site` (e.g. `npx -y serve _site`). Search loads from `/pagefind/pagefind.js`.
 
-Repeat steps 1–2 after content changes you want reflected in local search.
+Repeat steps 1-2 after content changes you want reflected in local search.
 Prerequisite: Node.js (for `npx pagefind`).
 
 ### Jenkins

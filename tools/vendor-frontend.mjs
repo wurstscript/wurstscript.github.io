@@ -50,7 +50,7 @@ writeFileSync(
   readFileSync(bootstrapCss, "utf8").replace(
     /\n?\/\*# sourceMappingURL=bootstrap\.min\.css\.map \*\//,
     ""
-  )
+  ).replace(/[\u2013\u2014]/g, "-")
 );
 [
   "fontawesome.min.css",

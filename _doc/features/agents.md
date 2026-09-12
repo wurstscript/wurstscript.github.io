@@ -54,4 +54,4 @@ Without the flag, `grill` simply asks during setup.
 
 ## Keeping It Up to Date
 
-The template is versioned. `grill install` detects when a project's `AGENTS.md` was generated from an older template and suggests refreshing it. Commit the file to version control so the whole team — and their agents — benefit.
+The template is versioned. `grill install` detects when a project's `AGENTS.md` was generated from an older template and suggests refreshing it. Commit the file to version control so the whole team, including their agents, benefits.

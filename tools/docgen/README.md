@@ -6,11 +6,11 @@ that powers the API reference under `/stdlib/ref/`.
 It is a small, dependency-light [Deno](https://deno.com) + TypeScript tool. It parses the
 `/** … */` "hotdoc" comments and public declarations out of every `.wurst` package and emits:
 
-- `_data/stdlib_index.json` — one machine-readable record per package (used by Liquid / search).
-- `_doc/stdlib/ref/<category>/<Package>.md` — one reference page per package.
-- `_doc/stdlib/ref/index.md` — the exhaustive grouped index.
+- `_data/stdlib_index.json`: one machine-readable record per package (used by Liquid / search).
+- `_doc/stdlib/ref/<category>/<Package>.md`: one reference page per package.
+- `_doc/stdlib/ref/index.md`: the exhaustive grouped index.
 
-The generator **owns** the `_doc/stdlib/ref/**` subtree and `_data/stdlib_index.json` — it
+The generator **owns** the `_doc/stdlib/ref/**` subtree and `_data/stdlib_index.json`; it
 `rm -rf`s and rewrites them on every run. Hand-curated pages elsewhere under `_doc/stdlib/` are
 never touched.
 
@@ -32,7 +32,7 @@ deno task check
 
 Hotdoc is intentionally simple: a `/** … */` block on the line(s) immediately above a
 declaration (`function` / `class` / `interface` / `enum` / `tuple` / `module` / `constant`).
-Wurst enforces indented blocks, so there is no nesting to worry about — a line-based pass is
+Wurst enforces indented blocks, so there is no nesting to worry about. A line-based pass is
 enough. See `parser.ts` for the details and `types.ts` for the data model.
 
 A package's summary is, in order of preference: a doc block directly above the `package` line;

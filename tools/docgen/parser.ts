@@ -73,7 +73,7 @@ export function parseFile(input: ParseInput): PackageDoc {
       continue;
     }
 
-    // Non-hotdoc block comment /* ... */ — skip its whole span, clear pending.
+    // Non-hotdoc block comment /* ... */: skip its whole span, clear pending.
     if (trimmed.startsWith("/*")) {
       let j = i;
       while (j < lines.length && !lines[j].includes("*/")) j++;
@@ -83,7 +83,7 @@ export function parseFile(input: ParseInput): PackageDoc {
       continue;
     }
 
-    // Standalone line comment — transparent (keep pending doc).
+    // Standalone line comment: transparent (keep pending doc).
     if (trimmed.startsWith("//")) {
       i++;
       continue;
@@ -113,7 +113,7 @@ export function parseFile(input: ParseInput): PackageDoc {
       continue;
     }
 
-    // import declaration. We only record `import public` (re-exported) packages — those are
+    // import declaration. We only record `import public` (re-exported) packages because those are
     // the doc-worthy ones (aggregator packages like Assets/Wurst bundle them).
     const impMatch = rest.match(/^import\s+(public\s+)?(?:initlater\s+)*(\w+)/);
     if (impMatch) {
@@ -295,7 +295,7 @@ function matchDeclaration(rest: string): DeclMatch | null {
 }
 
 function constantName(s: string): string {
-  // `constant [Type] NAME = value` — the last token of the lhs before '='.
+  // `constant [Type] NAME = value`: the last token of the lhs before '='.
   const afterKw = s.replace(/^constant\s+/, "");
   const lhs = afterKw.split("=")[0].trim();
   const tokens = lhs.split(/\s+/).filter((t) => t.length > 0);

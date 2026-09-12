@@ -14,7 +14,7 @@ WurstScript supports both of Warcraft III's map storage formats: the classic MPQ
 
 ## MPQ Archives
 
-`.w3x` and `.w3m` files are MPQ archives — binary containers that pack all map assets and data into a single file. This is the traditional format and remains the default output of the World Editor.
+`.w3x` and `.w3m` files are MPQ archives, binary containers that pack all map assets and data into a single file. This is the traditional format and remains the default output of the World Editor.
 
 Wurst reads MPQ archives natively for building and running. No unpacking step is needed.
 
@@ -22,11 +22,11 @@ Wurst reads MPQ archives natively for building and running. No unpacking step is
 
 The Reforged World Editor can also load and save maps as plain folders, as long as the folder name ends in `.w3x` or `.w3m`. All the files that would normally be packed into the MPQ archive are stored directly on disk instead.
 
-Wurst supports map folders as a first-class input. A map stored as a folder behaves identically to a packed archive from Wurst's perspective — open, build, and run work the same way.
+Wurst supports map folders as a first-class input. A map stored as a folder behaves identically to a packed archive from Wurst's perspective: open, build, and run work the same way.
 
 **Why use folders:**
 
-- Full version control over map data — every file is a plain file, so diffs and history work naturally
+- Full version control over map data because every file is a plain file, so diffs and history work naturally
 - No binary merge conflicts
 - Works well with the Export to Folder workflow described below
 
@@ -38,7 +38,7 @@ The VS Code extension can convert an existing MPQ map to folder format directly:
 2. Use **Export to Folder** from the context menu or command palette.
 3. The extension unpacks the entire archive into a new folder with the same `.w3x`/`.w3m` name.
 
-From that point, the folder can be opened in the World Editor and used with Wurst exactly like the original archive — but now all files are accessible individually for editing, scripting, and version control.
+From that point, the folder can be opened in the World Editor and used with Wurst exactly like the original archive, but now all files are accessible individually for editing, scripting, and version control.
 
 ## Which Format to Use
 

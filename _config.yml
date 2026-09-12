@@ -44,6 +44,9 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
+  typographic_symbols:
+    mdash: "---"
+    ndash: "--"
   input: GFM
   hard_wrap: false
   footnote_nr: 1

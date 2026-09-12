@@ -281,7 +281,7 @@ temp.addAction(function action)
 ### Null-safe operator
 
 The null-safe operator `?.` accesses a member only when the receiver is not `null`.
-The receiver is evaluated exactly once; if it is `null`, the access is skipped entirely — for a method call this means the arguments are not evaluated either — and the result of the whole expression is `null`.
+The receiver is evaluated exactly once. If it is `null`, the access is skipped entirely. For a method call, this means the arguments are not evaluated either, and the result of the whole expression is `null`.
 
 ```wurst
 u?.kill()                    // only kills the unit if u is not null

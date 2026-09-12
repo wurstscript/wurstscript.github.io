@@ -12,7 +12,7 @@ redirect_from:
   - /tutorials/lua-jass-shim.html
 ---
 
-WurstScript compiles to either **Jass** or **Lua**. The goal is to write code once and have it behave identically on both backends — no conditional code paths, no per-backend workarounds in user space.
+WurstScript compiles to either **Jass** or **Lua**. The goal is to write code once and have it behave identically on both backends, with no conditional code paths or per-backend workarounds in user space.
 
 ## Choosing a Backend
 
@@ -28,7 +28,7 @@ Jass is the default and works well for classic and pre-Reforged patches. Lua tar
 
 Jass and Lua have different runtime semantics in several areas. The most common differences that affect real maps:
 
-**Null handles.** In Jass, calling a native with a `null` argument is valid — the function returns a type-appropriate zero value. In plain Lua, the same call raises a nil error and crashes.
+**Null handles.** In Jass, calling a native with a `null` argument is valid: the function returns a type-appropriate zero value. In plain Lua, the same call raises a nil error and crashes.
 
 **Handle IDs.** `GetHandleId` in Jass returns stable integers across a session, commonly used as table keys or for comparisons. In Lua, the equivalent is not stable across sessions and is a known cause of desyncs.
 
@@ -36,7 +36,7 @@ Jass and Lua have different runtime semantics in several areas. The most common 
 
 ## The Jass Shim Pass
 
-To close these gaps, the compiler applies a dedicated **Jass shim pass** to all generated Lua code. This pass inserts targeted emulation so that Lua behaves like Jass for the cases above — without any changes needed in user code.
+To close these gaps, the compiler applies a dedicated **Jass shim pass** to all generated Lua code. This pass inserts targeted emulation so that Lua behaves like Jass for the cases above, without any changes needed in user code.
 
 ### Null-safe natives
 
@@ -50,11 +50,11 @@ Null handle arguments return the same defaults as Jass instead of erroring:
 | `GetUnitName(null)` | `""` | nil error | `""` |
 | `GetHandleId(null)` | `0` | nil error | `0` |
 
-This applies across the native surface — integer, real, boolean, and string return types all fall back to their Jass defaults when called with null handles.
+This applies across the native surface. Integer, real, boolean, and string return types all fall back to their Jass defaults when called with null handles.
 
 ### Handle ID replacement
 
-All `GetHandleId` usage is replaced by the compiler with a safe alternative that produces consistent, desync-free identifiers. This is transparent — the replacement behaves the same way as the Jass `GetHandleId` for the purposes code actually relies on.
+All `GetHandleId` usage is replaced by the compiler with a safe alternative that produces consistent, desync-free identifiers. This is transparent; the replacement behaves the same way as the Jass `GetHandleId` for the purposes code actually relies on.
 
 ### Uninitialized variable defaults
 

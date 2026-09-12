@@ -35,7 +35,7 @@ export function hotdocToMarkdown(doc: string): string {
 
 /** Replace em dashes (and horizontal bars) with a spaced hyphen; leave en dashes (e.g. names). */
 export function normalizeDashes(s: string): string {
-  return s.replace(/\s*[—―]\s*/g, " - ");
+  return s.replace(/\s*[\u2014\u2015]\s*/g, " - ");
 }
 
 function isExampleLine(line: string): boolean {
