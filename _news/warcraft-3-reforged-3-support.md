@@ -1,38 +1,50 @@
 ---
 title: Support for Warcraft III 3.0
-excerpt: Reforged 3.0 joins WurstScript's supported patch targets, with updated tools, standard library support, and new native APIs.
+excerpt: Reforged 3.0 joins WurstScript's patch targets with matching core definitions, native wrappers, and Grill-assisted alignment for Jass and Lua projects.
 date: 2026-09-13 00:00:00 +0200
 image: /assets/images/news/reforged-3.0.png
 layout: newsarticle
 author: Frotty
 ---
 
-Warcraft III: Reforged 3.0.0 has arrived alongside **Forsaken Kingdom**, the first new official Warcraft III campaign in more than two decades. The paid campaign follows the last days of Lordaeron and the rise of the Forsaken, while the free 3.0 update brings substantial changes for players and mapmakers alike.
+Warcraft III 3.0 is now a supported WurstScript target. The compiler tooling, core definitions, Grill workflow, and standard library have been updated so projects can opt into the new patch without giving up Wurst's support for older Warcraft III versions.
 
 ## Patch 3.0 Joins the Supported Targets
 
-WurstScript supports building maps for different Warcraft III patches rather than tying every project to one game version. Projects can target older patches or current Reforged releases and compile to either Jass or Lua, with the appropriate core definitions and standard library for the selected target.
+WurstScript keeps the Warcraft III patch target separate from the script backend. A project can target an older patch or Reforged 3.0 and independently compile to Jass or Lua. The selected patch controls the matching native definitions and standard library, while the backend remains the project's choice.
 
-Support for Reforged 3.0 has now been added to the tools and standard library, including the patch's new flows and native API additions. You can select the version and backend that fit your map while still taking advantage of the latest functionality when targeting 3.0.
+For 3.0 projects, Wurst now provides the matching core JASS files and standard library. The standard library also wraps the new native APIs with Wurst-friendly functions for cameras, doodads and destructables, effects, frames, equipment and items, input, units, cinematics, terrain fog, and HD water.
 
-## Updating an Existing Project
+## Aligning a Project with Grill
 
-Grill keeps an existing project's patch target unchanged, so `grill install` will not automatically move a project from 2.0 to 3.0. To opt in, update the target in `wurst.build`:
+Make sure the Wurst VS Code extension is up to date so the current compiler and Grill CLI are installed. You can then compare the project's target with the installed Warcraft III client:
+
+```bash
+grill patch
+```
+
+This check is read-only. If Grill reports a mismatch, align the project explicitly:
+
+```bash
+grill patch align
+```
+
+Grill detects the exact client patch from the Warcraft III path configured in VS Code, or through automatic installation detection. Alignment updates `wc3Patch`, the official standard library branch, and Grill-managed core JASS together. It creates a `wurst.build.bak` backup and preserves custom standard library forks.
+
+`grill install` does not silently change an existing project's patch target. It keeps the official standard library on the branch required by the current `wc3Patch` and suggests alignment when the installed client targets a different supported patch.
+
+## Manual Update
+
+You can still select 3.0 manually by changing `wurst.build`:
 
 ```yaml
 wc3Patch: v3.0
 ```
 
-Make sure the Wurst VS Code extension is up to date, then refresh the project dependencies:
+Then refresh the project dependencies and managed core definitions:
 
 ```bash
 grill install
 ```
 
-The command updates dependencies such as the standard library and prepares the core JASS definitions for the selected patch. Your existing Jass or Lua backend choice remains unchanged. New projects, and older projects without a recorded `wc3Patch`, are offered the patch selector by Grill with 3.0 as the default.
-
-The new scripting surface includes natives for resetting a unit's attack cooldown, changing the remaining cooldown of a unit ability, enabling or disabling a unit's aura abilities, and more. The update also adds a broad set of World Editor features, including expanded lighting, fog and water controls, a free camera, per-player HUD selection, and new doodad and minimap options.
-
-Whether you are maintaining an older Jass map, building a modern project with Lua, or moving between supported patch targets, Wurst lets you keep the workflow that fits your project. Update your Wurst installation and project dependencies through the usual workflow to build for 3.0.
-
-Read the full [Warcraft III: Reforged: Forsaken Kingdom patch notes](https://us.forums.blizzard.com/en/warcraft3/t/warcraft-iii-reforged-forsaken-kingdom-patch-notes/38400).
+This changes only the Warcraft III target. Existing Jass or Lua backend settings remain unchanged, so projects can adopt the 3.0 APIs without changing how their map script is emitted.
