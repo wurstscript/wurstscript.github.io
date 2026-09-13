@@ -2,7 +2,7 @@
 title: Production-Ready Object Editing and Safer Calls
 excerpt: A production-ready object editor in VSCode, null-safe calls, smarter project generation, quieter tooling, and major object generation and standard library updates.
 date: 2026-07-16
-image: /assets/images/news/w3u.png
+image: /assets/images/news/object-editing-tooling.png
 layout: newsarticle
 author: Frotty
 ---

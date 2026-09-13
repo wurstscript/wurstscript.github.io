@@ -29,7 +29,7 @@ layout: compress
 			<div class="news">
 				<h2 class="title">Posts</h2>
 				<div class="cards">
-					{% assign posts = site.news | sort: 'date' | reverse %}
+					{% assign posts = site.news | where_exp: "post", "post.date <= site.time" | sort: 'date' | reverse %}
 					{% for post in posts %}
 					<a class="btn card" href="{{ post.url }}">
 						<div class="card-image"><img src="{{ post.image }}"></div>

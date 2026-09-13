@@ -30,6 +30,7 @@ if (!existsSync(site) || !statSync(site).isDirectory()) {
 collectSiteFiles(site);
 
 const missing = new Set();
+const missingNewsPages = new Set();
 let checked = 0;
 for (const htmlFile of htmlFiles) {
   const html = readFileSync(htmlFile, "utf8");
@@ -43,10 +44,23 @@ for (const htmlFile of htmlFiles) {
       missing.add(`${reference} (from ${relative(site, htmlFile)})`);
     }
   }
+  const newsReferences = html.matchAll(
+    /href=["'](\/news\/[^"'?#]+\.html)/g
+  );
+  for (const [, reference] of newsReferences) {
+    const page = join(site, reference.slice(1));
+    if (!existsSync(page)) {
+      missingNewsPages.add(`${reference} (from ${relative(site, htmlFile)})`);
+    }
+  }
 }
 
 if (missing.size > 0) {
   throw new Error(`Missing built assets:\n${[...missing].join("\n")}`);
+}
+
+if (missingNewsPages.size > 0) {
+  throw new Error(`Missing built news pages:\n${[...missingNewsPages].join("\n")}`);
 }
 
 const forbiddenDashes = textFiles
