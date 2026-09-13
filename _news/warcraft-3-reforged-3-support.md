@@ -1,8 +1,8 @@
 ---
 title: Support for Warcraft III 3.0
 excerpt: Reforged 3.0 joins WurstScript's supported patch targets, with updated tools, standard library support, and new native APIs.
-date: 2026-09-13
-image: /assets/images/news/wurst-perfect.png
+date: 2026-09-13 00:00:00 +0200
+image: /assets/images/news/reforged-3.0.png
 layout: newsarticle
 author: Frotty
 ---

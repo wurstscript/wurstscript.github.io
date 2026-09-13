@@ -2,7 +2,7 @@
 title: "Library Spotlight: Supercharge Your WC3 UI Creation"
 excerpt: Wurst Table Layout has grown into a complete, safe-by-default UI toolkit for Warcraft III maps.
 date: 2026-06-12
-image: /assets/images/news/wurst-ui.png
+image: /assets/images/news/ui-thumb.png
 layout: newsarticle
 author: Frotty
 ---
