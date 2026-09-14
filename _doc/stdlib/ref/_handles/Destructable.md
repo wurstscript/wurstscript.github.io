@@ -44,6 +44,150 @@ public function createDestructable(int id, vec3 pos, angle direction, real scale
 public function createDestructable(int id, vec2 pos, angle direction, real scale, int variation) returns destructable
 ```
 
+### createDestructable
+
+```wurst
+public function createDestructable(int id, vec2 pos, angle direction, real scale, int variation, playercolor whichColor) returns destructable
+```
+
+### createDestructable
+
+```wurst
+public function createDestructable(int id, vec3 pos, angle direction, real scale, int variation, playercolor whichColor) returns destructable
+```
+
+### createDestructable
+
+```wurst
+public function createDestructable(int id, vec2 pos, angle direction, real scale, int variation, int skinId, playercolor whichColor) returns destructable
+```
+
+### createDestructable
+
+```wurst
+public function createDestructable(int id, vec3 pos, angle direction, real scale, int variation, int skinId, playercolor whichColor) returns destructable
+```
+
+### createDestructable
+
+```wurst
+public function createDestructable(int id, vec2 pos, angle direction, angle roll, angle pitch, real scale, int variation) returns destructable
+```
+
+### createDestructable
+
+```wurst
+public function createDestructable(int id, vec3 pos, angle direction, angle roll, angle pitch, real scale, int variation) returns destructable
+```
+
+### createDestructable
+
+```wurst
+public function createDestructable(int id, vec2 pos, angle direction, angle roll, angle pitch, real scale, int variation, playercolor whichColor) returns destructable
+```
+
+### createDestructable
+
+```wurst
+public function createDestructable(int id, vec3 pos, angle direction, angle roll, angle pitch, real scale, int variation, playercolor whichColor) returns destructable
+```
+
+### createDestructable
+
+```wurst
+public function createDestructable(int id, vec2 pos, angle direction, angle roll, angle pitch, real scale, int variation, int skinId) returns destructable
+```
+
+### createDestructable
+
+```wurst
+public function createDestructable(int id, vec3 pos, angle direction, angle roll, angle pitch, real scale, int variation, int skinId) returns destructable
+```
+
+### createDestructable
+
+```wurst
+public function createDestructable(int id, vec2 pos, angle direction, angle roll, angle pitch, real scale, int variation, int skinId, playercolor whichColor) returns destructable
+```
+
+### createDestructable
+
+```wurst
+public function createDestructable(int id, vec3 pos, angle direction, angle roll, angle pitch, real scale, int variation, int skinId, playercolor whichColor) returns destructable
+```
+
+### createDeadDestructable
+
+```wurst
+public function createDeadDestructable(int id, vec2 pos, angle direction, real scale, int variation, playercolor whichColor) returns destructable
+```
+
+### createDeadDestructable
+
+```wurst
+public function createDeadDestructable(int id, vec3 pos, angle direction, real scale, int variation, playercolor whichColor) returns destructable
+```
+
+### createDeadDestructable
+
+```wurst
+public function createDeadDestructable(int id, vec2 pos, angle direction, real scale, int variation, int skinId, playercolor whichColor) returns destructable
+```
+
+### createDeadDestructable
+
+```wurst
+public function createDeadDestructable(int id, vec3 pos, angle direction, real scale, int variation, int skinId, playercolor whichColor) returns destructable
+```
+
+### createDeadDestructable
+
+```wurst
+public function createDeadDestructable(int id, vec2 pos, angle direction, angle roll, angle pitch, real scale, int variation) returns destructable
+```
+
+### createDeadDestructable
+
+```wurst
+public function createDeadDestructable(int id, vec3 pos, angle direction, angle roll, angle pitch, real scale, int variation) returns destructable
+```
+
+### createDeadDestructable
+
+```wurst
+public function createDeadDestructable(int id, vec2 pos, angle direction, angle roll, angle pitch, real scale, int variation, playercolor whichColor) returns destructable
+```
+
+### createDeadDestructable
+
+```wurst
+public function createDeadDestructable(int id, vec3 pos, angle direction, angle roll, angle pitch, real scale, int variation, playercolor whichColor) returns destructable
+```
+
+### createDeadDestructable
+
+```wurst
+public function createDeadDestructable(int id, vec2 pos, angle direction, angle roll, angle pitch, real scale, int variation, int skinId) returns destructable
+```
+
+### createDeadDestructable
+
+```wurst
+public function createDeadDestructable(int id, vec3 pos, angle direction, angle roll, angle pitch, real scale, int variation, int skinId) returns destructable
+```
+
+### createDeadDestructable
+
+```wurst
+public function createDeadDestructable(int id, vec2 pos, angle direction, angle roll, angle pitch, real scale, int variation, int skinId, playercolor whichColor) returns destructable
+```
+
+### createDeadDestructable
+
+```wurst
+public function createDeadDestructable(int id, vec3 pos, angle direction, angle roll, angle pitch, real scale, int variation, int skinId, playercolor whichColor) returns destructable
+```
+
 ### isElevatorHeightInBounds
 
 ```wurst
@@ -253,3 +397,15 @@ public function elevator.setHeight(int height)
 ```
 
 Set elevator height to given value.
+
+### destructable.setColor
+
+```wurst
+public function destructable.setColor(playercolor whichColor)
+```
+
+### destructable.setVertexColor
+
+```wurst
+public function destructable.setVertexColor(int red, int green, int blue, int alpha)
+```
