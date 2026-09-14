@@ -141,9 +141,9 @@ Execute an action periodically.
 
 	Example use:
 ```wurst
-	doPeriodically(0.5) cb ->
+	doPeriodically(0.5) (_) ->
 	 if i > 10
-		destroy cb
+		destroy it
 ```
 
 ### doPeriodicallyCounted
@@ -157,7 +157,7 @@ execute an action periodically, with a limited amount of calls
 
 	Example use:
 ```wurst
-	doPeriodicallyCounted(0.5, 100) cb ->
+	doPeriodicallyCounted(0.5, 100) (_) ->
 	 doSomething()
 ```
 
@@ -196,9 +196,9 @@ Execute an action periodically.
 
 	Example use:
 ```wurst
-	someTimer.doPeriodically(0.5) cb ->
+	someTimer.doPeriodically(0.5) (_) ->
 	 if i > 10
-		destroy cb
+		destroy it
 ```
 
 ### timer.doPeriodicallyCounted
@@ -213,7 +213,7 @@ execute an action periodically, with a limited amount of calls
 
 	Example use:
 ```wurst
-	someTimer.doPeriodicallyCounted(0.5, 100) cb ->
+	someTimer.doPeriodicallyCounted(0.5, 100) (_) ->
 	 doSomething()
 ```
 

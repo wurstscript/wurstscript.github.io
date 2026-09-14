@@ -36,12 +36,11 @@ If you are choosing a capability, start with the [standard library overview](/st
 - [HashList](/stdlib/ref/data/HashList.html): HashLists are used if you require quick contains operations
 - [HashMap](/stdlib/ref/data/HashMap.html): Generic Table Wrapper
 - [HashSet](/stdlib/ref/data/HashSet.html): Generic set implementation
+- [IntMap](/stdlib/ref/data/IntMap.html): O(1) integer-keyed map with compiler-specialized value storage.
 - [LinkedList](/stdlib/ref/data/LinkedList.html): Doubly-linked list implementation that implements all common list, stack and queue operations.
 - [LinkedListModule](/stdlib/ref/data/LinkedListModule.html): Turns a class into a linked list where each instance knows it's previous
 - [PriorityQueue](/stdlib/ref/data/PriorityQueue.html): A binary heap priority queue.
 - [ShardedIntStorage](/stdlib/ref/data/ShardedIntStorage.html): A shared integer arena spanning multiple native JASS arrays.
-- [SparseSet](/stdlib/ref/data/SparseSet.html): A set with O(1) membership checks, insertion, and unordered removal.
-- [SparseSetBenchmark](/stdlib/ref/data/SparseSetBenchmark.html)
 - [Table](/stdlib/ref/data/Table.html): Wraps a hashtable to provide single key tables
 
 ## Closures
@@ -52,7 +51,8 @@ If you are choosing a capability, start with the [standard library overview](/st
 - [ClosureKeyPresses](/stdlib/ref/closures/ClosureKeyPresses.html)
 - [ClosureTimers](/stdlib/ref/closures/ClosureTimers.html): Execute an action after a certain time.
 - [Execute](/stdlib/ref/closures/Execute.html): This package exposes a single function execute(),
-- [SpatialIndexForUnits](/stdlib/ref/closures/SpatialIndexForUnits.html)
+- [SpatialIndexForDestructables](/stdlib/ref/closures/SpatialIndexForDestructables.html): Native-less Lua spatial queries for destructables.
+- [SpatialIndexForUnits](/stdlib/ref/closures/SpatialIndexForUnits.html): Native-less Lua spatial queries.
 
 ## Events
 
@@ -98,6 +98,8 @@ If you are choosing a capability, start with the [standard library overview](/st
 - [SaveLoadData](/stdlib/ref/file/SaveLoadData.html): Asynchronously loads the data from the file of the given player
 - [Serializable](/stdlib/ref/file/Serializable.html)
 - [SQLite](/stdlib/ref/file/SQLite.html)
+- [StructuredSerialization](/stdlib/ref/file/StructuredSerialization.html): Standard tuple codecs.
+- [StructuredSerializationCore](/stdlib/ref/file/StructuredSerializationCore.html): Default integrity key for structured saves.
 - [SyncSimple](/stdlib/ref/file/SyncSimple.html): Generic sync listener for arbitrary types that can be cast to/from int.
 
 ## Utilities
@@ -105,6 +107,7 @@ If you are choosing a capability, start with the [standard library overview](/st
 - [Board](/stdlib/ref/util/Board.html): This Board library allows you to create a simple multi board with dynamic cell values.
 - [Cinematic](/stdlib/ref/util/Cinematic.html): Create a cinematic by composing cinematic sequences
 - [Colors](/stdlib/ref/util/Colors.html): Mixes two colors, s would be a number 0<=s<=1 that determines
+- [DestructableSpatialIndex](/stdlib/ref/util/DestructableSpatialIndex.html): Static Lua spatial index for destructables.
 - [DialogBox](/stdlib/ref/util/DialogBox.html): DialogBox lets you create dialogs more easily and associate its buttons with closures.
 - [EffectUtils](/stdlib/ref/util/EffectUtils.html)
 - [GameTimer](/stdlib/ref/util/GameTimer.html): Seconds elapsed since map start.
@@ -116,13 +119,15 @@ If you are choosing a capability, start with the [standard library overview](/st
 - [SafetyChecks](/stdlib/ref/util/SafetyChecks.html): Enables or disables various safety checks in miscellaneous libraries in Wurst.
 - [Simulate3dSound](/stdlib/ref/util/Simulate3dSound.html)
 - [SoundUtils](/stdlib/ref/util/SoundUtils.html)
+- [SpatialPartition](/stdlib/ref/util/SpatialPartition.html): Cell-head slots the given extent would need, so a caller can size cells and groups before committing
 - [StandardTextTags](/stdlib/ref/util/StandardTextTags.html)
 - [StringUtils](/stdlib/ref/util/StringUtils.html): Returns the width of the string.
+- [TerrainEnvironment](/stdlib/ref/util/TerrainEnvironment.html)
 - [TerrainUtils](/stdlib/ref/util/TerrainUtils.html)
 - [Time](/stdlib/ref/util/Time.html): Type-safe wrappers to distinguish durations (an amount of time) from instants (a point in time), and the valid ways
 - [TimerUtils](/stdlib/ref/util/TimerUtils.html): Get a new timer.
 - [UnitIndexer](/stdlib/ref/util/UnitIndexer.html): Returns the int index of this unit.
-- [UnitSpatialIndex](/stdlib/ref/util/UnitSpatialIndex.html): Registers or re-buckets one unit immediately.
+- [UnitSpatialIndex](/stdlib/ref/util/UnitSpatialIndex.html): Deprecated.
 - [UnitSpatialIndexRemoval](/stdlib/ref/util/UnitSpatialIndexRemoval.html)
 
 ## Handle Wrappers
@@ -136,6 +141,7 @@ If you are choosing a capability, start with the [standard library overview](/st
 - [CommonNativeExtensions](/stdlib/ref/_handles/CommonNativeExtensions.html)
 - [Destructable](/stdlib/ref/_handles/Destructable.html)
 - [Dialog](/stdlib/ref/_handles/Dialog.html): Dialogs are big dialog boxes at the center of the screen.
+- [Doodad](/stdlib/ref/_handles/Doodad.html)
 - [Effect](/stdlib/ref/_handles/Effect.html): Change the orientation of the special effect.
 - [Fogmodifier](/stdlib/ref/_handles/Fogmodifier.html)
 - [Force](/stdlib/ref/_handles/Force.html)
@@ -170,7 +176,7 @@ If you are choosing a capability, start with the [standard library overview](/st
 
 - [Abilities](/stdlib/ref/_wurst/Abilities.html)
 - [AbilityIds](/stdlib/ref/_wurst/AbilityIds.html)
-- [Annotations](/stdlib/ref/_wurst/Annotations.html)
+- [Annotations](/stdlib/ref/_wurst/Annotations.html): Marks a documented declaration whose calls are expanded by the compiler.
 - [Assets](/stdlib/ref/_wurst/Assets.html)
 - [AttachmentPoints](/stdlib/ref/_wurst/AttachmentPoints.html): Class that contains every known attachmentpoint in game
 - [Basics](/stdlib/ref/_wurst/Basics.html)

@@ -409,6 +409,12 @@ public function player.hasVisibility(unit target) returns bool
 public function player.hasVisibility(vec2 pos) returns bool
 ```
 
+### player.setRaceSkin
+
+```wurst
+public function player.setRaceSkin(racepreference raceSkin)
+```
+
 ## Constants
 
 ### localPlayer

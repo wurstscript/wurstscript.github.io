@@ -10,9 +10,12 @@ generated: true
 toc: sections
 ---
 
-Registers or re-buckets one unit immediately. Ordinary movement does not need this - the sweep
-covers it - but an engine-side teleport or a raw `SetUnitX` call does, because neither is
-observable.
+Deprecated. Cell geometry belongs to the shared grid now, so `SPATIAL_PARTITION_CELL_SIZE` is the
+setting; one grid cannot have a second cell size for units alone.
+
+Kept exported so an existing `UnitSpatialIndex_config` still compiles, and defaulted to agree. It
+is checked at init rather than ignored: a map that had tuned this and upgrades gets told its
+value is no longer in effect, instead of quietly running on a different grid.
 
 **[Source on GitHub](https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/util/UnitSpatialIndex.wurst)**
 
@@ -56,7 +59,9 @@ How many units the sweep currently cycles over.
 public function spatialIndexAllocatedSlots() returns int
 ```
 
-Allocated cache slots; ID reuse keeps this at peak concurrent population.
+Allocated cache slots; ID reuse keeps this at peak concurrent population. Ids are shared across
+partition consumers now, so this counts every entry id handed out, not only this layer's - which
+is the right figure for the arrays here, since they are indexed by that same id.
 
 ### spatialIndexPadCells
 
@@ -73,6 +78,10 @@ public function rebuildSpatialIndexGrid(vec2 worldMin, vec2 worldMax)
 ```
 
 Rebuilds the extent and re-buckets all units. Unguarded so grid math remains testable on Jass.
+
+The grid is shared, so this re-derives it for every partition consumer, not only for units: there
+is one extent, and an entry linked under the old cell indices would be invisible to the new grid.
+That is why the rebuild re-links everything rather than only this layer's entries.
 
 ### spatialIndexCellOf
 
@@ -151,6 +160,10 @@ Closes the innermost open query and releases its snapshot.
 public function unit.updateSpatialIndex()
 ```
 
+Registers or re-buckets one unit immediately. Ordinary movement does not need this - the sweep
+covers it - but an engine-side teleport or a raw `SetUnitX` call does, because neither is
+observable.
+
 ## Constants
 
 ### USE_UNIT_SPATIAL_INDEX
@@ -163,16 +176,6 @@ public constant USE_UNIT_SPATIAL_INDEX = true
 
 Master switch; override from `UnitSpatialIndex_config` to disable the native-less index.
 
-### SPATIAL_INDEX_CELL_SIZE
-
-```wurst
-public constant SPATIAL_INDEX_CELL_SIZE = 256.
-```
-
-> 🔧 **Configurable.** Override it in your map's config package.
-
-Grid cell edge in world units; smaller cells tighten windows but increase cells walked.
-
 ### SPATIAL_INDEX_UNITS_PER_TICK
 
 ```wurst
@@ -182,6 +185,16 @@ public constant SPATIAL_INDEX_UNITS_PER_TICK = 128
 > 🔧 **Configurable.** Override it in your map's config package.
 
 Units re-bucketed per tick; raising this shortens the cycle and query padding.
+
+### SPATIAL_INDEX_SWEEP_PERIOD
+
+```wurst
+public constant SPATIAL_INDEX_SWEEP_PERIOD = ANIMATION_PERIOD
+```
+
+> 🔧 **Configurable.** Override it in your map's config package.
+
+Time between sweep steps. Raising this reduces timer and refresh work but increases query padding.
 
 ### SPATIAL_INDEX_MAX_UNIT_SPEED
 
@@ -202,3 +215,11 @@ public constant SPATIAL_INDEX_CHECK_HIDDEN = true
 > 🔧 **Configurable.** Override it in your map's config package.
 
 Disable when hidden units are never used to save one native per hit.
+
+### SPATIAL_INDEX_CELL_SIZE
+
+```wurst
+public constant SPATIAL_INDEX_CELL_SIZE = SPATIAL_PARTITION_CELL_SIZE
+```
+
+> 🔧 **Configurable.** Override it in your map's config package.
