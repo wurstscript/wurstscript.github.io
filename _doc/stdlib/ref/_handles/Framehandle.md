@@ -974,6 +974,28 @@ public function framehandle.getChild(int index) returns framehandle
 Get child frame handle from given index.
 	The index must be in the range 0 <= index < getChildrenCount(). Out-of-bounds access can crash.
 
+### framehandle.setTextAreaAutoScroll
+
+```wurst
+public function framehandle.setTextAreaAutoScroll(boolean enabled)
+```
+
+### vec2.frameToPixel
+
+```wurst
+public function vec2.frameToPixel() returns vec2
+```
+
+Converts frame coordinates to window pixels.
+
+### vec2.pixelToFrame
+
+```wurst
+public function vec2.pixelToFrame() returns vec2
+```
+
+Converts window pixels to frame coordinates.
+
 ## Constants
 
 ### GAME_UI

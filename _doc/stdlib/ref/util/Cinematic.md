@@ -59,3 +59,47 @@ A cinematic sequence. Cinematic has built-in cinematic sequences:
 - Cinematic.applyCameraSetupSeq(camerasetup)
 - Cinematic.snapCameraPosSeq(vec2)
 - Cinematic.doNothingSeq()
+
+## Functions
+
+### preloadModelCinematic
+
+```wurst
+public function preloadModelCinematic(string modelPath) returns boolean
+```
+
+### playModelCinematic
+
+```wurst
+public function playModelCinematic(string modelPath, vec3 position, angle rotation)
+```
+
+### getModelCinematicCurrentShot
+
+```wurst
+public function getModelCinematicCurrentShot() returns int
+```
+
+### getModelCinematicShotCount
+
+```wurst
+public function getModelCinematicShotCount() returns int
+```
+
+### getModelCinematicRemainingTime
+
+```wurst
+public function getModelCinematicRemainingTime() returns real
+```
+
+### setDECinematicsEnabled
+
+```wurst
+public function setDECinematicsEnabled(boolean enabled)
+```
+
+### setThematicMusicPausedOnFocusLost
+
+```wurst
+public function setThematicMusicPausedOnFocusLost(boolean paused)
+```

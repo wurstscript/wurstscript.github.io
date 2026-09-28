@@ -32,6 +32,22 @@ public function createItem(int itemId, vec2 pos) returns item
 public function createItem(int itemId, vec3 pos) returns item
 ```
 
+### getEquippedItem
+
+```wurst
+public function getEquippedItem() returns item
+```
+
+Event response for an item-equipment event.
+
+### getUnequippedItem
+
+```wurst
+public function getUnequippedItem() returns item
+```
+
+Event response for an item-unequipment event.
+
 ## Extension Functions
 
 ### item.remove
@@ -372,4 +388,114 @@ public function item.setItemDropID(integer unitId)
 
 ```wurst
 public function item.blzSetItemSkin(integer skinId)
+```
+
+### item.setColor
+
+```wurst
+public function item.setColor(playercolor whichColor)
+```
+
+### item.getEquipmentType
+
+```wurst
+public function item.getEquipmentType() returns equipmentType
+```
+
+### item.getTag
+
+```wurst
+public function item.getTag() returns itemTag
+```
+
+### item.isEquipped
+
+```wurst
+public function item.isEquipped() returns boolean
+```
+
+### item.isInBag
+
+```wurst
+public function item.isInBag() returns boolean
+```
+
+### unit.equipItem
+
+```wurst
+public function unit.equipItem(item whichItem) returns boolean
+```
+
+### unit.unequipItem
+
+```wurst
+public function unit.unequipItem(item whichItem)
+```
+
+### unit.unequipItem
+
+```wurst
+public function unit.unequipItem(loadoutslot slot) returns item
+```
+
+### unit.getExtendedInventorySize
+
+```wurst
+public function unit.getExtendedInventorySize() returns int
+```
+
+### unit.getItemInBagSlot
+
+```wurst
+public function unit.getItemInBagSlot(int slot) returns item
+```
+
+### unit.getItemInEquipmentSlot
+
+```wurst
+public function unit.getItemInEquipmentSlot(loadoutslot slot) returns item
+```
+
+### unit.hasItemBagged
+
+```wurst
+public function unit.hasItemBagged(item whichItem) returns boolean
+```
+
+### unit.hasItemEquipped
+
+```wurst
+public function unit.hasItemEquipped(item whichItem) returns boolean
+```
+
+### unit.isLoadoutSlotEmpty
+
+```wurst
+public function unit.isLoadoutSlotEmpty(loadoutslot slot) returns boolean
+```
+
+### unit.hasAnyItemEquipped
+
+```wurst
+public function unit.hasAnyItemEquipped() returns boolean
+```
+
+Correctly-spelled wrapper for the native UnitHasAnyItemEquiped.
+
+### unit.hasEquipmentType
+
+```wurst
+public function unit.hasEquipmentType(equipmentType whichType) returns boolean
+```
+
+### unit.canEquipItemOfType
+
+```wurst
+public function unit.canEquipItemOfType(equipmentType whichType) returns boolean
+```
+
+### itemtype.chooseRandomItem
+
+```wurst
+public function itemtype.chooseRandomItem(int level, equipmentType whichEquipmentType, itemTag whichTag) returns int
 ```

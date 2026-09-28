@@ -12,4 +12,4 @@ toc: sections
 
 **[Source on GitHub](https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/_handles/_Handles.wurst)**
 
-**Re-exports:** `_Primitives`, `Ability`, `Boolexpr`, `Camera`, `CommonNativeExtensions`, `Destructable`, `Effect`, `Fogmodifier`, `Force`, `Framehandle`, `GameCache`, `Group`, `Hashtable`, `Image`, `Item`, `Lightning`, `Multiboard`, `Player`, `Playercolor`, `Rect`, `Region`, `Sound`, `Texttag`, `Timer`, `TimerDialog`, `Trigger`, `Unit`, `Weather`, `Widget`
+**Re-exports:** `_Primitives`, `Ability`, `Boolexpr`, `Camera`, `CommonNativeExtensions`, `Destructable`, `Doodad`, `Effect`, `Fogmodifier`, `Force`, `Framehandle`, `GameCache`, `Group`, `Hashtable`, `Image`, `Item`, `Lightning`, `Multiboard`, `Player`, `Playercolor`, `Rect`, `Region`, `Sound`, `Texttag`, `Timer`, `TimerDialog`, `Trigger`, `Unit`, `Weather`, `Widget`

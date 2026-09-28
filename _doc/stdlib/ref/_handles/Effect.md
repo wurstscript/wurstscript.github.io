@@ -409,3 +409,25 @@ public function effect.resetScale()
 ```
 
 Reset effect scale.
+
+### effect.setAnimation
+
+```wurst
+public function effect.setAnimation(string animation)
+```
+
+Immediately selects an animation by model sequence name.
+
+### effect.queueAnimation
+
+```wurst
+public function effect.queueAnimation(string animation)
+```
+
+Adds an animation by model sequence name to the effect's queue.
+
+### effect.setAnimationBlendTime
+
+```wurst
+public function effect.setAnimationBlendTime(real blendTime)
+```
