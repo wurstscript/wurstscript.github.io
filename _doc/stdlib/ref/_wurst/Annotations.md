@@ -10,6 +10,11 @@ generated: true
 toc: sections
 ---
 
+Marks a documented declaration whose calls are expanded by the compiler.
+
+Unlike a normal fallback declaration, this does not suppress intrinsic lowering. The declaration
+exists so intrinsic APIs remain visible to completion, navigation, and documentation tools.
+
 **[Source on GitHub](https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/_wurst/Annotations.wurst)**
 
 ## Functions
@@ -54,6 +59,12 @@ public function compiletimenative()
 ```
 
 Functions annotated with @compiletimenative are natives that are only available at compiletime, but not ingame.
+
+### compilerintrinsic
+
+```wurst
+public function compilerintrinsic()
+```
 
 ### configurable
 

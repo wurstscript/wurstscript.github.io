@@ -11,6 +11,60 @@ toc: sections
 curated: /stdlib/errorhandling
 ---
 
+Told about every error() after it is reported, so a test runner or a map can record errors
+	that do not stop the game: on Lua, error() returns instead of ending the thread. That includes
+	errors inside try(), which run with suppressErrorMessages set; a listener that only wants
+	uncaught errors reads it.
+
+**[Source on GitHub](https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/_wurst/ErrorHandling.wurst)**
+
+> 📖 Read the **[detailed guide](/stdlib/errorhandling)** for hand-written examples and background.
+
+**Re-exports:** `Printing`, `Real`, `Integer`, `String`, `MagicFunctions`
+
+## Interfaces
+
+### ErrorListener
+
+```wurst
+public interface ErrorListener
+```
+
+**Members:**
+
+- `onError(string msg)`
+
+## Functions
+
+### addErrorListener
+
+```wurst
+public function addErrorListener(ErrorListener listener)
+```
+
+Adds a listener that every later error() calls with its message. An error raised inside a
+	listener is reported as usual, but no listener hears it, so a failing listener cannot recurse.
+
+	A map that configures its own error() has to call notifyErrorListeners(msg) from it, or
+	listeners are never told.
+
+### notifyErrorListeners
+
+```wurst
+public function notifyErrorListeners(string msg)
+```
+
+Tells every error listener about msg and leaves msg in lastError. The default error() calls it;
+	a configured error() calls it too, before it ends the thread.
+
+### error
+
+```wurst
+public function error(string msg)
+```
+
+> 🔧 **Configurable.** Override it in your map's config package.
+
 error handing function.
 This function is used by libraries and for internal Wurst errors like
 accessing a null-pointer. Overwrite this function to customize error handling.
@@ -24,18 +78,4 @@ To achieve this, the hash of the string is saved in a hashtable together with a 
 
 You can also use try() from package Execute to handle an error happening in a callback.
 
-**[Source on GitHub](https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/_wurst/ErrorHandling.wurst)**
-
-> 📖 Read the **[detailed guide](/stdlib/errorhandling)** for hand-written examples and background.
-
-**Re-exports:** `Printing`, `Real`, `Integer`, `String`, `MagicFunctions`
-
-## Functions
-
-### error
-
-```wurst
-public function error(string msg)
-```
-
-> 🔧 **Configurable.** Override it in your map's config package.
+A configured replacement should call notifyErrorListeners(msg), so error listeners still hear it.
