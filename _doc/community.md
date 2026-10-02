@@ -14,7 +14,59 @@ You can submit your own resource using our [Issue Tracker](https://github.com/wu
 <br>
 
 <!-- Start Row -->
-<div class="row">
+<div class="row showcase-row">
+
+<!-- Begin Card -->
+<div class="col-sm-6 col-xs-12">
+<div class="card-showcase" markdown="1">
+
+[![screenshot](/assets/images/showcase/castlefight.jpg){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/castle-fight-de-beta-9-33.346513/)
+
+<div class="card-block" markdown="1">
+
+{: .card-title}
+
+#### Castle Fight: Definitive Edition
+
+{: .card-text}
+A polished, rebalanced take on the classic team strategy map. Build an army and send it against the opposing castle.
+
+[_&nbsp;_{: .fa .fa-external-link-square} Hive Thread](https://www.hiveworkshop.com/threads/castle-fight-de-beta-9-33.346513/) [_&nbsp;_{: .fa .fa-external-link-square} Website](https://castlefight.cfd/)
+
+</div>
+
+</div>
+</div>
+<!-- End Card -->
+
+<!-- Begin Card -->
+<div class="col-sm-6 col-xs-12">
+<div class="card-showcase" markdown="1">
+
+[![screenshot](/assets/images/showcase/smashcraft.jpg){: .img-responsive .center-block}](https://github.com/tompassarelli/smashcraft)
+
+<div class="card-block" markdown="1">
+
+{: .card-title}
+
+#### Smashcraft
+
+{: .card-text}
+A Melee-inspired Warcraft III platform fighter authored in WurstScript.
+
+[_&nbsp;_{: .fa .fa-external-link-square} Git Repo](https://github.com/tompassarelli/smashcraft)
+
+</div>
+
+</div>
+</div>
+<!-- End Card -->
+
+</div>
+<!-- End Row -->
+
+<!-- Start Row -->
+<div class="row showcase-row">
 
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
@@ -67,7 +119,7 @@ Multiplayer post-apocalyptic base-building survival game. Build your base during
 <!-- End Row -->
 
 <!-- Start Row -->
-<div class="row">
+<div class="row showcase-row">
 
 <div class="col-sm-6 col-xs-12">
 <div class="card-showcase" markdown="1">
@@ -114,7 +166,7 @@ A PvE Hero Survival where you fight each god in their arena. Comes with a fancy 
 </div>
 <!-- End Row -->
 
-<div class="row">
+<div class="row showcase-row">
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
 <div class="card-showcase" markdown="1">
@@ -162,7 +214,7 @@ Combines survival and PvP melee combat in a fight to the death for domination of
 </div>
 <!-- End Row -->
 
-<div class="row">
+<div class="row showcase-row">
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
 <div class="card-showcase" markdown="1">
@@ -211,7 +263,7 @@ Battleships-style aos that focuses on simplicity. Uses automatically firing weap
 </div>
 <!-- End Row -->
 
-<div class="row">
+<div class="row showcase-row">
 
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
@@ -262,7 +314,7 @@ A charmful skirmish between two teams in a snowy landscape.
 </div>
 <!-- End Row -->
 
-<div class="row">
+<div class="row showcase-row">
 
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
@@ -313,7 +365,7 @@ Based in ancient japan, you and your pals try to escape from a Giant Enemy Crab.
 </div>
 <!-- End Row -->
 
-<div class="row">
+<div class="row showcase-row">
 
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
@@ -365,7 +417,7 @@ Hunter's Hall is a team-oriented PvP game which consists of short, objective-bas
 </div>
 <!-- End Row -->
 
-<div class="row">
+<div class="row showcase-row">
 
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
@@ -414,59 +466,7 @@ A TD where players controls a fragile runner which must evade enemy creeps while
 <!-- End Row -->
 
 <!-- Start Row -->
-<div class="row">
-
-<!-- Begin Card -->
-<div class="col-sm-6 col-xs-12">
-<div class="card-showcase" markdown="1">
-
-[![screenshot](/assets/images/showcase/castlefight.jpg){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/castle-fight-de-beta-9-33.346513/)
-
-<div class="card-block" markdown="1">
-
-{: .card-title}
-
-#### Castle Fight: Definitive Edition
-
-{: .card-text}
-A polished, rebalanced take on the classic team strategy map. Build an army and send it against the opposing castle.
-
-[_&nbsp;_{: .fa .fa-external-link-square} Hive Thread](https://www.hiveworkshop.com/threads/castle-fight-de-beta-9-33.346513/) [_&nbsp;_{: .fa .fa-external-link-square} Website](https://castlefight.cfd/)
-
-</div>
-
-</div>
-</div>
-<!-- End Card -->
-
-<!-- Begin Card -->
-<div class="col-sm-6 col-xs-12">
-<div class="card-showcase" markdown="1">
-
-[![screenshot](/assets/images/showcase/smashcraft.jpg){: .img-responsive .center-block}](https://github.com/tompassarelli/smashcraft)
-
-<div class="card-block" markdown="1">
-
-{: .card-title}
-
-#### Smashcraft
-
-{: .card-text}
-A Melee-inspired Warcraft III platform fighter authored in WurstScript.
-
-[_&nbsp;_{: .fa .fa-external-link-square} Git Repo](https://github.com/tompassarelli/smashcraft)
-
-</div>
-
-</div>
-</div>
-<!-- End Card -->
-
-</div>
-<!-- End Row -->
-
-<!-- Start Row -->
-<div class="row" >
+<div class="row showcase-row">
 
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
@@ -518,7 +518,7 @@ Functional Programming Utilities for WurstScript inspired by Lodash.
 <!-- End Row -->
 
 <!-- Start Row -->
-<div class="row" >
+<div class="row showcase-row">
 
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
@@ -570,7 +570,7 @@ A minimal, non-intrusive shop UI and item management system. Uses wurst-table-la
 <!-- End Row -->
 
 <!-- Start Row -->
-<div class="row" >
+<div class="row showcase-row">
 
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
