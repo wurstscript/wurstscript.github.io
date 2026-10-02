@@ -20,6 +20,58 @@ You can submit your own resource using our [Issue Tracker](https://github.com/wu
 <div class="col-sm-6 col-xs-12">
 <div class="card-showcase" markdown="1">
 
+[![screenshot](/assets/images/showcase/castlefight.jpg){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/castle-fight-de-beta-9-33.346513/)
+
+<div class="card-block" markdown="1">
+
+{: .card-title}
+
+#### Castle Fight: Definitive Edition
+
+{: .card-text}
+A polished, rebalanced take on the classic team strategy map. Build an army and send it against the opposing castle.
+
+[_&nbsp;_{: .fa .fa-external-link-square} Hive Thread](https://www.hiveworkshop.com/threads/castle-fight-de-beta-9-33.346513/) [_&nbsp;_{: .fa .fa-external-link-square} Website](https://castlefight.cfd/)
+
+</div>
+
+</div>
+</div>
+<!-- End Card -->
+
+<!-- Begin Card -->
+<div class="col-sm-6 col-xs-12">
+<div class="card-showcase" markdown="1">
+
+[![screenshot](/assets/images/showcase/smashcraft.jpg){: .img-responsive .center-block}](https://github.com/tompassarelli/smashcraft)
+
+<div class="card-block" markdown="1">
+
+{: .card-title}
+
+#### Smashcraft
+
+{: .card-text}
+A Melee-inspired Warcraft III platform fighter authored in WurstScript.
+
+[_&nbsp;_{: .fa .fa-external-link-square} Git Repo](https://github.com/tompassarelli/smashcraft)
+
+</div>
+
+</div>
+</div>
+<!-- End Card -->
+
+</div>
+<!-- End Row -->
+
+<!-- Start Row -->
+<div class="row">
+
+<!-- Begin Card -->
+<div class="col-sm-6 col-xs-12">
+<div class="card-showcase" markdown="1">
+
 [![screenshot](/assets/images/showcase/zombiedef.png){: .img-responsive .center-block}](https://maps.w3reforged.com/maps/categories/castle-defense/Zombie%20Defense%20by%20Eejin%20%26%20Frotty)
 
 <div class="card-block" markdown="1">
@@ -410,58 +462,6 @@ A TD where players controls a fragile runner which must evade enemy creeps while
 
 </div>
 </div>
-</div>
-<!-- End Row -->
-
-<!-- Start Row -->
-<div class="row">
-
-<!-- Begin Card -->
-<div class="col-sm-6 col-xs-12">
-<div class="card-showcase" markdown="1">
-
-[![screenshot](/assets/images/showcase/castlefight.jpg){: .img-responsive .center-block}](https://www.hiveworkshop.com/threads/castle-fight-de-beta-9-33.346513/)
-
-<div class="card-block" markdown="1">
-
-{: .card-title}
-
-#### Castle Fight: Definitive Edition
-
-{: .card-text}
-A polished, rebalanced take on the classic team strategy map. Build an army and send it against the opposing castle.
-
-[_&nbsp;_{: .fa .fa-external-link-square} Hive Thread](https://www.hiveworkshop.com/threads/castle-fight-de-beta-9-33.346513/) [_&nbsp;_{: .fa .fa-external-link-square} Website](https://castlefight.cfd/)
-
-</div>
-
-</div>
-</div>
-<!-- End Card -->
-
-<!-- Begin Card -->
-<div class="col-sm-6 col-xs-12">
-<div class="card-showcase" markdown="1">
-
-[![screenshot](/assets/images/showcase/smashcraft.jpg){: .img-responsive .center-block}](https://github.com/tompassarelli/smashcraft)
-
-<div class="card-block" markdown="1">
-
-{: .card-title}
-
-#### Smashcraft
-
-{: .card-text}
-A Melee-inspired Warcraft III platform fighter authored in WurstScript.
-
-[_&nbsp;_{: .fa .fa-external-link-square} Git Repo](https://github.com/tompassarelli/smashcraft)
-
-</div>
-
-</div>
-</div>
-<!-- End Card -->
-
 </div>
 <!-- End Row -->
 
