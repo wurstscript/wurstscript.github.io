@@ -150,12 +150,16 @@ function buildSidebarToc(navContainer) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".docs-navigation a").forEach((link) => {
+    if (new URL(link.href).pathname === window.location.pathname) link.setAttribute("aria-current", "page");
+  });
   // Apply Wurst syntax highlighting to inline code snippets in docs/news.
   if (window.Prism) {
     const inlineCodeNodes = document.querySelectorAll(
       ".doc-content :not(pre) > code:not([class*='language-']), .news-article-content :not(pre) > code:not([class*='language-'])"
     );
     inlineCodeNodes.forEach((codeEl) => {
+      if (codeEl.closest(".api-browser")) return;
       Prism.util.setLanguage(codeEl, "wurst");
       Prism.highlightElement(codeEl);
     });

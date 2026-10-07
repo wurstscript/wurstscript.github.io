@@ -56,6 +56,8 @@ export interface PackageDoc {
   tags: string[];
   /** Imported package names (for context; not rendered prominently). */
   imports: string[];
+  /** All direct imports, used to resolve types; omitted from the website index. */
+  typeImports: string[];
   /** Public API surface in source order. */
   entities: Entity[];
 }

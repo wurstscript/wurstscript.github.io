@@ -42,6 +42,7 @@ export function parseFile(input: ParseInput): PackageDoc {
 
   const entities: Entity[] = [];
   const imports: string[] = [];
+  const typeImports: string[] = [];
   const stack: Frame[] = [];
   let pkgName = pkgNameFromPath(sourcePath);
   let prePackageSummary: string | null = null;
@@ -113,10 +114,10 @@ export function parseFile(input: ParseInput): PackageDoc {
       continue;
     }
 
-    // import declaration. We only record `import public` (re-exported) packages because those are
-    // the doc-worthy ones (aggregator packages like Assets/Wurst bundle them).
+    // Public imports are shown as re-exports; all imports participate in type lookup.
     const impMatch = rest.match(/^import\s+(public\s+)?(?:initlater\s+)*(\w+)/);
     if (impMatch) {
+      typeImports.push(impMatch[2]);
       if (impMatch[1]) imports.push(impMatch[2]);
       pendingDoc = null;
       annos = emptyAnnos();
@@ -229,6 +230,7 @@ export function parseFile(input: ParseInput): PackageDoc {
     summaryFirstLine: firstLine(summary),
     tags,
     imports,
+    typeImports,
     entities,
   };
 }

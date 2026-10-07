@@ -75,7 +75,7 @@ These packages collect the recurring glue code behind common map systems.
 - **[Fx](/stdlib/ref/dummy/Fx.html)** manages special effects.
 - **[UnitIndexer](/stdlib/ref/util/UnitIndexer.html)** gives units a stable index for attaching data.
 
-[*&nbsp;*{: .fa .fa-arrow-circle-right} Browse Event, Dummy, and Utility packages](/stdlib/ref/#events){: .cap-more}
+[*&nbsp;*{: .fa .fa-arrow-circle-right} Browse all Event packages](/stdlib/ref/#events){: .cap-more}
 </section>
 
 <section class="cap-card" markdown="1">

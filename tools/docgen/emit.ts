@@ -5,69 +5,121 @@ import { CATEGORIES, categoryLabel, categoryOrder } from "./categories.ts";
 import { hotdocToMarkdown, normalizeDashes } from "./hotdoc.ts";
 
 export interface EmitContext {
-  /** Website repo root (where _doc/, _data/, _includes/ live). */
   outDir: string;
-  /** Package name -> curated page path (from _data/stdlib_curated.yml). */
   curated: Map<string, string>;
-  /** Package names that have a _includes/stdlib_curated/<Package>.md transclude. */
   includes: Set<string>;
-  /** Qualified class constant names -> API reference anchors. */
   referenceLinks?: Map<string, string>;
+  typeLinks?: Map<string, string>;
 }
-
 const REF_DIR = ["_doc", "stdlib", "ref"];
+const TYPE_KINDS = new Set(["class", "interface", "module", "enum", "tuple"]);
+export function isType(e: Entity): boolean {
+  return TYPE_KINDS.has(e.kind);
+}
+function categoryPath(pkg: PackageDoc): string {
+  return pkg.category.replace(/^\./, "root");
+}
+function packageUrl(pkg: PackageDoc): string {
+  return `/stdlib/ref/${categoryPath(pkg)}/${pkg.package}.html`;
+}
+// Case-only type names need different filenames on Windows, too.
+function typeStem(pkg: PackageDoc, e: Entity): string {
+  const collision = pkg.entities.some((other) =>
+    isType(other) && other.name !== e.name &&
+    other.name.toLowerCase() === e.name.toLowerCase()
+  );
+  return collision
+    ? `${e.name}-${[...e.name].map((c) => c.charCodeAt(0).toString(16)).join("")}`
+    : e.name;
+}
+export function typeUrl(pkg: PackageDoc, e: Entity): string {
+  return `/stdlib/ref/${categoryPath(pkg)}/${pkg.package}/${typeStem(pkg, e)}.html`;
+}
+export function buildTypeLinks(packages: PackageDoc[]): Map<string, string> {
+  const links = new Map<string, string>();
+  const names = new Map<string, Set<string>>();
+  const byPackage = new Map(packages.map((p) => [p.package, p]));
+  for (const pkg of packages) {
+    for (const e of pkg.entities.filter(isType)) {
+      const url = typeUrl(pkg, e);
+      links.set(`${pkg.package}.${e.name}`, url);
+      if (!names.has(e.name)) names.set(e.name, new Set());
+      names.get(e.name)!.add(url);
+    }
+  }
+  for (const [name, urls] of names) if (urls.size === 1) links.set(name, [...urls][0]);
+  for (const pkg of packages) {
+    const candidates = new Map<string, Set<string>>();
+    const visited = new Set<string>();
+    const visit = (name: string) => {
+      if (visited.has(name)) return;
+      visited.add(name);
+      const imported = byPackage.get(name);
+      if (!imported) return;
+      for (const e of imported.entities.filter(isType)) {
+        if (!candidates.has(e.name)) candidates.set(e.name, new Set());
+        candidates.get(e.name)!.add(typeUrl(imported, e));
+      }
+      imported.imports.forEach(visit);
+    };
+    pkg.typeImports.forEach(visit);
+    for (const [name, urls] of candidates) {
+      const key = `${pkg.package}.${name}`;
+      if (urls.size === 1 && !links.has(key)) links.set(key, [...urls][0]);
+    }
+  }
+  return links;
+}
+function constantAnchor(className: string, memberName: string): string {
+  return `${className}-${memberName}`;
+}
 
 export async function emitAll(packages: PackageDoc[], ctx: EmitContext): Promise<string[]> {
   const written: string[] = [];
   const referenceLinks = new Map<string, string>();
+  const typeLinks = buildTypeLinks(packages);
   for (const pkg of packages) {
-    for (const entity of pkg.entities) {
-      for (const member of entity.members.filter((m) => m.kind === "constant")) {
-        referenceLinks.set(
-          `${entity.name}.${member.name}`,
-          `/stdlib/ref/${pkg.category.replace(/^\./, "root")}/${pkg.package}.html#${
-            constantAnchor(entity.name, member.name)
-          }`,
-        );
+    for (const e of pkg.entities.filter(isType)) {
+      const url = typeUrl(pkg, e);
+      for (const m of e.members.filter((m) => m.kind === "constant")) {
+        referenceLinks.set(`${e.name}.${m.name}`, `${url}#${constantAnchor(e.name, m.name)}`);
       }
     }
   }
-  ctx = { ...ctx, referenceLinks };
-
-  // 1. JSON index.
+  ctx = { ...ctx, referenceLinks, typeLinks };
   const jsonPath = join(ctx.outDir, "_data", "stdlib_index.json");
   await writeFile(jsonPath, renderPackageIndex(packages));
   written.push(jsonPath);
-
-  // 2. Clean + regenerate the ref subtree.
   const refRoot = join(ctx.outDir, ...REF_DIR);
   await removeIfExists(refRoot);
-
-  // 3. Per-package pages.
+  const paths = new Set<string>();
   for (const pkg of packages) {
-    const path = join(refRoot, pkg.category.replace(/^\./, "root"), `${pkg.package}.md`);
+    const path = join(refRoot, categoryPath(pkg), `${pkg.package}.md`);
     await writeFile(path, renderPackagePage(pkg, ctx));
     written.push(path);
+    for (const e of pkg.entities.filter(isType)) {
+      const typePath = join(refRoot, categoryPath(pkg), pkg.package, `${typeStem(pkg, e)}.md`);
+      if (paths.has(typePath.toLowerCase())) throw new Error(`Duplicate type path: ${typePath}`);
+      paths.add(typePath.toLowerCase());
+      await writeFile(typePath, renderTypePage(pkg, e, ctx));
+      written.push(typePath);
+    }
   }
-
-  // 4. Reference index.
   const indexPath = join(refRoot, "index.md");
   await writeFile(indexPath, renderIndex(packages));
   written.push(indexPath);
-
   return written;
 }
-
 export function renderPackageIndex(packages: PackageDoc[]): string {
-  // Declarations are rendered in the reference pages, not duplicated in package metadata.
-  const records = packages.map(({ entities: _entities, ...metadata }) => metadata);
-  return JSON.stringify(records, null, 2) + "\n";
+  return JSON.stringify(
+    packages.map(({ entities: _entities, typeImports: _imports, ...metadata }) => metadata),
+    null,
+    2,
+  ) +
+    "\n";
 }
-
-// --- per-package page --------------------------------------------------------
-
-export function renderPackagePage(pkg: PackageDoc, ctx: EmitContext): string {
-  const fm: Record<string, unknown> = {
+function pageMeta(pkg: PackageDoc): Record<string, unknown> {
+  return {
     title: pkg.package,
     layout: "stdlibref",
     category: pkg.category,
@@ -76,178 +128,209 @@ export function renderPackagePage(pkg: PackageDoc, ctx: EmitContext): string {
     source: pkg.githubUrl,
     generated: true,
     toc: "sections",
+    api_package: pkg.package,
+    package_url: packageUrl(pkg),
   };
-  const curatedPath = ctx.curated.get(pkg.package);
-  if (curatedPath) fm.curated = curatedPath;
-
+}
+export function renderPackagePage(pkg: PackageDoc, ctx: EmitContext): string {
   const body: string[] = [];
   if (pkg.summary) body.push(hotdocToMarkdown(pkg.summary), "");
-  body.push(`**[Source on GitHub](${pkg.githubUrl})**`, "");
-  if (curatedPath) {
-    body.push(
-      `> 📖 Read the **[detailed guide](${curatedPath})** for hand-written examples and background.`,
-      "",
-    );
-  }
+  const guide = ctx.curated.get(pkg.package);
+  if (guide) body.push(`[Read the ${pkg.package} guide](${guide})`, "");
   if (ctx.includes.has(pkg.package)) {
     body.push(`{% include stdlib_curated/${pkg.package}.md %}`, "");
   }
-
-  if (pkg.imports.length > 0) {
-    const links = pkg.imports.map((name) => `\`${name}\``).join(", ");
-    body.push(`**Re-exports:** ${links}`, "");
+  if (pkg.imports.length) {
+    body.push(`**Re-exports:** ${pkg.imports.map((n) => `\`${n}\``).join(", ")}`, "");
   }
-
-  body.push(...renderEntities(pkg.entities, ctx));
-
-  return frontmatter(fm) + body.join("\n").replace(/\n{3,}/g, "\n\n").trimEnd() + "\n";
+  const kinds = [...TYPE_KINDS];
+  const types = pkg.entities.filter(isType).sort((a, b) =>
+    kinds.indexOf(a.kind) - kinds.indexOf(b.kind) || a.name.localeCompare(b.name, "en")
+  );
+  if (types.length) {
+    body.push("## Types", "", browserStart("Filter types by name, rawcode, or description", true));
+    for (const e of types) {
+      const rawcode = e.doc.trim().match(/^'([^']{4})' \/ \w+\.\w+$/)?.[1];
+      const description = rawcode ? "" : cleanDescription(e.doc);
+      body.push(
+        `<a class="api-row" data-api-item data-api-search-text="${
+          esc(e.doc)
+        }" data-legacy-anchor="${esc(legacyAnchor(e.name))}" href="${
+          typeUrl(pkg, e)
+        }"><span class="api-row-name">${esc(e.name)}</span><span class="api-kind${
+          rawcode ? " api-rawcode" : ""
+        }">${esc(rawcode ?? e.kind)}</span>${
+          description ? `<span class="api-row-description">${esc(description)}</span>` : ""
+        }</a>`,
+      );
+    }
+    body.push(browserEnd(), "");
+  }
+  const functions = pkg.entities.filter((e) => !isType(e));
+  if (functions.length) {
+    body.push(
+      "## Functions and constants",
+      "",
+      browserStart("Filter declarations by name or signature"),
+    );
+    functions.forEach((e, i) =>
+      body.push(
+        renderDeclaration(
+          e,
+          `${legacyAnchor(e.receiver ? `${e.receiver}.${e.name}` : e.name)}-${i}`,
+          ctx,
+        ),
+      )
+    );
+    body.push(browserEnd(), "");
+  }
+  return frontmatter(pageMeta(pkg)) + body.join("\n").trimEnd() + "\n";
 }
-
-interface KindGroup {
-  heading: string;
-  kinds: Entity["kind"][];
-}
-
-const GROUPS: KindGroup[] = [
-  { heading: "Classes", kinds: ["class"] },
-  { heading: "Interfaces", kinds: ["interface"] },
-  { heading: "Enums", kinds: ["enum"] },
-  { heading: "Tuples", kinds: ["tuple"] },
-  { heading: "Modules", kinds: ["module"] },
-  { heading: "Functions", kinds: ["function"] },
-  { heading: "Extension Functions", kinds: ["extension-function"] },
-  { heading: "Constants", kinds: ["constant"] },
-];
-
-function renderEntities(entities: Entity[], ctx: EmitContext): string[] {
-  const out: string[] = [];
-  for (const group of GROUPS) {
-    const items = entities.filter((e) => group.kinds.includes(e.kind));
-    if (items.length === 0) continue;
-    out.push(`## ${group.heading}`, "");
-    for (const e of items) out.push(...renderEntity(e, ctx));
+export function renderTypePage(pkg: PackageDoc, e: Entity, ctx: EmitContext): string {
+  const fm = {
+    ...pageMeta(pkg),
+    title: e.name,
+    api_type: true,
+    source: `${pkg.githubUrl}#L${e.line}`,
+  };
+  const doc = e.doc || (e.name === pkg.package ? pkg.summary : "");
+  const body = ["```wurst", e.signature, "```", "", renderDoc(doc, ctx), ""];
+  if (e.deprecated.flag) body.push(`> **Deprecated.** ${e.deprecated.message ?? ""}`, "");
+  const base = e.signature.match(/\bextends\s+(\w+)/)?.[1];
+  const href = base && (ctx.typeLinks?.get(`${pkg.package}.${base}`) ?? ctx.typeLinks?.get(base));
+  if (href) {
+    body.push(`**Inherits from:** [${base}](${href}) · See this type for inherited members.`, "");
   }
-  return out;
-}
-
-function renderEntity(e: Entity, ctx: EmitContext): string[] {
-  const out: string[] = [];
-  const title = e.receiver ? `${e.receiver}.${e.name}` : e.name;
-  out.push(`### ${title}`, "");
-  out.push("```wurst", e.signature, "```", "");
-  if (e.deprecated.flag) {
-    out.push(`> ⚠️ **Deprecated.**${e.deprecated.message ? " " + e.deprecated.message : ""}`, "");
-  }
-  if (e.configurable) {
-    out.push(`> 🔧 **Configurable.** Override it in your map's config package.`, "");
-  }
-  if (e.doc) {
-    // The generated rawcode comment is a prose reference, not an executable code example.
-    const reference = e.doc.trim().match(/^'([^']{4})' \/ (\w+\.\w+)$/);
-    const href = reference ? ctx.referenceLinks?.get(reference[2]) : undefined;
-    out.push(
-      href ? `'${reference![1]}' / [${reference![2]}](${href})` : hotdocToMarkdown(e.doc),
+  if (e.enumMembers.length) {
+    body.push(
+      "## Values",
+      "",
+      e.enumMembers.map((m) => `- \`${m}\``).join("\n"),
       "",
     );
   }
-  if (e.enumMembers.length > 0) {
-    out.push("**Values:** " + e.enumMembers.map((m) => `\`${m}\``).join(", "), "");
+  const groups = [
+    ["Constructors", e.members.filter((m) => m.name === "construct")],
+    ["Methods", e.members.filter((m) => m.kind !== "constant" && m.name !== "construct")],
+    ["Constants", e.members.filter((m) => m.kind === "constant")],
+  ] as const;
+  for (const [heading, members] of groups) {
+    if (!members.length) continue;
+    body.push(
+      `## ${heading}`,
+      "",
+      browserStart(`Filter ${heading.toLowerCase()} by name or signature`),
+    );
+    members.forEach((m, i) =>
+      body.push(
+        renderDeclaration(
+          m,
+          m.kind === "constant" ? constantAnchor(e.name, m.name) : `${e.name}-${m.name}-${i}`,
+          ctx,
+        ),
+      )
+    );
+    body.push(browserEnd(), "");
   }
-  if (e.members.length > 0) {
-    out.push("**Members:**", "");
-    for (const m of e.members) out.push(...renderMember(m, e.name));
-    out.push("");
-  }
-  return out;
-}
-
-function constantAnchor(className: string, memberName: string): string {
-  return `${className}-${memberName}`;
-}
-
-function renderMember(m: Entity, className: string): string[] {
-  const sig = m.signature.replace(/^function\s+/, "");
-  const anchor = m.kind === "constant" ? `<a id="${constantAnchor(className, m.name)}"></a> ` : "";
-  const head = `- ${anchor}\`${sig}\``;
-  if (!m.doc && !m.deprecated.flag) return [head];
-  const lines: string[] = [head];
-  if (m.deprecated.flag) {
-    lines.push(`  ⚠️ _Deprecated.${m.deprecated.message ? " " + m.deprecated.message : ""}_`);
-  }
-  if (m.doc) {
-    // Inline the member doc as indented continuation of the list item.
-    const docText = hotdocToMarkdown(m.doc).split("\n").map((l) => "  " + l).join("\n");
-    lines.push(docText);
-  }
-  return lines;
-}
-
-// --- reference index ---------------------------------------------------------
-
-export function renderIndex(packages: PackageDoc[]): string {
-  const fm = { title: "API Reference", layout: "doc", permalink: "/stdlib/ref/", toc: "sections" };
-  const body: string[] = [];
-  body.push(
-    "This is the complete, generated reference for the " +
-      "[Wurst standard library](https://github.com/wurstscript/WurstStdlib2). It is organized by package category and built from the hotdoc in the source repository.",
-    "",
-    "## Before you browse",
-    "",
-    "If you are choosing a capability, start with the [standard library overview](/stdlib.html). If you know what you need, use your browser's search or the package list below. Package pages lead with a summary, then group their declarations into classes, functions, extension functions, and constants.",
-    "",
-  );
-
-  const byCat = new Map<string, PackageDoc[]>();
-  for (const p of packages) {
-    const list = byCat.get(p.category) ?? [];
-    list.push(p);
-    byCat.set(p.category, list);
-  }
-
-  const cats = [...byCat.keys()].sort((a, b) => categoryOrder(a) - categoryOrder(b));
-  for (const cat of cats) {
-    body.push(`## ${categoryLabel(cat)}`, "");
-    const list = byCat.get(cat)!.sort((a, b) => a.package.localeCompare(b.package));
-    for (const p of list) {
-      const href = `/stdlib/ref/${p.category.replace(/^\./, "root")}/${p.package}.html`;
-      const desc = cleanDescription(p.summary);
-      body.push(desc ? `- [${p.package}](${href}): ${desc}` : `- [${p.package}](${href})`);
-    }
-    body.push("");
-  }
-
   return frontmatter(fm) + body.join("\n").trimEnd() + "\n";
 }
-
-// --- helpers -----------------------------------------------------------------
-
-/**
- * A short, clean one-line description for index listings: the first sentence of the summary,
- * with trailing colons, dangling open quotes and bold markers removed. Returns "" when the
- * summary doesn't yield a tidy sentence.
- */
+function renderDeclaration(e: Entity, id: string, ctx: EmitContext): string {
+  const doc = renderDoc(e.doc, ctx);
+  const status = e.deprecated.flag ? `\n> **Deprecated.** ${e.deprecated.message ?? ""}\n` : "";
+  const config = e.configurable
+    ? "\n> **Configurable.** Override it in your map's config package.\n"
+    : "";
+  const sig = e.signature.replace(/^function\s+/, "");
+  if (!doc && !status && !config) {
+    return `<div class="api-signature" data-api-item id="${esc(id)}" data-legacy-anchor="${
+      esc(legacyAnchor(e.receiver ? `${e.receiver}.${e.name}` : e.name))
+    }"><code>${esc(sig)}</code></div>`;
+  }
+  return `<details class="api-declaration" data-api-item id="${esc(id)}" data-legacy-anchor="${
+    esc(legacyAnchor(e.receiver ? `${e.receiver}.${e.name}` : e.name))
+  }" markdown="1">\n<summary><code>${esc(sig)}</code></summary>\n\n${
+    doc || "Declaration shown above."
+  }${status}${config}\n\n</details>`;
+}
+function renderDoc(doc: string, ctx: EmitContext): string {
+  const ref = doc.trim().match(/^'([^']{4})' \/ (\w+\.\w+)$/);
+  const href = ref ? ctx.referenceLinks?.get(ref[2]) : undefined;
+  return href ? `'${ref![1]}' / [${ref![2]}](${href})` : hotdocToMarkdown(doc);
+}
+function browserStart(label: string, directory = false): string {
+  const markdown = directory ? "0" : "1";
+  return `<div class="api-browser" data-api-browser markdown="${markdown}">\n<div class="api-tools" data-pagefind-ignore hidden><label>${
+    esc(label)
+  }<input type="search" data-api-search placeholder="Type to filter…" autocomplete="off"></label><p data-api-status role="status" aria-live="polite"></p></div>\n<div class="api-results" markdown="${markdown}">`;
+}
+function browserEnd(): string {
+  return `</div>\n<div class="api-pagination" data-pagefind-ignore hidden><button type="button" data-api-prev>Previous</button><span data-api-page></span><button type="button" data-api-next>Next</button></div>\n</div>`;
+}
+export function renderIndex(packages: PackageDoc[]): string {
+  const fm = {
+    title: "API Reference",
+    layout: "stdlibref",
+    permalink: "/stdlib/ref/",
+    toc: "sections",
+  };
+  const body = [
+    "Find a package, then open a type or function. Search the site for a specific symbol or rawcode.",
+    "",
+    "[Explore the standard library guides](/stdlib.html)",
+    "",
+    browserStart("Filter packages by name, category, or description", true),
+  ];
+  for (
+    const cat of [...new Set(packages.map((p) => p.category))].sort((a, b) =>
+      categoryOrder(a) - categoryOrder(b)
+    )
+  ) {
+    let first = true;
+    for (
+      const pkg of packages.filter((p) => p.category === cat).sort((a, b) =>
+        a.package.localeCompare(b.package)
+      )
+    ) {
+      body.push(
+        `<a class="api-row" data-api-item data-api-category="${esc(categoryLabel(cat))}"${
+          first
+            ? ` id="${
+              categoryLabel(cat).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")
+            }"`
+            : ""
+        } href="${packageUrl(pkg)}"><span class="api-row-name">${
+          esc(pkg.package)
+        }</span><span class="api-kind">${
+          esc(categoryLabel(cat))
+        }</span><span class="api-row-description">${esc(cleanDescription(pkg.summary))}</span></a>`,
+      );
+      first = false;
+    }
+  }
+  body.push(browserEnd());
+  return frontmatter(fm) + body.join("\n") + "\n";
+}
+function legacyAnchor(s: string): string {
+  return s.toLowerCase().replace(/[^a-z0-9_-]/g, "");
+}
+function esc(s: string): string {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(
+    /"/g,
+    "&quot;",
+  );
+}
 function cleanDescription(summary: string): string {
-  if (!summary) return "";
-  let s = normalizeDashes(summary.split("\n")[0]).trim();
-  // Prefer the first sentence when the line runs on.
-  const sentenceEnd = s.search(/[.!?](\s|$)/);
-  if (sentenceEnd > 0) s = s.slice(0, sentenceEnd + 1);
-  s = s.replace(/\*\*/g, "").replace(/\s+/g, " ").trim();
-  s = s.replace(/\s*:$/, ""); // drop a trailing colon (fragment header)
-  if (/^["'].*[^"']$/.test(s)) s = s.replace(/^["']/, ""); // drop an unmatched opening quote
-  s = s.replace(/[.\s]+$/, (m) => (m.includes(".") ? "." : ""));
+  let s = normalizeDashes(summary.split("\n")[0] ?? "").replace(/\*\*|`/g, "").trim();
+  if (s.length > 180) s = s.slice(0, 177) + "…";
   return s;
 }
-
 function frontmatter(obj: Record<string, unknown>): string {
   return "---\n" + yamlStringify(obj, { lineWidth: -1 }).trimEnd() + "\n---\n\n";
 }
-
 async function writeFile(path: string, content: string): Promise<void> {
   await Deno.mkdir(dirname(path), { recursive: true });
   await Deno.writeTextFile(path, content);
 }
-
 async function removeIfExists(path: string): Promise<void> {
   try {
     await Deno.remove(path, { recursive: true });
@@ -255,6 +338,4 @@ async function removeIfExists(path: string): Promise<void> {
     if (!(err instanceof Deno.errors.NotFound)) throw err;
   }
 }
-
-/** Exposed so main.ts can report the canonical category ordering. */
 export { CATEGORIES };
