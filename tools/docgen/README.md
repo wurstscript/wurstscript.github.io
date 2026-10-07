@@ -6,7 +6,8 @@ that powers the API reference under `/stdlib/ref/`.
 It is a small, dependency-light [Deno](https://deno.com) + TypeScript tool. It parses the
 `/** … */` "hotdoc" comments and public declarations out of every `.wurst` package and emits:
 
-- `_data/stdlib_index.json`: one machine-readable record per package (used by Liquid / search).
+- `_data/stdlib_index.json`: package metadata, summaries, tags, and source links. The API
+  declaration tree is rendered in the reference pages and is not duplicated in this index.
 - `_doc/stdlib/ref/<category>/<Package>.md`: one reference page per package.
 - `_doc/stdlib/ref/index.md`: the exhaustive grouped index.
 

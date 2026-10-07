@@ -1,10 +1,34 @@
 import { parseFile } from "./parser.ts";
-import { renderPackagePage } from "./emit.ts";
+import { renderPackageIndex, renderPackagePage } from "./emit.ts";
 import { hotdocToMarkdown } from "./hotdoc.ts";
 
 function expect(value: boolean, message: string) {
   if (!value) throw new Error(message);
 }
+
+Deno.test("package index excludes the API tree rendered in reference pages", () => {
+  const pkg = parseFile({
+    category: "_wurst",
+    sourcePath: "wurst/_wurst/AbilityIds.wurst",
+    text: `package AbilityIds
+/** Ability rawcodes. */
+public class AbilityIds
+    static constant blizzard = 'AHbz'
+`,
+  });
+  const records = JSON.parse(renderPackageIndex([pkg]));
+  expect(records.length === 1, "Package missing from index");
+  expect(records[0].package === "AbilityIds", "Package identity lost");
+  expect(records[0].summaryFirstLine === "Ability rawcodes.", "Summary lost");
+  expect(records[0].githubUrl === pkg.githubUrl, "Source link lost");
+  expect(!("entities" in records[0]), "Index duplicates the full API tree");
+  expect(!renderPackageIndex([pkg]).includes("AHbz"), "Constant value leaked into index");
+  expect(
+    renderPackagePage(pkg, { outDir: "", curated: new Map(), includes: new Set() })
+      .includes("static constant blizzard = 'AHbz'"),
+    "Reference page lost the actual API",
+  );
+});
 
 Deno.test("indented hotdoc examples preserve relative code indentation", () => {
   const result = hotdocToMarkdown(
