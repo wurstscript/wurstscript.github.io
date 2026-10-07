@@ -35,6 +35,41 @@ function typeStem(pkg: PackageDoc, e: Entity): string {
 export function typeUrl(pkg: PackageDoc, e: Entity): string {
   return `/stdlib/ref/${categoryPath(pkg)}/${pkg.package}/${typeStem(pkg, e)}.html`;
 }
+export function buildTypeLinks(packages: PackageDoc[]): Map<string, string> {
+  const links = new Map<string, string>();
+  const names = new Map<string, Set<string>>();
+  const byPackage = new Map(packages.map((p) => [p.package, p]));
+  for (const pkg of packages) {
+    for (const e of pkg.entities.filter(isType)) {
+      const url = typeUrl(pkg, e);
+      links.set(`${pkg.package}.${e.name}`, url);
+      if (!names.has(e.name)) names.set(e.name, new Set());
+      names.get(e.name)!.add(url);
+    }
+  }
+  for (const [name, urls] of names) if (urls.size === 1) links.set(name, [...urls][0]);
+  for (const pkg of packages) {
+    const candidates = new Map<string, Set<string>>();
+    const visited = new Set<string>();
+    const visit = (name: string) => {
+      if (visited.has(name)) return;
+      visited.add(name);
+      const imported = byPackage.get(name);
+      if (!imported) return;
+      for (const e of imported.entities.filter(isType)) {
+        if (!candidates.has(e.name)) candidates.set(e.name, new Set());
+        candidates.get(e.name)!.add(typeUrl(imported, e));
+      }
+      imported.imports.forEach(visit);
+    };
+    pkg.typeImports.forEach(visit);
+    for (const [name, urls] of candidates) {
+      const key = `${pkg.package}.${name}`;
+      if (urls.size === 1 && !links.has(key)) links.set(key, [...urls][0]);
+    }
+  }
+  return links;
+}
 function constantAnchor(className: string, memberName: string): string {
   return `${className}-${memberName}`;
 }
@@ -42,19 +77,15 @@ function constantAnchor(className: string, memberName: string): string {
 export async function emitAll(packages: PackageDoc[], ctx: EmitContext): Promise<string[]> {
   const written: string[] = [];
   const referenceLinks = new Map<string, string>();
-  const typeLinks = new Map<string, string>();
-  const names = new Map<string, string[]>();
+  const typeLinks = buildTypeLinks(packages);
   for (const pkg of packages) {
     for (const e of pkg.entities.filter(isType)) {
       const url = typeUrl(pkg, e);
-      typeLinks.set(`${pkg.package}.${e.name}`, url);
-      names.set(e.name, [...(names.get(e.name) ?? []), url]);
       for (const m of e.members.filter((m) => m.kind === "constant")) {
         referenceLinks.set(`${e.name}.${m.name}`, `${url}#${constantAnchor(e.name, m.name)}`);
       }
     }
   }
-  for (const [name, urls] of names) if (urls.length === 1) typeLinks.set(name, urls[0]);
   ctx = { ...ctx, referenceLinks, typeLinks };
   const jsonPath = join(ctx.outDir, "_data", "stdlib_index.json");
   await writeFile(jsonPath, renderPackageIndex(packages));
@@ -80,7 +111,11 @@ export async function emitAll(packages: PackageDoc[], ctx: EmitContext): Promise
   return written;
 }
 export function renderPackageIndex(packages: PackageDoc[]): string {
-  return JSON.stringify(packages.map(({ entities: _entities, ...metadata }) => metadata), null, 2) +
+  return JSON.stringify(
+    packages.map(({ entities: _entities, typeImports: _imports, ...metadata }) => metadata),
+    null,
+    2,
+  ) +
     "\n";
 }
 function pageMeta(pkg: PackageDoc): Record<string, unknown> {

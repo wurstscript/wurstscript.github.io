@@ -1,10 +1,41 @@
 import { parseFile } from "./parser.ts";
-import { renderPackageIndex, renderPackagePage, renderTypePage, typeUrl } from "./emit.ts";
+import {
+  buildTypeLinks,
+  renderPackageIndex,
+  renderPackagePage,
+  renderTypePage,
+  typeUrl,
+} from "./emit.ts";
 import { hotdocToMarkdown } from "./hotdoc.ts";
 
 function expect(value: boolean, message: string) {
   if (!value) throw new Error(message);
 }
+
+Deno.test("inheritance links resolve imports and public re-exports despite duplicate names", () => {
+  const parse = (text: string) =>
+    parseFile({ text, category: "data", sourcePath: "wurst/data/Test.wurst" });
+  const table = parse("package Table\npublic class Table\n");
+  const unrelated = parse("package UnitAnimations\npublic class Table\n");
+  const exports = parse("package Tables\nimport public Table\n");
+  const map = parse("package HashMap\nimport Tables\npublic class HashMap extends Table\n");
+  const links = buildTypeLinks([table, unrelated, exports, map]);
+  const page = renderTypePage(map, map.entities[0], {
+    outDir: "",
+    curated: new Map(),
+    includes: new Set(),
+    typeLinks: links,
+  });
+  expect(
+    page.includes(`[Table](${typeUrl(table, table.entities[0])})`),
+    "Imported base API is unreachable",
+  );
+  expect(!links.has("Table"), "Ambiguous global name was guessed");
+  expect(
+    !JSON.parse(renderPackageIndex([map]))[0].typeImports,
+    "Private imports bloated package metadata",
+  );
+});
 
 Deno.test("package index excludes the API tree rendered in reference pages", () => {
   const pkg = parseFile({
