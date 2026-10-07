@@ -10,6 +10,13 @@ generated: true
 toc: sections
 ---
 
+Creates a doodad by copying `origID` into the custom object `newID`.
+   Choose a non-colliding custom ID; `'D000'` is an example, not a reserved ID.
+   `baseDoodadId` must identify an existing doodad. Inside compile-time object generation:
+```wurst
+new DoodadDefinition('D000', baseDoodadId)
+```
+
 **[Source on GitHub](https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/objediting/DoodadObjEditing.wurst)**
 
 ## Classes

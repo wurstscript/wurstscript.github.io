@@ -13,6 +13,13 @@ toc: sections
 curated: /stdlib/item_objed
 ---
 
+Creates an item based on an existing item ID. Import `ObjectIdGenerator` and `ItemIds` for this example:
+```wurst
+@compiletime function createMyItem()
+    new ItemDefinition(ITEM_ID_GEN.next(), ItemIds.clawsofAttack15)
+        ..setName("My Claws")
+```
+
 **[Source on GitHub](https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/objediting/ItemObjEditing.wurst)**
 
 > 📖 Read the **[detailed guide](/stdlib/item_objed)** for hand-written examples and background.
@@ -25,11 +32,14 @@ curated: /stdlib/item_objed
 public class W3TDefinition
 ```
 
+Create and configure item object data at compile time.
+
 **Members:**
 
 - `getNewId() returns int`
 - `getBaseId() returns int`
 - `construct(int newId, int baseId)`
+  Copies `baseId` into the custom item `newId`. Use a new ID that does not collide with another item.
 - `setTooltipExtended(string data)`
 - `setTooltipBasic(string data)`
 - `setRequirementsLevels(string data)`

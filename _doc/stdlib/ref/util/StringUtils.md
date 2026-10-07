@@ -126,6 +126,15 @@ public function string.split(string splitBy) returns LinkedList<string>
 Splits the string by another string
 	"this..is..an..example" split by the string ".." splits into a list containing four strings ["this", "is", "an", "example"]
 
+### string.splitToArray
+
+```wurst
+public function string.splitToArray(string delimiter) returns ArrayList<string>
+```
+
+Splits into specialized contiguous storage, preserving empty and trailing fields.
+	An empty delimiter returns the original string as one field. The caller owns the list.
+
 ### string.reduce
 
 ```wurst

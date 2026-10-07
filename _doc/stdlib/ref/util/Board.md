@@ -39,11 +39,28 @@ This Board library allows you to create a simple multi board with dynamic cell v
 public abstract class DynamicCellValue<T>
 ```
 
+**Members:**
+
+- `abstract function toString(T t) returns string`
+  Returns a string representation of T
+- `getString() returns string`
+- `getIcon() returns string`
+- `updateValue(T value)`
+  Updates the cell's value
+- `updateIcon(string icon)`
+  Updates the cell's icon
+
 ### BoardColumn
 
 ```wurst
 public class BoardColumn
 ```
+
+**Members:**
+
+- `construct(string title, string icon, real width)`
+  Creates a board column with a title and width in range [0;1] percentage of board width
+- `construct(string title, real width)`
 
 ### BoardCell
 
@@ -51,17 +68,56 @@ public class BoardColumn
 public class BoardCell
 ```
 
+**Members:**
+
+- `construct(BoardRow parent, string content, int column)`
+- `construct(BoardRow parent, string content, string icon, int column)`
+- `setContent(string content)`
+  Sets the text content of this cell
+- `setIcon(string icon)`
+  Sets the icon of this cell
+
 ### BoardRow
 
 ```wurst
 public class BoardRow
 ```
 
+**Members:**
+
+- `construct(multiboard board, int rowIndex)`
+- `addCell(string text)`
+  Adds a cell to this column with a static text content
+- `addCell(string text, string icon)`
+  Adds a cell to this column with a static text and icon content
+- `addDynamic<T>(DynamicCellValue<T> dynamicValue)`
+  Adds a cell to this column with a dynamic text content.
+         If the observable 'dynamicValue' is updated via 'updateValue',
+         the cell's value will be updated as well.
+- `invalidate()`
+  Issues all cells to redraw their content
+
 ### Board
 
 ```wurst
 public class Board
 ```
+
+**Members:**
+
+- `construct(string title, real width)`
+  Create a board with a title and width.
+         Width being in the range [0;1] percentage of screen space.
+- `columns(LinkedList<BoardColumn> columns)`
+  Initialize the boards columns
+- `addRow() returns BoardRow`
+  Add a new row to the board
+- `show()`
+  Show the board to players
+- `removeRow(BoardRow row)`
+  Remove a row from the board, e.g. when a player leaves
+- `getBoard() returns multiboard`
+  Unsafe access to the underlying multiboard
 
 ## Functions
 

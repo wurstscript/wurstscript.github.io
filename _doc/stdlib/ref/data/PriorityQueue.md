@@ -30,3 +30,24 @@ remove and re-add it after changing any fields used by the comparator.
 ```wurst
 public class PriorityQueue<T:>
 ```
+
+**Members:**
+
+- `construct(Comparator<T> comparator)`
+- `construct(Comparator<T> comparator, int initialCapacity)`
+- `add(T value)`
+  Adds an element to the queue.
+- `offer(T value)`
+  Alias for add().
+- `peek() returns T`
+  Returns the highest-priority element, or null if empty.
+- `poll() returns T`
+  Removes and returns the highest-priority element, or null if empty.
+- `remove() returns T`
+  Alias for poll().
+- `size() returns int`
+  Returns the number of queued elements.
+- `isEmpty() returns boolean`
+  Returns whether the queue is empty.
+- `clear()`
+  Removes all elements while retaining the backing storage.

@@ -38,6 +38,15 @@ public function registerPlayerUnitEvent(playerunitevent p, code filter, code con
 public function registerPlayerUnitEventForPlayer(playerunitevent p, code c, player pl)
 ```
 
+### isPlayerUnitEventTriggerTaken
+
+```wurst
+public function isPlayerUnitEventTriggerTaken(int eventHandleId) returns bool
+```
+
+Whether getPlayerUnitEventTrigger has handed out the trigger of the event with this handle id. The caller may have
+	registered more events on it since, so what runs from it can not assume which event fired.
+
 ### getPlayerUnitEventTrigger
 
 ```wurst

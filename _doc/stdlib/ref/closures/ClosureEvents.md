@@ -19,11 +19,11 @@ for easy global and per-unit event listening via closures.
 To listen to an event, simply #add, optionally passing a target unit:
 
 ```wurst
-	EventListener.add(EVENT_PLAYER_UNIT_DEATH) ->
-	 <any unit death actions>
+EventListener.add(EVENT_PLAYER_UNIT_DEATH) ->
+ <any unit death actions>
 
-	EventListener.add(someUnit, EVENT_PLAYER_UNIT_DEATH) ->
-	 <only 'someUnit' death actions>
+EventListener.add(someUnit, EVENT_PLAYER_UNIT_DEATH) ->
+ <only 'someUnit' death actions>
 ```
 
 For spell handling there are comfort wrappers via the `on` prefix:
@@ -61,6 +61,10 @@ EventListener.onPointCast(myUnit, MY_SPELL_ID) (caster, target) ->
 public abstract class OnCastListener
 ```
 
+**Members:**
+
+- `abstract function fire(unit caster)`
+
 ### OnCast
 
 ```wurst
@@ -94,6 +98,23 @@ public abstract class OnUnitCast extends OnCastListener
 - `override function fire(unit caster)`
 - `abstract function fireEx(unit caster, unit target)`
 
+### CastListenerMap
+
+```wurst
+public class CastListenerMap extends HashMap<int, OnCastListener>
+```
+
+Ability id -> the first cast listener registered for it, as a chain through next and prev.
+	This is what EventListener.castMap always was, a HashMap. A cast reads the listener from a native table on
+	Lua instead, which put and remove keep in step with the HashMap, so everything else a HashMap does still works.
+
+**Members:**
+
+- `override function get(int abilId) returns OnCastListener`
+- `override function put(int abilId, OnCastListener listener)`
+- `override function remove(int abilId)`
+- `override function flush()`
+
 ### EventListener
 
 ```wurst
@@ -102,6 +123,7 @@ public abstract class EventListener
 
 **Members:**
 
+- <a id="eventlistener-castMap"></a> `static constant castMap = new CastListenerMap()`
 - `abstract function onEvent()`
 - `static function add(eventid eventId, EventListener listener) returns EventListener`
 - `static function add(unit u, eventid eventId, EventListener listener) returns EventListener`
@@ -113,6 +135,14 @@ public abstract class EventListener
 - `static function onTargetCast(int abilId, OnUnitCast listener) returns OnUnitCast`
 - `static function onPointCast(int abilId, OnPointCast listener) returns OnPointCast`
 - `static function generalEventCallback()`
+- `static function damagedCallback()`
+  The damage events are the busiest, so they are delivered with the id they were registered with. That holds
+  		while nobody else can have registered an event on their trigger: once getPlayerUnitEventTrigger has handed it
+  		out, the engine is asked which event fired, as it is for every other event. One way to put an event on the
+  		trigger is not seen: a listener which takes it with GetTriggeringTrigger and registers an event on it, the same
+  		limit as stated at getPlayerUnitEventTrigger. Asking the engine on every delivery would cover it and give back
+  		the gain, which is about 1.5 us per hit.
+- `static function damagingCallback()`
 - `static function onSpellEffect()`
 
 ## Functions

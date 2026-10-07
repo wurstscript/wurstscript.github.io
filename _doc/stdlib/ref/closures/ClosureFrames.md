@@ -20,6 +20,10 @@ toc: sections
 public abstract class FrameHandleListener
 ```
 
+**Members:**
+
+- `abstract function onEvent()`
+
 ## Extension Functions
 
 ### framehandle.onCheckboxCheck

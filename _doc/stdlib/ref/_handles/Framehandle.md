@@ -856,7 +856,7 @@ Tints a MODEL or sprite frame by its vertex colour; channels in the range 0 to 2
 	BACKDROP, an image (which is a backdrop), or a glue button. To recolour such elements, swap the
 	texture (setTexture) or use a differently coloured FDF backdrop; for text use the font colour or
 ```wurst
-	cAARRGGBB ... |r colour codes.
+cAARRGGBB ... |r colour codes.
 ```
 
 ### framehandle.setVertexColor
@@ -973,6 +973,28 @@ public function framehandle.getChild(int index) returns framehandle
 
 Get child frame handle from given index.
 	The index must be in the range 0 <= index < getChildrenCount(). Out-of-bounds access can crash.
+
+### framehandle.setTextAreaAutoScroll
+
+```wurst
+public function framehandle.setTextAreaAutoScroll(boolean enabled)
+```
+
+### vec2.frameToPixel
+
+```wurst
+public function vec2.frameToPixel() returns vec2
+```
+
+Converts frame coordinates to window pixels.
+
+### vec2.pixelToFrame
+
+```wurst
+public function vec2.pixelToFrame() returns vec2
+```
+
+Converts window pixels to frame coordinates.
 
 ## Constants
 

@@ -19,3 +19,287 @@ toc: sections
 ```wurst
 public class Soundsets
 ```
+
+**Members:**
+
+- <a id="soundsets-abomination"></a> `static constant abomination = "Abomination"`
+- <a id="soundsets-acolyte"></a> `static constant acolyte = "Acolyte"`
+- <a id="soundsets-albatross"></a> `static constant albatross = "Albatross"`
+- <a id="soundsets-altarOfDarkness"></a> `static constant altarOfDarkness = "AltarOfDarkness"`
+- <a id="soundsets-altarOfDepths"></a> `static constant altarOfDepths = "AltarOfDepths"`
+- <a id="soundsets-altarOfElders"></a> `static constant altarOfElders = "AltarOfElders"`
+- <a id="soundsets-altarOfKings"></a> `static constant altarOfKings = "AltarOfKings"`
+- <a id="soundsets-altarOfStorms"></a> `static constant altarOfStorms = "AltarOfStorms"`
+- <a id="soundsets-ammoDump"></a> `static constant ammoDump = "AmmoDump"`
+- <a id="soundsets-ancestralGuardian"></a> `static constant ancestralGuardian = "AncestralGuardian" // Only us`
+- <a id="soundsets-ancientOfLore"></a> `static constant ancientOfLore = "AncientOfLore"`
+- <a id="soundsets-ancientOfWar"></a> `static constant ancientOfWar = "AncientOfWar"`
+- <a id="soundsets-ancientOfWind"></a> `static constant ancientOfWind = "AncientOfWind"`
+- <a id="soundsets-ancientOfWonder"></a> `static constant ancientOfWonder = "AncientOfWonder"`
+- <a id="soundsets-ancientProtector"></a> `static constant ancientProtector = "AncientProtector"`
+- <a id="soundsets-arcaneObservatory"></a> `static constant arcaneObservatory = "ArcaneObservatory"`
+- <a id="soundsets-arcaneSanctum"></a> `static constant arcaneSanctum = "ArcaneSanctum"`
+- <a id="soundsets-arcaneVault"></a> `static constant arcaneVault = "ArcaneVault"`
+- <a id="soundsets-archer"></a> `static constant archer = "Archer"`
+- <a id="soundsets-archnathid"></a> `static constant archnathid = "Archnathid" // Misspell`
+- <a id="soundsets-arthas"></a> `static constant arthas = "Arthas"`
+- <a id="soundsets-assassin"></a> `static constant assassin = "Assassin"`
+- <a id="soundsets-azureDragon"></a> `static constant azureDragon = "AzureDragon"`
+- <a id="soundsets-ballista"></a> `static constant ballista = "Ballista"`
+- <a id="soundsets-bandit"></a> `static constant bandit = "Bandit"`
+- <a id="soundsets-banshee"></a> `static constant banshee = "Banshee"`
+- <a id="soundsets-bansheeGhost"></a> `static constant bansheeGhost = "BansheeGhost" // Only us`
+- <a id="soundsets-bansheeRanger"></a> `static constant bansheeRanger = "BansheeRanger" // Only us`
+- <a id="soundsets-barrowDens"></a> `static constant barrowDens = "BarrowDens" // BarrowDen in theirs`
+- <a id="soundsets-batTroll"></a> `static constant batTroll = "TrollBatrider" // Only us`
+- <a id="soundsets-bearDen"></a> `static constant bearDen = "BearDen"`
+- <a id="soundsets-beastiary"></a> `static constant beastiary = "Beastiary"`
+- <a id="soundsets-beastmaster"></a> `static constant beastmaster = "Beastmaster"`
+- <a id="soundsets-blackDragon"></a> `static constant blackDragon = "BlackDragon" // Only us`
+- <a id="soundsets-blackStagMale"></a> `static constant blackStagMale = "BlackStagMale" // Only us`
+- <a id="soundsets-blacksmith"></a> `static constant blacksmith = "Blacksmith"`
+- <a id="soundsets-bloodElfDragonHawk"></a> `static constant bloodElfDragonHawk = "BloodElfDragonHawk"`
+- <a id="soundsets-bloodElfPeasant"></a> `static constant bloodElfPeasant = "BloodElfPeasant"`
+- <a id="soundsets-bloodElfSpellThief"></a> `static constant bloodElfSpellThief = "BloodElfSpellThief"`
+- <a id="soundsets-boneYard"></a> `static constant boneYard = "BoneYard"`
+- <a id="soundsets-bridgeObelisk"></a> `static constant bridgeObelisk = "BridgeObelisk"`
+- <a id="soundsets-bristleBack"></a> `static constant bristleBack = "BristleBack"`
+- <a id="soundsets-cairne"></a> `static constant cairne = "Cairne"`
+- <a id="soundsets-catapult"></a> `static constant catapult = "Catapult"`
+- <a id="soundsets-centaur"></a> `static constant centaur = "Centaur"`
+- <a id="soundsets-centaurArcher"></a> `static constant centaurArcher = "CentaurArcher"`
+- <a id="soundsets-chaosWarlord"></a> `static constant chaosWarlord = "ChaosWarlord"`
+- <a id="soundsets-chieftainHut"></a> `static constant chieftainHut = "ChieftainHut" // Only us`
+- <a id="soundsets-chimaera"></a> `static constant chimaera = "Chimaera"`
+- <a id="soundsets-chimaeraRoost"></a> `static constant chimaeraRoost = "ChimaeraRoost"`
+- <a id="soundsets-coralBed"></a> `static constant coralBed = "CoralBed"`
+- <a id="soundsets-corruptedEnt"></a> `static constant corruptedEnt = "CorruptedEnt"`
+- <a id="soundsets-crypt"></a> `static constant crypt = "Crypt"`
+- <a id="soundsets-cryptFiend"></a> `static constant cryptFiend = "CryptFiend"`
+- <a id="soundsets-demoness"></a> `static constant demoness = "Demoness"`
+- <a id="soundsets-direWolf"></a> `static constant direWolf = "DireWolf" // Only us`
+- <a id="soundsets-doomGuard"></a> `static constant doomGuard = "DoomGuard"`
+- <a id="soundsets-dragonRoost"></a> `static constant dragonRoost = "DragonRoost"`
+- <a id="soundsets-dragonSpawnBlue"></a> `static constant dragonSpawnBlue = "DragonSpawnBlue"`
+- <a id="soundsets-dranai"></a> `static constant dranai = "Dranai" // Missspell (Dranei)`
+- <a id="soundsets-dranaiAkama"></a> `static constant dranaiAkama = "DranaiAkama" // Onlu us. Misspell (Dranei)`
+- <a id="soundsets-draneiHut0"></a> `static constant draneiHut0 = "DraneiHut0" // Not zero`
+- <a id="soundsets-drekThar"></a> `static constant drekThar = "DrekThar" // Only us`
+- <a id="soundsets-druidOfTheClaw"></a> `static constant druidOfTheClaw = "DruidOfTheClaw"`
+- <a id="soundsets-druidOfTheTalon"></a> `static constant druidOfTheTalon = "DruidOfTheTalon"`
+- <a id="soundsets-dryad"></a> `static constant dryad = "Dryad"`
+- <a id="soundsets-duneWorm"></a> `static constant duneWorm = "DuneWorm" // Only us`
+- <a id="soundsets-earthPandarenBrewmaster"></a> `static constant earthPandarenBrewmaster = "EarthPandarenBrewmaster"`
+- <a id="soundsets-elvenFarm"></a> `static constant elvenFarm = "ElvenFarm"`
+- <a id="soundsets-elvenGuardTower"></a> `static constant elvenGuardTower = "ElvenGuardTower"`
+- <a id="soundsets-ent"></a> `static constant ent = "Ent"`
+- <a id="soundsets-entangledGoldmine"></a> `static constant entangledGoldmine = "EntangledGoldmine"`
+- <a id="soundsets-evilArthas"></a> `static constant evilArthas = "EvilArthas"`
+- <a id="soundsets-evilSylvanas"></a> `static constant evilSylvanas = "EvilSylvanas"`
+- <a id="soundsets-facelessOne"></a> `static constant facelessOne = "FacelessOne"`
+- <a id="soundsets-faerieDragon"></a> `static constant faerieDragon = "FaerieDragon"`
+- <a id="soundsets-farm"></a> `static constant farm = "Farm"`
+- <a id="soundsets-felgaurd"></a> `static constant felgaurd = "Felgaurd" // Only us (misspell)`
+- <a id="soundsets-felhound"></a> `static constant felhound = "felhound"`
+- <a id="soundsets-firePandarenBrewmaster"></a> `static constant firePandarenBrewmaster = "FirePandarenBrewmaster"`
+- <a id="soundsets-footman"></a> `static constant footman = "Footman"`
+- <a id="soundsets-forestTroll"></a> `static constant forestTroll = "ForestTroll"`
+- <a id="soundsets-forestTrollShadowPriest"></a> `static constant forestTrollShadowPriest = "ForestTrollShadowPriest"`
+- <a id="soundsets-forgottenOne"></a> `static constant forgottenOne = "ForgottenOne" // Only us`
+- <a id="soundsets-fountainOfLife"></a> `static constant fountainOfLife = "FountainOfLife"`
+- <a id="soundsets-frostWyrm"></a> `static constant frostWyrm = "FrostWyrm"`
+- <a id="soundsets-frostmourne"></a> `static constant frostmourne = "Frostmourne" // Only us`
+- <a id="soundsets-furbolg"></a> `static constant furbolg = "Furbolg"`
+- <a id="soundsets-furion"></a> `static constant furion = "Furion"`
+- <a id="soundsets-gargoyle"></a> `static constant gargoyle = "Gargoyle"`
+- <a id="soundsets-gargoyleSpire"></a> `static constant gargoyleSpire = "GargoyleSpire"`
+- <a id="soundsets-ghoul"></a> `static constant ghoul = "Ghoul"`
+- <a id="soundsets-giantSeaTurtle"></a> `static constant giantSeaTurtle = "GiantSeaTurtle"`
+- <a id="soundsets-gnoll"></a> `static constant gnoll = "Gnoll"`
+- <a id="soundsets-gnollArcher"></a> `static constant gnollArcher = "GnollArcher"`
+- <a id="soundsets-goblinLandMine"></a> `static constant goblinLandMine = "GoblinLandMine" // Only us`
+- <a id="soundsets-goblinSapper"></a> `static constant goblinSapper = "GoblinSapper"`
+- <a id="soundsets-goblinShipyard"></a> `static constant goblinShipyard = "GoblinShipyard"`
+- <a id="soundsets-goblinZeppelin"></a> `static constant goblinZeppelin = "GoblinZeppelin"`
+- <a id="soundsets-goldMine"></a> `static constant goldMine = "GoldMine"`
+- <a id="soundsets-golemStatue"></a> `static constant golemStatue = "GolemStatue" // Only us`
+- <a id="soundsets-graveyard"></a> `static constant graveyard = "Graveyard"`
+- <a id="soundsets-greatHall"></a> `static constant greatHall = "GreatHall"`
+- <a id="soundsets-grizzlyBear"></a> `static constant grizzlyBear = "GrizzlyBear"`
+- <a id="soundsets-grunt"></a> `static constant grunt = "Grunt"`
+- <a id="soundsets-gryphonAviary"></a> `static constant gryphonAviary = "GryphonAviary"`
+- <a id="soundsets-gryphonRider"></a> `static constant gryphonRider = "GryphonRider"`
+- <a id="soundsets-gyroCopter"></a> `static constant gyroCopter = "GyroCopter"`
+- <a id="soundsets-harpy"></a> `static constant harpy = "Harpy"`
+- <a id="soundsets-hauntedMine"></a> `static constant hauntedMine = "HauntedMine"`
+- <a id="soundsets-headHunter"></a> `static constant headHunter = "HeadHunter"`
+- <a id="soundsets-healingWard"></a> `static constant healingWard = "HealingWard" // Only us`
+- <a id="soundsets-hellscream"></a> `static constant hellscream = "Grom" // Only us (Might be their Grom)`
+- <a id="soundsets-hermitCrab"></a> `static constant hermitCrab = "HermitCrab" // Only us`
+- <a id="soundsets-heroArchMage"></a> `static constant heroArchMage = "HeroArchMage"`
+- <a id="soundsets-heroBladeMaster"></a> `static constant heroBladeMaster = "HeroBladeMaster"`
+- <a id="soundsets-heroBloodElf"></a> `static constant heroBloodElf = "HeroBloodElf" // Only us`
+- <a id="soundsets-heroCryptLord"></a> `static constant heroCryptLord = "HeroCryptLord"`
+- <a id="soundsets-heroDeathKnight"></a> `static constant heroDeathKnight = "HeroDeathKnight"`
+- <a id="soundsets-heroDemonHunter"></a> `static constant heroDemonHunter = "HeroDemonHunter"`
+- <a id="soundsets-heroDreadLord"></a> `static constant heroDreadLord = "HeroDreadLord"`
+- <a id="soundsets-heroFarseer"></a> `static constant heroFarseer = "HeroFarseer"`
+- <a id="soundsets-heroGoblinAlchemist"></a> `static constant heroGoblinAlchemist = "HeroGoblinAlchemist"`
+- <a id="soundsets-heroKeeperOfTheGrove"></a> `static constant heroKeeperOfTheGrove = "HeroKeeperOfTheGrove"`
+- <a id="soundsets-heroLich"></a> `static constant heroLich = "HeroLich"`
+- <a id="soundsets-heroMoonPriestess"></a> `static constant heroMoonPriestess = "HeroMoonPriestess"`
+- <a id="soundsets-heroMountainKing"></a> `static constant heroMountainKing = "HeroMountainKing"`
+- <a id="soundsets-heroNagaSeawitch"></a> `static constant heroNagaSeawitch = "HeroNagaSeawitch" // Only us`
+- <a id="soundsets-heroPaladin"></a> `static constant heroPaladin = "HeroPaladin"`
+- <a id="soundsets-heroPitLord"></a> `static constant heroPitLord = "HeroPitLord"`
+- <a id="soundsets-heroShadowHunter"></a> `static constant heroShadowHunter = "HeroShadowHunter"`
+- <a id="soundsets-heroTaurenChieftain"></a> `static constant heroTaurenChieftain = "HeroTaurenChieftain"`
+- <a id="soundsets-heroWarden"></a> `static constant heroWarden = "HeroWarden"`
+- <a id="soundsets-hippoGryph"></a> `static constant hippoGryph = "HippoGryph"`
+- <a id="soundsets-humanBarracks"></a> `static constant humanBarracks = "HumanBarracks"`
+- <a id="soundsets-humanLumberMill"></a> `static constant humanLumberMill = "HumanLumberMill"`
+- <a id="soundsets-humanTower"></a> `static constant humanTower = "HumanTower" // Only us (Might be their GuardTower)`
+- <a id="soundsets-humanTransportShip"></a> `static constant humanTransportShip = "HumanTransportShip" // Only us (Might be their Boat)`
+- <a id="soundsets-huntersHall"></a> `static constant huntersHall = "HuntersHall"`
+- <a id="soundsets-huntress"></a> `static constant huntress = "Huntress"`
+- <a id="soundsets-hydra"></a> `static constant hydra = "Hydra" // Only us`
+- <a id="soundsets-hydralisk"></a> `static constant hydralisk = "Hydralisk"`
+- <a id="soundsets-iceTroll"></a> `static constant iceTroll = "IceTroll"`
+- <a id="soundsets-illidan"></a> `static constant illidan = "Illidan"`
+- <a id="soundsets-illidanEvilCaged"></a> `static constant illidanEvilCaged = "IllidanEvilCaged" // Only us`
+- <a id="soundsets-infernal"></a> `static constant infernal = "Infernal" // Only us. Possibly their InfernalMachine`
+- <a id="soundsets-infernalCannonCannon"></a> `static constant infernalCannonCannon = "InfernalCannonCannon" // only us`
+- <a id="soundsets-infernalCannonFlame"></a> `static constant infernalCannonFlame = "InfernalCannonFlame" // only us`
+- <a id="soundsets-ironGolem"></a> `static constant ironGolem = "IronGolem"`
+- <a id="soundsets-jaina"></a> `static constant jaina = "Jaina"`
+- <a id="soundsets-kael"></a> `static constant kael = "Kael"`
+- <a id="soundsets-kelThuzadLich"></a> `static constant kelThuzadLich = "KelThuzadLich"`
+- <a id="soundsets-kelThuzadNecro"></a> `static constant kelThuzadNecro = "KelThuzadNecro"`
+- <a id="soundsets-knight"></a> `static constant knight = "Knight"`
+- <a id="soundsets-knightNoRider"></a> `static constant knightNoRider = "KnightNoRider"`
+- <a id="soundsets-kobold"></a> `static constant kobold = "Kobold"`
+- <a id="soundsets-kotoBeast"></a> `static constant kotoBeast = "KotoBeast"`
+- <a id="soundsets-ladyVashj"></a> `static constant ladyVashj = "LadyVashj"`
+- <a id="soundsets-lobstrokkblue"></a> `static constant lobstrokkblue = "Lobstrokkblue" // Only us`
+- <a id="soundsets-locust"></a> `static constant locust = "Locust" // Only us`
+- <a id="soundsets-lordGarithos"></a> `static constant lordGarithos = "LordGarithos" // Only us (might be their Garithos)`
+- <a id="soundsets-mageTower"></a> `static constant mageTower = "MageTower"`
+- <a id="soundsets-magnataur"></a> `static constant magnataur = "Magnataur"`
+- <a id="soundsets-maiev"></a> `static constant maiev = "Maiev"`
+- <a id="soundsets-malFurion"></a> `static constant malFurion = "MalFurion"`
+- <a id="soundsets-mammoth"></a> `static constant mammoth = "Mammoth"`
+- <a id="soundsets-marketPlace"></a> `static constant marketPlace = "MarketPlace"`
+- <a id="soundsets-meatwagon"></a> `static constant meatwagon = "Meatwagon"`
+- <a id="soundsets-mercenary"></a> `static constant mercenary = "Mercenary"`
+- <a id="soundsets-moonWell"></a> `static constant moonWell = "MoonWell"`
+- <a id="soundsets-mortarTeam"></a> `static constant mortarTeam = "MortarTeam"`
+- <a id="soundsets-mountainGiant"></a> `static constant mountainGiant = "MountainGiant"`
+- <a id="soundsets-muradin"></a> `static constant muradin = "Muradin"`
+- <a id="soundsets-murgulBloodGill"></a> `static constant murgulBloodGill = "MurgulBloodGill" // Only us`
+- <a id="soundsets-murloc"></a> `static constant murloc = "Murloc"`
+- <a id="soundsets-nagaMyrmidon"></a> `static constant nagaMyrmidon = "NagaMyrmidon"`
+- <a id="soundsets-nagaRoyalGuard"></a> `static constant nagaRoyalGuard = "NagaRoyalGuard"`
+- <a id="soundsets-nagaSiren"></a> `static constant nagaSiren = "NagaSiren"`
+- <a id="soundsets-naisha"></a> `static constant naisha = "Naisha"`
+- <a id="soundsets-nazgrel"></a> `static constant nazgrel = "Nazgrel"`
+- <a id="soundsets-necromancer"></a> `static constant necromancer = "Necromancer"`
+- <a id="soundsets-necropolis"></a> `static constant necropolis = "Necropolis"`
+- <a id="soundsets-netherDragon"></a> `static constant netherDragon = "NetherDragon"`
+- <a id="soundsets-obsidianStatue"></a> `static constant obsidianStatue = "ObsidianStatue"`
+- <a id="soundsets-ogre"></a> `static constant ogre = "Ogre"`
+- <a id="soundsets-orcBarracks"></a> `static constant orcBarracks = "OrcBarracks"`
+- <a id="soundsets-orcWarlock"></a> `static constant orcWarlock = "OrcWarlock"`
+- <a id="soundsets-owl"></a> `static constant owl = "Owl" // Only us.`
+- <a id="soundsets-owlbear"></a> `static constant owlbear = "Owlbear"`
+- <a id="soundsets-pandarenBrewmaster"></a> `static constant pandarenBrewmaster = "PandarenBrewmaster"`
+- <a id="soundsets-peasant"></a> `static constant peasant = "Peasant"`
+- <a id="soundsets-penguin"></a> `static constant penguin = "Penguin"`
+- <a id="soundsets-peon"></a> `static constant peon = "Peon"`
+- <a id="soundsets-phoenix"></a> `static constant phoenix = "Phoenix"`
+- <a id="soundsets-pig"></a> `static constant pig = "Pig"`
+- <a id="soundsets-pigFarm"></a> `static constant pigFarm = "PigFarm"`
+- <a id="soundsets-pitlord"></a> `static constant pitlord = "Pitlord"`
+- <a id="soundsets-priest"></a> `static constant priest = "Priest"`
+- <a id="soundsets-quillBeast"></a> `static constant quillBeast = "QuillBeast"`
+- <a id="soundsets-rat"></a> `static constant rat = "Rat"`
+- <a id="soundsets-razorMane"></a> `static constant razorMane = "RazorMane"`
+- <a id="soundsets-revenant"></a> `static constant revenant = "Revenant"`
+- <a id="soundsets-riddenHippoGryph"></a> `static constant riddenHippoGryph = "RiddenHippoGryph"`
+- <a id="soundsets-rifleman"></a> `static constant rifleman = "Rifleman"`
+- <a id="soundsets-rockGolem"></a> `static constant rockGolem = "RockGolem"`
+- <a id="soundsets-rokhan"></a> `static constant rokhan = "Rokhan"`
+- <a id="soundsets-runner"></a> `static constant runner = "Runner"`
+- <a id="soundsets-sacrificialPit"></a> `static constant sacrificialPit = "SacrificialPit"`
+- <a id="soundsets-satyr"></a> `static constant satyr = "Satyr"`
+- <a id="soundsets-scarab"></a> `static constant scarab = "Scarab"`
+- <a id="soundsets-seaGiant"></a> `static constant seaGiant = "SeaGiant"`
+- <a id="soundsets-seal"></a> `static constant seal = "Seal"`
+- <a id="soundsets-sentryWard"></a> `static constant sentryWard = "SentryWard" // Only us.`
+- <a id="soundsets-shade"></a> `static constant shade = "Shade"`
+- <a id="soundsets-shaman"></a> `static constant shaman = "Shaman"`
+- <a id="soundsets-shandris"></a> `static constant shandris = "Shandris"`
+- <a id="soundsets-sheep"></a> `static constant sheep = "Sheep"`
+- <a id="soundsets-shrineOfAshjara"></a> `static constant shrineOfAshjara = "ShrineOfAshjara"`
+- <a id="soundsets-skeleton"></a> `static constant skeleton = "Skeleton"`
+- <a id="soundsets-skink"></a> `static constant skink = "Skink"`
+- <a id="soundsets-slaughterHouse"></a> `static constant slaughterHouse = "SlaughterHouse"`
+- <a id="soundsets-sludgeMonster"></a> `static constant sludgeMonster = "SludgeMonster"`
+- <a id="soundsets-snapDragon"></a> `static constant snapDragon = "SnapDragon"`
+- <a id="soundsets-snowOwl"></a> `static constant snowOwl = "SnowOwl"`
+- <a id="soundsets-sorceress"></a> `static constant sorceress = "Sorceress"`
+- <a id="soundsets-spawningGrounds"></a> `static constant spawningGrounds = "SpawningGrounds"`
+- <a id="soundsets-spider"></a> `static constant spider = "Spider"`
+- <a id="soundsets-spiderCrab"></a> `static constant spiderCrab = "SpiderCrab" // Only us.`
+- <a id="soundsets-spiritLodge"></a> `static constant spiritLodge = "SpiritLodge"`
+- <a id="soundsets-spiritOfVengeance"></a> `static constant spiritOfVengeance = "SpiritOfVengeance"`
+- <a id="soundsets-spiritWalker"></a> `static constant spiritWalker = "SpiritWalker"`
+- <a id="soundsets-spiritwolf"></a> `static constant spiritwolf = "Spiritwolf"`
+- <a id="soundsets-stasisTotem"></a> `static constant stasisTotem = "StasisTotem" // Only us.`
+- <a id="soundsets-steamTank"></a> `static constant steamTank = "SteamTank"`
+- <a id="soundsets-stormPandarenBrewmaster"></a> `static constant stormPandarenBrewmaster = "StormPandarenBrewmaster"`
+- <a id="soundsets-sylvanusWindrunner"></a> `static constant sylvanusWindrunner = "SylvanusWindrunner"`
+- <a id="soundsets-tauren"></a> `static constant tauren = "Tauren"`
+- <a id="soundsets-taurenTotem"></a> `static constant taurenTotem = "TaurenTotem"`
+- <a id="soundsets-tavern"></a> `static constant tavern = "Tavern" // Only us.`
+- <a id="soundsets-templeOfTheDamned"></a> `static constant templeOfTheDamned = "TempleOfTheDamned"`
+- <a id="soundsets-templeofTides"></a> `static constant templeofTides = "TempleofTides"`
+- <a id="soundsets-theCaptain"></a> `static constant theCaptain = "TheCaptain" // Only us. (Probably Captain)`
+- <a id="soundsets-thrall"></a> `static constant thrall = "Thrall"`
+- <a id="soundsets-tichondrius"></a> `static constant tichondrius = "Tichondrius"`
+- <a id="soundsets-tidalGuardian"></a> `static constant tidalGuardian = "TidalGuardian"`
+- <a id="soundsets-tombOfRelics"></a> `static constant tombOfRelics = "TombOfRelics"`
+- <a id="soundsets-townHall"></a> `static constant townHall = "TownHall"`
+- <a id="soundsets-treeOfLife"></a> `static constant treeOfLife = "TreeOfLife"`
+- <a id="soundsets-trollBurrow"></a> `static constant trollBurrow = "TrollBurrow"`
+- <a id="soundsets-trollBurrowReinforced"></a> `static constant trollBurrowReinforced = "TrollBurrowReinforced"`
+- <a id="soundsets-tuskar"></a> `static constant tuskar = "tuskar"`
+- <a id="soundsets-tyrande"></a> `static constant tyrande = "Tyrande"`
+- <a id="soundsets-unbroken"></a> `static constant unbroken = "Unbroken"`
+- <a id="soundsets-undeadAirBarge"></a> `static constant undeadAirBarge = "UndeadAirBarge" // Only us.`
+- <a id="soundsets-uther"></a> `static constant uther = "Uther"`
+- <a id="soundsets-varimathras"></a> `static constant varimathras = "Varimathras"`
+- <a id="soundsets-vengeance"></a> `static constant vengeance = "Vengeance"`
+- <a id="soundsets-villagerKid"></a> `static constant villagerKid = "VillagerKid"`
+- <a id="soundsets-villagerMan"></a> `static constant villagerMan = "VillagerMan"`
+- <a id="soundsets-villagerMan1"></a> `static constant villagerMan1 = "VillagerMan1" // Only us.`
+- <a id="soundsets-villagerWoman"></a> `static constant villagerWoman = "VillagerWoman"`
+- <a id="soundsets-voodooLounge"></a> `static constant voodooLounge = "VoodooLounge"`
+- <a id="soundsets-vulture"></a> `static constant vulture = "Vulture"`
+- <a id="soundsets-warEagle"></a> `static constant warEagle = "WarEagle"`
+- <a id="soundsets-warMill"></a> `static constant warMill = "WarMill"`
+- <a id="soundsets-warlock"></a> `static constant warlock = "Warlock" // Only us.`
+- <a id="soundsets-watchTower"></a> `static constant watchTower = "WatchTower"`
+- <a id="soundsets-watcher"></a> `static constant watcher = "Watcher"`
+- <a id="soundsets-waterElemental"></a> `static constant waterElemental = "WaterElemental"`
+- <a id="soundsets-waygate"></a> `static constant waygate = "Waygate"`
+- <a id="soundsets-wendigo"></a> `static constant wendigo = "Wendigo"`
+- <a id="soundsets-windSerpent"></a> `static constant windSerpent = "WindSerpent"`
+- <a id="soundsets-wisp"></a> `static constant wisp = "Wisp"`
+- <a id="soundsets-witchDoctor"></a> `static constant witchDoctor = "WitchDoctor"`
+- <a id="soundsets-wolf"></a> `static constant wolf = "Wolf"`
+- <a id="soundsets-wolfrider"></a> `static constant wolfrider = "Wolfrider"`
+- <a id="soundsets-workshop"></a> `static constant workshop = "Workshop"`
+- <a id="soundsets-wyvernRider"></a> `static constant wyvernRider = "WyvernRider"`
+- <a id="soundsets-ziggurat"></a> `static constant ziggurat = "Ziggurat"`
+- <a id="soundsets-zigguratUpgrade"></a> `static constant zigguratUpgrade = "ZigguratUpgrade"`
+- <a id="soundsets-zombie"></a> `static constant zombie = "Zombie"`

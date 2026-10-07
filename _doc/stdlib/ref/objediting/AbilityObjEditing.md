@@ -27,6 +27,8 @@ curated: /stdlib/abil_objed
 public class AbilityDefinition
 ```
 
+Create ability object data at compile time. Levels start at 1; generated field presets set all levels and add tooltip properties.
+
 **Members:**
 
 - `getNewId() returns int`
@@ -72,14 +74,22 @@ public class AbilityDefinition
 - `setMissileHomingEnabled(bool value)`
 - `setTargetAttachments(int value)`
 - `setTargetAttachmentPoint(string value)`
+  Target Attachment Point 1 / 'ata0'
 - `setTargetAttachmentPoint1(string value)`
+  Target Attachment Point 2 / 'ata1'
 - `setTargetAttachmentPoint2(string value)`
+  Target Attachment Point 3 / 'ata2'
 - `setTargetAttachmentPoint3(string value)`
+  Target Attachment Point 4 / 'ata3'
 - `setTargetAttachmentPoint4(string value)`
+  Target Attachment Point 5 / 'ata4'
 - `setTargetAttachmentPoint5(string value)`
+  Target Attachment Point 6 / 'ata5'
 - `setCasterAttachments(int value)`
 - `setCasterAttachmentPoint(string value)`
+  Caster Attachment Point 1 / 'acap'
 - `setCasterAttachmentPoint1(string value)`
+  Caster Attachment Point 2 / 'aca1'
 - `setSpecialAttachmentPoint(string value)`
 - `setAnimationNames(string value)`
 - `setTooltipNormal(int level, string value)`
@@ -101,6 +111,7 @@ public class AbilityDefinition
 - `setCheckDependencies(bool value)`
 - `setPriorityforSpellSteal(int value)`
 - `setOrderStringUseTurnOn(string value)`
+  Order String - Use/Turn On / 'aord'
 - `setOrderStringTurnOff(string value)`
 - `setOrderStringActivate(string value)`
 - `setOrderStringDeactivate(string value)`
@@ -129,12 +140,15 @@ public class AbilityDefinition
 - `presetBuffs(StringLevelClosure lc)`
 - `setEffects(int level, string value)`
 - `presetEffects(StringLevelClosure lc)`
+- `setUnitSkinList(string value)`
 
 ### AbilityDefinitionTaunt
 
 ```wurst
 public class AbilityDefinitionTaunt extends AbilityDefinition
 ```
+
+'Atau' / [AbilityIds.taunt](/stdlib/ref/_wurst/AbilityIds.html#abilityids-taunt)
 
 **Members:**
 
@@ -149,12 +163,18 @@ public class AbilityDefinitionTaunt extends AbilityDefinition
 - `presetNumberOfPulses(IntLevelClosure lc)`
 - `setIntervalBetweenPulses(int level, real value)`
 - `presetIntervalBetweenPulses(RealLevelClosure lc)`
+- `presetIntervalbetweenPulses(RealLevelClosure lc)`
+- `presetNumberofPulses(IntLevelClosure lc)`
+- `setIntervalbetweenPulses(int level, real value)`
+- `setNumberofPulses(int level, int value)`
 
 ### AbilityDefinitionPoisonArrows
 
 ```wurst
 public class AbilityDefinitionPoisonArrows extends AbilityDefinition
 ```
+
+'AEpa' / [AbilityIds.poisonArrows](/stdlib/ref/_wurst/AbilityIds.html#abilityids-poisonArrows)
 
 **Members:**
 
@@ -171,12 +191,15 @@ public class AbilityDefinitionPoisonArrows extends AbilityDefinition
 - `presetAttackSpeedFactor(RealLevelClosure lc)`
 - `setDamageperSecond(int level, real value)`
 - `presetDamageperSecond(RealLevelClosure lc)`
+- `presetStackingType(IntLevelClosure lc)`
 
 ### AbilityDefinitionRangerColdArrows
 
 ```wurst
 public class AbilityDefinitionRangerColdArrows extends AbilityDefinition
 ```
+
+'AHca' / [AbilityIds.coldArrows](/stdlib/ref/_wurst/AbilityIds.html#abilityids-coldArrows)
 
 **Members:**
 
@@ -198,6 +221,8 @@ public class AbilityDefinitionRangerColdArrows extends AbilityDefinition
 public class AbilityDefinitionSeaWitchTornado extends AbilityDefinition
 ```
 
+'ANto' / [AbilityIds.tornado](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tornado)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -209,6 +234,8 @@ public class AbilityDefinitionSeaWitchTornado extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAgilityBonusPlus4 extends AbilityDefinition
 ```
+
+'AIa4' / [AbilityIds.agilityBonusPlus4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-agilityBonusPlus4)
 
 **Members:**
 
@@ -228,6 +255,8 @@ public class AbilityDefinitionAgilityBonusPlus4 extends AbilityDefinition
 public class AbilityDefinitionAlchemistTransmute extends AbilityDefinition
 ```
 
+'ANtm' / [AbilityIds.transmute](/stdlib/ref/_wurst/AbilityIds.html#abilityids-transmute)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -245,6 +274,8 @@ public class AbilityDefinitionAlchemistTransmute extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAgilityBonusPlus3 extends AbilityDefinition
 ```
+
+'AIa3' / [AbilityIds.agilityBonusPlus3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-agilityBonusPlus3)
 
 **Members:**
 
@@ -264,6 +295,8 @@ public class AbilityDefinitionAgilityBonusPlus3 extends AbilityDefinition
 public class AbilityDefinitionAgilityBonusPlus1 extends AbilityDefinition
 ```
 
+'AIa1' / [AbilityIds.agilityBonusPlus1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-agilityBonusPlus1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -281,6 +314,8 @@ public class AbilityDefinitionAgilityBonusPlus1 extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAgilityBonusPlus2 extends AbilityDefinition
 ```
+
+'AIa2' / [AbilityIds.agilityBonusPlus2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-agilityBonusPlus2)
 
 **Members:**
 
@@ -300,6 +335,8 @@ public class AbilityDefinitionAgilityBonusPlus2 extends AbilityDefinition
 public class AbilityDefinitionAgilityBonusPlus5 extends AbilityDefinition
 ```
 
+'AIa5' / [AbilityIds.agilityBonusPlus5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-agilityBonusPlus5)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -318,6 +355,8 @@ public class AbilityDefinitionAgilityBonusPlus5 extends AbilityDefinition
 public class AbilityDefinitionThornyShieldCreep extends AbilityDefinition
 ```
 
+'ANth' / [AbilityIds.thornyShieldCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-thornyShieldCreep)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -333,6 +372,8 @@ public class AbilityDefinitionThornyShieldCreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAgilityBonusPlus6 extends AbilityDefinition
 ```
+
+'AIa6' / [AbilityIds.agilityBonusPlus6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-agilityBonusPlus6)
 
 **Members:**
 
@@ -351,6 +392,8 @@ public class AbilityDefinitionAgilityBonusPlus6 extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionBloodMageSiphonMana extends AbilityDefinition
 ```
+
+'AHdr' / [AbilityIds.siphonMana](/stdlib/ref/_wurst/AbilityIds.html#abilityids-siphonMana)
 
 **Members:**
 
@@ -380,6 +423,8 @@ public class AbilityDefinitionBloodMageSiphonMana extends AbilityDefinition
 public class AbilityDefinitionPossessioncreep extends AbilityDefinition
 ```
 
+'ACps' / [AbilityIds.possessioncreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-possessioncreep)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -391,6 +436,8 @@ public class AbilityDefinitionPossessioncreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionPaladinDivineShield extends AbilityDefinition
 ```
+
+'AHds' / [AbilityIds.divineShield](/stdlib/ref/_wurst/AbilityIds.html#abilityids-divineShield)
 
 **Members:**
 
@@ -404,6 +451,8 @@ public class AbilityDefinitionPaladinDivineShield extends AbilityDefinition
 public class AbilityDefinitionDivineShieldCreep extends AbilityDefinition
 ```
 
+'ACds' / [AbilityIds.divineShield1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-divineShield1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -415,6 +464,8 @@ public class AbilityDefinitionDivineShieldCreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionPurgeCreep extends AbilityDefinition
 ```
+
+'ACpu' / [AbilityIds.purgeCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-purgeCreep)
 
 **Members:**
 
@@ -438,10 +489,13 @@ public class AbilityDefinitionPurgeCreep extends AbilityDefinition
 public class AbilityDefinitionRoarcreepSkeletalOrc extends AbilityDefinition
 ```
 
+'ACr1' / [AbilityIds.roarcreepSkeletalOrc](/stdlib/ref/_wurst/AbilityIds.html#abilityids-roarcreepSkeletalOrc)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setDamageIncrease(int level, real value)`
+  Damage Increase (%) / 'Roa1'
 - `presetDamageIncrease(RealLevelClosure lc)`
 - `setDefenseIncrease(int level, int value)`
 - `presetDefenseIncrease(IntLevelClosure lc)`
@@ -462,6 +516,8 @@ public class AbilityDefinitionRoarcreepSkeletalOrc extends AbilityDefinition
 public class AbilityDefinitionTauntCreep extends AbilityDefinition
 ```
 
+'ANta' / [AbilityIds.taunt1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-taunt1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -475,12 +531,18 @@ public class AbilityDefinitionTauntCreep extends AbilityDefinition
 - `presetNumberOfPulses(IntLevelClosure lc)`
 - `setIntervalBetweenPulses(int level, real value)`
 - `presetIntervalBetweenPulses(RealLevelClosure lc)`
+- `presetIntervalbetweenPulses(RealLevelClosure lc)`
+- `presetNumberofPulses(IntLevelClosure lc)`
+- `setIntervalbetweenPulses(int level, real value)`
+- `setNumberofPulses(int level, int value)`
 
 ### AbilityDefinitionRejuvinationFurbolg
 
 ```wurst
 public class AbilityDefinitionRejuvinationFurbolg extends AbilityDefinition
 ```
+
+'ACr2' / [AbilityIds.rejuvenation](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rejuvenation)
 
 **Members:**
 
@@ -493,12 +555,15 @@ public class AbilityDefinitionRejuvinationFurbolg extends AbilityDefinition
 - `presetHitPointsGained(RealLevelClosure lc)`
 - `setAllowWhenFull(int level, AllowWhenFull value)`
 - `presetAllowWhenFull(IntLevelClosure lc)`
+- `setAllowWhenFull(int level, int value)`
 
 ### AbilityDefinitionPulverizecreep
 
 ```wurst
 public class AbilityDefinitionPulverizecreep extends AbilityDefinition
 ```
+
+'ACpv' / [AbilityIds.pulverize1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-pulverize1)
 
 **Members:**
 
@@ -510,6 +575,7 @@ public class AbilityDefinitionPulverizecreep extends AbilityDefinition
 - `setFullDamageRadius(int level, real value)`
 - `presetFullDamageRadius(RealLevelClosure lc)`
 - `setChancetoStomp(int level, real value)`
+  Chance to Stomp (%) / 'War1'
 - `presetChancetoStomp(RealLevelClosure lc)`
 
 ### AbilityDefinitionBeastMasterSummonHawk
@@ -517,6 +583,8 @@ public class AbilityDefinitionPulverizecreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionBeastMasterSummonHawk extends AbilityDefinition
 ```
+
+'ANsw' / [AbilityIds.beastMasterSummonHawk](/stdlib/ref/_wurst/AbilityIds.html#abilityids-beastMasterSummonHawk)
 
 **Members:**
 
@@ -531,6 +599,8 @@ public class AbilityDefinitionBeastMasterSummonHawk extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionTinkererSummonFactoryLevel0 extends AbilityDefinition
 ```
+
+'ANsy' / [AbilityIds.tinkererSummonFactoryLevel0](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererSummonFactoryLevel0)
 
 **Members:**
 
@@ -554,6 +624,8 @@ public class AbilityDefinitionTinkererSummonFactoryLevel0 extends AbilityDefinit
 public class AbilityDefinitionPolymorphcreep extends AbilityDefinition
 ```
 
+'ACpy' / [AbilityIds.polymorphcreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-polymorphcreep)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -573,6 +645,8 @@ public class AbilityDefinitionPolymorphcreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionBeastMasterStampede extends AbilityDefinition
 ```
+
+'ANst' / [AbilityIds.beastMasterStampede](/stdlib/ref/_wurst/AbilityIds.html#abilityids-beastMasterStampede)
 
 **Members:**
 
@@ -594,16 +668,20 @@ public class AbilityDefinitionBeastMasterStampede extends AbilityDefinition
 public class AbilityDefinitionFirelordSoulBurn extends AbilityDefinition
 ```
 
+'ANso' / [AbilityIds.soulBurn](/stdlib/ref/_wurst/AbilityIds.html#abilityids-soulBurn)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setAttackSpeedReduction(int level, real value)`
+  Attack Speed Reduction (%) / 'Nso5'
 - `presetAttackSpeedReduction(RealLevelClosure lc)`
 - `setDamageAmount(int level, real value)`
 - `presetDamageAmount(RealLevelClosure lc)`
 - `setDamagePeriod(int level, real value)`
 - `presetDamagePeriod(RealLevelClosure lc)`
 - `setMovementSpeedReduction(int level, real value)`
+  Movement Speed Reduction (%) / 'Nso4'
 - `presetMovementSpeedReduction(RealLevelClosure lc)`
 - `setDamagePenalty(int level, real value)`
 - `presetDamagePenalty(RealLevelClosure lc)`
@@ -613,6 +691,8 @@ public class AbilityDefinitionFirelordSoulBurn extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionBeastMasterSummonQuilbeast extends AbilityDefinition
 ```
+
+'ANsq' / [AbilityIds.beastMasterSummonQuilbeast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-beastMasterSummonQuilbeast)
 
 **Members:**
 
@@ -628,12 +708,16 @@ public class AbilityDefinitionBeastMasterSummonQuilbeast extends AbilityDefiniti
 public class AbilityDefinitionFrenzy extends AbilityDefinition
 ```
 
+'Afzy' / [AbilityIds.frenzy](/stdlib/ref/_wurst/AbilityIds.html#abilityids-frenzy)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setMovementSpeedIncrease(int level, real value)`
+  Movement Speed Increase (%) / 'Blo2'
 - `presetMovementSpeedIncrease(RealLevelClosure lc)`
 - `setAttackSpeedIncrease(int level, real value)`
+  Attack Speed Increase (%) / 'Blo1'
 - `presetAttackSpeedIncrease(RealLevelClosure lc)`
 - `setScalingFactor(int level, real value)`
 - `presetScalingFactor(RealLevelClosure lc)`
@@ -643,6 +727,8 @@ public class AbilityDefinitionFrenzy extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionMalganisSoulPreservation extends AbilityDefinition
 ```
+
+'ANsl' / [AbilityIds.soulPreservation](/stdlib/ref/_wurst/AbilityIds.html#abilityids-soulPreservation)
 
 **Members:**
 
@@ -655,6 +741,8 @@ public class AbilityDefinitionMalganisSoulPreservation extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionBeastMasterSummonBear extends AbilityDefinition
 ```
+
+'ANsg' / [AbilityIds.beastMasterSummonBear](/stdlib/ref/_wurst/AbilityIds.html#abilityids-beastMasterSummonBear)
 
 **Members:**
 
@@ -670,6 +758,8 @@ public class AbilityDefinitionBeastMasterSummonBear extends AbilityDefinition
 public class AbilityDefinitionDarkRangerSilence extends AbilityDefinition
 ```
 
+'ANsi' / [AbilityIds.silence](/stdlib/ref/_wurst/AbilityIds.html#abilityids-silence)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -678,6 +768,7 @@ public class AbilityDefinitionDarkRangerSilence extends AbilityDefinition
 - `setMovementSpeedModifier(int level, real value)`
 - `presetMovementSpeedModifier(RealLevelClosure lc)`
 - `setChanceToMiss(int level, real value)`
+  Chance To Miss (%) / 'Nsi2'
 - `presetChanceToMiss(RealLevelClosure lc)`
 - `setAttacksPrevented(int level, int value)`
 - `presetAttacksPrevented(IntLevelClosure lc)`
@@ -687,6 +778,8 @@ public class AbilityDefinitionDarkRangerSilence extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionSanctuary extends AbilityDefinition
 ```
+
+'ANsa' / [AbilityIds.sanctuary](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sanctuary)
 
 **Members:**
 
@@ -708,10 +801,13 @@ public class AbilityDefinitionSanctuary extends AbilityDefinition
 public class AbilityDefinitionShadowMeldInstant extends AbilityDefinition
 ```
 
+'Sshm' / [AbilityIds.shadowMeldInstant](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shadowMeldInstant)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setDayNightDuration(int level, real value)`
+  Day/Night Duration / 'Shm2'
 - `presetDayNightDuration(RealLevelClosure lc)`
 - `setActionDuration(int level, real value)`
 - `presetActionDuration(RealLevelClosure lc)`
@@ -726,6 +822,8 @@ public class AbilityDefinitionShadowMeldInstant extends AbilityDefinition
 public class AbilityDefinitionSpellShieldAOE extends AbilityDefinition
 ```
 
+'ANse' / [AbilityIds.spellShieldAOE](/stdlib/ref/_wurst/AbilityIds.html#abilityids-spellShieldAOE)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -738,12 +836,16 @@ public class AbilityDefinitionSpellShieldAOE extends AbilityDefinition
 public class AbilityDefinitionItemAuraEndurance extends AbilityDefinition
 ```
 
+'AIae' / [AbilityIds.itemAuraEndurance](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAuraEndurance)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setMovementSpeedIncrease(int level, real value)`
+  Movement Speed Increase (%) / 'Oae1'
 - `presetMovementSpeedIncrease(RealLevelClosure lc)`
 - `setAttackSpeedIncrease(int level, real value)`
+  Attack Speed Increase (%) / 'Oae2'
 - `presetAttackSpeedIncrease(RealLevelClosure lc)`
 
 ### AbilityDefinitionSpiritPigcreep
@@ -751,6 +853,8 @@ public class AbilityDefinitionItemAuraEndurance extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionSpiritPigcreep extends AbilityDefinition
 ```
+
+'ACs9' / [AbilityIds.feralSpirit1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-feralSpirit1)
 
 **Members:**
 
@@ -765,6 +869,8 @@ public class AbilityDefinitionSpiritPigcreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionUnstableConcoction extends AbilityDefinition
 ```
+
+'Auco' / [AbilityIds.unstableConcoction](/stdlib/ref/_wurst/AbilityIds.html#abilityids-unstableConcoction)
 
 **Members:**
 
@@ -788,6 +894,8 @@ public class AbilityDefinitionUnstableConcoction extends AbilityDefinition
 public class AbilityDefinitionItemAuraDevotion extends AbilityDefinition
 ```
 
+'AIad' / [AbilityIds.itemAuraDevotion](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAuraDevotion)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -802,6 +910,8 @@ public class AbilityDefinitionItemAuraDevotion extends AbilityDefinition
 public class AbilityDefinitionAttackMod extends AbilityDefinition
 ```
 
+'AIaa' / [AbilityIds.itemAttackDamageGain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackDamageGain)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -813,6 +923,8 @@ public class AbilityDefinitionAttackMod extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionMountainKingAvatar extends AbilityDefinition
 ```
+
+'AHav' / [AbilityIds.avatar](/stdlib/ref/_wurst/AbilityIds.html#abilityids-avatar)
 
 **Members:**
 
@@ -832,6 +944,8 @@ public class AbilityDefinitionMountainKingAvatar extends AbilityDefinition
 public class AbilityDefinitionAIab extends AbilityDefinition
 ```
 
+'AIab' / [AbilityIds.itemHeroStatBonus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHeroStatBonus)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -850,6 +964,8 @@ public class AbilityDefinitionAIab extends AbilityDefinition
 public class AbilityDefinitionMannorothReincarnation extends AbilityDefinition
 ```
 
+'ANrn' / [AbilityIds.reincarnation](/stdlib/ref/_wurst/AbilityIds.html#abilityids-reincarnation)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -861,6 +977,8 @@ public class AbilityDefinitionMannorothReincarnation extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAnimateDead extends AbilityDefinition
 ```
+
+'AIan' / [AbilityIds.itemAnimateDead](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAnimateDead)
 
 **Members:**
 
@@ -877,6 +995,8 @@ public class AbilityDefinitionAnimateDead extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAgilityMod extends AbilityDefinition
 ```
+
+'AIam' / [AbilityIds.itemAgilityGain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAgilityGain)
 
 **Members:**
 
@@ -895,6 +1015,8 @@ public class AbilityDefinitionAgilityMod extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionRainofFirecreep extends AbilityDefinition
 ```
+
+'ACrf' / [AbilityIds.rainofFire1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rainofFire1)
 
 **Members:**
 
@@ -918,6 +1040,8 @@ public class AbilityDefinitionRainofFirecreep extends AbilityDefinition
 public class AbilityDefinitionDreadlordSleep extends AbilityDefinition
 ```
 
+'AUsl' / [AbilityIds.sleep2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sleep2)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -929,6 +1053,8 @@ public class AbilityDefinitionDreadlordSleep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionRaiseDeadCreep extends AbilityDefinition
 ```
+
+'ACrd' / [AbilityIds.raiseDeadCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-raiseDeadCreep)
 
 **Members:**
 
@@ -950,6 +1076,8 @@ public class AbilityDefinitionRaiseDeadCreep extends AbilityDefinition
 public class AbilityDefinitionFaerieFireAfa2 extends AbilityDefinition
 ```
 
+'Afa2' / [AbilityIds.faerieFireAfa2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-faerieFireAfa2)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -964,10 +1092,13 @@ public class AbilityDefinitionFaerieFireAfa2 extends AbilityDefinition
 public class AbilityDefinitionUnholyFrenzyWarlock extends AbilityDefinition
 ```
 
+'Suhf' / [AbilityIds.unholyFrenzy1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-unholyFrenzy1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setAttackSpeedBonus(int level, real value)`
+  Attack Speed Bonus (%) / 'Uhf1'
 - `presetAttackSpeedBonus(RealLevelClosure lc)`
 - `setDamageperSecond(int level, real value)`
 - `presetDamageperSecond(RealLevelClosure lc)`
@@ -977,6 +1108,8 @@ public class AbilityDefinitionUnholyFrenzyWarlock extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionPaladinDevotionAura extends AbilityDefinition
 ```
+
+'AHad' / [AbilityIds.devotionAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-devotionAura)
 
 **Members:**
 
@@ -991,6 +1124,8 @@ public class AbilityDefinitionPaladinDevotionAura extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionTinkererRoboGoblinLevel0 extends AbilityDefinition
 ```
+
+'ANrg' / [AbilityIds.tinkererRoboGoblinLevel0](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererRoboGoblinLevel0)
 
 **Members:**
 
@@ -1018,6 +1153,8 @@ public class AbilityDefinitionTinkererRoboGoblinLevel0 extends AbilityDefinition
 public class AbilityDefinitionRejuvinationcreep extends AbilityDefinition
 ```
 
+'ACrj' / [AbilityIds.rejuvinationcreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rejuvinationcreep)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1029,12 +1166,15 @@ public class AbilityDefinitionRejuvinationcreep extends AbilityDefinition
 - `presetHitPointsGained(RealLevelClosure lc)`
 - `setAllowWhenFull(int level, AllowWhenFull value)`
 - `presetAllowWhenFull(IntLevelClosure lc)`
+- `setAllowWhenFull(int level, int value)`
 
 ### AbilityDefinitionRainofFire
 
 ```wurst
 public class AbilityDefinitionRainofFire extends AbilityDefinition
 ```
+
+'ANrf' / [AbilityIds.rainofFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rainofFire)
 
 **Members:**
 
@@ -1058,10 +1198,13 @@ public class AbilityDefinitionRainofFire extends AbilityDefinition
 public class AbilityDefinitionItemAuraVampiric extends AbilityDefinition
 ```
 
+'AIav' / [AbilityIds.itemAuraVampiric](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAuraVampiric)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setAttackDamageStolen(int level, real value)`
+  Attack Damage Stolen (%) / 'Uav1'
 - `presetAttackDamageStolen(RealLevelClosure lc)`
 
 ### AbilityDefinitionItemAuraUnholy
@@ -1070,14 +1213,18 @@ public class AbilityDefinitionItemAuraVampiric extends AbilityDefinition
 public class AbilityDefinitionItemAuraUnholy extends AbilityDefinition
 ```
 
+'AIau' / [AbilityIds.itemAuraUnholy](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAuraUnholy)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setPercentBonus(int level, bool value)`
 - `presetPercentBonus(BooleanLevelClosure lc)`
 - `setLifeRegenerationIncrease(int level, real value)`
+  Life Regeneration Increase (%) / 'Uau2'
 - `presetLifeRegenerationIncrease(RealLevelClosure lc)`
 - `setMovementSpeedIncrease(int level, real value)`
+  Movement Speed Increase (%) / 'Uau1'
 - `presetMovementSpeedIncrease(RealLevelClosure lc)`
 
 ### AbilityDefinitionArchMageBrillianceAura
@@ -1085,6 +1232,8 @@ public class AbilityDefinitionItemAuraUnholy extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionArchMageBrillianceAura extends AbilityDefinition
 ```
+
+'AHab' / [AbilityIds.brillianceAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-brillianceAura)
 
 **Members:**
 
@@ -1100,6 +1249,8 @@ public class AbilityDefinitionArchMageBrillianceAura extends AbilityDefinition
 public class AbilityDefinitionNeutralRegenmanaonly extends AbilityDefinition
 ```
 
+'ANre' / [AbilityIds.manaRegeneration](/stdlib/ref/_wurst/AbilityIds.html#abilityids-manaRegeneration)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1114,10 +1265,13 @@ public class AbilityDefinitionNeutralRegenmanaonly extends AbilityDefinition
 public class AbilityDefinitionRoarcreep extends AbilityDefinition
 ```
 
+'ACro' / [AbilityIds.roarcreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-roarcreep)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setDamageIncrease(int level, real value)`
+  Damage Increase (%) / 'Roa1'
 - `presetDamageIncrease(RealLevelClosure lc)`
 - `setDefenseIncrease(int level, int value)`
 - `presetDefenseIncrease(IntLevelClosure lc)`
@@ -1138,6 +1292,8 @@ public class AbilityDefinitionRoarcreep extends AbilityDefinition
 public class AbilityDefinitionAttackBonus extends AbilityDefinition
 ```
 
+'AIat' / [AbilityIds.itemDamageBonus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDamageBonus)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1149,6 +1305,8 @@ public class AbilityDefinitionAttackBonus extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAIas extends AbilityDefinition
 ```
+
+'AIas' / [AbilityIds.itemAttackSpeedBonus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedBonus)
 
 **Members:**
 
@@ -1162,6 +1320,8 @@ public class AbilityDefinitionAIas extends AbilityDefinition
 public class AbilityDefinitionReincarnationcreep extends AbilityDefinition
 ```
 
+'ACrn' / [AbilityIds.reincarnation1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-reincarnation1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1174,6 +1334,8 @@ public class AbilityDefinitionReincarnationcreep extends AbilityDefinition
 public class AbilityDefinitionItemAuraTrueshot extends AbilityDefinition
 ```
 
+'AIar' / [AbilityIds.itemAuraTrueshot](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAuraTrueshot)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1182,6 +1344,7 @@ public class AbilityDefinitionItemAuraTrueshot extends AbilityDefinition
 - `setRangedBonus(int level, bool value)`
 - `presetRangedBonus(BooleanLevelClosure lc)`
 - `setDamageBonus(int level, real value)`
+  Damage Bonus (%) / 'Ear1'
 - `presetDamageBonus(RealLevelClosure lc)`
 - `setMeleeBonus(int level, bool value)`
 - `presetMeleeBonus(BooleanLevelClosure lc)`
@@ -1191,6 +1354,8 @@ public class AbilityDefinitionItemAuraTrueshot extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionThunderClapThunderLizard extends AbilityDefinition
 ```
+
+'ACt2' / [AbilityIds.slam1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-slam1)
 
 **Members:**
 
@@ -1209,6 +1374,8 @@ public class AbilityDefinitionThunderClapThunderLizard extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionWardenShadowStrike extends AbilityDefinition
 ```
+
+'AEsh' / [AbilityIds.shadowStrike](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shadowStrike)
 
 **Members:**
 
@@ -1230,12 +1397,16 @@ public class AbilityDefinitionWardenShadowStrike extends AbilityDefinition
 public class AbilityDefinitionBloodMageBanish extends AbilityDefinition
 ```
 
+'AHbn' / [AbilityIds.banish](/stdlib/ref/_wurst/AbilityIds.html#abilityids-banish)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setAttackSpeedReduction(int level, real value)`
+  Attack Speed Reduction (%) / 'Hbn2'
 - `presetAttackSpeedReduction(RealLevelClosure lc)`
 - `setMovementSpeedReduction(int level, real value)`
+  Movement Speed Reduction (%) / 'Hbn1'
 - `presetMovementSpeedReduction(RealLevelClosure lc)`
 
 ### AbilityDefinitionItemAuraBrilliance
@@ -1243,6 +1414,8 @@ public class AbilityDefinitionBloodMageBanish extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionItemAuraBrilliance extends AbilityDefinition
 ```
+
+'AIba' / [AbilityIds.itemAuraBrilliance](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAuraBrilliance)
 
 **Members:**
 
@@ -1258,6 +1431,8 @@ public class AbilityDefinitionItemAuraBrilliance extends AbilityDefinition
 public class AbilityDefinitionRainofChaos extends AbilityDefinition
 ```
 
+'ANrc' / [AbilityIds.rainofChaos](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rainofChaos)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1272,6 +1447,8 @@ public class AbilityDefinitionRainofChaos extends AbilityDefinition
 public class AbilityDefinitionBuildTinyGreatHall extends AbilityDefinition
 ```
 
+'AIbg' / [AbilityIds.buildTinyGreatHall](/stdlib/ref/_wurst/AbilityIds.html#abilityids-buildTinyGreatHall)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1283,6 +1460,8 @@ public class AbilityDefinitionBuildTinyGreatHall extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionCryptLordSpikedCarapace extends AbilityDefinition
 ```
+
+'AUts' / [AbilityIds.cryptLordSpikedCarapace](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cryptLordSpikedCarapace)
 
 **Members:**
 
@@ -1300,6 +1479,8 @@ public class AbilityDefinitionCryptLordSpikedCarapace extends AbilityDefinition
 public class AbilityDefinitionCenariusBeefyStarfall extends AbilityDefinition
 ```
 
+'AEsb' / [AbilityIds.starfall1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-starfall1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1316,6 +1497,8 @@ public class AbilityDefinitionCenariusBeefyStarfall extends AbilityDefinition
 public class AbilityDefinitionMoonPriestessStarfall extends AbilityDefinition
 ```
 
+'AEsf' / [AbilityIds.starfall](/stdlib/ref/_wurst/AbilityIds.html#abilityids-starfall)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1331,6 +1514,8 @@ public class AbilityDefinitionMoonPriestessStarfall extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionArchMageBlizzard extends AbilityDefinition
 ```
+
+'AHbz' / [AbilityIds.blizzard](/stdlib/ref/_wurst/AbilityIds.html#abilityids-blizzard)
 
 **Members:**
 
@@ -1354,6 +1539,8 @@ public class AbilityDefinitionArchMageBlizzard extends AbilityDefinition
 public class AbilityDefinitionDefenseBonusPlus1 extends AbilityDefinition
 ```
 
+'AId1' / [AbilityIds.itemArmorBonus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorBonus)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1366,6 +1553,8 @@ public class AbilityDefinitionDefenseBonusPlus1 extends AbilityDefinition
 public class AbilityDefinitionSearingArrowscreep extends AbilityDefinition
 ```
 
+'ACsa' / [AbilityIds.searingArrows](/stdlib/ref/_wurst/AbilityIds.html#abilityids-searingArrows)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1377,6 +1566,8 @@ public class AbilityDefinitionSearingArrowscreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionTinkererSummonFactoryLevel1 extends AbilityDefinition
 ```
+
+'ANs1' / [AbilityIds.tinkererSummonFactoryLevel1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererSummonFactoryLevel1)
 
 **Members:**
 
@@ -1400,6 +1591,8 @@ public class AbilityDefinitionTinkererSummonFactoryLevel1 extends AbilityDefinit
 public class AbilityDefinitionDefenseBonusPlus3 extends AbilityDefinition
 ```
 
+'AId3' / [AbilityIds.defenseBonusPlus3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-defenseBonusPlus3)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1412,6 +1605,8 @@ public class AbilityDefinitionDefenseBonusPlus3 extends AbilityDefinition
 public class AbilityDefinitionDefenseBonusPlus2 extends AbilityDefinition
 ```
 
+'AId2' / [AbilityIds.defenseBonusPlus2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-defenseBonusPlus2)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1423,6 +1618,8 @@ public class AbilityDefinitionDefenseBonusPlus2 extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionTinkererSummonFactoryLevel3 extends AbilityDefinition
 ```
+
+'ANs3' / [AbilityIds.tinkererSummonFactoryLevel3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererSummonFactoryLevel3)
 
 **Members:**
 
@@ -1446,6 +1643,8 @@ public class AbilityDefinitionTinkererSummonFactoryLevel3 extends AbilityDefinit
 public class AbilityDefinitionSpiritWolfcreep extends AbilityDefinition
 ```
 
+'ACsf' / [AbilityIds.feralSpirit](/stdlib/ref/_wurst/AbilityIds.html#abilityids-feralSpirit)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1459,6 +1658,8 @@ public class AbilityDefinitionSpiritWolfcreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionTinkererSummonFactoryLevel2 extends AbilityDefinition
 ```
+
+'ANs2' / [AbilityIds.tinkererSummonFactoryLevel2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererSummonFactoryLevel2)
 
 **Members:**
 
@@ -1482,6 +1683,8 @@ public class AbilityDefinitionTinkererSummonFactoryLevel2 extends AbilityDefinit
 public class AbilityDefinitionMaxManaBonusMost extends AbilityDefinition
 ```
 
+'AIbm' / [AbilityIds.maxManaBonusMost](/stdlib/ref/_wurst/AbilityIds.html#abilityids-maxManaBonusMost)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1493,6 +1696,8 @@ public class AbilityDefinitionMaxManaBonusMost extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionShockwaveCreep extends AbilityDefinition
 ```
+
+'ACsh' / [AbilityIds.shockwave](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shockwave)
 
 **Members:**
 
@@ -1512,6 +1717,8 @@ public class AbilityDefinitionShockwaveCreep extends AbilityDefinition
 public class AbilityDefinitionBuildTinyCastle extends AbilityDefinition
 ```
 
+'AIbl' / [AbilityIds.buildTinyCastle](/stdlib/ref/_wurst/AbilityIds.html#abilityids-buildTinyCastle)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1524,6 +1731,8 @@ public class AbilityDefinitionBuildTinyCastle extends AbilityDefinition
 public class AbilityDefinitionSilenceCreep extends AbilityDefinition
 ```
 
+'ACsi' / [AbilityIds.silenceCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-silenceCreep)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1532,6 +1741,7 @@ public class AbilityDefinitionSilenceCreep extends AbilityDefinition
 - `setMovementSpeedModifier(int level, real value)`
 - `presetMovementSpeedModifier(RealLevelClosure lc)`
 - `setChanceToMiss(int level, real value)`
+  Chance To Miss (%) / 'Nsi2'
 - `presetChanceToMiss(RealLevelClosure lc)`
 - `setAttacksPrevented(int level, int value)`
 - `presetAttacksPrevented(IntLevelClosure lc)`
@@ -1541,6 +1751,8 @@ public class AbilityDefinitionSilenceCreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionSleepcreep extends AbilityDefinition
 ```
+
+'ACsl' / [AbilityIds.sleep1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sleep1)
 
 **Members:**
 
@@ -1553,6 +1765,8 @@ public class AbilityDefinitionSleepcreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionBashitem extends AbilityDefinition
 ```
+
+'AIbx' / [AbilityIds.bashitem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bashitem)
 
 **Members:**
 
@@ -1574,6 +1788,8 @@ public class AbilityDefinitionBashitem extends AbilityDefinition
 public class AbilityDefinitionDefenseBonusPlus5 extends AbilityDefinition
 ```
 
+'AId5' / [AbilityIds.defenseBonusPlus5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-defenseBonusPlus5)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1585,6 +1801,8 @@ public class AbilityDefinitionDefenseBonusPlus5 extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionMountainKingBash extends AbilityDefinition
 ```
+
+'AHbh' / [AbilityIds.bash](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bash)
 
 **Members:**
 
@@ -1605,6 +1823,8 @@ public class AbilityDefinitionMountainKingBash extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionSiphonManaCreep extends AbilityDefinition
 ```
+
+'ACsm' / [AbilityIds.siphonManaCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-siphonManaCreep)
 
 **Members:**
 
@@ -1634,6 +1854,8 @@ public class AbilityDefinitionSiphonManaCreep extends AbilityDefinition
 public class AbilityDefinitionDefenseBonusPlus4 extends AbilityDefinition
 ```
 
+'AId4' / [AbilityIds.defenseBonusPlus4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-defenseBonusPlus4)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1646,6 +1868,8 @@ public class AbilityDefinitionDefenseBonusPlus4 extends AbilityDefinition
 public class AbilityDefinitionBuildTinyScoutTower extends AbilityDefinition
 ```
 
+'AIbt' / [AbilityIds.buildTinyScoutTower](/stdlib/ref/_wurst/AbilityIds.html#abilityids-buildTinyScoutTower)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1657,6 +1881,8 @@ public class AbilityDefinitionBuildTinyScoutTower extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionItemCloakOfFlames extends AbilityDefinition
 ```
+
+'AIcf' / [AbilityIds.itemImmolation](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemImmolation)
 
 **Members:**
 
@@ -1673,6 +1899,8 @@ public class AbilityDefinitionItemCloakOfFlames extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionItemAuraCommand extends AbilityDefinition
 ```
+
+'AIcd' / [AbilityIds.itemAuraCommand](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAuraCommand)
 
 **Members:**
 
@@ -1692,6 +1920,8 @@ public class AbilityDefinitionItemAuraCommand extends AbilityDefinition
 public class AbilityDefinitionHarvest extends AbilityDefinition
 ```
 
+'Ahar' / [AbilityIds.harvest](/stdlib/ref/_wurst/AbilityIds.html#abilityids-harvest)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1708,6 +1938,8 @@ public class AbilityDefinitionHarvest extends AbilityDefinition
 public class AbilityDefinitionMagicImmunityDragons extends AbilityDefinition
 ```
 
+'ACm3' / [AbilityIds.spellImmunity1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-spellImmunity1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1720,6 +1952,8 @@ public class AbilityDefinitionMagicImmunityDragons extends AbilityDefinition
 public class AbilityDefinitionMagicImmunityArchimonde extends AbilityDefinition
 ```
 
+'ACm2' / [AbilityIds.spellImmunity](/stdlib/ref/_wurst/AbilityIds.html#abilityids-spellImmunity)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1731,6 +1965,8 @@ public class AbilityDefinitionMagicImmunityArchimonde extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionOrbofCorruption extends AbilityDefinition
 ```
+
+'AIcb' / [AbilityIds.orbofCorruption](/stdlib/ref/_wurst/AbilityIds.html#abilityids-orbofCorruption)
 
 **Members:**
 
@@ -1748,6 +1984,8 @@ public class AbilityDefinitionOrbofCorruption extends AbilityDefinition
 public class AbilityDefinitionWardenSpiritofVengeance extends AbilityDefinition
 ```
 
+'AEsv' / [AbilityIds.wardenSpiritofVengeance](/stdlib/ref/_wurst/AbilityIds.html#abilityids-wardenSpiritofVengeance)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1761,6 +1999,8 @@ public class AbilityDefinitionWardenSpiritofVengeance extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionItemChangeTOD extends AbilityDefinition
 ```
+
+'AIct' / [AbilityIds.itemChangeTOD](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemChangeTOD)
 
 **Members:**
 
@@ -1776,6 +2016,8 @@ public class AbilityDefinitionItemChangeTOD extends AbilityDefinition
 public class AbilityDefinitionMoonPriestessScout extends AbilityDefinition
 ```
 
+'AEst' / [AbilityIds.scout](/stdlib/ref/_wurst/AbilityIds.html#abilityids-scout)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1790,6 +2032,8 @@ public class AbilityDefinitionMoonPriestessScout extends AbilityDefinition
 public class AbilityDefinitionCycloneAIcy extends AbilityDefinition
 ```
 
+'AIcy' / [AbilityIds.cycloneAIcy](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cycloneAIcy)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1801,6 +2045,8 @@ public class AbilityDefinitionCycloneAIcy extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionExhume extends AbilityDefinition
 ```
+
+'Aexh' / [AbilityIds.exhume](/stdlib/ref/_wurst/AbilityIds.html#abilityids-exhume)
 
 **Members:**
 
@@ -1816,6 +2062,8 @@ public class AbilityDefinitionExhume extends AbilityDefinition
 public class AbilityDefinitionItemCommand extends AbilityDefinition
 ```
 
+'AIco' / [AbilityIds.itemCommand](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCommand)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1828,29 +2076,21 @@ public class AbilityDefinitionItemCommand extends AbilityDefinition
 public class AbilityDefinitionExperienceModgreater extends AbilityDefinition
 ```
 
+'AIe2' / [AbilityIds.experienceModgreater](/stdlib/ref/_wurst/AbilityIds.html#abilityids-experienceModgreater)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setExperienceGained(int level, int value)`
 - `presetExperienceGained(IntLevelClosure lc)`
 
-### AbilityDefinitionArmorBonus
-
-```wurst
-public class AbilityDefinitionArmorBonus extends AbilityDefinition
-```
-
-**Members:**
-
-- `construct(int newAbilityId)`
-- `setDefenseBonus(int level, int value)`
-- `presetDefenseBonus(IntLevelClosure lc)`
-
 ### AbilityDefinitionDefenseBonusPlus7
 
 ```wurst
 public class AbilityDefinitionDefenseBonusPlus7 extends AbilityDefinition
 ```
+
+'AId7' / [AbilityIds.defenseBonusPlus7](/stdlib/ref/_wurst/AbilityIds.html#abilityids-defenseBonusPlus7)
 
 **Members:**
 
@@ -1864,6 +2104,8 @@ public class AbilityDefinitionDefenseBonusPlus7 extends AbilityDefinition
 public class AbilityDefinitionDefenseBonusPlus8 extends AbilityDefinition
 ```
 
+'AId8' / [AbilityIds.defenseBonusPlus8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-defenseBonusPlus8)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1875,6 +2117,8 @@ public class AbilityDefinitionDefenseBonusPlus8 extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionDefenseBonusPlus10 extends AbilityDefinition
 ```
+
+'AId0' / [AbilityIds.defenseBonusPlus10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-defenseBonusPlus10)
 
 **Members:**
 
@@ -1888,10 +2132,13 @@ public class AbilityDefinitionDefenseBonusPlus10 extends AbilityDefinition
 public class AbilityDefinitionDefendItem extends AbilityDefinition
 ```
 
+'AIdd' / [AbilityIds.defendItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-defendItem)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setDamageTaken(int level, real value)`
+  Damage Taken (%) / 'Def1'
 - `presetDamageTaken(RealLevelClosure lc)`
 - `setChancetoDeflect(int level, real value)`
 - `presetChancetoDeflect(RealLevelClosure lc)`
@@ -1900,6 +2147,7 @@ public class AbilityDefinitionDefendItem extends AbilityDefinition
 - `setAttackSpeedFactor(int level, real value)`
 - `presetAttackSpeedFactor(RealLevelClosure lc)`
 - `setDamageDealt(int level, real value)`
+  Damage Dealt (%) / 'Def2'
 - `presetDamageDealt(RealLevelClosure lc)`
 - `setDeflectDamageTakenSpells(int level, real value)`
 - `presetDeflectDamageTakenSpells(RealLevelClosure lc)`
@@ -1914,16 +2162,21 @@ public class AbilityDefinitionDefendItem extends AbilityDefinition
 public class AbilityDefinitionOrbofDarkness extends AbilityDefinition
 ```
 
+'AIdf' / [AbilityIds.orbofDarkness](/stdlib/ref/_wurst/AbilityIds.html#abilityids-orbofDarkness)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setChanceToHitUnits(int level, real value)`
+  Chance To Hit Units (%) / 'Iob2'
 - `presetChanceToHitUnits(RealLevelClosure lc)`
 - `setEnabledAttackIndex(int level, int value)`
 - `presetEnabledAttackIndex(IntLevelClosure lc)`
 - `setChanceToHitSummons(int level, real value)`
+  Chance To Hit Summons (%) / 'Iob4'
 - `presetChanceToHitSummons(RealLevelClosure lc)`
 - `setChanceToHitHeros(int level, real value)`
+  Chance To Hit Heros (%) / 'Iob3'
 - `presetChanceToHitHeros(RealLevelClosure lc)`
 - `setDamageBonus(int level, real value)`
 - `presetDamageBonus(RealLevelClosure lc)`
@@ -1935,6 +2188,8 @@ public class AbilityDefinitionOrbofDarkness extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionItemDispelAoe extends AbilityDefinition
 ```
+
+'AIdi' / [AbilityIds.itemDispel](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDispel)
 
 **Members:**
 
@@ -1950,6 +2205,8 @@ public class AbilityDefinitionItemDispelAoe extends AbilityDefinition
 public class AbilityDefinitionLightningShieldcreep extends AbilityDefinition
 ```
 
+'ACls' / [AbilityIds.lightningShieldcreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-lightningShieldcreep)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1962,6 +2219,8 @@ public class AbilityDefinitionLightningShieldcreep extends AbilityDefinition
 public class AbilityDefinitionCargoHoldShip extends AbilityDefinition
 ```
 
+'Sch5' / [AbilityIds.cargoHoldShip](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cargoHoldShip)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1973,6 +2232,8 @@ public class AbilityDefinitionCargoHoldShip extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionCannibalize extends AbilityDefinition
 ```
+
+'Acan' / [AbilityIds.cannibalize](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cannibalize)
 
 **Members:**
 
@@ -1988,6 +2249,8 @@ public class AbilityDefinitionCannibalize extends AbilityDefinition
 public class AbilityDefinitionCargoHoldTank extends AbilityDefinition
 ```
 
+'Sch4' / [AbilityIds.cargoHoldTank](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cargoHoldTank)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -1999,6 +2262,8 @@ public class AbilityDefinitionCargoHoldTank extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionItemDefenseAoe extends AbilityDefinition
 ```
+
+'AIda' / [AbilityIds.itemTemporaryAreaArmorBonus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemTemporaryAreaArmorBonus)
 
 **Members:**
 
@@ -2016,6 +2281,8 @@ public class AbilityDefinitionItemDefenseAoe extends AbilityDefinition
 public class AbilityDefinitionCargoHoldTransport extends AbilityDefinition
 ```
 
+'Sch3' / [AbilityIds.cargoHoldTransport](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cargoHoldTransport)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -2028,6 +2295,8 @@ public class AbilityDefinitionCargoHoldTransport extends AbilityDefinition
 public class AbilityDefinitionCargoHoldMeatWagon extends AbilityDefinition
 ```
 
+'Sch2' / [AbilityIds.cargoHoldMeatWagon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cargoHoldMeatWagon)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -2039,6 +2308,8 @@ public class AbilityDefinitionCargoHoldMeatWagon extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionItemDispelChain extends AbilityDefinition
 ```
+
+'AIdc' / [AbilityIds.itemDispelChain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDispelChain)
 
 **Members:**
 
@@ -2056,12 +2327,16 @@ public class AbilityDefinitionItemDispelChain extends AbilityDefinition
 public class AbilityDefinitionTaurenChieftainEnduranceAura extends AbilityDefinition
 ```
 
+'AOae' / [AbilityIds.enduranceAura1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-enduranceAura1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setMovementSpeedIncrease(int level, real value)`
+  Movement Speed Increase (%) / 'Oae1'
 - `presetMovementSpeedIncrease(RealLevelClosure lc)`
 - `setAttackSpeedIncrease(int level, real value)`
+  Attack Speed Increase (%) / 'Oae2'
 - `presetAttackSpeedIncrease(RealLevelClosure lc)`
 
 ### AbilityDefinitionItemDefenseAoePlusHealing
@@ -2069,6 +2344,8 @@ public class AbilityDefinitionTaurenChieftainEnduranceAura extends AbilityDefini
 ```wurst
 public class AbilityDefinitionItemDefenseAoePlusHealing extends AbilityDefinition
 ```
+
+'AIdb' / [AbilityIds.itemDefenseAoePlusHealing](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDefenseAoePlusHealing)
 
 **Members:**
 
@@ -2086,6 +2363,8 @@ public class AbilityDefinitionItemDefenseAoePlusHealing extends AbilityDefinitio
 public class AbilityDefinitionMagicImmunityCreep extends AbilityDefinition
 ```
 
+'ACmi' / [AbilityIds.magicImmunityCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-magicImmunityCreep)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -2097,6 +2376,8 @@ public class AbilityDefinitionMagicImmunityCreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionKeeperoftheGroveTranquility extends AbilityDefinition
 ```
+
+'AEtq' / [AbilityIds.tranquility](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tranquility)
 
 **Members:**
 
@@ -2116,6 +2397,8 @@ public class AbilityDefinitionKeeperoftheGroveTranquility extends AbilityDefinit
 public class AbilityDefinitionWindWalk extends AbilityDefinition
 ```
 
+'ANwk' / [AbilityIds.windWalk1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-windWalk1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -2124,11 +2407,16 @@ public class AbilityDefinitionWindWalk extends AbilityDefinition
 - `setBackstabDamage(int level, bool value)`
 - `presetBackstabDamage(BooleanLevelClosure lc)`
 - `setMovementSpeedIncrease(int level, real value)`
+  Movement Speed Increase (%) / 'Owk2'
 - `presetMovementSpeedIncrease(RealLevelClosure lc)`
 - `setTransitionTime(int level, real value)`
 - `presetTransitionTime(RealLevelClosure lc)`
 - `setStartCooldownWhenDecloak(int level, bool value)`
 - `presetStartCooldownWhenDecloak(BooleanLevelClosure lc)`
+- `setStartCooldownwhenDecloak(int level, bool value)`
+- `presetStartCooldownwhenDecloak(BooleanLevelClosure lc)`
+- `setBackstabDamage1(int level, bool value)`
+- `presetBackstabDamage1(BooleanLevelClosure lc)`
 
 ### AbilityDefinitionManaShieldCreep
 
@@ -2136,10 +2424,13 @@ public class AbilityDefinitionWindWalk extends AbilityDefinition
 public class AbilityDefinitionManaShieldCreep extends AbilityDefinition
 ```
 
+'ACmf' / [AbilityIds.manaShieldCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-manaShieldCreep)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setDamageAbsorbed(int level, real value)`
+  Damage Absorbed (%) / 'Nms2'
 - `presetDamageAbsorbed(RealLevelClosure lc)`
 - `setManaperHitPoint(int level, real value)`
 - `presetManaperHitPoint(RealLevelClosure lc)`
@@ -2149,6 +2440,8 @@ public class AbilityDefinitionManaShieldCreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionWateryMinion extends AbilityDefinition
 ```
+
+'ANwm' / [AbilityIds.wateryMinion](/stdlib/ref/_wurst/AbilityIds.html#abilityids-wateryMinion)
 
 **Members:**
 
@@ -2164,6 +2457,8 @@ public class AbilityDefinitionWateryMinion extends AbilityDefinition
 public class AbilityDefinitionItemDispelAoeWithCooldown extends AbilityDefinition
 ```
 
+'AIds' / [AbilityIds.itemDispelAoeWithCooldown](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDispelAoeWithCooldown)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -2177,6 +2472,8 @@ public class AbilityDefinitionItemDispelAoeWithCooldown extends AbilityDefinitio
 ```wurst
 public class AbilityDefinitionEvilIllidanMetamorphosis extends AbilityDefinition
 ```
+
+'AEvi' / [AbilityIds.evilIllidanMetamorphosis](/stdlib/ref/_wurst/AbilityIds.html#abilityids-evilIllidanMetamorphosis)
 
 **Members:**
 
@@ -2202,6 +2499,8 @@ public class AbilityDefinitionEvilIllidanMetamorphosis extends AbilityDefinition
 public class AbilityDefinitionImpaleCreep extends AbilityDefinition
 ```
 
+'ACmp' / [AbilityIds.impaleCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-impaleCreep)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -2224,6 +2523,8 @@ public class AbilityDefinitionImpaleCreep extends AbilityDefinition
 public class AbilityDefinitionMonsooncreep extends AbilityDefinition
 ```
 
+'ACmo' / [AbilityIds.monsooncreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-monsooncreep)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -2239,6 +2540,8 @@ public class AbilityDefinitionMonsooncreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionDevourMagic extends AbilityDefinition
 ```
+
+'Advm' / [AbilityIds.devourMagic](/stdlib/ref/_wurst/AbilityIds.html#abilityids-devourMagic)
 
 **Members:**
 
@@ -2262,6 +2565,8 @@ public class AbilityDefinitionDevourMagic extends AbilityDefinition
 public class AbilityDefinitionEvasion extends AbilityDefinition
 ```
 
+'ACev' / [AbilityIds.evasion](/stdlib/ref/_wurst/AbilityIds.html#abilityids-evasion)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -2273,6 +2578,8 @@ public class AbilityDefinitionEvasion extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionCargoHoldDevour extends AbilityDefinition
 ```
+
+'Advc' / [AbilityIds.devourCargo](/stdlib/ref/_wurst/AbilityIds.html#abilityids-devourCargo)
 
 **Members:**
 
@@ -2290,6 +2597,8 @@ public class AbilityDefinitionCargoHoldDevour extends AbilityDefinition
 public class AbilityDefinitionExperienceMod extends AbilityDefinition
 ```
 
+'AIem' / [AbilityIds.itemExperienceGain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemExperienceGain)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -2302,6 +2611,8 @@ public class AbilityDefinitionExperienceMod extends AbilityDefinition
 public class AbilityDefinitionCloudofFogItem extends AbilityDefinition
 ```
 
+'AIfg' / [AbilityIds.cloudofFogItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cloudofFogItem)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -2310,6 +2621,7 @@ public class AbilityDefinitionCloudofFogItem extends AbilityDefinition
 - `setMovementSpeedModifier(int level, real value)`
 - `presetMovementSpeedModifier(RealLevelClosure lc)`
 - `setChanceToMiss(int level, real value)`
+  Chance To Miss (%) / 'Nsi2'
 - `presetChanceToMiss(RealLevelClosure lc)`
 - `setAttacksPrevented(int level, int value)`
 - `presetAttacksPrevented(IntLevelClosure lc)`
@@ -2319,6 +2631,8 @@ public class AbilityDefinitionCloudofFogItem extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionDisenchantold extends AbilityDefinition
 ```
+
+'Adch' / [AbilityIds.disenchantold](/stdlib/ref/_wurst/AbilityIds.html#abilityids-disenchantold)
 
 **Members:**
 
@@ -2334,6 +2648,8 @@ public class AbilityDefinitionDisenchantold extends AbilityDefinition
 public class AbilityDefinitionPillage extends AbilityDefinition
 ```
 
+'Asal' / [AbilityIds.pillage](/stdlib/ref/_wurst/AbilityIds.html#abilityids-pillage)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -2347,6 +2663,8 @@ public class AbilityDefinitionPillage extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionInventoryPackMule extends AbilityDefinition
 ```
+
+'Apak' / [AbilityIds.inventoryPackMule](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inventoryPackMule)
 
 **Members:**
 
@@ -2368,16 +2686,22 @@ public class AbilityDefinitionInventoryPackMule extends AbilityDefinition
 public class AbilityDefinitionFigurineFurbolg extends AbilityDefinition
 ```
 
+'AIff' / [AbilityIds.itemFurbolgSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemFurbolgSummon)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setSummonUnitType(int level, string value)`
+  Summon 2 - Unit Type / 'Ist2'
 - `presetSummonUnitType(StringLevelClosure lc)`
 - `setSummonAmount(int level, int value)`
+  Summon 2 - Amount / 'Isn2'
 - `presetSummonAmount(IntLevelClosure lc)`
 - `setSummonUnitType1(int level, string value)`
+  Summon 1 - Unit Type / 'Ist1'
 - `presetSummonUnitType1(StringLevelClosure lc)`
 - `setSummonAmount1(int level, int value)`
+  Summon 1 - Amount / 'Isn1'
 - `presetSummonAmount1(IntLevelClosure lc)`
 
 ### AbilityDefinitionFigurineFelHound
@@ -2386,16 +2710,22 @@ public class AbilityDefinitionFigurineFurbolg extends AbilityDefinition
 public class AbilityDefinitionFigurineFelHound extends AbilityDefinition
 ```
 
+'AIfh' / [AbilityIds.itemFelhoundSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemFelhoundSummon)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setSummonUnitType(int level, string value)`
+  Summon 2 - Unit Type / 'Ist2'
 - `presetSummonUnitType(StringLevelClosure lc)`
 - `setSummonAmount(int level, int value)`
+  Summon 2 - Amount / 'Isn2'
 - `presetSummonAmount(IntLevelClosure lc)`
 - `setSummonUnitType1(int level, string value)`
+  Summon 1 - Unit Type / 'Ist1'
 - `presetSummonUnitType1(StringLevelClosure lc)`
 - `setSummonAmount1(int level, int value)`
+  Summon 1 - Amount / 'Isn1'
 - `presetSummonAmount1(IntLevelClosure lc)`
 
 ### AbilityDefinitionFireDamageBonus
@@ -2403,6 +2733,8 @@ public class AbilityDefinitionFigurineFelHound extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionFireDamageBonus extends AbilityDefinition
 ```
+
+'AIfb' / [AbilityIds.itemAttackFireBonus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackFireBonus)
 
 **Members:**
 
@@ -2417,6 +2749,8 @@ public class AbilityDefinitionFireDamageBonus extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionHealReductionBonus extends AbilityDefinition
 ```
+
+'AIf2' / [AbilityIds.itemAttackHealReduction](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackHealReduction)
 
 **Members:**
 
@@ -2434,6 +2768,8 @@ public class AbilityDefinitionHealReductionBonus extends AbilityDefinition
 public class AbilityDefinitionDetectMagicSentinel extends AbilityDefinition
 ```
 
+'Adts' / [AbilityIds.magicSentry](/stdlib/ref/_wurst/AbilityIds.html#abilityids-magicSentry)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -2445,6 +2781,8 @@ public class AbilityDefinitionDetectMagicSentinel extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionFirelordVolcano extends AbilityDefinition
 ```
+
+'ANvc' / [AbilityIds.volcano](/stdlib/ref/_wurst/AbilityIds.html#abilityids-volcano)
 
 **Members:**
 
@@ -2470,16 +2808,22 @@ public class AbilityDefinitionFirelordVolcano extends AbilityDefinition
 public class AbilityDefinitionFigurineRedDrake extends AbilityDefinition
 ```
 
+'AIfd' / [AbilityIds.itemRedDrakeSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRedDrakeSummon)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setSummonUnitType(int level, string value)`
+  Summon 2 - Unit Type / 'Ist2'
 - `presetSummonUnitType(StringLevelClosure lc)`
 - `setSummonAmount(int level, int value)`
+  Summon 2 - Amount / 'Isn2'
 - `presetSummonAmount(IntLevelClosure lc)`
 - `setSummonUnitType1(int level, string value)`
+  Summon 1 - Unit Type / 'Ist1'
 - `presetSummonUnitType1(StringLevelClosure lc)`
 - `setSummonAmount1(int level, int value)`
+  Summon 1 - Amount / 'Isn1'
 - `presetSummonAmount1(IntLevelClosure lc)`
 
 ### AbilityDefinitionHealingWard
@@ -2487,6 +2831,8 @@ public class AbilityDefinitionFigurineRedDrake extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionHealingWard extends AbilityDefinition
 ```
+
+'Ahwd' / [AbilityIds.healingWard1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-healingWard1)
 
 **Members:**
 
@@ -2499,6 +2845,8 @@ public class AbilityDefinitionHealingWard extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionFlareGun extends AbilityDefinition
 ```
+
+'AIfa' / [AbilityIds.flareGun](/stdlib/ref/_wurst/AbilityIds.html#abilityids-flareGun)
 
 **Members:**
 
@@ -2514,6 +2862,8 @@ public class AbilityDefinitionFlareGun extends AbilityDefinition
 public class AbilityDefinitionLoadEntangledGoldMine extends AbilityDefinition
 ```
 
+'Slo2' / [AbilityIds.loadWisp](/stdlib/ref/_wurst/AbilityIds.html#abilityids-loadWisp)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -2525,6 +2875,8 @@ public class AbilityDefinitionLoadEntangledGoldMine extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionNeutralRegenhealthonly extends AbilityDefinition
 ```
+
+'ACnr' / [AbilityIds.lifeRegenerationAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-lifeRegenerationAura)
 
 **Members:**
 
@@ -2540,6 +2892,8 @@ public class AbilityDefinitionNeutralRegenhealthonly extends AbilityDefinition
 public class AbilityDefinitionAuraRegenerationHealingWard extends AbilityDefinition
 ```
 
+'Aoar' / [AbilityIds.healingWardAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-healingWardAura)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -2554,6 +2908,8 @@ public class AbilityDefinitionAuraRegenerationHealingWard extends AbilityDefinit
 public class AbilityDefinitionLoadNavies extends AbilityDefinition
 ```
 
+'Slo3' / [AbilityIds.loadNavies](/stdlib/ref/_wurst/AbilityIds.html#abilityids-loadNavies)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -2565,6 +2921,8 @@ public class AbilityDefinitionLoadNavies extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionInvisibility extends AbilityDefinition
 ```
+
+'Aivs' / [AbilityIds.invisibility](/stdlib/ref/_wurst/AbilityIds.html#abilityids-invisibility)
 
 **Members:**
 
@@ -2578,6 +2936,8 @@ public class AbilityDefinitionInvisibility extends AbilityDefinition
 public class AbilityDefinitionSentryWard extends AbilityDefinition
 ```
 
+'Aeye' / [AbilityIds.sentryWard](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sentryWard)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -2590,16 +2950,22 @@ public class AbilityDefinitionSentryWard extends AbilityDefinition
 public class AbilityDefinitionFigurineRockGolem extends AbilityDefinition
 ```
 
+'AIfr' / [AbilityIds.itemRockGolemSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRockGolemSummon)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setSummonUnitType(int level, string value)`
+  Summon 2 - Unit Type / 'Ist2'
 - `presetSummonUnitType(StringLevelClosure lc)`
 - `setSummonAmount(int level, int value)`
+  Summon 2 - Amount / 'Isn2'
 - `presetSummonAmount(IntLevelClosure lc)`
 - `setSummonUnitType1(int level, string value)`
+  Summon 1 - Unit Type / 'Ist1'
 - `presetSummonUnitType1(StringLevelClosure lc)`
 - `setSummonAmount1(int level, int value)`
+  Summon 1 - Amount / 'Isn1'
 - `presetSummonAmount1(IntLevelClosure lc)`
 
 ### AbilityDefinitionFigurineSkeleton
@@ -2608,16 +2974,22 @@ public class AbilityDefinitionFigurineRockGolem extends AbilityDefinition
 public class AbilityDefinitionFigurineSkeleton extends AbilityDefinition
 ```
 
+'AIfs' / [AbilityIds.itemSkeletonSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSkeletonSummon)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setSummonUnitType(int level, string value)`
+  Summon 2 - Unit Type / 'Ist2'
 - `presetSummonUnitType(StringLevelClosure lc)`
 - `setSummonAmount(int level, int value)`
+  Summon 2 - Amount / 'Isn2'
 - `presetSummonAmount(IntLevelClosure lc)`
 - `setSummonUnitType1(int level, string value)`
+  Summon 1 - Unit Type / 'Ist1'
 - `presetSummonUnitType1(StringLevelClosure lc)`
 - `setSummonAmount1(int level, int value)`
+  Summon 1 - Amount / 'Isn1'
 - `presetSummonAmount1(IntLevelClosure lc)`
 
 ### AbilityDefinitionSubmergeMyrmidon
@@ -2625,6 +2997,8 @@ public class AbilityDefinitionFigurineSkeleton extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionSubmergeMyrmidon extends AbilityDefinition
 ```
+
+'Asb1' / [AbilityIds.submergeMyrmidon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-submergeMyrmidon)
 
 **Members:**
 
@@ -2646,6 +3020,8 @@ public class AbilityDefinitionSubmergeMyrmidon extends AbilityDefinition
 public class AbilityDefinitionSubmergeRoyalGuard extends AbilityDefinition
 ```
 
+'Asb2' / [AbilityIds.submergeRoyalGuard](/stdlib/ref/_wurst/AbilityIds.html#abilityids-submergeRoyalGuard)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -2666,16 +3042,22 @@ public class AbilityDefinitionSubmergeRoyalGuard extends AbilityDefinition
 public class AbilityDefinitionFigurineDoomGuard extends AbilityDefinition
 ```
 
+'AIfu' / [AbilityIds.itemDoomGuardSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDoomGuardSummon)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setSummonUnitType(int level, string value)`
+  Summon 2 - Unit Type / 'Ist2'
 - `presetSummonUnitType(StringLevelClosure lc)`
 - `setSummonAmount(int level, int value)`
+  Summon 2 - Amount / 'Isn2'
 - `presetSummonAmount(IntLevelClosure lc)`
 - `setSummonUnitType1(int level, string value)`
+  Summon 1 - Unit Type / 'Ist1'
 - `presetSummonUnitType1(StringLevelClosure lc)`
 - `setSummonAmount1(int level, int value)`
+  Summon 1 - Amount / 'Isn1'
 - `presetSummonAmount1(IntLevelClosure lc)`
 
 ### AbilityDefinitionSubmergeSnapDragon
@@ -2683,6 +3065,8 @@ public class AbilityDefinitionFigurineDoomGuard extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionSubmergeSnapDragon extends AbilityDefinition
 ```
+
+'Asb3' / [AbilityIds.submergeSnapDragon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-submergeSnapDragon)
 
 **Members:**
 
@@ -2704,6 +3088,8 @@ public class AbilityDefinitionSubmergeSnapDragon extends AbilityDefinition
 public class AbilityDefinitionItemHealLesser extends AbilityDefinition
 ```
 
+'AIh1' / [AbilityIds.itemHealLesser](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealLesser)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -2715,6 +3101,8 @@ public class AbilityDefinitionItemHealLesser extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionItemHealGreater extends AbilityDefinition
 ```
+
+'AIh2' / [AbilityIds.itemHealGreater](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealGreater)
 
 **Members:**
 
@@ -2728,6 +3116,8 @@ public class AbilityDefinitionItemHealGreater extends AbilityDefinition
 public class AbilityDefinitionItemHealLeast extends AbilityDefinition
 ```
 
+'AIh3' / [AbilityIds.itemHealLeast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealLeast)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -2740,6 +3130,8 @@ public class AbilityDefinitionItemHealLeast extends AbilityDefinition
 public class AbilityDefinitionGiveGold extends AbilityDefinition
 ```
 
+'AIgo' / [AbilityIds.giveGold](/stdlib/ref/_wurst/AbilityIds.html#abilityids-giveGold)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -2751,6 +3143,8 @@ public class AbilityDefinitionGiveGold extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionIntelligenceBonusPlus1 extends AbilityDefinition
 ```
+
+'AIi1' / [AbilityIds.intelligenceBonusPlus1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-intelligenceBonusPlus1)
 
 **Members:**
 
@@ -2770,6 +3164,8 @@ public class AbilityDefinitionIntelligenceBonusPlus1 extends AbilityDefinition
 public class AbilityDefinitionIntelligenceBonusPlus2 extends AbilityDefinition
 ```
 
+'AIi2' / [AbilityIds.intelligenceBonusPlus2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-intelligenceBonusPlus2)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -2788,6 +3184,8 @@ public class AbilityDefinitionIntelligenceBonusPlus2 extends AbilityDefinition
 public class AbilityDefinitionIntelligenceBonusPlus5 extends AbilityDefinition
 ```
 
+'AIi5' / [AbilityIds.intelligenceBonusPlus5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-intelligenceBonusPlus5)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -2805,6 +3203,8 @@ public class AbilityDefinitionIntelligenceBonusPlus5 extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionBurrowscarablvl2 extends AbilityDefinition
 ```
+
+'Abu2' / [AbilityIds.burrowscarablvl2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-burrowscarablvl2)
 
 **Members:**
 
@@ -2828,6 +3228,8 @@ public class AbilityDefinitionBurrowscarablvl2 extends AbilityDefinition
 public class AbilityDefinitionIntelligenceBonusPlus4 extends AbilityDefinition
 ```
 
+'AIi4' / [AbilityIds.intelligenceBonusPlus4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-intelligenceBonusPlus4)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -2845,6 +3247,8 @@ public class AbilityDefinitionIntelligenceBonusPlus4 extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionFirelordSummonLavaSpawn extends AbilityDefinition
 ```
+
+'ANlm' / [AbilityIds.summonLavaSpawn](/stdlib/ref/_wurst/AbilityIds.html#abilityids-summonLavaSpawn)
 
 **Members:**
 
@@ -2870,6 +3274,8 @@ public class AbilityDefinitionFirelordSummonLavaSpawn extends AbilityDefinition
 public class AbilityDefinitionBurrowscarablvl3 extends AbilityDefinition
 ```
 
+'Abu3' / [AbilityIds.burrowscarablvl3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-burrowscarablvl3)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -2892,6 +3298,8 @@ public class AbilityDefinitionBurrowscarablvl3 extends AbilityDefinition
 public class AbilityDefinitionHeal extends AbilityDefinition
 ```
 
+'Ahea' / [AbilityIds.heal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-heal)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -2903,6 +3311,8 @@ public class AbilityDefinitionHeal extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionIntelligenceBonusPlus3 extends AbilityDefinition
 ```
+
+'AIi3' / [AbilityIds.intelligenceBonusPlus3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-intelligenceBonusPlus3)
 
 **Members:**
 
@@ -2922,6 +3332,8 @@ public class AbilityDefinitionIntelligenceBonusPlus3 extends AbilityDefinition
 public class AbilityDefinitionIntelligenceBonusPlus6 extends AbilityDefinition
 ```
 
+'AIi6' / [AbilityIds.intelligenceBonusPlus6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-intelligenceBonusPlus6)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -2940,6 +3352,8 @@ public class AbilityDefinitionIntelligenceBonusPlus6 extends AbilityDefinition
 public class AbilityDefinitionBerserk extends AbilityDefinition
 ```
 
+'Absk' / [AbilityIds.berserkerRage1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-berserkerRage1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -2950,21 +3364,13 @@ public class AbilityDefinitionBerserk extends AbilityDefinition
 - `setAttackSpeedIncrease(int level, real value)`
 - `presetAttackSpeedIncrease(RealLevelClosure lc)`
 
-### AbilityDefinitionBeserk
-
-```wurst
-public class AbilityDefinitionBeserk extends AbilityDefinitionBerserk
-```
-
-**Members:**
-
-- `construct(int newAbilityId)`
-
 ### AbilityDefinitionReplenishLifeMana
 
 ```wurst
 public class AbilityDefinitionReplenishLifeMana extends AbilityDefinition
 ```
+
+'Arpb' / [AbilityIds.replenishLifeMana](/stdlib/ref/_wurst/AbilityIds.html#abilityids-replenishLifeMana)
 
 **Members:**
 
@@ -2988,6 +3394,8 @@ public class AbilityDefinitionReplenishLifeMana extends AbilityDefinition
 public class AbilityDefinitionUltraVisionGlyph extends AbilityDefinition
 ```
 
+'AIgu' / [AbilityIds.ultraVisionGlyph](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ultraVisionGlyph)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3001,6 +3409,8 @@ public class AbilityDefinitionUltraVisionGlyph extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionReplenishLife extends AbilityDefinition
 ```
+
+'Arpl' / [AbilityIds.replenishLife](/stdlib/ref/_wurst/AbilityIds.html#abilityids-replenishLife)
 
 **Members:**
 
@@ -3019,6 +3429,8 @@ public class AbilityDefinitionReplenishLife extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionInventory2slotunitUndead extends AbilityDefinition
 ```
+
+'Aiun' / [AbilityIds.inventory2slotunitUndead](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inventory2slotunitUndead)
 
 **Members:**
 
@@ -3040,6 +3452,8 @@ public class AbilityDefinitionInventory2slotunitUndead extends AbilityDefinition
 public class AbilityDefinitionManaBattery extends AbilityDefinition
 ```
 
+'Ambt' / [AbilityIds.replenishManaandLife](/stdlib/ref/_wurst/AbilityIds.html#abilityids-replenishManaandLife)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3060,6 +3474,8 @@ public class AbilityDefinitionManaBattery extends AbilityDefinition
 public class AbilityDefinitionReplenishMana extends AbilityDefinition
 ```
 
+'Arpm' / [AbilityIds.replenishMana](/stdlib/ref/_wurst/AbilityIds.html#abilityids-replenishMana)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3078,6 +3494,8 @@ public class AbilityDefinitionReplenishMana extends AbilityDefinition
 public class AbilityDefinitionHealCreepNormal extends AbilityDefinition
 ```
 
+'Anh1' / [AbilityIds.healCreepNormal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-healCreepNormal)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3090,6 +3508,8 @@ public class AbilityDefinitionHealCreepNormal extends AbilityDefinition
 public class AbilityDefinitionHealCreepHigh extends AbilityDefinition
 ```
 
+'Anh2' / [AbilityIds.healCreepHigh](/stdlib/ref/_wurst/AbilityIds.html#abilityids-healCreepHigh)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3101,6 +3521,8 @@ public class AbilityDefinitionHealCreepHigh extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAuraSlow extends AbilityDefinition
 ```
+
+'Aasl' / [AbilityIds.slowAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-slowAura)
 
 **Members:**
 
@@ -3118,6 +3540,8 @@ public class AbilityDefinitionAuraSlow extends AbilityDefinition
 public class AbilityDefinitionCurse extends AbilityDefinition
 ```
 
+'Acrs' / [AbilityIds.curse](/stdlib/ref/_wurst/AbilityIds.html#abilityids-curse)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3130,10 +3554,13 @@ public class AbilityDefinitionCurse extends AbilityDefinition
 public class AbilityDefinitionSuperEarthquake extends AbilityDefinition
 ```
 
+'SNeq' / [AbilityIds.earthquake](/stdlib/ref/_wurst/AbilityIds.html#abilityids-earthquake)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setUnitsSlowed(int level, real value)`
+  Units Slowed (%) / 'Oeq3'
 - `presetUnitsSlowed(RealLevelClosure lc)`
 - `setEffectDelay(int level, real value)`
 - `presetEffectDelay(RealLevelClosure lc)`
@@ -3148,6 +3575,8 @@ public class AbilityDefinitionSuperEarthquake extends AbilityDefinition
 public class AbilityDefinitionFortificationGlyph extends AbilityDefinition
 ```
 
+'AIgf' / [AbilityIds.fortificationGlyph](/stdlib/ref/_wurst/AbilityIds.html#abilityids-fortificationGlyph)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3161,6 +3590,8 @@ public class AbilityDefinitionFortificationGlyph extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionManaBurndemonAmbd extends AbilityDefinition
 ```
+
+'Ambd' / [AbilityIds.manaBurn](/stdlib/ref/_wurst/AbilityIds.html#abilityids-manaBurn)
 
 **Members:**
 
@@ -3178,6 +3609,8 @@ public class AbilityDefinitionManaBurndemonAmbd extends AbilityDefinition
 public class AbilityDefinitionFarseerFarSight extends AbilityDefinition
 ```
 
+'AOfs' / [AbilityIds.farSight](/stdlib/ref/_wurst/AbilityIds.html#abilityids-farSight)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3189,6 +3622,8 @@ public class AbilityDefinitionFarseerFarSight extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAgilityModPlus2 extends AbilityDefinition
 ```
+
+'AIgm' / [AbilityIds.agilityModPlus2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-agilityModPlus2)
 
 **Members:**
 
@@ -3208,6 +3643,8 @@ public class AbilityDefinitionAgilityModPlus2 extends AbilityDefinition
 public class AbilityDefinitionHarvestLumberArchimondeghouls extends AbilityDefinition
 ```
 
+'Ahr2' / [AbilityIds.harvestLumberArchimondeghouls](/stdlib/ref/_wurst/AbilityIds.html#abilityids-harvestLumberArchimondeghouls)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3222,6 +3659,8 @@ public class AbilityDefinitionHarvestLumberArchimondeghouls extends AbilityDefin
 public class AbilityDefinitionHealingWardAIhw extends AbilityDefinition
 ```
 
+'AIhw' / [AbilityIds.healingWardAIhw](/stdlib/ref/_wurst/AbilityIds.html#abilityids-healingWardAIhw)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3233,6 +3672,8 @@ public class AbilityDefinitionHealingWardAIhw extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionIllidanMetamorphosis extends AbilityDefinition
 ```
+
+'AEIl' / [AbilityIds.metamorphosis1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-metamorphosis1)
 
 **Members:**
 
@@ -3258,6 +3699,8 @@ public class AbilityDefinitionIllidanMetamorphosis extends AbilityDefinition
 public class AbilityDefinitionHexCreep extends AbilityDefinition
 ```
 
+'AChx' / [AbilityIds.hexCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-hexCreep)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3278,6 +3721,8 @@ public class AbilityDefinitionHexCreep extends AbilityDefinition
 public class AbilityDefinitionHealingWardcreep extends AbilityDefinition
 ```
 
+'AChw' / [AbilityIds.healingWard](/stdlib/ref/_wurst/AbilityIds.html#abilityids-healingWard)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3289,6 +3734,8 @@ public class AbilityDefinitionHealingWardcreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionBattlestations extends AbilityDefinition
 ```
+
+'Abtl' / [AbilityIds.battleStations](/stdlib/ref/_wurst/AbilityIds.html#abilityids-battleStations)
 
 **Members:**
 
@@ -3303,6 +3750,8 @@ public class AbilityDefinitionBattlestations extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionHealingWaveCreep extends AbilityDefinition
 ```
+
+'AChv' / [AbilityIds.healingWaveCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-healingWaveCreep)
 
 **Members:**
 
@@ -3320,6 +3769,8 @@ public class AbilityDefinitionHealingWaveCreep extends AbilityDefinition
 public class AbilityDefinitionInnerFireCreep extends AbilityDefinition
 ```
 
+'ACif' / [AbilityIds.innerFireCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-innerFireCreep)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3330,6 +3781,7 @@ public class AbilityDefinitionInnerFireCreep extends AbilityDefinition
 - `setDefenseIncrease(int level, int value)`
 - `presetDefenseIncrease(IntLevelClosure lc)`
 - `setDamageIncrease(int level, real value)`
+  Damage Increase (%) / 'Inf1'
 - `presetDamageIncrease(RealLevelClosure lc)`
 
 ### AbilityDefinitionAncestralSpirit
@@ -3337,6 +3789,8 @@ public class AbilityDefinitionInnerFireCreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAncestralSpirit extends AbilityDefinition
 ```
+
+'Aast' / [AbilityIds.ancestralSpirit](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ancestralSpirit)
 
 **Members:**
 
@@ -3352,6 +3806,8 @@ public class AbilityDefinitionAncestralSpirit extends AbilityDefinition
 public class AbilityDefinitionHarvestLumbershredder extends AbilityDefinition
 ```
 
+'Ahr3' / [AbilityIds.harvest2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-harvest2)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3366,6 +3822,8 @@ public class AbilityDefinitionHarvestLumbershredder extends AbilityDefinition
 public class AbilityDefinitionItemHealAoeGreater extends AbilityDefinition
 ```
 
+'AIhb' / [AbilityIds.itemHealAoeGreater](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealAoeGreater)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3378,6 +3836,8 @@ public class AbilityDefinitionItemHealAoeGreater extends AbilityDefinition
 public class AbilityDefinitionPulverize extends AbilityDefinition
 ```
 
+'Awar' / [AbilityIds.pulverize](/stdlib/ref/_wurst/AbilityIds.html#abilityids-pulverize)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3388,6 +3848,7 @@ public class AbilityDefinitionPulverize extends AbilityDefinition
 - `setFullDamageRadius(int level, real value)`
 - `presetFullDamageRadius(RealLevelClosure lc)`
 - `setChancetoStomp(int level, real value)`
+  Chance to Stomp (%) / 'War1'
 - `presetChancetoStomp(RealLevelClosure lc)`
 
 ### AbilityDefinitionItemHealAoe
@@ -3395,6 +3856,8 @@ public class AbilityDefinitionPulverize extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionItemHealAoe extends AbilityDefinition
 ```
+
+'AIha' / [AbilityIds.itemAreaHealing](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAreaHealing)
 
 **Members:**
 
@@ -3408,6 +3871,8 @@ public class AbilityDefinitionItemHealAoe extends AbilityDefinition
 public class AbilityDefinitionAIhe extends AbilityDefinition
 ```
 
+'AIhe' / [AbilityIds.itemHealing](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealing)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3420,10 +3885,13 @@ public class AbilityDefinitionAIhe extends AbilityDefinition
 public class AbilityDefinitionFarseerEarthquake extends AbilityDefinition
 ```
 
+'AOeq' / [AbilityIds.earthquake1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-earthquake1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setUnitsSlowed(int level, real value)`
+  Units Slowed (%) / 'Oeq3'
 - `presetUnitsSlowed(RealLevelClosure lc)`
 - `setEffectDelay(int level, real value)`
 - `presetEffectDelay(RealLevelClosure lc)`
@@ -3437,6 +3905,8 @@ public class AbilityDefinitionFarseerEarthquake extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionDemonHunterImmolation extends AbilityDefinition
 ```
+
+'AEim' / [AbilityIds.immolation1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-immolation1)
 
 **Members:**
 
@@ -3454,6 +3924,8 @@ public class AbilityDefinitionDemonHunterImmolation extends AbilityDefinition
 public class AbilityDefinitionNeutralDetectionRevealability extends AbilityDefinition
 ```
 
+'Andt' / [AbilityIds.reveal1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-reveal1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3470,6 +3942,8 @@ public class AbilityDefinitionNeutralDetectionRevealability extends AbilityDefin
 public class AbilityDefinitionWeb extends AbilityDefinition
 ```
 
+'Aweb' / [AbilityIds.web](/stdlib/ref/_wurst/AbilityIds.html#abilityids-web)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3479,6 +3953,14 @@ public class AbilityDefinitionWeb extends AbilityDefinition
 - `presetAirUnitLowerDuration(RealLevelClosure lc)`
 - `setMeleeAttackRange(int level, real value)`
 - `presetMeleeAttackRange(RealLevelClosure lc)`
+- `setStunDuration(int level, real value)`
+- `setBonusDamageTakenPercent(int level, real value)`
+- `setAttackSpeedReductionPercent(int level, real value)`
+- `setSilencesWhenEnsnared(int level, bool value)`
+- `presetStunDuration(RealLevelClosure lc)`
+- `presetBonusDamageTakenPercent(RealLevelClosure lc)`
+- `presetAttackSpeedReductionPercent(RealLevelClosure lc)`
+- `presetSilencesWhenEnsnared(BooleanLevelClosure lc)`
 
 ### AbilityDefinitionFigurineIceRevenant
 
@@ -3486,16 +3968,22 @@ public class AbilityDefinitionWeb extends AbilityDefinition
 public class AbilityDefinitionFigurineIceRevenant extends AbilityDefinition
 ```
 
+'AIir' / [AbilityIds.figurineIceRevenant](/stdlib/ref/_wurst/AbilityIds.html#abilityids-figurineIceRevenant)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setSummonUnitType(int level, string value)`
+  Summon 2 - Unit Type / 'Ist2'
 - `presetSummonUnitType(StringLevelClosure lc)`
 - `setSummonAmount(int level, int value)`
+  Summon 2 - Amount / 'Isn2'
 - `presetSummonAmount(IntLevelClosure lc)`
 - `setSummonUnitType1(int level, string value)`
+  Summon 1 - Unit Type / 'Ist1'
 - `presetSummonUnitType1(StringLevelClosure lc)`
 - `setSummonAmount1(int level, int value)`
+  Summon 1 - Amount / 'Isn1'
 - `presetSummonAmount1(IntLevelClosure lc)`
 
 ### AbilityDefinitionSuperDeathandDecay
@@ -3504,12 +3992,15 @@ public class AbilityDefinitionFigurineIceRevenant extends AbilityDefinition
 public class AbilityDefinitionSuperDeathandDecay extends AbilityDefinition
 ```
 
+'SNdd' / [AbilityIds.deathAndDecay](/stdlib/ref/_wurst/AbilityIds.html#abilityids-deathAndDecay)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setBuildingReduction(int level, real value)`
 - `presetBuildingReduction(RealLevelClosure lc)`
 - `setMaxLifeDrainedperSecond(int level, real value)`
+  Max Life Drained per Second (%) / 'Udd1'
 - `presetMaxLifeDrainedperSecond(RealLevelClosure lc)`
 
 ### AbilityDefinitionDarkConversionFast
@@ -3517,6 +4008,8 @@ public class AbilityDefinitionSuperDeathandDecay extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionDarkConversionFast extends AbilityDefinition
 ```
+
+'SNdc' / [AbilityIds.darkConversionFast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-darkConversionFast)
 
 **Members:**
 
@@ -3531,6 +4024,8 @@ public class AbilityDefinitionDarkConversionFast extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionImmolationcreep extends AbilityDefinition
 ```
+
+'ACim' / [AbilityIds.immolation](/stdlib/ref/_wurst/AbilityIds.html#abilityids-immolation)
 
 **Members:**
 
@@ -3547,6 +4042,8 @@ public class AbilityDefinitionImmolationcreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionIntelligenceMod extends AbilityDefinition
 ```
+
+'AIim' / [AbilityIds.itemIntelligenceGain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemIntelligenceGain)
 
 **Members:**
 
@@ -3566,6 +4063,8 @@ public class AbilityDefinitionIntelligenceMod extends AbilityDefinition
 public class AbilityDefinitionItemInferno extends AbilityDefinition
 ```
 
+'AIin' / [AbilityIds.itemInferno](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemInferno)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3584,12 +4083,15 @@ public class AbilityDefinitionItemInferno extends AbilityDefinition
 public class AbilityDefinitionItemIllusion extends AbilityDefinition
 ```
 
+'AIil' / [AbilityIds.itemIllusions](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemIllusions)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setDamageReceivedMultiplier(int level, real value)`
 - `presetDamageReceivedMultiplier(RealLevelClosure lc)`
 - `setDamageDealtofnormal(int level, real value)`
+  Damage Dealt (% of normal) / 'Iild'
 - `presetDamageDealtofnormal(RealLevelClosure lc)`
 
 ### AbilityDefinitionMagicDefense
@@ -3598,10 +4100,13 @@ public class AbilityDefinitionItemIllusion extends AbilityDefinition
 public class AbilityDefinitionMagicDefense extends AbilityDefinition
 ```
 
+'Amdf' / [AbilityIds.magicDefense](/stdlib/ref/_wurst/AbilityIds.html#abilityids-magicDefense)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setDamageTaken(int level, real value)`
+  Damage Taken (%) / 'Def1'
 - `presetDamageTaken(RealLevelClosure lc)`
 - `setChancetoDeflect(int level, real value)`
 - `presetChancetoDeflect(RealLevelClosure lc)`
@@ -3610,6 +4115,7 @@ public class AbilityDefinitionMagicDefense extends AbilityDefinition
 - `setAttackSpeedFactor(int level, real value)`
 - `presetAttackSpeedFactor(RealLevelClosure lc)`
 - `setDamageDealt(int level, real value)`
+  Damage Dealt (%) / 'Def2'
 - `presetDamageDealt(RealLevelClosure lc)`
 - `setDeflectDamageTakenSpells(int level, real value)`
 - `presetDeflectDamageTakenSpells(RealLevelClosure lc)`
@@ -3623,6 +4129,8 @@ public class AbilityDefinitionMagicDefense extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAvengerForm extends AbilityDefinition
 ```
+
+'Aave' / [AbilityIds.avengerForm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-avengerForm)
 
 **Members:**
 
@@ -3648,6 +4156,8 @@ public class AbilityDefinitionAvengerForm extends AbilityDefinition
 public class AbilityDefinitionHarvestLumber extends AbilityDefinition
 ```
 
+'Ahrl' / [AbilityIds.harvest1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-harvest1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3661,6 +4171,8 @@ public class AbilityDefinitionHarvestLumber extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionNeutralBuilding extends AbilityDefinition
 ```
+
+'Aneu' / [AbilityIds.selectHero](/stdlib/ref/_wurst/AbilityIds.html#abilityids-selectHero)
 
 **Members:**
 
@@ -3680,6 +4192,8 @@ public class AbilityDefinitionNeutralBuilding extends AbilityDefinition
 public class AbilityDefinitionShopSharing extends AbilityDefinition
 ```
 
+'Aall' / [AbilityIds.shopSharingAlliedBldg](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shopSharingAlliedBldg)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3697,6 +4211,8 @@ public class AbilityDefinitionShopSharing extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionRepairHuman extends AbilityDefinition
 ```
+
+'Ahrp' / [AbilityIds.repairHuman](/stdlib/ref/_wurst/AbilityIds.html#abilityids-repairHuman)
 
 **Members:**
 
@@ -3718,6 +4234,8 @@ public class AbilityDefinitionRepairHuman extends AbilityDefinition
 public class AbilityDefinitionAhrs extends AbilityDefinition
 ```
 
+'Ahrs' / [AbilityIds.ahrs](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ahrs)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3733,6 +4251,8 @@ public class AbilityDefinitionAhrs extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionFirelordIncinerate extends AbilityDefinition
 ```
+
+'ANic' / [AbilityIds.firelordIncinerate](/stdlib/ref/_wurst/AbilityIds.html#abilityids-firelordIncinerate)
 
 **Members:**
 
@@ -3756,6 +4276,8 @@ public class AbilityDefinitionFirelordIncinerate extends AbilityDefinition
 public class AbilityDefinitionBearform extends AbilityDefinition
 ```
 
+'Abrf' / [AbilityIds.bearForm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bearForm)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3777,6 +4299,8 @@ public class AbilityDefinitionBearform extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionCryptLordLocustSwarm extends AbilityDefinition
 ```
+
+'AUls' / [AbilityIds.cryptLordLocustSwarm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cryptLordLocustSwarm)
 
 **Members:**
 
@@ -3800,6 +4324,8 @@ public class AbilityDefinitionCryptLordLocustSwarm extends AbilityDefinition
 public class AbilityDefinitionRestoration extends AbilityDefinition
 ```
 
+'Arst' / [AbilityIds.restore](/stdlib/ref/_wurst/AbilityIds.html#abilityids-restore)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3820,6 +4346,8 @@ public class AbilityDefinitionRestoration extends AbilityDefinition
 public class AbilityDefinitionFarseerChainLightning extends AbilityDefinition
 ```
 
+'AOcl' / [AbilityIds.chainLightning1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chainLightning1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3836,6 +4364,8 @@ public class AbilityDefinitionFarseerChainLightning extends AbilityDefinition
 public class AbilityDefinitionMaxLifeBonusGreater extends AbilityDefinition
 ```
 
+'AIl2' / [AbilityIds.maxLifeBonusGreater](/stdlib/ref/_wurst/AbilityIds.html#abilityids-maxLifeBonusGreater)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3847,6 +4377,8 @@ public class AbilityDefinitionMaxLifeBonusGreater extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionInferno extends AbilityDefinition
 ```
+
+'ANin' / [AbilityIds.inferno1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inferno1)
 
 **Members:**
 
@@ -3866,6 +4398,8 @@ public class AbilityDefinitionInferno extends AbilityDefinition
 public class AbilityDefinitionMechanicalCritter extends AbilityDefinition
 ```
 
+'Amec' / [AbilityIds.mechanicalCritter](/stdlib/ref/_wurst/AbilityIds.html#abilityids-mechanicalCritter)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3878,6 +4412,8 @@ public class AbilityDefinitionMechanicalCritter extends AbilityDefinition
 public class AbilityDefinitionMaxLifeBonusLesser extends AbilityDefinition
 ```
 
+'AIl1' / [AbilityIds.maxLifeBonusLesser](/stdlib/ref/_wurst/AbilityIds.html#abilityids-maxLifeBonusLesser)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3889,6 +4425,8 @@ public class AbilityDefinitionMaxLifeBonusLesser extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionPurgeApg2 extends AbilityDefinition
 ```
+
+'Apg2' / [AbilityIds.purgeApg2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-purgeApg2)
 
 **Members:**
 
@@ -3912,6 +4450,8 @@ public class AbilityDefinitionPurgeApg2 extends AbilityDefinition
 public class AbilityDefinitionBladeMasterCriticalStrike extends AbilityDefinition
 ```
 
+'AOcr' / [AbilityIds.criticalStrike1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-criticalStrike1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3934,6 +4474,8 @@ public class AbilityDefinitionBladeMasterCriticalStrike extends AbilityDefinitio
 public class AbilityDefinitionAuraPlagueAbomination extends AbilityDefinition
 ```
 
+'Aap1' / [AbilityIds.auraPlagueAbomination](/stdlib/ref/_wurst/AbilityIds.html#abilityids-auraPlagueAbomination)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3951,6 +4493,8 @@ public class AbilityDefinitionAuraPlagueAbomination extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAuraPlagueCreep extends AbilityDefinition
 ```
+
+'Aap3' / [AbilityIds.auraPlagueCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-auraPlagueCreep)
 
 **Members:**
 
@@ -3970,6 +4514,8 @@ public class AbilityDefinitionAuraPlagueCreep extends AbilityDefinition
 public class AbilityDefinitionPermanentImmolation extends AbilityDefinition
 ```
 
+'ANpi' / [AbilityIds.permanentImmolation](/stdlib/ref/_wurst/AbilityIds.html#abilityids-permanentImmolation)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -3985,6 +4531,8 @@ public class AbilityDefinitionPermanentImmolation extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAuraPlaguePlagueWard extends AbilityDefinition
 ```
+
+'Aap2' / [AbilityIds.diseaseCloud](/stdlib/ref/_wurst/AbilityIds.html#abilityids-diseaseCloud)
 
 **Members:**
 
@@ -4004,6 +4552,8 @@ public class AbilityDefinitionAuraPlaguePlagueWard extends AbilityDefinition
 public class AbilityDefinitionCyclonecreep extends AbilityDefinition
 ```
 
+'ACcy' / [AbilityIds.cyclonecreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cyclonecreep)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -4015,6 +4565,8 @@ public class AbilityDefinitionCyclonecreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAuraPlagueCreepnodamage extends AbilityDefinition
 ```
+
+'Aap4' / [AbilityIds.auraPlagueCreepnodamage](/stdlib/ref/_wurst/AbilityIds.html#abilityids-auraPlagueCreepnodamage)
 
 **Members:**
 
@@ -4034,6 +4586,8 @@ public class AbilityDefinitionAuraPlagueCreepnodamage extends AbilityDefinition
 public class AbilityDefinitionLightningDamageBonus extends AbilityDefinition
 ```
 
+'AIlb' / [AbilityIds.itemAttackLightningBonus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackLightningBonus)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -4050,6 +4604,8 @@ public class AbilityDefinitionLightningDamageBonus extends AbilityDefinition
 public class AbilityDefinitionArtn extends AbilityDefinition
 ```
 
+'Artn' / [AbilityIds.return111](/stdlib/ref/_wurst/AbilityIds.html#abilityids-return111)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -4063,6 +4619,8 @@ public class AbilityDefinitionArtn extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionCrushingWave extends AbilityDefinition
 ```
+
+'ACcv' / [AbilityIds.crushingWave](/stdlib/ref/_wurst/AbilityIds.html#abilityids-crushingWave)
 
 **Members:**
 
@@ -4081,6 +4639,8 @@ public class AbilityDefinitionCrushingWave extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionColdArrowscreep extends AbilityDefinition
 ```
+
+'ACcw' / [AbilityIds.coldArrows1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-coldArrows1)
 
 **Members:**
 
@@ -4102,6 +4662,8 @@ public class AbilityDefinitionColdArrowscreep extends AbilityDefinition
 public class AbilityDefinitionEatTree extends AbilityDefinition
 ```
 
+'Aeat' / [AbilityIds.eatTree](/stdlib/ref/_wurst/AbilityIds.html#abilityids-eatTree)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -4118,6 +4680,8 @@ public class AbilityDefinitionEatTree extends AbilityDefinition
 public class AbilityDefinitionPreservation extends AbilityDefinition
 ```
 
+'ANpr' / [AbilityIds.preservation](/stdlib/ref/_wurst/AbilityIds.html#abilityids-preservation)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -4130,10 +4694,13 @@ public class AbilityDefinitionPreservation extends AbilityDefinition
 public class AbilityDefinitionShadowMeldAkama extends AbilityDefinition
 ```
 
+'Ahid' / [AbilityIds.shadowMeldAkama](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shadowMeldAkama)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setDayNightDuration(int level, real value)`
+  Day/Night Duration / 'Shm2'
 - `presetDayNightDuration(RealLevelClosure lc)`
 - `setActionDuration(int level, real value)`
 - `presetActionDuration(RealLevelClosure lc)`
@@ -4146,14 +4713,18 @@ public class AbilityDefinitionShadowMeldAkama extends AbilityDefinition
 public class AbilityDefinitionCripplecreep extends AbilityDefinition
 ```
 
+'ACcr' / [AbilityIds.cripplecreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cripplecreep)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setDamageReduction(int level, real value)`
 - `presetDamageReduction(RealLevelClosure lc)`
 - `setAttackSpeedReduction(int level, real value)`
+  Attack Speed Reduction (%) / 'Cri2'
 - `presetAttackSpeedReduction(RealLevelClosure lc)`
 - `setMovementSpeedReduction(int level, real value)`
+  Movement Speed Reduction (%) / 'Cri1'
 - `presetMovementSpeedReduction(RealLevelClosure lc)`
 
 ### AbilityDefinitionCursecreep
@@ -4161,6 +4732,8 @@ public class AbilityDefinitionCripplecreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionCursecreep extends AbilityDefinition
 ```
+
+'ACcs' / [AbilityIds.cursecreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cursecreep)
 
 **Members:**
 
@@ -4173,6 +4746,8 @@ public class AbilityDefinitionCursecreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionCriticalStrikecreep extends AbilityDefinition
 ```
+
+'ACct' / [AbilityIds.criticalStrike](/stdlib/ref/_wurst/AbilityIds.html#abilityids-criticalStrike)
 
 **Members:**
 
@@ -4196,6 +4771,8 @@ public class AbilityDefinitionCriticalStrikecreep extends AbilityDefinition
 public class AbilityDefinitionCannibalizecreep extends AbilityDefinition
 ```
 
+'ACcn' / [AbilityIds.cannibalizecreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cannibalizecreep)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -4210,6 +4787,8 @@ public class AbilityDefinitionCannibalizecreep extends AbilityDefinition
 public class AbilityDefinitionCycloneCenarius extends AbilityDefinition
 ```
 
+'SCc1' / [AbilityIds.cyclone](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cyclone)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -4221,6 +4800,8 @@ public class AbilityDefinitionCycloneCenarius extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionItemManaRestoreGreater extends AbilityDefinition
 ```
+
+'AIm2' / [AbilityIds.itemManaRestoreGreater](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaRestoreGreater)
 
 **Members:**
 
@@ -4234,6 +4815,8 @@ public class AbilityDefinitionItemManaRestoreGreater extends AbilityDefinition
 public class AbilityDefinitionItemManaRestoreLesser extends AbilityDefinition
 ```
 
+'AIm1' / [AbilityIds.itemManaRestoreLesser](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaRestoreLesser)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -4245,6 +4828,8 @@ public class AbilityDefinitionItemManaRestoreLesser extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionStoneForm extends AbilityDefinition
 ```
+
+'Astn' / [AbilityIds.stoneForm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-stoneForm)
 
 **Members:**
 
@@ -4270,6 +4855,8 @@ public class AbilityDefinitionStoneForm extends AbilityDefinition
 public class AbilityDefinitionChainLightningcreep extends AbilityDefinition
 ```
 
+'ACcl' / [AbilityIds.chainLightning](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chainLightning)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -4286,6 +4873,8 @@ public class AbilityDefinitionChainLightningcreep extends AbilityDefinition
 public class AbilityDefinitionFaerieFire extends AbilityDefinition
 ```
 
+'Afae' / [AbilityIds.faerieFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-faerieFire)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -4300,6 +4889,8 @@ public class AbilityDefinitionFaerieFire extends AbilityDefinition
 public class AbilityDefinitionCharm extends AbilityDefinition
 ```
 
+'ACch' / [AbilityIds.charm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-charm)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -4311,6 +4902,8 @@ public class AbilityDefinitionCharm extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionManaSteal extends AbilityDefinition
 ```
+
+'Aste' / [AbilityIds.manaSteal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-manaSteal)
 
 **Members:**
 
@@ -4332,12 +4925,16 @@ public class AbilityDefinitionManaSteal extends AbilityDefinition
 public class AbilityDefinitionAuraEnduranceCreep extends AbilityDefinition
 ```
 
+'SCae' / [AbilityIds.enduranceAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-enduranceAura)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setMovementSpeedIncrease(int level, real value)`
+  Movement Speed Increase (%) / 'Oae1'
 - `presetMovementSpeedIncrease(RealLevelClosure lc)`
 - `setAttackSpeedIncrease(int level, real value)`
+  Attack Speed Increase (%) / 'Oae2'
 - `presetAttackSpeedIncrease(RealLevelClosure lc)`
 
 ### AbilityDefinitionTichondriusInferno
@@ -4345,6 +4942,8 @@ public class AbilityDefinitionAuraEnduranceCreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionTichondriusInferno extends AbilityDefinition
 ```
+
+'SNin' / [AbilityIds.inferno](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inferno)
 
 **Members:**
 
@@ -4363,6 +4962,8 @@ public class AbilityDefinitionTichondriusInferno extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionCryptLordImpale extends AbilityDefinition
 ```
+
+'AUim' / [AbilityIds.cryptLordImpale](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cryptLordImpale)
 
 **Members:**
 
@@ -4386,6 +4987,8 @@ public class AbilityDefinitionCryptLordImpale extends AbilityDefinition
 public class AbilityDefinitionFrostBolt extends AbilityDefinition
 ```
 
+'ACcb' / [AbilityIds.frostBolt](/stdlib/ref/_wurst/AbilityIds.html#abilityids-frostBolt)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -4397,6 +5000,8 @@ public class AbilityDefinitionFrostBolt extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionCarrionSwarmcreep extends AbilityDefinition
 ```
+
+'ACca' / [AbilityIds.carrionSwarm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-carrionSwarm)
 
 **Members:**
 
@@ -4416,6 +5021,8 @@ public class AbilityDefinitionCarrionSwarmcreep extends AbilityDefinition
 public class AbilityDefinitionDreadlordInferno extends AbilityDefinition
 ```
 
+'AUin' / [AbilityIds.inferno2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inferno2)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -4434,6 +5041,8 @@ public class AbilityDefinitionDreadlordInferno extends AbilityDefinition
 public class AbilityDefinitionWispHarvestInvulnerable extends AbilityDefinition
 ```
 
+'Awh2' / [AbilityIds.gather1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-gather1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -4449,6 +5058,8 @@ public class AbilityDefinitionWispHarvestInvulnerable extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionOrbofAnnihilation extends AbilityDefinition
 ```
+
+'Afak' / [AbilityIds.orbofAnnihilation](/stdlib/ref/_wurst/AbilityIds.html#abilityids-orbofAnnihilation)
 
 **Members:**
 
@@ -4470,6 +5081,8 @@ public class AbilityDefinitionOrbofAnnihilation extends AbilityDefinition
 public class AbilityDefinitionOrbOfAnnihilationQuillSpray extends AbilityDefinition
 ```
 
+'ANak' / [AbilityIds.quillSpray](/stdlib/ref/_wurst/AbilityIds.html#abilityids-quillSpray)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -4490,6 +5103,8 @@ public class AbilityDefinitionOrbOfAnnihilationQuillSpray extends AbilityDefinit
 public class AbilityDefinitionMaxManaBonusLeast extends AbilityDefinition
 ```
 
+'AImb' / [AbilityIds.maxManaBonusLeast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-maxManaBonusLeast)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -4501,6 +5116,8 @@ public class AbilityDefinitionMaxManaBonusLeast extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionNeutralBuildinganyunit extends AbilityDefinition
 ```
+
+'Ane2' / [AbilityIds.neutralBuildinganyunit](/stdlib/ref/_wurst/AbilityIds.html#abilityids-neutralBuildinganyunit)
 
 **Members:**
 
@@ -4520,6 +5137,8 @@ public class AbilityDefinitionNeutralBuildinganyunit extends AbilityDefinition
 public class AbilityDefinitionGhost extends AbilityDefinition
 ```
 
+'Agho' / [AbilityIds.ghost](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ghost)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -4536,6 +5155,8 @@ public class AbilityDefinitionGhost extends AbilityDefinition
 public class AbilityDefinitionDevourCreep extends AbilityDefinition
 ```
 
+'ACdv' / [AbilityIds.devour](/stdlib/ref/_wurst/AbilityIds.html#abilityids-devour)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -4547,6 +5168,8 @@ public class AbilityDefinitionDevourCreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionGiveLumber extends AbilityDefinition
 ```
+
+'AIlu' / [AbilityIds.giveLumber](/stdlib/ref/_wurst/AbilityIds.html#abilityids-giveLumber)
 
 **Members:**
 
@@ -4560,6 +5183,8 @@ public class AbilityDefinitionGiveLumber extends AbilityDefinition
 public class AbilityDefinitionFireBoltwarlock extends AbilityDefinition
 ```
 
+'Awfb' / [AbilityIds.firebolt2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-firebolt2)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -4571,6 +5196,8 @@ public class AbilityDefinitionFireBoltwarlock extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionDrainLifeCreep extends AbilityDefinition
 ```
+
+'ACdr' / [AbilityIds.drainLifeCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-drainLifeCreep)
 
 **Members:**
 
@@ -4593,6 +5220,8 @@ public class AbilityDefinitionDrainLifeCreep extends AbilityDefinition
 - `presetLifeTransferredPerSecond(RealLevelClosure lc)`
 - `setManaPointsDrained(int level, real value)`
 - `presetManaPointsDrained(RealLevelClosure lc)`
+- `presetDrainIntervalseconds(RealLevelClosure lc)`
+- `setDrainIntervalseconds(int level, real value)`
 
 ### AbilityDefinitionPaladinHolyLight
 
@@ -4600,10 +5229,13 @@ public class AbilityDefinitionDrainLifeCreep extends AbilityDefinition
 public class AbilityDefinitionPaladinHolyLight extends AbilityDefinition
 ```
 
+'AHhb' / [AbilityIds.holyLight](/stdlib/ref/_wurst/AbilityIds.html#abilityids-holyLight)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setAmountHealedDamaged(int level, real value)`
+  Amount Healed/Damaged / 'Hhb1'
 - `presetAmountHealedDamaged(RealLevelClosure lc)`
 
 ### AbilityDefinitionLevelMod
@@ -4611,6 +5243,8 @@ public class AbilityDefinitionPaladinHolyLight extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionLevelMod extends AbilityDefinition
 ```
+
+'AIlm' / [AbilityIds.itemLevelGain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLevelGain)
 
 **Members:**
 
@@ -4624,16 +5258,21 @@ public class AbilityDefinitionLevelMod extends AbilityDefinition
 public class AbilityDefinitionOrbofLightning extends AbilityDefinition
 ```
 
+'AIll' / [AbilityIds.orbofLightning](/stdlib/ref/_wurst/AbilityIds.html#abilityids-orbofLightning)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setChanceToHitUnits(int level, real value)`
+  Chance To Hit Units (%) / 'Iob2'
 - `presetChanceToHitUnits(RealLevelClosure lc)`
 - `setEnabledAttackIndex(int level, int value)`
 - `presetEnabledAttackIndex(IntLevelClosure lc)`
 - `setChanceToHitSummons(int level, real value)`
+  Chance To Hit Summons (%) / 'Iob4'
 - `presetChanceToHitSummons(RealLevelClosure lc)`
 - `setChanceToHitHeros(int level, real value)`
+  Chance To Hit Heros (%) / 'Iob3'
 - `presetChanceToHitHeros(RealLevelClosure lc)`
 - `setDamageBonus(int level, real value)`
 - `presetDamageBonus(RealLevelClosure lc)`
@@ -4645,6 +5284,8 @@ public class AbilityDefinitionOrbofLightning extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionLightningShieldAIls extends AbilityDefinition
 ```
+
+'AIls' / [AbilityIds.lightningShieldAIls](/stdlib/ref/_wurst/AbilityIds.html#abilityids-lightningShieldAIls)
 
 **Members:**
 
@@ -4660,6 +5301,8 @@ public class AbilityDefinitionLightningShieldAIls extends AbilityDefinition
 public class AbilityDefinitionAbolishMagicCreep extends AbilityDefinition
 ```
 
+'ACdm' / [AbilityIds.abolishMagicCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-abolishMagicCreep)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -4673,6 +5316,8 @@ public class AbilityDefinitionAbolishMagicCreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionLightningPurge extends AbilityDefinition
 ```
+
+'AIlp' / [AbilityIds.itemPurge](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemPurge)
 
 **Members:**
 
@@ -4696,6 +5341,8 @@ public class AbilityDefinitionLightningPurge extends AbilityDefinition
 public class AbilityDefinitionMaxLifeBonusLeast extends AbilityDefinition
 ```
 
+'AIlf' / [AbilityIds.maxLifeBonusLeast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-maxLifeBonusLeast)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -4707,6 +5354,8 @@ public class AbilityDefinitionMaxLifeBonusLeast extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionParasite extends AbilityDefinition
 ```
+
+'ANpa' / [AbilityIds.parasite](/stdlib/ref/_wurst/AbilityIds.html#abilityids-parasite)
 
 **Members:**
 
@@ -4727,12 +5376,15 @@ public class AbilityDefinitionParasite extends AbilityDefinition
 - `presetAttackSpeedFactor(RealLevelClosure lc)`
 - `setUnitType(int level, string value)`
 - `presetUnitType(StringLevelClosure lc)`
+- `presetStackingType(IntLevelClosure lc)`
 
 ### AbilityDefinitionDemonHunterMetamorphosis
 
 ```wurst
 public class AbilityDefinitionDemonHunterMetamorphosis extends AbilityDefinition
 ```
+
+'AEme' / [AbilityIds.metamorphosis](/stdlib/ref/_wurst/AbilityIds.html#abilityids-metamorphosis)
 
 **Members:**
 
@@ -4758,6 +5410,8 @@ public class AbilityDefinitionDemonHunterMetamorphosis extends AbilityDefinition
 public class AbilityDefinitionDevourMagiccreep extends AbilityDefinition
 ```
 
+'ACde' / [AbilityIds.devourMagiccreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-devourMagiccreep)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -4780,6 +5434,8 @@ public class AbilityDefinitionDevourMagiccreep extends AbilityDefinition
 public class AbilityDefinitionAapl extends AbilityDefinition
 ```
 
+'Aapl' / [AbilityIds.diseaseCloud1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-diseaseCloud1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -4798,10 +5454,13 @@ public class AbilityDefinitionAapl extends AbilityDefinition
 public class AbilityDefinitionDeathCoilcreep extends AbilityDefinition
 ```
 
+'ACdc' / [AbilityIds.deathCoil](/stdlib/ref/_wurst/AbilityIds.html#abilityids-deathCoil)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setAmountHealedDamaged(int level, real value)`
+  Amount Healed/Damaged / 'Udc1'
 - `presetAmountHealedDamaged(RealLevelClosure lc)`
 
 ### AbilityDefinitionDemonHunterManaBurn
@@ -4809,6 +5468,8 @@ public class AbilityDefinitionDeathCoilcreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionDemonHunterManaBurn extends AbilityDefinition
 ```
+
+'AEmb' / [AbilityIds.manaBurn1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-manaBurn1)
 
 **Members:**
 
@@ -4826,6 +5487,8 @@ public class AbilityDefinitionDemonHunterManaBurn extends AbilityDefinition
 public class AbilityDefinitionLichFrostArmorAutocast extends AbilityDefinition
 ```
 
+'AUfu' / [AbilityIds.lichFrostArmorAutocast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-lichFrostArmorAutocast)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -4839,6 +5502,8 @@ public class AbilityDefinitionLichFrostArmorAutocast extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAnimateDeaditemspecial extends AbilityDefinition
 ```
+
+'AInd' / [AbilityIds.animateDeaditemspecial](/stdlib/ref/_wurst/AbilityIds.html#abilityids-animateDeaditemspecial)
 
 **Members:**
 
@@ -4856,6 +5521,8 @@ public class AbilityDefinitionAnimateDeaditemspecial extends AbilityDefinition
 public class AbilityDefinitionFrostArmorcreep extends AbilityDefinition
 ```
 
+'ACfa' / [AbilityIds.frostArmor](/stdlib/ref/_wurst/AbilityIds.html#abilityids-frostArmor)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -4869,6 +5536,8 @@ public class AbilityDefinitionFrostArmorcreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionManaBatteryObsidianStatue extends AbilityDefinition
 ```
+
+'Amb2' / [AbilityIds.manaBatteryObsidianStatue](/stdlib/ref/_wurst/AbilityIds.html#abilityids-manaBatteryObsidianStatue)
 
 **Members:**
 
@@ -4890,6 +5559,8 @@ public class AbilityDefinitionManaBatteryObsidianStatue extends AbilityDefinitio
 public class AbilityDefinitionFireBoltcreep extends AbilityDefinition
 ```
 
+'ACfb' / [AbilityIds.firebolt1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-firebolt1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -4902,6 +5573,8 @@ public class AbilityDefinitionFireBoltcreep extends AbilityDefinition
 public class AbilityDefinitionEvasioncreep100 extends AbilityDefinition
 ```
 
+'ACes' / [AbilityIds.evasion1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-evasion1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -4913,6 +5586,8 @@ public class AbilityDefinitionEvasioncreep100 extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionVenomSpears extends AbilityDefinition
 ```
+
+'Aven' / [AbilityIds.envenomedSpears](/stdlib/ref/_wurst/AbilityIds.html#abilityids-envenomedSpears)
 
 **Members:**
 
@@ -4927,12 +5602,15 @@ public class AbilityDefinitionVenomSpears extends AbilityDefinition
 - `presetDamageperSecond(RealLevelClosure lc)`
 - `setAttackSpeedFactor(int level, real value)`
 - `presetAttackSpeedFactor(RealLevelClosure lc)`
+- `presetStackingType(IntLevelClosure lc)`
 
 ### AbilityDefinitionEvasioncreep
 
 ```wurst
 public class AbilityDefinitionEvasioncreep extends AbilityDefinition
 ```
+
+'AIev' / [AbilityIds.evasion3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-evasion3)
 
 **Members:**
 
@@ -4946,6 +5624,8 @@ public class AbilityDefinitionEvasioncreep extends AbilityDefinition
 public class AbilityDefinitionCargoHoldBurrow extends AbilityDefinition
 ```
 
+'Abun' / [AbilityIds.cargoHold](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cargoHold)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -4958,6 +5638,8 @@ public class AbilityDefinitionCargoHoldBurrow extends AbilityDefinition
 public class AbilityDefinitionMagicImmunityAImx extends AbilityDefinition
 ```
 
+'AImx' / [AbilityIds.magicImmunityAImx](/stdlib/ref/_wurst/AbilityIds.html#abilityids-magicImmunityAImx)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -4969,6 +5651,8 @@ public class AbilityDefinitionMagicImmunityAImx extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionBurrow extends AbilityDefinition
 ```
+
+'Abur' / [AbilityIds.burrow](/stdlib/ref/_wurst/AbilityIds.html#abilityids-burrow)
 
 **Members:**
 
@@ -4992,6 +5676,8 @@ public class AbilityDefinitionBurrow extends AbilityDefinition
 public class AbilityDefinitionCyclone extends AbilityDefinition
 ```
 
+'Acyc' / [AbilityIds.cyclone1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cyclone1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5004,6 +5690,8 @@ public class AbilityDefinitionCyclone extends AbilityDefinition
 public class AbilityDefinitionItemManaRestoreAoe extends AbilityDefinition
 ```
 
+'AImr' / [AbilityIds.itemAreaManaRegain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAreaManaRegain)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5015,6 +5703,8 @@ public class AbilityDefinitionItemManaRestoreAoe extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionStaffoTeleportation extends AbilityDefinition
 ```
+
+'AImt' / [AbilityIds.staffoTeleportation](/stdlib/ref/_wurst/AbilityIds.html#abilityids-staffoTeleportation)
 
 **Members:**
 
@@ -5032,6 +5722,8 @@ public class AbilityDefinitionStaffoTeleportation extends AbilityDefinition
 public class AbilityDefinitionEnsnareCreep extends AbilityDefinition
 ```
 
+'ACen' / [AbilityIds.ensnare](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ensnare)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5041,12 +5733,22 @@ public class AbilityDefinitionEnsnareCreep extends AbilityDefinition
 - `presetAirUnitLowerDuration(RealLevelClosure lc)`
 - `setMeleeAttackRange(int level, real value)`
 - `presetMeleeAttackRange(RealLevelClosure lc)`
+- `setStunDuration(int level, real value)`
+- `setBonusDamageTakenPercent(int level, real value)`
+- `setAttackSpeedReductionPercent(int level, real value)`
+- `setSilencesWhenEnsnared(int level, bool value)`
+- `presetStunDuration(RealLevelClosure lc)`
+- `presetBonusDamageTakenPercent(RealLevelClosure lc)`
+- `presetAttackSpeedReductionPercent(RealLevelClosure lc)`
+- `presetSilencesWhenEnsnared(BooleanLevelClosure lc)`
 
 ### AbilityDefinitionMoveSpeedBonus
 
 ```wurst
 public class AbilityDefinitionMoveSpeedBonus extends AbilityDefinition
 ```
+
+'AIms' / [AbilityIds.itemMoveSpeedBonus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMoveSpeedBonus)
 
 **Members:**
 
@@ -5059,6 +5761,8 @@ public class AbilityDefinitionMoveSpeedBonus extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionPhoenix extends AbilityDefinition
 ```
+
+'Aphx' / [AbilityIds.phoenix2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-phoenix2)
 
 **Members:**
 
@@ -5082,6 +5786,8 @@ public class AbilityDefinitionPhoenix extends AbilityDefinition
 public class AbilityDefinitionNeutralSpell extends AbilityDefinition
 ```
 
+'AAns' / [AbilityIds.neutralSpell](/stdlib/ref/_wurst/AbilityIds.html#abilityids-neutralSpell)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5100,6 +5806,8 @@ public class AbilityDefinitionNeutralSpell extends AbilityDefinition
 public class AbilityDefinitionAImm extends AbilityDefinition
 ```
 
+'AImm' / [AbilityIds.itemManaBonus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaBonus)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5111,6 +5819,8 @@ public class AbilityDefinitionAImm extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionShadowHunterHealingWave extends AbilityDefinition
 ```
+
+'AOhw' / [AbilityIds.shadowHunterHealingWave](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shadowHunterHealingWave)
 
 **Members:**
 
@@ -5127,6 +5837,8 @@ public class AbilityDefinitionShadowHunterHealingWave extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionShadowHunterHex extends AbilityDefinition
 ```
+
+'AOhx' / [AbilityIds.shadowHunterHex](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shadowHunterHex)
 
 **Members:**
 
@@ -5148,6 +5860,8 @@ public class AbilityDefinitionShadowHunterHex extends AbilityDefinition
 public class AbilityDefinitionItemMonsterLure extends AbilityDefinition
 ```
 
+'AImo' / [AbilityIds.itemMonsterLure](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMonsterLure)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5166,6 +5880,8 @@ public class AbilityDefinitionItemMonsterLure extends AbilityDefinition
 public class AbilityDefinitionAImi extends AbilityDefinition
 ```
 
+'AImi' / [AbilityIds.itemLifeGain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLifeGain)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5177,6 +5893,8 @@ public class AbilityDefinitionAImi extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAIml extends AbilityDefinition
 ```
+
+'AIml' / [AbilityIds.itemLifeBonus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLifeBonus)
 
 **Members:**
 
@@ -5190,6 +5908,8 @@ public class AbilityDefinitionAIml extends AbilityDefinition
 public class AbilityDefinitionPermanentHitpointBonusfromchargeditem extends AbilityDefinition
 ```
 
+'AImh' / [AbilityIds.permanentHitpointBonusfromchargeditem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-permanentHitpointBonusfromchargeditem)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5202,16 +5922,20 @@ public class AbilityDefinitionPermanentHitpointBonusfromchargeditem extends Abil
 public class AbilityDefinitionFeedbackArcaneTower extends AbilityDefinition
 ```
 
+'Afbt' / [AbilityIds.feedbackArcaneTower](/stdlib/ref/_wurst/AbilityIds.html#abilityids-feedbackArcaneTower)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setMaxManaDrainedUnits(int level, real value)`
 - `presetMaxManaDrainedUnits(RealLevelClosure lc)`
 - `setDamageRatioUnits(int level, real value)`
+  Damage Ratio - Units (%) / 'fbk2'
 - `presetDamageRatioUnits(RealLevelClosure lc)`
 - `setMaxManaDrainedHeros(int level, real value)`
 - `presetMaxManaDrainedHeros(RealLevelClosure lc)`
 - `setDamageRatioHeros(int level, real value)`
+  Damage Ratio - Heros (%) / 'fbk4'
 - `presetDamageRatioHeros(RealLevelClosure lc)`
 - `setSummonedDamage(int level, real value)`
 - `presetSummonedDamage(RealLevelClosure lc)`
@@ -5221,6 +5945,8 @@ public class AbilityDefinitionFeedbackArcaneTower extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionChaosGrunt extends AbilityDefinition
 ```
+
+'Sca1' / [AbilityIds.chaosGrunt](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chaosGrunt)
 
 **Members:**
 
@@ -5234,6 +5960,8 @@ public class AbilityDefinitionChaosGrunt extends AbilityDefinition
 public class AbilityDefinitionChaosRaider extends AbilityDefinition
 ```
 
+'Sca2' / [AbilityIds.chaosRaider](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chaosRaider)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5245,6 +5973,8 @@ public class AbilityDefinitionChaosRaider extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionStasisTrap extends AbilityDefinition
 ```
+
+'Asta' / [AbilityIds.stasisTrap](/stdlib/ref/_wurst/AbilityIds.html#abilityids-stasisTrap)
 
 **Members:**
 
@@ -5268,6 +5998,8 @@ public class AbilityDefinitionStasisTrap extends AbilityDefinition
 public class AbilityDefinitionPermanentImmolationgraphic extends AbilityDefinition
 ```
 
+'Apig' / [AbilityIds.permanentImmolationgraphic](/stdlib/ref/_wurst/AbilityIds.html#abilityids-permanentImmolationgraphic)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5284,6 +6016,8 @@ public class AbilityDefinitionPermanentImmolationgraphic extends AbilityDefiniti
 public class AbilityDefinitionChaosShaman extends AbilityDefinition
 ```
 
+'Sca3' / [AbilityIds.chaosShaman](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chaosShaman)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5295,6 +6029,8 @@ public class AbilityDefinitionChaosShaman extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionChaosKodo extends AbilityDefinition
 ```
+
+'Sca4' / [AbilityIds.chaosKodo](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chaosKodo)
 
 **Members:**
 
@@ -5308,6 +6044,8 @@ public class AbilityDefinitionChaosKodo extends AbilityDefinition
 public class AbilityDefinitionChaosPeon extends AbilityDefinition
 ```
 
+'Sca5' / [AbilityIds.chaosPeon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chaosPeon)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5319,6 +6057,8 @@ public class AbilityDefinitionChaosPeon extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionFrostDamageBonus extends AbilityDefinition
 ```
+
+'AIob' / [AbilityIds.itemAttackFrostBonus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackFrostBonus)
 
 **Members:**
 
@@ -5334,6 +6074,8 @@ public class AbilityDefinitionFrostDamageBonus extends AbilityDefinition
 public class AbilityDefinitionChaosGrom extends AbilityDefinition
 ```
 
+'Sca6' / [AbilityIds.chaosGrom](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chaosGrom)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5346,6 +6088,8 @@ public class AbilityDefinitionChaosGrom extends AbilityDefinition
 public class AbilityDefinitionInnerFire extends AbilityDefinition
 ```
 
+'Ainf' / [AbilityIds.innerFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-innerFire)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5356,6 +6100,7 @@ public class AbilityDefinitionInnerFire extends AbilityDefinition
 - `setDefenseIncrease(int level, int value)`
 - `presetDefenseIncrease(IntLevelClosure lc)`
 - `setDamageIncrease(int level, real value)`
+  Damage Increase (%) / 'Inf1'
 - `presetDamageIncrease(RealLevelClosure lc)`
 
 ### AbilityDefinitionMoonPriestessSearingArrows
@@ -5363,6 +6108,8 @@ public class AbilityDefinitionInnerFire extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionMoonPriestessSearingArrows extends AbilityDefinition
 ```
+
+'AHfa' / [AbilityIds.searingArrows1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-searingArrows1)
 
 **Members:**
 
@@ -5375,6 +6122,8 @@ public class AbilityDefinitionMoonPriestessSearingArrows extends AbilityDefiniti
 ```wurst
 public class AbilityDefinitionMonsoon extends AbilityDefinition
 ```
+
+'ANmo' / [AbilityIds.monsoon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-monsoon)
 
 **Members:**
 
@@ -5391,6 +6140,8 @@ public class AbilityDefinitionMonsoon extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionInventory extends AbilityDefinition
 ```
+
+'AInv' / [AbilityIds.inventory](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inventory)
 
 **Members:**
 
@@ -5412,6 +6163,8 @@ public class AbilityDefinitionInventory extends AbilityDefinition
 public class AbilityDefinitionnullroarsummoner extends AbilityDefinition
 ```
 
+'Ahnl' / [AbilityIds.nullroarsummoner](/stdlib/ref/_wurst/AbilityIds.html#abilityids-nullroarsummoner)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5424,6 +6177,7 @@ public class AbilityDefinitionnullroarsummoner extends AbilityDefinition
 - `setManaRegen(int level, real value)`
 - `presetManaRegen(RealLevelClosure lc)`
 - `setDamageIncrease(int level, real value)`
+  Damage Increase (%) / 'Roa1'
 - `presetDamageIncrease(RealLevelClosure lc)`
 - `setDefenseIncrease(int level, int value)`
 - `presetDefenseIncrease(IntLevelClosure lc)`
@@ -5436,10 +6190,13 @@ public class AbilityDefinitionnullroarsummoner extends AbilityDefinition
 public class AbilityDefinitionSeaWitchManaShield extends AbilityDefinition
 ```
 
+'ANms' / [AbilityIds.seaWitchManaShield](/stdlib/ref/_wurst/AbilityIds.html#abilityids-seaWitchManaShield)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setDamageAbsorbed(int level, real value)`
+  Damage Absorbed (%) / 'Nms2'
 - `presetDamageAbsorbed(RealLevelClosure lc)`
 - `setManaperHitPoint(int level, real value)`
 - `presetManaperHitPoint(RealLevelClosure lc)`
@@ -5449,6 +6206,8 @@ public class AbilityDefinitionSeaWitchManaShield extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionSpawnSpiderlingOnDeath extends AbilityDefinition
 ```
+
+'Assp' / [AbilityIds.spawnSpiderlings](/stdlib/ref/_wurst/AbilityIds.html#abilityids-spawnSpiderlings)
 
 **Members:**
 
@@ -5464,6 +6223,8 @@ public class AbilityDefinitionSpawnSpiderlingOnDeath extends AbilityDefinition
 public class AbilityDefinitionScrollofRejuvII extends AbilityDefinition
 ```
 
+'AIp6' / [AbilityIds.scrollofRejuvII](/stdlib/ref/_wurst/AbilityIds.html#abilityids-scrollofRejuvII)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5477,12 +6238,15 @@ public class AbilityDefinitionScrollofRejuvII extends AbilityDefinition
 - `presetAllowWhenFull(IntLevelClosure lc)`
 - `setLifeRegenerated(int level, real value)`
 - `presetLifeRegenerated(RealLevelClosure lc)`
+- `setAllowWhenFull(int level, int value)`
 
 ### AbilityDefinitionMindRot
 
 ```wurst
 public class AbilityDefinitionMindRot extends AbilityDefinition
 ```
+
+'ANmr' / [AbilityIds.mindRot](/stdlib/ref/_wurst/AbilityIds.html#abilityids-mindRot)
 
 **Members:**
 
@@ -5495,6 +6259,8 @@ public class AbilityDefinitionMindRot extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionFrostNovacreep extends AbilityDefinition
 ```
+
+'ACfn' / [AbilityIds.frostNova](/stdlib/ref/_wurst/AbilityIds.html#abilityids-frostNova)
 
 **Members:**
 
@@ -5512,6 +6278,8 @@ public class AbilityDefinitionFrostNovacreep extends AbilityDefinition
 public class AbilityDefinitionScrollofRejuvI extends AbilityDefinition
 ```
 
+'AIp5' / [AbilityIds.scrollofRejuvI](/stdlib/ref/_wurst/AbilityIds.html#abilityids-scrollofRejuvI)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5525,12 +6293,15 @@ public class AbilityDefinitionScrollofRejuvI extends AbilityDefinition
 - `presetAllowWhenFull(IntLevelClosure lc)`
 - `setLifeRegenerated(int level, real value)`
 - `presetLifeRegenerated(RealLevelClosure lc)`
+- `setAllowWhenFull(int level, int value)`
 
 ### AbilityDefinitionPermanentInvisibility
 
 ```wurst
 public class AbilityDefinitionPermanentInvisibility extends AbilityDefinition
 ```
+
+'Apiv' / [AbilityIds.permanentInvisibility](/stdlib/ref/_wurst/AbilityIds.html#abilityids-permanentInvisibility)
 
 **Members:**
 
@@ -5544,6 +6315,8 @@ public class AbilityDefinitionPermanentInvisibility extends AbilityDefinition
 public class AbilityDefinitionFeedbackSpiritBeast extends AbilityDefinition
 ```
 
+'Afbb' / [AbilityIds.feedbackSpiritBeast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-feedbackSpiritBeast)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5552,10 +6325,12 @@ public class AbilityDefinitionFeedbackSpiritBeast extends AbilityDefinition
 - `setMaxManaDrainedUnits(int level, real value)`
 - `presetMaxManaDrainedUnits(RealLevelClosure lc)`
 - `setDamageRatioUnits(int level, real value)`
+  Damage Ratio - Units (%) / 'fbk2'
 - `presetDamageRatioUnits(RealLevelClosure lc)`
 - `setMaxManaDrainedHeros(int level, real value)`
 - `presetMaxManaDrainedHeros(RealLevelClosure lc)`
 - `setDamageRatioHeros(int level, real value)`
+  Damage Ratio - Heros (%) / 'fbk4'
 - `presetDamageRatioHeros(RealLevelClosure lc)`
 
 ### AbilityDefinitionPotionofRejuvIV
@@ -5564,6 +6339,8 @@ public class AbilityDefinitionFeedbackSpiritBeast extends AbilityDefinition
 public class AbilityDefinitionPotionofRejuvIV extends AbilityDefinition
 ```
 
+'AIp4' / [AbilityIds.potionofRejuvIV](/stdlib/ref/_wurst/AbilityIds.html#abilityids-potionofRejuvIV)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5577,6 +6354,7 @@ public class AbilityDefinitionPotionofRejuvIV extends AbilityDefinition
 - `presetAllowWhenFull(IntLevelClosure lc)`
 - `setLifeRegenerated(int level, real value)`
 - `presetLifeRegenerated(RealLevelClosure lc)`
+- `setAllowWhenFull(int level, int value)`
 
 ### AbilityDefinitionPotionofRejuvIII
 
@@ -5584,6 +6362,8 @@ public class AbilityDefinitionPotionofRejuvIV extends AbilityDefinition
 public class AbilityDefinitionPotionofRejuvIII extends AbilityDefinition
 ```
 
+'AIp3' / [AbilityIds.potionofRejuvIII](/stdlib/ref/_wurst/AbilityIds.html#abilityids-potionofRejuvIII)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5597,12 +6377,15 @@ public class AbilityDefinitionPotionofRejuvIII extends AbilityDefinition
 - `presetAllowWhenFull(IntLevelClosure lc)`
 - `setLifeRegenerated(int level, real value)`
 - `presetLifeRegenerated(RealLevelClosure lc)`
+- `setAllowWhenFull(int level, int value)`
 
 ### AbilityDefinitionFlameStrikeCreep
 
 ```wurst
 public class AbilityDefinitionFlameStrikeCreep extends AbilityDefinition
 ```
+
+'ACfs' / [AbilityIds.flameStrikeCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-flameStrikeCreep)
 
 **Members:**
 
@@ -5626,6 +6409,8 @@ public class AbilityDefinitionFlameStrikeCreep extends AbilityDefinition
 public class AbilityDefinitionWispHarvest extends AbilityDefinition
 ```
 
+'Awha' / [AbilityIds.gather](/stdlib/ref/_wurst/AbilityIds.html#abilityids-gather)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5642,6 +6427,8 @@ public class AbilityDefinitionWispHarvest extends AbilityDefinition
 public class AbilityDefinitionPotionofRejuvII extends AbilityDefinition
 ```
 
+'AIp2' / [AbilityIds.potionofRejuvII](/stdlib/ref/_wurst/AbilityIds.html#abilityids-potionofRejuvII)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5655,12 +6442,15 @@ public class AbilityDefinitionPotionofRejuvII extends AbilityDefinition
 - `presetAllowWhenFull(IntLevelClosure lc)`
 - `setLifeRegenerated(int level, real value)`
 - `presetLifeRegenerated(RealLevelClosure lc)`
+- `setAllowWhenFull(int level, int value)`
 
 ### AbilityDefinitionHardenedSkin
 
 ```wurst
 public class AbilityDefinitionHardenedSkin extends AbilityDefinition
 ```
+
+'Assk' / [AbilityIds.hardenedSkin](/stdlib/ref/_wurst/AbilityIds.html#abilityids-hardenedSkin)
 
 **Members:**
 
@@ -5672,6 +6462,7 @@ public class AbilityDefinitionHardenedSkin extends AbilityDefinition
 - `setIgnoredDamage(int level, real value)`
 - `presetIgnoredDamage(RealLevelClosure lc)`
 - `setChancetoReduceDamage(int level, real value)`
+  Chance to Reduce Damage (%) / 'Ssk1'
 - `presetChancetoReduceDamage(RealLevelClosure lc)`
 - `setIncludeMeleeDamage(int level, bool value)`
 - `presetIncludeMeleeDamage(BooleanLevelClosure lc)`
@@ -5681,6 +6472,8 @@ public class AbilityDefinitionHardenedSkin extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionForceofNaturecreep extends AbilityDefinition
 ```
+
+'ACfr' / [AbilityIds.forceofNature](/stdlib/ref/_wurst/AbilityIds.html#abilityids-forceofNature)
 
 **Members:**
 
@@ -5696,6 +6489,8 @@ public class AbilityDefinitionForceofNaturecreep extends AbilityDefinition
 public class AbilityDefinitionPotionofRejuvI extends AbilityDefinition
 ```
 
+'AIp1' / [AbilityIds.potionofRejuvI](/stdlib/ref/_wurst/AbilityIds.html#abilityids-potionofRejuvI)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5709,6 +6504,7 @@ public class AbilityDefinitionPotionofRejuvI extends AbilityDefinition
 - `presetAllowWhenFull(IntLevelClosure lc)`
 - `setLifeRegenerated(int level, real value)`
 - `presetLifeRegenerated(RealLevelClosure lc)`
+- `setAllowWhenFull(int level, int value)`
 
 ### AbilityDefinitionFeedback
 
@@ -5716,18 +6512,22 @@ public class AbilityDefinitionPotionofRejuvI extends AbilityDefinition
 public class AbilityDefinitionFeedback extends AbilityDefinition
 ```
 
+'Afbk' / [AbilityIds.feedback](/stdlib/ref/_wurst/AbilityIds.html#abilityids-feedback)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setSummonedDamage(int level, real value)`
 - `presetSummonedDamage(RealLevelClosure lc)`
 - `setDamageRatioUnits(int level, real value)`
+  Damage Ratio - Units (%) / 'fbk2'
 - `presetDamageRatioUnits(RealLevelClosure lc)`
 - `setMaxManaDrainedHeros(int level, real value)`
 - `presetMaxManaDrainedHeros(RealLevelClosure lc)`
 - `setMaxManaDrainedUnits(int level, real value)`
 - `presetMaxManaDrainedUnits(RealLevelClosure lc)`
 - `setDamageRatioHeros(int level, real value)`
+  Damage Ratio - Heros (%) / 'fbk4'
 - `presetDamageRatioHeros(RealLevelClosure lc)`
 
 ### AbilityDefinitionStrengthModPlus2
@@ -5735,6 +6535,8 @@ public class AbilityDefinitionFeedback extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionStrengthModPlus2 extends AbilityDefinition
 ```
+
+'AInm' / [AbilityIds.strengthModPlus2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-strengthModPlus2)
 
 **Members:**
 
@@ -5754,6 +6556,8 @@ public class AbilityDefinitionStrengthModPlus2 extends AbilityDefinition
 public class AbilityDefinitionFaerieFirecreep extends AbilityDefinition
 ```
 
+'ACff' / [AbilityIds.faerieFirecreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-faerieFirecreep)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5768,6 +6572,8 @@ public class AbilityDefinitionFaerieFirecreep extends AbilityDefinition
 public class AbilityDefinitionAarm extends AbilityDefinition
 ```
 
+'Aarm' / [AbilityIds.manaRegenerationAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-manaRegenerationAura)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5781,6 +6587,8 @@ public class AbilityDefinitionAarm extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionBloodMageFlameStrike extends AbilityDefinition
 ```
+
+'AHfs' / [AbilityIds.bloodMageFlameStrike](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bloodMageFlameStrike)
 
 **Members:**
 
@@ -5804,12 +6612,16 @@ public class AbilityDefinitionBloodMageFlameStrike extends AbilityDefinition
 public class AbilityDefinitionBloodlustCreep extends AbilityDefinition
 ```
 
+'ACbl' / [AbilityIds.bloodlust](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bloodlust)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setMovementSpeedIncrease(int level, real value)`
+  Movement Speed Increase (%) / 'Blo2'
 - `presetMovementSpeedIncrease(RealLevelClosure lc)`
 - `setAttackSpeedIncrease(int level, real value)`
+  Attack Speed Increase (%) / 'Blo1'
 - `presetAttackSpeedIncrease(RealLevelClosure lc)`
 - `setScalingFactor(int level, real value)`
 - `presetScalingFactor(RealLevelClosure lc)`
@@ -5820,10 +6632,13 @@ public class AbilityDefinitionBloodlustCreep extends AbilityDefinition
 public class AbilityDefinitionRoarAIrr extends AbilityDefinition
 ```
 
+'AIrr' / [AbilityIds.roarAIrr](/stdlib/ref/_wurst/AbilityIds.html#abilityids-roarAIrr)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setDamageIncrease(int level, real value)`
+  Damage Increase (%) / 'Roa1'
 - `presetDamageIncrease(RealLevelClosure lc)`
 - `setDefenseIncrease(int level, int value)`
 - `presetDefenseIncrease(IntLevelClosure lc)`
@@ -5844,6 +6659,8 @@ public class AbilityDefinitionRoarAIrr extends AbilityDefinition
 public class AbilityDefinitionResurrection extends AbilityDefinition
 ```
 
+'AIrs' / [AbilityIds.itemResurrection](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemResurrection)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5857,6 +6674,8 @@ public class AbilityDefinitionResurrection extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionItemRecall extends AbilityDefinition
 ```
+
+'AIrt' / [AbilityIds.itemRecall](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRecall)
 
 **Members:**
 
@@ -5872,6 +6691,8 @@ public class AbilityDefinitionItemRecall extends AbilityDefinition
 public class AbilityDefinitionAttackBonusAIt6 extends AbilityDefinition
 ```
 
+'AIt6' / [AbilityIds.attackBonusAIt6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonusAIt6)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5884,6 +6705,8 @@ public class AbilityDefinitionAttackBonusAIt6 extends AbilityDefinition
 public class AbilityDefinitionItemRevealMap extends AbilityDefinition
 ```
 
+'AIrv' / [AbilityIds.itemRevealMap](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRevealMap)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5895,6 +6718,8 @@ public class AbilityDefinitionItemRevealMap extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionBashcreep extends AbilityDefinition
 ```
+
+'ACbh' / [AbilityIds.bash1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bash1)
 
 **Members:**
 
@@ -5915,6 +6740,8 @@ public class AbilityDefinitionBashcreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAlchemistChemicalRage extends AbilityDefinition
 ```
+
+'ANcr' / [AbilityIds.alchemistChemicalRage](/stdlib/ref/_wurst/AbilityIds.html#abilityids-alchemistChemicalRage)
 
 **Members:**
 
@@ -5942,6 +6769,8 @@ public class AbilityDefinitionAlchemistChemicalRage extends AbilityDefinition
 public class AbilityDefinitionTinkererClusterRocketsLevel0 extends AbilityDefinition
 ```
 
+'ANcs' / [AbilityIds.tinkererClusterRocketsLevel0](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererClusterRocketsLevel0)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5964,6 +6793,8 @@ public class AbilityDefinitionTinkererClusterRocketsLevel0 extends AbilityDefini
 public class AbilityDefinitionAttackBonusAIt9 extends AbilityDefinition
 ```
 
+'AIt9' / [AbilityIds.attackBonusAIt9](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonusAIt9)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5976,6 +6807,8 @@ public class AbilityDefinitionAttackBonusAIt9 extends AbilityDefinition
 public class AbilityDefinitionPossession extends AbilityDefinition
 ```
 
+'Apos' / [AbilityIds.possession](/stdlib/ref/_wurst/AbilityIds.html#abilityids-possession)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -5987,6 +6820,8 @@ public class AbilityDefinitionPossession extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionPotionofLifeRegen extends AbilityDefinition
 ```
+
+'AIrl' / [AbilityIds.potionofLifeRegen](/stdlib/ref/_wurst/AbilityIds.html#abilityids-potionofLifeRegen)
 
 **Members:**
 
@@ -6001,12 +6836,15 @@ public class AbilityDefinitionPotionofLifeRegen extends AbilityDefinition
 - `presetAllowWhenFull(IntLevelClosure lc)`
 - `setLifeRegenerated(int level, real value)`
 - `presetLifeRegenerated(RealLevelClosure lc)`
+- `setAllowWhenFull(int level, int value)`
 
 ### AbilityDefinitionDarkRangerCharm
 
 ```wurst
 public class AbilityDefinitionDarkRangerCharm extends AbilityDefinition
 ```
+
+'ANch' / [AbilityIds.darkRangerCharm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-darkRangerCharm)
 
 **Members:**
 
@@ -6019,6 +6857,8 @@ public class AbilityDefinitionDarkRangerCharm extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionBreathofFrostCreep extends AbilityDefinition
 ```
+
+'ACbf' / [AbilityIds.breathofFrostCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-breathofFrostCreep)
 
 **Members:**
 
@@ -6040,6 +6880,8 @@ public class AbilityDefinitionBreathofFrostCreep extends AbilityDefinition
 public class AbilityDefinitionItemRegenMana extends AbilityDefinition
 ```
 
+'AIrm' / [AbilityIds.itemManaRegeneration](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaRegeneration)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -6052,6 +6894,8 @@ public class AbilityDefinitionItemRegenMana extends AbilityDefinition
 public class AbilityDefinitionItemRegenManalesser extends AbilityDefinition
 ```
 
+'AIrn' / [AbilityIds.itemRegenManalesser](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRegenManalesser)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -6063,6 +6907,8 @@ public class AbilityDefinitionItemRegenManalesser extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAuraBrilliancecreep extends AbilityDefinition
 ```
+
+'ACba' / [AbilityIds.brillianceAura1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-brillianceAura1)
 
 **Members:**
 
@@ -6077,6 +6923,8 @@ public class AbilityDefinitionAuraBrilliancecreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionIllidanChannel extends AbilityDefinition
 ```
+
+'ANcl' / [AbilityIds.channel](/stdlib/ref/_wurst/AbilityIds.html#abilityids-channel)
 
 **Members:**
 
@@ -6100,6 +6948,8 @@ public class AbilityDefinitionIllidanChannel extends AbilityDefinition
 public class AbilityDefinitionBreathofFireCreep extends AbilityDefinition
 ```
 
+'ACbc' / [AbilityIds.breathofFireCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-breathofFireCreep)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -6120,6 +6970,8 @@ public class AbilityDefinitionBreathofFireCreep extends AbilityDefinition
 public class AbilityDefinitionPitLordCleavingAttack extends AbilityDefinition
 ```
 
+'ANca' / [AbilityIds.pitLordCleavingAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-pitLordCleavingAttack)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -6131,6 +6983,8 @@ public class AbilityDefinitionPitLordCleavingAttack extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionCleavingAttackCreep extends AbilityDefinition
 ```
+
+'ACce' / [AbilityIds.cleavingAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cleavingAttack)
 
 **Members:**
 
@@ -6144,6 +6998,8 @@ public class AbilityDefinitionCleavingAttackCreep extends AbilityDefinition
 public class AbilityDefinitionSilenceItem extends AbilityDefinition
 ```
 
+'AIse' / [AbilityIds.silenceItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-silenceItem)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -6152,6 +7008,7 @@ public class AbilityDefinitionSilenceItem extends AbilityDefinition
 - `setMovementSpeedModifier(int level, real value)`
 - `presetMovementSpeedModifier(RealLevelClosure lc)`
 - `setChanceToMiss(int level, real value)`
+  Chance To Miss (%) / 'Nsi2'
 - `presetChanceToMiss(RealLevelClosure lc)`
 - `setAttacksPrevented(int level, int value)`
 - `presetAttacksPrevented(IntLevelClosure lc)`
@@ -6161,6 +7018,8 @@ public class AbilityDefinitionSilenceItem extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionSummonHeadhunteritem extends AbilityDefinition
 ```
+
+'AIsh' / [AbilityIds.summonHeadhunteritem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-summonHeadhunteritem)
 
 **Members:**
 
@@ -6176,6 +7035,8 @@ public class AbilityDefinitionSummonHeadhunteritem extends AbilityDefinition
 public class AbilityDefinitionSightBonus extends AbilityDefinition
 ```
 
+'AIsi' / [AbilityIds.itemSightRangeBonus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSightRangeBonus)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -6187,6 +7048,8 @@ public class AbilityDefinitionSightBonus extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionBlizzardcreep extends AbilityDefinition
 ```
+
+'ACbz' / [AbilityIds.blizzard1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-blizzard1)
 
 **Members:**
 
@@ -6210,6 +7073,8 @@ public class AbilityDefinitionBlizzardcreep extends AbilityDefinition
 public class AbilityDefinitionCloudofFog extends AbilityDefinition
 ```
 
+'Aclf' / [AbilityIds.cloudofFog](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cloudofFog)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -6218,6 +7083,7 @@ public class AbilityDefinitionCloudofFog extends AbilityDefinition
 - `setMovementSpeedModifier(int level, real value)`
 - `presetMovementSpeedModifier(RealLevelClosure lc)`
 - `setChanceToMiss(int level, real value)`
+  Chance To Miss (%) / 'Nsi2'
 - `presetChanceToMiss(RealLevelClosure lc)`
 - `setAttacksPrevented(int level, int value)`
 - `presetAttacksPrevented(IntLevelClosure lc)`
@@ -6227,6 +7093,8 @@ public class AbilityDefinitionCloudofFog extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAntimagicShieldMatrix extends AbilityDefinition
 ```
+
+'Aam2' / [AbilityIds.antimagicShieldMatrix](/stdlib/ref/_wurst/AbilityIds.html#abilityids-antimagicShieldMatrix)
 
 **Members:**
 
@@ -6246,6 +7114,8 @@ public class AbilityDefinitionAntimagicShieldMatrix extends AbilityDefinition
 public class AbilityDefinitionLoad extends AbilityDefinition
 ```
 
+'Aloa' / [AbilityIds.load](/stdlib/ref/_wurst/AbilityIds.html#abilityids-load)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -6258,14 +7128,18 @@ public class AbilityDefinitionLoad extends AbilityDefinition
 public class AbilityDefinitionBladeMasterMirrorImage extends AbilityDefinition
 ```
 
+'AOmi' / [AbilityIds.mirrorImage](/stdlib/ref/_wurst/AbilityIds.html#abilityids-mirrorImage)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setDamageDealt(int level, real value)`
+  Damage Dealt (%) / 'Omi2'
 - `presetDamageDealt(RealLevelClosure lc)`
 - `setNumberofImages(int level, int value)`
 - `presetNumberofImages(IntLevelClosure lc)`
 - `setDamageTaken(int level, real value)`
+  Damage Taken (%) / 'Omi3'
 - `presetDamageTaken(RealLevelClosure lc)`
 - `setAnimationDelay(int level, real value)`
 - `presetAnimationDelay(RealLevelClosure lc)`
@@ -6275,6 +7149,8 @@ public class AbilityDefinitionBladeMasterMirrorImage extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionWardenBlink extends AbilityDefinition
 ```
+
+'AEbl' / [AbilityIds.wardenBlink](/stdlib/ref/_wurst/AbilityIds.html#abilityids-wardenBlink)
 
 **Members:**
 
@@ -6290,6 +7166,8 @@ public class AbilityDefinitionWardenBlink extends AbilityDefinition
 public class AbilityDefinitionPoisonAttack extends AbilityDefinition
 ```
 
+'Apoi' / [AbilityIds.poisonSting](/stdlib/ref/_wurst/AbilityIds.html#abilityids-poisonSting)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -6303,6 +7181,7 @@ public class AbilityDefinitionPoisonAttack extends AbilityDefinition
 - `presetDamageperSecond(RealLevelClosure lc)`
 - `setAttackSpeedFactor(int level, real value)`
 - `presetAttackSpeedFactor(RealLevelClosure lc)`
+- `presetStackingType(IntLevelClosure lc)`
 
 ### AbilityDefinitionOrbofSpells
 
@@ -6310,16 +7189,21 @@ public class AbilityDefinitionPoisonAttack extends AbilityDefinition
 public class AbilityDefinitionOrbofSpells extends AbilityDefinition
 ```
 
+'AIsb' / [AbilityIds.orbofSpells](/stdlib/ref/_wurst/AbilityIds.html#abilityids-orbofSpells)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setChanceToHitUnits(int level, real value)`
+  Chance To Hit Units (%) / 'Iob2'
 - `presetChanceToHitUnits(RealLevelClosure lc)`
 - `setEnabledAttackIndex(int level, int value)`
 - `presetEnabledAttackIndex(IntLevelClosure lc)`
 - `setChanceToHitSummons(int level, real value)`
+  Chance To Hit Summons (%) / 'Iob4'
 - `presetChanceToHitSummons(RealLevelClosure lc)`
 - `setChanceToHitHeros(int level, real value)`
+  Chance To Hit Heros (%) / 'Iob3'
 - `presetChanceToHitHeros(RealLevelClosure lc)`
 - `setDamageBonus(int level, real value)`
 - `presetDamageBonus(RealLevelClosure lc)`
@@ -6331,6 +7215,8 @@ public class AbilityDefinitionOrbofSpells extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionItemSpeedAoe extends AbilityDefinition
 ```
+
+'AIsa' / [AbilityIds.itemSpeedAoe](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpeedAoe)
 
 **Members:**
 
@@ -6344,10 +7230,13 @@ public class AbilityDefinitionItemSpeedAoe extends AbilityDefinition
 public class AbilityDefinitionUnholyFrenzy extends AbilityDefinition
 ```
 
+'Auhf' / [AbilityIds.unholyFrenzy](/stdlib/ref/_wurst/AbilityIds.html#abilityids-unholyFrenzy)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setAttackSpeedBonus(int level, real value)`
+  Attack Speed Bonus (%) / 'Uhf1'
 - `presetAttackSpeedBonus(RealLevelClosure lc)`
 - `setDamageperSecond(int level, real value)`
 - `presetDamageperSecond(RealLevelClosure lc)`
@@ -6357,6 +7246,8 @@ public class AbilityDefinitionUnholyFrenzy extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAntimagicShieldcreep extends AbilityDefinition
 ```
+
+'ACam' / [AbilityIds.antimagicShell](/stdlib/ref/_wurst/AbilityIds.html#abilityids-antimagicShell)
 
 **Members:**
 
@@ -6376,6 +7267,8 @@ public class AbilityDefinitionAntimagicShieldcreep extends AbilityDefinition
 public class AbilityDefinitionSpawnSpiderOnDeath extends AbilityDefinition
 ```
 
+'Aspd' / [AbilityIds.spawnSpiders](/stdlib/ref/_wurst/AbilityIds.html#abilityids-spawnSpiders)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -6389,6 +7282,8 @@ public class AbilityDefinitionSpawnSpiderOnDeath extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionDarkRangerDrain extends AbilityDefinition
 ```
+
+'ANdr' / [AbilityIds.darkRangerDrain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-darkRangerDrain)
 
 **Members:**
 
@@ -6413,12 +7308,16 @@ public class AbilityDefinitionDarkRangerDrain extends AbilityDefinition
 - `presetLifeTransferredPerSecond(RealLevelClosure lc)`
 - `setNdrA(int level, bool value)`
 - `presetNdrA(BooleanLevelClosure lc)`
+- `presetUseBlackArrowEffect(BooleanLevelClosure lc)`
+- `setUseBlackArrowEffect(int level, bool value)`
 
 ### AbilityDefinitionFlare
 
 ```wurst
 public class AbilityDefinitionFlare extends AbilityDefinition
 ```
+
+'Afla' / [AbilityIds.flare](/stdlib/ref/_wurst/AbilityIds.html#abilityids-flare)
 
 **Members:**
 
@@ -6435,6 +7334,8 @@ public class AbilityDefinitionFlare extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionStrengthBonusPlus6 extends AbilityDefinition
 ```
+
+'AIs6' / [AbilityIds.strengthBonusPlus6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-strengthBonusPlus6)
 
 **Members:**
 
@@ -6453,6 +7354,8 @@ public class AbilityDefinitionStrengthBonusPlus6 extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionPitLordDoom extends AbilityDefinition
 ```
+
+'ANdo' / [AbilityIds.pitLordDoom](/stdlib/ref/_wurst/AbilityIds.html#abilityids-pitLordDoom)
 
 **Members:**
 
@@ -6476,6 +7379,8 @@ public class AbilityDefinitionPitLordDoom extends AbilityDefinition
 public class AbilityDefinitionSpellBook extends AbilityDefinition
 ```
 
+'Aspb' / [AbilityIds.spellBook](/stdlib/ref/_wurst/AbilityIds.html#abilityids-spellBook)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -6496,6 +7401,8 @@ public class AbilityDefinitionSpellBook extends AbilityDefinition
 public class AbilityDefinitionStrengthBonusPlus3 extends AbilityDefinition
 ```
 
+'AIs3' / [AbilityIds.strengthBonusPlus3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-strengthBonusPlus3)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -6514,6 +7421,8 @@ public class AbilityDefinitionStrengthBonusPlus3 extends AbilityDefinition
 public class AbilityDefinitionDarkPortal extends AbilityDefinition
 ```
 
+'ANdp' / [AbilityIds.darkPortal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-darkPortal)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -6530,6 +7439,8 @@ public class AbilityDefinitionDarkPortal extends AbilityDefinition
 public class AbilityDefinitionMoonPriestessTrueshotAura extends AbilityDefinition
 ```
 
+'AEar' / [AbilityIds.trueshotAura1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-trueshotAura1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -6538,6 +7449,7 @@ public class AbilityDefinitionMoonPriestessTrueshotAura extends AbilityDefinitio
 - `setRangedBonus(int level, bool value)`
 - `presetRangedBonus(BooleanLevelClosure lc)`
 - `setDamageBonus(int level, real value)`
+  Damage Bonus (%) / 'Ear1'
 - `presetDamageBonus(RealLevelClosure lc)`
 - `setMeleeBonus(int level, bool value)`
 - `presetMeleeBonus(BooleanLevelClosure lc)`
@@ -6547,6 +7459,8 @@ public class AbilityDefinitionMoonPriestessTrueshotAura extends AbilityDefinitio
 ```wurst
 public class AbilityDefinitionStrengthBonusPlus4 extends AbilityDefinition
 ```
+
+'AIs4' / [AbilityIds.strengthBonusPlus4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-strengthBonusPlus4)
 
 **Members:**
 
@@ -6566,6 +7480,8 @@ public class AbilityDefinitionStrengthBonusPlus4 extends AbilityDefinition
 public class AbilityDefinitionSpiderAttack extends AbilityDefinition
 ```
 
+'Aspa' / [AbilityIds.spiderAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-spiderAttack)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -6577,6 +7493,8 @@ public class AbilityDefinitionSpiderAttack extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionSpiritLink extends AbilityDefinition
 ```
+
+'Aspl' / [AbilityIds.spiritLink](/stdlib/ref/_wurst/AbilityIds.html#abilityids-spiritLink)
 
 **Members:**
 
@@ -6591,6 +7509,8 @@ public class AbilityDefinitionSpiritLink extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAuraWarDrumsKodobeast extends AbilityDefinition
 ```
+
+'Aakb' / [AbilityIds.warDrums](/stdlib/ref/_wurst/AbilityIds.html#abilityids-warDrums)
 
 **Members:**
 
@@ -6612,6 +7532,8 @@ public class AbilityDefinitionAuraWarDrumsKodobeast extends AbilityDefinition
 public class AbilityDefinitionArchMageMassTeleport extends AbilityDefinition
 ```
 
+'AHmt' / [AbilityIds.massTeleport](/stdlib/ref/_wurst/AbilityIds.html#abilityids-massTeleport)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -6628,6 +7550,8 @@ public class AbilityDefinitionArchMageMassTeleport extends AbilityDefinition
 public class AbilityDefinitionGoldMine extends AbilityDefinition
 ```
 
+'Agld' / [AbilityIds.goldMineability](/stdlib/ref/_wurst/AbilityIds.html#abilityids-goldMineability)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -6643,6 +7567,8 @@ public class AbilityDefinitionGoldMine extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAuraCommandCreep extends AbilityDefinition
 ```
+
+'ACac' / [AbilityIds.auraCommandCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-auraCommandCreep)
 
 **Members:**
 
@@ -6662,6 +7588,8 @@ public class AbilityDefinitionAuraCommandCreep extends AbilityDefinition
 public class AbilityDefinitionBrewmasterDrunkenHaze extends AbilityDefinition
 ```
 
+'ANdh' / [AbilityIds.brewmasterDrunkenHaze](/stdlib/ref/_wurst/AbilityIds.html#abilityids-brewmasterDrunkenHaze)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -6670,6 +7598,7 @@ public class AbilityDefinitionBrewmasterDrunkenHaze extends AbilityDefinition
 - `setMovementSpeedModifier(int level, real value)`
 - `presetMovementSpeedModifier(RealLevelClosure lc)`
 - `setChanceToMiss(int level, real value)`
+  Chance To Miss (%) / 'Nsi2'
 - `presetChanceToMiss(RealLevelClosure lc)`
 - `setAttacksPrevented(int level, int value)`
 - `presetAttacksPrevented(IntLevelClosure lc)`
@@ -6679,6 +7608,8 @@ public class AbilityDefinitionBrewmasterDrunkenHaze extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAnimateDeadcreep extends AbilityDefinition
 ```
+
+'ACad' / [AbilityIds.animateDead](/stdlib/ref/_wurst/AbilityIds.html#abilityids-animateDead)
 
 **Members:**
 
@@ -6695,6 +7626,8 @@ public class AbilityDefinitionAnimateDeadcreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionStrengthBonusPlus1 extends AbilityDefinition
 ```
+
+'AIs1' / [AbilityIds.strengthBonusPlus1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-strengthBonusPlus1)
 
 **Members:**
 
@@ -6714,6 +7647,8 @@ public class AbilityDefinitionStrengthBonusPlus1 extends AbilityDefinition
 public class AbilityDefinitionStrengthBonusPlus5 extends AbilityDefinition
 ```
 
+'AIs5' / [AbilityIds.strengthBonusPlus5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-strengthBonusPlus5)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -6732,17 +7667,29 @@ public class AbilityDefinitionStrengthBonusPlus5 extends AbilityDefinition
 public class AbilityDefinitionAttackSpeedIncreaseGreater extends AbilityDefinition
 ```
 
+'AIs2' / [AbilityIds.attackSpeedIncreaseGreater](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackSpeedIncreaseGreater)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setAttackSpeedIncrease(int level, real value)`
 - `presetAttackSpeedIncrease(RealLevelClosure lc)`
+- `setAgilityBonus(int level, int value)`
+- `setStrengthBonus(int level, int value)`
+- `setHideButton(int level, bool value)`
+- `setIntelligenceBonus(int level, int value)`
+- `presetAgilityBonus(IntLevelClosure lc)`
+- `presetStrengthBonus(IntLevelClosure lc)`
+- `presetHideButton(BooleanLevelClosure lc)`
+- `presetIntelligenceBonus(IntLevelClosure lc)`
 
 ### AbilityDefinitionItemRestore
 
 ```wurst
 public class AbilityDefinitionItemRestore extends AbilityDefinition
 ```
+
+'AIre' / [AbilityIds.itemHealManaRegain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealManaRegain)
 
 **Members:**
 
@@ -6757,6 +7704,8 @@ public class AbilityDefinitionItemRestore extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionBrewmasterDrunkenBrawler extends AbilityDefinition
 ```
+
+'ANdb' / [AbilityIds.brewmasterDrunkenBrawler](/stdlib/ref/_wurst/AbilityIds.html#abilityids-brewmasterDrunkenBrawler)
 
 **Members:**
 
@@ -6780,6 +7729,8 @@ public class AbilityDefinitionBrewmasterDrunkenBrawler extends AbilityDefinition
 public class AbilityDefinitionRaiseDeadItem extends AbilityDefinition
 ```
 
+'AIrd' / [AbilityIds.raiseDeadItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-raiseDeadItem)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -6800,6 +7751,8 @@ public class AbilityDefinitionRaiseDeadItem extends AbilityDefinition
 public class AbilityDefinitionSpawnHydraHatchling extends AbilityDefinition
 ```
 
+'Aspt' / [AbilityIds.spawnHydraHatchling](/stdlib/ref/_wurst/AbilityIds.html#abilityids-spawnHydraHatchling)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -6814,6 +7767,8 @@ public class AbilityDefinitionSpawnHydraHatchling extends AbilityDefinition
 public class AbilityDefinitionItemReincarnation extends AbilityDefinition
 ```
 
+'AIrc' / [AbilityIds.itemReincarnation](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemReincarnation)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -6822,6 +7777,7 @@ public class AbilityDefinitionItemReincarnation extends AbilityDefinition
 - `setDelayAfterDeathseconds(int level, int value)`
 - `presetDelayAfterDeathseconds(IntLevelClosure lc)`
 - `setRestoredManaforcurrent(int level, int value)`
+  Restored Mana (-1 for current) / 'irc3'
 - `presetRestoredManaforcurrent(IntLevelClosure lc)`
 
 ### AbilityDefinitionTinkererDemolishLevel0
@@ -6829,6 +7785,8 @@ public class AbilityDefinitionItemReincarnation extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionTinkererDemolishLevel0 extends AbilityDefinition
 ```
+
+'ANde' / [AbilityIds.tinkererDemolishLevel0](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererDemolishLevel0)
 
 **Members:**
 
@@ -6848,6 +7806,8 @@ public class AbilityDefinitionTinkererDemolishLevel0 extends AbilityDefinition
 public class AbilityDefinitionRuneofSpiritLink extends AbilityDefinition
 ```
 
+'Aspp' / [AbilityIds.runeofSpiritLink](/stdlib/ref/_wurst/AbilityIds.html#abilityids-runeofSpiritLink)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -6862,6 +7822,8 @@ public class AbilityDefinitionRuneofSpiritLink extends AbilityDefinition
 public class AbilityDefinitionSlowPoison extends AbilityDefinition
 ```
 
+'Aspo' / [AbilityIds.slowPoison](/stdlib/ref/_wurst/AbilityIds.html#abilityids-slowPoison)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -6875,12 +7837,15 @@ public class AbilityDefinitionSlowPoison extends AbilityDefinition
 - `presetAttackSpeedFactor(RealLevelClosure lc)`
 - `setMovementSpeedFactor(int level, real value)`
 - `presetMovementSpeedFactor(RealLevelClosure lc)`
+- `presetStackingType(IntLevelClosure lc)`
 
 ### AbilityDefinitionMalganisDarkConversion
 
 ```wurst
 public class AbilityDefinitionMalganisDarkConversion extends AbilityDefinition
 ```
+
+'ANdc' / [AbilityIds.darkConversion](/stdlib/ref/_wurst/AbilityIds.html#abilityids-darkConversion)
 
 **Members:**
 
@@ -6896,6 +7861,8 @@ public class AbilityDefinitionMalganisDarkConversion extends AbilityDefinition
 public class AbilityDefinitionAuraDevotionCreep extends AbilityDefinition
 ```
 
+'ACav' / [AbilityIds.devotionAura1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-devotionAura1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -6910,6 +7877,8 @@ public class AbilityDefinitionAuraDevotionCreep extends AbilityDefinition
 public class AbilityDefinitionAuraTrueshotCreep extends AbilityDefinition
 ```
 
+'ACat' / [AbilityIds.trueshotAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-trueshotAura)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -6918,6 +7887,7 @@ public class AbilityDefinitionAuraTrueshotCreep extends AbilityDefinition
 - `setRangedBonus(int level, bool value)`
 - `presetRangedBonus(BooleanLevelClosure lc)`
 - `setDamageBonus(int level, real value)`
+  Damage Bonus (%) / 'Ear1'
 - `presetDamageBonus(RealLevelClosure lc)`
 - `setMeleeBonus(int level, bool value)`
 - `presetMeleeBonus(BooleanLevelClosure lc)`
@@ -6927,6 +7897,8 @@ public class AbilityDefinitionAuraTrueshotCreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionItemRestoreAoe extends AbilityDefinition
 ```
+
+'AIra' / [AbilityIds.itemAreaHealManaRegain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAreaHealManaRegain)
 
 **Members:**
 
@@ -6942,6 +7914,8 @@ public class AbilityDefinitionItemRestoreAoe extends AbilityDefinition
 public class AbilityDefinitionKeeperoftheGroveThornsAura extends AbilityDefinition
 ```
 
+'AEah' / [AbilityIds.thornsAura1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-thornsAura1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -6955,6 +7929,8 @@ public class AbilityDefinitionKeeperoftheGroveThornsAura extends AbilityDefiniti
 ```wurst
 public class AbilityDefinitionThornsAuraCreep extends AbilityDefinition
 ```
+
+'ACah' / [AbilityIds.thornsAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-thornsAura)
 
 **Members:**
 
@@ -6970,6 +7946,8 @@ public class AbilityDefinitionThornsAuraCreep extends AbilityDefinition
 public class AbilityDefinitionSpawnHydra extends AbilityDefinition
 ```
 
+'Aspy' / [AbilityIds.spawnHydra](/stdlib/ref/_wurst/AbilityIds.html#abilityids-spawnHydra)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -6983,6 +7961,8 @@ public class AbilityDefinitionSpawnHydra extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAspx extends AbilityDefinition
 ```
+
+'Aspx' / [AbilityIds.aspx](/stdlib/ref/_wurst/AbilityIds.html#abilityids-aspx)
 
 **Members:**
 
@@ -7006,6 +7986,8 @@ public class AbilityDefinitionAspx extends AbilityDefinition
 public class AbilityDefinitionTinkererClusterRocketsLevel2 extends AbilityDefinition
 ```
 
+'ANc2' / [AbilityIds.tinkererClusterRocketsLevel2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererClusterRocketsLevel2)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -7028,10 +8010,13 @@ public class AbilityDefinitionTinkererClusterRocketsLevel2 extends AbilityDefini
 public class AbilityDefinitionDreadlordVampiricAura extends AbilityDefinition
 ```
 
+'AUav' / [AbilityIds.vampiricAura1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-vampiricAura1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setAttackDamageStolen(int level, real value)`
+  Attack Damage Stolen (%) / 'Uav1'
 - `presetAttackDamageStolen(RealLevelClosure lc)`
 
 ### AbilityDefinitionTinkererClusterRocketsLevel3
@@ -7039,6 +8024,8 @@ public class AbilityDefinitionDreadlordVampiricAura extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionTinkererClusterRocketsLevel3 extends AbilityDefinition
 ```
+
+'ANc3' / [AbilityIds.tinkererClusterRocketsLevel3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererClusterRocketsLevel3)
 
 **Members:**
 
@@ -7062,14 +8049,18 @@ public class AbilityDefinitionTinkererClusterRocketsLevel3 extends AbilityDefini
 public class AbilityDefinitionDeathKnightUnholyAura extends AbilityDefinition
 ```
 
+'AUau' / [AbilityIds.unholyAura1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-unholyAura1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setPercentBonus(int level, bool value)`
 - `presetPercentBonus(BooleanLevelClosure lc)`
 - `setLifeRegenerationIncrease(int level, real value)`
+  Life Regeneration Increase (%) / 'Uau2'
 - `presetLifeRegenerationIncrease(RealLevelClosure lc)`
 - `setMovementSpeedIncrease(int level, real value)`
+  Movement Speed Increase (%) / 'Uau1'
 - `presetMovementSpeedIncrease(RealLevelClosure lc)`
 
 ### AbilityDefinitionItemPotionVampirism
@@ -7077,6 +8068,8 @@ public class AbilityDefinitionDeathKnightUnholyAura extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionItemPotionVampirism extends AbilityDefinition
 ```
+
+'AIpv' / [AbilityIds.itemPotionVampirism](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemPotionVampirism)
 
 **Members:**
 
@@ -7094,6 +8087,8 @@ public class AbilityDefinitionItemPotionVampirism extends AbilityDefinition
 public class AbilityDefinitionOrbofVenomPoisonAttack extends AbilityDefinition
 ```
 
+'Apo2' / [AbilityIds.orbofVenomPoisonAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-orbofVenomPoisonAttack)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -7107,12 +8102,15 @@ public class AbilityDefinitionOrbofVenomPoisonAttack extends AbilityDefinition
 - `presetDamageperSecond(RealLevelClosure lc)`
 - `setAttackSpeedFactor(int level, real value)`
 - `presetAttackSpeedFactor(RealLevelClosure lc)`
+- `presetStackingType(IntLevelClosure lc)`
 
 ### AbilityDefinitionCoupleInstantArcher
 
 ```wurst
 public class AbilityDefinitionCoupleInstantArcher extends AbilityDefinition
 ```
+
+'Aco2' / [AbilityIds.coupleInstantArcher](/stdlib/ref/_wurst/AbilityIds.html#abilityids-coupleInstantArcher)
 
 **Members:**
 
@@ -7130,6 +8128,8 @@ public class AbilityDefinitionCoupleInstantArcher extends AbilityDefinition
 public class AbilityDefinitionPotionofManaRegengreater extends AbilityDefinition
 ```
 
+'AIpr' / [AbilityIds.potionofManaRegengreater](/stdlib/ref/_wurst/AbilityIds.html#abilityids-potionofManaRegengreater)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -7143,12 +8143,15 @@ public class AbilityDefinitionPotionofManaRegengreater extends AbilityDefinition
 - `presetAllowWhenFull(IntLevelClosure lc)`
 - `setLifeRegenerated(int level, real value)`
 - `presetLifeRegenerated(RealLevelClosure lc)`
+- `setAllowWhenFull(int level, int value)`
 
 ### AbilityDefinitionTinkererClusterRocketsLevel1
 
 ```wurst
 public class AbilityDefinitionTinkererClusterRocketsLevel1 extends AbilityDefinition
 ```
+
+'ANc1' / [AbilityIds.tinkererClusterRocketsLevel1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererClusterRocketsLevel1)
 
 **Members:**
 
@@ -7172,6 +8175,8 @@ public class AbilityDefinitionTinkererClusterRocketsLevel1 extends AbilityDefini
 public class AbilityDefinitionCoupleInstantHippogryph extends AbilityDefinition
 ```
 
+'Aco3' / [AbilityIds.coupleInstantHippogryph](/stdlib/ref/_wurst/AbilityIds.html#abilityids-coupleInstantHippogryph)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -7188,6 +8193,8 @@ public class AbilityDefinitionCoupleInstantHippogryph extends AbilityDefinition
 public class AbilityDefinitionSpawnOnDeathskeleton extends AbilityDefinition
 ```
 
+'Asod' / [AbilityIds.spawnOnDeathskeleton](/stdlib/ref/_wurst/AbilityIds.html#abilityids-spawnOnDeathskeleton)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -7202,6 +8209,8 @@ public class AbilityDefinitionSpawnOnDeathskeleton extends AbilityDefinition
 public class AbilityDefinitionPotionofManaRegenlesser extends AbilityDefinition
 ```
 
+'AIpl' / [AbilityIds.potionofManaRegenlesser](/stdlib/ref/_wurst/AbilityIds.html#abilityids-potionofManaRegenlesser)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -7215,12 +8224,15 @@ public class AbilityDefinitionPotionofManaRegenlesser extends AbilityDefinition
 - `presetAllowWhenFull(IntLevelClosure lc)`
 - `setLifeRegenerated(int level, real value)`
 - `presetLifeRegenerated(RealLevelClosure lc)`
+- `setAllowWhenFull(int level, int value)`
 
 ### AbilityDefinitionDeathKnightAnimateDead
 
 ```wurst
 public class AbilityDefinitionDeathKnightAnimateDead extends AbilityDefinition
 ```
+
+'AUan' / [AbilityIds.animateDead1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-animateDead1)
 
 **Members:**
 
@@ -7238,6 +8250,8 @@ public class AbilityDefinitionDeathKnightAnimateDead extends AbilityDefinition
 public class AbilityDefinitionItemPlaceMine extends AbilityDefinition
 ```
 
+'AIpm' / [AbilityIds.itemPlaceGoblinLandMine](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemPlaceGoblinLandMine)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -7249,6 +8263,8 @@ public class AbilityDefinitionItemPlaceMine extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionBloodMagePhoenix extends AbilityDefinition
 ```
+
+'AHpx' / [AbilityIds.phoenix](/stdlib/ref/_wurst/AbilityIds.html#abilityids-phoenix)
 
 **Members:**
 
@@ -7264,6 +8280,8 @@ public class AbilityDefinitionBloodMagePhoenix extends AbilityDefinition
 public class AbilityDefinitionAlchemistAcidBomb extends AbilityDefinition
 ```
 
+'ANab' / [AbilityIds.acidBomb](/stdlib/ref/_wurst/AbilityIds.html#abilityids-acidBomb)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -7272,12 +8290,14 @@ public class AbilityDefinitionAlchemistAcidBomb extends AbilityDefinition
 - `setPrimaryDamage(int level, real value)`
 - `presetPrimaryDamage(RealLevelClosure lc)`
 - `setMovementSpeedReduction(int level, real value)`
+  Movement Speed Reduction (%) / 'Nab1'
 - `presetMovementSpeedReduction(RealLevelClosure lc)`
 - `setArmorPenalty(int level, int value)`
 - `presetArmorPenalty(IntLevelClosure lc)`
 - `setSecondaryDamage(int level, real value)`
 - `presetSecondaryDamage(RealLevelClosure lc)`
 - `setAttackSpeedReduction(int level, real value)`
+  Attack Speed Reduction (%) / 'Nab2'
 - `presetAttackSpeedReduction(RealLevelClosure lc)`
 
 ### AbilityDefinitionPermanentImmolationflying
@@ -7285,6 +8305,8 @@ public class AbilityDefinitionAlchemistAcidBomb extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionPermanentImmolationflying extends AbilityDefinition
 ```
+
+'Apmf' / [AbilityIds.permanentImmolationflying](/stdlib/ref/_wurst/AbilityIds.html#abilityids-permanentImmolationflying)
 
 **Members:**
 
@@ -7302,6 +8324,8 @@ public class AbilityDefinitionPermanentImmolationflying extends AbilityDefinitio
 public class AbilityDefinitionTornadoSpin extends AbilityDefinition
 ```
 
+'Atsp' / [AbilityIds.tornadoSpin](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tornadoSpin)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -7315,6 +8339,8 @@ public class AbilityDefinitionTornadoSpin extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAntimagicShield extends AbilityDefinition
 ```
+
+'Aams' / [AbilityIds.antimagicShell1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-antimagicShell1)
 
 **Members:**
 
@@ -7334,6 +8360,8 @@ public class AbilityDefinitionAntimagicShield extends AbilityDefinition
 public class AbilityDefinitionOrbofDarknessBlackArrow extends AbilityDefinition
 ```
 
+'ANbs' / [AbilityIds.orbofDarknessBlackArrow](/stdlib/ref/_wurst/AbilityIds.html#abilityids-orbofDarknessBlackArrow)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -7351,6 +8379,8 @@ public class AbilityDefinitionOrbofDarknessBlackArrow extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionTinkererDemolishLevel3 extends AbilityDefinition
 ```
+
+'ANd3' / [AbilityIds.tinkererDemolishLevel3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererDemolishLevel3)
 
 **Members:**
 
@@ -7370,6 +8400,8 @@ public class AbilityDefinitionTinkererDemolishLevel3 extends AbilityDefinition
 public class AbilityDefinitionSlowAIos extends AbilityDefinition
 ```
 
+'AIos' / [AbilityIds.slowAIos](/stdlib/ref/_wurst/AbilityIds.html#abilityids-slowAIos)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -7385,6 +8417,8 @@ public class AbilityDefinitionSlowAIos extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionBattleRoar extends AbilityDefinition
 ```
+
+'ANbr' / [AbilityIds.battleRoar](/stdlib/ref/_wurst/AbilityIds.html#abilityids-battleRoar)
 
 **Members:**
 
@@ -7410,6 +8444,8 @@ public class AbilityDefinitionBattleRoar extends AbilityDefinition
 public class AbilityDefinitionTinkererDemolishLevel1 extends AbilityDefinition
 ```
 
+'ANd1' / [AbilityIds.tinkererDemolishLevel1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererDemolishLevel1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -7427,6 +8463,8 @@ public class AbilityDefinitionTinkererDemolishLevel1 extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionTinkererDemolishLevel2 extends AbilityDefinition
 ```
+
+'ANd2' / [AbilityIds.tinkererDemolishLevel2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererDemolishLevel2)
 
 **Members:**
 
@@ -7446,6 +8484,8 @@ public class AbilityDefinitionTinkererDemolishLevel2 extends AbilityDefinition
 public class AbilityDefinitionAttributeModifierSkill extends AbilityDefinition
 ```
 
+'Aamk' / [AbilityIds.attributeModifierSkill](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attributeModifierSkill)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -7464,6 +8504,8 @@ public class AbilityDefinitionAttributeModifierSkill extends AbilityDefinition
 public class AbilityDefinitionDispelMagic extends AbilityDefinition
 ```
 
+'Adis' / [AbilityIds.dispelMagic](/stdlib/ref/_wurst/AbilityIds.html#abilityids-dispelMagic)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -7477,6 +8519,8 @@ public class AbilityDefinitionDispelMagic extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionBashBeastmasterBear extends AbilityDefinition
 ```
+
+'ANbh' / [AbilityIds.bashBeastmasterBear](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bashBeastmasterBear)
 
 **Members:**
 
@@ -7498,6 +8542,8 @@ public class AbilityDefinitionBashBeastmasterBear extends AbilityDefinition
 public class AbilityDefinitionBrewmasterBreathofFire extends AbilityDefinition
 ```
 
+'ANbf' / [AbilityIds.brewmasterBreathofFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-brewmasterBreathofFire)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -7518,6 +8564,8 @@ public class AbilityDefinitionBrewmasterBreathofFire extends AbilityDefinition
 public class AbilityDefinitionPolymorph extends AbilityDefinition
 ```
 
+'Aply' / [AbilityIds.polymorph](/stdlib/ref/_wurst/AbilityIds.html#abilityids-polymorph)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -7537,6 +8585,8 @@ public class AbilityDefinitionPolymorph extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionPurgeorb extends AbilityDefinition
 ```
+
+'AIpg' / [AbilityIds.purgeorb](/stdlib/ref/_wurst/AbilityIds.html#abilityids-purgeorb)
 
 **Members:**
 
@@ -7560,6 +8610,8 @@ public class AbilityDefinitionPurgeorb extends AbilityDefinition
 public class AbilityDefinitionDarkRangerBlackArrow extends AbilityDefinition
 ```
 
+'ANba' / [AbilityIds.darkRangerBlackArrow](/stdlib/ref/_wurst/AbilityIds.html#abilityids-darkRangerBlackArrow)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -7578,6 +8630,8 @@ public class AbilityDefinitionDarkRangerBlackArrow extends AbilityDefinition
 public class AbilityDefinitionCargoHoldEntangledGoldMine extends AbilityDefinition
 ```
 
+'Aenc' / [AbilityIds.load1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-load1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -7590,6 +8644,8 @@ public class AbilityDefinitionCargoHoldEntangledGoldMine extends AbilityDefiniti
 public class AbilityDefinitionAerialShackles extends AbilityDefinition
 ```
 
+'Amls' / [AbilityIds.aerialShackles](/stdlib/ref/_wurst/AbilityIds.html#abilityids-aerialShackles)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -7601,6 +8657,8 @@ public class AbilityDefinitionAerialShackles extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionOrbofVenom extends AbilityDefinition
 ```
+
+'AIpb' / [AbilityIds.orbofVenom](/stdlib/ref/_wurst/AbilityIds.html#abilityids-orbofVenom)
 
 **Members:**
 
@@ -7618,35 +8676,21 @@ public class AbilityDefinitionOrbofVenom extends AbilityDefinition
 public class AbilityDefinitionDetectShade extends AbilityDefinition
 ```
 
+'Atru' / [AbilityIds.trueSight2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-trueSight2)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setDetectionType(int level, string value)`
 - `presetDetectionType(StringLevelClosure lc)`
 
-### AbilityDefinitionAlliedBuilding
-
-```wurst
-public class AbilityDefinitionAlliedBuilding extends AbilityDefinition
-```
-
-**Members:**
-
-- `construct(int newAbilityId)`
-- `setShowUnitIndicator(int level, bool value)`
-- `presetShowUnitIndicator(BooleanLevelClosure lc)`
-- `setActivationRadius(int level, real value)`
-- `presetActivationRadius(RealLevelClosure lc)`
-- `setShowSelectUnitButton(int level, bool value)`
-- `presetShowSelectUnitButton(BooleanLevelClosure lc)`
-- `setInteractionType(int level, string value)`
-- `presetInteractionType(StringLevelClosure lc)`
-
 ### AbilityDefinitionControlMagic
 
 ```wurst
 public class AbilityDefinitionControlMagic extends AbilityDefinition
 ```
+
+'Acmg' / [AbilityIds.controlMagic](/stdlib/ref/_wurst/AbilityIds.html#abilityids-controlMagic)
 
 **Members:**
 
@@ -7663,6 +8707,8 @@ public class AbilityDefinitionControlMagic extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionDreadlordCarrionSwarm extends AbilityDefinition
 ```
+
+'AUcs' / [AbilityIds.carrionSwarm1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-carrionSwarm1)
 
 **Members:**
 
@@ -7682,6 +8728,8 @@ public class AbilityDefinitionDreadlordCarrionSwarm extends AbilityDefinition
 public class AbilityDefinitionAllPlus1 extends AbilityDefinition
 ```
 
+'AIx1' / [AbilityIds.allPlus1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-allPlus1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -7699,6 +8747,8 @@ public class AbilityDefinitionAllPlus1 extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAllPlus2 extends AbilityDefinition
 ```
+
+'AIx2' / [AbilityIds.allPlus2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-allPlus2)
 
 **Members:**
 
@@ -7718,6 +8768,8 @@ public class AbilityDefinitionAllPlus2 extends AbilityDefinition
 public class AbilityDefinitionCrownofKingsAllPlus5 extends AbilityDefinition
 ```
 
+'AIx5' / [AbilityIds.crownofKingsAllPlus5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-crownofKingsAllPlus5)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -7736,6 +8788,8 @@ public class AbilityDefinitionCrownofKingsAllPlus5 extends AbilityDefinition
 public class AbilityDefinitionCorrosiveBreath extends AbilityDefinition
 ```
 
+'Acor' / [AbilityIds.corrosiveBreath](/stdlib/ref/_wurst/AbilityIds.html#abilityids-corrosiveBreath)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -7747,6 +8801,8 @@ public class AbilityDefinitionCorrosiveBreath extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionRootAncients extends AbilityDefinition
 ```
+
+'Aro1' / [AbilityIds.rootAncients](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rootAncients)
 
 **Members:**
 
@@ -7766,6 +8822,8 @@ public class AbilityDefinitionRootAncients extends AbilityDefinition
 public class AbilityDefinitionRootAncientProtector extends AbilityDefinition
 ```
 
+'Aro2' / [AbilityIds.rootAncientProtector](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rootAncientProtector)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -7784,6 +8842,8 @@ public class AbilityDefinitionRootAncientProtector extends AbilityDefinition
 public class AbilityDefinitionFactory extends AbilityDefinition
 ```
 
+'ANfy' / [AbilityIds.factory](/stdlib/ref/_wurst/AbilityIds.html#abilityids-factory)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -7800,6 +8860,8 @@ public class AbilityDefinitionFactory extends AbilityDefinition
 public class AbilityDefinitionKeeperoftheGroveForceofNature extends AbilityDefinition
 ```
 
+'AEfn' / [AbilityIds.forceofNature1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-forceofNature1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -7814,12 +8876,15 @@ public class AbilityDefinitionKeeperoftheGroveForceofNature extends AbilityDefin
 public class AbilityDefinitionLichDeathandDecay extends AbilityDefinition
 ```
 
+'AUdd' / [AbilityIds.deathAndDecay1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-deathAndDecay1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setBuildingReduction(int level, real value)`
 - `presetBuildingReduction(RealLevelClosure lc)`
 - `setMaxLifeDrainedperSecond(int level, real value)`
+  Max Life Drained per Second (%) / 'Udd1'
 - `presetMaxLifeDrainedperSecond(RealLevelClosure lc)`
 
 ### AbilityDefinitionItemWeb
@@ -7827,6 +8892,8 @@ public class AbilityDefinitionLichDeathandDecay extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionItemWeb extends AbilityDefinition
 ```
+
+'AIwb' / [AbilityIds.itemWeb](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemWeb)
 
 **Members:**
 
@@ -7837,12 +8904,22 @@ public class AbilityDefinitionItemWeb extends AbilityDefinition
 - `presetAirUnitLowerDuration(RealLevelClosure lc)`
 - `setMeleeAttackRange(int level, real value)`
 - `presetMeleeAttackRange(RealLevelClosure lc)`
+- `setStunDuration(int level, real value)`
+- `setBonusDamageTakenPercent(int level, real value)`
+- `setAttackSpeedReductionPercent(int level, real value)`
+- `setSilencesWhenEnsnared(int level, bool value)`
+- `presetStunDuration(RealLevelClosure lc)`
+- `presetBonusDamageTakenPercent(RealLevelClosure lc)`
+- `presetAttackSpeedReductionPercent(RealLevelClosure lc)`
+- `presetSilencesWhenEnsnared(BooleanLevelClosure lc)`
 
 ### AbilityDefinitionWardenFanofKnives
 
 ```wurst
 public class AbilityDefinitionWardenFanofKnives extends AbilityDefinition
 ```
+
+'AEfk' / [AbilityIds.wardenFanofKnives](/stdlib/ref/_wurst/AbilityIds.html#abilityids-wardenFanofKnives)
 
 **Members:**
 
@@ -7862,6 +8939,8 @@ public class AbilityDefinitionWardenFanofKnives extends AbilityDefinition
 public class AbilityDefinitionBattlestationsChaos extends AbilityDefinition
 ```
 
+'Sbtl' / [AbilityIds.battlestationsChaos](/stdlib/ref/_wurst/AbilityIds.html#abilityids-battlestationsChaos)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -7875,6 +8954,8 @@ public class AbilityDefinitionBattlestationsChaos extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionCorporealForm extends AbilityDefinition
 ```
+
+'Acpf' / [AbilityIds.corporealForm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-corporealForm)
 
 **Members:**
 
@@ -7898,10 +8979,13 @@ public class AbilityDefinitionCorporealForm extends AbilityDefinition
 public class AbilityDefinitionDeathKnightDeathCoil extends AbilityDefinition
 ```
 
+'AUdc' / [AbilityIds.deathCoil1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-deathCoil1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setAmountHealedDamaged(int level, real value)`
+  Amount Healed/Damaged / 'Udc1'
 - `presetAmountHealedDamaged(RealLevelClosure lc)`
 
 ### AbilityDefinitionPhaseShift
@@ -7910,12 +8994,16 @@ public class AbilityDefinitionDeathKnightDeathCoil extends AbilityDefinition
 public class AbilityDefinitionPhaseShift extends AbilityDefinition
 ```
 
+'Apsh' / [AbilityIds.phaseShift](/stdlib/ref/_wurst/AbilityIds.html#abilityids-phaseShift)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setAttackSpeedReduction(int level, real value)`
+  Attack Speed Reduction (%) / 'Hbn2'
 - `presetAttackSpeedReduction(RealLevelClosure lc)`
 - `setMovementSpeedReduction(int level, real value)`
+  Movement Speed Reduction (%) / 'Hbn1'
 - `presetMovementSpeedReduction(RealLevelClosure lc)`
 
 ### AbilityDefinitionSleepAlways
@@ -7923,6 +9011,8 @@ public class AbilityDefinitionPhaseShift extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionSleepAlways extends AbilityDefinition
 ```
+
+'Asla' / [AbilityIds.sleepAlways](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sleepAlways)
 
 **Members:**
 
@@ -7938,16 +9028,22 @@ public class AbilityDefinitionSleepAlways extends AbilityDefinition
 public class AbilityDefinitionFigurineUrsaWarrior extends AbilityDefinition
 ```
 
+'AIuw' / [AbilityIds.figurineUrsaWarrior](/stdlib/ref/_wurst/AbilityIds.html#abilityids-figurineUrsaWarrior)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setSummonUnitType(int level, string value)`
+  Summon 2 - Unit Type / 'Ist2'
 - `presetSummonUnitType(StringLevelClosure lc)`
 - `setSummonAmount(int level, int value)`
+  Summon 2 - Amount / 'Isn2'
 - `presetSummonAmount(IntLevelClosure lc)`
 - `setSummonUnitType1(int level, string value)`
+  Summon 1 - Unit Type / 'Ist1'
 - `presetSummonUnitType1(StringLevelClosure lc)`
 - `setSummonAmount1(int level, int value)`
+  Summon 1 - Amount / 'Isn1'
 - `presetSummonAmount1(IntLevelClosure lc)`
 
 ### AbilityDefinitionElunesGrace
@@ -7955,6 +9051,8 @@ public class AbilityDefinitionFigurineUrsaWarrior extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionElunesGrace extends AbilityDefinition
 ```
+
+'Aegr' / [AbilityIds.elunesGrace](/stdlib/ref/_wurst/AbilityIds.html#abilityids-elunesGrace)
 
 **Members:**
 
@@ -7968,8 +9066,10 @@ public class AbilityDefinitionElunesGrace extends AbilityDefinition
 - `setMagicDamageReduction(int level, real value)`
 - `presetMagicDamageReduction(RealLevelClosure lc)`
 - `setDamageTaken(int level, real value)`
+  Damage Taken (%) / 'Def1'
 - `presetDamageTaken(RealLevelClosure lc)`
 - `setDamageDealt(int level, real value)`
+  Damage Dealt (%) / 'Def2'
 - `presetDamageDealt(RealLevelClosure lc)`
 - `setMovementSpeedFactor(int level, real value)`
 - `presetMovementSpeedFactor(RealLevelClosure lc)`
@@ -7981,6 +9081,8 @@ public class AbilityDefinitionElunesGrace extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionReturnLumber extends AbilityDefinition
 ```
+
+'Arlm' / [AbilityIds.returnLumber](/stdlib/ref/_wurst/AbilityIds.html#abilityids-returnLumber)
 
 **Members:**
 
@@ -7996,6 +9098,8 @@ public class AbilityDefinitionReturnLumber extends AbilityDefinition
 public class AbilityDefinitionRegenLifeArll extends AbilityDefinition
 ```
 
+'Arll' / [AbilityIds.regenLifeArll](/stdlib/ref/_wurst/AbilityIds.html#abilityids-regenLifeArll)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8007,6 +9111,8 @@ public class AbilityDefinitionRegenLifeArll extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionDemonHunterEvasion extends AbilityDefinition
 ```
+
+'AEev' / [AbilityIds.evasion2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-evasion2)
 
 **Members:**
 
@@ -8020,10 +9126,13 @@ public class AbilityDefinitionDemonHunterEvasion extends AbilityDefinition
 public class AbilityDefinitionPitLordHowlofTerror extends AbilityDefinition
 ```
 
+'ANht' / [AbilityIds.pitLordHowlofTerror](/stdlib/ref/_wurst/AbilityIds.html#abilityids-pitLordHowlofTerror)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setDamageIncrease(int level, real value)`
+  Damage Increase (%) / 'Roa1'
 - `presetDamageIncrease(RealLevelClosure lc)`
 - `setDefenseIncrease(int level, int value)`
 - `presetDefenseIncrease(IntLevelClosure lc)`
@@ -8043,6 +9152,8 @@ public class AbilityDefinitionPitLordHowlofTerror extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAlchemistHealingSpray extends AbilityDefinition
 ```
+
+'ANhs' / [AbilityIds.alchemistHealingSpray](/stdlib/ref/_wurst/AbilityIds.html#abilityids-alchemistHealingSpray)
 
 **Members:**
 
@@ -8066,6 +9177,8 @@ public class AbilityDefinitionAlchemistHealingSpray extends AbilityDefinition
 public class AbilityDefinitionEntangledGoldMine extends AbilityDefinition
 ```
 
+'Aegm' / [AbilityIds.entangledGoldMineAbility](/stdlib/ref/_wurst/AbilityIds.html#abilityids-entangledGoldMineAbility)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8080,6 +9193,8 @@ public class AbilityDefinitionEntangledGoldMine extends AbilityDefinition
 public class AbilityDefinitionKeeperoftheGroveEntanglingRoots extends AbilityDefinition
 ```
 
+'AEer' / [AbilityIds.entanglingRoots1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-entanglingRoots1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8091,6 +9206,8 @@ public class AbilityDefinitionKeeperoftheGroveEntanglingRoots extends AbilityDef
 ```wurst
 public class AbilityDefinitionLightningShield extends AbilityDefinition
 ```
+
+'Alsh' / [AbilityIds.lightningShield](/stdlib/ref/_wurst/AbilityIds.html#abilityids-lightningShield)
 
 **Members:**
 
@@ -8104,6 +9221,8 @@ public class AbilityDefinitionLightningShield extends AbilityDefinition
 public class AbilityDefinitionVampiricattackAIva extends AbilityDefinition
 ```
 
+'AIva' / [AbilityIds.itemLifeSteal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLifeSteal)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8115,6 +9234,8 @@ public class AbilityDefinitionVampiricattackAIva extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionCoupleHippogryph extends AbilityDefinition
 ```
+
+'Acoh' / [AbilityIds.pickupArcher](/stdlib/ref/_wurst/AbilityIds.html#abilityids-pickupArcher)
 
 **Members:**
 
@@ -8130,6 +9251,8 @@ public class AbilityDefinitionCoupleHippogryph extends AbilityDefinition
 public class AbilityDefinitionPaladinResurrection extends AbilityDefinition
 ```
 
+'AHre' / [AbilityIds.resurrection](/stdlib/ref/_wurst/AbilityIds.html#abilityids-resurrection)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8143,6 +9266,8 @@ public class AbilityDefinitionPaladinResurrection extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionCryptLordCarrionScarabs extends AbilityDefinition
 ```
+
+'AUcb' / [AbilityIds.cryptLordCarrionScarabs](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cryptLordCarrionScarabs)
 
 **Members:**
 
@@ -8166,6 +9291,8 @@ public class AbilityDefinitionCryptLordCarrionScarabs extends AbilityDefinition
 public class AbilityDefinitionBerserkerUpgrade extends AbilityDefinition
 ```
 
+'Sbsk' / [AbilityIds.berserkerUpgrade](/stdlib/ref/_wurst/AbilityIds.html#abilityids-berserkerUpgrade)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8177,6 +9304,8 @@ public class AbilityDefinitionBerserkerUpgrade extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionRuneofGreaterResurrection extends AbilityDefinition
 ```
+
+'APrr' / [AbilityIds.runeofGreaterResurrection](/stdlib/ref/_wurst/AbilityIds.html#abilityids-runeofGreaterResurrection)
 
 **Members:**
 
@@ -8191,6 +9320,8 @@ public class AbilityDefinitionRuneofGreaterResurrection extends AbilityDefinitio
 ```wurst
 public class AbilityDefinitionManaFlare extends AbilityDefinition
 ```
+
+'Amfl' / [AbilityIds.manaFlare](/stdlib/ref/_wurst/AbilityIds.html#abilityids-manaFlare)
 
 **Members:**
 
@@ -8214,6 +9345,8 @@ public class AbilityDefinitionManaFlare extends AbilityDefinition
 public class AbilityDefinitionTaurenChieftainReincarnation extends AbilityDefinition
 ```
 
+'AOre' / [AbilityIds.reincarnation2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-reincarnation2)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8225,6 +9358,8 @@ public class AbilityDefinitionTaurenChieftainReincarnation extends AbilityDefini
 ```wurst
 public class AbilityDefinitionCoupleArcher extends AbilityDefinition
 ```
+
+'Acoa' / [AbilityIds.mountHippogryph](/stdlib/ref/_wurst/AbilityIds.html#abilityids-mountHippogryph)
 
 **Members:**
 
@@ -8239,6 +9374,8 @@ public class AbilityDefinitionCoupleArcher extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionBallsofFire extends AbilityDefinition
 ```
+
+'Abof' / [AbilityIds.ballsofFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ballsofFire)
 
 **Members:**
 
@@ -8262,6 +9399,8 @@ public class AbilityDefinitionBallsofFire extends AbilityDefinition
 public class AbilityDefinitionPurge extends AbilityDefinition
 ```
 
+'Aprg' / [AbilityIds.purge](/stdlib/ref/_wurst/AbilityIds.html#abilityids-purge)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8284,6 +9423,8 @@ public class AbilityDefinitionPurge extends AbilityDefinition
 public class AbilityDefinitionSlow extends AbilityDefinition
 ```
 
+'Aslo' / [AbilityIds.slow](/stdlib/ref/_wurst/AbilityIds.html#abilityids-slow)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8300,6 +9441,8 @@ public class AbilityDefinitionSlow extends AbilityDefinition
 public class AbilityDefinitionRuneofLesserResurrection extends AbilityDefinition
 ```
 
+'APrl' / [AbilityIds.runeofLesserResurrection](/stdlib/ref/_wurst/AbilityIds.html#abilityids-runeofLesserResurrection)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8314,6 +9457,8 @@ public class AbilityDefinitionRuneofLesserResurrection extends AbilityDefinition
 public class AbilityDefinitionItemTownPortal extends AbilityDefinition
 ```
 
+'AItp' / [AbilityIds.itemTownPortal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemTownPortal)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8327,6 +9472,8 @@ public class AbilityDefinitionItemTownPortal extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionTinkererRoboGoblinLevel1 extends AbilityDefinition
 ```
+
+'ANg1' / [AbilityIds.tinkererRoboGoblinLevel1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererRoboGoblinLevel1)
 
 **Members:**
 
@@ -8354,6 +9501,8 @@ public class AbilityDefinitionTinkererRoboGoblinLevel1 extends AbilityDefinition
 public class AbilityDefinitionMilitia extends AbilityDefinition
 ```
 
+'Amil' / [AbilityIds.calltoArms](/stdlib/ref/_wurst/AbilityIds.html#abilityids-calltoArms)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8367,6 +9516,8 @@ public class AbilityDefinitionMilitia extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionVengeance extends AbilityDefinition
 ```
+
+'Avng' / [AbilityIds.vengeance](/stdlib/ref/_wurst/AbilityIds.html#abilityids-vengeance)
 
 **Members:**
 
@@ -8392,6 +9543,8 @@ public class AbilityDefinitionVengeance extends AbilityDefinition
 public class AbilityDefinitionIntelligenceModPlus2 extends AbilityDefinition
 ```
 
+'AItm' / [AbilityIds.intelligenceModPlus2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-intelligenceModPlus2)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8410,6 +9563,8 @@ public class AbilityDefinitionIntelligenceModPlus2 extends AbilityDefinition
 public class AbilityDefinitionAttackBonusPlus8 extends AbilityDefinition
 ```
 
+'AItl' / [AbilityIds.attackBonusPlus8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonusPlus8)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8422,6 +9577,8 @@ public class AbilityDefinitionAttackBonusPlus8 extends AbilityDefinition
 public class AbilityDefinitionAttackBonusPlus10 extends AbilityDefinition
 ```
 
+'AItn' / [AbilityIds.attackBonusPlus10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonusPlus10)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8433,6 +9590,8 @@ public class AbilityDefinitionAttackBonusPlus10 extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionTinkererRoboGoblinLevel3 extends AbilityDefinition
 ```
+
+'ANg3' / [AbilityIds.tinkererRoboGoblinLevel3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererRoboGoblinLevel3)
 
 **Members:**
 
@@ -8460,6 +9619,8 @@ public class AbilityDefinitionTinkererRoboGoblinLevel3 extends AbilityDefinition
 public class AbilityDefinitionDeathDamageAOEsapper extends AbilityDefinition
 ```
 
+'Adda' / [AbilityIds.aOEdamageupondeath](/stdlib/ref/_wurst/AbilityIds.html#abilityids-aOEdamageupondeath)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8478,6 +9639,8 @@ public class AbilityDefinitionDeathDamageAOEsapper extends AbilityDefinition
 public class AbilityDefinitionAroo extends AbilityDefinition
 ```
 
+'Aroo' / [AbilityIds.root](/stdlib/ref/_wurst/AbilityIds.html#abilityids-root)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8495,6 +9658,8 @@ public class AbilityDefinitionAroo extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionTinkererRoboGoblinLevel2 extends AbilityDefinition
 ```
+
+'ANg2' / [AbilityIds.tinkererRoboGoblinLevel2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererRoboGoblinLevel2)
 
 **Members:**
 
@@ -8522,6 +9687,8 @@ public class AbilityDefinitionTinkererRoboGoblinLevel2 extends AbilityDefinition
 public class AbilityDefinitionLichFrostArmor extends AbilityDefinition
 ```
 
+'AUfa' / [AbilityIds.frostArmor1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-frostArmor1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8536,6 +9703,8 @@ public class AbilityDefinitionLichFrostArmor extends AbilityDefinition
 public class AbilityDefinitionTankUpgrade extends AbilityDefinition
 ```
 
+'Srtt' / [AbilityIds.tankUpgrade](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tankUpgrade)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8548,14 +9717,18 @@ public class AbilityDefinitionTankUpgrade extends AbilityDefinition
 public class AbilityDefinitionCripple extends AbilityDefinition
 ```
 
+'Acri' / [AbilityIds.cripple](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cripple)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setDamageReduction(int level, real value)`
 - `presetDamageReduction(RealLevelClosure lc)`
 - `setAttackSpeedReduction(int level, real value)`
+  Attack Speed Reduction (%) / 'Cri2'
 - `presetAttackSpeedReduction(RealLevelClosure lc)`
 - `setMovementSpeedReduction(int level, real value)`
+  Movement Speed Reduction (%) / 'Cri1'
 - `presetMovementSpeedReduction(RealLevelClosure lc)`
 
 ### AbilityDefinitionFlakCannon
@@ -8563,6 +9736,8 @@ public class AbilityDefinitionCripple extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionFlakCannon extends AbilityDefinition
 ```
+
+'Aflk' / [AbilityIds.flakCannon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-flakCannon)
 
 **Members:**
 
@@ -8584,6 +9759,8 @@ public class AbilityDefinitionFlakCannon extends AbilityDefinition
 public class AbilityDefinitionPossessionChanneling extends AbilityDefinition
 ```
 
+'Aps2' / [AbilityIds.possessionChanneling](/stdlib/ref/_wurst/AbilityIds.html#abilityids-possessionChanneling)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8602,6 +9779,8 @@ public class AbilityDefinitionPossessionChanneling extends AbilityDefinition
 public class AbilityDefinitionRocketAttack extends AbilityDefinition
 ```
 
+'Aroc' / [AbilityIds.rocketAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rocketAttack)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8618,6 +9797,8 @@ public class AbilityDefinitionRocketAttack extends AbilityDefinition
 public class AbilityDefinitionBrewmasterStormEarthandFire extends AbilityDefinition
 ```
 
+'ANef' / [AbilityIds.brewmasterStormEarthandFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-brewmasterStormEarthandFire)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8630,20 +9811,26 @@ public class AbilityDefinitionBrewmasterStormEarthandFire extends AbilityDefinit
 public class AbilityDefinitionTinkererEngineeringUpgrade extends AbilityDefinition
 ```
 
+'ANeg' / [AbilityIds.tinkererEngineeringUpgrade](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererEngineeringUpgrade)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
 - `presetAbilityUpgrade(StringLevelClosure lc)`
 - `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
 - `presetAbilityUpgrade1(StringLevelClosure lc)`
 - `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
 - `presetAbilityUpgrade2(StringLevelClosure lc)`
 - `setMoveSpeedBonus(int level, real value)`
 - `presetMoveSpeedBonus(RealLevelClosure lc)`
 - `setDamageBonus(int level, real value)`
 - `presetDamageBonus(RealLevelClosure lc)`
 - `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
 - `presetAbilityUpgrade3(StringLevelClosure lc)`
 
 ### AbilityDefinitionMine
@@ -8651,6 +9838,8 @@ public class AbilityDefinitionTinkererEngineeringUpgrade extends AbilityDefiniti
 ```wurst
 public class AbilityDefinitionMine extends AbilityDefinition
 ```
+
+'Amin' / [AbilityIds.mineexploding](/stdlib/ref/_wurst/AbilityIds.html#abilityids-mineexploding)
 
 **Members:**
 
@@ -8666,6 +9855,8 @@ public class AbilityDefinitionMine extends AbilityDefinition
 public class AbilityDefinitionMagicImmunity extends AbilityDefinition
 ```
 
+'Amim' / [AbilityIds.spellImmunity2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-spellImmunity2)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8677,6 +9868,8 @@ public class AbilityDefinitionMagicImmunity extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionLichFrostNova extends AbilityDefinition
 ```
+
+'AUfn' / [AbilityIds.frostNova1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-frostNova1)
 
 **Members:**
 
@@ -8694,10 +9887,13 @@ public class AbilityDefinitionLichFrostNova extends AbilityDefinition
 public class AbilityDefinitionRoar extends AbilityDefinition
 ```
 
+'Aroa' / [AbilityIds.roar](/stdlib/ref/_wurst/AbilityIds.html#abilityids-roar)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setDamageIncrease(int level, real value)`
+  Damage Increase (%) / 'Roa1'
 - `presetDamageIncrease(RealLevelClosure lc)`
 - `setDefenseIncrease(int level, int value)`
 - `presetDefenseIncrease(IntLevelClosure lc)`
@@ -8718,6 +9914,8 @@ public class AbilityDefinitionRoar extends AbilityDefinition
 public class AbilityDefinitionRunedBracers extends AbilityDefinition
 ```
 
+'AIsr' / [AbilityIds.runedBracers](/stdlib/ref/_wurst/AbilityIds.html#abilityids-runedBracers)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8731,6 +9929,8 @@ public class AbilityDefinitionRunedBracers extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionLichDarkRitual extends AbilityDefinition
 ```
+
+'AUdr' / [AbilityIds.darkRitual](/stdlib/ref/_wurst/AbilityIds.html#abilityids-darkRitual)
 
 **Members:**
 
@@ -8752,6 +9952,8 @@ public class AbilityDefinitionLichDarkRitual extends AbilityDefinition
 public class AbilityDefinitionTichondriusDarkSummoning extends AbilityDefinition
 ```
 
+'AUds' / [AbilityIds.darkSummoning1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-darkSummoning1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8768,6 +9970,8 @@ public class AbilityDefinitionTichondriusDarkSummoning extends AbilityDefinition
 public class AbilityDefinitionItemSpeed extends AbilityDefinition
 ```
 
+'AIsp' / [AbilityIds.itemTemporarySpeedBonus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemTemporarySpeedBonus)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8780,12 +9984,16 @@ public class AbilityDefinitionItemSpeed extends AbilityDefinition
 public class AbilityDefinitionBloodlust extends AbilityDefinition
 ```
 
+'Ablo' / [AbilityIds.bloodlust1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bloodlust1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setMovementSpeedIncrease(int level, real value)`
+  Movement Speed Increase (%) / 'Blo2'
 - `presetMovementSpeedIncrease(RealLevelClosure lc)`
 - `setAttackSpeedIncrease(int level, real value)`
+  Attack Speed Increase (%) / 'Blo1'
 - `presetAttackSpeedIncrease(RealLevelClosure lc)`
 - `setScalingFactor(int level, real value)`
 - `presetScalingFactor(RealLevelClosure lc)`
@@ -8795,6 +10003,8 @@ public class AbilityDefinitionBloodlust extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionDeathKnightDeathPact extends AbilityDefinition
 ```
+
+'AUdp' / [AbilityIds.deathPact](/stdlib/ref/_wurst/AbilityIds.html#abilityids-deathPact)
 
 **Members:**
 
@@ -8816,6 +10026,8 @@ public class AbilityDefinitionDeathKnightDeathPact extends AbilityDefinition
 public class AbilityDefinitionBlightPlacement extends AbilityDefinition
 ```
 
+'Ablp' / [AbilityIds.blightPlacement](/stdlib/ref/_wurst/AbilityIds.html#abilityids-blightPlacement)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8829,6 +10041,8 @@ public class AbilityDefinitionBlightPlacement extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionSeaWitchForkedLightning extends AbilityDefinition
 ```
+
+'ANfl' / [AbilityIds.seaWitchForkedLightning](/stdlib/ref/_wurst/AbilityIds.html#abilityids-seaWitchForkedLightning)
 
 **Members:**
 
@@ -8848,6 +10062,8 @@ public class AbilityDefinitionSeaWitchForkedLightning extends AbilityDefinition
 public class AbilityDefinitionStrengthMod extends AbilityDefinition
 ```
 
+'AIsm' / [AbilityIds.itemStrengthGain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemStrengthGain)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8866,6 +10082,8 @@ public class AbilityDefinitionStrengthMod extends AbilityDefinition
 public class AbilityDefinitionScrollofLifeRegen extends AbilityDefinition
 ```
 
+'AIsl' / [AbilityIds.scrollofLifeRegen](/stdlib/ref/_wurst/AbilityIds.html#abilityids-scrollofLifeRegen)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8879,12 +10097,15 @@ public class AbilityDefinitionScrollofLifeRegen extends AbilityDefinition
 - `presetAllowWhenFull(IntLevelClosure lc)`
 - `setLifeRegenerated(int level, real value)`
 - `presetLifeRegenerated(RealLevelClosure lc)`
+- `setAllowWhenFull(int level, int value)`
 
 ### AbilityDefinitionHealCreepNormalAnhe
 
 ```wurst
 public class AbilityDefinitionHealCreepNormalAnhe extends AbilityDefinition
 ```
+
+'Anhe' / [AbilityIds.heal1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-heal1)
 
 **Members:**
 
@@ -8898,6 +10119,8 @@ public class AbilityDefinitionHealCreepNormalAnhe extends AbilityDefinition
 public class AbilityDefinitionAttackSpeedIncrease extends AbilityDefinition
 ```
 
+'AIsx' / [AbilityIds.attackSpeedIncrease](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackSpeedIncrease)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8910,10 +10133,13 @@ public class AbilityDefinitionAttackSpeedIncrease extends AbilityDefinition
 public class AbilityDefinitionDefend extends AbilityDefinition
 ```
 
+'Adef' / [AbilityIds.defend](/stdlib/ref/_wurst/AbilityIds.html#abilityids-defend)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setDamageTaken(int level, real value)`
+  Damage Taken (%) / 'Def1'
 - `presetDamageTaken(RealLevelClosure lc)`
 - `setChancetoDeflect(int level, real value)`
 - `presetChancetoDeflect(RealLevelClosure lc)`
@@ -8922,6 +10148,7 @@ public class AbilityDefinitionDefend extends AbilityDefinition
 - `setAttackSpeedFactor(int level, real value)`
 - `presetAttackSpeedFactor(RealLevelClosure lc)`
 - `setDamageDealt(int level, real value)`
+  Damage Dealt (%) / 'Def2'
 - `presetDamageDealt(RealLevelClosure lc)`
 - `setDeflectDamageTakenSpells(int level, real value)`
 - `presetDeflectDamageTakenSpells(RealLevelClosure lc)`
@@ -8936,6 +10163,8 @@ public class AbilityDefinitionDefend extends AbilityDefinition
 public class AbilityDefinitionSentryWardAIsw extends AbilityDefinition
 ```
 
+'AIsw' / [AbilityIds.sentryWardAIsw](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sentryWardAIsw)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8947,6 +10176,8 @@ public class AbilityDefinitionSentryWardAIsw extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionGrabTree extends AbilityDefinition
 ```
+
+'Agra' / [AbilityIds.grabTree](/stdlib/ref/_wurst/AbilityIds.html#abilityids-grabTree)
 
 **Members:**
 
@@ -8968,6 +10199,8 @@ public class AbilityDefinitionGrabTree extends AbilityDefinition
 public class AbilityDefinitionDecouple extends AbilityDefinition
 ```
 
+'Adec' / [AbilityIds.decouple](/stdlib/ref/_wurst/AbilityIds.html#abilityids-decouple)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8982,6 +10215,8 @@ public class AbilityDefinitionDecouple extends AbilityDefinition
 public class AbilityDefinitionDustofAppearance extends AbilityDefinition
 ```
 
+'AItb' / [AbilityIds.dustofAppearance](/stdlib/ref/_wurst/AbilityIds.html#abilityids-dustofAppearance)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -8993,6 +10228,8 @@ public class AbilityDefinitionDustofAppearance extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAttackBonusAItc extends AbilityDefinition
 ```
+
+'AItc' / [AbilityIds.attackBonusAItc](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonusAItc)
 
 **Members:**
 
@@ -9006,6 +10243,8 @@ public class AbilityDefinitionAttackBonusAItc extends AbilityDefinition
 public class AbilityDefinitionItemDetectAoe extends AbilityDefinition
 ```
 
+'AIta' / [AbilityIds.itemAreaDetection](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAreaDetection)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -9017,6 +10256,8 @@ public class AbilityDefinitionItemDetectAoe extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAttackBonusPlus5 extends AbilityDefinition
 ```
+
+'AItj' / [AbilityIds.attackBonusPlus5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonusPlus5)
 
 **Members:**
 
@@ -9030,6 +10271,8 @@ public class AbilityDefinitionAttackBonusPlus5 extends AbilityDefinition
 public class AbilityDefinitionAttackBonusPlus7 extends AbilityDefinition
 ```
 
+'AItk' / [AbilityIds.attackBonusPlus7](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonusPlus7)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -9041,6 +10284,8 @@ public class AbilityDefinitionAttackBonusPlus7 extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAttackBonusPlus2 extends AbilityDefinition
 ```
+
+'AIth' / [AbilityIds.attackBonusPlus2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonusPlus2)
 
 **Members:**
 
@@ -9054,6 +10299,8 @@ public class AbilityDefinitionAttackBonusPlus2 extends AbilityDefinition
 public class AbilityDefinitionDevour extends AbilityDefinition
 ```
 
+'Adev' / [AbilityIds.devour1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-devour1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -9065,6 +10312,8 @@ public class AbilityDefinitionDevour extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAttackBonusPlus4 extends AbilityDefinition
 ```
+
+'AIti' / [AbilityIds.attackBonusPlus4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonusPlus4)
 
 **Members:**
 
@@ -9078,10 +10327,13 @@ public class AbilityDefinitionAttackBonusPlus4 extends AbilityDefinition
 public class AbilityDefinitionMountainKingThunderClap extends AbilityDefinition
 ```
 
+'AHtc' / [AbilityIds.thunderClap](/stdlib/ref/_wurst/AbilityIds.html#abilityids-thunderClap)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setAttackSpeedReduction(int level, real value)`
+  Attack Speed Reduction (%) / 'Htc4'
 - `presetAttackSpeedReduction(RealLevelClosure lc)`
 - `setSpecificTargetDamage(int level, real value)`
 - `presetSpecificTargetDamage(RealLevelClosure lc)`
@@ -9090,6 +10342,7 @@ public class AbilityDefinitionMountainKingThunderClap extends AbilityDefinition
 - `setMaximumDamage(int level, real value)`
 - `presetMaximumDamage(RealLevelClosure lc)`
 - `setMovementSpeedReduction(int level, real value)`
+  Movement Speed Reduction (%) / 'Htc3'
 - `presetMovementSpeedReduction(RealLevelClosure lc)`
 
 ### AbilityDefinitionAttackBonusAItf
@@ -9097,6 +10350,8 @@ public class AbilityDefinitionMountainKingThunderClap extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAttackBonusAItf extends AbilityDefinition
 ```
+
+'AItf' / [AbilityIds.attackBonusAItf](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonusAItf)
 
 **Members:**
 
@@ -9110,6 +10365,8 @@ public class AbilityDefinitionAttackBonusAItf extends AbilityDefinition
 public class AbilityDefinitionAdet extends AbilityDefinition
 ```
 
+'Adet' / [AbilityIds.detector](/stdlib/ref/_wurst/AbilityIds.html#abilityids-detector)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -9121,6 +10378,8 @@ public class AbilityDefinitionAdet extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionFingerofDeath extends AbilityDefinition
 ```
+
+'ANfd' / [AbilityIds.fingerofDeath](/stdlib/ref/_wurst/AbilityIds.html#abilityids-fingerofDeath)
 
 **Members:**
 
@@ -9138,6 +10397,8 @@ public class AbilityDefinitionFingerofDeath extends AbilityDefinition
 public class AbilityDefinitionAttackBonusPlus1 extends AbilityDefinition
 ```
 
+'AItg' / [AbilityIds.attackBonusPlus1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonusPlus1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -9149,6 +10410,8 @@ public class AbilityDefinitionAttackBonusPlus1 extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionSeaWitchFrostArrows extends AbilityDefinition
 ```
+
+'ANfa' / [AbilityIds.seaWitchFrostArrows](/stdlib/ref/_wurst/AbilityIds.html#abilityids-seaWitchFrostArrows)
 
 **Members:**
 
@@ -9170,6 +10433,8 @@ public class AbilityDefinitionSeaWitchFrostArrows extends AbilityDefinition
 public class AbilityDefinitionFireBolt extends AbilityDefinition
 ```
 
+'ANfb' / [AbilityIds.firebolt](/stdlib/ref/_wurst/AbilityIds.html#abilityids-firebolt)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -9182,6 +10447,8 @@ public class AbilityDefinitionFireBolt extends AbilityDefinition
 public class AbilityDefinitionMountainKingThunderBolt extends AbilityDefinition
 ```
 
+'AHtb' / [AbilityIds.stormBolt](/stdlib/ref/_wurst/AbilityIds.html#abilityids-stormBolt)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -9193,6 +10460,8 @@ public class AbilityDefinitionMountainKingThunderBolt extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionSentinel extends AbilityDefinition
 ```
+
+'Aesn' / [AbilityIds.sentinel](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sentinel)
 
 **Members:**
 
@@ -9207,12 +10476,16 @@ public class AbilityDefinitionSentinel extends AbilityDefinition
 - `presetHoveringHeight(RealLevelClosure lc)`
 - `setDurationOfOwls(int level, real value)`
 - `presetDurationOfOwls(RealLevelClosure lc)`
+- `presetDurationofOwls(RealLevelClosure lc)`
+- `setDurationofOwls(int level, real value)`
 
 ### AbilityDefinitionArchMageSummonWaterElemental
 
 ```wurst
 public class AbilityDefinitionArchMageSummonWaterElemental extends AbilityDefinition
 ```
+
+'AHwe' / [AbilityIds.summonWaterElemental](/stdlib/ref/_wurst/AbilityIds.html#abilityids-summonWaterElemental)
 
 **Members:**
 
@@ -9228,6 +10501,8 @@ public class AbilityDefinitionArchMageSummonWaterElemental extends AbilityDefini
 public class AbilityDefinitionLoadBurrow extends AbilityDefinition
 ```
 
+'Sloa' / [AbilityIds.loadBurrow](/stdlib/ref/_wurst/AbilityIds.html#abilityids-loadBurrow)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -9239,6 +10514,8 @@ public class AbilityDefinitionLoadBurrow extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionDispelMagiccreep extends AbilityDefinition
 ```
+
+'Adsm' / [AbilityIds.dispelMagic1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-dispelMagic1)
 
 **Members:**
 
@@ -9253,6 +10530,8 @@ public class AbilityDefinitionDispelMagiccreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionFragShards extends AbilityDefinition
 ```
+
+'Afsh' / [AbilityIds.fragShards](/stdlib/ref/_wurst/AbilityIds.html#abilityids-fragShards)
 
 **Members:**
 
@@ -9274,6 +10553,8 @@ public class AbilityDefinitionFragShards extends AbilityDefinition
 public class AbilityDefinitionDetectSentryWard extends AbilityDefinition
 ```
 
+'Adt1' / [AbilityIds.detectSentryWard](/stdlib/ref/_wurst/AbilityIds.html#abilityids-detectSentryWard)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -9285,6 +10566,8 @@ public class AbilityDefinitionDetectSentryWard extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionPhoenixFire extends AbilityDefinition
 ```
+
+'Apxf' / [AbilityIds.phoenixFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-phoenixFire)
 
 **Members:**
 
@@ -9299,6 +10582,8 @@ public class AbilityDefinitionPhoenixFire extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionRaiseDead extends AbilityDefinition
 ```
+
+'Arai' / [AbilityIds.raiseDead](/stdlib/ref/_wurst/AbilityIds.html#abilityids-raiseDead)
 
 **Members:**
 
@@ -9320,6 +10605,8 @@ public class AbilityDefinitionRaiseDead extends AbilityDefinition
 public class AbilityDefinitionAnwm extends AbilityDefinition
 ```
 
+'Anwm' / [AbilityIds.anwm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anwm)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -9333,6 +10620,8 @@ public class AbilityDefinitionAnwm extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionRayOfDisruption extends AbilityDefinition
 ```
+
+'Ache' / [AbilityIds.rayofDisruption](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rayofDisruption)
 
 **Members:**
 
@@ -9350,10 +10639,13 @@ public class AbilityDefinitionRayOfDisruption extends AbilityDefinition
 public class AbilityDefinitionShadowMeld extends AbilityDefinition
 ```
 
+'Ashm' / [AbilityIds.shadowMeld](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shadowMeld)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setDayNightDuration(int level, real value)`
+  Day/Night Duration / 'Shm2'
 - `presetDayNightDuration(RealLevelClosure lc)`
 - `setActionDuration(int level, real value)`
 - `presetActionDuration(RealLevelClosure lc)`
@@ -9368,10 +10660,13 @@ public class AbilityDefinitionShadowMeld extends AbilityDefinition
 public class AbilityDefinitionShadowMeldItem extends AbilityDefinition
 ```
 
+'AIhm' / [AbilityIds.itemShadowMeld](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemShadowMeld)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setDayNightDuration(int level, real value)`
+  Day/Night Duration / 'Shm2'
 - `presetDayNightDuration(RealLevelClosure lc)`
 - `setActionDuration(int level, real value)`
 - `presetActionDuration(RealLevelClosure lc)`
@@ -9386,10 +10681,13 @@ public class AbilityDefinitionShadowMeldItem extends AbilityDefinition
 public class AbilityDefinitionRoarAra2 extends AbilityDefinition
 ```
 
+'Ara2' / [AbilityIds.roarAra2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-roarAra2)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setDamageIncrease(int level, real value)`
+  Damage Increase (%) / 'Roa1'
 - `presetDamageIncrease(RealLevelClosure lc)`
 - `setDefenseIncrease(int level, int value)`
 - `presetDefenseIncrease(IntLevelClosure lc)`
@@ -9410,6 +10708,8 @@ public class AbilityDefinitionRoarAra2 extends AbilityDefinition
 public class AbilityDefinitionGhostVisible extends AbilityDefinition
 ```
 
+'Aeth' / [AbilityIds.ghostVisible](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ghostVisible)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -9424,6 +10724,8 @@ public class AbilityDefinitionGhostVisible extends AbilityDefinition
 public class AbilityDefinitionDetectgeneral extends AbilityDefinition
 ```
 
+'Adtg' / [AbilityIds.trueSight1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-trueSight1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -9435,6 +10737,8 @@ public class AbilityDefinitionDetectgeneral extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionPIlotTankRifleman extends AbilityDefinition
 ```
+
+'Stpr' / [AbilityIds.pIlotTankRifleman](/stdlib/ref/_wurst/AbilityIds.html#abilityids-pIlotTankRifleman)
 
 **Members:**
 
@@ -9450,6 +10754,8 @@ public class AbilityDefinitionPIlotTankRifleman extends AbilityDefinition
 public class AbilityDefinitionFreezeDamageBonus extends AbilityDefinition
 ```
 
+'AIzb' / [AbilityIds.itemFreezeDamageBonus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemFreezeDamageBonus)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -9463,6 +10769,8 @@ public class AbilityDefinitionFreezeDamageBonus extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionEtherealForm extends AbilityDefinition
 ```
+
+'Aetf' / [AbilityIds.etherealForm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-etherealForm)
 
 **Members:**
 
@@ -9486,6 +10794,8 @@ public class AbilityDefinitionEtherealForm extends AbilityDefinition
 public class AbilityDefinitionDetonate extends AbilityDefinition
 ```
 
+'Adtn' / [AbilityIds.detonate](/stdlib/ref/_wurst/AbilityIds.html#abilityids-detonate)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -9499,6 +10809,8 @@ public class AbilityDefinitionDetonate extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionRavenFormMedivh extends AbilityDefinition
 ```
+
+'Amrf' / [AbilityIds.crowForm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-crowForm)
 
 **Members:**
 
@@ -9522,6 +10834,8 @@ public class AbilityDefinitionRavenFormMedivh extends AbilityDefinition
 public class AbilityDefinitionShadowHunterSerpentWard extends AbilityDefinition
 ```
 
+'AOsw' / [AbilityIds.shadowHunterSerpentWard](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shadowHunterSerpentWard)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -9535,6 +10849,8 @@ public class AbilityDefinitionShadowHunterSerpentWard extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAbsorbMana extends AbilityDefinition
 ```
+
+'Aabs' / [AbilityIds.absorbMana](/stdlib/ref/_wurst/AbilityIds.html#abilityids-absorbMana)
 
 **Members:**
 
@@ -9550,6 +10866,8 @@ public class AbilityDefinitionAbsorbMana extends AbilityDefinition
 public class AbilityDefinitionAuraRegenerationStatue extends AbilityDefinition
 ```
 
+'Aabr' / [AbilityIds.auraRegenerationStatue](/stdlib/ref/_wurst/AbilityIds.html#abilityids-auraRegenerationStatue)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -9564,6 +10882,8 @@ public class AbilityDefinitionAuraRegenerationStatue extends AbilityDefinition
 public class AbilityDefinitionUnsummon extends AbilityDefinition
 ```
 
+'Auns' / [AbilityIds.unsummonBuilding](/stdlib/ref/_wurst/AbilityIds.html#abilityids-unsummonBuilding)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -9577,6 +10897,8 @@ public class AbilityDefinitionUnsummon extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionTaurenChieftainShockWave extends AbilityDefinition
 ```
+
+'AOsh' / [AbilityIds.shockwave2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shockwave2)
 
 **Members:**
 
@@ -9596,14 +10918,18 @@ public class AbilityDefinitionTaurenChieftainShockWave extends AbilityDefinition
 public class AbilityDefinitionCrippleWarlock extends AbilityDefinition
 ```
 
+'Scri' / [AbilityIds.cripple1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cripple1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setDamageReduction(int level, real value)`
 - `presetDamageReduction(RealLevelClosure lc)`
 - `setAttackSpeedReduction(int level, real value)`
+  Attack Speed Reduction (%) / 'Cri2'
 - `presetAttackSpeedReduction(RealLevelClosure lc)`
 - `setMovementSpeedReduction(int level, real value)`
+  Movement Speed Reduction (%) / 'Cri1'
 - `presetMovementSpeedReduction(RealLevelClosure lc)`
 
 ### AbilityDefinitionFarseerSpiritWolf
@@ -9611,6 +10937,8 @@ public class AbilityDefinitionCrippleWarlock extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionFarseerSpiritWolf extends AbilityDefinition
 ```
+
+'AOsf' / [AbilityIds.feralSpirit2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-feralSpirit2)
 
 **Members:**
 
@@ -9626,6 +10954,8 @@ public class AbilityDefinitionFarseerSpiritWolf extends AbilityDefinition
 public class AbilityDefinitionPilotTankMortarTeam extends AbilityDefinition
 ```
 
+'Stpm' / [AbilityIds.pilotTankMortarTeam](/stdlib/ref/_wurst/AbilityIds.html#abilityids-pilotTankMortarTeam)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -9639,6 +10969,8 @@ public class AbilityDefinitionPilotTankMortarTeam extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAntimagicShieldAIxs extends AbilityDefinition
 ```
+
+'AIxs' / [AbilityIds.antimagicShieldAIxs](/stdlib/ref/_wurst/AbilityIds.html#abilityids-antimagicShieldAIxs)
 
 **Members:**
 
@@ -9658,6 +10990,8 @@ public class AbilityDefinitionAntimagicShieldAIxs extends AbilityDefinition
 public class AbilityDefinitionPermanentAllPlus1 extends AbilityDefinition
 ```
 
+'AIxm' / [AbilityIds.itemIntAgiStrgain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemIntAgiStrgain)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -9676,6 +11010,8 @@ public class AbilityDefinitionPermanentAllPlus1 extends AbilityDefinition
 public class AbilityDefinitionAbolishMagic extends AbilityDefinition
 ```
 
+'Aadm' / [AbilityIds.abolishMagic](/stdlib/ref/_wurst/AbilityIds.html#abilityids-abolishMagic)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -9689,6 +11025,8 @@ public class AbilityDefinitionAbolishMagic extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionRavenFormDruidoftheTalon extends AbilityDefinition
 ```
+
+'Arav' / [AbilityIds.stormCrowForm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-stormCrowForm)
 
 **Members:**
 
@@ -9712,6 +11050,8 @@ public class AbilityDefinitionRavenFormDruidoftheTalon extends AbilityDefinition
 public class AbilityDefinitionPlagueToss extends AbilityDefinition
 ```
 
+'Apts' / [AbilityIds.diseaseCloud2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-diseaseCloud2)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -9724,6 +11064,8 @@ public class AbilityDefinitionPlagueToss extends AbilityDefinition
 public class AbilityDefinitionVampiricattack extends AbilityDefinition
 ```
 
+'SCva' / [AbilityIds.vampiricattack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-vampiricattack)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -9735,6 +11077,8 @@ public class AbilityDefinitionVampiricattack extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionCargoHoldDeath extends AbilityDefinition
 ```
+
+'Achd' / [AbilityIds.cargoHoldDeath](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cargoHoldDeath)
 
 **Members:**
 
@@ -9752,6 +11096,8 @@ public class AbilityDefinitionCargoHoldDeath extends AbilityDefinition
 public class AbilityDefinitionAcha extends AbilityDefinition
 ```
 
+'Acha' / [AbilityIds.chaos](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chaos)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -9764,10 +11110,13 @@ public class AbilityDefinitionAcha extends AbilityDefinition
 public class AbilityDefinitionUnholyFrenzycreep extends AbilityDefinition
 ```
 
+'ACuf' / [AbilityIds.unholyFrenzycreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-unholyFrenzycreep)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setAttackSpeedBonus(int level, real value)`
+  Attack Speed Bonus (%) / 'Uhf1'
 - `presetAttackSpeedBonus(RealLevelClosure lc)`
 - `setDamageperSecond(int level, real value)`
 - `presetDamageperSecond(RealLevelClosure lc)`
@@ -9777,6 +11126,8 @@ public class AbilityDefinitionUnholyFrenzycreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionRenew extends AbilityDefinition
 ```
+
+'Aren' / [AbilityIds.renew](/stdlib/ref/_wurst/AbilityIds.html#abilityids-renew)
 
 **Members:**
 
@@ -9798,6 +11149,8 @@ public class AbilityDefinitionRenew extends AbilityDefinition
 public class AbilityDefinitionRegenLife extends AbilityDefinition
 ```
 
+'Arel' / [AbilityIds.itemLifeRegeneration](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLifeRegeneration)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -9809,6 +11162,8 @@ public class AbilityDefinitionRegenLife extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionBlightGrowthLarge extends AbilityDefinition
 ```
+
+'Abgl' / [AbilityIds.blightGrowthLarge](/stdlib/ref/_wurst/AbilityIds.html#abilityids-blightGrowthLarge)
 
 **Members:**
 
@@ -9823,6 +11178,8 @@ public class AbilityDefinitionBlightGrowthLarge extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionBlightedGoldmine extends AbilityDefinition
 ```
+
+'Abgm' / [AbilityIds.blightedGoldMineAbility](/stdlib/ref/_wurst/AbilityIds.html#abilityids-blightedGoldMineAbility)
 
 **Members:**
 
@@ -9842,14 +11199,18 @@ public class AbilityDefinitionBlightedGoldmine extends AbilityDefinition
 public class AbilityDefinitionUnholyAuracreep extends AbilityDefinition
 ```
 
+'ACua' / [AbilityIds.unholyAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-unholyAura)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setPercentBonus(int level, bool value)`
 - `presetPercentBonus(BooleanLevelClosure lc)`
 - `setLifeRegenerationIncrease(int level, real value)`
+  Life Regeneration Increase (%) / 'Uau2'
 - `presetLifeRegenerationIncrease(RealLevelClosure lc)`
 - `setMovementSpeedIncrease(int level, real value)`
+  Movement Speed Increase (%) / 'Uau1'
 - `presetMovementSpeedIncrease(RealLevelClosure lc)`
 
 ### AbilityDefinitionRepairOrc
@@ -9857,6 +11218,8 @@ public class AbilityDefinitionUnholyAuracreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionRepairOrc extends AbilityDefinition
 ```
+
+'Arep' / [AbilityIds.repair](/stdlib/ref/_wurst/AbilityIds.html#abilityids-repair)
 
 **Members:**
 
@@ -9878,6 +11241,8 @@ public class AbilityDefinitionRepairOrc extends AbilityDefinition
 public class AbilityDefinitionEntanglingSeaweed extends AbilityDefinition
 ```
 
+'Aenw' / [AbilityIds.entanglingSeaweed](/stdlib/ref/_wurst/AbilityIds.html#abilityids-entanglingSeaweed)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -9889,6 +11254,8 @@ public class AbilityDefinitionEntanglingSeaweed extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionNeutralSpies extends AbilityDefinition
 ```
+
+'Ansp' / [AbilityIds.neutralSpies](/stdlib/ref/_wurst/AbilityIds.html#abilityids-neutralSpies)
 
 **Members:**
 
@@ -9906,6 +11273,8 @@ public class AbilityDefinitionNeutralSpies extends AbilityDefinition
 public class AbilityDefinitionEntangle extends AbilityDefinition
 ```
 
+'Aent' / [AbilityIds.entangleGoldMine](/stdlib/ref/_wurst/AbilityIds.html#abilityids-entangleGoldMine)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -9918,6 +11287,8 @@ public class AbilityDefinitionEntangle extends AbilityDefinition
 public class AbilityDefinitionRejuvination extends AbilityDefinition
 ```
 
+'Arej' / [AbilityIds.rejuvenation1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rejuvenation1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -9929,12 +11300,15 @@ public class AbilityDefinitionRejuvination extends AbilityDefinition
 - `presetHitPointsGained(RealLevelClosure lc)`
 - `setAllowWhenFull(int level, AllowWhenFull value)`
 - `presetAllowWhenFull(IntLevelClosure lc)`
+- `setAllowWhenFull(int level, int value)`
 
 ### AbilityDefinitionEntanglingRootscreep
 
 ```wurst
 public class AbilityDefinitionEntanglingRootscreep extends AbilityDefinition
 ```
+
+'Aenr' / [AbilityIds.entanglingRoots](/stdlib/ref/_wurst/AbilityIds.html#abilityids-entanglingRoots)
 
 **Members:**
 
@@ -9947,6 +11321,8 @@ public class AbilityDefinitionEntanglingRootscreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionSelfDestruct extends AbilityDefinition
 ```
+
+'Asds' / [AbilityIds.kaboom](/stdlib/ref/_wurst/AbilityIds.html#abilityids-kaboom)
 
 **Members:**
 
@@ -9970,6 +11346,8 @@ public class AbilityDefinitionSelfDestruct extends AbilityDefinition
 public class AbilityDefinitionBlightGrowthSmall extends AbilityDefinition
 ```
 
+'Abgs' / [AbilityIds.blightGrowthSmall](/stdlib/ref/_wurst/AbilityIds.html#abilityids-blightGrowthSmall)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -9984,6 +11362,8 @@ public class AbilityDefinitionBlightGrowthSmall extends AbilityDefinition
 public class AbilityDefinitionEnsnare extends AbilityDefinition
 ```
 
+'Aens' / [AbilityIds.ensnare1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ensnare1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -9993,12 +11373,22 @@ public class AbilityDefinitionEnsnare extends AbilityDefinition
 - `presetAirUnitLowerDuration(RealLevelClosure lc)`
 - `setMeleeAttackRange(int level, real value)`
 - `presetMeleeAttackRange(RealLevelClosure lc)`
+- `setStunDuration(int level, real value)`
+- `setBonusDamageTakenPercent(int level, real value)`
+- `setAttackSpeedReductionPercent(int level, real value)`
+- `setSilencesWhenEnsnared(int level, bool value)`
+- `presetStunDuration(RealLevelClosure lc)`
+- `presetBonusDamageTakenPercent(RealLevelClosure lc)`
+- `presetAttackSpeedReductionPercent(RealLevelClosure lc)`
+- `presetSilencesWhenEnsnared(BooleanLevelClosure lc)`
 
 ### AbilityDefinitionDeathDamageAOEmineBIG
 
 ```wurst
 public class AbilityDefinitionDeathDamageAOEmineBIG extends AbilityDefinition
 ```
+
+'Amnz' / [AbilityIds.deathDamageAOEmineBIG](/stdlib/ref/_wurst/AbilityIds.html#abilityids-deathDamageAOEmineBIG)
 
 **Members:**
 
@@ -10018,6 +11408,8 @@ public class AbilityDefinitionDeathDamageAOEmineBIG extends AbilityDefinition
 public class AbilityDefinitionSerpentWardtentacleForgottenone extends AbilityDefinition
 ```
 
+'ACtn' / [AbilityIds.serpentWardtentacleForgottenone](/stdlib/ref/_wurst/AbilityIds.html#abilityids-serpentWardtentacleForgottenone)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -10031,6 +11423,8 @@ public class AbilityDefinitionSerpentWardtentacleForgottenone extends AbilityDef
 ```wurst
 public class AbilityDefinitionTornadoDamage extends AbilityDefinition
 ```
+
+'Atdg' / [AbilityIds.tornadoDamage](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tornadoDamage)
 
 **Members:**
 
@@ -10052,6 +11446,8 @@ public class AbilityDefinitionTornadoDamage extends AbilityDefinition
 public class AbilityDefinitionThunderBoltCreep extends AbilityDefinition
 ```
 
+'ACtb' / [AbilityIds.hurlBoulder](/stdlib/ref/_wurst/AbilityIds.html#abilityids-hurlBoulder)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -10063,6 +11459,8 @@ public class AbilityDefinitionThunderBoltCreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionThunderClapCreep extends AbilityDefinition
 ```
+
+'ACtc' / [AbilityIds.slam](/stdlib/ref/_wurst/AbilityIds.html#abilityids-slam)
 
 **Members:**
 
@@ -10081,6 +11479,8 @@ public class AbilityDefinitionThunderClapCreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionSelfDestructClockwerkGoblins extends AbilityDefinition
 ```
+
+'Asdg' / [AbilityIds.selfDestructClockwerkGoblins](/stdlib/ref/_wurst/AbilityIds.html#abilityids-selfDestructClockwerkGoblins)
 
 **Members:**
 
@@ -10104,6 +11504,8 @@ public class AbilityDefinitionSelfDestructClockwerkGoblins extends AbilityDefini
 public class AbilityDefinitionDeathDamageAOEmine extends AbilityDefinition
 ```
 
+'Amnx' / [AbilityIds.deathDamageAOEmine](/stdlib/ref/_wurst/AbilityIds.html#abilityids-deathDamageAOEmine)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -10122,6 +11524,8 @@ public class AbilityDefinitionDeathDamageAOEmine extends AbilityDefinition
 public class AbilityDefinitionManaBurndemon extends AbilityDefinition
 ```
 
+'Amnb' / [AbilityIds.manaBurndemon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-manaBurndemon)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -10137,6 +11541,8 @@ public class AbilityDefinitionManaBurndemon extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionShockwaveTrap extends AbilityDefinition
 ```
+
+'ACst' / [AbilityIds.shockwave1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shockwave1)
 
 **Members:**
 
@@ -10155,6 +11561,8 @@ public class AbilityDefinitionShockwaveTrap extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionShadowStrikeCreep extends AbilityDefinition
 ```
+
+'ACss' / [AbilityIds.shadowStrikeCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shadowStrikeCreep)
 
 **Members:**
 
@@ -10176,6 +11584,8 @@ public class AbilityDefinitionShadowStrikeCreep extends AbilityDefinition
 public class AbilityDefinitionBashmaulSPBearlevel3 extends AbilityDefinition
 ```
 
+'ANb2' / [AbilityIds.bashmaulSPBearlevel3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bashmaulSPBearlevel3)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -10196,6 +11606,8 @@ public class AbilityDefinitionBashmaulSPBearlevel3 extends AbilityDefinition
 public class AbilityDefinitionSlowCreep extends AbilityDefinition
 ```
 
+'ACsw' / [AbilityIds.slow1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-slow1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -10212,6 +11624,8 @@ public class AbilityDefinitionSlowCreep extends AbilityDefinition
 public class AbilityDefinitionReturnGold extends AbilityDefinition
 ```
 
+'Argd' / [AbilityIds.returnGold](/stdlib/ref/_wurst/AbilityIds.html#abilityids-returnGold)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -10225,6 +11639,8 @@ public class AbilityDefinitionReturnGold extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionWarStompseagiant extends AbilityDefinition
 ```
+
+'Awrg' / [AbilityIds.warStompseagiant](/stdlib/ref/_wurst/AbilityIds.html#abilityids-warStompseagiant)
 
 **Members:**
 
@@ -10242,6 +11658,8 @@ public class AbilityDefinitionWarStompseagiant extends AbilityDefinition
 public class AbilityDefinitionBladeMasterBladestorm extends AbilityDefinition
 ```
 
+'AOww' / [AbilityIds.bladestorm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bladestorm)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -10256,6 +11674,8 @@ public class AbilityDefinitionBladeMasterBladestorm extends AbilityDefinition
 public class AbilityDefinitionTaurenChieftainWarStomp extends AbilityDefinition
 ```
 
+'AOws' / [AbilityIds.warStomp1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-warStomp1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -10267,6 +11687,8 @@ public class AbilityDefinitionTaurenChieftainWarStomp extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionWarStomphydra extends AbilityDefinition
 ```
+
+'Awrh' / [AbilityIds.warStomphydra](/stdlib/ref/_wurst/AbilityIds.html#abilityids-warStomphydra)
 
 **Members:**
 
@@ -10284,12 +11706,15 @@ public class AbilityDefinitionWarStomphydra extends AbilityDefinition
 public class AbilityDefinitionBladeMasterWindWalk extends AbilityDefinition
 ```
 
+'AOwk' / [AbilityIds.windWalk](/stdlib/ref/_wurst/AbilityIds.html#abilityids-windWalk)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setBackstabDamage(int level, bool value)`
 - `presetBackstabDamage(BooleanLevelClosure lc)`
 - `setMovementSpeedIncrease(int level, real value)`
+  Movement Speed Increase (%) / 'Owk2'
 - `presetMovementSpeedIncrease(RealLevelClosure lc)`
 - `setTransitionTime(int level, real value)`
 - `presetTransitionTime(RealLevelClosure lc)`
@@ -10297,12 +11722,20 @@ public class AbilityDefinitionBladeMasterWindWalk extends AbilityDefinition
 - `presetBackstabDamage1(RealLevelClosure lc)`
 - `setStartCooldownWhenDecloak(int level, bool value)`
 - `presetStartCooldownWhenDecloak(BooleanLevelClosure lc)`
+- `presetStartCooldownwhenDecloak(BooleanLevelClosure lc)`
+- `setBackstabDamage(int level, real value)`
+- `presetBackstabDamage(RealLevelClosure lc)`
+- `setStartCooldownwhenDecloak(int level, bool value)`
+- `setBackstabDamage1(int level, bool value)`
+- `presetBackstabDamage1(BooleanLevelClosure lc)`
 
 ### AbilityDefinitionSummonSeaElemental
 
 ```wurst
 public class AbilityDefinitionSummonSeaElemental extends AbilityDefinition
 ```
+
+'ACwe' / [AbilityIds.summonSeaElemental](/stdlib/ref/_wurst/AbilityIds.html#abilityids-summonSeaElemental)
 
 **Members:**
 
@@ -10318,6 +11751,8 @@ public class AbilityDefinitionSummonSeaElemental extends AbilityDefinition
 public class AbilityDefinitionWebcreep extends AbilityDefinition
 ```
 
+'ACwb' / [AbilityIds.webcreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-webcreep)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -10327,12 +11762,22 @@ public class AbilityDefinitionWebcreep extends AbilityDefinition
 - `presetAirUnitLowerDuration(RealLevelClosure lc)`
 - `setMeleeAttackRange(int level, real value)`
 - `presetMeleeAttackRange(RealLevelClosure lc)`
+- `setStunDuration(int level, real value)`
+- `setBonusDamageTakenPercent(int level, real value)`
+- `setAttackSpeedReductionPercent(int level, real value)`
+- `setSilencesWhenEnsnared(int level, bool value)`
+- `presetStunDuration(RealLevelClosure lc)`
+- `presetBonusDamageTakenPercent(RealLevelClosure lc)`
+- `presetAttackSpeedReductionPercent(RealLevelClosure lc)`
+- `presetSilencesWhenEnsnared(BooleanLevelClosure lc)`
 
 ### AbilityDefinitionReturnGoldLumber
 
 ```wurst
 public class AbilityDefinitionReturnGoldLumber extends AbilityDefinition
 ```
+
+'Argl' / [AbilityIds.returnGoldLumber](/stdlib/ref/_wurst/AbilityIds.html#abilityids-returnGoldLumber)
 
 **Members:**
 
@@ -10347,6 +11792,8 @@ public class AbilityDefinitionReturnGoldLumber extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionSelfDestruct3ClockwerkGoblins extends AbilityDefinition
 ```
+
+'Asd3' / [AbilityIds.selfDestruct3ClockwerkGoblins](/stdlib/ref/_wurst/AbilityIds.html#abilityids-selfDestruct3ClockwerkGoblins)
 
 **Members:**
 
@@ -10370,6 +11817,8 @@ public class AbilityDefinitionSelfDestruct3ClockwerkGoblins extends AbilityDefin
 public class AbilityDefinitionSelfDestruct2ClockwerkGoblins extends AbilityDefinition
 ```
 
+'Asd2' / [AbilityIds.selfDestruct2ClockwerkGoblins](/stdlib/ref/_wurst/AbilityIds.html#abilityids-selfDestruct2ClockwerkGoblins)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -10392,6 +11841,8 @@ public class AbilityDefinitionSelfDestruct2ClockwerkGoblins extends AbilityDefin
 public class AbilityDefinitionGraveyard extends AbilityDefinition
 ```
 
+'Agyd' / [AbilityIds.createCorpse](/stdlib/ref/_wurst/AbilityIds.html#abilityids-createCorpse)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -10410,6 +11861,8 @@ public class AbilityDefinitionGraveyard extends AbilityDefinition
 public class AbilityDefinitionWarStompcreep extends AbilityDefinition
 ```
 
+'Awrs' / [AbilityIds.warStomp](/stdlib/ref/_wurst/AbilityIds.html#abilityids-warStomp)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -10426,6 +11879,8 @@ public class AbilityDefinitionWarStompcreep extends AbilityDefinition
 public class AbilityDefinitionWarp extends AbilityDefinition
 ```
 
+'Awrp' / [AbilityIds.waygateability](/stdlib/ref/_wurst/AbilityIds.html#abilityids-waygateability)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -10440,10 +11895,13 @@ public class AbilityDefinitionWarp extends AbilityDefinition
 public class AbilityDefinitionVampiricAuracreep extends AbilityDefinition
 ```
 
+'ACvp' / [AbilityIds.vampiricAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-vampiricAura)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setAttackDamageStolen(int level, real value)`
+  Attack Damage Stolen (%) / 'Uav1'
 - `presetAttackDamageStolen(RealLevelClosure lc)`
 
 ### AbilityDefinitionVenomSpearsCreep
@@ -10451,6 +11909,8 @@ public class AbilityDefinitionVampiricAuracreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionVenomSpearsCreep extends AbilityDefinition
 ```
+
+'ACvs' / [AbilityIds.envenomedWeapons](/stdlib/ref/_wurst/AbilityIds.html#abilityids-envenomedWeapons)
 
 **Members:**
 
@@ -10465,12 +11925,15 @@ public class AbilityDefinitionVenomSpearsCreep extends AbilityDefinition
 - `presetDamageperSecond(RealLevelClosure lc)`
 - `setAttackSpeedFactor(int level, real value)`
 - `presetAttackSpeedFactor(RealLevelClosure lc)`
+- `presetStackingType(IntLevelClosure lc)`
 
 ### AbilityDefinitionBurrowDetectionFlyers
 
 ```wurst
 public class AbilityDefinitionBurrowDetectionFlyers extends AbilityDefinition
 ```
+
+'Abdt' / [AbilityIds.burrowDetectionFlyers](/stdlib/ref/_wurst/AbilityIds.html#abilityids-burrowDetectionFlyers)
 
 **Members:**
 
@@ -10483,6 +11946,8 @@ public class AbilityDefinitionBurrowDetectionFlyers extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionBlightDispelSmall extends AbilityDefinition
 ```
+
+'Abds' / [AbilityIds.blightDispelSmall](/stdlib/ref/_wurst/AbilityIds.html#abilityids-blightDispelSmall)
 
 **Members:**
 
@@ -10497,6 +11962,8 @@ public class AbilityDefinitionBlightDispelSmall extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionLiquidFire extends AbilityDefinition
 ```
+
+'Aliq' / [AbilityIds.liquidFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-liquidFire)
 
 **Members:**
 
@@ -10516,6 +11983,8 @@ public class AbilityDefinitionLiquidFire extends AbilityDefinition
 public class AbilityDefinitionDetectGyrocopter extends AbilityDefinition
 ```
 
+'Agyv' / [AbilityIds.trueSight](/stdlib/ref/_wurst/AbilityIds.html#abilityids-trueSight)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -10527,6 +11996,8 @@ public class AbilityDefinitionDetectGyrocopter extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionLightningAttack extends AbilityDefinition
 ```
+
+'Alit' / [AbilityIds.lightningAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-lightningAttack)
 
 **Members:**
 
@@ -10542,6 +12013,8 @@ public class AbilityDefinitionLightningAttack extends AbilityDefinition
 public class AbilityDefinitionBlightDispelLarge extends AbilityDefinition
 ```
 
+'Abdl' / [AbilityIds.blightDispelLarge](/stdlib/ref/_wurst/AbilityIds.html#abilityids-blightDispelLarge)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -10556,6 +12029,8 @@ public class AbilityDefinitionBlightDispelLarge extends AbilityDefinition
 public class AbilityDefinitionChaosCargoLoad extends AbilityDefinition
 ```
 
+'Achl' / [AbilityIds.chaosCargoLoad](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chaosCargoLoad)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -10567,6 +12042,8 @@ public class AbilityDefinitionChaosCargoLoad extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionSunderingBlades extends AbilityDefinition
 ```
+
+'Ahsb' / [AbilityIds.sunderingBlades](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sunderingBlades)
 
 **Members:**
 
@@ -10580,45 +12057,19 @@ public class AbilityDefinitionSunderingBlades extends AbilityDefinition
 - `presetDefenseTypeAffected(ArmorType atype, boolean flag)`
 - `hasStackingType(StackingType stackingType) returns boolean`
 
-### AbilityDefinitionItemChainLightning
-
-```wurst
-public class AbilityDefinitionItemChainLightning extends AbilityDefinition
-```
-
-**Members:**
-
-- `construct(int newAbilityId)`
-- `setDamageperTarget(int level, real value)`
-- `presetDamageperTarget(RealLevelClosure lc)`
-- `setNumberofTargetsHit(int level, int value)`
-- `presetNumberofTargetsHit(IntLevelClosure lc)`
-- `setDamageReductionperTarget(int level, real value)`
-- `presetDamageReductionperTarget(RealLevelClosure lc)`
-
-### AbilityDefinitionSlow1
-
-```wurst
-public class AbilityDefinitionSlow1 extends AbilityDefinition
-```
-
-**Members:**
-
-- `construct(int newAbilityId)`
-- `setAlwaysAutocast(int level, bool value)`
-- `setAttackSpeedFactor(int level, real value)`
-- `setMovementSpeedFactor(int level, real value)`
-
 ### AbilityDefinitionPenguinSqueek
 
 ```wurst
 public class AbilityDefinitionPenguinSqueek extends AbilityDefinition
 ```
 
+'AIpz' / [AbilityIds.penguinSqueek](/stdlib/ref/_wurst/AbilityIds.html#abilityids-penguinSqueek)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setHitPointsGained(int level, int value)`
+- `presetHitPointsGained(IntLevelClosure lc)`
 
 ### AbilityDefinitionPermanentHitPointBonusSmall
 
@@ -10626,10 +12077,13 @@ public class AbilityDefinitionPenguinSqueek extends AbilityDefinition
 public class AbilityDefinitionPermanentHitPointBonusSmall extends AbilityDefinition
 ```
 
+'AIpx' / [AbilityIds.permanentHitPointBonusSmall](/stdlib/ref/_wurst/AbilityIds.html#abilityids-permanentHitPointBonusSmall)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setMaxLifeGained(int level, int value)`
+- `presetMaxLifeGained(IntLevelClosure lc)`
 
 ### AbilityDefinitionFrostArmorCreepAutocast
 
@@ -10637,11 +12091,15 @@ public class AbilityDefinitionPermanentHitPointBonusSmall extends AbilityDefinit
 public class AbilityDefinitionFrostArmorCreepAutocast extends AbilityDefinition
 ```
 
+'ACf2' / [AbilityIds.frostArmorCreepAutocast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-frostArmorCreepAutocast)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setArmorBonus(int level, real value)`
 - `setArmorDuration(int level, real value)`
+- `presetArmorBonus(RealLevelClosure lc)`
+- `presetArmorDuration(RealLevelClosure lc)`
 
 ### AbilityDefinitionFingerOfPain21Button
 
@@ -10649,12 +12107,17 @@ public class AbilityDefinitionFrostArmorCreepAutocast extends AbilityDefinition
 public class AbilityDefinitionFingerOfPain21Button extends AbilityDefinition
 ```
 
+'ACf3' / [AbilityIds.fingerOfPain21Button](/stdlib/ref/_wurst/AbilityIds.html#abilityids-fingerOfPain21Button)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setGraphicDelay(int level, real value)`
 - `setGraphicDuration(int level, real value)`
 - `setDamage(int level, real value)`
+- `presetGraphicDuration(RealLevelClosure lc)`
+- `presetGraphicDelay(RealLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
 
 ### AbilityDefinitionPurgeWandOfNegation
 
@@ -10662,6 +12125,8 @@ public class AbilityDefinitionFingerOfPain21Button extends AbilityDefinition
 public class AbilityDefinitionPurgeWandOfNegation extends AbilityDefinition
 ```
 
+'AIpw' / [AbilityIds.purgeWandOfNegation](/stdlib/ref/_wurst/AbilityIds.html#abilityids-purgeWandOfNegation)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -10671,6 +12136,12 @@ public class AbilityDefinitionPurgeWandOfNegation extends AbilityDefinition
 - `setSummonedUnitDamage(int level, real value)`
 - `setManaLoss(int level, int value)`
 - `setMovementUpdateFrequency(int level, int value)`
+- `presetUnitPauseDuration(RealLevelClosure lc)`
+- `presetMovementUpdateFrequency(IntLevelClosure lc)`
+- `presetHeroPauseDuration(RealLevelClosure lc)`
+- `presetManaLoss(IntLevelClosure lc)`
+- `presetAttackUpdateFrequency(IntLevelClosure lc)`
+- `presetSummonedUnitDamage(RealLevelClosure lc)`
 
 ### AbilityDefinitionPurgeTotemSP
 
@@ -10678,6 +12149,8 @@ public class AbilityDefinitionPurgeWandOfNegation extends AbilityDefinition
 public class AbilityDefinitionPurgeTotemSP extends AbilityDefinition
 ```
 
+'AIps' / [AbilityIds.purgeTotemSP](/stdlib/ref/_wurst/AbilityIds.html#abilityids-purgeTotemSP)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -10687,12 +12160,20 @@ public class AbilityDefinitionPurgeTotemSP extends AbilityDefinition
 - `setSummonedUnitDamage(int level, real value)`
 - `setManaLoss(int level, int value)`
 - `setMovementUpdateFrequency(int level, int value)`
+- `presetUnitPauseDuration(RealLevelClosure lc)`
+- `presetMovementUpdateFrequency(IntLevelClosure lc)`
+- `presetHeroPauseDuration(RealLevelClosure lc)`
+- `presetManaLoss(IntLevelClosure lc)`
+- `presetAttackUpdateFrequency(IntLevelClosure lc)`
+- `presetSummonedUnitDamage(RealLevelClosure lc)`
 
 ### AbilityDefinitionInventory2SlotUnitOrc
 
 ```wurst
 public class AbilityDefinitionInventory2SlotUnitOrc extends AbilityDefinition
 ```
+
+'Aion' / [AbilityIds.inventory2SlotUnitOrc](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inventory2SlotUnitOrc)
 
 **Members:**
 
@@ -10702,6 +12183,11 @@ public class AbilityDefinitionInventory2SlotUnitOrc extends AbilityDefinition
 - `setCanUseItems(int level, bool value)`
 - `setDropItemsOnDeath(int level, bool value)`
 - `setCanDropItems(int level, bool value)`
+- `presetItemCapacity(IntLevelClosure lc)`
+- `presetCanGetItems(BooleanLevelClosure lc)`
+- `presetCanDropItems(BooleanLevelClosure lc)`
+- `presetDropItemsOnDeath(BooleanLevelClosure lc)`
+- `presetCanUseItems(BooleanLevelClosure lc)`
 
 ### AbilityDefinitionChenDrunkenHaze
 
@@ -10709,13 +12195,20 @@ public class AbilityDefinitionInventory2SlotUnitOrc extends AbilityDefinition
 public class AbilityDefinitionChenDrunkenHaze extends AbilityDefinition
 ```
 
+'Acdh' / [AbilityIds.chenDrunkenHaze](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chenDrunkenHaze)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setAttackSpeedModifier(int level, real value)`
 - `setAttacksPrevented(int level, int value)`
 - `setChanceToMiss(int level, real value)`
+  Chance To Miss (%) / 'Nsi2'
 - `setMovementSpeedModifier(int level, real value)`
+- `presetAttacksPrevented(IntLevelClosure lc)`
+- `presetChanceToMiss(RealLevelClosure lc)`
+- `presetAttackSpeedModifier(RealLevelClosure lc)`
+- `presetMovementSpeedModifier(RealLevelClosure lc)`
 
 ### AbilityDefinitionChenDrunkenBrawler
 
@@ -10723,15 +12216,22 @@ public class AbilityDefinitionChenDrunkenHaze extends AbilityDefinition
 public class AbilityDefinitionChenDrunkenBrawler extends AbilityDefinition
 ```
 
+'Acdb' / [AbilityIds.chenDrunkenBrawler](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chenDrunkenBrawler)
+
 **Members:**
 
 - `construct(int newAbilityId)`
+- `setDamageMultiplier(int level, real value)`
 - `setChancetoEvade(int level, real value)`
 - `setChancetoCriticalStrike(int level, real value)`
-- `setDamageMultiplier(int level, real value)`
 - `setNeverMiss(int level, bool value)`
 - `setExcludeItemDamage(int level, bool value)`
 - `setDamageBonus(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetNeverMiss(BooleanLevelClosure lc)`
 
 ### AbilityDefinitionFrostArmorAutocastNaga
 
@@ -10739,11 +12239,15 @@ public class AbilityDefinitionChenDrunkenBrawler extends AbilityDefinition
 public class AbilityDefinitionFrostArmorAutocastNaga extends AbilityDefinition
 ```
 
+'ACfu' / [AbilityIds.frostArmorAutocastNaga](/stdlib/ref/_wurst/AbilityIds.html#abilityids-frostArmorAutocastNaga)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setArmorBonus(int level, real value)`
 - `setArmorDuration(int level, real value)`
+- `presetArmorBonus(RealLevelClosure lc)`
+- `presetArmorDuration(RealLevelClosure lc)`
 
 ### AbilityDefinitionResurrectionItem
 
@@ -10751,17 +12255,23 @@ public class AbilityDefinitionFrostArmorAutocastNaga extends AbilityDefinition
 public class AbilityDefinitionResurrectionItem extends AbilityDefinition
 ```
 
+'AIrx' / [AbilityIds.resurrectionItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-resurrectionItem)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setNumberofCorpsesRaised(int level, int value)`
 - `setRaisedUnitsAreInvulnerable(int level, bool value)`
+- `presetNumberofCorpsesRaised(IntLevelClosure lc)`
+- `presetRaisedUnitsAreInvulnerable(BooleanLevelClosure lc)`
 
 ### AbilityDefinitionForkedLightningCreep
 
 ```wurst
 public class AbilityDefinitionForkedLightningCreep extends AbilityDefinition
 ```
+
+'ACfl' / [AbilityIds.forkedLightningCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-forkedLightningCreep)
 
 **Members:**
 
@@ -10770,6 +12280,10 @@ public class AbilityDefinitionForkedLightningCreep extends AbilityDefinition
 - `setFinalArea(int level, real value)`
 - `setNumberofTargetsHit(int level, int value)`
 - `setDamageperTarget(int level, real value)`
+- `presetNumberofTargetsHit(IntLevelClosure lc)`
+- `presetDistance(RealLevelClosure lc)`
+- `presetFinalArea(RealLevelClosure lc)`
+- `presetDamageperTarget(RealLevelClosure lc)`
 
 ### AbilityDefinitionChenStormEarthAndFire
 
@@ -10777,10 +12291,13 @@ public class AbilityDefinitionForkedLightningCreep extends AbilityDefinition
 public class AbilityDefinitionChenStormEarthAndFire extends AbilityDefinition
 ```
 
+'Acef' / [AbilityIds.chenStormEarthAndFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chenStormEarthAndFire)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setSummonedUnitTypes(int level, string value)`
+- `presetSummonedUnitTypes(StringLevelClosure lc)`
 
 ### AbilityDefinitionFingerOfPain
 
@@ -10788,18 +12305,25 @@ public class AbilityDefinitionChenStormEarthAndFire extends AbilityDefinition
 public class AbilityDefinitionFingerOfPain extends AbilityDefinition
 ```
 
+'ACfd' / [AbilityIds.fingerOfPain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-fingerOfPain)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setGraphicDelay(int level, real value)`
 - `setGraphicDuration(int level, real value)`
 - `setDamage(int level, real value)`
+- `presetGraphicDuration(RealLevelClosure lc)`
+- `presetGraphicDelay(RealLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
 
 ### AbilityDefinitionSlowPoisonItem
 
 ```wurst
 public class AbilityDefinitionSlowPoisonItem extends AbilityDefinition
 ```
+
+'AIsz' / [AbilityIds.slowPoisonItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-slowPoisonItem)
 
 **Members:**
 
@@ -10808,6 +12332,10 @@ public class AbilityDefinitionSlowPoisonItem extends AbilityDefinition
 - `setMovementSpeedFactor(int level, real value)`
 - `setStackingType(int level, int value)`
 - `setAttackSpeedFactor(int level, real value)`
+- `presetMovementSpeedFactor(RealLevelClosure lc)`
+- `presetAttackSpeedFactor(RealLevelClosure lc)`
+- `presetStackingType(IntLevelClosure lc)`
+- `presetDamagePerSecond(RealLevelClosure lc)`
 
 ### AbilityDefinitionUnholyFrenzyItem
 
@@ -10815,11 +12343,16 @@ public class AbilityDefinitionSlowPoisonItem extends AbilityDefinition
 public class AbilityDefinitionUnholyFrenzyItem extends AbilityDefinition
 ```
 
+'AIuf' / [AbilityIds.unholyFrenzyItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-unholyFrenzyItem)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setAttackSpeedBonus(int level, real value)`
+  Attack Speed Bonus (%) / 'Uhf1'
 - `setDamageperSecond(int level, real value)`
+- `presetAttackSpeedBonus(RealLevelClosure lc)`
+- `presetDamageperSecond(RealLevelClosure lc)`
 
 ### AbilityDefinitionAttackBonusPlus20
 
@@ -10827,16 +12360,21 @@ public class AbilityDefinitionUnholyFrenzyItem extends AbilityDefinition
 public class AbilityDefinitionAttackBonusPlus20 extends AbilityDefinition
 ```
 
+'AItx' / [AbilityIds.attackBonusPlus20](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonusPlus20)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setAttackBonus(int level, int value)`
+- `presetAttackBonus(IntLevelClosure lc)`
 
 ### AbilityDefinitionItemTransmute
 
 ```wurst
 public class AbilityDefinitionItemTransmute extends AbilityDefinition
 ```
+
+'AIts' / [AbilityIds.itemTransmute](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemTransmute)
 
 **Members:**
 
@@ -10845,6 +12383,10 @@ public class AbilityDefinitionItemTransmute extends AbilityDefinition
 - `setAllowBounty(int level, bool value)`
 - `setLumberCostFactor(int level, real value)`
 - `setMaxCreepLevel(int level, int value)`
+- `presetGoldCostFactor(RealLevelClosure lc)`
+- `presetAllowBounty(BooleanLevelClosure lc)`
+- `presetMaxCreepLevel(IntLevelClosure lc)`
+- `presetLumberCostFactor(RealLevelClosure lc)`
 
 ### AbilityDefinitionManaBonus200
 
@@ -10852,10 +12394,13 @@ public class AbilityDefinitionItemTransmute extends AbilityDefinition
 public class AbilityDefinitionManaBonus200 extends AbilityDefinition
 ```
 
+'AI2m' / [AbilityIds.manaBonus200](/stdlib/ref/_wurst/AbilityIds.html#abilityids-manaBonus200)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setMaxManaGained(int level, int value)`
+- `presetMaxManaGained(IntLevelClosure lc)`
 
 ### AbilityDefinitionItemInvulLesser
 
@@ -10863,10 +12408,14 @@ public class AbilityDefinitionManaBonus200 extends AbilityDefinition
 public class AbilityDefinitionItemInvulLesser extends AbilityDefinition
 ```
 
+'AIvl' / [AbilityIds.itemInvulLesser](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemInvulLesser)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setData(int level, bool value)`
+- `presetIsMagicImmune(BooleanLevelClosure lc)`
+- `setIsMagicImmune(int level, bool value)`
 
 ### AbilityDefinitionFingerOfDeath1
 
@@ -10874,12 +12423,17 @@ public class AbilityDefinitionItemInvulLesser extends AbilityDefinition
 public class AbilityDefinitionFingerOfDeath1 extends AbilityDefinition
 ```
 
+'Afod' / [AbilityIds.fingerOfDeath1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-fingerOfDeath1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setGraphicDelay(int level, real value)`
 - `setGraphicDuration(int level, real value)`
 - `setDamage(int level, real value)`
+- `presetGraphicDuration(RealLevelClosure lc)`
+- `presetGraphicDelay(RealLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
 
 ### AbilityDefinitionItemInvulDivinity
 
@@ -10887,10 +12441,14 @@ public class AbilityDefinitionFingerOfDeath1 extends AbilityDefinition
 public class AbilityDefinitionItemInvulDivinity extends AbilityDefinition
 ```
 
+'AIvg' / [AbilityIds.itemInvulDivinity](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemInvulDivinity)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setData(int level, bool value)`
+- `presetIsMagicImmune(BooleanLevelClosure lc)`
+- `setIsMagicImmune(int level, bool value)`
 
 ### AbilityDefinitionRevealArcaneTower
 
@@ -10898,16 +12456,21 @@ public class AbilityDefinitionItemInvulDivinity extends AbilityDefinition
 public class AbilityDefinitionRevealArcaneTower extends AbilityDefinition
 ```
 
+'AHta' / [AbilityIds.revealArcaneTower](/stdlib/ref/_wurst/AbilityIds.html#abilityids-revealArcaneTower)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setDetectionRadius(int level, string value)`
+- `presetDetectionRadius(StringLevelClosure lc)`
 
 ### AbilityDefinitionHowlOfTerror
 
 ```wurst
 public class AbilityDefinitionHowlOfTerror extends AbilityDefinition
 ```
+
+'Acht' / [AbilityIds.howlOfTerror](/stdlib/ref/_wurst/AbilityIds.html#abilityids-howlOfTerror)
 
 **Members:**
 
@@ -10916,9 +12479,17 @@ public class AbilityDefinitionHowlOfTerror extends AbilityDefinition
 - `setPreferHostiles(int level, bool value)`
 - `setMaxUnits(int level, int value)`
 - `setDamageIncrease(int level, real value)`
+  Damage Increase (%) / 'Roa1'
 - `setManaRegen(int level, real value)`
 - `setLifeRegenerationRate(int level, real value)`
 - `setDefenseIncrease(int level, int value)`
+- `presetLifeRegenerationRate(RealLevelClosure lc)`
+- `presetDamageIncrease(RealLevelClosure lc)`
+- `presetManaRegen(RealLevelClosure lc)`
+- `presetDefenseIncrease(IntLevelClosure lc)`
+- `presetPreferHostiles(BooleanLevelClosure lc)`
+- `presetPreferFriendlies(BooleanLevelClosure lc)`
+- `presetMaxUnits(IntLevelClosure lc)`
 
 ### AbilityDefinitionFigurineFurbolgTracker
 
@@ -10926,13 +12497,23 @@ public class AbilityDefinitionHowlOfTerror extends AbilityDefinition
 public class AbilityDefinitionFigurineFurbolgTracker extends AbilityDefinition
 ```
 
+'AIut' / [AbilityIds.figurineFurbolgTracker](/stdlib/ref/_wurst/AbilityIds.html#abilityids-figurineFurbolgTracker)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setSummonAmount(int level, int value)`
+  Summon 2 - Amount / 'Isn2'
 - `setSummonUnitType(int level, string value)`
+  Summon 2 - Unit Type / 'Ist2'
 - `setSummonUnitType1(int level, string value)`
+  Summon 1 - Unit Type / 'Ist1'
 - `setSummonAmount1(int level, int value)`
+  Summon 1 - Amount / 'Isn1'
+- `presetSummonAmount(IntLevelClosure lc)`
+- `presetSummonUnitType(StringLevelClosure lc)`
+- `presetSummonUnitType1(StringLevelClosure lc)`
+- `presetSummonAmount1(IntLevelClosure lc)`
 
 ### AbilityDefinitionWateryMinionItem
 
@@ -10940,11 +12521,15 @@ public class AbilityDefinitionFigurineFurbolgTracker extends AbilityDefinition
 public class AbilityDefinitionWateryMinionItem extends AbilityDefinition
 ```
 
+'AIwm' / [AbilityIds.wateryMinionItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-wateryMinionItem)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setSummonedUnitType(int level, string value)`
 - `setSummonedUnitCount(int level, int value)`
+- `presetSummonedUnitCount(IntLevelClosure lc)`
+- `presetSummonedUnitType(StringLevelClosure lc)`
 
 ### AbilityDefinitionPowerupDispelAoe
 
@@ -10952,17 +12537,23 @@ public class AbilityDefinitionWateryMinionItem extends AbilityDefinition
 public class AbilityDefinitionPowerupDispelAoe extends AbilityDefinition
 ```
 
+'APdi' / [AbilityIds.powerupDispelAoe](/stdlib/ref/_wurst/AbilityIds.html#abilityids-powerupDispelAoe)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setManaLossPerUnit(int level, int value)`
 - `setDamageToSummonedUnits(int level, int value)`
+- `presetManaLossPerUnit(IntLevelClosure lc)`
+- `presetDamageToSummonedUnits(IntLevelClosure lc)`
 
 ### AbilityDefinitionItemAuraWarDrums
 
 ```wurst
 public class AbilityDefinitionItemAuraWarDrums extends AbilityDefinition
 ```
+
+'AIwd' / [AbilityIds.itemAuraWarDrums](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAuraWarDrums)
 
 **Members:**
 
@@ -10972,6 +12563,11 @@ public class AbilityDefinitionItemAuraWarDrums extends AbilityDefinition
 - `setPlayChannelAnimation(int level, bool value)`
 - `setRangedBonus(int level, bool value)`
 - `setMeleeBonus(int level, bool value)`
+- `presetPlayChannelAnimation(BooleanLevelClosure lc)`
+- `presetAttackDamageIncrease(RealLevelClosure lc)`
+- `presetRangedBonus(BooleanLevelClosure lc)`
+- `presetMeleeBonus(BooleanLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
 
 ### AbilityDefinitionAllPlus4
 
@@ -10979,6 +12575,8 @@ public class AbilityDefinitionItemAuraWarDrums extends AbilityDefinition
 public class AbilityDefinitionAllPlus4 extends AbilityDefinition
 ```
 
+'AIx4' / [AbilityIds.allPlus4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-allPlus4)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -10986,6 +12584,10 @@ public class AbilityDefinitionAllPlus4 extends AbilityDefinition
 - `setStrengthBonus(int level, int value)`
 - `setAgilityBonus(int level, int value)`
 - `setIntelligenceBonus(int level, int value)`
+- `presetAgilityBonus(IntLevelClosure lc)`
+- `presetStrengthBonus(IntLevelClosure lc)`
+- `presetHideButton(BooleanLevelClosure lc)`
+- `presetIntelligenceBonus(IntLevelClosure lc)`
 
 ### AbilityDefinitionAllPlus3
 
@@ -10993,6 +12595,8 @@ public class AbilityDefinitionAllPlus4 extends AbilityDefinition
 public class AbilityDefinitionAllPlus3 extends AbilityDefinition
 ```
 
+'AIx3' / [AbilityIds.allPlus3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-allPlus3)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -11000,6 +12604,10 @@ public class AbilityDefinitionAllPlus3 extends AbilityDefinition
 - `setStrengthBonus(int level, int value)`
 - `setAgilityBonus(int level, int value)`
 - `setIntelligenceBonus(int level, int value)`
+- `presetAgilityBonus(IntLevelClosure lc)`
+- `presetStrengthBonus(IntLevelClosure lc)`
+- `presetHideButton(BooleanLevelClosure lc)`
+- `presetIntelligenceBonus(IntLevelClosure lc)`
 
 ### AbilityDefinitionBeserkItem
 
@@ -11007,12 +12615,17 @@ public class AbilityDefinitionAllPlus3 extends AbilityDefinition
 public class AbilityDefinitionBeserkItem extends AbilityDefinition
 ```
 
+'AIxk' / [AbilityIds.beserkItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-beserkItem)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setDamageTakenIncrease(int level, real value)`
 - `setAttackSpeedIncrease(int level, real value)`
 - `setMovementSpeedIncrease(int level, real value)`
+- `presetMovementSpeedIncrease(RealLevelClosure lc)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+- `presetDamageTakenIncrease(RealLevelClosure lc)`
 
 ### AbilityDefinitionPowerupHealAoeGreater
 
@@ -11020,10 +12633,13 @@ public class AbilityDefinitionBeserkItem extends AbilityDefinition
 public class AbilityDefinitionPowerupHealAoeGreater extends AbilityDefinition
 ```
 
+'APh3' / [AbilityIds.powerupHealAoeGreater](/stdlib/ref/_wurst/AbilityIds.html#abilityids-powerupHealAoeGreater)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setHitPointsGained(int level, int value)`
+- `presetHitPointsGained(IntLevelClosure lc)`
 
 ### AbilityDefinitionPowerupHealAoeLesser
 
@@ -11031,10 +12647,13 @@ public class AbilityDefinitionPowerupHealAoeGreater extends AbilityDefinition
 public class AbilityDefinitionPowerupHealAoeLesser extends AbilityDefinition
 ```
 
+'APh1' / [AbilityIds.powerupHealAoeLesser](/stdlib/ref/_wurst/AbilityIds.html#abilityids-powerupHealAoeLesser)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setHitPointsGained(int level, int value)`
+- `presetHitPointsGained(IntLevelClosure lc)`
 
 ### AbilityDefinitionPowerupHealAoe
 
@@ -11042,10 +12661,13 @@ public class AbilityDefinitionPowerupHealAoeLesser extends AbilityDefinition
 public class AbilityDefinitionPowerupHealAoe extends AbilityDefinition
 ```
 
+'APh2' / [AbilityIds.powerupHealAoe](/stdlib/ref/_wurst/AbilityIds.html#abilityids-powerupHealAoe)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setHitPointsGained(int level, int value)`
+- `presetHitPointsGained(IntLevelClosure lc)`
 
 ### AbilityDefinitionBlinkBeastmasterBear
 
@@ -11053,17 +12675,23 @@ public class AbilityDefinitionPowerupHealAoe extends AbilityDefinition
 public class AbilityDefinitionBlinkBeastmasterBear extends AbilityDefinition
 ```
 
+'ANbl' / [AbilityIds.blinkBeastmasterBear](/stdlib/ref/_wurst/AbilityIds.html#abilityids-blinkBeastmasterBear)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setMaximumRange(int level, real value)`
 - `setMinimumRange(int level, real value)`
+- `presetMinimumRange(RealLevelClosure lc)`
+- `presetMaximumRange(RealLevelClosure lc)`
 
 ### AbilityDefinitionAvatarGarithos
 
 ```wurst
 public class AbilityDefinitionAvatarGarithos extends AbilityDefinition
 ```
+
+'ANav' / [AbilityIds.avatarGarithos](/stdlib/ref/_wurst/AbilityIds.html#abilityids-avatarGarithos)
 
 **Members:**
 
@@ -11072,6 +12700,10 @@ public class AbilityDefinitionAvatarGarithos extends AbilityDefinition
 - `setMagicDamageReduction(int level, real value)`
 - `setDamageBonus(int level, real value)`
 - `setDefenseBonus(int level, real value)`
+- `presetMagicDamageReduction(RealLevelClosure lc)`
+- `presetDefenseBonus(RealLevelClosure lc)`
+- `presetHitPointBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
 
 ### AbilityDefinitionSummonLobstrokPrawns
 
@@ -11079,17 +12711,23 @@ public class AbilityDefinitionAvatarGarithos extends AbilityDefinition
 public class AbilityDefinitionSummonLobstrokPrawns extends AbilityDefinition
 ```
 
+'Aslp' / [AbilityIds.summonLobstrokPrawns](/stdlib/ref/_wurst/AbilityIds.html#abilityids-summonLobstrokPrawns)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setSummonedUnitType(int level, string value)`
 - `setSummonedUnitCount(int level, int value)`
+- `presetSummonedUnitCount(IntLevelClosure lc)`
+- `presetSummonedUnitType(StringLevelClosure lc)`
 
 ### AbilityDefinitionChenBreathOfFire
 
 ```wurst
 public class AbilityDefinitionChenBreathOfFire extends AbilityDefinition
 ```
+
+'ANcf' / [AbilityIds.chenBreathOfFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chenBreathOfFire)
 
 **Members:**
 
@@ -11099,6 +12737,11 @@ public class AbilityDefinitionChenBreathOfFire extends AbilityDefinition
 - `setMaxDamage(int level, real value)`
 - `setFinalArea(int level, real value)`
 - `setDamagePerSecond(int level, real value)`
+- `presetDistance(RealLevelClosure lc)`
+- `presetDamagePerSecond(RealLevelClosure lc)`
+- `presetFinalArea(RealLevelClosure lc)`
+- `presetMaxDamage(RealLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
 
 ### AbilityDefinitionCannibalizeAbomination
 
@@ -11106,11 +12749,15 @@ public class AbilityDefinitionChenBreathOfFire extends AbilityDefinition
 public class AbilityDefinitionCannibalizeAbomination extends AbilityDefinition
 ```
 
+'Acn2' / [AbilityIds.cannibalizeAbomination](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cannibalizeAbomination)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setHitPointsperSecond(int level, real value)`
 - `setMaxHitPoints(int level, real value)`
+- `presetHitPointsperSecond(RealLevelClosure lc)`
+- `presetMaxHitPoints(RealLevelClosure lc)`
 
 ### AbilityDefinitionEnsnareNaga
 
@@ -11118,12 +12765,25 @@ public class AbilityDefinitionCannibalizeAbomination extends AbilityDefinition
 public class AbilityDefinitionEnsnareNaga extends AbilityDefinition
 ```
 
+'ANen' / [AbilityIds.ensnareNaga](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ensnareNaga)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setMeleeAttackRange(int level, real value)`
 - `setAirUnitHeight(int level, real value)`
 - `setAirUnitLowerDuration(int level, real value)`
+- `setStunDuration(int level, real value)`
+- `setBonusDamageTakenPercent(int level, real value)`
+- `setAttackSpeedReductionPercent(int level, real value)`
+- `setSilencesWhenEnsnared(int level, bool value)`
+- `presetStunDuration(RealLevelClosure lc)`
+- `presetAirUnitHeight(RealLevelClosure lc)`
+- `presetBonusDamageTakenPercent(RealLevelClosure lc)`
+- `presetAttackSpeedReductionPercent(RealLevelClosure lc)`
+- `presetAirUnitLowerDuration(RealLevelClosure lc)`
+- `presetSilencesWhenEnsnared(BooleanLevelClosure lc)`
+- `presetMeleeAttackRange(RealLevelClosure lc)`
 
 ### AbilityDefinitionAbolishMagicNaga
 
@@ -11131,17 +12791,23 @@ public class AbilityDefinitionEnsnareNaga extends AbilityDefinition
 public class AbilityDefinitionAbolishMagicNaga extends AbilityDefinition
 ```
 
+'Andm' / [AbilityIds.abolishMagicNaga](/stdlib/ref/_wurst/AbilityIds.html#abilityids-abolishMagicNaga)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setManaLoss(int level, real value)`
 - `setSummonedUnitDamage(int level, real value)`
+- `presetSummonedUnitDamage(RealLevelClosure lc)`
+- `presetManaLoss(RealLevelClosure lc)`
 
 ### AbilityDefinitionParasiteEredar
 
 ```wurst
 public class AbilityDefinitionParasiteEredar extends AbilityDefinition
 ```
+
+'ACpa' / [AbilityIds.parasiteEredar](/stdlib/ref/_wurst/AbilityIds.html#abilityids-parasiteEredar)
 
 **Members:**
 
@@ -11153,6 +12819,13 @@ public class AbilityDefinitionParasiteEredar extends AbilityDefinition
 - `setStackingType(int level, int value)`
 - `setSummonedUnitCount(int level, int value)`
 - `setSummonedUnitDuration(int level, real value)`
+- `presetDamageperSecond(RealLevelClosure lc)`
+- `presetSummonedUnitDuration(RealLevelClosure lc)`
+- `presetStackingType(IntLevelClosure lc)`
+- `presetMovementSpeedFactor(RealLevelClosure lc)`
+- `presetSummonedUnitCount(IntLevelClosure lc)`
+- `presetUnitType(StringLevelClosure lc)`
+- `presetAttackSpeedFactor(RealLevelClosure lc)`
 
 ### AbilityDefinitionCycloneNaga
 
@@ -11160,10 +12833,13 @@ public class AbilityDefinitionParasiteEredar extends AbilityDefinition
 public class AbilityDefinitionCycloneNaga extends AbilityDefinition
 ```
 
+'Acny' / [AbilityIds.cycloneNaga](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cycloneNaga)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setCanBeDispelled(int level, bool value)`
+- `presetCanBeDispelled(BooleanLevelClosure lc)`
 
 ### AbilityDefinitionManaBurnHotkeyB
 
@@ -11171,18 +12847,25 @@ public class AbilityDefinitionCycloneNaga extends AbilityDefinition
 public class AbilityDefinitionManaBurnHotkeyB extends AbilityDefinition
 ```
 
+'Ambb' / [AbilityIds.manaBurnHotkeyB](/stdlib/ref/_wurst/AbilityIds.html#abilityids-manaBurnHotkeyB)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setBoltDelay(int level, real value)`
 - `setBoltLifetime(int level, real value)`
 - `setMaxManaDrained(int level, real value)`
+- `presetBoltDelay(RealLevelClosure lc)`
+- `presetMaxManaDrained(RealLevelClosure lc)`
+- `presetBoltLifetime(RealLevelClosure lc)`
 
 ### AbilityDefinitionFlameStrikeImprovedCreep
 
 ```wurst
 public class AbilityDefinitionFlameStrikeImprovedCreep extends AbilityDefinition
 ```
+
+'ANfs' / [AbilityIds.flameStrikeImprovedCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-flameStrikeImprovedCreep)
 
 **Members:**
 
@@ -11193,12 +12876,20 @@ public class AbilityDefinitionFlameStrikeImprovedCreep extends AbilityDefinition
 - `setBuildingReduction(int level, real value)`
 - `setHalfDamageInterval(int level, real value)`
 - `setMaximumDamage(int level, real value)`
+- `presetFullDamageInterval(RealLevelClosure lc)`
+- `presetFullDamageDealt(RealLevelClosure lc)`
+- `presetHalfDamageDealt(RealLevelClosure lc)`
+- `presetBuildingReduction(RealLevelClosure lc)`
+- `presetMaximumDamage(RealLevelClosure lc)`
+- `presetHalfDamageInterval(RealLevelClosure lc)`
 
 ### AbilityDefinitionSentinelNoResearch
 
 ```wurst
 public class AbilityDefinitionSentinelNoResearch extends AbilityDefinition
 ```
+
+'Aesr' / [AbilityIds.sentinelNoResearch](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sentinelNoResearch)
 
 **Members:**
 
@@ -11208,12 +12899,20 @@ public class AbilityDefinitionSentinelNoResearch extends AbilityDefinition
 - `setHoveringHeight(int level, real value)`
 - `setHoveringSightRadius(int level, real value)`
 - `setDurationOfOwls(int level, real value)`
+- `presetInFlightSightRadius(RealLevelClosure lc)`
+- `presetHoveringSightRadius(RealLevelClosure lc)`
+- `presetHoveringHeight(RealLevelClosure lc)`
+- `presetNumberofOwls(IntLevelClosure lc)`
+- `presetDurationofOwls(RealLevelClosure lc)`
+- `setDurationofOwls(int level, real value)`
 
 ### AbilityDefinitionRainOfFireCreepGreater
 
 ```wurst
 public class AbilityDefinitionRainOfFireCreepGreater extends AbilityDefinition
 ```
+
+'ACrg' / [AbilityIds.rainOfFireCreepGreater](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rainOfFireCreepGreater)
 
 **Members:**
 
@@ -11224,6 +12923,12 @@ public class AbilityDefinitionRainOfFireCreepGreater extends AbilityDefinition
 - `setMaximumDamageperWave(int level, real value)`
 - `setDamage(int level, real value)`
 - `setBuildingReduction(int level, real value)`
+- `presetMaximumDamageperWave(RealLevelClosure lc)`
+- `presetDamagePerSecond(RealLevelClosure lc)`
+- `presetNumberofWaves(IntLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+- `presetNumberofShards(IntLevelClosure lc)`
+- `presetBuildingReduction(RealLevelClosure lc)`
 
 ### AbilityDefinitionFeralSpiritAkama
 
@@ -11231,11 +12936,15 @@ public class AbilityDefinitionRainOfFireCreepGreater extends AbilityDefinition
 public class AbilityDefinitionFeralSpiritAkama extends AbilityDefinition
 ```
 
+'ACs7' / [AbilityIds.feralSpiritAkama](/stdlib/ref/_wurst/AbilityIds.html#abilityids-feralSpiritAkama)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setNumberofSummonedUnits(int level, int value)`
 - `setSummonedUnit(int level, string value)`
+- `presetSummonedUnit(StringLevelClosure lc)`
+- `presetNumberofSummonedUnits(IntLevelClosure lc)`
 
 ### AbilityDefinitionFeralSpiritSpiritBeast
 
@@ -11243,11 +12952,15 @@ public class AbilityDefinitionFeralSpiritAkama extends AbilityDefinition
 public class AbilityDefinitionFeralSpiritSpiritBeast extends AbilityDefinition
 ```
 
+'ACs8' / [AbilityIds.feralSpiritSpiritBeast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-feralSpiritSpiritBeast)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setNumberofSummonedUnits(int level, int value)`
 - `setSummonedUnit(int level, string value)`
+- `presetSummonedUnit(StringLevelClosure lc)`
+- `presetNumberofSummonedUnits(IntLevelClosure lc)`
 
 ### AbilityDefinitionRokhanHealingWave
 
@@ -11255,18 +12968,25 @@ public class AbilityDefinitionFeralSpiritSpiritBeast extends AbilityDefinition
 public class AbilityDefinitionRokhanHealingWave extends AbilityDefinition
 ```
 
+'ANhw' / [AbilityIds.rokhanHealingWave](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rokhanHealingWave)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setNumberofTargetsHit(int level, int value)`
 - `setDamageperTarget(int level, real value)`
 - `setDamageReductionperTarget(int level, real value)`
+- `presetNumberofTargetsHit(IntLevelClosure lc)`
+- `presetDamageperTarget(RealLevelClosure lc)`
+- `presetDamageReductionperTarget(RealLevelClosure lc)`
 
 ### AbilityDefinitionRokhanHex
 
 ```wurst
 public class AbilityDefinitionRokhanHex extends AbilityDefinition
 ```
+
+'ANhx' / [AbilityIds.rokhanHex](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rokhanHex)
 
 **Members:**
 
@@ -11276,6 +12996,11 @@ public class AbilityDefinitionRokhanHex extends AbilityDefinition
 - `setMaximumCreepLevel(int level, int value)`
 - `setMorphUnitsGround(int level, string value)`
 - `setMorphUnitsAmphibious(int level, string value)`
+- `presetMaximumCreepLevel(IntLevelClosure lc)`
+- `presetMorphUnitsAir(StringLevelClosure lc)`
+- `presetMorphUnitsGround(StringLevelClosure lc)`
+- `presetMorphUnitsWater(StringLevelClosure lc)`
+- `presetMorphUnitsAmphibious(StringLevelClosure lc)`
 
 ### AbilityDefinitionHarvestNaga
 
@@ -11283,12 +13008,17 @@ public class AbilityDefinitionRokhanHex extends AbilityDefinition
 public class AbilityDefinitionHarvestNaga extends AbilityDefinition
 ```
 
+'ANha' / [AbilityIds.harvestNaga](/stdlib/ref/_wurst/AbilityIds.html#abilityids-harvestNaga)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setLumberCapacity(int level, int value)`
 - `setDamagetoTree(int level, int value)`
 - `setGoldCapacity(int level, int value)`
+- `presetLumberCapacity(IntLevelClosure lc)`
+- `presetGoldCapacity(IntLevelClosure lc)`
+- `presetDamagetoTree(IntLevelClosure lc)`
 
 ### AbilityDefinitionInciteUnholyFrenzy
 
@@ -11296,12 +13026,19 @@ public class AbilityDefinitionHarvestNaga extends AbilityDefinition
 public class AbilityDefinitionInciteUnholyFrenzy extends AbilityDefinition
 ```
 
+'Auuf' / [AbilityIds.inciteUnholyFrenzy](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inciteUnholyFrenzy)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setData(int level, bool value)`
 - `setLeaveTargetAlive(int level, bool value)`
 - `setData1(int level, string value)`
+- `presetLeaveTargetAlive(BooleanLevelClosure lc)`
+- `presetRequiresUndeadTarget(BooleanLevelClosure lc)`
+- `presetTargetsAllowedforBuff(StringLevelClosure lc)`
+- `setRequiresUndeadTarget(int level, bool value)`
+- `setTargetsAllowedforBuff(int level, string value)`
 
 ### AbilityDefinitionRuneManaRestoreAoe
 
@@ -11309,10 +13046,13 @@ public class AbilityDefinitionInciteUnholyFrenzy extends AbilityDefinition
 public class AbilityDefinitionRuneManaRestoreAoe extends AbilityDefinition
 ```
 
+'APmr' / [AbilityIds.runeManaRestoreAoe](/stdlib/ref/_wurst/AbilityIds.html#abilityids-runeManaRestoreAoe)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setManaPointsGained(int level, int value)`
+- `presetManaPointsGained(IntLevelClosure lc)`
 
 ### AbilityDefinitionRuneManaRestoreGreaterAoe
 
@@ -11320,16 +13060,21 @@ public class AbilityDefinitionRuneManaRestoreAoe extends AbilityDefinition
 public class AbilityDefinitionRuneManaRestoreGreaterAoe extends AbilityDefinition
 ```
 
+'APmg' / [AbilityIds.runeManaRestoreGreaterAoe](/stdlib/ref/_wurst/AbilityIds.html#abilityids-runeManaRestoreGreaterAoe)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setManaPointsGained(int level, int value)`
+- `presetManaPointsGained(IntLevelClosure lc)`
 
 ### AbilityDefinitionAuraPlagueAnimatedDead
 
 ```wurst
 public class AbilityDefinitionAuraPlagueAnimatedDead extends AbilityDefinition
 ```
+
+'Aap5' / [AbilityIds.auraPlagueAnimatedDead](/stdlib/ref/_wurst/AbilityIds.html#abilityids-auraPlagueAnimatedDead)
 
 **Members:**
 
@@ -11338,12 +13083,18 @@ public class AbilityDefinitionAuraPlagueAnimatedDead extends AbilityDefinition
 - `setDurationofPlagueWard(int level, real value)`
 - `setDamageperSecond(int level, real value)`
 - `setPlagueWardUnitType(int level, string value)`
+- `presetPlagueWardUnitType(StringLevelClosure lc)`
+- `presetDurationofPlagueWard(RealLevelClosure lc)`
+- `presetAuraDuration(RealLevelClosure lc)`
+- `presetDamageperSecond(RealLevelClosure lc)`
 
 ### AbilityDefinitionRokhanVoodooSpirits
 
 ```wurst
 public class AbilityDefinitionRokhanVoodooSpirits extends AbilityDefinition
 ```
+
+'AOls' / [AbilityIds.rokhanVoodooSpirits](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rokhanVoodooSpirits)
 
 **Members:**
 
@@ -11354,6 +13105,12 @@ public class AbilityDefinitionRokhanVoodooSpirits extends AbilityDefinition
 - `setSwarmUnitType(int level, string value)`
 - `setDamageReturnFactor(int level, real value)`
 - `setDamageReturnThreshold(int level, real value)`
+- `presetNumberofSwarmUnits(IntLevelClosure lc)`
+- `presetDamageReturnFactor(RealLevelClosure lc)`
+- `presetSwarmUnitType(StringLevelClosure lc)`
+- `presetUnitReleaseIntervalseconds(RealLevelClosure lc)`
+- `presetMaxSwarmUnitsPerTarget(IntLevelClosure lc)`
+- `presetDamageReturnThreshold(RealLevelClosure lc)`
 
 ### AbilityDefinitionBuildTinyLumberMill
 
@@ -11361,10 +13118,13 @@ public class AbilityDefinitionRokhanVoodooSpirits extends AbilityDefinition
 public class AbilityDefinitionBuildTinyLumberMill extends AbilityDefinition
 ```
 
+'AIbr' / [AbilityIds.buildTinyLumberMill](/stdlib/ref/_wurst/AbilityIds.html#abilityids-buildTinyLumberMill)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setUnitCreatedperplayerrace(int level, string value)`
+- `presetUnitCreatedperplayerrace(StringLevelClosure lc)`
 
 ### AbilityDefinitionBuildTinyBarracks
 
@@ -11372,10 +13132,13 @@ public class AbilityDefinitionBuildTinyLumberMill extends AbilityDefinition
 public class AbilityDefinitionBuildTinyBarracks extends AbilityDefinition
 ```
 
+'AIbs' / [AbilityIds.buildTinyBarracks](/stdlib/ref/_wurst/AbilityIds.html#abilityids-buildTinyBarracks)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setUnitCreatedperplayerrace(int level, string value)`
+- `presetUnitCreatedperplayerrace(StringLevelClosure lc)`
 
 ### AbilityDefinitionRokhanSerpentWard
 
@@ -11383,11 +13146,15 @@ public class AbilityDefinitionBuildTinyBarracks extends AbilityDefinition
 public class AbilityDefinitionRokhanSerpentWard extends AbilityDefinition
 ```
 
+'Arsw' / [AbilityIds.rokhanSerpentWard](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rokhanSerpentWard)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setSummonedUnitType(int level, string value)`
 - `setSummonedUnitCount(int level, int value)`
+- `presetSummonedUnitCount(IntLevelClosure lc)`
+- `presetSummonedUnitType(StringLevelClosure lc)`
 
 ### AbilityDefinitionBlinkItem
 
@@ -11395,11 +13162,15 @@ public class AbilityDefinitionRokhanSerpentWard extends AbilityDefinition
 public class AbilityDefinitionBlinkItem extends AbilityDefinition
 ```
 
+'AIbk' / [AbilityIds.blinkItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-blinkItem)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setMaximumRange(int level, real value)`
 - `setMinimumRange(int level, real value)`
+- `presetMinimumRange(RealLevelClosure lc)`
+- `presetMaximumRange(RealLevelClosure lc)`
 
 ### AbilityDefinitionBuildTinyAltar
 
@@ -11407,10 +13178,13 @@ public class AbilityDefinitionBlinkItem extends AbilityDefinition
 public class AbilityDefinitionBuildTinyAltar extends AbilityDefinition
 ```
 
+'AIbh' / [AbilityIds.buildTinyAltar](/stdlib/ref/_wurst/AbilityIds.html#abilityids-buildTinyAltar)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setUnitCreatedperplayerrace(int level, string value)`
+- `presetUnitCreatedperplayerrace(StringLevelClosure lc)`
 
 ### AbilityDefinitionRexxarSummonQuilbeast
 
@@ -11418,17 +13192,23 @@ public class AbilityDefinitionBuildTinyAltar extends AbilityDefinition
 public class AbilityDefinitionRexxarSummonQuilbeast extends AbilityDefinition
 ```
 
+'Arsq' / [AbilityIds.rexxarSummonQuilbeast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rexxarSummonQuilbeast)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setSummonedUnitType(int level, string value)`
 - `setSummonedUnitCount(int level, int value)`
+- `presetSummonedUnitCount(IntLevelClosure lc)`
+- `presetSummonedUnitType(StringLevelClosure lc)`
 
 ### AbilityDefinitionRexxarStampede
 
 ```wurst
 public class AbilityDefinitionRexxarStampede extends AbilityDefinition
 ```
+
+'Arsp' / [AbilityIds.rexxarStampede](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rexxarStampede)
 
 **Members:**
 
@@ -11438,6 +13218,11 @@ public class AbilityDefinitionRexxarStampede extends AbilityDefinition
 - `setDamageRadius(int level, real value)`
 - `setBeastCollisionRadius(int level, real value)`
 - `setDamageAmount(int level, real value)`
+- `presetBeastsPerSecond(IntLevelClosure lc)`
+- `presetBeastCollisionRadius(RealLevelClosure lc)`
+- `presetDamageDelay(RealLevelClosure lc)`
+- `presetDamageAmount(RealLevelClosure lc)`
+- `presetDamageRadius(RealLevelClosure lc)`
 
 ### AbilityDefinitionBuildTinyFarm
 
@@ -11445,10 +13230,13 @@ public class AbilityDefinitionRexxarStampede extends AbilityDefinition
 public class AbilityDefinitionBuildTinyFarm extends AbilityDefinition
 ```
 
+'AIbf' / [AbilityIds.buildTinyFarm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-buildTinyFarm)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setUnitCreatedperplayerrace(int level, string value)`
+- `presetUnitCreatedperplayerrace(StringLevelClosure lc)`
 
 ### AbilityDefinitionFigurineBlueDrake
 
@@ -11456,13 +13244,23 @@ public class AbilityDefinitionBuildTinyFarm extends AbilityDefinition
 public class AbilityDefinitionFigurineBlueDrake extends AbilityDefinition
 ```
 
+'AIbd' / [AbilityIds.figurineBlueDrake](/stdlib/ref/_wurst/AbilityIds.html#abilityids-figurineBlueDrake)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setSummonAmount(int level, int value)`
+  Summon 2 - Amount / 'Isn2'
 - `setSummonUnitType(int level, string value)`
+  Summon 2 - Unit Type / 'Ist2'
 - `setSummonUnitType1(int level, string value)`
+  Summon 1 - Unit Type / 'Ist1'
 - `setSummonAmount1(int level, int value)`
+  Summon 1 - Amount / 'Isn1'
+- `presetSummonAmount(IntLevelClosure lc)`
+- `presetSummonUnitType(StringLevelClosure lc)`
+- `presetSummonUnitType1(StringLevelClosure lc)`
+- `presetSummonAmount1(IntLevelClosure lc)`
 
 ### AbilityDefinitionBuildTinyBlacksmith
 
@@ -11470,10 +13268,13 @@ public class AbilityDefinitionFigurineBlueDrake extends AbilityDefinition
 public class AbilityDefinitionBuildTinyBlacksmith extends AbilityDefinition
 ```
 
+'AIbb' / [AbilityIds.buildTinyBlacksmith](/stdlib/ref/_wurst/AbilityIds.html#abilityids-buildTinyBlacksmith)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setUnitCreatedperplayerrace(int level, string value)`
+- `presetUnitCreatedperplayerrace(StringLevelClosure lc)`
 
 ### AbilityDefinitionRexxarSummonBear
 
@@ -11481,17 +13282,23 @@ public class AbilityDefinitionBuildTinyBlacksmith extends AbilityDefinition
 public class AbilityDefinitionRexxarSummonBear extends AbilityDefinition
 ```
 
+'Arsg' / [AbilityIds.rexxarSummonBear](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rexxarSummonBear)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setNumberofSummonedUnits(int level, int value)`
 - `setSummonedUnit(int level, string value)`
+- `presetSummonedUnit(StringLevelClosure lc)`
+- `presetNumberofSummonedUnits(IntLevelClosure lc)`
 
 ### AbilityDefinitionBurrowBarbedArachnathid
 
 ```wurst
 public class AbilityDefinitionBurrowBarbedArachnathid extends AbilityDefinition
 ```
+
+'Abu5' / [AbilityIds.burrowBarbedArachnathid](/stdlib/ref/_wurst/AbilityIds.html#abilityids-burrowBarbedArachnathid)
 
 **Members:**
 
@@ -11501,12 +13308,19 @@ public class AbilityDefinitionBurrowBarbedArachnathid extends AbilityDefinition
 - `setLandingDelayTime(int level, real value)`
 - `setNormalFormUnit(int level, string value)`
 - `setAltitudeAdjustmentDuration(int level, real value)`
+- `presetLandingDelayTime(RealLevelClosure lc)`
+- `presetNormalFormUnit(StringLevelClosure lc)`
+- `presetAlternateFormUnit(StringLevelClosure lc)`
+- `presetMorphingFlags(IntLevelClosure lc)`
+- `presetAltitudeAdjustmentDuration(RealLevelClosure lc)`
 
 ### AbilityDefinitionAgilityBonusPlus10
 
 ```wurst
 public class AbilityDefinitionAgilityBonusPlus10 extends AbilityDefinition
 ```
+
+'AIaz' / [AbilityIds.agilityBonusPlus10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-agilityBonusPlus10)
 
 **Members:**
 
@@ -11515,17 +13329,10 @@ public class AbilityDefinitionAgilityBonusPlus10 extends AbilityDefinition
 - `setStrengthBonus(int level, int value)`
 - `setAgilityBonus(int level, int value)`
 - `setIntelligenceBonus(int level, int value)`
-
-### AbilityDefinitionCyclone1
-
-```wurst
-public class AbilityDefinitionCyclone1 extends AbilityDefinition
-```
-
-**Members:**
-
-- `construct(int newAbilityId)`
-- `setCanBeDispelled(int level, bool value)`
+- `presetAgilityBonus(IntLevelClosure lc)`
+- `presetStrengthBonus(IntLevelClosure lc)`
+- `presetHideButton(BooleanLevelClosure lc)`
+- `presetIntelligenceBonus(IntLevelClosure lc)`
 
 ### AbilityDefinitionRuneRestoreAoe
 
@@ -11533,17 +13340,23 @@ public class AbilityDefinitionCyclone1 extends AbilityDefinition
 public class AbilityDefinitionRuneRestoreAoe extends AbilityDefinition
 ```
 
+'APra' / [AbilityIds.runeRestoreAoe](/stdlib/ref/_wurst/AbilityIds.html#abilityids-runeRestoreAoe)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setHitPointsRestored(int level, int value)`
 - `setManaPointsRestored(int level, int value)`
+- `presetManaPointsRestored(IntLevelClosure lc)`
+- `presetHitPointsRestored(IntLevelClosure lc)`
 
 ### AbilityDefinitionCriticalStrikeItem
 
 ```wurst
 public class AbilityDefinitionCriticalStrikeItem extends AbilityDefinition
 ```
+
+'AIcs' / [AbilityIds.criticalStrikeItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-criticalStrikeItem)
 
 **Members:**
 
@@ -11554,6 +13367,12 @@ public class AbilityDefinitionCriticalStrikeItem extends AbilityDefinition
 - `setNeverMiss(int level, bool value)`
 - `setExcludeItemDamage(int level, bool value)`
 - `setDamageBonus(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+- `presetNeverMiss(BooleanLevelClosure lc)`
 
 ### AbilityDefinitionControlMagicItem
 
@@ -11561,12 +13380,17 @@ public class AbilityDefinitionCriticalStrikeItem extends AbilityDefinition
 public class AbilityDefinitionControlMagicItem extends AbilityDefinition
 ```
 
+'AIcm' / [AbilityIds.controlMagicItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-controlMagicItem)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setChargeforCurrentLife(int level, real value)`
 - `setMaximumCreepLevel(int level, int value)`
 - `setManaperSummonedHitpoint(int level, real value)`
+- `presetMaximumCreepLevel(IntLevelClosure lc)`
+- `presetManaperSummonedHitpoint(RealLevelClosure lc)`
+- `presetChargeforCurrentLife(RealLevelClosure lc)`
 
 ### AbilityDefinitionChainLightningItem
 
@@ -11574,12 +13398,17 @@ public class AbilityDefinitionControlMagicItem extends AbilityDefinition
 public class AbilityDefinitionChainLightningItem extends AbilityDefinition
 ```
 
+'AIcl' / [AbilityIds.chainLightningItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chainLightningItem)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setNumberofTargetsHit(int level, int value)`
 - `setDamageperTarget(int level, real value)`
 - `setDamageReductionperTarget(int level, real value)`
+- `presetNumberofTargetsHit(IntLevelClosure lc)`
+- `presetDamageperTarget(RealLevelClosure lc)`
+- `presetDamageReductionperTarget(RealLevelClosure lc)`
 
 ### AbilityDefinitionAttackTargetPriority
 
@@ -11587,10 +13416,14 @@ public class AbilityDefinitionChainLightningItem extends AbilityDefinition
 public class AbilityDefinitionAttackTargetPriority extends AbilityDefinition
 ```
 
+'Aatp' / [AbilityIds.attackTargetPriority](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackTargetPriority)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setData(int level, bool value)`
+- `presetInitiallyEnabled(BooleanLevelClosure lc)`
+- `setInitiallyEnabled(int level, bool value)`
 
 ### AbilityDefinitionRuneSpeedAoe
 
@@ -11598,10 +13431,13 @@ public class AbilityDefinitionAttackTargetPriority extends AbilityDefinition
 public class AbilityDefinitionRuneSpeedAoe extends AbilityDefinition
 ```
 
+'APsa' / [AbilityIds.runeSpeedAoe](/stdlib/ref/_wurst/AbilityIds.html#abilityids-runeSpeedAoe)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setMovementSpeedIncrease(int level, real value)`
+- `presetMovementSpeedIncrease(RealLevelClosure lc)`
 
 ### AbilityDefinitionDivineShieldItem
 
@@ -11609,16 +13445,21 @@ public class AbilityDefinitionRuneSpeedAoe extends AbilityDefinition
 public class AbilityDefinitionDivineShieldItem extends AbilityDefinition
 ```
 
+'AIdv' / [AbilityIds.divineShieldItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-divineShieldItem)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setCanDeactivate(int level, bool value)`
+- `presetCanDeactivate(BooleanLevelClosure lc)`
 
 ### AbilityDefinitionDeathPactItem
 
 ```wurst
 public class AbilityDefinitionDeathPactItem extends AbilityDefinition
 ```
+
+'AIdp' / [AbilityIds.deathPactItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-deathPactItem)
 
 **Members:**
 
@@ -11628,6 +13469,11 @@ public class AbilityDefinitionDeathPactItem extends AbilityDefinition
 - `setManaConversionAsPercent(int level, bool value)`
 - `setLifeConversionAsPercent(int level, bool value)`
 - `setLifeConvertedtoMana(int level, real value)`
+- `presetLeaveTargetAlive(BooleanLevelClosure lc)`
+- `presetLifeConvertedtoMana(RealLevelClosure lc)`
+- `presetManaConversionAsPercent(BooleanLevelClosure lc)`
+- `presetLifeConvertedtoLife(RealLevelClosure lc)`
+- `presetLifeConversionAsPercent(BooleanLevelClosure lc)`
 
 ### AbilityDefinitionShadowOrbAbility
 
@@ -11635,11 +13481,15 @@ public class AbilityDefinitionDeathPactItem extends AbilityDefinition
 public class AbilityDefinitionShadowOrbAbility extends AbilityDefinition
 ```
 
+'AIdn' / [AbilityIds.shadowOrbAbility](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shadowOrbAbility)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setEnabledAttackIndex(int level, int value)`
 - `setDamageBonus(int level, real value)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetEnabledAttackIndex(IntLevelClosure lc)`
 
 ### AbilityDefinitionCairneEnduranceAura
 
@@ -11647,11 +13497,17 @@ public class AbilityDefinitionShadowOrbAbility extends AbilityDefinition
 public class AbilityDefinitionCairneEnduranceAura extends AbilityDefinition
 ```
 
+'AOr2' / [AbilityIds.cairneEnduranceAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cairneEnduranceAura)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setAttackSpeedIncrease(int level, real value)`
+  Attack Speed Increase (%) / 'Oae2'
 - `setMovementSpeedIncrease(int level, real value)`
+  Movement Speed Increase (%) / 'Oae1'
+- `presetMovementSpeedIncrease(RealLevelClosure lc)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
 
 ### AbilityDefinitionCairneReincarnation
 
@@ -11659,10 +13515,13 @@ public class AbilityDefinitionCairneEnduranceAura extends AbilityDefinition
 public class AbilityDefinitionCairneReincarnation extends AbilityDefinition
 ```
 
+'AOr3' / [AbilityIds.cairneReincarnation](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cairneReincarnation)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setReincarnationDelay(int level, real value)`
+- `presetReincarnationDelay(RealLevelClosure lc)`
 
 ### AbilityDefinitionAIde
 
@@ -11670,10 +13529,13 @@ public class AbilityDefinitionCairneReincarnation extends AbilityDefinition
 public class AbilityDefinitionAIde extends AbilityDefinition
 ```
 
+'AIde' / [AbilityIds.aIde](/stdlib/ref/_wurst/AbilityIds.html#abilityids-aIde)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setDefenseBonus(int level, int value)`
+- `presetDefenseBonus(IntLevelClosure lc)`
 
 ### AbilityDefinitionFigurineDragonspawnOverseer
 
@@ -11681,13 +13543,23 @@ public class AbilityDefinitionAIde extends AbilityDefinition
 public class AbilityDefinitionFigurineDragonspawnOverseer extends AbilityDefinition
 ```
 
+'AIes' / [AbilityIds.figurineDragonspawnOverseer](/stdlib/ref/_wurst/AbilityIds.html#abilityids-figurineDragonspawnOverseer)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setSummonAmount(int level, int value)`
+  Summon 2 - Amount / 'Isn2'
 - `setSummonUnitType(int level, string value)`
+  Summon 2 - Unit Type / 'Ist2'
 - `setSummonUnitType1(int level, string value)`
+  Summon 1 - Unit Type / 'Ist1'
 - `setSummonAmount1(int level, int value)`
+  Summon 1 - Amount / 'Isn1'
+- `presetSummonAmount(IntLevelClosure lc)`
+- `presetSummonUnitType(StringLevelClosure lc)`
+- `presetSummonUnitType1(StringLevelClosure lc)`
+- `presetSummonAmount1(IntLevelClosure lc)`
 
 ### AbilityDefinitionCairneShockWave
 
@@ -11695,6 +13567,8 @@ public class AbilityDefinitionFigurineDragonspawnOverseer extends AbilityDefinit
 public class AbilityDefinitionCairneShockWave extends AbilityDefinition
 ```
 
+'AOs2' / [AbilityIds.cairneShockWave](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cairneShockWave)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -11702,20 +13576,10 @@ public class AbilityDefinitionCairneShockWave extends AbilityDefinition
 - `setDistance(int level, real value)`
 - `setFinalArea(int level, real value)`
 - `setMaximumDamage(int level, real value)`
-
-### AbilityDefinitionColdArrows
-
-```wurst
-public class AbilityDefinitionColdArrows extends AbilityDefinition
-```
-
-**Members:**
-
-- `construct(int newAbilityId)`
-- `setStackFlags(int level, int value)`
-- `setExtraDamage(int level, real value)`
-- `setMovementSpeedFactor(int level, real value)`
-- `setAttackSpeedFactor(int level, real value)`
+- `presetDamage(RealLevelClosure lc)`
+- `presetMaximumDamage(RealLevelClosure lc)`
+- `presetFinalArea(RealLevelClosure lc)`
+- `presetDistance(RealLevelClosure lc)`
 
 ### AbilityDefinitionFingerOfDeathItem
 
@@ -11723,12 +13587,17 @@ public class AbilityDefinitionColdArrows extends AbilityDefinition
 public class AbilityDefinitionFingerOfDeathItem extends AbilityDefinition
 ```
 
+'AIfz' / [AbilityIds.fingerOfDeathItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-fingerOfDeathItem)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setGraphicDelay(int level, real value)`
 - `setGraphicDuration(int level, real value)`
 - `setDamage(int level, real value)`
+- `presetGraphicDuration(RealLevelClosure lc)`
+- `presetGraphicDelay(RealLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
 
 ### AbilityDefinitionSearingBladeFireMelee
 
@@ -11736,11 +13605,15 @@ public class AbilityDefinitionFingerOfDeathItem extends AbilityDefinition
 public class AbilityDefinitionSearingBladeFireMelee extends AbilityDefinition
 ```
 
+'AIfw' / [AbilityIds.searingBladeFireMelee](/stdlib/ref/_wurst/AbilityIds.html#abilityids-searingBladeFireMelee)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setEnabledAttackIndex(int level, int value)`
 - `setDamageBonus(int level, real value)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetEnabledAttackIndex(IntLevelClosure lc)`
 
 ### AbilityDefinitionFrostguardFrostMelee
 
@@ -11748,11 +13621,15 @@ public class AbilityDefinitionSearingBladeFireMelee extends AbilityDefinition
 public class AbilityDefinitionFrostguardFrostMelee extends AbilityDefinition
 ```
 
+'AIft' / [AbilityIds.frostguardFrostMelee](/stdlib/ref/_wurst/AbilityIds.html#abilityids-frostguardFrostMelee)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setEnabledAttackIndex(int level, int value)`
 - `setDamageBonus(int level, real value)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetEnabledAttackIndex(IntLevelClosure lc)`
 
 ### AbilityDefinitionInventory2SlotUnitNightElf
 
@@ -11760,6 +13637,8 @@ public class AbilityDefinitionFrostguardFrostMelee extends AbilityDefinition
 public class AbilityDefinitionInventory2SlotUnitNightElf extends AbilityDefinition
 ```
 
+'Aien' / [AbilityIds.inventory2SlotUnitNightElf](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inventory2SlotUnitNightElf)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -11768,6 +13647,11 @@ public class AbilityDefinitionInventory2SlotUnitNightElf extends AbilityDefiniti
 - `setCanUseItems(int level, bool value)`
 - `setDropItemsOnDeath(int level, bool value)`
 - `setCanDropItems(int level, bool value)`
+- `presetItemCapacity(IntLevelClosure lc)`
+- `presetCanGetItems(BooleanLevelClosure lc)`
+- `presetCanDropItems(BooleanLevelClosure lc)`
+- `presetDropItemsOnDeath(BooleanLevelClosure lc)`
+- `presetCanUseItems(BooleanLevelClosure lc)`
 
 ### AbilityDefinitionRainOfChaosButton02
 
@@ -11775,11 +13659,15 @@ public class AbilityDefinitionInventory2SlotUnitNightElf extends AbilityDefiniti
 public class AbilityDefinitionRainOfChaosButton02 extends AbilityDefinition
 ```
 
+'ANr3' / [AbilityIds.rainOfChaosButton02](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rainOfChaosButton02)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setAbilityforUnitCreation(int level, string value)`
 - `setNumberofUnitsCreated(int level, int value)`
+- `presetNumberofUnitsCreated(IntLevelClosure lc)`
+- `presetAbilityforUnitCreation(StringLevelClosure lc)`
 
 ### AbilityDefinitionReincarnationGeneric
 
@@ -11787,10 +13675,13 @@ public class AbilityDefinitionRainOfChaosButton02 extends AbilityDefinition
 public class AbilityDefinitionReincarnationGeneric extends AbilityDefinition
 ```
 
+'ANr2' / [AbilityIds.reincarnationGeneric](/stdlib/ref/_wurst/AbilityIds.html#abilityids-reincarnationGeneric)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setReincarnationDelay(int level, real value)`
+- `presetReincarnationDelay(RealLevelClosure lc)`
 
 ### AbilityDefinitionAuraRegenerationItem
 
@@ -11798,11 +13689,15 @@ public class AbilityDefinitionReincarnationGeneric extends AbilityDefinition
 public class AbilityDefinitionAuraRegenerationItem extends AbilityDefinition
 ```
 
+'AIgx' / [AbilityIds.auraRegenerationItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-auraRegenerationItem)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setAmountofHitPointsRegenerated(int level, real value)`
 - `setPercentage(int level, bool value)`
+- `presetAmountofHitPointsRegenerated(RealLevelClosure lc)`
+- `presetPercentage(BooleanLevelClosure lc)`
 
 ### AbilityDefinitionOrbOfGuldan
 
@@ -11810,11 +13705,15 @@ public class AbilityDefinitionAuraRegenerationItem extends AbilityDefinition
 public class AbilityDefinitionOrbOfGuldan extends AbilityDefinition
 ```
 
+'AIgd' / [AbilityIds.orbOfGuldan](/stdlib/ref/_wurst/AbilityIds.html#abilityids-orbOfGuldan)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setEnabledAttackIndex(int level, int value)`
 - `setDamageBonus(int level, real value)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetEnabledAttackIndex(IntLevelClosure lc)`
 
 ### AbilityDefinitionRexxarStormBolt
 
@@ -11822,10 +13721,13 @@ public class AbilityDefinitionOrbOfGuldan extends AbilityDefinition
 public class AbilityDefinitionRexxarStormBolt extends AbilityDefinition
 ```
 
+'ANsb' / [AbilityIds.rexxarStormBolt](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rexxarStormBolt)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setDamage(int level, real value)`
+- `presetDamage(RealLevelClosure lc)`
 
 ### AbilityDefinitionItemHealLeastest
 
@@ -11833,21 +13735,13 @@ public class AbilityDefinitionRexxarStormBolt extends AbilityDefinition
 public class AbilityDefinitionItemHealLeastest extends AbilityDefinition
 ```
 
+'AIhx' / [AbilityIds.itemHealLeastest](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealLeastest)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setHitPointsGained(int level, int value)`
-
-### AbilityDefinitionHealingWard1
-
-```wurst
-public class AbilityDefinitionHealingWard1 extends AbilityDefinition
-```
-
-**Members:**
-
-- `construct(int newAbilityId)`
-- `setWardUnitType(int level, string value)`
+- `presetHitPointsGained(IntLevelClosure lc)`
 
 ### AbilityDefinitionHolyLightItem
 
@@ -11855,10 +13749,14 @@ public class AbilityDefinitionHealingWard1 extends AbilityDefinition
 public class AbilityDefinitionHolyLightItem extends AbilityDefinition
 ```
 
+'AIhl' / [AbilityIds.holyLightItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-holyLightItem)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setAmountHealedDamaged(int level, real value)`
+  Amount Healed/Damaged / 'Hhb1'
+- `presetAmountHealedDamaged(RealLevelClosure lc)`
 
 ### AbilityDefinitionThornyShieldDragonTurtle
 
@@ -11866,18 +13764,25 @@ public class AbilityDefinitionHolyLightItem extends AbilityDefinition
 public class AbilityDefinitionThornyShieldDragonTurtle extends AbilityDefinition
 ```
 
+'ANt2' / [AbilityIds.thornyShieldDragonTurtle](/stdlib/ref/_wurst/AbilityIds.html#abilityids-thornyShieldDragonTurtle)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setReturnedDamageFactor(int level, real value)`
 - `setReceivedDamageFactor(int level, real value)`
 - `setDefenseBonus(int level, real value)`
+- `presetReceivedDamageFactor(RealLevelClosure lc)`
+- `presetReturnedDamageFactor(RealLevelClosure lc)`
+- `presetDefenseBonus(RealLevelClosure lc)`
 
 ### AbilityDefinitionInventory2SlotUnitHuman
 
 ```wurst
 public class AbilityDefinitionInventory2SlotUnitHuman extends AbilityDefinition
 ```
+
+'Aihn' / [AbilityIds.inventory2SlotUnitHuman](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inventory2SlotUnitHuman)
 
 **Members:**
 
@@ -11887,6 +13792,11 @@ public class AbilityDefinitionInventory2SlotUnitHuman extends AbilityDefinition
 - `setCanUseItems(int level, bool value)`
 - `setDropItemsOnDeath(int level, bool value)`
 - `setCanDropItems(int level, bool value)`
+- `presetItemCapacity(IntLevelClosure lc)`
+- `presetCanGetItems(BooleanLevelClosure lc)`
+- `presetCanDropItems(BooleanLevelClosure lc)`
+- `presetDropItemsOnDeath(BooleanLevelClosure lc)`
+- `presetCanUseItems(BooleanLevelClosure lc)`
 
 ### AbilityDefinitionRuneOfTheWatcher
 
@@ -11894,10 +13804,13 @@ public class AbilityDefinitionInventory2SlotUnitHuman extends AbilityDefinition
 public class AbilityDefinitionRuneOfTheWatcher extends AbilityDefinition
 ```
 
+'APwt' / [AbilityIds.runeOfTheWatcher](/stdlib/ref/_wurst/AbilityIds.html#abilityids-runeOfTheWatcher)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setWardUnitType(int level, string value)`
+- `presetWardUnitType(StringLevelClosure lc)`
 
 ### AbilityDefinitionCairneWarStomp
 
@@ -11905,16 +13818,21 @@ public class AbilityDefinitionRuneOfTheWatcher extends AbilityDefinition
 public class AbilityDefinitionCairneWarStomp extends AbilityDefinition
 ```
 
+'AOw2' / [AbilityIds.cairneWarStomp](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cairneWarStomp)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setDamage(int level, real value)`
+- `presetDamage(RealLevelClosure lc)`
 
 ### AbilityDefinitionGarithosShockWave
 
 ```wurst
 public class AbilityDefinitionGarithosShockWave extends AbilityDefinition
 ```
+
+'ANsh' / [AbilityIds.garithosShockWave](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garithosShockWave)
 
 **Members:**
 
@@ -11923,6 +13841,10 @@ public class AbilityDefinitionGarithosShockWave extends AbilityDefinition
 - `setDistance(int level, real value)`
 - `setFinalArea(int level, real value)`
 - `setMaximumDamage(int level, real value)`
+- `presetDamage(RealLevelClosure lc)`
+- `presetMaximumDamage(RealLevelClosure lc)`
+- `presetFinalArea(RealLevelClosure lc)`
+- `presetDistance(RealLevelClosure lc)`
 
 ### AbilityDefinitionDetectWarEagle
 
@@ -11930,10 +13852,13 @@ public class AbilityDefinitionGarithosShockWave extends AbilityDefinition
 public class AbilityDefinitionDetectWarEagle extends AbilityDefinition
 ```
 
+'ANtr' / [AbilityIds.detectWarEagle](/stdlib/ref/_wurst/AbilityIds.html#abilityids-detectWarEagle)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setDetectionType(int level, string value)`
+- `presetDetectionType(StringLevelClosure lc)`
 
 ### AbilityDefinitionHardenedSkinNagaTurtle
 
@@ -11941,14 +13866,22 @@ public class AbilityDefinitionDetectWarEagle extends AbilityDefinition
 public class AbilityDefinitionHardenedSkinNagaTurtle extends AbilityDefinition
 ```
 
+'Ansk' / [AbilityIds.hardenedSkinNagaTurtle](/stdlib/ref/_wurst/AbilityIds.html#abilityids-hardenedSkinNagaTurtle)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setIgnoredDamage(int level, real value)`
 - `setIncludeMeleeDamage(int level, bool value)`
 - `setChancetoReduceDamage(int level, real value)`
+  Chance to Reduce Damage (%) / 'Ssk1'
 - `setIncludeRangedDamage(int level, bool value)`
 - `setMinimumDamage(int level, real value)`
+- `presetMinimumDamage(RealLevelClosure lc)`
+- `presetIncludeRangedDamage(BooleanLevelClosure lc)`
+- `presetIncludeMeleeDamage(BooleanLevelClosure lc)`
+- `presetChancetoReduceDamage(RealLevelClosure lc)`
+- `presetIgnoredDamage(RealLevelClosure lc)`
 
 ### AbilityDefinitionMaxLifeBonusLeastest
 
@@ -11956,10 +13889,13 @@ public class AbilityDefinitionHardenedSkinNagaTurtle extends AbilityDefinition
 public class AbilityDefinitionMaxLifeBonusLeastest extends AbilityDefinition
 ```
 
+'AIlz' / [AbilityIds.maxLifeBonusLeastest](/stdlib/ref/_wurst/AbilityIds.html#abilityids-maxLifeBonusLeastest)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setMaxLifeGained(int level, int value)`
+- `presetMaxLifeGained(IntLevelClosure lc)`
 
 ### AbilityDefinitionShamanClawsLightningMelee
 
@@ -11967,15 +13903,26 @@ public class AbilityDefinitionMaxLifeBonusLeastest extends AbilityDefinition
 public class AbilityDefinitionShamanClawsLightningMelee extends AbilityDefinition
 ```
 
+'AIlx' / [AbilityIds.shamanClawsLightningMelee](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shamanClawsLightningMelee)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setChanceToHitUnits(int level, real value)`
+  Chance To Hit Units (%) / 'Iob2'
 - `setEffectAbility(int level, string value)`
 - `setChanceToHitSummons(int level, real value)`
+  Chance To Hit Summons (%) / 'Iob4'
 - `setEnabledAttackIndex(int level, int value)`
 - `setChanceToHitHeros(int level, real value)`
+  Chance To Hit Heros (%) / 'Iob3'
 - `setDamageBonus(int level, real value)`
+- `presetChanceToHitUnits(RealLevelClosure lc)`
+- `presetChanceToHitSummons(RealLevelClosure lc)`
+- `presetEffectAbility(StringLevelClosure lc)`
+- `presetChanceToHitHeros(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetEnabledAttackIndex(IntLevelClosure lc)`
 
 ### AbilityDefinitionMaxManaBonusLeastest
 
@@ -11983,10 +13930,13 @@ public class AbilityDefinitionShamanClawsLightningMelee extends AbilityDefinitio
 public class AbilityDefinitionMaxManaBonusLeastest extends AbilityDefinition
 ```
 
+'AImz' / [AbilityIds.maxManaBonusLeastest](/stdlib/ref/_wurst/AbilityIds.html#abilityids-maxManaBonusLeastest)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setMaxManaGained(int level, int value)`
+- `presetMaxManaGained(IntLevelClosure lc)`
 
 ### AbilityDefinitionCrushingWaveLesser
 
@@ -11994,6 +13944,8 @@ public class AbilityDefinitionMaxManaBonusLeastest extends AbilityDefinition
 public class AbilityDefinitionCrushingWaveLesser extends AbilityDefinition
 ```
 
+'ACc3' / [AbilityIds.crushingWaveLesser](/stdlib/ref/_wurst/AbilityIds.html#abilityids-crushingWaveLesser)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12001,6 +13953,10 @@ public class AbilityDefinitionCrushingWaveLesser extends AbilityDefinition
 - `setDamage(int level, real value)`
 - `setMaxDamage(int level, real value)`
 - `setFinalArea(int level, real value)`
+- `presetDistance(RealLevelClosure lc)`
+- `presetFinalArea(RealLevelClosure lc)`
+- `presetMaxDamage(RealLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
 
 ### AbilityDefinitionCrushingWaveDragonTurtle
 
@@ -12008,6 +13964,8 @@ public class AbilityDefinitionCrushingWaveLesser extends AbilityDefinition
 public class AbilityDefinitionCrushingWaveDragonTurtle extends AbilityDefinition
 ```
 
+'ACc2' / [AbilityIds.crushingWaveDragonTurtle](/stdlib/ref/_wurst/AbilityIds.html#abilityids-crushingWaveDragonTurtle)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12015,6 +13973,10 @@ public class AbilityDefinitionCrushingWaveDragonTurtle extends AbilityDefinition
 - `setDamage(int level, real value)`
 - `setMaxDamage(int level, real value)`
 - `setFinalArea(int level, real value)`
+- `presetDistance(RealLevelClosure lc)`
+- `presetFinalArea(RealLevelClosure lc)`
+- `presetMaxDamage(RealLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
 
 ### AbilityDefinitionMaxManaBonusLeastestReally
 
@@ -12022,23 +13984,13 @@ public class AbilityDefinitionCrushingWaveDragonTurtle extends AbilityDefinition
 public class AbilityDefinitionMaxManaBonusLeastestReally extends AbilityDefinition
 ```
 
+'AImv' / [AbilityIds.maxManaBonusLeastestReally](/stdlib/ref/_wurst/AbilityIds.html#abilityids-maxManaBonusLeastestReally)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setMaxManaGained(int level, int value)`
-
-### AbilityDefinitionDarkSummoning
-
-```wurst
-public class AbilityDefinitionDarkSummoning extends AbilityDefinition
-```
-
-**Members:**
-
-- `construct(int newAbilityId)`
-- `setUseTeleportClustering(int level, bool value)`
-- `setMaximumUnits(int level, int value)`
-- `setCastingDelayseconds(int level, real value)`
+- `presetMaxManaGained(IntLevelClosure lc)`
 
 ### AbilityDefinitionAbolishMagicCreep12Pos
 
@@ -12046,11 +13998,15 @@ public class AbilityDefinitionDarkSummoning extends AbilityDefinition
 public class AbilityDefinitionAbolishMagicCreep12Pos extends AbilityDefinition
 ```
 
+'ACd2' / [AbilityIds.abolishMagicCreep12Pos](/stdlib/ref/_wurst/AbilityIds.html#abilityids-abolishMagicCreep12Pos)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setManaLoss(int level, real value)`
 - `setSummonedUnitDamage(int level, real value)`
+- `presetSummonedUnitDamage(RealLevelClosure lc)`
+- `presetManaLoss(RealLevelClosure lc)`
 
 ### AbilityDefinitionBanishCreep
 
@@ -12058,11 +14014,17 @@ public class AbilityDefinitionAbolishMagicCreep12Pos extends AbilityDefinition
 public class AbilityDefinitionBanishCreep extends AbilityDefinition
 ```
 
+'ACbn' / [AbilityIds.banishCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-banishCreep)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setMovementSpeedReduction(int level, real value)`
+  Movement Speed Reduction (%) / 'Hbn1'
 - `setAttackSpeedReduction(int level, real value)`
+  Attack Speed Reduction (%) / 'Hbn2'
+- `presetMovementSpeedReduction(RealLevelClosure lc)`
+- `presetAttackSpeedReduction(RealLevelClosure lc)`
 
 ### AbilityDefinitionDisenchantNew
 
@@ -12070,17 +14032,23 @@ public class AbilityDefinitionBanishCreep extends AbilityDefinition
 public class AbilityDefinitionDisenchantNew extends AbilityDefinition
 ```
 
+'Adcn' / [AbilityIds.disenchantNew](/stdlib/ref/_wurst/AbilityIds.html#abilityids-disenchantNew)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setManaLoss(int level, real value)`
 - `setSummonedUnitDamage(int level, real value)`
+- `presetSummonedUnitDamage(RealLevelClosure lc)`
+- `presetManaLoss(RealLevelClosure lc)`
 
 ### AbilityDefinitionBlackArrowMeleeCreep
 
 ```wurst
 public class AbilityDefinitionBlackArrowMeleeCreep extends AbilityDefinition
 ```
+
+'ACbk' / [AbilityIds.blackArrowMeleeCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-blackArrowMeleeCreep)
 
 **Members:**
 
@@ -12089,6 +14057,10 @@ public class AbilityDefinitionBlackArrowMeleeCreep extends AbilityDefinition
 - `setSummonedUnitType(int level, string value)`
 - `setNumberofSummonedUnits(int level, int value)`
 - `setDamageBonus(int level, real value)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetSummonedUnitType(StringLevelClosure lc)`
+- `presetNumberofSummonedUnits(IntLevelClosure lc)`
+- `presetSummonedUnitDurationseconds(RealLevelClosure lc)`
 
 ### AbilityDefinitionBloodlustCreepHotkeyB
 
@@ -12096,18 +14068,27 @@ public class AbilityDefinitionBlackArrowMeleeCreep extends AbilityDefinition
 public class AbilityDefinitionBloodlustCreepHotkeyB extends AbilityDefinition
 ```
 
+'ACbb' / [AbilityIds.bloodlustCreepHotkeyB](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bloodlustCreepHotkeyB)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setScalingFactor(int level, real value)`
 - `setAttackSpeedIncrease(int level, real value)`
+  Attack Speed Increase (%) / 'Blo1'
 - `setMovementSpeedIncrease(int level, real value)`
+  Movement Speed Increase (%) / 'Blo2'
+- `presetScalingFactor(RealLevelClosure lc)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+- `presetMovementSpeedIncrease(RealLevelClosure lc)`
 
 ### AbilityDefinitionPassiveHumanLumberHarvestingRhlh
 
 ```wurst
 public class AbilityDefinitionPassiveHumanLumberHarvestingRhlh extends AbilityDefinition
 ```
+
+'Ahlh' / [AbilityIds.passiveHumanLumberHarvestingRhlh](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveHumanLumberHarvestingRhlh)
 
 **Members:**
 
@@ -12119,6 +14100,8 @@ public class AbilityDefinitionPassiveHumanLumberHarvestingRhlh extends AbilityDe
 public class AbilityDefinitionPassiveGhostIconOnlyUndeadAgho extends AbilityDefinition
 ```
 
+'Augh' / [AbilityIds.passiveGhostIconOnlyUndeadAgho](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveGhostIconOnlyUndeadAgho)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12128,6 +14111,8 @@ public class AbilityDefinitionPassiveGhostIconOnlyUndeadAgho extends AbilityDefi
 ```wurst
 public class AbilityDefinitionPassiveUndeadGhoulFrenzyRugf extends AbilityDefinition
 ```
+
+'Augf' / [AbilityIds.passiveUndeadGhoulFrenzyRugf](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveUndeadGhoulFrenzyRugf)
 
 **Members:**
 
@@ -12139,6 +14124,8 @@ public class AbilityDefinitionPassiveUndeadGhoulFrenzyRugf extends AbilityDefini
 public class AbilityDefinitionOnFireUndead extends AbilityDefinition
 ```
 
+'Afiu' / [AbilityIds.onFireUndead](/stdlib/ref/_wurst/AbilityIds.html#abilityids-onFireUndead)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12148,6 +14135,8 @@ public class AbilityDefinitionOnFireUndead extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionOnFire extends AbilityDefinition
 ```
+
+'Afir' / [AbilityIds.onFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-onFire)
 
 **Members:**
 
@@ -12159,6 +14148,8 @@ public class AbilityDefinitionOnFire extends AbilityDefinition
 public class AbilityDefinitionOnFireOrc extends AbilityDefinition
 ```
 
+'Afio' / [AbilityIds.onFireOrc](/stdlib/ref/_wurst/AbilityIds.html#abilityids-onFireOrc)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12168,6 +14159,8 @@ public class AbilityDefinitionOnFireOrc extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionOnFireNightElf extends AbilityDefinition
 ```
+
+'Afin' / [AbilityIds.onFireNightElf](/stdlib/ref/_wurst/AbilityIds.html#abilityids-onFireNightElf)
 
 **Members:**
 
@@ -12179,6 +14172,8 @@ public class AbilityDefinitionOnFireNightElf extends AbilityDefinition
 public class AbilityDefinitionOnFireHuman extends AbilityDefinition
 ```
 
+'Afih' / [AbilityIds.onFireHuman](/stdlib/ref/_wurst/AbilityIds.html#abilityids-onFireHuman)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12188,6 +14183,8 @@ public class AbilityDefinitionOnFireHuman extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionDrop1 extends AbilityDefinition
 ```
+
+'Sdro' / [AbilityIds.drop1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-drop1)
 
 **Members:**
 
@@ -12199,6 +14196,8 @@ public class AbilityDefinitionDrop1 extends AbilityDefinition
 public class AbilityDefinitionPassivePhoenixFireAndEgg extends AbilityDefinition
 ```
 
+'Ahpe' / [AbilityIds.passivePhoenixFireAndEgg](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passivePhoenixFireAndEgg)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12208,6 +14207,8 @@ public class AbilityDefinitionPassivePhoenixFireAndEgg extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionPassiveHumanRiflemanPlusRangeRhri extends AbilityDefinition
 ```
+
+'Ahri' / [AbilityIds.passiveHumanRiflemanPlusRangeRhri](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveHumanRiflemanPlusRangeRhri)
 
 **Members:**
 
@@ -12219,6 +14220,8 @@ public class AbilityDefinitionPassiveHumanRiflemanPlusRangeRhri extends AbilityD
 public class AbilityDefinitionShadowSight extends AbilityDefinition
 ```
 
+'Ashs' / [AbilityIds.shadowSight](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shadowSight)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12228,6 +14231,8 @@ public class AbilityDefinitionShadowSight extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionUltravision extends AbilityDefinition
 ```
+
+'Ault' / [AbilityIds.ultravision](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ultravision)
 
 **Members:**
 
@@ -12239,6 +14244,8 @@ public class AbilityDefinitionUltravision extends AbilityDefinition
 public class AbilityDefinitionPassiveOrcGruntBerserkRobs extends AbilityDefinition
 ```
 
+'Aobs' / [AbilityIds.passiveOrcGruntBerserkRobs](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveOrcGruntBerserkRobs)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12248,6 +14255,8 @@ public class AbilityDefinitionPassiveOrcGruntBerserkRobs extends AbilityDefiniti
 ```wurst
 public class AbilityDefinitionPassiveOrcBerserkersRobk extends AbilityDefinition
 ```
+
+'Aobk' / [AbilityIds.passiveOrcBerserkersRobk](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveOrcBerserkersRobk)
 
 **Members:**
 
@@ -12259,6 +14268,8 @@ public class AbilityDefinitionPassiveOrcBerserkersRobk extends AbilityDefinition
 public class AbilityDefinitionFrostAttack12 extends AbilityDefinition
 ```
 
+'Afr2' / [AbilityIds.frostAttack12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-frostAttack12)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12268,6 +14279,8 @@ public class AbilityDefinitionFrostAttack12 extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionFrostBreathNewHasIcon extends AbilityDefinition
 ```
+
+'Afrc' / [AbilityIds.frostBreathNewHasIcon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-frostBreathNewHasIcon)
 
 **Members:**
 
@@ -12279,6 +14292,8 @@ public class AbilityDefinitionFrostBreathNewHasIcon extends AbilityDefinition
 public class AbilityDefinitionFrostBreath extends AbilityDefinition
 ```
 
+'Afrb' / [AbilityIds.frostBreath](/stdlib/ref/_wurst/AbilityIds.html#abilityids-frostBreath)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12288,6 +14303,8 @@ public class AbilityDefinitionFrostBreath extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionFrostAttack extends AbilityDefinition
 ```
+
+'Afra' / [AbilityIds.frostAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-frostAttack)
 
 **Members:**
 
@@ -12299,6 +14316,8 @@ public class AbilityDefinitionFrostAttack extends AbilityDefinition
 public class AbilityDefinitionFreezingBreath extends AbilityDefinition
 ```
 
+'Afrz' / [AbilityIds.freezingBreath](/stdlib/ref/_wurst/AbilityIds.html#abilityids-freezingBreath)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12308,6 +14327,8 @@ public class AbilityDefinitionFreezingBreath extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionSphereSoVLevel6 extends AbilityDefinition
 ```
+
+'Asp6' / [AbilityIds.sphereSoVLevel6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sphereSoVLevel6)
 
 **Members:**
 
@@ -12319,6 +14340,8 @@ public class AbilityDefinitionSphereSoVLevel6 extends AbilityDefinition
 public class AbilityDefinitionSphereSoVLevel5 extends AbilityDefinition
 ```
 
+'Asp5' / [AbilityIds.sphereSoVLevel5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sphereSoVLevel5)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12328,6 +14351,8 @@ public class AbilityDefinitionSphereSoVLevel5 extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionSphereSoVLevel4 extends AbilityDefinition
 ```
+
+'Asp4' / [AbilityIds.sphereSoVLevel4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sphereSoVLevel4)
 
 **Members:**
 
@@ -12339,6 +14364,8 @@ public class AbilityDefinitionSphereSoVLevel4 extends AbilityDefinition
 public class AbilityDefinitionSphereSoVLevel3 extends AbilityDefinition
 ```
 
+'Asp3' / [AbilityIds.sphereSoVLevel3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sphereSoVLevel3)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12348,6 +14375,8 @@ public class AbilityDefinitionSphereSoVLevel3 extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionSphereSoVLevel2 extends AbilityDefinition
 ```
+
+'Asp2' / [AbilityIds.sphereSoVLevel2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sphereSoVLevel2)
 
 **Members:**
 
@@ -12359,6 +14388,8 @@ public class AbilityDefinitionSphereSoVLevel2 extends AbilityDefinition
 public class AbilityDefinitionSphereSoVLevel1 extends AbilityDefinition
 ```
 
+'Asp1' / [AbilityIds.sphereSoVLevel1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sphereSoVLevel1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12368,6 +14399,8 @@ public class AbilityDefinitionSphereSoVLevel1 extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionPassiveUndeadSkeletalMasteryRusm extends AbilityDefinition
 ```
+
+'Ausm' / [AbilityIds.passiveUndeadSkeletalMasteryRusm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveUndeadSkeletalMasteryRusm)
 
 **Members:**
 
@@ -12379,6 +14412,8 @@ public class AbilityDefinitionPassiveUndeadSkeletalMasteryRusm extends AbilityDe
 public class AbilityDefinitionSpellSteal extends AbilityDefinition
 ```
 
+'Asps' / [AbilityIds.spellSteal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-spellSteal)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12388,6 +14423,8 @@ public class AbilityDefinitionSpellSteal extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionSpikedBarricades extends AbilityDefinition
 ```
+
+'Aspi' / [AbilityIds.spikedBarricades](/stdlib/ref/_wurst/AbilityIds.html#abilityids-spikedBarricades)
 
 **Members:**
 
@@ -12399,6 +14436,8 @@ public class AbilityDefinitionSpikedBarricades extends AbilityDefinition
 public class AbilityDefinitionSphere extends AbilityDefinition
 ```
 
+'Asph' / [AbilityIds.sphere](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sphere)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12408,6 +14447,8 @@ public class AbilityDefinitionSphere extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionMoonGlaiveNoResearch extends AbilityDefinition
 ```
+
+'Amgr' / [AbilityIds.moonGlaiveNoResearch](/stdlib/ref/_wurst/AbilityIds.html#abilityids-moonGlaiveNoResearch)
 
 **Members:**
 
@@ -12419,6 +14460,8 @@ public class AbilityDefinitionMoonGlaiveNoResearch extends AbilityDefinition
 public class AbilityDefinitionMoonGlaive extends AbilityDefinition
 ```
 
+'Amgl' / [AbilityIds.moonGlaive](/stdlib/ref/_wurst/AbilityIds.html#abilityids-moonGlaive)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12428,6 +14471,8 @@ public class AbilityDefinitionMoonGlaive extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionBouncingMissileFilter extends AbilityDefinition
 ```
+
+'Amgi' / [AbilityIds.bouncingMissileFilter](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bouncingMissileFilter)
 
 **Members:**
 
@@ -12439,6 +14484,8 @@ public class AbilityDefinitionBouncingMissileFilter extends AbilityDefinition
 public class AbilityDefinitionStormHammers extends AbilityDefinition
 ```
 
+'Asth' / [AbilityIds.stormHammers](/stdlib/ref/_wurst/AbilityIds.html#abilityids-stormHammers)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12448,6 +14495,8 @@ public class AbilityDefinitionStormHammers extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionStandDown extends AbilityDefinition
 ```
+
+'Astd' / [AbilityIds.standDown](/stdlib/ref/_wurst/AbilityIds.html#abilityids-standDown)
 
 **Members:**
 
@@ -12459,6 +14508,8 @@ public class AbilityDefinitionStandDown extends AbilityDefinition
 public class AbilityDefinitionSellUnit extends AbilityDefinition
 ```
 
+'Asud' / [AbilityIds.sellUnitDynamic](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sellUnitDynamic)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12468,6 +14519,8 @@ public class AbilityDefinitionSellUnit extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionPassiveOrcReinforcedDefenseRorb extends AbilityDefinition
 ```
+
+'Aorb' / [AbilityIds.passiveOrcReinforcedDefenseRorb](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveOrcReinforcedDefenseRorb)
 
 **Members:**
 
@@ -12479,6 +14532,8 @@ public class AbilityDefinitionPassiveOrcReinforcedDefenseRorb extends AbilityDef
 public class AbilityDefinitionFlagOrcBattleStandard extends AbilityDefinition
 ```
 
+'AIfx' / [AbilityIds.flagOrcBattleStandard](/stdlib/ref/_wurst/AbilityIds.html#abilityids-flagOrcBattleStandard)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12488,6 +14543,8 @@ public class AbilityDefinitionFlagOrcBattleStandard extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionMove extends AbilityDefinition
 ```
+
+'Amov' / [AbilityIds.move](/stdlib/ref/_wurst/AbilityIds.html#abilityids-move)
 
 **Members:**
 
@@ -12499,6 +14556,8 @@ public class AbilityDefinitionMove extends AbilityDefinition
 public class AbilityDefinitionPassiveOrcSpikedBarricadeRosp extends AbilityDefinition
 ```
 
+'Aosp' / [AbilityIds.passiveOrcSpikedBarricadeRosp](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveOrcSpikedBarricadeRosp)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12508,6 +14567,8 @@ public class AbilityDefinitionPassiveOrcSpikedBarricadeRosp extends AbilityDefin
 ```wurst
 public class AbilityDefinitionPassiveOrcTrollRegenerationRotr extends AbilityDefinition
 ```
+
+'Aotr' / [AbilityIds.passiveOrcTrollRegenerationRotr](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveOrcTrollRegenerationRotr)
 
 **Members:**
 
@@ -12519,6 +14580,8 @@ public class AbilityDefinitionPassiveOrcTrollRegenerationRotr extends AbilityDef
 public class AbilityDefinitionPassiveOrcGhostIconOnlyOrcAethUnused extends AbilityDefinition
 ```
 
+'Aoth' / [AbilityIds.passiveOrcGhostIconOnlyOrcAethUnused](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveOrcGhostIconOnlyOrcAethUnused)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12528,6 +14591,8 @@ public class AbilityDefinitionPassiveOrcGhostIconOnlyOrcAethUnused extends Abili
 ```wurst
 public class AbilityDefinitionImpalingBolt extends AbilityDefinition
 ```
+
+'Aimp' / [AbilityIds.impalingBolt](/stdlib/ref/_wurst/AbilityIds.html#abilityids-impalingBolt)
 
 **Members:**
 
@@ -12539,6 +14604,8 @@ public class AbilityDefinitionImpalingBolt extends AbilityDefinition
 public class AbilityDefinitionDropPilot extends AbilityDefinition
 ```
 
+'Atdp' / [AbilityIds.dropPilot](/stdlib/ref/_wurst/AbilityIds.html#abilityids-dropPilot)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12548,6 +14615,8 @@ public class AbilityDefinitionDropPilot extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionItemRandomItem extends AbilityDefinition
 ```
+
+'AIri' / [AbilityIds.itemRandomItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRandomItem)
 
 **Members:**
 
@@ -12559,6 +14628,8 @@ public class AbilityDefinitionItemRandomItem extends AbilityDefinition
 public class AbilityDefinitionPassiveNightelfImprovedBowsReib extends AbilityDefinition
 ```
 
+'Aeib' / [AbilityIds.passiveNightelfImprovedBowsReib](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveNightelfImprovedBowsReib)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12568,6 +14639,8 @@ public class AbilityDefinitionPassiveNightelfImprovedBowsReib extends AbilityDef
 ```wurst
 public class AbilityDefinitionRuneOfRebirth extends AbilityDefinition
 ```
+
+'AIrb' / [AbilityIds.runeOfRebirth](/stdlib/ref/_wurst/AbilityIds.html#abilityids-runeOfRebirth)
 
 **Members:**
 
@@ -12579,6 +14652,8 @@ public class AbilityDefinitionRuneOfRebirth extends AbilityDefinition
 public class AbilityDefinitionReinforcedBurrows extends AbilityDefinition
 ```
 
+'Arbr' / [AbilityIds.reinforcedBurrows](/stdlib/ref/_wurst/AbilityIds.html#abilityids-reinforcedBurrows)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12588,6 +14663,8 @@ public class AbilityDefinitionReinforcedBurrows extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionPassiveSimple extends AbilityDefinition
 ```
+
+'APai' / [AbilityIds.passiveSimple](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveSimple)
 
 **Members:**
 
@@ -12599,6 +14676,8 @@ public class AbilityDefinitionPassiveSimple extends AbilityDefinition
 public class AbilityDefinitionItemInvisGreater extends AbilityDefinition
 ```
 
+'AIv2' / [AbilityIds.itemInvisGreater](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemInvisGreater)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12608,6 +14687,8 @@ public class AbilityDefinitionItemInvisGreater extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionItemInvisLesser extends AbilityDefinition
 ```
+
+'AIv1' / [AbilityIds.itemInvisLesser](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemInvisLesser)
 
 **Members:**
 
@@ -12619,6 +14700,8 @@ public class AbilityDefinitionItemInvisLesser extends AbilityDefinition
 public class AbilityDefinitionReassignableAttributeBonusPlus1 extends AbilityDefinition
 ```
 
+'AIvm' / [AbilityIds.reassignableAttributeBonusPlus1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-reassignableAttributeBonusPlus1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12628,6 +14711,8 @@ public class AbilityDefinitionReassignableAttributeBonusPlus1 extends AbilityDef
 ```wurst
 public class AbilityDefinitionItemUltravision extends AbilityDefinition
 ```
+
+'AIuv' / [AbilityIds.itemUltravision](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemUltravision)
 
 **Members:**
 
@@ -12639,6 +14724,8 @@ public class AbilityDefinitionItemUltravision extends AbilityDefinition
 public class AbilityDefinitionRetrain extends AbilityDefinition
 ```
 
+'Aret' / [AbilityIds.retrain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-retrain)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12648,6 +14735,8 @@ public class AbilityDefinitionRetrain extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionPassiveNightelfMarksmanshipRemk extends AbilityDefinition
 ```
+
+'Aemk' / [AbilityIds.passiveNightelfMarksmanshipRemk](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveNightelfMarksmanshipRemk)
 
 **Members:**
 
@@ -12659,6 +14748,8 @@ public class AbilityDefinitionPassiveNightelfMarksmanshipRemk extends AbilityDef
 public class AbilityDefinitionLoadPilot extends AbilityDefinition
 ```
 
+'Atlp' / [AbilityIds.loadPilot](/stdlib/ref/_wurst/AbilityIds.html#abilityids-loadPilot)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12668,6 +14759,8 @@ public class AbilityDefinitionLoadPilot extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionEthereal extends AbilityDefinition
 ```
+
+'Aetl' / [AbilityIds.ethereal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ethereal)
 
 **Members:**
 
@@ -12679,6 +14772,8 @@ public class AbilityDefinitionEthereal extends AbilityDefinition
 public class AbilityDefinitionInvulnerable extends AbilityDefinition
 ```
 
+'Avul' / [AbilityIds.invulnerable](/stdlib/ref/_wurst/AbilityIds.html#abilityids-invulnerable)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12688,6 +14783,8 @@ public class AbilityDefinitionInvulnerable extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionGyrocopterBombs extends AbilityDefinition
 ```
+
+'Agyb' / [AbilityIds.gyrocopterBombs](/stdlib/ref/_wurst/AbilityIds.html#abilityids-gyrocopterBombs)
 
 **Members:**
 
@@ -12699,6 +14796,8 @@ public class AbilityDefinitionGyrocopterBombs extends AbilityDefinition
 public class AbilityDefinitionRevenge extends AbilityDefinition
 ```
 
+'Arng' / [AbilityIds.revenge](/stdlib/ref/_wurst/AbilityIds.html#abilityids-revenge)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12708,6 +14807,8 @@ public class AbilityDefinitionRevenge extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAlarm extends AbilityDefinition
 ```
+
+'Aalr' / [AbilityIds.alarm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-alarm)
 
 **Members:**
 
@@ -12719,6 +14820,8 @@ public class AbilityDefinitionAlarm extends AbilityDefinition
 public class AbilityDefinitionRally extends AbilityDefinition
 ```
 
+'ARal' / [AbilityIds.rallyPoint](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rallyPoint)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12728,6 +14831,8 @@ public class AbilityDefinitionRally extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionShadowHunterVoodooo extends AbilityDefinition
 ```
+
+'AOvd' / [AbilityIds.bigBadVoodoo](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bigBadVoodoo)
 
 **Members:**
 
@@ -12739,6 +14844,8 @@ public class AbilityDefinitionShadowHunterVoodooo extends AbilityDefinition
 public class AbilityDefinitionAcolyteHarvest extends AbilityDefinition
 ```
 
+'Aaha' / [AbilityIds.gather2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-gather2)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12748,6 +14855,8 @@ public class AbilityDefinitionAcolyteHarvest extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAwaken extends AbilityDefinition
 ```
+
+'Aawa' / [AbilityIds.awakenHero](/stdlib/ref/_wurst/AbilityIds.html#abilityids-awakenHero)
 
 **Members:**
 
@@ -12759,6 +14868,8 @@ public class AbilityDefinitionAwaken extends AbilityDefinition
 public class AbilityDefinitionBuildNeutral extends AbilityDefinition
 ```
 
+'ANbu' / [AbilityIds.neutralBuild](/stdlib/ref/_wurst/AbilityIds.html#abilityids-neutralBuild)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12768,6 +14879,8 @@ public class AbilityDefinitionBuildNeutral extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionBuildHuman extends AbilityDefinition
 ```
+
+'AHbu' / [AbilityIds.humanBuild](/stdlib/ref/_wurst/AbilityIds.html#abilityids-humanBuild)
 
 **Members:**
 
@@ -12779,6 +14892,8 @@ public class AbilityDefinitionBuildHuman extends AbilityDefinition
 public class AbilityDefinitionBuildOrc extends AbilityDefinition
 ```
 
+'AObu' / [AbilityIds.orcBuild](/stdlib/ref/_wurst/AbilityIds.html#abilityids-orcBuild)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12788,6 +14903,8 @@ public class AbilityDefinitionBuildOrc extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionBuildNightElf extends AbilityDefinition
 ```
+
+'AEbu' / [AbilityIds.nightElfBuild](/stdlib/ref/_wurst/AbilityIds.html#abilityids-nightElfBuild)
 
 **Members:**
 
@@ -12799,6 +14916,8 @@ public class AbilityDefinitionBuildNightElf extends AbilityDefinition
 public class AbilityDefinitionBuildNaga extends AbilityDefinition
 ```
 
+'AGbu' / [AbilityIds.nagaBuild](/stdlib/ref/_wurst/AbilityIds.html#abilityids-nagaBuild)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12808,6 +14927,8 @@ public class AbilityDefinitionBuildNaga extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionCreepSleep extends AbilityDefinition
 ```
+
+'ACsp' / [AbilityIds.sleep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sleep)
 
 **Members:**
 
@@ -12819,6 +14940,8 @@ public class AbilityDefinitionCreepSleep extends AbilityDefinition
 public class AbilityDefinitionDropInstant extends AbilityDefinition
 ```
 
+'Adri' / [AbilityIds.unloadInstant](/stdlib/ref/_wurst/AbilityIds.html#abilityids-unloadInstant)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12828,6 +14951,8 @@ public class AbilityDefinitionDropInstant extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionDrop extends AbilityDefinition
 ```
+
+'Adro' / [AbilityIds.unload](/stdlib/ref/_wurst/AbilityIds.html#abilityids-unload)
 
 **Members:**
 
@@ -12839,6 +14964,8 @@ public class AbilityDefinitionDrop extends AbilityDefinition
 public class AbilityDefinitionMeatDrop extends AbilityDefinition
 ```
 
+'Amed' / [AbilityIds.dropCorpse](/stdlib/ref/_wurst/AbilityIds.html#abilityids-dropCorpse)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12848,6 +14975,8 @@ public class AbilityDefinitionMeatDrop extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionMeatLoad extends AbilityDefinition
 ```
+
+'Amel' / [AbilityIds.getCorpse](/stdlib/ref/_wurst/AbilityIds.html#abilityids-getCorpse)
 
 **Members:**
 
@@ -12859,6 +14988,8 @@ public class AbilityDefinitionMeatLoad extends AbilityDefinition
 public class AbilityDefinitionMilitiaConversion extends AbilityDefinition
 ```
 
+'Amic' / [AbilityIds.callToArms](/stdlib/ref/_wurst/AbilityIds.html#abilityids-callToArms)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12868,6 +14999,8 @@ public class AbilityDefinitionMilitiaConversion extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionPurchaseItem extends AbilityDefinition
 ```
+
+'Apit' / [AbilityIds.shopPurchaseItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shopPurchaseItem)
 
 **Members:**
 
@@ -12879,6 +15012,8 @@ public class AbilityDefinitionPurchaseItem extends AbilityDefinition
 public class AbilityDefinitionRevive extends AbilityDefinition
 ```
 
+'Arev' / [AbilityIds.reviveHero](/stdlib/ref/_wurst/AbilityIds.html#abilityids-reviveHero)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12888,6 +15023,8 @@ public class AbilityDefinitionRevive extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionSacrificeSacrificialPit extends AbilityDefinition
 ```
+
+'Asac' / [AbilityIds.sacrifice1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sacrifice1)
 
 **Members:**
 
@@ -12899,6 +15036,8 @@ public class AbilityDefinitionSacrificeSacrificialPit extends AbilityDefinition
 public class AbilityDefinitionSacrificeAcolyte extends AbilityDefinition
 ```
 
+'Alam' / [AbilityIds.sacrifice](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sacrifice)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12908,6 +15047,8 @@ public class AbilityDefinitionSacrificeAcolyte extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionSellItem extends AbilityDefinition
 ```
+
+'Asid' / [AbilityIds.sellItems](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sellItems)
 
 **Members:**
 
@@ -12919,6 +15060,8 @@ public class AbilityDefinitionSellItem extends AbilityDefinition
 public class AbilityDefinitionTreeOfLifeForAttachingArt extends AbilityDefinition
 ```
 
+'Atol' / [AbilityIds.treeofLifeupgradeability](/stdlib/ref/_wurst/AbilityIds.html#abilityids-treeofLifeupgradeability)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12928,6 +15071,8 @@ public class AbilityDefinitionTreeOfLifeForAttachingArt extends AbilityDefinitio
 ```wurst
 public class AbilityDefinitionFlag extends AbilityDefinition
 ```
+
+'AIfl' / [AbilityIds.itemCaptureTheFlag](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCaptureTheFlag)
 
 **Members:**
 
@@ -12939,6 +15084,8 @@ public class AbilityDefinitionFlag extends AbilityDefinition
 public class AbilityDefinitionFlagHuman extends AbilityDefinition
 ```
 
+'AIfm' / [AbilityIds.itemCaptureTheFlag1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCaptureTheFlag1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12948,6 +15095,8 @@ public class AbilityDefinitionFlagHuman extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionFlagOrc extends AbilityDefinition
 ```
+
+'AIfo' / [AbilityIds.itemCaptureTheFlag3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCaptureTheFlag3)
 
 **Members:**
 
@@ -12959,6 +15108,8 @@ public class AbilityDefinitionFlagOrc extends AbilityDefinition
 public class AbilityDefinitionFlagNightElf extends AbilityDefinition
 ```
 
+'AIfn' / [AbilityIds.itemCaptureTheFlag2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCaptureTheFlag2)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12968,6 +15119,8 @@ public class AbilityDefinitionFlagNightElf extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionFlagUndead extends AbilityDefinition
 ```
+
+'AIfe' / [AbilityIds.itemCaptureTheFlag4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCaptureTheFlag4)
 
 **Members:**
 
@@ -12979,6 +15132,8 @@ public class AbilityDefinitionFlagUndead extends AbilityDefinition
 public class AbilityDefinitionSoulTrap extends AbilityDefinition
 ```
 
+'AIso' / [AbilityIds.itemSoulTheft](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSoulTheft)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -12988,6 +15143,8 @@ public class AbilityDefinitionSoulTrap extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionSoulPossession extends AbilityDefinition
 ```
+
+'Asou' / [AbilityIds.itemSoulPossession](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSoulPossession)
 
 **Members:**
 
@@ -12999,6 +15156,8 @@ public class AbilityDefinitionSoulPossession extends AbilityDefinition
 public class AbilityDefinitionItemDamageAoe extends AbilityDefinition
 ```
 
+'AIdm' / [AbilityIds.itemAreatreewalldamage](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAreatreewalldamage)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -13009,10 +15168,14 @@ public class AbilityDefinitionItemDamageAoe extends AbilityDefinition
 public class AbilityDefinitionItemInvulNormal extends AbilityDefinition
 ```
 
+'AIvu' / [AbilityIds.itemTemporaryInvulnerability](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemTemporaryInvulnerability)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setData(int level, bool value)`
+- `presetIsMagicImmune(BooleanLevelClosure lc)`
+- `setIsMagicImmune(int level, bool value)`
 
 ### AbilityDefinitionItemRitualDaggerInstant
 
@@ -13020,6 +15183,8 @@ public class AbilityDefinitionItemInvulNormal extends AbilityDefinition
 public class AbilityDefinitionItemRitualDaggerInstant extends AbilityDefinition
 ```
 
+'AIdg' / [AbilityIds.ritualDaggerInstantHeal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ritualDaggerInstantHeal)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -13028,6 +15193,14 @@ public class AbilityDefinitionItemRitualDaggerInstant extends AbilityDefinition
 - `setData1(int level, bool value)`
 - `setData2(int level, string value)`
 - `setHitPointsGained(int level, int value)`
+- `presetLeaveTargetAlive(BooleanLevelClosure lc)`
+- `presetTargetsAllowedforHeal(StringLevelClosure lc)`
+- `presetRequiresUndeadTarget(BooleanLevelClosure lc)`
+- `presetAffectsInitialTarget(BooleanLevelClosure lc)`
+- `presetHitPointsGained(IntLevelClosure lc)`
+- `setTargetsAllowedforHeal(int level, string value)`
+- `setRequiresUndeadTarget(int level, bool value)`
+- `setAffectsInitialTarget(int level, bool value)`
 
 ### AbilityDefinitionItemRitualDaggerRegen
 
@@ -13035,6 +15208,8 @@ public class AbilityDefinitionItemRitualDaggerInstant extends AbilityDefinition
 public class AbilityDefinitionItemRitualDaggerRegen extends AbilityDefinition
 ```
 
+'AIg2' / [AbilityIds.ritualDaggerRegenerate](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ritualDaggerRegenerate)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -13043,6 +15218,14 @@ public class AbilityDefinitionItemRitualDaggerRegen extends AbilityDefinition
 - `setData1(int level, bool value)`
 - `setData2(int level, string value)`
 - `setHitPointsGained(int level, int value)`
+- `presetLeaveTargetAlive(BooleanLevelClosure lc)`
+- `presetTargetsAllowedforHeal(StringLevelClosure lc)`
+- `presetRequiresUndeadTarget(BooleanLevelClosure lc)`
+- `presetAffectsInitialTarget(BooleanLevelClosure lc)`
+- `presetHitPointsGained(IntLevelClosure lc)`
+- `setTargetsAllowedforHeal(int level, string value)`
+- `setRequiresUndeadTarget(int level, bool value)`
+- `setAffectsInitialTarget(int level, bool value)`
 
 ### AbilityDefinitionSlow2
 
@@ -13050,12 +15233,17 @@ public class AbilityDefinitionItemRitualDaggerRegen extends AbilityDefinition
 public class AbilityDefinitionSlow2 extends AbilityDefinition
 ```
 
+'AIno' / [AbilityIds.itemOrbOfVenom](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemOrbOfVenom)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setAlwaysAutocast(int level, bool value)`
 - `setAttackSpeedFactor(int level, real value)`
 - `setMovementSpeedFactor(int level, real value)`
+- `presetMovementSpeedFactor(RealLevelClosure lc)`
+- `presetAlwaysAutocast(BooleanLevelClosure lc)`
+- `presetAttackSpeedFactor(RealLevelClosure lc)`
 
 ### AbilityDefinitionDeathKnightAnimateDead1
 
@@ -13063,18 +15251,25 @@ public class AbilityDefinitionSlow2 extends AbilityDefinition
 public class AbilityDefinitionDeathKnightAnimateDead1 extends AbilityDefinition
 ```
 
+'AUa2' / [AbilityIds.animateDeadDk](/stdlib/ref/_wurst/AbilityIds.html#abilityids-animateDeadDk)
+
 **Members:**
 
 - `construct(int newAbilityId)`
 - `setInheritUpgrades(int level, bool value)`
 - `setRaisedUnitsAreInvulnerable(int level, bool value)`
 - `setNumberofCorpsesRaised(int level, int value)`
+- `presetInheritUpgrades(BooleanLevelClosure lc)`
+- `presetRaisedUnitsAreInvulnerable(BooleanLevelClosure lc)`
+- `presetNumberofCorpsesRaised(IntLevelClosure lc)`
 
 ### AbilityDefinitionResistantSkinCreep
 
 ```wurst
 public class AbilityDefinitionResistantSkinCreep extends AbilityDefinition
 ```
+
+'ACrk' / [AbilityIds.resistantSkinCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-resistantSkinCreep)
 
 **Members:**
 
@@ -13086,6 +15281,8 @@ public class AbilityDefinitionResistantSkinCreep extends AbilityDefinition
 public class AbilityDefinitionResistantSkin31PosCreep extends AbilityDefinition
 ```
 
+'ACsk' / [AbilityIds.resistantSkin31PosCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-resistantSkin31PosCreep)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -13095,6 +15292,8 @@ public class AbilityDefinitionResistantSkin31PosCreep extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionTankTurret extends AbilityDefinition
 ```
+
+'Attu' / [AbilityIds.tankTurret](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tankTurret)
 
 **Members:**
 
@@ -13106,6 +15305,8 @@ public class AbilityDefinitionTankTurret extends AbilityDefinition
 public class AbilityDefinitionFirelordIncinerate1 extends AbilityDefinition
 ```
 
+'ANia' / [AbilityIds.firelordIncinerate1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-firelordIncinerate1)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -13115,6 +15316,8 @@ public class AbilityDefinitionFirelordIncinerate1 extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionPassiveNightelfWellSpringRews extends AbilityDefinition
 ```
+
+'Aews' / [AbilityIds.passiveNightelfWellSpringRews](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveNightelfWellSpringRews)
 
 **Members:**
 
@@ -13126,6 +15329,8 @@ public class AbilityDefinitionPassiveNightelfWellSpringRews extends AbilityDefin
 public class AbilityDefinitionTornadoWander extends AbilityDefinition
 ```
 
+'Atwa' / [AbilityIds.tornadoWander](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tornadoWander)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -13135,6 +15340,8 @@ public class AbilityDefinitionTornadoWander extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionResistantSkin extends AbilityDefinition
 ```
+
+'Arsk' / [AbilityIds.resistantSkin](/stdlib/ref/_wurst/AbilityIds.html#abilityids-resistantSkin)
 
 **Members:**
 
@@ -13146,6 +15353,8 @@ public class AbilityDefinitionResistantSkin extends AbilityDefinition
 public class AbilityDefinitionBuildUndead extends AbilityDefinition
 ```
 
+'AUbu' / [AbilityIds.undeadBuild](/stdlib/ref/_wurst/AbilityIds.html#abilityids-undeadBuild)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -13155,6 +15364,8 @@ public class AbilityDefinitionBuildUndead extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionAttack extends AbilityDefinition
 ```
+
+'Aatk' / [AbilityIds.attack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attack)
 
 **Members:**
 
@@ -13166,6 +15377,8 @@ public class AbilityDefinitionAttack extends AbilityDefinition
 public class AbilityDefinitionPassiveHumanAnimalBreedingRhan extends AbilityDefinition
 ```
 
+'Ahan' / [AbilityIds.passiveHumanAnimalBreedingRhan](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveHumanAnimalBreedingRhan)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -13175,6 +15388,8 @@ public class AbilityDefinitionPassiveHumanAnimalBreedingRhan extends AbilityDefi
 ```wurst
 public class AbilityDefinitionHero extends AbilityDefinition
 ```
+
+'AHer' / [AbilityIds.hero](/stdlib/ref/_wurst/AbilityIds.html#abilityids-hero)
 
 **Members:**
 
@@ -13186,6 +15401,8 @@ public class AbilityDefinitionHero extends AbilityDefinition
 public class AbilityDefinitionWander extends AbilityDefinition
 ```
 
+'Awan' / [AbilityIds.wander](/stdlib/ref/_wurst/AbilityIds.html#abilityids-wander)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -13196,6 +15413,8 @@ public class AbilityDefinitionWander extends AbilityDefinition
 public class AbilityDefinitionLocust extends AbilityDefinition
 ```
 
+'Aloc' / [AbilityIds.locust](/stdlib/ref/_wurst/AbilityIds.html#abilityids-locust)
+
 **Members:**
 
 - `construct(int newAbilityId)`
@@ -13205,6 +15424,15110 @@ public class AbilityDefinitionLocust extends AbilityDefinition
 ```wurst
 public class AbilityDefinitionSpellShield extends AbilityDefinition
 ```
+
+'ANss' / [AbilityIds.spellShield](/stdlib/ref/_wurst/AbilityIds.html#abilityids-spellShield)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionAgilityBonusPlus12
+
+```wurst
+public class AbilityDefinitionAgilityBonusPlus12 extends AbilityDefinition
+```
+
+'AA12' / [AbilityIds.agilityBonusPlus12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-agilityBonusPlus12)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAgilityBonus(int level, int value)`
+- `setStrengthBonus(int level, int value)`
+- `setHideButton(int level, bool value)`
+- `setIntelligenceBonus(int level, int value)`
+- `presetAgilityBonus(IntLevelClosure lc)`
+- `presetStrengthBonus(IntLevelClosure lc)`
+- `presetHideButton(BooleanLevelClosure lc)`
+- `presetIntelligenceBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionItemArmorCorrupt5
+
+```wurst
+public class AbilityDefinitionItemArmorCorrupt5 extends AbilityDefinition
+```
+
+'AACe' / [AbilityIds.itemArmorCorrupt5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorCorrupt5)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageBonusDice(int level, int value)`
+- `setArmorPenalty(int level, int value)`
+- `setEnabledAttackIndex(int level, int value)`
+- `presetDamageBonusDice(IntLevelClosure lc)`
+- `presetArmorPenalty(IntLevelClosure lc)`
+- `presetEnabledAttackIndex(IntLevelClosure lc)`
+
+### AbilityDefinitionItemArmorCorrupt2
+
+```wurst
+public class AbilityDefinitionItemArmorCorrupt2 extends AbilityDefinition
+```
+
+'AACq' / [AbilityIds.itemArmorCorrupt2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorCorrupt2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageBonusDice(int level, int value)`
+- `setArmorPenalty(int level, int value)`
+- `setEnabledAttackIndex(int level, int value)`
+- `presetDamageBonusDice(IntLevelClosure lc)`
+- `presetArmorPenalty(IntLevelClosure lc)`
+- `presetEnabledAttackIndex(IntLevelClosure lc)`
+
+### AbilityDefinitionItemArmorCorrupt3
+
+```wurst
+public class AbilityDefinitionItemArmorCorrupt3 extends AbilityDefinition
+```
+
+'AACw' / [AbilityIds.itemArmorCorrupt3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorCorrupt3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageBonusDice(int level, int value)`
+- `setArmorPenalty(int level, int value)`
+- `setEnabledAttackIndex(int level, int value)`
+- `presetDamageBonusDice(IntLevelClosure lc)`
+- `presetArmorPenalty(IntLevelClosure lc)`
+- `presetEnabledAttackIndex(IntLevelClosure lc)`
+
+### AbilityDefinitionItemSpellDamage8
+
+```wurst
+public class AbilityDefinitionItemSpellDamage8 extends AbilityDefinition
+```
+
+'AADe' / [AbilityIds.itemSpellDamage8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellDamage8)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSpellAmp(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `setAppliestoHealingfromItems(int level, bool value)`
+- `presetSpellAmp(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetAppliestoHealingfromItems(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemSpellDamage7
+
+```wurst
+public class AbilityDefinitionItemSpellDamage7 extends AbilityDefinition
+```
+
+'AADi' / [AbilityIds.itemSpellDamage7](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellDamage7)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSpellAmp(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `setAppliestoHealingfromItems(int level, bool value)`
+- `presetSpellAmp(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetAppliestoHealingfromItems(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemSpellDamage2
+
+```wurst
+public class AbilityDefinitionItemSpellDamage2 extends AbilityDefinition
+```
+
+'AADo' / [AbilityIds.itemSpellDamage2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellDamage2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSpellAmp(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `setAppliestoHealingfromItems(int level, bool value)`
+- `presetSpellAmp(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetAppliestoHealingfromItems(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemSpellDamage3
+
+```wurst
+public class AbilityDefinitionItemSpellDamage3 extends AbilityDefinition
+```
+
+'AADq' / [AbilityIds.itemSpellDamage3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellDamage3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSpellAmp(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `setAppliestoHealingfromItems(int level, bool value)`
+- `presetSpellAmp(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetAppliestoHealingfromItems(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemSpellDamage4
+
+```wurst
+public class AbilityDefinitionItemSpellDamage4 extends AbilityDefinition
+```
+
+'AADr' / [AbilityIds.itemSpellDamage4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellDamage4)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSpellAmp(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `setAppliestoHealingfromItems(int level, bool value)`
+- `presetSpellAmp(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetAppliestoHealingfromItems(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemSpellDamage10
+
+```wurst
+public class AbilityDefinitionItemSpellDamage10 extends AbilityDefinition
+```
+
+'AADt' / [AbilityIds.itemSpellDamage10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellDamage10)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSpellAmp(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `setAppliestoHealingfromItems(int level, bool value)`
+- `presetSpellAmp(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetAppliestoHealingfromItems(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemSpellDamage6
+
+```wurst
+public class AbilityDefinitionItemSpellDamage6 extends AbilityDefinition
+```
+
+'AADu' / [AbilityIds.itemSpellDamage6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellDamage6)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSpellAmp(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `setAppliestoHealingfromItems(int level, bool value)`
+- `presetSpellAmp(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetAppliestoHealingfromItems(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemSpellDamage5
+
+```wurst
+public class AbilityDefinitionItemSpellDamage5 extends AbilityDefinition
+```
+
+'AADw' / [AbilityIds.itemSpellDamage5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellDamage5)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSpellAmp(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `setAppliestoHealingfromItems(int level, bool value)`
+- `presetSpellAmp(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetAppliestoHealingfromItems(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemSpellDamage12
+
+```wurst
+public class AbilityDefinitionItemSpellDamage12 extends AbilityDefinition
+```
+
+'AADy' / [AbilityIds.itemSpellDamage12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellDamage12)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSpellAmp(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `setAppliestoHealingfromItems(int level, bool value)`
+- `presetSpellAmp(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetAppliestoHealingfromItems(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemSpellAmp20
+
+```wurst
+public class AbilityDefinitionItemSpellAmp20 extends AbilityDefinition
+```
+
+'AAPa' / [AbilityIds.itemSpellAmp20](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellAmp20)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSpellAmp(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `setAppliestoHealingfromItems(int level, bool value)`
+- `presetSpellAmp(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetAppliestoHealingfromItems(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemSpellAmp3
+
+```wurst
+public class AbilityDefinitionItemSpellAmp3 extends AbilityDefinition
+```
+
+'AAPe' / [AbilityIds.itemSpellAmp3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellAmp3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSpellAmp(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `setAppliestoHealingfromItems(int level, bool value)`
+- `presetSpellAmp(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetAppliestoHealingfromItems(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemSpellAmp4
+
+```wurst
+public class AbilityDefinitionItemSpellAmp4 extends AbilityDefinition
+```
+
+'AAPi' / [AbilityIds.itemSpellAmp4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellAmp4)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSpellAmp(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `setAppliestoHealingfromItems(int level, bool value)`
+- `presetSpellAmp(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetAppliestoHealingfromItems(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemSpellAmp6
+
+```wurst
+public class AbilityDefinitionItemSpellAmp6 extends AbilityDefinition
+```
+
+'AAPo' / [AbilityIds.itemSpellAmp6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellAmp6)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSpellAmp(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `setAppliestoHealingfromItems(int level, bool value)`
+- `presetSpellAmp(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetAppliestoHealingfromItems(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemSpellAmp15
+
+```wurst
+public class AbilityDefinitionItemSpellAmp15 extends AbilityDefinition
+```
+
+'AAPp' / [AbilityIds.itemSpellAmp15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellAmp15)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSpellAmp(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `setAppliestoHealingfromItems(int level, bool value)`
+- `presetSpellAmp(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetAppliestoHealingfromItems(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemSpellAmp12
+
+```wurst
+public class AbilityDefinitionItemSpellAmp12 extends AbilityDefinition
+```
+
+'AAPq' / [AbilityIds.itemSpellAmp12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellAmp12)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSpellAmp(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `setAppliestoHealingfromItems(int level, bool value)`
+- `presetSpellAmp(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetAppliestoHealingfromItems(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemSpellAmp8
+
+```wurst
+public class AbilityDefinitionItemSpellAmp8 extends AbilityDefinition
+```
+
+'AAPr' / [AbilityIds.itemSpellAmp8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellAmp8)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSpellAmp(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `setAppliestoHealingfromItems(int level, bool value)`
+- `presetSpellAmp(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetAppliestoHealingfromItems(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemSpellAmp101
+
+```wurst
+public class AbilityDefinitionItemSpellAmp101 extends AbilityDefinition
+```
+
+'AAPs' / [AbilityIds.itemSpellAmp101](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellAmp101)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSpellAmp(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `setAppliestoHealingfromItems(int level, bool value)`
+- `presetSpellAmp(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetAppliestoHealingfromItems(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemSpellAmp13
+
+```wurst
+public class AbilityDefinitionItemSpellAmp13 extends AbilityDefinition
+```
+
+'AAPt' / [AbilityIds.itemSpellAmp13](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellAmp13)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSpellAmp(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `setAppliestoHealingfromItems(int level, bool value)`
+- `presetSpellAmp(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetAppliestoHealingfromItems(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemSpellAmp18
+
+```wurst
+public class AbilityDefinitionItemSpellAmp18 extends AbilityDefinition
+```
+
+'AAPu' / [AbilityIds.itemSpellAmp18](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellAmp18)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSpellAmp(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `setAppliestoHealingfromItems(int level, bool value)`
+- `presetSpellAmp(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetAppliestoHealingfromItems(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemSpellAmp5
+
+```wurst
+public class AbilityDefinitionItemSpellAmp5 extends AbilityDefinition
+```
+
+'AAPw' / [AbilityIds.itemSpellAmp5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellAmp5)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSpellAmp(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `setAppliestoHealingfromItems(int level, bool value)`
+- `presetSpellAmp(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetAppliestoHealingfromItems(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemSpellAmp26
+
+```wurst
+public class AbilityDefinitionItemSpellAmp26 extends AbilityDefinition
+```
+
+'AAPx' / [AbilityIds.itemSpellAmp26](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellAmp26)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSpellAmp(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `setAppliestoHealingfromItems(int level, bool value)`
+- `presetSpellAmp(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetAppliestoHealingfromItems(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemSpellAmp7
+
+```wurst
+public class AbilityDefinitionItemSpellAmp7 extends AbilityDefinition
+```
+
+'AAPy' / [AbilityIds.itemSpellAmp7](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellAmp7)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSpellAmp(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `setAppliestoHealingfromItems(int level, bool value)`
+- `presetSpellAmp(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetAppliestoHealingfromItems(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemHealthRegenAura3
+
+```wurst
+public class AbilityDefinitionItemHealthRegenAura3 extends AbilityDefinition
+```
+
+'AARe' / [AbilityIds.itemHealthRegenAura3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealthRegenAura3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAmountofHitPointsRegenerated(int level, real value)`
+- `setPercentage(int level, bool value)`
+- `presetAmountofHitPointsRegenerated(RealLevelClosure lc)`
+- `presetPercentage(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemHealthRegenAura1
+
+```wurst
+public class AbilityDefinitionItemHealthRegenAura1 extends AbilityDefinition
+```
+
+'AARq' / [AbilityIds.itemHealthRegenAura1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealthRegenAura1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAmountofHitPointsRegenerated(int level, real value)`
+- `setPercentage(int level, bool value)`
+- `presetAmountofHitPointsRegenerated(RealLevelClosure lc)`
+- `presetPercentage(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemHealthRegenAura2
+
+```wurst
+public class AbilityDefinitionItemHealthRegenAura2 extends AbilityDefinition
+```
+
+'AARw' / [AbilityIds.itemHealthRegenAura2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealthRegenAura2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAmountofHitPointsRegenerated(int level, real value)`
+- `setPercentage(int level, bool value)`
+- `presetAmountofHitPointsRegenerated(RealLevelClosure lc)`
+- `presetPercentage(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemAttackSpeedIncrease101
+
+```wurst
+public class AbilityDefinitionItemAttackSpeedIncrease101 extends AbilityDefinition
+```
+
+'AASa' / [AbilityIds.itemAttackSpeedIncrease101](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease101)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackSpeedIncrease(int level, real value)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+
+### AbilityDefinitionItemAttackSpeedIncrease4
+
+```wurst
+public class AbilityDefinitionItemAttackSpeedIncrease4 extends AbilityDefinition
+```
+
+'AASd' / [AbilityIds.itemAttackSpeedIncrease4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease4)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackSpeedIncrease(int level, real value)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+
+### AbilityDefinitionItemAttackSpeedIncrease8
+
+```wurst
+public class AbilityDefinitionItemAttackSpeedIncrease8 extends AbilityDefinition
+```
+
+'AASe' / [AbilityIds.itemAttackSpeedIncrease8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease8)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackSpeedIncrease(int level, real value)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+
+### AbilityDefinitionItemAttackSpeedIncrease24
+
+```wurst
+public class AbilityDefinitionItemAttackSpeedIncrease24 extends AbilityDefinition
+```
+
+'AASf' / [AbilityIds.itemAttackSpeedIncrease24](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease24)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackSpeedIncrease(int level, real value)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+
+### AbilityDefinitionItemAttackSpeedIncrease30
+
+```wurst
+public class AbilityDefinitionItemAttackSpeedIncrease30 extends AbilityDefinition
+```
+
+'AASg' / [AbilityIds.itemAttackSpeedIncrease30](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease30)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackSpeedIncrease(int level, real value)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+
+### AbilityDefinitionItemAttackSpeedIncrease201
+
+```wurst
+public class AbilityDefinitionItemAttackSpeedIncrease201 extends AbilityDefinition
+```
+
+'AASh' / [AbilityIds.itemAttackSpeedIncrease201](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease201)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackSpeedIncrease(int level, real value)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+
+### AbilityDefinitionItemAttackSpeedIncrease12
+
+```wurst
+public class AbilityDefinitionItemAttackSpeedIncrease12 extends AbilityDefinition
+```
+
+'AASi' / [AbilityIds.itemAttackSpeedIncrease12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease12)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackSpeedIncrease(int level, real value)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+
+### AbilityDefinitionItemAttackSpeedIncrease25
+
+```wurst
+public class AbilityDefinitionItemAttackSpeedIncrease25 extends AbilityDefinition
+```
+
+'AASo' / [AbilityIds.itemAttackSpeedIncrease25](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease25)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackSpeedIncrease(int level, real value)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+
+### AbilityDefinitionItemAttackSpeedIncrease20
+
+```wurst
+public class AbilityDefinitionItemAttackSpeedIncrease20 extends AbilityDefinition
+```
+
+'AASp' / [AbilityIds.itemAttackSpeedIncrease20](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease20)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackSpeedIncrease(int level, real value)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+
+### AbilityDefinitionItemAttackSpeedIncrease15
+
+```wurst
+public class AbilityDefinitionItemAttackSpeedIncrease15 extends AbilityDefinition
+```
+
+'AASq' / [AbilityIds.itemAttackSpeedIncrease15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease15)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackSpeedIncrease(int level, real value)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+
+### AbilityDefinitionItemAttackSpeedIncrease10
+
+```wurst
+public class AbilityDefinitionItemAttackSpeedIncrease10 extends AbilityDefinition
+```
+
+'AASr' / [AbilityIds.itemAttackSpeedIncrease10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease10)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackSpeedIncrease(int level, real value)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+
+### AbilityDefinitionItemAttackSpeedIncrease3
+
+```wurst
+public class AbilityDefinitionItemAttackSpeedIncrease3 extends AbilityDefinition
+```
+
+'AASs' / [AbilityIds.itemAttackSpeedIncrease3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackSpeedIncrease(int level, real value)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+
+### AbilityDefinitionItemAttackSpeedIncrease16
+
+```wurst
+public class AbilityDefinitionItemAttackSpeedIncrease16 extends AbilityDefinition
+```
+
+'AASu' / [AbilityIds.itemAttackSpeedIncrease16](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease16)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackSpeedIncrease(int level, real value)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+
+### AbilityDefinitionItemAttackSpeedIncrease9
+
+```wurst
+public class AbilityDefinitionItemAttackSpeedIncrease9 extends AbilityDefinition
+```
+
+'AASw' / [AbilityIds.itemAttackSpeedIncrease9](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease9)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackSpeedIncrease(int level, real value)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+
+### AbilityDefinitionItemAttackSpeedIncrease6
+
+```wurst
+public class AbilityDefinitionItemAttackSpeedIncrease6 extends AbilityDefinition
+```
+
+'AASy' / [AbilityIds.itemAttackSpeedIncrease6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease6)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackSpeedIncrease(int level, real value)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+
+### AbilityDefinitionItemAbilitySpeed25
+
+```wurst
+public class AbilityDefinitionItemAbilitySpeed25 extends AbilityDefinition
+```
+
+'ACDa' / [AbilityIds.itemAbilitySpeed25](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAbilitySpeed25)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setCooldownReduction(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `presetCooldownReduction(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemAbilitySpeed15
+
+```wurst
+public class AbilityDefinitionItemAbilitySpeed15 extends AbilityDefinition
+```
+
+'ACDd' / [AbilityIds.itemAbilitySpeed15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAbilitySpeed15)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setCooldownReduction(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `presetCooldownReduction(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemAbilitySpeed20
+
+```wurst
+public class AbilityDefinitionItemAbilitySpeed20 extends AbilityDefinition
+```
+
+'ACDf' / [AbilityIds.itemAbilitySpeed20](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAbilitySpeed20)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setCooldownReduction(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `presetCooldownReduction(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemAbilitySpeed8
+
+```wurst
+public class AbilityDefinitionItemAbilitySpeed8 extends AbilityDefinition
+```
+
+'ACDi' / [AbilityIds.itemAbilitySpeed8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAbilitySpeed8)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setCooldownReduction(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `presetCooldownReduction(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemAbilitySpeed10
+
+```wurst
+public class AbilityDefinitionItemAbilitySpeed10 extends AbilityDefinition
+```
+
+'ACDo' / [AbilityIds.itemAbilitySpeed10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAbilitySpeed10)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setCooldownReduction(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `presetCooldownReduction(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemAbilitySpeed2
+
+```wurst
+public class AbilityDefinitionItemAbilitySpeed2 extends AbilityDefinition
+```
+
+'ACDp' / [AbilityIds.itemAbilitySpeed2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAbilitySpeed2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setCooldownReduction(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `presetCooldownReduction(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemAbilitySpeed12
+
+```wurst
+public class AbilityDefinitionItemAbilitySpeed12 extends AbilityDefinition
+```
+
+'ACDq' / [AbilityIds.itemAbilitySpeed12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAbilitySpeed12)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setCooldownReduction(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `presetCooldownReduction(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemAbilitySpeed5
+
+```wurst
+public class AbilityDefinitionItemAbilitySpeed5 extends AbilityDefinition
+```
+
+'ACDt' / [AbilityIds.itemAbilitySpeed5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAbilitySpeed5)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setCooldownReduction(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `presetCooldownReduction(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemAbilitySpeed6
+
+```wurst
+public class AbilityDefinitionItemAbilitySpeed6 extends AbilityDefinition
+```
+
+'ACDu' / [AbilityIds.itemAbilitySpeed6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAbilitySpeed6)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setCooldownReduction(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `presetCooldownReduction(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemAbilitySpeed3
+
+```wurst
+public class AbilityDefinitionItemAbilitySpeed3 extends AbilityDefinition
+```
+
+'ACDw' / [AbilityIds.itemAbilitySpeed3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAbilitySpeed3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setCooldownReduction(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `presetCooldownReduction(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemAbilitySpeed4
+
+```wurst
+public class AbilityDefinitionItemAbilitySpeed4 extends AbilityDefinition
+```
+
+'ACDy' / [AbilityIds.itemAbilitySpeed4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAbilitySpeed4)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setCooldownReduction(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `presetCooldownReduction(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+
+### AbilityDefinitionChronomasterSGlovesAlly
+
+```wurst
+public class AbilityDefinitionChronomasterSGlovesAlly extends AbilityDefinition
+```
+
+'ACGa' / [AbilityIds.chronomasterSGlovesAlly](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chronomasterSGlovesAlly)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMovementSpeedIncrease(int level, real value)`
+  Movement Speed Increase (%) / 'Oae1'
+- `setAttackSpeedIncrease(int level, real value)`
+  Attack Speed Increase (%) / 'Oae2'
+- `presetMovementSpeedIncrease(RealLevelClosure lc)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+
+### AbilityDefinitionChronomasterSGlovesEnemy
+
+```wurst
+public class AbilityDefinitionChronomasterSGlovesEnemy extends AbilityDefinition
+```
+
+'ACGe' / [AbilityIds.chronomasterSGlovesEnemy](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chronomasterSGlovesEnemy)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMovementSpeedIncrease(int level, real value)`
+  Movement Speed Increase (%) / 'Oae1'
+- `setAttackSpeedIncrease(int level, real value)`
+  Attack Speed Increase (%) / 'Oae2'
+- `presetMovementSpeedIncrease(RealLevelClosure lc)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+
+### AbilityDefinitionItemCleave30
+
+```wurst
+public class AbilityDefinitionItemCleave30 extends AbilityDefinition
+```
+
+'ACLw' / [AbilityIds.itemCleave30](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCleave30)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDistributedDamageFactor(int level, real value)`
+- `presetDistributedDamageFactor(RealLevelClosure lc)`
+
+### AbilityDefinitionItemCriticalChance20
+
+```wurst
+public class AbilityDefinitionItemCriticalChance20 extends AbilityDefinition
+```
+
+'ACSb' / [AbilityIds.itemCriticalChance20](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalChance20)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setChancetoEvade(int level, real value)`
+- `setExcludeItemDamage(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemCriticalChance12
+
+```wurst
+public class AbilityDefinitionItemCriticalChance12 extends AbilityDefinition
+```
+
+'ACSc' / [AbilityIds.itemCriticalChance12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalChance12)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setChancetoEvade(int level, real value)`
+- `setExcludeItemDamage(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemCriticalChance7
+
+```wurst
+public class AbilityDefinitionItemCriticalChance7 extends AbilityDefinition
+```
+
+'ACSd' / [AbilityIds.itemCriticalChance7](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalChance7)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setChancetoEvade(int level, real value)`
+- `setExcludeItemDamage(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemCriticalChance3
+
+```wurst
+public class AbilityDefinitionItemCriticalChance3 extends AbilityDefinition
+```
+
+'ACSe' / [AbilityIds.itemCriticalChance3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalChance3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setChancetoEvade(int level, real value)`
+- `setExcludeItemDamage(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemCriticalChance30
+
+```wurst
+public class AbilityDefinitionItemCriticalChance30 extends AbilityDefinition
+```
+
+'ACSg' / [AbilityIds.itemCriticalChance30](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalChance30)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setChancetoEvade(int level, real value)`
+- `setExcludeItemDamage(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemCriticalChance6
+
+```wurst
+public class AbilityDefinitionItemCriticalChance6 extends AbilityDefinition
+```
+
+'ACSj' / [AbilityIds.itemCriticalChance6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalChance6)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setChancetoEvade(int level, real value)`
+- `setExcludeItemDamage(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemCriticalChance16
+
+```wurst
+public class AbilityDefinitionItemCriticalChance16 extends AbilityDefinition
+```
+
+'ACSn' / [AbilityIds.itemCriticalChance16](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalChance16)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setChancetoEvade(int level, real value)`
+- `setExcludeItemDamage(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemCriticalChance8
+
+```wurst
+public class AbilityDefinitionItemCriticalChance8 extends AbilityDefinition
+```
+
+'ACSo' / [AbilityIds.itemCriticalChance8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalChance8)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setChancetoEvade(int level, real value)`
+- `setExcludeItemDamage(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemCriticalChance10
+
+```wurst
+public class AbilityDefinitionItemCriticalChance10 extends AbilityDefinition
+```
+
+'ACSq' / [AbilityIds.itemCriticalChance10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalChance10)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setChancetoEvade(int level, real value)`
+- `setExcludeItemDamage(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemCriticalChance2
+
+```wurst
+public class AbilityDefinitionItemCriticalChance2 extends AbilityDefinition
+```
+
+'ACSr' / [AbilityIds.itemCriticalChance2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalChance2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setChancetoEvade(int level, real value)`
+- `setExcludeItemDamage(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemCriticalChance4
+
+```wurst
+public class AbilityDefinitionItemCriticalChance4 extends AbilityDefinition
+```
+
+'ACSu' / [AbilityIds.itemCriticalChance4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalChance4)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setChancetoEvade(int level, real value)`
+- `setExcludeItemDamage(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemCriticalChance18
+
+```wurst
+public class AbilityDefinitionItemCriticalChance18 extends AbilityDefinition
+```
+
+'ACSv' / [AbilityIds.itemCriticalChance18](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalChance18)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setChancetoEvade(int level, real value)`
+- `setExcludeItemDamage(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemCriticalChance15
+
+```wurst
+public class AbilityDefinitionItemCriticalChance15 extends AbilityDefinition
+```
+
+'ACSx' / [AbilityIds.itemCriticalChance15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalChance15)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setChancetoEvade(int level, real value)`
+- `setExcludeItemDamage(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemCriticalChance5
+
+```wurst
+public class AbilityDefinitionItemCriticalChance5 extends AbilityDefinition
+```
+
+'ACSy' / [AbilityIds.itemCriticalChance5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalChance5)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setChancetoEvade(int level, real value)`
+- `setExcludeItemDamage(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemCriticalChance25
+
+```wurst
+public class AbilityDefinitionItemCriticalChance25 extends AbilityDefinition
+```
+
+'ACSz' / [AbilityIds.itemCriticalChance25](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalChance25)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setChancetoEvade(int level, real value)`
+- `setExcludeItemDamage(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemCriticalDamage10
+
+```wurst
+public class AbilityDefinitionItemCriticalDamage10 extends AbilityDefinition
+```
+
+'ACXe' / [AbilityIds.itemCriticalDamage10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalDamage10)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setChancetoEvade(int level, real value)`
+- `setExcludeItemDamage(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemCriticalDamage20
+
+```wurst
+public class AbilityDefinitionItemCriticalDamage20 extends AbilityDefinition
+```
+
+'ACXi' / [AbilityIds.itemCriticalDamage20](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalDamage20)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setChancetoEvade(int level, real value)`
+- `setExcludeItemDamage(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemCriticalDamage12
+
+```wurst
+public class AbilityDefinitionItemCriticalDamage12 extends AbilityDefinition
+```
+
+'ACXo' / [AbilityIds.itemCriticalDamage12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalDamage12)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setChancetoEvade(int level, real value)`
+- `setExcludeItemDamage(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemCriticalDamage5
+
+```wurst
+public class AbilityDefinitionItemCriticalDamage5 extends AbilityDefinition
+```
+
+'ACXq' / [AbilityIds.itemCriticalDamage5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalDamage5)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setChancetoEvade(int level, real value)`
+- `setExcludeItemDamage(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemCriticalDamage13
+
+```wurst
+public class AbilityDefinitionItemCriticalDamage13 extends AbilityDefinition
+```
+
+'ACXr' / [AbilityIds.itemCriticalDamage13](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalDamage13)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setChancetoEvade(int level, real value)`
+- `setExcludeItemDamage(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemCriticalDamage30
+
+```wurst
+public class AbilityDefinitionItemCriticalDamage30 extends AbilityDefinition
+```
+
+'ACXt' / [AbilityIds.itemCriticalDamage30](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalDamage30)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setChancetoEvade(int level, real value)`
+- `setExcludeItemDamage(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemCriticalDamage25
+
+```wurst
+public class AbilityDefinitionItemCriticalDamage25 extends AbilityDefinition
+```
+
+'ACXu' / [AbilityIds.itemCriticalDamage25](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalDamage25)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setChancetoEvade(int level, real value)`
+- `setExcludeItemDamage(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemCriticalDamage15
+
+```wurst
+public class AbilityDefinitionItemCriticalDamage15 extends AbilityDefinition
+```
+
+'ACXw' / [AbilityIds.itemCriticalDamage15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalDamage15)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setChancetoEvade(int level, real value)`
+- `setExcludeItemDamage(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemCriticalDamage40
+
+```wurst
+public class AbilityDefinitionItemCriticalDamage40 extends AbilityDefinition
+```
+
+'ACXy' / [AbilityIds.itemCriticalDamage40](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalDamage40)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setChancetoEvade(int level, real value)`
+- `setExcludeItemDamage(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionAttackBonusPlus18
+
+```wurst
+public class AbilityDefinitionAttackBonusPlus18 extends AbilityDefinition
+```
+
+'AD18' / [AbilityIds.attackBonusPlus18](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonusPlus18)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackBonus(int level, int value)`
+- `presetAttackBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionItemDamage20
+
+```wurst
+public class AbilityDefinitionItemDamage20 extends AbilityDefinition
+```
+
+'AD20' / [AbilityIds.itemDamage20](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDamage20)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackBonus(int level, int value)`
+- `presetAttackBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionAttackBonusPlus24
+
+```wurst
+public class AbilityDefinitionAttackBonusPlus24 extends AbilityDefinition
+```
+
+'AD24' / [AbilityIds.attackBonusPlus24](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonusPlus24)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackBonus(int level, int value)`
+- `presetAttackBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionAttackBonusPlus45
+
+```wurst
+public class AbilityDefinitionAttackBonusPlus45 extends AbilityDefinition
+```
+
+'AD45' / [AbilityIds.attackBonusPlus45](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonusPlus45)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackBonus(int level, int value)`
+- `presetAttackBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionItemDaybreakerAttack
+
+```wurst
+public class AbilityDefinitionItemDaybreakerAttack extends AbilityDefinition
+```
+
+'ADBa' / [AbilityIds.itemDaybreakerAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDaybreakerAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemDaybreakerFS
+
+```wurst
+public class AbilityDefinitionItemDaybreakerFS extends AbilityDefinition
+```
+
+'ADBf' / [AbilityIds.itemDaybreakerFS](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDaybreakerFS)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setFullDamageInterval(int level, real value)`
+- `setFullDamageDealt(int level, real value)`
+- `setHalfDamageDealt(int level, real value)`
+- `setBuildingReduction(int level, real value)`
+- `setMaximumDamage(int level, real value)`
+- `setHalfDamageInterval(int level, real value)`
+- `presetFullDamageInterval(RealLevelClosure lc)`
+- `presetFullDamageDealt(RealLevelClosure lc)`
+- `presetHalfDamageDealt(RealLevelClosure lc)`
+- `presetBuildingReduction(RealLevelClosure lc)`
+- `presetMaximumDamage(RealLevelClosure lc)`
+- `presetHalfDamageInterval(RealLevelClosure lc)`
+
+### AbilityDefinitionDarkCommandersAura
+
+```wurst
+public class AbilityDefinitionDarkCommandersAura extends AbilityDefinition
+```
+
+'ADCa' / [AbilityIds.darkCommandersAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-darkCommandersAura)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionItemDiseaseCloud1
+
+```wurst
+public class AbilityDefinitionItemDiseaseCloud1 extends AbilityDefinition
+```
+
+'ADCq' / [AbilityIds.itemDiseaseCloud1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDiseaseCloud1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setPlagueWardUnitType(int level, string value)`
+- `setDurationofPlagueWard(int level, real value)`
+- `setAuraDuration(int level, real value)`
+- `setDamageperSecond(int level, real value)`
+- `presetPlagueWardUnitType(StringLevelClosure lc)`
+- `presetDurationofPlagueWard(RealLevelClosure lc)`
+- `presetAuraDuration(RealLevelClosure lc)`
+- `presetDamageperSecond(RealLevelClosure lc)`
+
+### AbilityDefinitionDarkMistressAura
+
+```wurst
+public class AbilityDefinitionDarkMistressAura extends AbilityDefinition
+```
+
+'ADMa' / [AbilityIds.darkMistressAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-darkMistressAura)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMovementSpeedIncrease(int level, real value)`
+  Movement Speed Increase (%) / 'Oae1'
+- `setAttackSpeedIncrease(int level, real value)`
+  Attack Speed Increase (%) / 'Oae2'
+- `presetMovementSpeedIncrease(RealLevelClosure lc)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+
+### AbilityDefinitionAttackBonus5
+
+```wurst
+public class AbilityDefinitionAttackBonus5 extends AbilityDefinition
+```
+
+'ADN5' / [AbilityIds.attackBonus5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonus5)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackBonus(int level, int value)`
+- `presetAttackBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionItemDamageReflect15
+
+```wurst
+public class AbilityDefinitionItemDamageReflect15 extends AbilityDefinition
+```
+
+'ADRq' / [AbilityIds.itemDamageReflect15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDamageReflect15)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setReceivedDamageFactor(int level, real value)`
+- `setReturnedDamageFactor(int level, real value)`
+- `setDefenseBonus(int level, real value)`
+- `presetReceivedDamageFactor(RealLevelClosure lc)`
+- `presetReturnedDamageFactor(RealLevelClosure lc)`
+- `presetDefenseBonus(RealLevelClosure lc)`
+
+### AbilityDefinitionItemDamageReflect20
+
+```wurst
+public class AbilityDefinitionItemDamageReflect20 extends AbilityDefinition
+```
+
+'ADRw' / [AbilityIds.itemDamageReflect20](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDamageReflect20)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setReceivedDamageFactor(int level, real value)`
+- `setReturnedDamageFactor(int level, real value)`
+- `setDefenseBonus(int level, real value)`
+- `presetReceivedDamageFactor(RealLevelClosure lc)`
+- `presetReturnedDamageFactor(RealLevelClosure lc)`
+- `presetDefenseBonus(RealLevelClosure lc)`
+
+### AbilityDefinitionAltarOfDarknessHealthRegen
+
+```wurst
+public class AbilityDefinitionAltarOfDarknessHealthRegen extends AbilityDefinition
+```
+
+'ADhr' / [AbilityIds.altarOfDarknessHealthRegen](/stdlib/ref/_wurst/AbilityIds.html#abilityids-altarOfDarknessHealthRegen)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAmountofHitPointsRegenerated(int level, real value)`
+- `setPercentage(int level, bool value)`
+- `presetAmountofHitPointsRegenerated(RealLevelClosure lc)`
+- `presetPercentage(BooleanLevelClosure lc)`
+
+### AbilityDefinitionAltarOfDarknessManaRegen
+
+```wurst
+public class AbilityDefinitionAltarOfDarknessManaRegen extends AbilityDefinition
+```
+
+'ADmr' / [AbilityIds.altarOfDarknessManaRegen](/stdlib/ref/_wurst/AbilityIds.html#abilityids-altarOfDarknessManaRegen)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAmountRegenerated(int level, real value)`
+- `setPercentage(int level, bool value)`
+- `presetAmountRegenerated(RealLevelClosure lc)`
+- `presetPercentage(BooleanLevelClosure lc)`
+
+### AbilityDefinitionPurifierBladeHolyLightItem
+
+```wurst
+public class AbilityDefinitionPurifierBladeHolyLightItem extends AbilityDefinition
+```
+
+'AEhl' / [AbilityIds.purifierBladeHolyLightItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-purifierBladeHolyLightItem)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAmountHealedDamaged(int level, real value)`
+  Amount Healed/Damaged / 'Hhb1'
+- `presetAmountHealedDamaged(RealLevelClosure lc)`
+
+### AbilityDefinitionPurifierBladeItem
+
+```wurst
+public class AbilityDefinitionPurifierBladeItem extends AbilityDefinition
+```
+
+'AEpb' / [AbilityIds.purifierBladeItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-purifierBladeItem)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChanceToHitUnits(int level, real value)`
+  Chance To Hit Units (%) / 'Iob2'
+- `setChanceToHitSummons(int level, real value)`
+  Chance To Hit Summons (%) / 'Iob4'
+- `setEffectAbility(int level, string value)`
+- `setChanceToHitHeros(int level, real value)`
+  Chance To Hit Heros (%) / 'Iob3'
+- `setDamageBonus(int level, real value)`
+- `setEnabledAttackIndex(int level, int value)`
+- `presetChanceToHitUnits(RealLevelClosure lc)`
+- `presetChanceToHitSummons(RealLevelClosure lc)`
+- `presetEffectAbility(StringLevelClosure lc)`
+- `presetChanceToHitHeros(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetEnabledAttackIndex(IntLevelClosure lc)`
+
+### AbilityDefinitionEquipmentInventory1
+
+```wurst
+public class AbilityDefinitionEquipmentInventory1 extends AbilityDefinition
+```
+
+'AEqu' / [AbilityIds.equipmentInventory1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-equipmentInventory1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setEquipmentLevelThreshold(int level, int value)`
+- `presetEquipmentLevelThreshold(IntLevelClosure lc)`
+
+### AbilityDefinitionItemFeedback4
+
+```wurst
+public class AbilityDefinitionItemFeedback4 extends AbilityDefinition
+```
+
+'AFBq' / [AbilityIds.itemFeedback4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemFeedback4)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMaxManaDrainedUnits(int level, real value)`
+- `setDamageRatioUnits(int level, real value)`
+  Damage Ratio - Units (%) / 'fbk2'
+- `setMaxManaDrainedHeros(int level, real value)`
+- `setDamageRatioHeros(int level, real value)`
+  Damage Ratio - Heros (%) / 'fbk4'
+- `setSummonedDamage(int level, real value)`
+- `presetMaxManaDrainedUnits(RealLevelClosure lc)`
+- `presetDamageRatioUnits(RealLevelClosure lc)`
+- `presetMaxManaDrainedHeros(RealLevelClosure lc)`
+- `presetDamageRatioHeros(RealLevelClosure lc)`
+- `presetSummonedDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionItemFingerOfDeath8
+
+```wurst
+public class AbilityDefinitionItemFingerOfDeath8 extends AbilityDefinition
+```
+
+'AFDe' / [AbilityIds.itemFingerOfDeath8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemFingerOfDeath8)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setGraphicDuration(int level, real value)`
+- `setGraphicDelay(int level, real value)`
+- `setDamage(int level, real value)`
+- `presetGraphicDuration(RealLevelClosure lc)`
+- `presetGraphicDelay(RealLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionItemFingerOfDeath12
+
+```wurst
+public class AbilityDefinitionItemFingerOfDeath12 extends AbilityDefinition
+```
+
+'AFDq' / [AbilityIds.itemFingerOfDeath12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemFingerOfDeath12)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setGraphicDuration(int level, real value)`
+- `setGraphicDelay(int level, real value)`
+- `setDamage(int level, real value)`
+- `presetGraphicDuration(RealLevelClosure lc)`
+- `presetGraphicDelay(RealLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionItemFingerOfDeath15
+
+```wurst
+public class AbilityDefinitionItemFingerOfDeath15 extends AbilityDefinition
+```
+
+'AFDw' / [AbilityIds.itemFingerOfDeath15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemFingerOfDeath15)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setGraphicDuration(int level, real value)`
+- `setGraphicDelay(int level, real value)`
+- `setDamage(int level, real value)`
+- `presetGraphicDuration(RealLevelClosure lc)`
+- `presetGraphicDelay(RealLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionDarkRangerSBracersSummon
+
+```wurst
+public class AbilityDefinitionDarkRangerSBracersSummon extends AbilityDefinition
+```
+
+'AFRq' / [AbilityIds.darkRangerSBracersSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-darkRangerSBracersSummon)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSummonedUnitCount(int level, int value)`
+- `setSummonedUnitType(int level, string value)`
+- `presetSummonedUnitCount(IntLevelClosure lc)`
+- `presetSummonedUnitType(StringLevelClosure lc)`
+
+### AbilityDefinitionDarkRangerSInsigniaSummon
+
+```wurst
+public class AbilityDefinitionDarkRangerSInsigniaSummon extends AbilityDefinition
+```
+
+'AFRw' / [AbilityIds.darkRangerSInsigniaSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-darkRangerSInsigniaSummon)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSummonedUnitCount(int level, int value)`
+- `setSummonedUnitType(int level, string value)`
+- `presetSummonedUnitCount(IntLevelClosure lc)`
+- `presetSummonedUnitType(StringLevelClosure lc)`
+
+### AbilityDefinitionDarkRangerSBracersAttack
+
+```wurst
+public class AbilityDefinitionDarkRangerSBracersAttack extends AbilityDefinition
+```
+
+'AFRx' / [AbilityIds.darkRangerSBracersAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-darkRangerSBracersAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemDarkRangerSHoodSpellcast
+
+```wurst
+public class AbilityDefinitionItemDarkRangerSHoodSpellcast extends AbilityDefinition
+```
+
+'AFRy' / [AbilityIds.itemDarkRangerSHoodSpellcast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDarkRangerSHoodSpellcast)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `setTargetType(int level, string value)`
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+
+### AbilityDefinitionGnomishZapperAttack
+
+```wurst
+public class AbilityDefinitionGnomishZapperAttack extends AbilityDefinition
+```
+
+'AGZa' / [AbilityIds.gnomishZapperAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-gnomishZapperAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionGnomishZapperFL
+
+```wurst
+public class AbilityDefinitionGnomishZapperFL extends AbilityDefinition
+```
+
+'AGZf' / [AbilityIds.gnomishZapperFL](/stdlib/ref/_wurst/AbilityIds.html#abilityids-gnomishZapperFL)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setNumberofTargetsHit(int level, int value)`
+- `setDistance(int level, real value)`
+- `setFinalArea(int level, real value)`
+- `setDamageperTarget(int level, real value)`
+- `presetNumberofTargetsHit(IntLevelClosure lc)`
+- `presetDistance(RealLevelClosure lc)`
+- `presetFinalArea(RealLevelClosure lc)`
+- `presetDamageperTarget(RealLevelClosure lc)`
+
+### AbilityDefinitionGarekCleavingAttack
+
+```wurst
+public class AbilityDefinitionGarekCleavingAttack extends AbilityDefinition
+```
+
+'AGca' / [AbilityIds.garekCleavingAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekCleavingAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDistributedDamageFactor(int level, real value)`
+- `presetDistributedDamageFactor(RealLevelClosure lc)`
+
+### AbilityDefinitionGarekWarcryLifesteal
+
+```wurst
+public class AbilityDefinitionGarekWarcryLifesteal extends AbilityDefinition
+```
+
+'AGls' / [AbilityIds.garekWarcryLifesteal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekWarcryLifesteal)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setLifeStolenPerAttack(int level, real value)`
+- `presetLifeStolenPerAttack(RealLevelClosure lc)`
+
+### AbilityDefinitionGarekWarcrySpellVamp
+
+```wurst
+public class AbilityDefinitionGarekWarcrySpellVamp extends AbilityDefinition
+```
+
+'AGsv' / [AbilityIds.garekWarcrySpellVamp](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekWarcrySpellVamp)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setFlatBonus(int level, bool value)`
+- `setSpellVamp(int level, real value)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetSpellVamp(RealLevelClosure lc)`
+
+### AbilityDefinitionItemHeroDamageX125
+
+```wurst
+public class AbilityDefinitionItemHeroDamageX125 extends AbilityDefinition
+```
+
+'AHDq' / [AbilityIds.itemHeroDamageX125](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHeroDamageX125)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageMultiplierBuildings(int level, real value)`
+- `setDamageMultiplierUnits(int level, real value)`
+- `setChancetoDemolish(int level, real value)`
+- `setDamageMultiplierHeroes(int level, real value)`
+- `presetDamageMultiplierBuildings(RealLevelClosure lc)`
+- `presetDamageMultiplierUnits(RealLevelClosure lc)`
+- `presetChancetoDemolish(RealLevelClosure lc)`
+- `presetDamageMultiplierHeroes(RealLevelClosure lc)`
+
+### AbilityDefinitionItemHeroDamageX115
+
+```wurst
+public class AbilityDefinitionItemHeroDamageX115 extends AbilityDefinition
+```
+
+'AHDw' / [AbilityIds.itemHeroDamageX115](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHeroDamageX115)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageMultiplierBuildings(int level, real value)`
+- `setDamageMultiplierUnits(int level, real value)`
+- `setChancetoDemolish(int level, real value)`
+- `setDamageMultiplierHeroes(int level, real value)`
+- `presetDamageMultiplierBuildings(RealLevelClosure lc)`
+- `presetDamageMultiplierUnits(RealLevelClosure lc)`
+- `presetChancetoDemolish(RealLevelClosure lc)`
+- `presetDamageMultiplierHeroes(RealLevelClosure lc)`
+
+### AbilityDefinitionItemHealthRegeneration51
+
+```wurst
+public class AbilityDefinitionItemHealthRegeneration51 extends AbilityDefinition
+```
+
+'AHRa' / [AbilityIds.rangerArrow](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rangerArrow)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHitPointsRegeneratedPerSecond(int level, int value)`
+- `presetHitPointsRegeneratedPerSecond(IntLevelClosure lc)`
+
+### AbilityDefinitionItemHealthRegeneration10
+
+```wurst
+public class AbilityDefinitionItemHealthRegeneration10 extends AbilityDefinition
+```
+
+'AHRd' / [AbilityIds.itemHealthRegeneration10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealthRegeneration10)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHitPointsRegeneratedPerSecond(int level, int value)`
+- `presetHitPointsRegeneratedPerSecond(IntLevelClosure lc)`
+
+### AbilityDefinitionItemHealthRegeneration15
+
+```wurst
+public class AbilityDefinitionItemHealthRegeneration15 extends AbilityDefinition
+```
+
+'AHRf' / [AbilityIds.itemHealthRegeneration15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealthRegeneration15)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHitPointsRegeneratedPerSecond(int level, int value)`
+- `presetHitPointsRegeneratedPerSecond(IntLevelClosure lc)`
+
+### AbilityDefinitionItemHealthRegeneration8
+
+```wurst
+public class AbilityDefinitionItemHealthRegeneration8 extends AbilityDefinition
+```
+
+'AHRo' / [AbilityIds.itemHealthRegeneration8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealthRegeneration8)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHitPointsRegeneratedPerSecond(int level, int value)`
+- `presetHitPointsRegeneratedPerSecond(IntLevelClosure lc)`
+
+### AbilityDefinitionItemHealthRegeneration3
+
+```wurst
+public class AbilityDefinitionItemHealthRegeneration3 extends AbilityDefinition
+```
+
+'AHRq' / [AbilityIds.itemHealthRegeneration3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealthRegeneration3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHitPointsRegeneratedPerSecond(int level, int value)`
+- `presetHitPointsRegeneratedPerSecond(IntLevelClosure lc)`
+
+### AbilityDefinitionItemHealthRegeneration7
+
+```wurst
+public class AbilityDefinitionItemHealthRegeneration7 extends AbilityDefinition
+```
+
+'AHRs' / [AbilityIds.itemHealthRegeneration7](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealthRegeneration7)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHitPointsRegeneratedPerSecond(int level, int value)`
+- `presetHitPointsRegeneratedPerSecond(IntLevelClosure lc)`
+
+### AbilityDefinitionItemHealthRegeneration5
+
+```wurst
+public class AbilityDefinitionItemHealthRegeneration5 extends AbilityDefinition
+```
+
+'AHRt' / [AbilityIds.itemHealthRegeneration5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealthRegeneration5)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHitPointsRegeneratedPerSecond(int level, int value)`
+- `presetHitPointsRegeneratedPerSecond(IntLevelClosure lc)`
+
+### AbilityDefinitionItemHealthRegeneration6
+
+```wurst
+public class AbilityDefinitionItemHealthRegeneration6 extends AbilityDefinition
+```
+
+'AHRu' / [AbilityIds.itemHealthRegeneration6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealthRegeneration6)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHitPointsRegeneratedPerSecond(int level, int value)`
+- `presetHitPointsRegeneratedPerSecond(IntLevelClosure lc)`
+
+### AbilityDefinitionItemHealthRegeneration31
+
+```wurst
+public class AbilityDefinitionItemHealthRegeneration31 extends AbilityDefinition
+```
+
+'AHRw' / [AbilityIds.itemHealthRegeneration31](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealthRegeneration31)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHitPointsRegeneratedPerSecond(int level, int value)`
+- `presetHitPointsRegeneratedPerSecond(IntLevelClosure lc)`
+
+### AbilityDefinitionItemHealthRegeneration4
+
+```wurst
+public class AbilityDefinitionItemHealthRegeneration4 extends AbilityDefinition
+```
+
+'AHRy' / [AbilityIds.itemHealthRegeneration4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealthRegeneration4)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHitPointsRegeneratedPerSecond(int level, int value)`
+- `presetHitPointsRegeneratedPerSecond(IntLevelClosure lc)`
+
+### AbilityDefinitionItemHardenedSkin1007MTRT
+
+```wurst
+public class AbilityDefinitionItemHardenedSkin1007MTRT extends AbilityDefinition
+```
+
+'AHSe' / [AbilityIds.itemHardenedSkin1007MTRT](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHardenedSkin1007MTRT)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMinimumDamage(int level, real value)`
+- `setIncludeRangedDamage(int level, bool value)`
+- `setIncludeMeleeDamage(int level, bool value)`
+- `setChancetoReduceDamage(int level, real value)`
+  Chance to Reduce Damage (%) / 'Ssk1'
+- `setIgnoredDamage(int level, real value)`
+- `presetMinimumDamage(RealLevelClosure lc)`
+- `presetIncludeRangedDamage(BooleanLevelClosure lc)`
+- `presetIncludeMeleeDamage(BooleanLevelClosure lc)`
+- `presetChancetoReduceDamage(RealLevelClosure lc)`
+- `presetIgnoredDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionItemHardenedSkin1002MTRT
+
+```wurst
+public class AbilityDefinitionItemHardenedSkin1002MTRT extends AbilityDefinition
+```
+
+'AHSq' / [AbilityIds.itemHardenedSkin1002MTRT](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHardenedSkin1002MTRT)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMinimumDamage(int level, real value)`
+- `setIncludeRangedDamage(int level, bool value)`
+- `setIncludeMeleeDamage(int level, bool value)`
+- `setChancetoReduceDamage(int level, real value)`
+  Chance to Reduce Damage (%) / 'Ssk1'
+- `setIgnoredDamage(int level, real value)`
+- `presetMinimumDamage(RealLevelClosure lc)`
+- `presetIncludeRangedDamage(BooleanLevelClosure lc)`
+- `presetIncludeMeleeDamage(BooleanLevelClosure lc)`
+- `presetChancetoReduceDamage(RealLevelClosure lc)`
+- `presetIgnoredDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionHighTemplarSFlameIncinerate
+
+```wurst
+public class AbilityDefinitionHighTemplarSFlameIncinerate extends AbilityDefinition
+```
+
+'AHTf' / [AbilityIds.highTemplarSFlameIncinerate](/stdlib/ref/_wurst/AbilityIds.html#abilityids-highTemplarSFlameIncinerate)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setBonusDamageMultiplier(int level, real value)`
+- `setDeathDamageHalfAmount(int level, real value)`
+- `setDeathDamageHalfArea(int level, real value)`
+- `setDeathDamageDelay(int level, real value)`
+- `setDeathDamageFullAmount(int level, real value)`
+- `setDeathDamageFullArea(int level, real value)`
+- `presetBonusDamageMultiplier(RealLevelClosure lc)`
+- `presetDeathDamageHalfAmount(RealLevelClosure lc)`
+- `presetDeathDamageHalfArea(RealLevelClosure lc)`
+- `presetDeathDamageDelay(RealLevelClosure lc)`
+- `presetDeathDamageFullAmount(RealLevelClosure lc)`
+- `presetDeathDamageFullArea(RealLevelClosure lc)`
+
+### AbilityDefinitionHighTemplarSConquerorHeal
+
+```wurst
+public class AbilityDefinitionHighTemplarSConquerorHeal extends AbilityDefinition
+```
+
+'AHTh' / [AbilityIds.highTemplarSConquerorHeal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-highTemplarSConquerorHeal)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHitPointsGained(int level, real value)`
+- `presetHitPointsGained(RealLevelClosure lc)`
+
+### AbilityDefinitionHighTemplarSVisageIF
+
+```wurst
+public class AbilityDefinitionHighTemplarSVisageIF extends AbilityDefinition
+```
+
+'AHTi' / [AbilityIds.highTemplarSVisageIF](/stdlib/ref/_wurst/AbilityIds.html#abilityids-highTemplarSVisageIF)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageIncrease(int level, real value)`
+  Damage Increase (%) / 'Inf1'
+- `setDefenseIncrease(int level, int value)`
+- `setLifeRegenRate(int level, real value)`
+- `setAutocastRange(int level, real value)`
+- `presetDamageIncrease(RealLevelClosure lc)`
+- `presetDefenseIncrease(IntLevelClosure lc)`
+- `presetLifeRegenRate(RealLevelClosure lc)`
+- `presetAutocastRange(RealLevelClosure lc)`
+
+### AbilityDefinitionHighTemplarSJudgmentAttack
+
+```wurst
+public class AbilityDefinitionHighTemplarSJudgmentAttack extends AbilityDefinition
+```
+
+'AHTj' / [AbilityIds.highTemplarSJudgmentAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-highTemplarSJudgmentAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionHighTemplarSConquerorAttack
+
+```wurst
+public class AbilityDefinitionHighTemplarSConquerorAttack extends AbilityDefinition
+```
+
+'AHTq' / [AbilityIds.highTemplarSConquerorAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-highTemplarSConquerorAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionHighTemplarSJudgmentShockwave
+
+```wurst
+public class AbilityDefinitionHighTemplarSJudgmentShockwave extends AbilityDefinition
+```
+
+'AHTs' / [AbilityIds.highTemplarSJudgmentShockwave](/stdlib/ref/_wurst/AbilityIds.html#abilityids-highTemplarSJudgmentShockwave)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamage(int level, real value)`
+- `setMaximumDamage(int level, real value)`
+- `setFinalArea(int level, real value)`
+- `setDistance(int level, real value)`
+- `presetDamage(RealLevelClosure lc)`
+- `presetMaximumDamage(RealLevelClosure lc)`
+- `presetFinalArea(RealLevelClosure lc)`
+- `presetDistance(RealLevelClosure lc)`
+
+### AbilityDefinitionHighTemplarSVisageAttack
+
+```wurst
+public class AbilityDefinitionHighTemplarSVisageAttack extends AbilityDefinition
+```
+
+'AHTv' / [AbilityIds.highTemplarSVisageAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-highTemplarSVisageAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionIlastarSacredAuraTalent1
+
+```wurst
+public class AbilityDefinitionIlastarSacredAuraTalent1 extends AbilityDefinition
+```
+
+'AHa1' / [AbilityIds.ilastarSacredAuraTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarSacredAuraTalent1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMagicResistDecreaseforEnemies(int level, real value)`
+  % Magic Resist Decrease for Enemies / 'hsa4'
+- `setHealingIncreaseforAllies(int level, real value)`
+  % Healing Increase for Allies / 'hsa2'
+- `setCooldownIncreaseforEnemies(int level, real value)`
+  % Cooldown Increase for Enemies / 'hsa6'
+- `setMagicResistIncreaseforAllies(int level, real value)`
+  % Magic Resist Increase for Allies / 'hsa1'
+- `setCooldownReductionIncreaseforAllies(int level, real value)`
+  % Cooldown Reduction Increase for Allies / 'hsa3'
+- `setFlatManaRegenforAllies(int level, real value)`
+- `setHealingDecreaseforEnemies(int level, real value)`
+  % Healing Decrease for Enemies / 'hsa5'
+- `presetMagicResistDecreaseforEnemies(RealLevelClosure lc)`
+- `presetHealingIncreaseforAllies(RealLevelClosure lc)`
+- `presetCooldownIncreaseforEnemies(RealLevelClosure lc)`
+- `presetMagicResistIncreaseforAllies(RealLevelClosure lc)`
+- `presetCooldownReductionIncreaseforAllies(RealLevelClosure lc)`
+- `presetFlatManaRegenforAllies(RealLevelClosure lc)`
+- `presetHealingDecreaseforEnemies(RealLevelClosure lc)`
+
+### AbilityDefinitionIlastarSacredAuraTalent2
+
+```wurst
+public class AbilityDefinitionIlastarSacredAuraTalent2 extends AbilityDefinition
+```
+
+'AHa2' / [AbilityIds.ilastarSacredAuraTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarSacredAuraTalent2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMagicResistDecreaseforEnemies(int level, real value)`
+  % Magic Resist Decrease for Enemies / 'hsa4'
+- `setHealingIncreaseforAllies(int level, real value)`
+  % Healing Increase for Allies / 'hsa2'
+- `setCooldownIncreaseforEnemies(int level, real value)`
+  % Cooldown Increase for Enemies / 'hsa6'
+- `setMagicResistIncreaseforAllies(int level, real value)`
+  % Magic Resist Increase for Allies / 'hsa1'
+- `setCooldownReductionIncreaseforAllies(int level, real value)`
+  % Cooldown Reduction Increase for Allies / 'hsa3'
+- `setFlatManaRegenforAllies(int level, real value)`
+- `setHealingDecreaseforEnemies(int level, real value)`
+  % Healing Decrease for Enemies / 'hsa5'
+- `presetMagicResistDecreaseforEnemies(RealLevelClosure lc)`
+- `presetHealingIncreaseforAllies(RealLevelClosure lc)`
+- `presetCooldownIncreaseforEnemies(RealLevelClosure lc)`
+- `presetMagicResistIncreaseforAllies(RealLevelClosure lc)`
+- `presetCooldownReductionIncreaseforAllies(RealLevelClosure lc)`
+- `presetFlatManaRegenforAllies(RealLevelClosure lc)`
+- `presetHealingDecreaseforEnemies(RealLevelClosure lc)`
+
+### AbilityDefinitionIlastarSacredAuraTalent3
+
+```wurst
+public class AbilityDefinitionIlastarSacredAuraTalent3 extends AbilityDefinition
+```
+
+'AHa3' / [AbilityIds.ilastarSacredAuraTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarSacredAuraTalent3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMagicResistDecreaseforEnemies(int level, real value)`
+  % Magic Resist Decrease for Enemies / 'hsa4'
+- `setHealingIncreaseforAllies(int level, real value)`
+  % Healing Increase for Allies / 'hsa2'
+- `setCooldownIncreaseforEnemies(int level, real value)`
+  % Cooldown Increase for Enemies / 'hsa6'
+- `setMagicResistIncreaseforAllies(int level, real value)`
+  % Magic Resist Increase for Allies / 'hsa1'
+- `setCooldownReductionIncreaseforAllies(int level, real value)`
+  % Cooldown Reduction Increase for Allies / 'hsa3'
+- `setFlatManaRegenforAllies(int level, real value)`
+- `setHealingDecreaseforEnemies(int level, real value)`
+  % Healing Decrease for Enemies / 'hsa5'
+- `presetMagicResistDecreaseforEnemies(RealLevelClosure lc)`
+- `presetHealingIncreaseforAllies(RealLevelClosure lc)`
+- `presetCooldownIncreaseforEnemies(RealLevelClosure lc)`
+- `presetMagicResistIncreaseforAllies(RealLevelClosure lc)`
+- `presetCooldownReductionIncreaseforAllies(RealLevelClosure lc)`
+- `presetFlatManaRegenforAllies(RealLevelClosure lc)`
+- `presetHealingDecreaseforEnemies(RealLevelClosure lc)`
+
+### AbilityDefinitionAvatarOfLight
+
+```wurst
+public class AbilityDefinitionAvatarOfLight extends AbilityDefinition
+```
+
+'AHal' / [AbilityIds.avatarOfLight](/stdlib/ref/_wurst/AbilityIds.html#abilityids-avatarOfLight)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHealthCost(int level, int value)`
+  % Health Cost / 'uvg1'
+- `setDamageOnCast(int level, real value)`
+- `setBonusSpellCritDamage(int level, int value)`
+  % Bonus Spell Crit Damage / 'uvg9'
+- `setBonusLifeSteal(int level, int value)`
+  % Bonus Life Steal / 'uvg4'
+- `setDoublebonusbellowhealth(int level, int value)`
+  Double bonus bellow health % / 'uvg6'
+- `setBonusResolve(int level, int value)`
+  % Bonus Resolve / 'uvg3'
+- `setBonusSpellVamp(int level, int value)`
+  % Bonus Spell Vamp / 'uvg5'
+- `setBonusSpellCrit(int level, int value)`
+  % Bonus Spell Crit / 'uvg8'
+- `setBonusstrength(int level, int value)`
+- `presetHealthCost(IntLevelClosure lc)`
+- `presetDamageOnCast(RealLevelClosure lc)`
+- `presetBonusSpellCritDamage(IntLevelClosure lc)`
+- `presetBonusLifeSteal(IntLevelClosure lc)`
+- `presetDoublebonusbellowhealth(IntLevelClosure lc)`
+- `presetBonusResolve(IntLevelClosure lc)`
+- `presetBonusSpellVamp(IntLevelClosure lc)`
+- `presetBonusSpellCrit(IntLevelClosure lc)`
+- `presetBonusstrength(IntLevelClosure lc)`
+
+### AbilityDefinitionApprehendAOETalent1
+
+```wurst
+public class AbilityDefinitionApprehendAOETalent1 extends AbilityDefinition
+```
+
+'AHap' / [AbilityIds.apprehendAOETalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-apprehendAOETalent1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setStunDuration(int level, real value)`
+- `setAirUnitHeight(int level, real value)`
+- `setBonusDamageTakenPercent(int level, real value)`
+- `setAttackSpeedReductionPercent(int level, real value)`
+- `setAirUnitLowerDuration(int level, real value)`
+- `setSilencesWhenEnsnared(int level, bool value)`
+- `setMeleeAttackRange(int level, real value)`
+- `presetStunDuration(RealLevelClosure lc)`
+- `presetAirUnitHeight(RealLevelClosure lc)`
+- `presetBonusDamageTakenPercent(RealLevelClosure lc)`
+- `presetAttackSpeedReductionPercent(RealLevelClosure lc)`
+- `presetAirUnitLowerDuration(RealLevelClosure lc)`
+- `presetSilencesWhenEnsnared(BooleanLevelClosure lc)`
+- `presetMeleeAttackRange(RealLevelClosure lc)`
+
+### AbilityDefinitionIlastarSacredAura
+
+```wurst
+public class AbilityDefinitionIlastarSacredAura extends AbilityDefinition
+```
+
+'AHas' / [AbilityIds.ilastarSacredAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarSacredAura)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMagicResistDecreaseforEnemies(int level, real value)`
+  % Magic Resist Decrease for Enemies / 'hsa4'
+- `setHealingIncreaseforAllies(int level, real value)`
+  % Healing Increase for Allies / 'hsa2'
+- `setCooldownIncreaseforEnemies(int level, real value)`
+  % Cooldown Increase for Enemies / 'hsa6'
+- `setMagicResistIncreaseforAllies(int level, real value)`
+  % Magic Resist Increase for Allies / 'hsa1'
+- `setCooldownReductionIncreaseforAllies(int level, real value)`
+  % Cooldown Reduction Increase for Allies / 'hsa3'
+- `setFlatManaRegenforAllies(int level, real value)`
+- `setHealingDecreaseforEnemies(int level, real value)`
+  % Healing Decrease for Enemies / 'hsa5'
+- `presetMagicResistDecreaseforEnemies(RealLevelClosure lc)`
+- `presetHealingIncreaseforAllies(RealLevelClosure lc)`
+- `presetCooldownIncreaseforEnemies(RealLevelClosure lc)`
+- `presetMagicResistIncreaseforAllies(RealLevelClosure lc)`
+- `presetCooldownReductionIncreaseforAllies(RealLevelClosure lc)`
+- `presetFlatManaRegenforAllies(RealLevelClosure lc)`
+- `presetHealingDecreaseforEnemies(RealLevelClosure lc)`
+
+### AbilityDefinitionUnyieldingGuardT1DamageReflect
+
+```wurst
+public class AbilityDefinitionUnyieldingGuardT1DamageReflect extends AbilityDefinition
+```
+
+'AHb1' / [AbilityIds.unyieldingGuardT1DamageReflect](/stdlib/ref/_wurst/AbilityIds.html#abilityids-unyieldingGuardT1DamageReflect)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackSpeedIncrease(int level, real value)`
+  % Attack Speed Increase / 'bld3'
+- `setSweepRemainingCooldownReductionOnHit(int level, real value)`
+- `setDamageReduction(int level, real value)`
+  % Damage Reduction / 'bld1'
+- `setAbilitySpeedIncrease(int level, real value)`
+  % Ability Speed Increase / 'bld8'
+- `setMovementSpeedreduction(int level, real value)`
+  % Movement Speed reduction / 'bld2'
+- `setDamageReflection(int level, real value)`
+  % Damage Reflection / 'bld6'
+- `setFlatDamageReflection(int level, real value)`
+- `setOnDamageTakenBonusDuration(int level, real value)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+- `presetSweepRemainingCooldownReductionOnHit(RealLevelClosure lc)`
+- `presetDamageReduction(RealLevelClosure lc)`
+- `presetAbilitySpeedIncrease(RealLevelClosure lc)`
+- `presetMovementSpeedreduction(RealLevelClosure lc)`
+- `presetDamageReflection(RealLevelClosure lc)`
+- `presetFlatDamageReflection(RealLevelClosure lc)`
+- `presetOnDamageTakenBonusDuration(RealLevelClosure lc)`
+
+### AbilityDefinitionUnyieldingGuardT2SWCDReduce
+
+```wurst
+public class AbilityDefinitionUnyieldingGuardT2SWCDReduce extends AbilityDefinition
+```
+
+'AHb2' / [AbilityIds.unyieldingGuardT2SWCDReduce](/stdlib/ref/_wurst/AbilityIds.html#abilityids-unyieldingGuardT2SWCDReduce)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackSpeedIncrease(int level, real value)`
+  % Attack Speed Increase / 'bld3'
+- `setSweepRemainingCooldownReductionOnHit(int level, real value)`
+- `setDamageReduction(int level, real value)`
+  % Damage Reduction / 'bld1'
+- `setAbilitySpeedIncrease(int level, real value)`
+  % Ability Speed Increase / 'bld8'
+- `setMovementSpeedreduction(int level, real value)`
+  % Movement Speed reduction / 'bld2'
+- `setDamageReflection(int level, real value)`
+  % Damage Reflection / 'bld6'
+- `setFlatDamageReflection(int level, real value)`
+- `setOnDamageTakenBonusDuration(int level, real value)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+- `presetSweepRemainingCooldownReductionOnHit(RealLevelClosure lc)`
+- `presetDamageReduction(RealLevelClosure lc)`
+- `presetAbilitySpeedIncrease(RealLevelClosure lc)`
+- `presetMovementSpeedreduction(RealLevelClosure lc)`
+- `presetDamageReflection(RealLevelClosure lc)`
+- `presetFlatDamageReflection(RealLevelClosure lc)`
+- `presetOnDamageTakenBonusDuration(RealLevelClosure lc)`
+
+### AbilityDefinitionUnyieldingGuardT3DurationIncrease
+
+```wurst
+public class AbilityDefinitionUnyieldingGuardT3DurationIncrease extends AbilityDefinition
+```
+
+'AHb3' / [AbilityIds.unyieldingGuardT3DurationIncrease](/stdlib/ref/_wurst/AbilityIds.html#abilityids-unyieldingGuardT3DurationIncrease)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackSpeedIncrease(int level, real value)`
+  % Attack Speed Increase / 'bld3'
+- `setSweepRemainingCooldownReductionOnHit(int level, real value)`
+- `setDamageReduction(int level, real value)`
+  % Damage Reduction / 'bld1'
+- `setAbilitySpeedIncrease(int level, real value)`
+  % Ability Speed Increase / 'bld8'
+- `setMovementSpeedreduction(int level, real value)`
+  % Movement Speed reduction / 'bld2'
+- `setDamageReflection(int level, real value)`
+  % Damage Reflection / 'bld6'
+- `setFlatDamageReflection(int level, real value)`
+- `setOnDamageTakenBonusDuration(int level, real value)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+- `presetSweepRemainingCooldownReductionOnHit(RealLevelClosure lc)`
+- `presetDamageReduction(RealLevelClosure lc)`
+- `presetAbilitySpeedIncrease(RealLevelClosure lc)`
+- `presetMovementSpeedreduction(RealLevelClosure lc)`
+- `presetDamageReflection(RealLevelClosure lc)`
+- `presetFlatDamageReflection(RealLevelClosure lc)`
+- `presetOnDamageTakenBonusDuration(RealLevelClosure lc)`
+
+### AbilityDefinitionUnyieldingGuard
+
+```wurst
+public class AbilityDefinitionUnyieldingGuard extends AbilityDefinition
+```
+
+'AHbd' / [AbilityIds.unyieldingGuard](/stdlib/ref/_wurst/AbilityIds.html#abilityids-unyieldingGuard)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackSpeedIncrease(int level, real value)`
+  % Attack Speed Increase / 'bld3'
+- `setSweepRemainingCooldownReductionOnHit(int level, real value)`
+- `setDamageReduction(int level, real value)`
+  % Damage Reduction / 'bld1'
+- `setAbilitySpeedIncrease(int level, real value)`
+  % Ability Speed Increase / 'bld8'
+- `setMovementSpeedreduction(int level, real value)`
+  % Movement Speed reduction / 'bld2'
+- `setDamageReflection(int level, real value)`
+  % Damage Reflection / 'bld6'
+- `setFlatDamageReflection(int level, real value)`
+- `setOnDamageTakenBonusDuration(int level, real value)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+- `presetSweepRemainingCooldownReductionOnHit(RealLevelClosure lc)`
+- `presetDamageReduction(RealLevelClosure lc)`
+- `presetAbilitySpeedIncrease(RealLevelClosure lc)`
+- `presetMovementSpeedreduction(RealLevelClosure lc)`
+- `presetDamageReflection(RealLevelClosure lc)`
+- `presetFlatDamageReflection(RealLevelClosure lc)`
+- `presetOnDamageTakenBonusDuration(RealLevelClosure lc)`
+
+### AbilityDefinitionValiantChargeT1CritChance
+
+```wurst
+public class AbilityDefinitionValiantChargeT1CritChance extends AbilityDefinition
+```
+
+'AHc1' / [AbilityIds.valiantChargeT1CritChance](/stdlib/ref/_wurst/AbilityIds.html#abilityids-valiantChargeT1CritChance)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDashSpeed(int level, real value)`
+- `setNormalBonusCriticalStrikeDuration(int level, real value)`
+- `setTargetIntersectRadius(int level, real value)`
+- `setRemoveBuffsOnAbilityStart(int level, bool value)`
+- `setBonusCriticalStrike(int level, real value)`
+- `setDashDamage(int level, real value)`
+- `setHeroBonusCriticalStrikeDuration(int level, real value)`
+- `presetDashSpeed(RealLevelClosure lc)`
+- `presetNormalBonusCriticalStrikeDuration(RealLevelClosure lc)`
+- `presetTargetIntersectRadius(RealLevelClosure lc)`
+- `presetRemoveBuffsOnAbilityStart(BooleanLevelClosure lc)`
+- `presetBonusCriticalStrike(RealLevelClosure lc)`
+- `presetDashDamage(RealLevelClosure lc)`
+- `presetHeroBonusCriticalStrikeDuration(RealLevelClosure lc)`
+
+### AbilityDefinitionValiantChargeT2HeroStunDuration
+
+```wurst
+public class AbilityDefinitionValiantChargeT2HeroStunDuration extends AbilityDefinition
+```
+
+'AHc2' / [AbilityIds.valiantChargeT2HeroStunDuration](/stdlib/ref/_wurst/AbilityIds.html#abilityids-valiantChargeT2HeroStunDuration)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDashSpeed(int level, real value)`
+- `setNormalBonusCriticalStrikeDuration(int level, real value)`
+- `setTargetIntersectRadius(int level, real value)`
+- `setRemoveBuffsOnAbilityStart(int level, bool value)`
+- `setBonusCriticalStrike(int level, real value)`
+- `setDashDamage(int level, real value)`
+- `setHeroBonusCriticalStrikeDuration(int level, real value)`
+- `presetDashSpeed(RealLevelClosure lc)`
+- `presetNormalBonusCriticalStrikeDuration(RealLevelClosure lc)`
+- `presetTargetIntersectRadius(RealLevelClosure lc)`
+- `presetRemoveBuffsOnAbilityStart(BooleanLevelClosure lc)`
+- `presetBonusCriticalStrike(RealLevelClosure lc)`
+- `presetDashDamage(RealLevelClosure lc)`
+- `presetHeroBonusCriticalStrikeDuration(RealLevelClosure lc)`
+
+### AbilityDefinitionValiantChargeT3ManaCostDispel
+
+```wurst
+public class AbilityDefinitionValiantChargeT3ManaCostDispel extends AbilityDefinition
+```
+
+'AHc3' / [AbilityIds.valiantChargeT3ManaCostDispel](/stdlib/ref/_wurst/AbilityIds.html#abilityids-valiantChargeT3ManaCostDispel)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDashSpeed(int level, real value)`
+- `setNormalBonusCriticalStrikeDuration(int level, real value)`
+- `setTargetIntersectRadius(int level, real value)`
+- `setRemoveBuffsOnAbilityStart(int level, bool value)`
+- `setBonusCriticalStrike(int level, real value)`
+- `setDashDamage(int level, real value)`
+- `setHeroBonusCriticalStrikeDuration(int level, real value)`
+- `presetDashSpeed(RealLevelClosure lc)`
+- `presetNormalBonusCriticalStrikeDuration(RealLevelClosure lc)`
+- `presetTargetIntersectRadius(RealLevelClosure lc)`
+- `presetRemoveBuffsOnAbilityStart(BooleanLevelClosure lc)`
+- `presetBonusCriticalStrike(RealLevelClosure lc)`
+- `presetDashDamage(RealLevelClosure lc)`
+- `presetHeroBonusCriticalStrikeDuration(RealLevelClosure lc)`
+
+### AbilityDefinitionValiantCharge
+
+```wurst
+public class AbilityDefinitionValiantCharge extends AbilityDefinition
+```
+
+'AHch' / [AbilityIds.valiantCharge](/stdlib/ref/_wurst/AbilityIds.html#abilityids-valiantCharge)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDashSpeed(int level, real value)`
+- `setNormalBonusCriticalStrikeDuration(int level, real value)`
+- `setTargetIntersectRadius(int level, real value)`
+- `setRemoveBuffsOnAbilityStart(int level, bool value)`
+- `setBonusCriticalStrike(int level, real value)`
+- `setDashDamage(int level, real value)`
+- `setHeroBonusCriticalStrikeDuration(int level, real value)`
+- `presetDashSpeed(RealLevelClosure lc)`
+- `presetNormalBonusCriticalStrikeDuration(RealLevelClosure lc)`
+- `presetTargetIntersectRadius(RealLevelClosure lc)`
+- `presetRemoveBuffsOnAbilityStart(BooleanLevelClosure lc)`
+- `presetBonusCriticalStrike(RealLevelClosure lc)`
+- `presetDashDamage(RealLevelClosure lc)`
+- `presetHeroBonusCriticalStrikeDuration(RealLevelClosure lc)`
+
+### AbilityDefinitionCleansingFire
+
+```wurst
+public class AbilityDefinitionCleansingFire extends AbilityDefinition
+```
+
+'AHcl' / [AbilityIds.cleansingFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cleansingFire)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAllyDamageBonusPercentPerDebuffRemoved(int level, real value)`
+- `setAllyHealingPerDebuffRemoved(int level, real value)`
+- `setAllyBuffDuration(int level, real value)`
+- `setSummonedDamage(int level, real value)`
+- `setEnemyStunDuration(int level, real value)`
+- `setAllyHealingBase(int level, real value)`
+- `setAllyDamageBonusPercentBase(int level, real value)`
+- `presetAllyDamageBonusPercentPerDebuffRemoved(RealLevelClosure lc)`
+- `presetAllyHealingPerDebuffRemoved(RealLevelClosure lc)`
+- `presetAllyBuffDuration(RealLevelClosure lc)`
+- `presetSummonedDamage(RealLevelClosure lc)`
+- `presetEnemyStunDuration(RealLevelClosure lc)`
+- `presetAllyHealingBase(RealLevelClosure lc)`
+- `presetAllyDamageBonusPercentBase(RealLevelClosure lc)`
+
+### AbilityDefinitionConsecration
+
+```wurst
+public class AbilityDefinitionConsecration extends AbilityDefinition
+```
+
+'AHcr' / [AbilityIds.consecration](/stdlib/ref/_wurst/AbilityIds.html#abilityids-consecration)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAllyHealingPerSecond(int level, real value)`
+- `setEnemyDamagePerSecond(int level, real value)`
+- `setEnemyHealingReductionPercent(int level, real value)`
+- `presetAllyHealingPerSecond(RealLevelClosure lc)`
+- `presetEnemyDamagePerSecond(RealLevelClosure lc)`
+- `presetEnemyHealingReductionPercent(RealLevelClosure lc)`
+
+### AbilityDefinitionLandenRaiseTheBanner
+
+```wurst
+public class AbilityDefinitionLandenRaiseTheBanner extends AbilityDefinition
+```
+
+'AHct' / [AbilityIds.landenRaiseTheBanner](/stdlib/ref/_wurst/AbilityIds.html#abilityids-landenRaiseTheBanner)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSummonedUnitCount(int level, int value)`
+- `setSummonedUnitType(int level, string value)`
+- `presetSummonedUnitCount(IntLevelClosure lc)`
+- `presetSummonedUnitType(StringLevelClosure lc)`
+
+### AbilityDefinitionApprehendTalent2
+
+```wurst
+public class AbilityDefinitionApprehendTalent2 extends AbilityDefinition
+```
+
+'AHe2' / [AbilityIds.apprehendTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-apprehendTalent2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setStunDuration(int level, real value)`
+- `setAirUnitHeight(int level, real value)`
+- `setBonusDamageTakenPercent(int level, real value)`
+- `setAttackSpeedReductionPercent(int level, real value)`
+- `setAirUnitLowerDuration(int level, real value)`
+- `setSilencesWhenEnsnared(int level, bool value)`
+- `setMeleeAttackRange(int level, real value)`
+- `presetStunDuration(RealLevelClosure lc)`
+- `presetAirUnitHeight(RealLevelClosure lc)`
+- `presetBonusDamageTakenPercent(RealLevelClosure lc)`
+- `presetAttackSpeedReductionPercent(RealLevelClosure lc)`
+- `presetAirUnitLowerDuration(RealLevelClosure lc)`
+- `presetSilencesWhenEnsnared(BooleanLevelClosure lc)`
+- `presetMeleeAttackRange(RealLevelClosure lc)`
+
+### AbilityDefinitionApprehendTalent3
+
+```wurst
+public class AbilityDefinitionApprehendTalent3 extends AbilityDefinition
+```
+
+'AHe3' / [AbilityIds.apprehendTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-apprehendTalent3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setStunDuration(int level, real value)`
+- `setAirUnitHeight(int level, real value)`
+- `setBonusDamageTakenPercent(int level, real value)`
+- `setAttackSpeedReductionPercent(int level, real value)`
+- `setAirUnitLowerDuration(int level, real value)`
+- `setSilencesWhenEnsnared(int level, bool value)`
+- `setMeleeAttackRange(int level, real value)`
+- `presetStunDuration(RealLevelClosure lc)`
+- `presetAirUnitHeight(RealLevelClosure lc)`
+- `presetBonusDamageTakenPercent(RealLevelClosure lc)`
+- `presetAttackSpeedReductionPercent(RealLevelClosure lc)`
+- `presetAirUnitLowerDuration(RealLevelClosure lc)`
+- `presetSilencesWhenEnsnared(BooleanLevelClosure lc)`
+- `presetMeleeAttackRange(RealLevelClosure lc)`
+
+### AbilityDefinitionLandenApprehendSingleTarget
+
+```wurst
+public class AbilityDefinitionLandenApprehendSingleTarget extends AbilityDefinition
+```
+
+'AHen' / [AbilityIds.landenApprehendSingleTarget](/stdlib/ref/_wurst/AbilityIds.html#abilityids-landenApprehendSingleTarget)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setStunDuration(int level, real value)`
+- `setAirUnitHeight(int level, real value)`
+- `setBonusDamageTakenPercent(int level, real value)`
+- `setAttackSpeedReductionPercent(int level, real value)`
+- `setAirUnitLowerDuration(int level, real value)`
+- `setSilencesWhenEnsnared(int level, bool value)`
+- `setMeleeAttackRange(int level, real value)`
+- `presetStunDuration(RealLevelClosure lc)`
+- `presetAirUnitHeight(RealLevelClosure lc)`
+- `presetBonusDamageTakenPercent(RealLevelClosure lc)`
+- `presetAttackSpeedReductionPercent(RealLevelClosure lc)`
+- `presetAirUnitLowerDuration(RealLevelClosure lc)`
+- `presetSilencesWhenEnsnared(BooleanLevelClosure lc)`
+- `presetMeleeAttackRange(RealLevelClosure lc)`
+
+### AbilityDefinitionEvasionStackable
+
+```wurst
+public class AbilityDefinitionEvasionStackable extends AbilityDefinition
+```
+
+'AHes' / [AbilityIds.evasionStackable](/stdlib/ref/_wurst/AbilityIds.html#abilityids-evasionStackable)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoEvade(int level, real value)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+
+### AbilityDefinitionGritTalent1
+
+```wurst
+public class AbilityDefinitionGritTalent1 extends AbilityDefinition
+```
+
+'AHg1' / [AbilityIds.gritTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-gritTalent1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setBonusAttackDamagePercentAtCap(int level, real value)`
+- `setDefenseCap(int level, real value)`
+- `setDefenseIncrease(int level, real value)`
+- `setMagicResistanceAtCap(int level, real value)`
+- `presetBonusAttackDamagePercentAtCap(RealLevelClosure lc)`
+- `presetDefenseCap(RealLevelClosure lc)`
+- `presetDefenseIncrease(RealLevelClosure lc)`
+- `presetMagicResistanceAtCap(RealLevelClosure lc)`
+
+### AbilityDefinitionGritTalent2
+
+```wurst
+public class AbilityDefinitionGritTalent2 extends AbilityDefinition
+```
+
+'AHg2' / [AbilityIds.gritTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-gritTalent2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setBonusAttackDamagePercentAtCap(int level, real value)`
+- `setDefenseCap(int level, real value)`
+- `setDefenseIncrease(int level, real value)`
+- `setMagicResistanceAtCap(int level, real value)`
+- `presetBonusAttackDamagePercentAtCap(RealLevelClosure lc)`
+- `presetDefenseCap(RealLevelClosure lc)`
+- `presetDefenseIncrease(RealLevelClosure lc)`
+- `presetMagicResistanceAtCap(RealLevelClosure lc)`
+
+### AbilityDefinitionGritTalent3
+
+```wurst
+public class AbilityDefinitionGritTalent3 extends AbilityDefinition
+```
+
+'AHg3' / [AbilityIds.gritTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-gritTalent3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setBonusAttackDamagePercentAtCap(int level, real value)`
+- `setDefenseCap(int level, real value)`
+- `setDefenseIncrease(int level, real value)`
+- `setMagicResistanceAtCap(int level, real value)`
+- `presetBonusAttackDamagePercentAtCap(RealLevelClosure lc)`
+- `presetDefenseCap(RealLevelClosure lc)`
+- `presetDefenseIncrease(RealLevelClosure lc)`
+- `presetMagicResistanceAtCap(RealLevelClosure lc)`
+
+### AbilityDefinitionGuidingHand
+
+```wurst
+public class AbilityDefinitionGuidingHand extends AbilityDefinition
+```
+
+'AHgh' / [AbilityIds.guidingHand](/stdlib/ref/_wurst/AbilityIds.html#abilityids-guidingHand)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setBonusMoveSpeedPercent(int level, real value)`
+- `setMakesUnitsUndying(int level, bool value)`
+- `setBonusAttackSpeedPercent(int level, real value)`
+- `setBonusCriticalHitPercent(int level, real value)`
+- `setBonusCriticalDamagePercent(int level, real value)`
+- `setBonusCooldownReductionPercent(int level, real value)`
+- `setManaPerSecond(int level, real value)`
+- `presetBonusMoveSpeedPercent(RealLevelClosure lc)`
+- `presetMakesUnitsUndying(BooleanLevelClosure lc)`
+- `presetBonusAttackSpeedPercent(RealLevelClosure lc)`
+- `presetBonusCriticalHitPercent(RealLevelClosure lc)`
+- `presetBonusCriticalDamagePercent(RealLevelClosure lc)`
+- `presetBonusCooldownReductionPercent(RealLevelClosure lc)`
+- `presetManaPerSecond(RealLevelClosure lc)`
+
+### AbilityDefinitionGrit
+
+```wurst
+public class AbilityDefinitionGrit extends AbilityDefinition
+```
+
+'AHgr' / [AbilityIds.grit](/stdlib/ref/_wurst/AbilityIds.html#abilityids-grit)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setBonusAttackDamagePercentAtCap(int level, real value)`
+- `setDefenseCap(int level, real value)`
+- `setDefenseIncrease(int level, real value)`
+- `setMagicResistanceAtCap(int level, real value)`
+- `presetBonusAttackDamagePercentAtCap(RealLevelClosure lc)`
+- `presetDefenseCap(RealLevelClosure lc)`
+- `presetDefenseIncrease(RealLevelClosure lc)`
+- `presetMagicResistanceAtCap(RealLevelClosure lc)`
+
+### AbilityDefinitionHeadsplitterTalent1
+
+```wurst
+public class AbilityDefinitionHeadsplitterTalent1 extends AbilityDefinition
+```
+
+'AHh1' / [AbilityIds.headsplitterTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-headsplitterTalent1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setRefreshesCooldownOnKill(int level, bool value)`
+- `setBonusDamageDebuffDurationNormal(int level, real value)`
+- `setStunDurationNormal(int level, real value)`
+- `setBonusDamageDebuffDurationHero(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setDebuffBonusDamageReceivedPercent(int level, real value)`
+- `setStunDurationHero(int level, real value)`
+- `presetRefreshesCooldownOnKill(BooleanLevelClosure lc)`
+- `presetBonusDamageDebuffDurationNormal(RealLevelClosure lc)`
+- `presetStunDurationNormal(RealLevelClosure lc)`
+- `presetBonusDamageDebuffDurationHero(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetDebuffBonusDamageReceivedPercent(RealLevelClosure lc)`
+- `presetStunDurationHero(RealLevelClosure lc)`
+
+### AbilityDefinitionHeadsplitterTalent2
+
+```wurst
+public class AbilityDefinitionHeadsplitterTalent2 extends AbilityDefinition
+```
+
+'AHh2' / [AbilityIds.headsplitterTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-headsplitterTalent2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setRefreshesCooldownOnKill(int level, bool value)`
+- `setBonusDamageDebuffDurationNormal(int level, real value)`
+- `setStunDurationNormal(int level, real value)`
+- `setBonusDamageDebuffDurationHero(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setDebuffBonusDamageReceivedPercent(int level, real value)`
+- `setStunDurationHero(int level, real value)`
+- `presetRefreshesCooldownOnKill(BooleanLevelClosure lc)`
+- `presetBonusDamageDebuffDurationNormal(RealLevelClosure lc)`
+- `presetStunDurationNormal(RealLevelClosure lc)`
+- `presetBonusDamageDebuffDurationHero(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetDebuffBonusDamageReceivedPercent(RealLevelClosure lc)`
+- `presetStunDurationHero(RealLevelClosure lc)`
+
+### AbilityDefinitionHeadsplitterTalent3
+
+```wurst
+public class AbilityDefinitionHeadsplitterTalent3 extends AbilityDefinition
+```
+
+'AHh3' / [AbilityIds.headsplitterTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-headsplitterTalent3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setRefreshesCooldownOnKill(int level, bool value)`
+- `setBonusDamageDebuffDurationNormal(int level, real value)`
+- `setStunDurationNormal(int level, real value)`
+- `setBonusDamageDebuffDurationHero(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setDebuffBonusDamageReceivedPercent(int level, real value)`
+- `setStunDurationHero(int level, real value)`
+- `presetRefreshesCooldownOnKill(BooleanLevelClosure lc)`
+- `presetBonusDamageDebuffDurationNormal(RealLevelClosure lc)`
+- `presetStunDurationNormal(RealLevelClosure lc)`
+- `presetBonusDamageDebuffDurationHero(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetDebuffBonusDamageReceivedPercent(RealLevelClosure lc)`
+- `presetStunDurationHero(RealLevelClosure lc)`
+
+### AbilityDefinitionHeroicChallengeAkaProvoke
+
+```wurst
+public class AbilityDefinitionHeroicChallengeAkaProvoke extends AbilityDefinition
+```
+
+'AHhc' / [AbilityIds.heroicChallengeAkaProvoke](/stdlib/ref/_wurst/AbilityIds.html#abilityids-heroicChallengeAkaProvoke)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setTauntedDefenseReduction(int level, real value)`
+- `setShieldReflectPercent(int level, real value)`
+- `setShieldDuration(int level, real value)`
+- `setShieldHealth(int level, real value)`
+- `presetTauntedDefenseReduction(RealLevelClosure lc)`
+- `presetShieldReflectPercent(RealLevelClosure lc)`
+- `presetShieldDuration(RealLevelClosure lc)`
+- `presetShieldHealth(RealLevelClosure lc)`
+
+### AbilityDefinitionHeadsplitter
+
+```wurst
+public class AbilityDefinitionHeadsplitter extends AbilityDefinition
+```
+
+'AHhr' / [AbilityIds.headsplitter](/stdlib/ref/_wurst/AbilityIds.html#abilityids-headsplitter)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setRefreshesCooldownOnKill(int level, bool value)`
+- `setBonusDamageDebuffDurationNormal(int level, real value)`
+- `setStunDurationNormal(int level, real value)`
+- `setBonusDamageDebuffDurationHero(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setDebuffBonusDamageReceivedPercent(int level, real value)`
+- `setStunDurationHero(int level, real value)`
+- `presetRefreshesCooldownOnKill(BooleanLevelClosure lc)`
+- `presetBonusDamageDebuffDurationNormal(RealLevelClosure lc)`
+- `presetStunDurationNormal(RealLevelClosure lc)`
+- `presetBonusDamageDebuffDurationHero(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetDebuffBonusDamageReceivedPercent(RealLevelClosure lc)`
+- `presetStunDurationHero(RealLevelClosure lc)`
+
+### AbilityDefinitionHeroicSlash
+
+```wurst
+public class AbilityDefinitionHeroicSlash extends AbilityDefinition
+```
+
+'AHhs' / [AbilityIds.heroicSlash](/stdlib/ref/_wurst/AbilityIds.html#abilityids-heroicSlash)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamage(int level, real value)`
+- `setBonusDamagePercentAgainstDebuffed(int level, real value)`
+- `setHealPercentOnDamageDealt(int level, real value)`
+- `setRefreshesCooldownOnKill(int level, bool value)`
+- `presetDamage(RealLevelClosure lc)`
+- `presetBonusDamagePercentAgainstDebuffed(RealLevelClosure lc)`
+- `presetHealPercentOnDamageDealt(RealLevelClosure lc)`
+- `presetRefreshesCooldownOnKill(BooleanLevelClosure lc)`
+
+### AbilityDefinitionInspireCourageTalent1
+
+```wurst
+public class AbilityDefinitionInspireCourageTalent1 extends AbilityDefinition
+```
+
+'AHi1' / [AbilityIds.inspireCourageTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inspireCourageTalent1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSpellDamageResistance(int level, real value)`
+- `setHealing(int level, real value)`
+- `setDefense(int level, real value)`
+- `setRemovesNegativeDebuffs(int level, bool value)`
+- `presetSpellDamageResistance(RealLevelClosure lc)`
+- `presetHealing(RealLevelClosure lc)`
+- `presetDefense(RealLevelClosure lc)`
+- `presetRemovesNegativeDebuffs(BooleanLevelClosure lc)`
+
+### AbilityDefinitionInspireCourageTalent2
+
+```wurst
+public class AbilityDefinitionInspireCourageTalent2 extends AbilityDefinition
+```
+
+'AHi2' / [AbilityIds.inspireCourageTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inspireCourageTalent2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSpellDamageResistance(int level, real value)`
+- `setHealing(int level, real value)`
+- `setDefense(int level, real value)`
+- `setRemovesNegativeDebuffs(int level, bool value)`
+- `presetSpellDamageResistance(RealLevelClosure lc)`
+- `presetHealing(RealLevelClosure lc)`
+- `presetDefense(RealLevelClosure lc)`
+- `presetRemovesNegativeDebuffs(BooleanLevelClosure lc)`
+
+### AbilityDefinitionInspireCourageTalent3
+
+```wurst
+public class AbilityDefinitionInspireCourageTalent3 extends AbilityDefinition
+```
+
+'AHi3' / [AbilityIds.inspireCourageTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inspireCourageTalent3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSpellDamageResistance(int level, real value)`
+- `setHealing(int level, real value)`
+- `setDefense(int level, real value)`
+- `setRemovesNegativeDebuffs(int level, bool value)`
+- `presetSpellDamageResistance(RealLevelClosure lc)`
+- `presetHealing(RealLevelClosure lc)`
+- `presetDefense(RealLevelClosure lc)`
+- `presetRemovesNegativeDebuffs(BooleanLevelClosure lc)`
+
+### AbilityDefinitionInspireCourage
+
+```wurst
+public class AbilityDefinitionInspireCourage extends AbilityDefinition
+```
+
+'AHic' / [AbilityIds.inspireCourage](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inspireCourage)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSpellDamageResistance(int level, real value)`
+- `setHealing(int level, real value)`
+- `setDefense(int level, real value)`
+- `setRemovesNegativeDebuffs(int level, bool value)`
+- `presetSpellDamageResistance(RealLevelClosure lc)`
+- `presetHealing(RealLevelClosure lc)`
+- `presetDefense(RealLevelClosure lc)`
+- `presetRemovesNegativeDebuffs(BooleanLevelClosure lc)`
+
+### AbilityDefinitionIlastarSurgeOfLightTalent1
+
+```wurst
+public class AbilityDefinitionIlastarSurgeOfLightTalent1 extends AbilityDefinition
+```
+
+'AHl1' / [AbilityIds.ilastarSurgeOfLightTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarSurgeOfLightTalent1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAllyPassiveCooldown(int level, real value)`
+- `setHealPerSecondtoAlly(int level, real value)`
+- `setManaRestoretoAlly(int level, real value)`
+- `setInstantHealtoAlly(int level, real value)`
+- `setAllyPassiveDuration(int level, real value)`
+- `setAbilityPassiveRadius(int level, real value)`
+- `setAllyPassiveStatAmplify(int level, int value)`
+  % Ally Passive Stat Amplify / 'sol6'
+- `setAttackSpeedGain(int level, int value)`
+  % Attack Speed Gain / 'sol7'
+- `setMovementSpeedGain(int level, int value)`
+  % Movement Speed Gain / 'sol8'
+- `presetAllyPassiveCooldown(RealLevelClosure lc)`
+- `presetHealPerSecondtoAlly(RealLevelClosure lc)`
+- `presetManaRestoretoAlly(RealLevelClosure lc)`
+- `presetInstantHealtoAlly(RealLevelClosure lc)`
+- `presetAllyPassiveDuration(RealLevelClosure lc)`
+- `presetAbilityPassiveRadius(RealLevelClosure lc)`
+- `presetAllyPassiveStatAmplify(IntLevelClosure lc)`
+- `presetAttackSpeedGain(IntLevelClosure lc)`
+- `presetMovementSpeedGain(IntLevelClosure lc)`
+
+### AbilityDefinitionIlastarSurgeOfLightTalent2
+
+```wurst
+public class AbilityDefinitionIlastarSurgeOfLightTalent2 extends AbilityDefinition
+```
+
+'AHl2' / [AbilityIds.ilastarSurgeOfLightTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarSurgeOfLightTalent2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAllyPassiveCooldown(int level, real value)`
+- `setHealPerSecondtoAlly(int level, real value)`
+- `setManaRestoretoAlly(int level, real value)`
+- `setInstantHealtoAlly(int level, real value)`
+- `setAllyPassiveDuration(int level, real value)`
+- `setAbilityPassiveRadius(int level, real value)`
+- `setAllyPassiveStatAmplify(int level, int value)`
+  % Ally Passive Stat Amplify / 'sol6'
+- `setAttackSpeedGain(int level, int value)`
+  % Attack Speed Gain / 'sol7'
+- `setMovementSpeedGain(int level, int value)`
+  % Movement Speed Gain / 'sol8'
+- `presetAllyPassiveCooldown(RealLevelClosure lc)`
+- `presetHealPerSecondtoAlly(RealLevelClosure lc)`
+- `presetManaRestoretoAlly(RealLevelClosure lc)`
+- `presetInstantHealtoAlly(RealLevelClosure lc)`
+- `presetAllyPassiveDuration(RealLevelClosure lc)`
+- `presetAbilityPassiveRadius(RealLevelClosure lc)`
+- `presetAllyPassiveStatAmplify(IntLevelClosure lc)`
+- `presetAttackSpeedGain(IntLevelClosure lc)`
+- `presetMovementSpeedGain(IntLevelClosure lc)`
+
+### AbilityDefinitionIlastarSurgeOfLightTalent3
+
+```wurst
+public class AbilityDefinitionIlastarSurgeOfLightTalent3 extends AbilityDefinition
+```
+
+'AHl3' / [AbilityIds.ilastarSurgeOfLightTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarSurgeOfLightTalent3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAllyPassiveCooldown(int level, real value)`
+- `setHealPerSecondtoAlly(int level, real value)`
+- `setManaRestoretoAlly(int level, real value)`
+- `setInstantHealtoAlly(int level, real value)`
+- `setAllyPassiveDuration(int level, real value)`
+- `setAbilityPassiveRadius(int level, real value)`
+- `setAllyPassiveStatAmplify(int level, int value)`
+  % Ally Passive Stat Amplify / 'sol6'
+- `setAttackSpeedGain(int level, int value)`
+  % Attack Speed Gain / 'sol7'
+- `setMovementSpeedGain(int level, int value)`
+  % Movement Speed Gain / 'sol8'
+- `presetAllyPassiveCooldown(RealLevelClosure lc)`
+- `presetHealPerSecondtoAlly(RealLevelClosure lc)`
+- `presetManaRestoretoAlly(RealLevelClosure lc)`
+- `presetInstantHealtoAlly(RealLevelClosure lc)`
+- `presetAllyPassiveDuration(RealLevelClosure lc)`
+- `presetAbilityPassiveRadius(RealLevelClosure lc)`
+- `presetAllyPassiveStatAmplify(IntLevelClosure lc)`
+- `presetAttackSpeedGain(IntLevelClosure lc)`
+- `presetMovementSpeedGain(IntLevelClosure lc)`
+
+### AbilityDefinitionLightSMercyTalent1
+
+```wurst
+public class AbilityDefinitionLightSMercyTalent1 extends AbilityDefinition
+```
+
+'AHm1' / [AbilityIds.lightSMercyTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-lightSMercyTalent1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDispellMagicDealBonusDamagetoSummoned(int level, bool value)`
+- `setExplosionRadius(int level, real value)`
+- `setBurnDamage(int level, real value)`
+- `setHealAmounttoAllyUnits(int level, real value)`
+- `setBurnDamagePulseFrequency(int level, real value)`
+- `setBonusDamageToSummons(int level, real value)`
+- `setEnableChainExplosion(int level, bool value)`
+- `presetDispellMagicDealBonusDamagetoSummoned(BooleanLevelClosure lc)`
+- `presetExplosionRadius(RealLevelClosure lc)`
+- `presetBurnDamage(RealLevelClosure lc)`
+- `presetHealAmounttoAllyUnits(RealLevelClosure lc)`
+- `presetBurnDamagePulseFrequency(RealLevelClosure lc)`
+- `presetBonusDamageToSummons(RealLevelClosure lc)`
+- `presetEnableChainExplosion(BooleanLevelClosure lc)`
+
+### AbilityDefinitionLightSMercyTalent2
+
+```wurst
+public class AbilityDefinitionLightSMercyTalent2 extends AbilityDefinition
+```
+
+'AHm2' / [AbilityIds.lightSMercyTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-lightSMercyTalent2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDispellMagicDealBonusDamagetoSummoned(int level, bool value)`
+- `setExplosionRadius(int level, real value)`
+- `setBurnDamage(int level, real value)`
+- `setHealAmounttoAllyUnits(int level, real value)`
+- `setBurnDamagePulseFrequency(int level, real value)`
+- `setBonusDamageToSummons(int level, real value)`
+- `setEnableChainExplosion(int level, bool value)`
+- `presetDispellMagicDealBonusDamagetoSummoned(BooleanLevelClosure lc)`
+- `presetExplosionRadius(RealLevelClosure lc)`
+- `presetBurnDamage(RealLevelClosure lc)`
+- `presetHealAmounttoAllyUnits(RealLevelClosure lc)`
+- `presetBurnDamagePulseFrequency(RealLevelClosure lc)`
+- `presetBonusDamageToSummons(RealLevelClosure lc)`
+- `presetEnableChainExplosion(BooleanLevelClosure lc)`
+
+### AbilityDefinitionLightSMercyTalent3
+
+```wurst
+public class AbilityDefinitionLightSMercyTalent3 extends AbilityDefinition
+```
+
+'AHm3' / [AbilityIds.lightSMercyTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-lightSMercyTalent3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDispellMagicDealBonusDamagetoSummoned(int level, bool value)`
+- `setExplosionRadius(int level, real value)`
+- `setBurnDamage(int level, real value)`
+- `setHealAmounttoAllyUnits(int level, real value)`
+- `setBurnDamagePulseFrequency(int level, real value)`
+- `setBonusDamageToSummons(int level, real value)`
+- `setEnableChainExplosion(int level, bool value)`
+- `presetDispellMagicDealBonusDamagetoSummoned(BooleanLevelClosure lc)`
+- `presetExplosionRadius(RealLevelClosure lc)`
+- `presetBurnDamage(RealLevelClosure lc)`
+- `presetHealAmounttoAllyUnits(RealLevelClosure lc)`
+- `presetBurnDamagePulseFrequency(RealLevelClosure lc)`
+- `presetBonusDamageToSummons(RealLevelClosure lc)`
+- `presetEnableChainExplosion(BooleanLevelClosure lc)`
+
+### AbilityDefinitionClericMindControl
+
+```wurst
+public class AbilityDefinitionClericMindControl extends AbilityDefinition
+```
+
+'AHmc' / [AbilityIds.clericMindControl](/stdlib/ref/_wurst/AbilityIds.html#abilityids-clericMindControl)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setExplosionDamage(int level, real value)`
+- `override function setDurationNormal(int level, real value)`
+- `setMaximumCreepLevel(int level, int value)`
+- `setMindControlledUnitLimit(int level, int value)`
+- `setExplosionRadius(int level, real value)`
+- `presetExplosionDamage(RealLevelClosure lc)`
+- `override function presetDurationNormal(RealLevelClosure lc)`
+- `presetMaximumCreepLevel(IntLevelClosure lc)`
+- `presetMindControlledUnitLimit(IntLevelClosure lc)`
+- `presetExplosionRadius(RealLevelClosure lc)`
+
+### AbilityDefinitionChallengingCall
+
+```wurst
+public class AbilityDefinitionChallengingCall extends AbilityDefinition
+```
+
+'AHnt' / [AbilityIds.challengingCall](/stdlib/ref/_wurst/AbilityIds.html#abilityids-challengingCall)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setPreferHostiles(int level, int value)`
+- `setBonusdefense(int level, real value)`
+- `setBonusAttack(int level, real value)`
+- `setUseattackvalueaspercentage(int level, bool value)`
+- `setIntervalbetweenPulses(int level, real value)`
+- `setUsedefensevalueaspercentage(int level, bool value)`
+- `setMaxUnits(int level, int value)`
+- `setNumberofPulses(int level, int value)`
+- `setBonusesduration(int level, real value)`
+- `setPreferFriendlies(int level, int value)`
+- `presetPreferHostiles(IntLevelClosure lc)`
+- `presetBonusdefense(RealLevelClosure lc)`
+- `presetBonusAttack(RealLevelClosure lc)`
+- `presetUseattackvalueaspercentage(BooleanLevelClosure lc)`
+- `presetIntervalbetweenPulses(RealLevelClosure lc)`
+- `presetUsedefensevalueaspercentage(BooleanLevelClosure lc)`
+- `presetMaxUnits(IntLevelClosure lc)`
+- `presetNumberofPulses(IntLevelClosure lc)`
+- `presetBonusesduration(RealLevelClosure lc)`
+- `presetPreferFriendlies(IntLevelClosure lc)`
+
+### AbilityDefinitionForsakenPaladinSacredAura
+
+```wurst
+public class AbilityDefinitionForsakenPaladinSacredAura extends AbilityDefinition
+```
+
+'AHpa' / [AbilityIds.forsakenPaladinSacredAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-forsakenPaladinSacredAura)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMagicResistDecreaseforEnemies(int level, real value)`
+  % Magic Resist Decrease for Enemies / 'hsa4'
+- `setHealingIncreaseforAllies(int level, real value)`
+  % Healing Increase for Allies / 'hsa2'
+- `setCooldownIncreaseforEnemies(int level, real value)`
+  % Cooldown Increase for Enemies / 'hsa6'
+- `setMagicResistIncreaseforAllies(int level, real value)`
+  % Magic Resist Increase for Allies / 'hsa1'
+- `setCooldownReductionIncreaseforAllies(int level, real value)`
+  % Cooldown Reduction Increase for Allies / 'hsa3'
+- `setFlatManaRegenforAllies(int level, real value)`
+- `setHealingDecreaseforEnemies(int level, real value)`
+  % Healing Decrease for Enemies / 'hsa5'
+- `presetMagicResistDecreaseforEnemies(RealLevelClosure lc)`
+- `presetHealingIncreaseforAllies(RealLevelClosure lc)`
+- `presetCooldownIncreaseforEnemies(RealLevelClosure lc)`
+- `presetMagicResistIncreaseforAllies(RealLevelClosure lc)`
+- `presetCooldownReductionIncreaseforAllies(RealLevelClosure lc)`
+- `presetFlatManaRegenforAllies(RealLevelClosure lc)`
+- `presetHealingDecreaseforEnemies(RealLevelClosure lc)`
+
+### AbilityDefinitionHolyWrath
+
+```wurst
+public class AbilityDefinitionHolyWrath extends AbilityDefinition
+```
+
+'AHpb' / [AbilityIds.holyWrath](/stdlib/ref/_wurst/AbilityIds.html#abilityids-holyWrath)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageStrengthModifier(int level, int value)`
+  Damage Strength Modifier (%) / 'pbl5'
+- `setAttackAngle(int level, real value)`
+- `setDamageDelay(int level, real value)`
+- `setDispelSummonedDamage(int level, real value)`
+- `setDamage(int level, real value)`
+- `setAttackDistance(int level, real value)`
+- `setUndeadBurnDamage(int level, real value)`
+- `setDispelMagicOnHit(int level, bool value)`
+- `presetDamageStrengthModifier(IntLevelClosure lc)`
+- `presetAttackAngle(RealLevelClosure lc)`
+- `presetDamageDelay(RealLevelClosure lc)`
+- `presetDispelSummonedDamage(RealLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+- `presetAttackDistance(RealLevelClosure lc)`
+- `presetUndeadBurnDamage(RealLevelClosure lc)`
+- `presetDispelMagicOnHit(BooleanLevelClosure lc)`
+
+### AbilityDefinitionGuidingHandTalent1
+
+```wurst
+public class AbilityDefinitionGuidingHandTalent1 extends AbilityDefinition
+```
+
+'AHq1' / [AbilityIds.guidingHandTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-guidingHandTalent1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setBonusMoveSpeedPercent(int level, real value)`
+- `setMakesUnitsUndying(int level, bool value)`
+- `setBonusAttackSpeedPercent(int level, real value)`
+- `setBonusCriticalHitPercent(int level, real value)`
+- `setBonusCriticalDamagePercent(int level, real value)`
+- `setBonusCooldownReductionPercent(int level, real value)`
+- `setManaPerSecond(int level, real value)`
+- `presetBonusMoveSpeedPercent(RealLevelClosure lc)`
+- `presetMakesUnitsUndying(BooleanLevelClosure lc)`
+- `presetBonusAttackSpeedPercent(RealLevelClosure lc)`
+- `presetBonusCriticalHitPercent(RealLevelClosure lc)`
+- `presetBonusCriticalDamagePercent(RealLevelClosure lc)`
+- `presetBonusCooldownReductionPercent(RealLevelClosure lc)`
+- `presetManaPerSecond(RealLevelClosure lc)`
+
+### AbilityDefinitionGuidingHandTalent2
+
+```wurst
+public class AbilityDefinitionGuidingHandTalent2 extends AbilityDefinition
+```
+
+'AHq2' / [AbilityIds.guidingHandTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-guidingHandTalent2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setBonusMoveSpeedPercent(int level, real value)`
+- `setMakesUnitsUndying(int level, bool value)`
+- `setBonusAttackSpeedPercent(int level, real value)`
+- `setBonusCriticalHitPercent(int level, real value)`
+- `setBonusCriticalDamagePercent(int level, real value)`
+- `setBonusCooldownReductionPercent(int level, real value)`
+- `setManaPerSecond(int level, real value)`
+- `presetBonusMoveSpeedPercent(RealLevelClosure lc)`
+- `presetMakesUnitsUndying(BooleanLevelClosure lc)`
+- `presetBonusAttackSpeedPercent(RealLevelClosure lc)`
+- `presetBonusCriticalHitPercent(RealLevelClosure lc)`
+- `presetBonusCriticalDamagePercent(RealLevelClosure lc)`
+- `presetBonusCooldownReductionPercent(RealLevelClosure lc)`
+- `presetManaPerSecond(RealLevelClosure lc)`
+
+### AbilityDefinitionGuidingHandTalent3
+
+```wurst
+public class AbilityDefinitionGuidingHandTalent3 extends AbilityDefinition
+```
+
+'AHq3' / [AbilityIds.guidingHandTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-guidingHandTalent3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setBonusMoveSpeedPercent(int level, real value)`
+- `setMakesUnitsUndying(int level, bool value)`
+- `setBonusAttackSpeedPercent(int level, real value)`
+- `setBonusCriticalHitPercent(int level, real value)`
+- `setBonusCriticalDamagePercent(int level, real value)`
+- `setBonusCooldownReductionPercent(int level, real value)`
+- `setManaPerSecond(int level, real value)`
+- `presetBonusMoveSpeedPercent(RealLevelClosure lc)`
+- `presetMakesUnitsUndying(BooleanLevelClosure lc)`
+- `presetBonusAttackSpeedPercent(RealLevelClosure lc)`
+- `presetBonusCriticalHitPercent(RealLevelClosure lc)`
+- `presetBonusCriticalDamagePercent(RealLevelClosure lc)`
+- `presetBonusCooldownReductionPercent(RealLevelClosure lc)`
+- `presetManaPerSecond(RealLevelClosure lc)`
+
+### AbilityDefinitionSweepingStrikeT1ASReduce
+
+```wurst
+public class AbilityDefinitionSweepingStrikeT1ASReduce extends AbilityDefinition
+```
+
+'AHs1' / [AbilityIds.sweepingStrikeT1ASReduce](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sweepingStrikeT1ASReduce)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHeroDurationAttackSpeedReduction(int level, real value)`
+- `setDurationAttackSpeedReduction(int level, real value)`
+- `setDurationDamageByTargetMaxHealth(int level, real value)`
+- `setArmorReduction(int level, real value)`
+- `setCooldownReductionOnHit(int level, real value)`
+- `setHeroDurationArmorReduction(int level, real value)`
+- `setAttackAngle(int level, real value)`
+- `setHealingPerTargetHit(int level, real value)`
+- `setDamageByTargetMaxHealth(int level, real value)`
+  Damage By Target Max Health (%) / 'swpa'
+- `setMaxTargetHit(int level, int value)`
+- `setDamageStrengthModifier(int level, int value)`
+  Damage Strength Modifier (%) / 'swp5'
+- `setAttackDistance(int level, real value)`
+- `setHeroDurationDamageByTargetMaxHealth(int level, real value)`
+- `setDurationArmorReduction(int level, real value)`
+- `setDamageDelay(int level, real value)`
+- `setAttackSpeedReduction(int level, int value)`
+  Attack Speed Reduction (%) / 'swp9'
+- `setDamage(int level, real value)`
+- `presetHeroDurationAttackSpeedReduction(RealLevelClosure lc)`
+- `presetDurationAttackSpeedReduction(RealLevelClosure lc)`
+- `presetDurationDamageByTargetMaxHealth(RealLevelClosure lc)`
+- `presetArmorReduction(RealLevelClosure lc)`
+- `presetCooldownReductionOnHit(RealLevelClosure lc)`
+- `presetHeroDurationArmorReduction(RealLevelClosure lc)`
+- `presetAttackAngle(RealLevelClosure lc)`
+- `presetHealingPerTargetHit(RealLevelClosure lc)`
+- `presetDamageByTargetMaxHealth(RealLevelClosure lc)`
+- `presetMaxTargetHit(IntLevelClosure lc)`
+- `presetDamageStrengthModifier(IntLevelClosure lc)`
+- `presetAttackDistance(RealLevelClosure lc)`
+- `presetHeroDurationDamageByTargetMaxHealth(RealLevelClosure lc)`
+- `presetDurationArmorReduction(RealLevelClosure lc)`
+- `presetDamageDelay(RealLevelClosure lc)`
+- `presetAttackSpeedReduction(IntLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionSweepingStrikeT2ArmorReduce
+
+```wurst
+public class AbilityDefinitionSweepingStrikeT2ArmorReduce extends AbilityDefinition
+```
+
+'AHs2' / [AbilityIds.sweepingStrikeT2ArmorReduce](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sweepingStrikeT2ArmorReduce)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHeroDurationAttackSpeedReduction(int level, real value)`
+- `setDurationAttackSpeedReduction(int level, real value)`
+- `setDurationDamageByTargetMaxHealth(int level, real value)`
+- `setArmorReduction(int level, real value)`
+- `setCooldownReductionOnHit(int level, real value)`
+- `setHeroDurationArmorReduction(int level, real value)`
+- `setAttackAngle(int level, real value)`
+- `setHealingPerTargetHit(int level, real value)`
+- `setDamageByTargetMaxHealth(int level, real value)`
+  Damage By Target Max Health (%) / 'swpa'
+- `setMaxTargetHit(int level, int value)`
+- `setDamageStrengthModifier(int level, int value)`
+  Damage Strength Modifier (%) / 'swp5'
+- `setAttackDistance(int level, real value)`
+- `setHeroDurationDamageByTargetMaxHealth(int level, real value)`
+- `setDurationArmorReduction(int level, real value)`
+- `setDamageDelay(int level, real value)`
+- `setAttackSpeedReduction(int level, int value)`
+  Attack Speed Reduction (%) / 'swp9'
+- `setDamage(int level, real value)`
+- `presetHeroDurationAttackSpeedReduction(RealLevelClosure lc)`
+- `presetDurationAttackSpeedReduction(RealLevelClosure lc)`
+- `presetDurationDamageByTargetMaxHealth(RealLevelClosure lc)`
+- `presetArmorReduction(RealLevelClosure lc)`
+- `presetCooldownReductionOnHit(RealLevelClosure lc)`
+- `presetHeroDurationArmorReduction(RealLevelClosure lc)`
+- `presetAttackAngle(RealLevelClosure lc)`
+- `presetHealingPerTargetHit(RealLevelClosure lc)`
+- `presetDamageByTargetMaxHealth(RealLevelClosure lc)`
+- `presetMaxTargetHit(IntLevelClosure lc)`
+- `presetDamageStrengthModifier(IntLevelClosure lc)`
+- `presetAttackDistance(RealLevelClosure lc)`
+- `presetHeroDurationDamageByTargetMaxHealth(RealLevelClosure lc)`
+- `presetDurationArmorReduction(RealLevelClosure lc)`
+- `presetDamageDelay(RealLevelClosure lc)`
+- `presetAttackSpeedReduction(IntLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionSweepingStrikeT3CDReduce
+
+```wurst
+public class AbilityDefinitionSweepingStrikeT3CDReduce extends AbilityDefinition
+```
+
+'AHs3' / [AbilityIds.sweepingStrikeT3CDReduce](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sweepingStrikeT3CDReduce)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHeroDurationAttackSpeedReduction(int level, real value)`
+- `setDurationAttackSpeedReduction(int level, real value)`
+- `setDurationDamageByTargetMaxHealth(int level, real value)`
+- `setArmorReduction(int level, real value)`
+- `setCooldownReductionOnHit(int level, real value)`
+- `setHeroDurationArmorReduction(int level, real value)`
+- `setAttackAngle(int level, real value)`
+- `setHealingPerTargetHit(int level, real value)`
+- `setDamageByTargetMaxHealth(int level, real value)`
+  Damage By Target Max Health (%) / 'swpa'
+- `setMaxTargetHit(int level, int value)`
+- `setDamageStrengthModifier(int level, int value)`
+  Damage Strength Modifier (%) / 'swp5'
+- `setAttackDistance(int level, real value)`
+- `setHeroDurationDamageByTargetMaxHealth(int level, real value)`
+- `setDurationArmorReduction(int level, real value)`
+- `setDamageDelay(int level, real value)`
+- `setAttackSpeedReduction(int level, int value)`
+  Attack Speed Reduction (%) / 'swp9'
+- `setDamage(int level, real value)`
+- `presetHeroDurationAttackSpeedReduction(RealLevelClosure lc)`
+- `presetDurationAttackSpeedReduction(RealLevelClosure lc)`
+- `presetDurationDamageByTargetMaxHealth(RealLevelClosure lc)`
+- `presetArmorReduction(RealLevelClosure lc)`
+- `presetCooldownReductionOnHit(RealLevelClosure lc)`
+- `presetHeroDurationArmorReduction(RealLevelClosure lc)`
+- `presetAttackAngle(RealLevelClosure lc)`
+- `presetHealingPerTargetHit(RealLevelClosure lc)`
+- `presetDamageByTargetMaxHealth(RealLevelClosure lc)`
+- `presetMaxTargetHit(IntLevelClosure lc)`
+- `presetDamageStrengthModifier(IntLevelClosure lc)`
+- `presetAttackDistance(RealLevelClosure lc)`
+- `presetHeroDurationDamageByTargetMaxHealth(RealLevelClosure lc)`
+- `presetDurationArmorReduction(RealLevelClosure lc)`
+- `presetDamageDelay(RealLevelClosure lc)`
+- `presetAttackSpeedReduction(IntLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionClericSacredFlameLightSMercy
+
+```wurst
+public class AbilityDefinitionClericSacredFlameLightSMercy extends AbilityDefinition
+```
+
+'AHsf' / [AbilityIds.clericSacredFlameLightSMercy](/stdlib/ref/_wurst/AbilityIds.html#abilityids-clericSacredFlameLightSMercy)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDispellMagicDealBonusDamagetoSummoned(int level, bool value)`
+- `setExplosionRadius(int level, real value)`
+- `setBurnDamage(int level, real value)`
+- `setHealAmounttoAllyUnits(int level, real value)`
+- `setBurnDamagePulseFrequency(int level, real value)`
+- `setBonusDamageToSummons(int level, real value)`
+- `setEnableChainExplosion(int level, bool value)`
+- `presetDispellMagicDealBonusDamagetoSummoned(BooleanLevelClosure lc)`
+- `presetExplosionRadius(RealLevelClosure lc)`
+- `presetBurnDamage(RealLevelClosure lc)`
+- `presetHealAmounttoAllyUnits(RealLevelClosure lc)`
+- `presetBurnDamagePulseFrequency(RealLevelClosure lc)`
+- `presetBonusDamageToSummons(RealLevelClosure lc)`
+- `presetEnableChainExplosion(BooleanLevelClosure lc)`
+
+### AbilityDefinitionIlastarSurgeOfLight
+
+```wurst
+public class AbilityDefinitionIlastarSurgeOfLight extends AbilityDefinition
+```
+
+'AHsl' / [AbilityIds.ilastarSurgeOfLight](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarSurgeOfLight)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAllyPassiveCooldown(int level, real value)`
+- `setHealPerSecondtoAlly(int level, real value)`
+- `setManaRestoretoAlly(int level, real value)`
+- `setInstantHealtoAlly(int level, real value)`
+- `setAllyPassiveDuration(int level, real value)`
+- `setAbilityPassiveRadius(int level, real value)`
+- `setAllyPassiveStatAmplify(int level, int value)`
+  % Ally Passive Stat Amplify / 'sol6'
+- `setAttackSpeedGain(int level, int value)`
+  % Attack Speed Gain / 'sol7'
+- `setMovementSpeedGain(int level, int value)`
+  % Movement Speed Gain / 'sol8'
+- `presetAllyPassiveCooldown(RealLevelClosure lc)`
+- `presetHealPerSecondtoAlly(RealLevelClosure lc)`
+- `presetManaRestoretoAlly(RealLevelClosure lc)`
+- `presetInstantHealtoAlly(RealLevelClosure lc)`
+- `presetAllyPassiveDuration(RealLevelClosure lc)`
+- `presetAbilityPassiveRadius(RealLevelClosure lc)`
+- `presetAllyPassiveStatAmplify(IntLevelClosure lc)`
+- `presetAttackSpeedGain(IntLevelClosure lc)`
+- `presetMovementSpeedGain(IntLevelClosure lc)`
+
+### AbilityDefinitionHardenedSkinStacking
+
+```wurst
+public class AbilityDefinitionHardenedSkinStacking extends AbilityDefinition
+```
+
+'AHss' / [AbilityIds.hardenedSkinStacking](/stdlib/ref/_wurst/AbilityIds.html#abilityids-hardenedSkinStacking)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMinimumDamage(int level, real value)`
+- `setIncludeRangedDamage(int level, bool value)`
+- `setIncludeMeleeDamage(int level, bool value)`
+- `setChancetoReduceDamage(int level, real value)`
+  Chance to Reduce Damage (%) / 'Ssk1'
+- `setIgnoredDamage(int level, real value)`
+- `presetMinimumDamage(RealLevelClosure lc)`
+- `presetIncludeRangedDamage(BooleanLevelClosure lc)`
+- `presetIncludeMeleeDamage(BooleanLevelClosure lc)`
+- `presetChancetoReduceDamage(RealLevelClosure lc)`
+- `presetIgnoredDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionSweepingStrike
+
+```wurst
+public class AbilityDefinitionSweepingStrike extends AbilityDefinition
+```
+
+'AHsw' / [AbilityIds.sweepingStrike](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sweepingStrike)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHeroDurationAttackSpeedReduction(int level, real value)`
+- `setDurationAttackSpeedReduction(int level, real value)`
+- `setDurationDamageByTargetMaxHealth(int level, real value)`
+- `setArmorReduction(int level, real value)`
+- `setCooldownReductionOnHit(int level, real value)`
+- `setHeroDurationArmorReduction(int level, real value)`
+- `setAttackAngle(int level, real value)`
+- `setHealingPerTargetHit(int level, real value)`
+- `setDamageByTargetMaxHealth(int level, real value)`
+  Damage By Target Max Health (%) / 'swpa'
+- `setMaxTargetHit(int level, int value)`
+- `setDamageStrengthModifier(int level, int value)`
+  Damage Strength Modifier (%) / 'swp5'
+- `setAttackDistance(int level, real value)`
+- `setHeroDurationDamageByTargetMaxHealth(int level, real value)`
+- `setDurationArmorReduction(int level, real value)`
+- `setDamageDelay(int level, real value)`
+- `setAttackSpeedReduction(int level, int value)`
+  Attack Speed Reduction (%) / 'swp9'
+- `setDamage(int level, real value)`
+- `presetHeroDurationAttackSpeedReduction(RealLevelClosure lc)`
+- `presetDurationAttackSpeedReduction(RealLevelClosure lc)`
+- `presetDurationDamageByTargetMaxHealth(RealLevelClosure lc)`
+- `presetArmorReduction(RealLevelClosure lc)`
+- `presetCooldownReductionOnHit(RealLevelClosure lc)`
+- `presetHeroDurationArmorReduction(RealLevelClosure lc)`
+- `presetAttackAngle(RealLevelClosure lc)`
+- `presetHealingPerTargetHit(RealLevelClosure lc)`
+- `presetDamageByTargetMaxHealth(RealLevelClosure lc)`
+- `presetMaxTargetHit(IntLevelClosure lc)`
+- `presetDamageStrengthModifier(IntLevelClosure lc)`
+- `presetAttackDistance(RealLevelClosure lc)`
+- `presetHeroDurationDamageByTargetMaxHealth(RealLevelClosure lc)`
+- `presetDurationArmorReduction(RealLevelClosure lc)`
+- `presetDamageDelay(RealLevelClosure lc)`
+- `presetAttackSpeedReduction(IntLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionHeroicChallengeTalent1
+
+```wurst
+public class AbilityDefinitionHeroicChallengeTalent1 extends AbilityDefinition
+```
+
+'AHu1' / [AbilityIds.heroicChallengeTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-heroicChallengeTalent1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setTauntedDefenseReduction(int level, real value)`
+- `setShieldReflectPercent(int level, real value)`
+- `setShieldDuration(int level, real value)`
+- `setShieldHealth(int level, real value)`
+- `presetTauntedDefenseReduction(RealLevelClosure lc)`
+- `presetShieldReflectPercent(RealLevelClosure lc)`
+- `presetShieldDuration(RealLevelClosure lc)`
+- `presetShieldHealth(RealLevelClosure lc)`
+
+### AbilityDefinitionHeroicChallengeTalent2
+
+```wurst
+public class AbilityDefinitionHeroicChallengeTalent2 extends AbilityDefinition
+```
+
+'AHu2' / [AbilityIds.heroicChallengeTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-heroicChallengeTalent2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setTauntedDefenseReduction(int level, real value)`
+- `setShieldReflectPercent(int level, real value)`
+- `setShieldDuration(int level, real value)`
+- `setShieldHealth(int level, real value)`
+- `presetTauntedDefenseReduction(RealLevelClosure lc)`
+- `presetShieldReflectPercent(RealLevelClosure lc)`
+- `presetShieldDuration(RealLevelClosure lc)`
+- `presetShieldHealth(RealLevelClosure lc)`
+
+### AbilityDefinitionHeroicChallengeTalent3
+
+```wurst
+public class AbilityDefinitionHeroicChallengeTalent3 extends AbilityDefinition
+```
+
+'AHu3' / [AbilityIds.heroicChallengeTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-heroicChallengeTalent3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setTauntedDefenseReduction(int level, real value)`
+- `setShieldReflectPercent(int level, real value)`
+- `setShieldDuration(int level, real value)`
+- `setShieldHealth(int level, real value)`
+- `presetTauntedDefenseReduction(RealLevelClosure lc)`
+- `presetShieldReflectPercent(RealLevelClosure lc)`
+- `presetShieldDuration(RealLevelClosure lc)`
+- `presetShieldHealth(RealLevelClosure lc)`
+
+### AbilityDefinitionHeroicSlashTalent1
+
+```wurst
+public class AbilityDefinitionHeroicSlashTalent1 extends AbilityDefinition
+```
+
+'AHv1' / [AbilityIds.heroicSlashTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-heroicSlashTalent1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamage(int level, real value)`
+- `setBonusDamagePercentAgainstDebuffed(int level, real value)`
+- `setHealPercentOnDamageDealt(int level, real value)`
+- `setRefreshesCooldownOnKill(int level, bool value)`
+- `presetDamage(RealLevelClosure lc)`
+- `presetBonusDamagePercentAgainstDebuffed(RealLevelClosure lc)`
+- `presetHealPercentOnDamageDealt(RealLevelClosure lc)`
+- `presetRefreshesCooldownOnKill(BooleanLevelClosure lc)`
+
+### AbilityDefinitionHeroicSlashTalent2
+
+```wurst
+public class AbilityDefinitionHeroicSlashTalent2 extends AbilityDefinition
+```
+
+'AHv2' / [AbilityIds.heroicSlashTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-heroicSlashTalent2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamage(int level, real value)`
+- `setBonusDamagePercentAgainstDebuffed(int level, real value)`
+- `setHealPercentOnDamageDealt(int level, real value)`
+- `setRefreshesCooldownOnKill(int level, bool value)`
+- `presetDamage(RealLevelClosure lc)`
+- `presetBonusDamagePercentAgainstDebuffed(RealLevelClosure lc)`
+- `presetHealPercentOnDamageDealt(RealLevelClosure lc)`
+- `presetRefreshesCooldownOnKill(BooleanLevelClosure lc)`
+
+### AbilityDefinitionHeroicSlashTalent3
+
+```wurst
+public class AbilityDefinitionHeroicSlashTalent3 extends AbilityDefinition
+```
+
+'AHv3' / [AbilityIds.heroicSlashTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-heroicSlashTalent3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamage(int level, real value)`
+- `setBonusDamagePercentAgainstDebuffed(int level, real value)`
+- `setHealPercentOnDamageDealt(int level, real value)`
+- `setRefreshesCooldownOnKill(int level, bool value)`
+- `presetDamage(RealLevelClosure lc)`
+- `presetBonusDamagePercentAgainstDebuffed(RealLevelClosure lc)`
+- `presetHealPercentOnDamageDealt(RealLevelClosure lc)`
+- `presetRefreshesCooldownOnKill(BooleanLevelClosure lc)`
+
+### AbilityDefinitionWarcryT1MagicImmunity
+
+```wurst
+public class AbilityDefinitionWarcryT1MagicImmunity extends AbilityDefinition
+```
+
+'AHw1' / [AbilityIds.warcryT1MagicImmunity](/stdlib/ref/_wurst/AbilityIds.html#abilityids-warcryT1MagicImmunity)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setBonusAbilitiesList(int level, string value)`
+- `presetBonusAbilitiesList(StringLevelClosure lc)`
+
+### AbilityDefinitionWarcryT1SpellCrit
+
+```wurst
+public class AbilityDefinitionWarcryT1SpellCrit extends AbilityDefinition
+```
+
+'AHw2' / [AbilityIds.warcryT1SpellCrit](/stdlib/ref/_wurst/AbilityIds.html#abilityids-warcryT1SpellCrit)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setBonusAbilitiesList(int level, string value)`
+- `presetBonusAbilitiesList(StringLevelClosure lc)`
+
+### AbilityDefinitionWarcryT1MaxLifestealPlusAttackDamage
+
+```wurst
+public class AbilityDefinitionWarcryT1MaxLifestealPlusAttackDamage extends AbilityDefinition
+```
+
+'AHw3' / [AbilityIds.warcryT1MaxLifestealPlusAttackDamage](/stdlib/ref/_wurst/AbilityIds.html#abilityids-warcryT1MaxLifestealPlusAttackDamage)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setBonusAbilitiesList(int level, string value)`
+- `presetBonusAbilitiesList(StringLevelClosure lc)`
+
+### AbilityDefinitionWarcryMagicImmunityPassive
+
+```wurst
+public class AbilityDefinitionWarcryMagicImmunityPassive extends AbilityDefinition
+```
+
+'AHw4' / [AbilityIds.warcryMagicImmunityPassive](/stdlib/ref/_wurst/AbilityIds.html#abilityids-warcryMagicImmunityPassive)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMagicDamageFactor(int level, real value)`
+- `presetMagicDamageFactor(RealLevelClosure lc)`
+
+### AbilityDefinitionWarcrySpellCritPassive
+
+```wurst
+public class AbilityDefinitionWarcrySpellCritPassive extends AbilityDefinition
+```
+
+'AHw5' / [AbilityIds.warcrySpellCritPassive](/stdlib/ref/_wurst/AbilityIds.html#abilityids-warcrySpellCritPassive)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionWarcryLifestealEnhanced
+
+```wurst
+public class AbilityDefinitionWarcryLifestealEnhanced extends AbilityDefinition
+```
+
+'AHw6' / [AbilityIds.warcryLifestealEnhanced](/stdlib/ref/_wurst/AbilityIds.html#abilityids-warcryLifestealEnhanced)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setLifeStolenPerAttack(int level, real value)`
+- `presetLifeStolenPerAttack(RealLevelClosure lc)`
+
+### AbilityDefinitionWarcryDamageEnhanced
+
+```wurst
+public class AbilityDefinitionWarcryDamageEnhanced extends AbilityDefinition
+```
+
+'AHw7' / [AbilityIds.warcryDamageEnhanced](/stdlib/ref/_wurst/AbilityIds.html#abilityids-warcryDamageEnhanced)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackBonus(int level, int value)`
+- `presetAttackBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionWarcryCleaveEnhanced
+
+```wurst
+public class AbilityDefinitionWarcryCleaveEnhanced extends AbilityDefinition
+```
+
+'AHw8' / [AbilityIds.warcryCleaveEnhanced](/stdlib/ref/_wurst/AbilityIds.html#abilityids-warcryCleaveEnhanced)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDistributedDamageFactor(int level, real value)`
+- `presetDistributedDamageFactor(RealLevelClosure lc)`
+
+### AbilityDefinitionWarcryAbilitySpeed
+
+```wurst
+public class AbilityDefinitionWarcryAbilitySpeed extends AbilityDefinition
+```
+
+'AHw9' / [AbilityIds.warcryAbilitySpeed](/stdlib/ref/_wurst/AbilityIds.html#abilityids-warcryAbilitySpeed)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setCooldownReduction(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `presetCooldownReduction(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+
+### AbilityDefinitionWarcry
+
+```wurst
+public class AbilityDefinitionWarcry extends AbilityDefinition
+```
+
+'AHwc' / [AbilityIds.warcry](/stdlib/ref/_wurst/AbilityIds.html#abilityids-warcry)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setBonusAbilitiesList(int level, string value)`
+- `presetBonusAbilitiesList(StringLevelClosure lc)`
+
+### AbilityDefinitionClericMindControlTalent1
+
+```wurst
+public class AbilityDefinitionClericMindControlTalent1 extends AbilityDefinition
+```
+
+'AHz1' / [AbilityIds.clericMindControlTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-clericMindControlTalent1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setExplosionDamage(int level, real value)`
+- `override function setDurationNormal(int level, real value)`
+- `setMaximumCreepLevel(int level, int value)`
+- `setMindControlledUnitLimit(int level, int value)`
+- `setExplosionRadius(int level, real value)`
+- `presetExplosionDamage(RealLevelClosure lc)`
+- `override function presetDurationNormal(RealLevelClosure lc)`
+- `presetMaximumCreepLevel(IntLevelClosure lc)`
+- `presetMindControlledUnitLimit(IntLevelClosure lc)`
+- `presetExplosionRadius(RealLevelClosure lc)`
+
+### AbilityDefinitionClericMindControlTalent2
+
+```wurst
+public class AbilityDefinitionClericMindControlTalent2 extends AbilityDefinition
+```
+
+'AHz2' / [AbilityIds.clericMindControlTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-clericMindControlTalent2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setExplosionDamage(int level, real value)`
+- `override function setDurationNormal(int level, real value)`
+- `setMaximumCreepLevel(int level, int value)`
+- `setMindControlledUnitLimit(int level, int value)`
+- `setExplosionRadius(int level, real value)`
+- `presetExplosionDamage(RealLevelClosure lc)`
+- `override function presetDurationNormal(RealLevelClosure lc)`
+- `presetMaximumCreepLevel(IntLevelClosure lc)`
+- `presetMindControlledUnitLimit(IntLevelClosure lc)`
+- `presetExplosionRadius(RealLevelClosure lc)`
+
+### AbilityDefinitionClericMindControlTalent3
+
+```wurst
+public class AbilityDefinitionClericMindControlTalent3 extends AbilityDefinition
+```
+
+'AHz3' / [AbilityIds.clericMindControlTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-clericMindControlTalent3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setExplosionDamage(int level, real value)`
+- `override function setDurationNormal(int level, real value)`
+- `setMaximumCreepLevel(int level, int value)`
+- `setMindControlledUnitLimit(int level, int value)`
+- `setExplosionRadius(int level, real value)`
+- `presetExplosionDamage(RealLevelClosure lc)`
+- `override function presetDurationNormal(RealLevelClosure lc)`
+- `presetMaximumCreepLevel(IntLevelClosure lc)`
+- `presetMindControlledUnitLimit(IntLevelClosure lc)`
+- `presetExplosionRadius(RealLevelClosure lc)`
+
+### AbilityDefinitionIntelligenceBonusPlus10
+
+```wurst
+public class AbilityDefinitionIntelligenceBonusPlus10 extends AbilityDefinition
+```
+
+'AI10' / [AbilityIds.intelligenceBonusPlus10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-intelligenceBonusPlus10)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAgilityBonus(int level, int value)`
+- `setStrengthBonus(int level, int value)`
+- `setHideButton(int level, bool value)`
+- `setIntelligenceBonus(int level, int value)`
+- `presetAgilityBonus(IntLevelClosure lc)`
+- `presetStrengthBonus(IntLevelClosure lc)`
+- `presetHideButton(BooleanLevelClosure lc)`
+- `presetIntelligenceBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionIntelligenceBonusPlus11
+
+```wurst
+public class AbilityDefinitionIntelligenceBonusPlus11 extends AbilityDefinition
+```
+
+'AI11' / [AbilityIds.intelligenceBonusPlus11](/stdlib/ref/_wurst/AbilityIds.html#abilityids-intelligenceBonusPlus11)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAgilityBonus(int level, int value)`
+- `setStrengthBonus(int level, int value)`
+- `setHideButton(int level, bool value)`
+- `setIntelligenceBonus(int level, int value)`
+- `presetAgilityBonus(IntLevelClosure lc)`
+- `presetStrengthBonus(IntLevelClosure lc)`
+- `presetHideButton(BooleanLevelClosure lc)`
+- `presetIntelligenceBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionIntelligenceBonusPlus12
+
+```wurst
+public class AbilityDefinitionIntelligenceBonusPlus12 extends AbilityDefinition
+```
+
+'AI12' / [AbilityIds.intelligenceBonusPlus12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-intelligenceBonusPlus12)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAgilityBonus(int level, int value)`
+- `setStrengthBonus(int level, int value)`
+- `setHideButton(int level, bool value)`
+- `setIntelligenceBonus(int level, int value)`
+- `presetAgilityBonus(IntLevelClosure lc)`
+- `presetStrengthBonus(IntLevelClosure lc)`
+- `presetHideButton(BooleanLevelClosure lc)`
+- `presetIntelligenceBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionItemArmorBonus1
+
+```wurst
+public class AbilityDefinitionItemArmorBonus1 extends AbilityDefinition
+```
+
+'AIAq' / [AbilityIds.itemArmorBonus1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorBonus1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDefenseBonus(int level, int value)`
+- `presetDefenseBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionItemArmorBonus2
+
+```wurst
+public class AbilityDefinitionItemArmorBonus2 extends AbilityDefinition
+```
+
+'AIAw' / [AbilityIds.itemArmorBonus2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorBonus2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDefenseBonus(int level, int value)`
+- `presetDefenseBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionItemBash15251
+
+```wurst
+public class AbilityDefinitionItemBash15251 extends AbilityDefinition
+```
+
+'AIBq' / [AbilityIds.itemBash15251](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBash15251)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoBash(int level, real value)`
+- `setNeverMiss(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `setChancetoMiss(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `presetChancetoBash(RealLevelClosure lc)`
+- `presetNeverMiss(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+- `presetChancetoMiss(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+
+### AbilityDefinitionItemBash10252
+
+```wurst
+public class AbilityDefinitionItemBash10252 extends AbilityDefinition
+```
+
+'AIBw' / [AbilityIds.itemBash10252](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBash10252)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoBash(int level, real value)`
+- `setNeverMiss(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `setChancetoMiss(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `presetChancetoBash(RealLevelClosure lc)`
+- `presetNeverMiss(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+- `presetChancetoMiss(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+
+### AbilityDefinitionItemEvasion12
+
+```wurst
+public class AbilityDefinitionItemEvasion12 extends AbilityDefinition
+```
+
+'AIEi' / [AbilityIds.itemEvasion12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEvasion12)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoEvade(int level, real value)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+
+### AbilityDefinitionItemEvasion2
+
+```wurst
+public class AbilityDefinitionItemEvasion2 extends AbilityDefinition
+```
+
+'AIEq' / [AbilityIds.itemEvasion2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEvasion2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoEvade(int level, real value)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+
+### AbilityDefinitionItemEvasion5
+
+```wurst
+public class AbilityDefinitionItemEvasion5 extends AbilityDefinition
+```
+
+'AIEr' / [AbilityIds.itemEvasion5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEvasion5)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoEvade(int level, real value)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+
+### AbilityDefinitionItemEvasion7
+
+```wurst
+public class AbilityDefinitionItemEvasion7 extends AbilityDefinition
+```
+
+'AIEt' / [AbilityIds.itemEvasion7](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEvasion7)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoEvade(int level, real value)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+
+### AbilityDefinitionItemEvasion10
+
+```wurst
+public class AbilityDefinitionItemEvasion10 extends AbilityDefinition
+```
+
+'AIEu' / [AbilityIds.itemEvasion10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEvasion10)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoEvade(int level, real value)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+
+### AbilityDefinitionItemEvasion4
+
+```wurst
+public class AbilityDefinitionItemEvasion4 extends AbilityDefinition
+```
+
+'AIEw' / [AbilityIds.itemEvasion4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEvasion4)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoEvade(int level, real value)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+
+### AbilityDefinitionItemEvasion8
+
+```wurst
+public class AbilityDefinitionItemEvasion8 extends AbilityDefinition
+```
+
+'AIEy' / [AbilityIds.itemEvasion8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEvasion8)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoEvade(int level, real value)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+
+### AbilityDefinitionItemMaxLifeBonus250
+
+```wurst
+public class AbilityDefinitionItemMaxLifeBonus250 extends AbilityDefinition
+```
+
+'AILa' / [AbilityIds.itemMaxLifeBonus250](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMaxLifeBonus250)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMaxLifeGained(int level, int value)`
+- `presetMaxLifeGained(IntLevelClosure lc)`
+
+### AbilityDefinitionItemMaxLifeBonus280
+
+```wurst
+public class AbilityDefinitionItemMaxLifeBonus280 extends AbilityDefinition
+```
+
+'AILe' / [AbilityIds.itemMaxLifeBonus280](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMaxLifeBonus280)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMaxLifeGained(int level, int value)`
+- `presetMaxLifeGained(IntLevelClosure lc)`
+
+### AbilityDefinitionItemMaxLifeBonus40
+
+```wurst
+public class AbilityDefinitionItemMaxLifeBonus40 extends AbilityDefinition
+```
+
+'AILi' / [AbilityIds.itemMaxLifeBonus40](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMaxLifeBonus40)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMaxLifeGained(int level, int value)`
+- `presetMaxLifeGained(IntLevelClosure lc)`
+
+### AbilityDefinitionItemMaxLifeBonus60
+
+```wurst
+public class AbilityDefinitionItemMaxLifeBonus60 extends AbilityDefinition
+```
+
+'AILr' / [AbilityIds.itemMaxLifeBonus60](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMaxLifeBonus60)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMaxLifeGained(int level, int value)`
+- `presetMaxLifeGained(IntLevelClosure lc)`
+
+### AbilityDefinitionItemMaxLifeBonus200
+
+```wurst
+public class AbilityDefinitionItemMaxLifeBonus200 extends AbilityDefinition
+```
+
+'AILt' / [AbilityIds.itemMaxLifeBonus200](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMaxLifeBonus200)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMaxLifeGained(int level, int value)`
+- `presetMaxLifeGained(IntLevelClosure lc)`
+
+### AbilityDefinitionItemMaxLifeBonus50
+
+```wurst
+public class AbilityDefinitionItemMaxLifeBonus50 extends AbilityDefinition
+```
+
+'AILw' / [AbilityIds.itemMaxLifeBonus50](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMaxLifeBonus50)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMaxLifeGained(int level, int value)`
+- `presetMaxLifeGained(IntLevelClosure lc)`
+
+### AbilityDefinitionItemMaxLifeBonus20
+
+```wurst
+public class AbilityDefinitionItemMaxLifeBonus20 extends AbilityDefinition
+```
+
+'AILy' / [AbilityIds.itemMaxLifeBonus20](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMaxLifeBonus20)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMaxLifeGained(int level, int value)`
+- `presetMaxLifeGained(IntLevelClosure lc)`
+
+### AbilityDefinitionItemResolve5
+
+```wurst
+public class AbilityDefinitionItemResolve5 extends AbilityDefinition
+```
+
+'AIR5' / [AbilityIds.itemResolve5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemResolve5)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setResolve(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `presetResolve(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemResolve20
+
+```wurst
+public class AbilityDefinitionItemResolve20 extends AbilityDefinition
+```
+
+'AIRo' / [AbilityIds.itemResolve20](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemResolve20)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setResolve(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `presetResolve(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemResolve12
+
+```wurst
+public class AbilityDefinitionItemResolve12 extends AbilityDefinition
+```
+
+'AIRp' / [AbilityIds.itemResolve12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemResolve12)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setResolve(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `presetResolve(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemResolve10
+
+```wurst
+public class AbilityDefinitionItemResolve10 extends AbilityDefinition
+```
+
+'AIRq' / [AbilityIds.itemResolve10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemResolve10)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setResolve(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `presetResolve(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemResolve16
+
+```wurst
+public class AbilityDefinitionItemResolve16 extends AbilityDefinition
+```
+
+'AIRu' / [AbilityIds.itemResolve16](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemResolve16)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setResolve(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `presetResolve(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemResolve8
+
+```wurst
+public class AbilityDefinitionItemResolve8 extends AbilityDefinition
+```
+
+'AIRw' / [AbilityIds.itemResolve8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemResolve8)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setResolve(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `presetResolve(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemResolve6
+
+```wurst
+public class AbilityDefinitionItemResolve6 extends AbilityDefinition
+```
+
+'AIRy' / [AbilityIds.itemResolve6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemResolve6)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setResolve(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `presetResolve(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+
+### AbilityDefinitionAgilityBonusPlus7
+
+```wurst
+public class AbilityDefinitionAgilityBonusPlus7 extends AbilityDefinition
+```
+
+'AIa7' / [AbilityIds.agilityBonusPlus7](/stdlib/ref/_wurst/AbilityIds.html#abilityids-agilityBonusPlus7)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAgilityBonus(int level, int value)`
+- `setStrengthBonus(int level, int value)`
+- `setHideButton(int level, bool value)`
+- `setIntelligenceBonus(int level, int value)`
+- `presetAgilityBonus(IntLevelClosure lc)`
+- `presetStrengthBonus(IntLevelClosure lc)`
+- `presetHideButton(BooleanLevelClosure lc)`
+- `presetIntelligenceBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionAgilityBonusPlus8
+
+```wurst
+public class AbilityDefinitionAgilityBonusPlus8 extends AbilityDefinition
+```
+
+'AIa8' / [AbilityIds.agilityBonusPlus8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-agilityBonusPlus8)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAgilityBonus(int level, int value)`
+- `setStrengthBonus(int level, int value)`
+- `setHideButton(int level, bool value)`
+- `setIntelligenceBonus(int level, int value)`
+- `presetAgilityBonus(IntLevelClosure lc)`
+- `presetStrengthBonus(IntLevelClosure lc)`
+- `presetHideButton(BooleanLevelClosure lc)`
+- `presetIntelligenceBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionItemSpellAmp10
+
+```wurst
+public class AbilityDefinitionItemSpellAmp10 extends AbilityDefinition
+```
+
+'AIap' / [AbilityIds.itemSpellAmp10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellAmp10)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSpellAmp(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `setAppliestoHealingfromItems(int level, bool value)`
+- `presetSpellAmp(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetAppliestoHealingfromItems(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemAuraCommand8
+
+```wurst
+public class AbilityDefinitionItemAuraCommand8 extends AbilityDefinition
+```
+
+'AIcq' / [AbilityIds.itemAuraCommand8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAuraCommand8)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionItemCooldownReduction
+
+```wurst
+public class AbilityDefinitionItemCooldownReduction extends AbilityDefinition
+```
+
+'AIcr' / [AbilityIds.itemCooldownReduction](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCooldownReduction)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setCooldownReduction(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `presetCooldownReduction(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+
+### AbilityDefinitionDefenseBonusPlus6
+
+```wurst
+public class AbilityDefinitionDefenseBonusPlus6 extends AbilityDefinition
+```
+
+'AId6' / [AbilityIds.defenseBonusPlus6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-defenseBonusPlus6)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDefenseBonus(int level, int value)`
+- `presetDefenseBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionEdricsEye
+
+```wurst
+public class AbilityDefinitionEdricsEye extends AbilityDefinition
+```
+
+'AIee' / [AbilityIds.edricsEye](/stdlib/ref/_wurst/AbilityIds.html#abilityids-edricsEye)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDefenseReduction(int level, int value)`
+- `setAlwaysAutocast(int level, bool value)`
+- `presetDefenseReduction(IntLevelClosure lc)`
+- `presetAlwaysAutocast(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemHealUltimate
+
+```wurst
+public class AbilityDefinitionItemHealUltimate extends AbilityDefinition
+```
+
+'AIh4' / [AbilityIds.itemHealUltimate](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealUltimate)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHitPointsGained(int level, int value)`
+- `presetHitPointsGained(IntLevelClosure lc)`
+
+### AbilityDefinitionItemHealFinal
+
+```wurst
+public class AbilityDefinitionItemHealFinal extends AbilityDefinition
+```
+
+'AIh5' / [AbilityIds.itemHealFinal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealFinal)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHitPointsGained(int level, int value)`
+- `presetHitPointsGained(IntLevelClosure lc)`
+
+### AbilityDefinitionHardenedSkinItem
+
+```wurst
+public class AbilityDefinitionHardenedSkinItem extends AbilityDefinition
+```
+
+'AIhs' / [AbilityIds.hardenedSkinItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-hardenedSkinItem)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMinimumDamage(int level, real value)`
+- `setIncludeRangedDamage(int level, bool value)`
+- `setIncludeMeleeDamage(int level, bool value)`
+- `setChancetoReduceDamage(int level, real value)`
+  Chance to Reduce Damage (%) / 'Ssk1'
+- `setIgnoredDamage(int level, real value)`
+- `presetMinimumDamage(RealLevelClosure lc)`
+- `presetIncludeRangedDamage(BooleanLevelClosure lc)`
+- `presetIncludeMeleeDamage(BooleanLevelClosure lc)`
+- `presetChancetoReduceDamage(RealLevelClosure lc)`
+- `presetIgnoredDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionIntelligenceBonusPlus8
+
+```wurst
+public class AbilityDefinitionIntelligenceBonusPlus8 extends AbilityDefinition
+```
+
+'AIi8' / [AbilityIds.intelligenceBonusPlus8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-intelligenceBonusPlus8)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAgilityBonus(int level, int value)`
+- `setStrengthBonus(int level, int value)`
+- `setHideButton(int level, bool value)`
+- `setIntelligenceBonus(int level, int value)`
+- `presetAgilityBonus(IntLevelClosure lc)`
+- `presetStrengthBonus(IntLevelClosure lc)`
+- `presetHideButton(BooleanLevelClosure lc)`
+- `presetIntelligenceBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionKrisIncinerate
+
+```wurst
+public class AbilityDefinitionKrisIncinerate extends AbilityDefinition
+```
+
+'AIki' / [AbilityIds.krisIncinerate](/stdlib/ref/_wurst/AbilityIds.html#abilityids-krisIncinerate)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setBonusDamageMultiplier(int level, real value)`
+- `setDeathDamageHalfAmount(int level, real value)`
+- `setDeathDamageHalfArea(int level, real value)`
+- `setDeathDamageDelay(int level, real value)`
+- `setDeathDamageFullAmount(int level, real value)`
+- `setDeathDamageFullArea(int level, real value)`
+- `presetBonusDamageMultiplier(RealLevelClosure lc)`
+- `presetDeathDamageHalfAmount(RealLevelClosure lc)`
+- `presetDeathDamageHalfArea(RealLevelClosure lc)`
+- `presetDeathDamageDelay(RealLevelClosure lc)`
+- `presetDeathDamageFullAmount(RealLevelClosure lc)`
+- `presetDeathDamageFullArea(RealLevelClosure lc)`
+
+### AbilityDefinitionItemMaxLifeBonus25
+
+```wurst
+public class AbilityDefinitionItemMaxLifeBonus25 extends AbilityDefinition
+```
+
+'AIl3' / [AbilityIds.itemMaxLifeBonus25](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMaxLifeBonus25)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMaxLifeGained(int level, int value)`
+- `presetMaxLifeGained(IntLevelClosure lc)`
+
+### AbilityDefinitionLichOrb
+
+```wurst
+public class AbilityDefinitionLichOrb extends AbilityDefinition
+```
+
+'AIlo' / [AbilityIds.lichOrb](/stdlib/ref/_wurst/AbilityIds.html#abilityids-lichOrb)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setRestoredLife(int level, int value)`
+- `setDelayAfterDeathseconds(int level, int value)`
+- `setRestoredManaforcurrent(int level, int value)`
+  Restored Mana (-1 for current) / 'irc3'
+- `presetRestoredLife(IntLevelClosure lc)`
+- `presetDelayAfterDeathseconds(IntLevelClosure lc)`
+- `presetRestoredManaforcurrent(IntLevelClosure lc)`
+
+### AbilityDefinitionItemMaxLifeBonus100
+
+```wurst
+public class AbilityDefinitionItemMaxLifeBonus100 extends AbilityDefinition
+```
+
+'AIlq' / [AbilityIds.itemMaxLifeBonus100](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMaxLifeBonus100)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMaxLifeGained(int level, int value)`
+- `presetMaxLifeGained(IntLevelClosure lc)`
+
+### AbilityDefinitionItemResolve30
+
+```wurst
+public class AbilityDefinitionItemResolve30 extends AbilityDefinition
+```
+
+'AIlv' / [AbilityIds.itemResolve30](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemResolve30)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setResolve(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `presetResolve(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemManaRestoreUltimate
+
+```wurst
+public class AbilityDefinitionItemManaRestoreUltimate extends AbilityDefinition
+```
+
+'AIm4' / [AbilityIds.itemManaRestoreUltimate](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaRestoreUltimate)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionItemManaEfficiency
+
+```wurst
+public class AbilityDefinitionItemManaEfficiency extends AbilityDefinition
+```
+
+'AIme' / [AbilityIds.itemManaEfficiency](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaEfficiency)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setFlatBonus(int level, bool value)`
+- `setManaEfficiency(int level, real value)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetManaEfficiency(RealLevelClosure lc)`
+
+### AbilityDefinitionItemManaEfficiency2
+
+```wurst
+public class AbilityDefinitionItemManaEfficiency2 extends AbilityDefinition
+```
+
+'AImq' / [AbilityIds.itemManaEfficiency2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaEfficiency2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setFlatBonus(int level, bool value)`
+- `setManaEfficiency(int level, real value)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetManaEfficiency(RealLevelClosure lc)`
+
+### AbilityDefinitionItemManaEfficiency5
+
+```wurst
+public class AbilityDefinitionItemManaEfficiency5 extends AbilityDefinition
+```
+
+'AImw' / [AbilityIds.itemManaEfficiency5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaEfficiency5)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setFlatBonus(int level, bool value)`
+- `setManaEfficiency(int level, real value)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetManaEfficiency(RealLevelClosure lc)`
+
+### AbilityDefinitionExtendedInventoryItem
+
+```wurst
+public class AbilityDefinitionExtendedInventoryItem extends AbilityDefinition
+```
+
+'AIni' / [AbilityIds.extendedInventoryItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-extendedInventoryItem)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setEquipmentItemCapacity(int level, int value)`
+- `presetEquipmentItemCapacity(IntLevelClosure lc)`
+
+### AbilityDefinitionNecromancersPlaguegreaves
+
+```wurst
+public class AbilityDefinitionNecromancersPlaguegreaves extends AbilityDefinition
+```
+
+'AInp' / [AbilityIds.necromancersPlaguegreaves](/stdlib/ref/_wurst/AbilityIds.html#abilityids-necromancersPlaguegreaves)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageBonus(int level, real value)`
+- `setSummonedUnitType(int level, string value)`
+- `setNumberofSummonedUnits(int level, int value)`
+- `setSummonedUnitDurationseconds(int level, real value)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetSummonedUnitType(StringLevelClosure lc)`
+- `presetNumberofSummonedUnits(IntLevelClosure lc)`
+- `presetSummonedUnitDurationseconds(RealLevelClosure lc)`
+
+### AbilityDefinitionEquipmentInventory
+
+```wurst
+public class AbilityDefinitionEquipmentInventory extends AbilityDefinition
+```
+
+'AInx' / [AbilityIds.equipmentInventory](/stdlib/ref/_wurst/AbilityIds.html#abilityids-equipmentInventory)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setEquipmentItemCapacity(int level, int value)`
+- `presetEquipmentItemCapacity(IntLevelClosure lc)`
+
+### AbilityDefinitionOgreWarclubStats
+
+```wurst
+public class AbilityDefinitionOgreWarclubStats extends AbilityDefinition
+```
+
+'AIow' / [AbilityIds.ogreWarclubStats](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ogreWarclubStats)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAgilityBonus(int level, int value)`
+- `setStrengthBonus(int level, int value)`
+- `setHideButton(int level, bool value)`
+- `setIntelligenceBonus(int level, int value)`
+- `presetAgilityBonus(IntLevelClosure lc)`
+- `presetStrengthBonus(IntLevelClosure lc)`
+- `presetHideButton(BooleanLevelClosure lc)`
+- `presetIntelligenceBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionStrengthBonusPlus7
+
+```wurst
+public class AbilityDefinitionStrengthBonusPlus7 extends AbilityDefinition
+```
+
+'AIs7' / [AbilityIds.strengthBonusPlus7](/stdlib/ref/_wurst/AbilityIds.html#abilityids-strengthBonusPlus7)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAgilityBonus(int level, int value)`
+- `setStrengthBonus(int level, int value)`
+- `setHideButton(int level, bool value)`
+- `setIntelligenceBonus(int level, int value)`
+- `presetAgilityBonus(IntLevelClosure lc)`
+- `presetStrengthBonus(IntLevelClosure lc)`
+- `presetHideButton(BooleanLevelClosure lc)`
+- `presetIntelligenceBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionStrengthBonusPlus8
+
+```wurst
+public class AbilityDefinitionStrengthBonusPlus8 extends AbilityDefinition
+```
+
+'AIs8' / [AbilityIds.strengthBonusPlus8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-strengthBonusPlus8)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAgilityBonus(int level, int value)`
+- `setStrengthBonus(int level, int value)`
+- `setHideButton(int level, bool value)`
+- `setIntelligenceBonus(int level, int value)`
+- `presetAgilityBonus(IntLevelClosure lc)`
+- `presetStrengthBonus(IntLevelClosure lc)`
+- `presetHideButton(BooleanLevelClosure lc)`
+- `presetIntelligenceBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionItemSpellCrit
+
+```wurst
+public class AbilityDefinitionItemSpellCrit extends AbilityDefinition
+```
+
+'AIsc' / [AbilityIds.itemSpellCrit](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellCrit)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionSignetOfDecay
+
+```wurst
+public class AbilityDefinitionSignetOfDecay extends AbilityDefinition
+```
+
+'AIsd' / [AbilityIds.signetOfDecay](/stdlib/ref/_wurst/AbilityIds.html#abilityids-signetOfDecay)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setManaUsedPerSecond(int level, int value)`
+- `setDamagePerDuration(int level, int value)`
+- `setExtraManaRequired(int level, int value)`
+- `presetManaUsedPerSecond(IntLevelClosure lc)`
+- `presetDamagePerDuration(IntLevelClosure lc)`
+- `presetExtraManaRequired(IntLevelClosure lc)`
+
+### AbilityDefinitionItemAttackSpeedIncrease5
+
+```wurst
+public class AbilityDefinitionItemAttackSpeedIncrease5 extends AbilityDefinition
+```
+
+'AIsq' / [AbilityIds.itemAttackSpeedIncrease5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease5)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackSpeedIncrease(int level, real value)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+
+### AbilityDefinitionMagicResistStacking
+
+```wurst
+public class AbilityDefinitionMagicResistStacking extends AbilityDefinition
+```
+
+'AIss' / [AbilityIds.magicResistStacking](/stdlib/ref/_wurst/AbilityIds.html#abilityids-magicResistStacking)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageBonus(int level, real value)`
+- `setDamageReduction(int level, real value)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetDamageReduction(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSpellVamp25
+
+```wurst
+public class AbilityDefinitionItemSpellVamp25 extends AbilityDefinition
+```
+
+'AIsv' / [AbilityIds.itemSpellVamp25](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellVamp25)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setFlatBonus(int level, bool value)`
+- `setSpellVamp(int level, real value)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetSpellVamp(RealLevelClosure lc)`
+
+### AbilityDefinitionVampiricAttackStacking
+
+```wurst
+public class AbilityDefinitionVampiricAttackStacking extends AbilityDefinition
+```
+
+'AIvx' / [AbilityIds.vampiricAttackStacking](/stdlib/ref/_wurst/AbilityIds.html#abilityids-vampiricAttackStacking)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setLifeStolenPerAttack(int level, real value)`
+- `presetLifeStolenPerAttack(RealLevelClosure lc)`
+
+### AbilityDefinitionItemAllStatsPlus6
+
+```wurst
+public class AbilityDefinitionItemAllStatsPlus6 extends AbilityDefinition
+```
+
+'AIx6' / [AbilityIds.itemAllStatsPlus6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAllStatsPlus6)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAgilityBonus(int level, int value)`
+- `setStrengthBonus(int level, int value)`
+- `setHideButton(int level, bool value)`
+- `setIntelligenceBonus(int level, int value)`
+- `presetAgilityBonus(IntLevelClosure lc)`
+- `presetStrengthBonus(IntLevelClosure lc)`
+- `presetHideButton(BooleanLevelClosure lc)`
+- `presetIntelligenceBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionItemAllStatsPlus7
+
+```wurst
+public class AbilityDefinitionItemAllStatsPlus7 extends AbilityDefinition
+```
+
+'AIx7' / [AbilityIds.itemAllStatsPlus7](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAllStatsPlus7)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAgilityBonus(int level, int value)`
+- `setStrengthBonus(int level, int value)`
+- `setHideButton(int level, bool value)`
+- `setIntelligenceBonus(int level, int value)`
+- `presetAgilityBonus(IntLevelClosure lc)`
+- `presetStrengthBonus(IntLevelClosure lc)`
+- `presetHideButton(BooleanLevelClosure lc)`
+- `presetIntelligenceBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionItemCriticalStrikeSystem
+
+```wurst
+public class AbilityDefinitionItemCriticalStrikeSystem extends AbilityDefinition
+```
+
+'AIxr' / [AbilityIds.itemCriticalStrikeSystem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalStrikeSystem)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setChancetoEvade(int level, real value)`
+- `setExcludeItemDamage(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemLifesteal10
+
+```wurst
+public class AbilityDefinitionItemLifesteal10 extends AbilityDefinition
+```
+
+'AL10' / [AbilityIds.itemLifesteal10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLifesteal10)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setLifeStolenPerAttack(int level, real value)`
+- `presetLifeStolenPerAttack(RealLevelClosure lc)`
+
+### AbilityDefinitionItemLanceOfTheDawnAttack
+
+```wurst
+public class AbilityDefinitionItemLanceOfTheDawnAttack extends AbilityDefinition
+```
+
+'ALDa' / [AbilityIds.itemLanceOfTheDawnAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLanceOfTheDawnAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionLesserMarkOfTime
+
+```wurst
+public class AbilityDefinitionLesserMarkOfTime extends AbilityDefinition
+```
+
+'ALmt' / [AbilityIds.lesserMarkOfTime](/stdlib/ref/_wurst/AbilityIds.html#abilityids-lesserMarkOfTime)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMovementSpeedFactor(int level, real value)`
+- `setAlwaysAutocast(int level, bool value)`
+- `setAttackSpeedFactor(int level, real value)`
+- `presetMovementSpeedFactor(RealLevelClosure lc)`
+- `presetAlwaysAutocast(BooleanLevelClosure lc)`
+- `presetAttackSpeedFactor(RealLevelClosure lc)`
+
+### AbilityDefinitionItemLifesteal1
+
+```wurst
+public class AbilityDefinitionItemLifesteal1 extends AbilityDefinition
+```
+
+'ALs1' / [AbilityIds.itemLifesteal1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLifesteal1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setLifeStolenPerAttack(int level, real value)`
+- `presetLifeStolenPerAttack(RealLevelClosure lc)`
+
+### AbilityDefinitionItemLifesteal3
+
+```wurst
+public class AbilityDefinitionItemLifesteal3 extends AbilityDefinition
+```
+
+'ALs3' / [AbilityIds.itemLifesteal3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLifesteal3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setLifeStolenPerAttack(int level, real value)`
+- `presetLifeStolenPerAttack(RealLevelClosure lc)`
+
+### AbilityDefinitionItemLifesteal4
+
+```wurst
+public class AbilityDefinitionItemLifesteal4 extends AbilityDefinition
+```
+
+'ALs4' / [AbilityIds.itemLifesteal4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLifesteal4)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setLifeStolenPerAttack(int level, real value)`
+- `presetLifeStolenPerAttack(RealLevelClosure lc)`
+
+### AbilityDefinitionItemLifesteal5
+
+```wurst
+public class AbilityDefinitionItemLifesteal5 extends AbilityDefinition
+```
+
+'ALs5' / [AbilityIds.itemLifesteal5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLifesteal5)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setLifeStolenPerAttack(int level, real value)`
+- `presetLifeStolenPerAttack(RealLevelClosure lc)`
+
+### AbilityDefinitionItemLifesteal8
+
+```wurst
+public class AbilityDefinitionItemLifesteal8 extends AbilityDefinition
+```
+
+'ALs8' / [AbilityIds.itemLifesteal8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLifesteal8)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setLifeStolenPerAttack(int level, real value)`
+- `presetLifeStolenPerAttack(RealLevelClosure lc)`
+
+### AbilityDefinitionItemManaEfficiency12
+
+```wurst
+public class AbilityDefinitionItemManaEfficiency12 extends AbilityDefinition
+```
+
+'AMEi' / [AbilityIds.itemManaEfficiency12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaEfficiency12)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setFlatBonus(int level, bool value)`
+- `setManaEfficiency(int level, real value)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetManaEfficiency(RealLevelClosure lc)`
+
+### AbilityDefinitionItemManaEfficiency7
+
+```wurst
+public class AbilityDefinitionItemManaEfficiency7 extends AbilityDefinition
+```
+
+'AMEq' / [AbilityIds.itemManaEfficiency7](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaEfficiency7)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setFlatBonus(int level, bool value)`
+- `setManaEfficiency(int level, real value)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetManaEfficiency(RealLevelClosure lc)`
+
+### AbilityDefinitionItemManaEfficiency4
+
+```wurst
+public class AbilityDefinitionItemManaEfficiency4 extends AbilityDefinition
+```
+
+'AMEr' / [AbilityIds.itemManaEfficiency4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaEfficiency4)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setFlatBonus(int level, bool value)`
+- `setManaEfficiency(int level, real value)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetManaEfficiency(RealLevelClosure lc)`
+
+### AbilityDefinitionItemManaEfficiency8
+
+```wurst
+public class AbilityDefinitionItemManaEfficiency8 extends AbilityDefinition
+```
+
+'AMEt' / [AbilityIds.itemManaEfficiency8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaEfficiency8)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setFlatBonus(int level, bool value)`
+- `setManaEfficiency(int level, real value)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetManaEfficiency(RealLevelClosure lc)`
+
+### AbilityDefinitionItemManaEfficiency15
+
+```wurst
+public class AbilityDefinitionItemManaEfficiency15 extends AbilityDefinition
+```
+
+'AMEu' / [AbilityIds.itemManaEfficiency15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaEfficiency15)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setFlatBonus(int level, bool value)`
+- `setManaEfficiency(int level, real value)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetManaEfficiency(RealLevelClosure lc)`
+
+### AbilityDefinitionItemManaEfficiency6
+
+```wurst
+public class AbilityDefinitionItemManaEfficiency6 extends AbilityDefinition
+```
+
+'AMEw' / [AbilityIds.itemManaEfficiency6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaEfficiency6)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setFlatBonus(int level, bool value)`
+- `setManaEfficiency(int level, real value)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetManaEfficiency(RealLevelClosure lc)`
+
+### AbilityDefinitionItemManaEfficiency10
+
+```wurst
+public class AbilityDefinitionItemManaEfficiency10 extends AbilityDefinition
+```
+
+'AMEy' / [AbilityIds.itemManaEfficiency10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaEfficiency10)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setFlatBonus(int level, bool value)`
+- `setManaEfficiency(int level, real value)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetManaEfficiency(RealLevelClosure lc)`
+
+### AbilityDefinitionItemManaRefund5
+
+```wurst
+public class AbilityDefinitionItemManaRefund5 extends AbilityDefinition
+```
+
+'AMFq' / [AbilityIds.itemManaRefund5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaRefund5)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setFlatBonus(int level, bool value)`
+- `setManaEfficiency(int level, real value)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetManaEfficiency(RealLevelClosure lc)`
+
+### AbilityDefinitionItemMaxManaBonus120
+
+```wurst
+public class AbilityDefinitionItemMaxManaBonus120 extends AbilityDefinition
+```
+
+'AMMe' / [AbilityIds.itemMaxManaBonus120](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMaxManaBonus120)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMaxManaGained(int level, int value)`
+- `presetMaxManaGained(IntLevelClosure lc)`
+
+### AbilityDefinitionItemMaxManaBonus25
+
+```wurst
+public class AbilityDefinitionItemMaxManaBonus25 extends AbilityDefinition
+```
+
+'AMMq' / [AbilityIds.itemMaxManaBonus25](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMaxManaBonus25)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMaxManaGained(int level, int value)`
+- `presetMaxManaGained(IntLevelClosure lc)`
+
+### AbilityDefinitionItemMaxManaBonus150
+
+```wurst
+public class AbilityDefinitionItemMaxManaBonus150 extends AbilityDefinition
+```
+
+'AMMw' / [AbilityIds.itemMaxManaBonus150](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMaxManaBonus150)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMaxManaGained(int level, int value)`
+- `presetMaxManaGained(IntLevelClosure lc)`
+
+### AbilityDefinitionItemManaRegen70
+
+```wurst
+public class AbilityDefinitionItemManaRegen70 extends AbilityDefinition
+```
+
+'AMRe' / [AbilityIds.itemManaRegen70](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaRegen70)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setManaRegenerationBonusasfractionofnormal(int level, real value)`
+- `presetManaRegenerationBonusasfractionofnormal(RealLevelClosure lc)`
+
+### AbilityDefinitionItemManaRegen75
+
+```wurst
+public class AbilityDefinitionItemManaRegen75 extends AbilityDefinition
+```
+
+'AMRi' / [AbilityIds.itemManaRegen75](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaRegen75)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setManaRegenerationBonusasfractionofnormal(int level, real value)`
+- `presetManaRegenerationBonusasfractionofnormal(RealLevelClosure lc)`
+
+### AbilityDefinitionItemManaRegen65
+
+```wurst
+public class AbilityDefinitionItemManaRegen65 extends AbilityDefinition
+```
+
+'AMRo' / [AbilityIds.itemManaRegen65](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaRegen65)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setManaRegenerationBonusasfractionofnormal(int level, real value)`
+- `presetManaRegenerationBonusasfractionofnormal(RealLevelClosure lc)`
+
+### AbilityDefinitionItemManaRegen40
+
+```wurst
+public class AbilityDefinitionItemManaRegen40 extends AbilityDefinition
+```
+
+'AMRp' / [AbilityIds.itemManaRegen40](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaRegen40)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setManaRegenerationBonusasfractionofnormal(int level, real value)`
+- `presetManaRegenerationBonusasfractionofnormal(RealLevelClosure lc)`
+
+### AbilityDefinitionItemManaRegen100
+
+```wurst
+public class AbilityDefinitionItemManaRegen100 extends AbilityDefinition
+```
+
+'AMRq' / [AbilityIds.itemManaRegen100](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaRegen100)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setManaRegenerationBonusasfractionofnormal(int level, real value)`
+- `presetManaRegenerationBonusasfractionofnormal(RealLevelClosure lc)`
+
+### AbilityDefinitionItemManaRegen35
+
+```wurst
+public class AbilityDefinitionItemManaRegen35 extends AbilityDefinition
+```
+
+'AMRt' / [AbilityIds.itemManaRegen35](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaRegen35)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setManaRegenerationBonusasfractionofnormal(int level, real value)`
+- `presetManaRegenerationBonusasfractionofnormal(RealLevelClosure lc)`
+
+### AbilityDefinitionItemManaRegen30
+
+```wurst
+public class AbilityDefinitionItemManaRegen30 extends AbilityDefinition
+```
+
+'AMRu' / [AbilityIds.itemManaRegen30](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaRegen30)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setManaRegenerationBonusasfractionofnormal(int level, real value)`
+- `presetManaRegenerationBonusasfractionofnormal(RealLevelClosure lc)`
+
+### AbilityDefinitionItemManaRegen50
+
+```wurst
+public class AbilityDefinitionItemManaRegen50 extends AbilityDefinition
+```
+
+'AMRw' / [AbilityIds.itemManaRegen50](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaRegen50)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setManaRegenerationBonusasfractionofnormal(int level, real value)`
+- `presetManaRegenerationBonusasfractionofnormal(RealLevelClosure lc)`
+
+### AbilityDefinitionItemManaRegen25
+
+```wurst
+public class AbilityDefinitionItemManaRegen25 extends AbilityDefinition
+```
+
+'AMRy' / [AbilityIds.itemManaRegen25](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaRegen25)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setManaRegenerationBonusasfractionofnormal(int level, real value)`
+- `presetManaRegenerationBonusasfractionofnormal(RealLevelClosure lc)`
+
+### AbilityDefinitionItemMoveSpeedBonus20
+
+```wurst
+public class AbilityDefinitionItemMoveSpeedBonus20 extends AbilityDefinition
+```
+
+'AMSe' / [AbilityIds.itemMoveSpeedBonus20](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMoveSpeedBonus20)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMovementSpeedBonus(int level, int value)`
+- `presetMovementSpeedBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionItemMoveSpeedBonus10
+
+```wurst
+public class AbilityDefinitionItemMoveSpeedBonus10 extends AbilityDefinition
+```
+
+'AMSq' / [AbilityIds.itemMoveSpeedBonus10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMoveSpeedBonus10)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMovementSpeedBonus(int level, int value)`
+- `presetMovementSpeedBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionItemMoveSpeedBonus30
+
+```wurst
+public class AbilityDefinitionItemMoveSpeedBonus30 extends AbilityDefinition
+```
+
+'AMSr' / [AbilityIds.itemMoveSpeedBonus30](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMoveSpeedBonus30)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMovementSpeedBonus(int level, int value)`
+- `presetMovementSpeedBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionItemMoveSpeedBonus40
+
+```wurst
+public class AbilityDefinitionItemMoveSpeedBonus40 extends AbilityDefinition
+```
+
+'AMSt' / [AbilityIds.itemMoveSpeedBonus40](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMoveSpeedBonus40)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMovementSpeedBonus(int level, int value)`
+- `presetMovementSpeedBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionItemMoveSpeedBonus15
+
+```wurst
+public class AbilityDefinitionItemMoveSpeedBonus15 extends AbilityDefinition
+```
+
+'AMSw' / [AbilityIds.itemMoveSpeedBonus15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMoveSpeedBonus15)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMovementSpeedBonus(int level, int value)`
+- `presetMovementSpeedBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionRighteousFury
+
+```wurst
+public class AbilityDefinitionRighteousFury extends AbilityDefinition
+```
+
+'ANcp' / [AbilityIds.righteousFury](/stdlib/ref/_wurst/AbilityIds.html#abilityids-righteousFury)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDashSpeed(int level, real value)`
+- `setNormalBonusCriticalStrikeDuration(int level, real value)`
+- `setTargetIntersectRadius(int level, real value)`
+- `setRemoveBuffsOnAbilityStart(int level, bool value)`
+- `setBonusCriticalStrike(int level, real value)`
+- `setAttackSpeedSlow(int level, real value)`
+- `setDashDamage(int level, real value)`
+- `setMovementSpeedSlow(int level, real value)`
+- `setHeroBonusCriticalStrikeDuration(int level, real value)`
+- `presetDashSpeed(RealLevelClosure lc)`
+- `presetNormalBonusCriticalStrikeDuration(RealLevelClosure lc)`
+- `presetTargetIntersectRadius(RealLevelClosure lc)`
+- `presetRemoveBuffsOnAbilityStart(BooleanLevelClosure lc)`
+- `presetBonusCriticalStrike(RealLevelClosure lc)`
+- `presetAttackSpeedSlow(RealLevelClosure lc)`
+- `presetDashDamage(RealLevelClosure lc)`
+- `presetMovementSpeedSlow(RealLevelClosure lc)`
+- `presetHeroBonusCriticalStrikeDuration(RealLevelClosure lc)`
+
+### AbilityDefinitionAOwd
+
+```wurst
+public class AbilityDefinitionAOwd extends AbilityDefinition
+```
+
+'AOwd' / [AbilityIds.shadowHunterSerpentWard2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shadowHunterSerpentWard2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSummonedUnitCount(int level, int value)`
+- `setSummonedUnitType(int level, string value)`
+- `presetSummonedUnitCount(IntLevelClosure lc)`
+- `presetSummonedUnitType(StringLevelClosure lc)`
+
+### AbilityDefinitionStrengthBonusPlus10
+
+```wurst
+public class AbilityDefinitionStrengthBonusPlus10 extends AbilityDefinition
+```
+
+'AS10' / [AbilityIds.strengthBonusPlus10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-strengthBonusPlus10)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAgilityBonus(int level, int value)`
+- `setStrengthBonus(int level, int value)`
+- `setHideButton(int level, bool value)`
+- `setIntelligenceBonus(int level, int value)`
+- `presetAgilityBonus(IntLevelClosure lc)`
+- `presetStrengthBonus(IntLevelClosure lc)`
+- `presetHideButton(BooleanLevelClosure lc)`
+- `presetIntelligenceBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionStrengthBonusPlus12
+
+```wurst
+public class AbilityDefinitionStrengthBonusPlus12 extends AbilityDefinition
+```
+
+'AS12' / [AbilityIds.strengthBonusPlus12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-strengthBonusPlus12)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAgilityBonus(int level, int value)`
+- `setStrengthBonus(int level, int value)`
+- `setHideButton(int level, bool value)`
+- `setIntelligenceBonus(int level, int value)`
+- `presetAgilityBonus(IntLevelClosure lc)`
+- `presetStrengthBonus(IntLevelClosure lc)`
+- `presetHideButton(BooleanLevelClosure lc)`
+- `presetIntelligenceBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionStrengthBonusPlus20
+
+```wurst
+public class AbilityDefinitionStrengthBonusPlus20 extends AbilityDefinition
+```
+
+'AS20' / [AbilityIds.strengthBonusPlus20](/stdlib/ref/_wurst/AbilityIds.html#abilityids-strengthBonusPlus20)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAgilityBonus(int level, int value)`
+- `setStrengthBonus(int level, int value)`
+- `setHideButton(int level, bool value)`
+- `setIntelligenceBonus(int level, int value)`
+- `presetAgilityBonus(IntLevelClosure lc)`
+- `presetStrengthBonus(IntLevelClosure lc)`
+- `presetHideButton(BooleanLevelClosure lc)`
+- `presetIntelligenceBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionItemSpellCritChance8
+
+```wurst
+public class AbilityDefinitionItemSpellCritChance8 extends AbilityDefinition
+```
+
+'ASC8' / [AbilityIds.itemSpellCritChance8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellCritChance8)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSpellCritChance12
+
+```wurst
+public class AbilityDefinitionItemSpellCritChance12 extends AbilityDefinition
+```
+
+'ASCe' / [AbilityIds.itemSpellCritChance12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellCritChance12)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSpellCritChance15
+
+```wurst
+public class AbilityDefinitionItemSpellCritChance15 extends AbilityDefinition
+```
+
+'ASCq' / [AbilityIds.itemSpellCritChance15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellCritChance15)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSpellCritChance18
+
+```wurst
+public class AbilityDefinitionItemSpellCritChance18 extends AbilityDefinition
+```
+
+'ASCr' / [AbilityIds.itemSpellCritChance18](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellCritChance18)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSpellCritChance5
+
+```wurst
+public class AbilityDefinitionItemSpellCritChance5 extends AbilityDefinition
+```
+
+'ASCs' / [AbilityIds.itemSpellCritChance5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellCritChance5)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSpellCritChance6
+
+```wurst
+public class AbilityDefinitionItemSpellCritChance6 extends AbilityDefinition
+```
+
+'ASCt' / [AbilityIds.itemSpellCritChance6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellCritChance6)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSpellCritChance4
+
+```wurst
+public class AbilityDefinitionItemSpellCritChance4 extends AbilityDefinition
+```
+
+'ASCu' / [AbilityIds.itemSpellCritChance4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellCritChance4)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSpellCritChance10
+
+```wurst
+public class AbilityDefinitionItemSpellCritChance10 extends AbilityDefinition
+```
+
+'ASCw' / [AbilityIds.itemSpellCritChance10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellCritChance10)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSpellCritChance30
+
+```wurst
+public class AbilityDefinitionItemSpellCritChance30 extends AbilityDefinition
+```
+
+'ASCy' / [AbilityIds.itemSpellCritChance30](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellCritChance30)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSplashDamage4
+
+```wurst
+public class AbilityDefinitionItemSplashDamage4 extends AbilityDefinition
+```
+
+'ASD4' / [AbilityIds.itemSplashDamage4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSplashDamage4)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageBonus(int level, real value)`
+- `setEnabledAttackIndex(int level, int value)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetEnabledAttackIndex(IntLevelClosure lc)`
+
+### AbilityDefinitionItemSpellCritDamage20
+
+```wurst
+public class AbilityDefinitionItemSpellCritDamage20 extends AbilityDefinition
+```
+
+'ASDq' / [AbilityIds.itemSpellCritDamage20](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellCritDamage20)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSpellCritDamage15
+
+```wurst
+public class AbilityDefinitionItemSpellCritDamage15 extends AbilityDefinition
+```
+
+'ASDw' / [AbilityIds.itemSpellCritDamage15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellCritDamage15)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSpellResistance5
+
+```wurst
+public class AbilityDefinitionItemSpellResistance5 extends AbilityDefinition
+```
+
+'ASRe' / [AbilityIds.itemSpellResistance5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellResistance5)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageBonus(int level, real value)`
+- `setDamageReduction(int level, real value)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetDamageReduction(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSpellResistance10
+
+```wurst
+public class AbilityDefinitionItemSpellResistance10 extends AbilityDefinition
+```
+
+'ASRi' / [AbilityIds.itemSpellResistance10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellResistance10)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageBonus(int level, real value)`
+- `setDamageReduction(int level, real value)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetDamageReduction(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSpellResistance25
+
+```wurst
+public class AbilityDefinitionItemSpellResistance25 extends AbilityDefinition
+```
+
+'ASRo' / [AbilityIds.itemSpellResistance25](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellResistance25)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageBonus(int level, real value)`
+- `setDamageReduction(int level, real value)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetDamageReduction(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSpellResistance33
+
+```wurst
+public class AbilityDefinitionItemSpellResistance33 extends AbilityDefinition
+```
+
+'ASRp' / [AbilityIds.itemSpellResistance33](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellResistance33)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageBonus(int level, real value)`
+- `setDamageReduction(int level, real value)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetDamageReduction(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSpellResistance7
+
+```wurst
+public class AbilityDefinitionItemSpellResistance7 extends AbilityDefinition
+```
+
+'ASRq' / [AbilityIds.itemSpellResistance7](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellResistance7)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageBonus(int level, real value)`
+- `setDamageReduction(int level, real value)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetDamageReduction(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSpellResistance14
+
+```wurst
+public class AbilityDefinitionItemSpellResistance14 extends AbilityDefinition
+```
+
+'ASRt' / [AbilityIds.itemSpellResistance14](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellResistance14)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageBonus(int level, real value)`
+- `setDamageReduction(int level, real value)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetDamageReduction(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSpellResistance4
+
+```wurst
+public class AbilityDefinitionItemSpellResistance4 extends AbilityDefinition
+```
+
+'ASRu' / [AbilityIds.itemSpellResistance4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellResistance4)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageBonus(int level, real value)`
+- `setDamageReduction(int level, real value)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetDamageReduction(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSpellResistance3
+
+```wurst
+public class AbilityDefinitionItemSpellResistance3 extends AbilityDefinition
+```
+
+'ASRw' / [AbilityIds.itemSpellResistance3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellResistance3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageBonus(int level, real value)`
+- `setDamageReduction(int level, real value)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetDamageReduction(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSpellResistance8
+
+```wurst
+public class AbilityDefinitionItemSpellResistance8 extends AbilityDefinition
+```
+
+'ASRy' / [AbilityIds.itemSpellResistance8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellResistance8)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageBonus(int level, real value)`
+- `setDamageReduction(int level, real value)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetDamageReduction(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSpellVamp7
+
+```wurst
+public class AbilityDefinitionItemSpellVamp7 extends AbilityDefinition
+```
+
+'ASVe' / [AbilityIds.itemSpellVamp7](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellVamp7)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setFlatBonus(int level, bool value)`
+- `setSpellVamp(int level, real value)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetSpellVamp(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSpellVamp8
+
+```wurst
+public class AbilityDefinitionItemSpellVamp8 extends AbilityDefinition
+```
+
+'ASVi' / [AbilityIds.itemSpellVamp8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellVamp8)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setFlatBonus(int level, bool value)`
+- `setSpellVamp(int level, real value)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetSpellVamp(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSpellVamp5
+
+```wurst
+public class AbilityDefinitionItemSpellVamp5 extends AbilityDefinition
+```
+
+'ASVq' / [AbilityIds.itemSpellVamp5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellVamp5)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setFlatBonus(int level, bool value)`
+- `setSpellVamp(int level, real value)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetSpellVamp(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSpellVamp3
+
+```wurst
+public class AbilityDefinitionItemSpellVamp3 extends AbilityDefinition
+```
+
+'ASVr' / [AbilityIds.itemSpellVamp3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellVamp3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setFlatBonus(int level, bool value)`
+- `setSpellVamp(int level, real value)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetSpellVamp(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSpellVamp4
+
+```wurst
+public class AbilityDefinitionItemSpellVamp4 extends AbilityDefinition
+```
+
+'ASVt' / [AbilityIds.itemSpellVamp4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellVamp4)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setFlatBonus(int level, bool value)`
+- `setSpellVamp(int level, real value)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetSpellVamp(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSpellVamp6
+
+```wurst
+public class AbilityDefinitionItemSpellVamp6 extends AbilityDefinition
+```
+
+'ASVu' / [AbilityIds.itemSpellVamp6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellVamp6)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setFlatBonus(int level, bool value)`
+- `setSpellVamp(int level, real value)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetSpellVamp(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSpellVamp2
+
+```wurst
+public class AbilityDefinitionItemSpellVamp2 extends AbilityDefinition
+```
+
+'ASVw' / [AbilityIds.itemSpellVamp2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellVamp2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setFlatBonus(int level, bool value)`
+- `setSpellVamp(int level, real value)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetSpellVamp(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSpellVamp10
+
+```wurst
+public class AbilityDefinitionItemSpellVamp10 extends AbilityDefinition
+```
+
+'ASVy' / [AbilityIds.itemSpellVamp10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellVamp10)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setFlatBonus(int level, bool value)`
+- `setSpellVamp(int level, real value)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetSpellVamp(RealLevelClosure lc)`
+
+### AbilityDefinitionStatDetails
+
+```wurst
+public class AbilityDefinitionStatDetails extends AbilityDefinition
+```
+
+'ASde' / [AbilityIds.statDetails](/stdlib/ref/_wurst/AbilityIds.html#abilityids-statDetails)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSupportedstatmodifiers(int level, string value)`
+- `presetSupportedstatmodifiers(StringLevelClosure lc)`
+
+### AbilityDefinitionEquipmentInventoryInterface
+
+```wurst
+public class AbilityDefinitionEquipmentInventoryInterface extends AbilityDefinition
+```
+
+'ASpc' / [AbilityIds.equipmentInventoryInterface](/stdlib/ref/_wurst/AbilityIds.html#abilityids-equipmentInventoryInterface)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionAnyaTalentTier1a
+
+```wurst
+public class AbilityDefinitionAnyaTalentTier1a extends AbilityDefinition
+```
+
+'AT1a' / [AbilityIds.anyaTalentTier1a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaTalentTier1a)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionAnyaTalentTier1b
+
+```wurst
+public class AbilityDefinitionAnyaTalentTier1b extends AbilityDefinition
+```
+
+'AT1b' / [AbilityIds.anyaTalentTier1b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaTalentTier1b)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionAnyaTalentTier1c
+
+```wurst
+public class AbilityDefinitionAnyaTalentTier1c extends AbilityDefinition
+```
+
+'AT1c' / [AbilityIds.anyaTalentTier1c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaTalentTier1c)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionAnyaTalentTier2a
+
+```wurst
+public class AbilityDefinitionAnyaTalentTier2a extends AbilityDefinition
+```
+
+'AT2a' / [AbilityIds.anyaTalentTier2a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaTalentTier2a)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionAnyaTalentTier2b
+
+```wurst
+public class AbilityDefinitionAnyaTalentTier2b extends AbilityDefinition
+```
+
+'AT2b' / [AbilityIds.anyaTalentTier2b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaTalentTier2b)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionAnyaTalentTier2c
+
+```wurst
+public class AbilityDefinitionAnyaTalentTier2c extends AbilityDefinition
+```
+
+'AT2c' / [AbilityIds.anyaTalentTier2c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaTalentTier2c)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionAnyaTalentTier3a
+
+```wurst
+public class AbilityDefinitionAnyaTalentTier3a extends AbilityDefinition
+```
+
+'AT3a' / [AbilityIds.anyaTalentTier3a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaTalentTier3a)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionAnyaTalentTier3b
+
+```wurst
+public class AbilityDefinitionAnyaTalentTier3b extends AbilityDefinition
+```
+
+'AT3b' / [AbilityIds.anyaTalentTier3b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaTalentTier3b)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionAnyaTalentTier3c
+
+```wurst
+public class AbilityDefinitionAnyaTalentTier3c extends AbilityDefinition
+```
+
+'AT3c' / [AbilityIds.anyaTalentTier3c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaTalentTier3c)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionAnyaTalentTier4a
+
+```wurst
+public class AbilityDefinitionAnyaTalentTier4a extends AbilityDefinition
+```
+
+'AT4a' / [AbilityIds.anyaTalentTier4a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaTalentTier4a)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionAnyaTalentTier4b
+
+```wurst
+public class AbilityDefinitionAnyaTalentTier4b extends AbilityDefinition
+```
+
+'AT4b' / [AbilityIds.anyaTalentTier4b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaTalentTier4b)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionAnyaTalentTier4c
+
+```wurst
+public class AbilityDefinitionAnyaTalentTier4c extends AbilityDefinition
+```
+
+'AT4c' / [AbilityIds.anyaTalentTier4c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaTalentTier4c)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionAnyaCritTalent
+
+```wurst
+public class AbilityDefinitionAnyaCritTalent extends AbilityDefinition
+```
+
+'AT5a' / [AbilityIds.anyaCritTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaCritTalent)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setChancetoEvade(int level, real value)`
+- `setExcludeItemDamage(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionAnyaSpellCritTalent
+
+```wurst
+public class AbilityDefinitionAnyaSpellCritTalent extends AbilityDefinition
+```
+
+'AT5b' / [AbilityIds.anyaSpellCritTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaSpellCritTalent)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionAnyaPoisonArrows
+
+```wurst
+public class AbilityDefinitionAnyaPoisonArrows extends AbilityDefinition
+```
+
+'AT5c' / [AbilityIds.anyaPoisonArrows](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaPoisonArrows)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMovementSpeedFactor(int level, real value)`
+- `setDamageperSecond(int level, real value)`
+- `setAttackSpeedFactor(int level, real value)`
+- `presetMovementSpeedFactor(RealLevelClosure lc)`
+- `presetDamageperSecond(RealLevelClosure lc)`
+- `presetAttackSpeedFactor(RealLevelClosure lc)`
+- `setStackingType(int level, int value)`
+- `presetStackingType(IntLevelClosure lc)`
+
+### AbilityDefinitionAnyaPlusAgiStrTalent
+
+```wurst
+public class AbilityDefinitionAnyaPlusAgiStrTalent extends AbilityDefinition
+```
+
+'AT6a' / [AbilityIds.anyaPlusAgiStrTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaPlusAgiStrTalent)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAgilityBonus(int level, int value)`
+- `setStrengthBonus(int level, int value)`
+- `setHideButton(int level, bool value)`
+- `setIntelligenceBonus(int level, int value)`
+- `presetAgilityBonus(IntLevelClosure lc)`
+- `presetStrengthBonus(IntLevelClosure lc)`
+- `presetHideButton(BooleanLevelClosure lc)`
+- `presetIntelligenceBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionAnyaEvasionTalent
+
+```wurst
+public class AbilityDefinitionAnyaEvasionTalent extends AbilityDefinition
+```
+
+'AT6b' / [AbilityIds.anyaEvasionTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaEvasionTalent)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoEvade(int level, real value)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+
+### AbilityDefinitionAnyaSpellAmpTalent
+
+```wurst
+public class AbilityDefinitionAnyaSpellAmpTalent extends AbilityDefinition
+```
+
+'AT6c' / [AbilityIds.anyaSpellAmpTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaSpellAmpTalent)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSpellAmp(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `setAppliestoHealingfromItems(int level, bool value)`
+- `presetSpellAmp(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetAppliestoHealingfromItems(BooleanLevelClosure lc)`
+
+### AbilityDefinitionTalents
+
+```wurst
+public class AbilityDefinitionTalents extends AbilityDefinition
+```
+
+'ATal' / [AbilityIds.talents](/stdlib/ref/_wurst/AbilityIds.html#abilityids-talents)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setTalentTierAbilities(int level, string value)`
+- `presetTalentTierAbilities(StringLevelClosure lc)`
+
+### AbilityDefinitionGrantTalentPoint
+
+```wurst
+public class AbilityDefinitionGrantTalentPoint extends AbilityDefinition
+```
+
+'ATap' / [AbilityIds.grantTalentPoint](/stdlib/ref/_wurst/AbilityIds.html#abilityids-grantTalentPoint)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionTalentCleaving25
+
+```wurst
+public class AbilityDefinitionTalentCleaving25 extends AbilityDefinition
+```
+
+'ATce' / [AbilityIds.talentCleaving25](/stdlib/ref/_wurst/AbilityIds.html#abilityids-talentCleaving25)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDistributedDamageFactor(int level, real value)`
+- `presetDistributedDamageFactor(RealLevelClosure lc)`
+
+### AbilityDefinitionTalentCooldownReduction15
+
+```wurst
+public class AbilityDefinitionTalentCooldownReduction15 extends AbilityDefinition
+```
+
+'ATcr' / [AbilityIds.talentCooldownReduction15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-talentCooldownReduction15)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setCooldownReduction(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `presetCooldownReduction(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+
+### AbilityDefinitionTalentsHumanGarek
+
+```wurst
+public class AbilityDefinitionTalentsHumanGarek extends AbilityDefinition
+```
+
+'AThg' / [AbilityIds.talentsHumanGarek](/stdlib/ref/_wurst/AbilityIds.html#abilityids-talentsHumanGarek)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setTalentTierAbilities(int level, string value)`
+- `presetTalentTierAbilities(StringLevelClosure lc)`
+
+### AbilityDefinitionTalentsHumanIlastar
+
+```wurst
+public class AbilityDefinitionTalentsHumanIlastar extends AbilityDefinition
+```
+
+'AThi' / [AbilityIds.talentsHumanIlastar](/stdlib/ref/_wurst/AbilityIds.html#abilityids-talentsHumanIlastar)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setTalentTierAbilities(int level, string value)`
+- `presetTalentTierAbilities(StringLevelClosure lc)`
+
+### AbilityDefinitionTalentsHumanLanden
+
+```wurst
+public class AbilityDefinitionTalentsHumanLanden extends AbilityDefinition
+```
+
+'AThl' / [AbilityIds.talentsHumanLanden](/stdlib/ref/_wurst/AbilityIds.html#abilityids-talentsHumanLanden)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setTalentTierAbilities(int level, string value)`
+- `presetTalentTierAbilities(StringLevelClosure lc)`
+
+### AbilityDefinitionTalentManaEfficiency15
+
+```wurst
+public class AbilityDefinitionTalentManaEfficiency15 extends AbilityDefinition
+```
+
+'ATme' / [AbilityIds.talentManaEfficiency15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-talentManaEfficiency15)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setFlatBonus(int level, bool value)`
+- `setManaEfficiency(int level, real value)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetManaEfficiency(RealLevelClosure lc)`
+
+### AbilityDefinitionATst
+
+```wurst
+public class AbilityDefinitionATst extends AbilityDefinition
+```
+
+'ATst' / [AbilityIds.aTst](/stdlib/ref/_wurst/AbilityIds.html#abilityids-aTst)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChargeRegenTime(int level, real value)`
+- `setMaxCharges(int level, int value)`
+- `presetChargeRegenTime(RealLevelClosure lc)`
+- `presetMaxCharges(IntLevelClosure lc)`
+
+### AbilityDefinitionTalentsUndeadAnya
+
+```wurst
+public class AbilityDefinitionTalentsUndeadAnya extends AbilityDefinition
+```
+
+'ATua' / [AbilityIds.talentsUndeadAnya](/stdlib/ref/_wurst/AbilityIds.html#abilityids-talentsUndeadAnya)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setTalentTierAbilities(int level, string value)`
+- `presetTalentTierAbilities(StringLevelClosure lc)`
+
+### AbilityDefinitionTalentsUndeadGarek
+
+```wurst
+public class AbilityDefinitionTalentsUndeadGarek extends AbilityDefinition
+```
+
+'ATug' / [AbilityIds.talentsUndeadGarek](/stdlib/ref/_wurst/AbilityIds.html#abilityids-talentsUndeadGarek)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setTalentTierAbilities(int level, string value)`
+- `presetTalentTierAbilities(StringLevelClosure lc)`
+
+### AbilityDefinitionTalentsUndeadLeonid
+
+```wurst
+public class AbilityDefinitionTalentsUndeadLeonid extends AbilityDefinition
+```
+
+'ATul' / [AbilityIds.talentsUndeadLeonid](/stdlib/ref/_wurst/AbilityIds.html#abilityids-talentsUndeadLeonid)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setTalentTierAbilities(int level, string value)`
+- `presetTalentTierAbilities(StringLevelClosure lc)`
+
+### AbilityDefinitionItemUnitDamageX125
+
+```wurst
+public class AbilityDefinitionItemUnitDamageX125 extends AbilityDefinition
+```
+
+'AUDq' / [AbilityIds.itemUnitDamageX125](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemUnitDamageX125)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageMultiplierBuildings(int level, real value)`
+- `setDamageMultiplierUnits(int level, real value)`
+- `setChancetoDemolish(int level, real value)`
+- `setDamageMultiplierHeroes(int level, real value)`
+- `presetDamageMultiplierBuildings(RealLevelClosure lc)`
+- `presetDamageMultiplierUnits(RealLevelClosure lc)`
+- `presetChancetoDemolish(RealLevelClosure lc)`
+- `presetDamageMultiplierHeroes(RealLevelClosure lc)`
+
+### AbilityDefinitionItemUnitDamageX115
+
+```wurst
+public class AbilityDefinitionItemUnitDamageX115 extends AbilityDefinition
+```
+
+'AUDw' / [AbilityIds.itemUnitDamageX115](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemUnitDamageX115)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageMultiplierBuildings(int level, real value)`
+- `setDamageMultiplierUnits(int level, real value)`
+- `setChancetoDemolish(int level, real value)`
+- `setDamageMultiplierHeroes(int level, real value)`
+- `presetDamageMultiplierBuildings(RealLevelClosure lc)`
+- `presetDamageMultiplierUnits(RealLevelClosure lc)`
+- `presetChancetoDemolish(RealLevelClosure lc)`
+- `presetDamageMultiplierHeroes(RealLevelClosure lc)`
+
+### AbilityDefinitionUndyingDefianceTalent1
+
+```wurst
+public class AbilityDefinitionUndyingDefianceTalent1 extends AbilityDefinition
+```
+
+'AUb1' / [AbilityIds.undyingDefianceTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-undyingDefianceTalent1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackSpeedIncrease(int level, real value)`
+  % Attack Speed Increase / 'bld3'
+- `setSweepRemainingCooldownReductionOnHit(int level, real value)`
+- `setDamageReduction(int level, real value)`
+  % Damage Reduction / 'bld1'
+- `setAbilitySpeedIncrease(int level, real value)`
+  % Ability Speed Increase / 'bld8'
+- `setMovementSpeedreduction(int level, real value)`
+  % Movement Speed reduction / 'bld2'
+- `setDamageReflection(int level, real value)`
+  % Damage Reflection / 'bld6'
+- `setFlatDamageReflection(int level, real value)`
+- `setOnDamageTakenBonusDuration(int level, real value)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+- `presetSweepRemainingCooldownReductionOnHit(RealLevelClosure lc)`
+- `presetDamageReduction(RealLevelClosure lc)`
+- `presetAbilitySpeedIncrease(RealLevelClosure lc)`
+- `presetMovementSpeedreduction(RealLevelClosure lc)`
+- `presetDamageReflection(RealLevelClosure lc)`
+- `presetFlatDamageReflection(RealLevelClosure lc)`
+- `presetOnDamageTakenBonusDuration(RealLevelClosure lc)`
+
+### AbilityDefinitionUndyingDefianceTalent2
+
+```wurst
+public class AbilityDefinitionUndyingDefianceTalent2 extends AbilityDefinition
+```
+
+'AUb2' / [AbilityIds.undyingDefianceTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-undyingDefianceTalent2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackSpeedIncrease(int level, real value)`
+  % Attack Speed Increase / 'bld3'
+- `setSweepRemainingCooldownReductionOnHit(int level, real value)`
+- `setDamageReduction(int level, real value)`
+  % Damage Reduction / 'bld1'
+- `setAbilitySpeedIncrease(int level, real value)`
+  % Ability Speed Increase / 'bld8'
+- `setMovementSpeedreduction(int level, real value)`
+  % Movement Speed reduction / 'bld2'
+- `setDamageReflection(int level, real value)`
+  % Damage Reflection / 'bld6'
+- `setFlatDamageReflection(int level, real value)`
+- `setOnDamageTakenBonusDuration(int level, real value)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+- `presetSweepRemainingCooldownReductionOnHit(RealLevelClosure lc)`
+- `presetDamageReduction(RealLevelClosure lc)`
+- `presetAbilitySpeedIncrease(RealLevelClosure lc)`
+- `presetMovementSpeedreduction(RealLevelClosure lc)`
+- `presetDamageReflection(RealLevelClosure lc)`
+- `presetFlatDamageReflection(RealLevelClosure lc)`
+- `presetOnDamageTakenBonusDuration(RealLevelClosure lc)`
+
+### AbilityDefinitionUndyingDefianceTalent3
+
+```wurst
+public class AbilityDefinitionUndyingDefianceTalent3 extends AbilityDefinition
+```
+
+'AUb3' / [AbilityIds.undyingDefianceTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-undyingDefianceTalent3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackSpeedIncrease(int level, real value)`
+  % Attack Speed Increase / 'bld3'
+- `setSweepRemainingCooldownReductionOnHit(int level, real value)`
+- `setDamageReduction(int level, real value)`
+  % Damage Reduction / 'bld1'
+- `setAbilitySpeedIncrease(int level, real value)`
+  % Ability Speed Increase / 'bld8'
+- `setMovementSpeedreduction(int level, real value)`
+  % Movement Speed reduction / 'bld2'
+- `setDamageReflection(int level, real value)`
+  % Damage Reflection / 'bld6'
+- `setFlatDamageReflection(int level, real value)`
+- `setOnDamageTakenBonusDuration(int level, real value)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+- `presetSweepRemainingCooldownReductionOnHit(RealLevelClosure lc)`
+- `presetDamageReduction(RealLevelClosure lc)`
+- `presetAbilitySpeedIncrease(RealLevelClosure lc)`
+- `presetMovementSpeedreduction(RealLevelClosure lc)`
+- `presetDamageReflection(RealLevelClosure lc)`
+- `presetFlatDamageReflection(RealLevelClosure lc)`
+- `presetOnDamageTakenBonusDuration(RealLevelClosure lc)`
+
+### AbilityDefinitionUndyingDefianceUndead
+
+```wurst
+public class AbilityDefinitionUndyingDefianceUndead extends AbilityDefinition
+```
+
+'AUbd' / [AbilityIds.undyingDefianceUndead](/stdlib/ref/_wurst/AbilityIds.html#abilityids-undyingDefianceUndead)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackSpeedIncrease(int level, real value)`
+  % Attack Speed Increase / 'bld3'
+- `setSweepRemainingCooldownReductionOnHit(int level, real value)`
+- `setDamageReduction(int level, real value)`
+  % Damage Reduction / 'bld1'
+- `setAbilitySpeedIncrease(int level, real value)`
+  % Ability Speed Increase / 'bld8'
+- `setMovementSpeedreduction(int level, real value)`
+  % Movement Speed reduction / 'bld2'
+- `setDamageReflection(int level, real value)`
+  % Damage Reflection / 'bld6'
+- `setFlatDamageReflection(int level, real value)`
+- `setOnDamageTakenBonusDuration(int level, real value)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+- `presetSweepRemainingCooldownReductionOnHit(RealLevelClosure lc)`
+- `presetDamageReduction(RealLevelClosure lc)`
+- `presetAbilitySpeedIncrease(RealLevelClosure lc)`
+- `presetMovementSpeedreduction(RealLevelClosure lc)`
+- `presetDamageReflection(RealLevelClosure lc)`
+- `presetFlatDamageReflection(RealLevelClosure lc)`
+- `presetOnDamageTakenBonusDuration(RealLevelClosure lc)`
+
+### AbilityDefinitionBatteringRam
+
+```wurst
+public class AbilityDefinitionBatteringRam extends AbilityDefinition
+```
+
+'AUbr' / [AbilityIds.batteringRam](/stdlib/ref/_wurst/AbilityIds.html#abilityids-batteringRam)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setBonusDamage(int level, real value)`
+- `setDashSpeed(int level, real value)`
+- `setTargetIntersectRadius(int level, real value)`
+- `setRemoveBuffsOnAbilityStart(int level, bool value)`
+- `setChargesRegenTime(int level, real value)`
+- `setBonusCriticalStrike(int level, real value)`
+- `setMaxCharges(int level, int value)`
+- `setDashDamage(int level, real value)`
+- `setBonusDamageDuration(int level, real value)`
+- `presetBonusDamage(RealLevelClosure lc)`
+- `presetDashSpeed(RealLevelClosure lc)`
+- `presetTargetIntersectRadius(RealLevelClosure lc)`
+- `presetRemoveBuffsOnAbilityStart(BooleanLevelClosure lc)`
+- `presetChargesRegenTime(RealLevelClosure lc)`
+- `presetBonusCriticalStrike(RealLevelClosure lc)`
+- `presetMaxCharges(IntLevelClosure lc)`
+- `presetDashDamage(RealLevelClosure lc)`
+- `presetBonusDamageDuration(RealLevelClosure lc)`
+
+### AbilityDefinitionDeathseekerBowTalent1
+
+```wurst
+public class AbilityDefinitionDeathseekerBowTalent1 extends AbilityDefinition
+```
+
+'AUd1' / [AbilityIds.deathseekerBowTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-deathseekerBowTalent1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMaxAttackSpeedStacks(int level, int value)`
+- `setPercentDamage(int level, real value)`
+- `setStacksRequired(int level, int value)`
+- `setBonusAttackSpeedperAttack(int level, real value)`
+- `setFlatDamage(int level, real value)`
+- `presetMaxAttackSpeedStacks(IntLevelClosure lc)`
+- `presetPercentDamage(RealLevelClosure lc)`
+- `presetStacksRequired(IntLevelClosure lc)`
+- `presetBonusAttackSpeedperAttack(RealLevelClosure lc)`
+- `presetFlatDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionDeathseekerBowTalent2
+
+```wurst
+public class AbilityDefinitionDeathseekerBowTalent2 extends AbilityDefinition
+```
+
+'AUd2' / [AbilityIds.deathseekerBowTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-deathseekerBowTalent2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMaxAttackSpeedStacks(int level, int value)`
+- `setPercentDamage(int level, real value)`
+- `setStacksRequired(int level, int value)`
+- `setBonusAttackSpeedperAttack(int level, real value)`
+- `setFlatDamage(int level, real value)`
+- `presetMaxAttackSpeedStacks(IntLevelClosure lc)`
+- `presetPercentDamage(RealLevelClosure lc)`
+- `presetStacksRequired(IntLevelClosure lc)`
+- `presetBonusAttackSpeedperAttack(RealLevelClosure lc)`
+- `presetFlatDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionDeathseekerBowTalent3
+
+```wurst
+public class AbilityDefinitionDeathseekerBowTalent3 extends AbilityDefinition
+```
+
+'AUd3' / [AbilityIds.deathseekerBowTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-deathseekerBowTalent3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMaxAttackSpeedStacks(int level, int value)`
+- `setPercentDamage(int level, real value)`
+- `setStacksRequired(int level, int value)`
+- `setBonusAttackSpeedperAttack(int level, real value)`
+- `setFlatDamage(int level, real value)`
+- `presetMaxAttackSpeedStacks(IntLevelClosure lc)`
+- `presetPercentDamage(RealLevelClosure lc)`
+- `presetStacksRequired(IntLevelClosure lc)`
+- `presetBonusAttackSpeedperAttack(RealLevelClosure lc)`
+- `presetFlatDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionDeathseekerBow
+
+```wurst
+public class AbilityDefinitionDeathseekerBow extends AbilityDefinition
+```
+
+'AUdb' / [AbilityIds.deathseekerBow](/stdlib/ref/_wurst/AbilityIds.html#abilityids-deathseekerBow)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMaxAttackSpeedStacks(int level, int value)`
+- `setPercentDamage(int level, real value)`
+- `setStacksRequired(int level, int value)`
+- `setBonusAttackSpeedperAttack(int level, real value)`
+- `setFlatDamage(int level, real value)`
+- `presetMaxAttackSpeedStacks(IntLevelClosure lc)`
+- `presetPercentDamage(RealLevelClosure lc)`
+- `presetStacksRequired(IntLevelClosure lc)`
+- `presetBonusAttackSpeedperAttack(RealLevelClosure lc)`
+- `presetFlatDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionBansheeSCallWailTalent1
+
+```wurst
+public class AbilityDefinitionBansheeSCallWailTalent1 extends AbilityDefinition
+```
+
+'AUi1' / [AbilityIds.bansheeSCallWailTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bansheeSCallWailTalent1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setNumberofSwarmUnits(int level, int value)`
+- `setUnitReleaseIntervalseconds(int level, real value)`
+- `setMaxSwarmUnitsPerTarget(int level, int value)`
+- `setDamageReturnThreshold(int level, real value)`
+- `setDamageReturnFactor(int level, real value)`
+- `setSwarmUnitType(int level, string value)`
+- `setFlatManaGain(int level, real value)`
+- `setHealingRadius(int level, real value)`
+- `presetNumberofSwarmUnits(IntLevelClosure lc)`
+- `presetUnitReleaseIntervalseconds(RealLevelClosure lc)`
+- `presetMaxSwarmUnitsPerTarget(IntLevelClosure lc)`
+- `presetDamageReturnThreshold(RealLevelClosure lc)`
+- `presetDamageReturnFactor(RealLevelClosure lc)`
+- `presetSwarmUnitType(StringLevelClosure lc)`
+- `presetFlatManaGain(RealLevelClosure lc)`
+- `presetHealingRadius(RealLevelClosure lc)`
+
+### AbilityDefinitionBansheeSCallWailTalent2
+
+```wurst
+public class AbilityDefinitionBansheeSCallWailTalent2 extends AbilityDefinition
+```
+
+'AUi2' / [AbilityIds.bansheeSCallWailTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bansheeSCallWailTalent2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setNumberofSwarmUnits(int level, int value)`
+- `setUnitReleaseIntervalseconds(int level, real value)`
+- `setMaxSwarmUnitsPerTarget(int level, int value)`
+- `setDamageReturnThreshold(int level, real value)`
+- `setDamageReturnFactor(int level, real value)`
+- `setSwarmUnitType(int level, string value)`
+- `setFlatManaGain(int level, real value)`
+- `setHealingRadius(int level, real value)`
+- `presetNumberofSwarmUnits(IntLevelClosure lc)`
+- `presetUnitReleaseIntervalseconds(RealLevelClosure lc)`
+- `presetMaxSwarmUnitsPerTarget(IntLevelClosure lc)`
+- `presetDamageReturnThreshold(RealLevelClosure lc)`
+- `presetDamageReturnFactor(RealLevelClosure lc)`
+- `presetSwarmUnitType(StringLevelClosure lc)`
+- `presetFlatManaGain(RealLevelClosure lc)`
+- `presetHealingRadius(RealLevelClosure lc)`
+
+### AbilityDefinitionBansheeSCallWailTalent3
+
+```wurst
+public class AbilityDefinitionBansheeSCallWailTalent3 extends AbilityDefinition
+```
+
+'AUi3' / [AbilityIds.bansheeSCallWailTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bansheeSCallWailTalent3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setNumberofSwarmUnits(int level, int value)`
+- `setUnitReleaseIntervalseconds(int level, real value)`
+- `setMaxSwarmUnitsPerTarget(int level, int value)`
+- `setDamageReturnThreshold(int level, real value)`
+- `setDamageReturnFactor(int level, real value)`
+- `setSwarmUnitType(int level, string value)`
+- `setFlatManaGain(int level, real value)`
+- `setHealingRadius(int level, real value)`
+- `presetNumberofSwarmUnits(IntLevelClosure lc)`
+- `presetUnitReleaseIntervalseconds(RealLevelClosure lc)`
+- `presetMaxSwarmUnitsPerTarget(IntLevelClosure lc)`
+- `presetDamageReturnThreshold(RealLevelClosure lc)`
+- `presetDamageReturnFactor(RealLevelClosure lc)`
+- `presetSwarmUnitType(StringLevelClosure lc)`
+- `presetFlatManaGain(RealLevelClosure lc)`
+- `presetHealingRadius(RealLevelClosure lc)`
+
+### AbilityDefinitionSoulLanternTalent1
+
+```wurst
+public class AbilityDefinitionSoulLanternTalent1 extends AbilityDefinition
+```
+
+'AUl1' / [AbilityIds.soulLanternTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-soulLanternTalent1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setEnemyManaPerSecond(int level, real value)`
+- `setAllySpellAmpPercent(int level, real value)`
+- `setAllySpellResistPercent(int level, real value)`
+- `setAllySpellCritHitPercent(int level, real value)`
+- `setAllyMovementSpeedPercent(int level, real value)`
+- `setEnemyDamagePerSecond(int level, real value)`
+- `setAllyHealingPerSecond(int level, real value)`
+- `setAllyManaPerSecond(int level, real value)`
+- `presetEnemyManaPerSecond(RealLevelClosure lc)`
+- `presetAllySpellAmpPercent(RealLevelClosure lc)`
+- `presetAllySpellResistPercent(RealLevelClosure lc)`
+- `presetAllySpellCritHitPercent(RealLevelClosure lc)`
+- `presetAllyMovementSpeedPercent(RealLevelClosure lc)`
+- `presetEnemyDamagePerSecond(RealLevelClosure lc)`
+- `presetAllyHealingPerSecond(RealLevelClosure lc)`
+- `presetAllyManaPerSecond(RealLevelClosure lc)`
+
+### AbilityDefinitionSoulLanternTalent2
+
+```wurst
+public class AbilityDefinitionSoulLanternTalent2 extends AbilityDefinition
+```
+
+'AUl2' / [AbilityIds.soulLanternTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-soulLanternTalent2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setEnemyManaPerSecond(int level, real value)`
+- `setAllySpellAmpPercent(int level, real value)`
+- `setAllySpellResistPercent(int level, real value)`
+- `setAllySpellCritHitPercent(int level, real value)`
+- `setAllyMovementSpeedPercent(int level, real value)`
+- `setEnemyDamagePerSecond(int level, real value)`
+- `setAllyHealingPerSecond(int level, real value)`
+- `setAllyManaPerSecond(int level, real value)`
+- `presetEnemyManaPerSecond(RealLevelClosure lc)`
+- `presetAllySpellAmpPercent(RealLevelClosure lc)`
+- `presetAllySpellResistPercent(RealLevelClosure lc)`
+- `presetAllySpellCritHitPercent(RealLevelClosure lc)`
+- `presetAllyMovementSpeedPercent(RealLevelClosure lc)`
+- `presetEnemyDamagePerSecond(RealLevelClosure lc)`
+- `presetAllyHealingPerSecond(RealLevelClosure lc)`
+- `presetAllyManaPerSecond(RealLevelClosure lc)`
+
+### AbilityDefinitionSoulLanternTalent3
+
+```wurst
+public class AbilityDefinitionSoulLanternTalent3 extends AbilityDefinition
+```
+
+'AUl3' / [AbilityIds.soulLanternTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-soulLanternTalent3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setEnemyManaPerSecond(int level, real value)`
+- `setAllySpellAmpPercent(int level, real value)`
+- `setAllySpellResistPercent(int level, real value)`
+- `setAllySpellCritHitPercent(int level, real value)`
+- `setAllyMovementSpeedPercent(int level, real value)`
+- `setEnemyDamagePerSecond(int level, real value)`
+- `setAllyHealingPerSecond(int level, real value)`
+- `setAllyManaPerSecond(int level, real value)`
+- `presetEnemyManaPerSecond(RealLevelClosure lc)`
+- `presetAllySpellAmpPercent(RealLevelClosure lc)`
+- `presetAllySpellResistPercent(RealLevelClosure lc)`
+- `presetAllySpellCritHitPercent(RealLevelClosure lc)`
+- `presetAllyMovementSpeedPercent(RealLevelClosure lc)`
+- `presetEnemyDamagePerSecond(RealLevelClosure lc)`
+- `presetAllyHealingPerSecond(RealLevelClosure lc)`
+- `presetAllyManaPerSecond(RealLevelClosure lc)`
+
+### AbilityDefinitionSoulLantern
+
+```wurst
+public class AbilityDefinitionSoulLantern extends AbilityDefinition
+```
+
+'AUla' / [AbilityIds.soulLantern](/stdlib/ref/_wurst/AbilityIds.html#abilityids-soulLantern)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setEnemyManaPerSecond(int level, real value)`
+- `setAllySpellAmpPercent(int level, real value)`
+- `setAllySpellResistPercent(int level, real value)`
+- `setAllySpellCritHitPercent(int level, real value)`
+- `setAllyMovementSpeedPercent(int level, real value)`
+- `setEnemyDamagePerSecond(int level, real value)`
+- `setAllyHealingPerSecond(int level, real value)`
+- `setAllyManaPerSecond(int level, real value)`
+- `presetEnemyManaPerSecond(RealLevelClosure lc)`
+- `presetAllySpellAmpPercent(RealLevelClosure lc)`
+- `presetAllySpellResistPercent(RealLevelClosure lc)`
+- `presetAllySpellCritHitPercent(RealLevelClosure lc)`
+- `presetAllyMovementSpeedPercent(RealLevelClosure lc)`
+- `presetEnemyDamagePerSecond(RealLevelClosure lc)`
+- `presetAllyHealingPerSecond(RealLevelClosure lc)`
+- `presetAllyManaPerSecond(RealLevelClosure lc)`
+
+### AbilityDefinitionBatteringRamTalent1
+
+```wurst
+public class AbilityDefinitionBatteringRamTalent1 extends AbilityDefinition
+```
+
+'AUr1' / [AbilityIds.batteringRamTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-batteringRamTalent1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setBonusDamage(int level, real value)`
+- `setDashSpeed(int level, real value)`
+- `setTargetIntersectRadius(int level, real value)`
+- `setRemoveBuffsOnAbilityStart(int level, bool value)`
+- `setChargesRegenTime(int level, real value)`
+- `setBonusCriticalStrike(int level, real value)`
+- `setMaxCharges(int level, int value)`
+- `setDashDamage(int level, real value)`
+- `setBonusDamageDuration(int level, real value)`
+- `presetBonusDamage(RealLevelClosure lc)`
+- `presetDashSpeed(RealLevelClosure lc)`
+- `presetTargetIntersectRadius(RealLevelClosure lc)`
+- `presetRemoveBuffsOnAbilityStart(BooleanLevelClosure lc)`
+- `presetChargesRegenTime(RealLevelClosure lc)`
+- `presetBonusCriticalStrike(RealLevelClosure lc)`
+- `presetMaxCharges(IntLevelClosure lc)`
+- `presetDashDamage(RealLevelClosure lc)`
+- `presetBonusDamageDuration(RealLevelClosure lc)`
+
+### AbilityDefinitionBatteringRamTalent2
+
+```wurst
+public class AbilityDefinitionBatteringRamTalent2 extends AbilityDefinition
+```
+
+'AUr2' / [AbilityIds.batteringRamTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-batteringRamTalent2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setBonusDamage(int level, real value)`
+- `setDashSpeed(int level, real value)`
+- `setTargetIntersectRadius(int level, real value)`
+- `setRemoveBuffsOnAbilityStart(int level, bool value)`
+- `setChargesRegenTime(int level, real value)`
+- `setBonusCriticalStrike(int level, real value)`
+- `setMaxCharges(int level, int value)`
+- `setDashDamage(int level, real value)`
+- `setBonusDamageDuration(int level, real value)`
+- `presetBonusDamage(RealLevelClosure lc)`
+- `presetDashSpeed(RealLevelClosure lc)`
+- `presetTargetIntersectRadius(RealLevelClosure lc)`
+- `presetRemoveBuffsOnAbilityStart(BooleanLevelClosure lc)`
+- `presetChargesRegenTime(RealLevelClosure lc)`
+- `presetBonusCriticalStrike(RealLevelClosure lc)`
+- `presetMaxCharges(IntLevelClosure lc)`
+- `presetDashDamage(RealLevelClosure lc)`
+- `presetBonusDamageDuration(RealLevelClosure lc)`
+
+### AbilityDefinitionBatteringRamTalent3
+
+```wurst
+public class AbilityDefinitionBatteringRamTalent3 extends AbilityDefinition
+```
+
+'AUr3' / [AbilityIds.batteringRamTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-batteringRamTalent3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setBonusDamage(int level, real value)`
+- `setDashSpeed(int level, real value)`
+- `setTargetIntersectRadius(int level, real value)`
+- `setRemoveBuffsOnAbilityStart(int level, bool value)`
+- `setChargesRegenTime(int level, real value)`
+- `setBonusCriticalStrike(int level, real value)`
+- `setMaxCharges(int level, int value)`
+- `setDashDamage(int level, real value)`
+- `setBonusDamageDuration(int level, real value)`
+- `presetBonusDamage(RealLevelClosure lc)`
+- `presetDashSpeed(RealLevelClosure lc)`
+- `presetTargetIntersectRadius(RealLevelClosure lc)`
+- `presetRemoveBuffsOnAbilityStart(BooleanLevelClosure lc)`
+- `presetChargesRegenTime(RealLevelClosure lc)`
+- `presetBonusCriticalStrike(RealLevelClosure lc)`
+- `presetMaxCharges(IntLevelClosure lc)`
+- `presetDashDamage(RealLevelClosure lc)`
+- `presetBonusDamageDuration(RealLevelClosure lc)`
+
+### AbilityDefinitionRelentlessCleaveTalent1
+
+```wurst
+public class AbilityDefinitionRelentlessCleaveTalent1 extends AbilityDefinition
+```
+
+'AUs1' / [AbilityIds.relentlessCleaveTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-relentlessCleaveTalent1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHeroDurationAttackSpeedReduction(int level, real value)`
+- `setDurationAttackSpeedReduction(int level, real value)`
+- `setDurationDamageByTargetMaxHealth(int level, real value)`
+- `setArmorReduction(int level, real value)`
+- `setCooldownReductionOnHit(int level, real value)`
+- `setHeroDurationArmorReduction(int level, real value)`
+- `setAttackAngle(int level, real value)`
+- `setHealingPerTargetHit(int level, real value)`
+- `setDamageByTargetMaxHealth(int level, real value)`
+  Damage By Target Max Health (%) / 'swpa'
+- `setMaxTargetHit(int level, int value)`
+- `setDamageStrengthModifier(int level, int value)`
+  Damage Strength Modifier (%) / 'swp5'
+- `setAttackDistance(int level, real value)`
+- `setHeroDurationDamageByTargetMaxHealth(int level, real value)`
+- `setDurationArmorReduction(int level, real value)`
+- `setDamageDelay(int level, real value)`
+- `setAttackSpeedReduction(int level, int value)`
+  Attack Speed Reduction (%) / 'swp9'
+- `setDamage(int level, real value)`
+- `presetHeroDurationAttackSpeedReduction(RealLevelClosure lc)`
+- `presetDurationAttackSpeedReduction(RealLevelClosure lc)`
+- `presetDurationDamageByTargetMaxHealth(RealLevelClosure lc)`
+- `presetArmorReduction(RealLevelClosure lc)`
+- `presetCooldownReductionOnHit(RealLevelClosure lc)`
+- `presetHeroDurationArmorReduction(RealLevelClosure lc)`
+- `presetAttackAngle(RealLevelClosure lc)`
+- `presetHealingPerTargetHit(RealLevelClosure lc)`
+- `presetDamageByTargetMaxHealth(RealLevelClosure lc)`
+- `presetMaxTargetHit(IntLevelClosure lc)`
+- `presetDamageStrengthModifier(IntLevelClosure lc)`
+- `presetAttackDistance(RealLevelClosure lc)`
+- `presetHeroDurationDamageByTargetMaxHealth(RealLevelClosure lc)`
+- `presetDurationArmorReduction(RealLevelClosure lc)`
+- `presetDamageDelay(RealLevelClosure lc)`
+- `presetAttackSpeedReduction(IntLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionRelentlessCleaveTalent2
+
+```wurst
+public class AbilityDefinitionRelentlessCleaveTalent2 extends AbilityDefinition
+```
+
+'AUs2' / [AbilityIds.relentlessCleaveTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-relentlessCleaveTalent2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHeroDurationAttackSpeedReduction(int level, real value)`
+- `setDurationAttackSpeedReduction(int level, real value)`
+- `setDurationDamageByTargetMaxHealth(int level, real value)`
+- `setArmorReduction(int level, real value)`
+- `setCooldownReductionOnHit(int level, real value)`
+- `setHeroDurationArmorReduction(int level, real value)`
+- `setAttackAngle(int level, real value)`
+- `setHealingPerTargetHit(int level, real value)`
+- `setDamageByTargetMaxHealth(int level, real value)`
+  Damage By Target Max Health (%) / 'swpa'
+- `setMaxTargetHit(int level, int value)`
+- `setDamageStrengthModifier(int level, int value)`
+  Damage Strength Modifier (%) / 'swp5'
+- `setAttackDistance(int level, real value)`
+- `setHeroDurationDamageByTargetMaxHealth(int level, real value)`
+- `setDurationArmorReduction(int level, real value)`
+- `setDamageDelay(int level, real value)`
+- `setAttackSpeedReduction(int level, int value)`
+  Attack Speed Reduction (%) / 'swp9'
+- `setDamage(int level, real value)`
+- `presetHeroDurationAttackSpeedReduction(RealLevelClosure lc)`
+- `presetDurationAttackSpeedReduction(RealLevelClosure lc)`
+- `presetDurationDamageByTargetMaxHealth(RealLevelClosure lc)`
+- `presetArmorReduction(RealLevelClosure lc)`
+- `presetCooldownReductionOnHit(RealLevelClosure lc)`
+- `presetHeroDurationArmorReduction(RealLevelClosure lc)`
+- `presetAttackAngle(RealLevelClosure lc)`
+- `presetHealingPerTargetHit(RealLevelClosure lc)`
+- `presetDamageByTargetMaxHealth(RealLevelClosure lc)`
+- `presetMaxTargetHit(IntLevelClosure lc)`
+- `presetDamageStrengthModifier(IntLevelClosure lc)`
+- `presetAttackDistance(RealLevelClosure lc)`
+- `presetHeroDurationDamageByTargetMaxHealth(RealLevelClosure lc)`
+- `presetDurationArmorReduction(RealLevelClosure lc)`
+- `presetDamageDelay(RealLevelClosure lc)`
+- `presetAttackSpeedReduction(IntLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionRelentlessCleaveTalent3
+
+```wurst
+public class AbilityDefinitionRelentlessCleaveTalent3 extends AbilityDefinition
+```
+
+'AUs3' / [AbilityIds.relentlessCleaveTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-relentlessCleaveTalent3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHeroDurationAttackSpeedReduction(int level, real value)`
+- `setDurationAttackSpeedReduction(int level, real value)`
+- `setDurationDamageByTargetMaxHealth(int level, real value)`
+- `setArmorReduction(int level, real value)`
+- `setCooldownReductionOnHit(int level, real value)`
+- `setHeroDurationArmorReduction(int level, real value)`
+- `setAttackAngle(int level, real value)`
+- `setHealingPerTargetHit(int level, real value)`
+- `setDamageByTargetMaxHealth(int level, real value)`
+  Damage By Target Max Health (%) / 'swpa'
+- `setMaxTargetHit(int level, int value)`
+- `setDamageStrengthModifier(int level, int value)`
+  Damage Strength Modifier (%) / 'swp5'
+- `setAttackDistance(int level, real value)`
+- `setHeroDurationDamageByTargetMaxHealth(int level, real value)`
+- `setDurationArmorReduction(int level, real value)`
+- `setDamageDelay(int level, real value)`
+- `setAttackSpeedReduction(int level, int value)`
+  Attack Speed Reduction (%) / 'swp9'
+- `setDamage(int level, real value)`
+- `presetHeroDurationAttackSpeedReduction(RealLevelClosure lc)`
+- `presetDurationAttackSpeedReduction(RealLevelClosure lc)`
+- `presetDurationDamageByTargetMaxHealth(RealLevelClosure lc)`
+- `presetArmorReduction(RealLevelClosure lc)`
+- `presetCooldownReductionOnHit(RealLevelClosure lc)`
+- `presetHeroDurationArmorReduction(RealLevelClosure lc)`
+- `presetAttackAngle(RealLevelClosure lc)`
+- `presetHealingPerTargetHit(RealLevelClosure lc)`
+- `presetDamageByTargetMaxHealth(RealLevelClosure lc)`
+- `presetMaxTargetHit(IntLevelClosure lc)`
+- `presetDamageStrengthModifier(IntLevelClosure lc)`
+- `presetAttackDistance(RealLevelClosure lc)`
+- `presetHeroDurationDamageByTargetMaxHealth(RealLevelClosure lc)`
+- `presetDurationArmorReduction(RealLevelClosure lc)`
+- `presetDamageDelay(RealLevelClosure lc)`
+- `presetAttackSpeedReduction(IntLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionThornyShieldStacking
+
+```wurst
+public class AbilityDefinitionThornyShieldStacking extends AbilityDefinition
+```
+
+'AUss' / [AbilityIds.thornyShieldStacking](/stdlib/ref/_wurst/AbilityIds.html#abilityids-thornyShieldStacking)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setReceivedDamageFactor(int level, real value)`
+- `setReturnedDamageFactor(int level, real value)`
+- `setDefenseBonus(int level, real value)`
+- `presetReceivedDamageFactor(RealLevelClosure lc)`
+- `presetReturnedDamageFactor(RealLevelClosure lc)`
+- `presetDefenseBonus(RealLevelClosure lc)`
+
+### AbilityDefinitionRelentlessCleave
+
+```wurst
+public class AbilityDefinitionRelentlessCleave extends AbilityDefinition
+```
+
+'AUsw' / [AbilityIds.relentlessCleave](/stdlib/ref/_wurst/AbilityIds.html#abilityids-relentlessCleave)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHeroDurationAttackSpeedReduction(int level, real value)`
+- `setDurationAttackSpeedReduction(int level, real value)`
+- `setDurationDamageByTargetMaxHealth(int level, real value)`
+- `setArmorReduction(int level, real value)`
+- `setCooldownReductionOnHit(int level, real value)`
+- `setHeroDurationArmorReduction(int level, real value)`
+- `setAttackAngle(int level, real value)`
+- `setHealingPerTargetHit(int level, real value)`
+- `setDamageByTargetMaxHealth(int level, real value)`
+  Damage By Target Max Health (%) / 'swpa'
+- `setMaxTargetHit(int level, int value)`
+- `setDamageStrengthModifier(int level, int value)`
+  Damage Strength Modifier (%) / 'swp5'
+- `setAttackDistance(int level, real value)`
+- `setHeroDurationDamageByTargetMaxHealth(int level, real value)`
+- `setDurationArmorReduction(int level, real value)`
+- `setDamageDelay(int level, real value)`
+- `setAttackSpeedReduction(int level, int value)`
+  Attack Speed Reduction (%) / 'swp9'
+- `setDamage(int level, real value)`
+- `presetHeroDurationAttackSpeedReduction(RealLevelClosure lc)`
+- `presetDurationAttackSpeedReduction(RealLevelClosure lc)`
+- `presetDurationDamageByTargetMaxHealth(RealLevelClosure lc)`
+- `presetArmorReduction(RealLevelClosure lc)`
+- `presetCooldownReductionOnHit(RealLevelClosure lc)`
+- `presetHeroDurationArmorReduction(RealLevelClosure lc)`
+- `presetAttackAngle(RealLevelClosure lc)`
+- `presetHealingPerTargetHit(RealLevelClosure lc)`
+- `presetDamageByTargetMaxHealth(RealLevelClosure lc)`
+- `presetMaxTargetHit(IntLevelClosure lc)`
+- `presetDamageStrengthModifier(IntLevelClosure lc)`
+- `presetAttackDistance(RealLevelClosure lc)`
+- `presetHeroDurationDamageByTargetMaxHealth(RealLevelClosure lc)`
+- `presetDurationArmorReduction(RealLevelClosure lc)`
+- `presetDamageDelay(RealLevelClosure lc)`
+- `presetAttackSpeedReduction(IntLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionGrimConvictionTalent1
+
+```wurst
+public class AbilityDefinitionGrimConvictionTalent1 extends AbilityDefinition
+```
+
+'AUv1' / [AbilityIds.grimConvictionTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-grimConvictionTalent1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHealthCost(int level, int value)`
+  % Health Cost / 'uvg1'
+- `setBonusSpellVamp(int level, int value)`
+  % Bonus Spell Vamp / 'uvg5'
+- `setBonusstrength(int level, int value)`
+- `setBonusLifeSteal(int level, int value)`
+  % Bonus Life Steal / 'uvg4'
+- `setDoublebonusbellowhealth(int level, int value)`
+  Double bonus bellow health % / 'uvg6'
+- `setBonusResolve(int level, int value)`
+  % Bonus Resolve / 'uvg3'
+- `presetHealthCost(IntLevelClosure lc)`
+- `presetBonusSpellVamp(IntLevelClosure lc)`
+- `presetBonusstrength(IntLevelClosure lc)`
+- `presetBonusLifeSteal(IntLevelClosure lc)`
+- `presetDoublebonusbellowhealth(IntLevelClosure lc)`
+- `presetBonusResolve(IntLevelClosure lc)`
+
+### AbilityDefinitionGrimConvictionTalent2
+
+```wurst
+public class AbilityDefinitionGrimConvictionTalent2 extends AbilityDefinition
+```
+
+'AUv2' / [AbilityIds.grimConvictionTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-grimConvictionTalent2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHealthCost(int level, int value)`
+  % Health Cost / 'uvg1'
+- `setBonusSpellVamp(int level, int value)`
+  % Bonus Spell Vamp / 'uvg5'
+- `setBonusstrength(int level, int value)`
+- `setBonusLifeSteal(int level, int value)`
+  % Bonus Life Steal / 'uvg4'
+- `setDoublebonusbellowhealth(int level, int value)`
+  Double bonus bellow health % / 'uvg6'
+- `setBonusResolve(int level, int value)`
+  % Bonus Resolve / 'uvg3'
+- `presetHealthCost(IntLevelClosure lc)`
+- `presetBonusSpellVamp(IntLevelClosure lc)`
+- `presetBonusstrength(IntLevelClosure lc)`
+- `presetBonusLifeSteal(IntLevelClosure lc)`
+- `presetDoublebonusbellowhealth(IntLevelClosure lc)`
+- `presetBonusResolve(IntLevelClosure lc)`
+
+### AbilityDefinitionGrimConvictionTalent3
+
+```wurst
+public class AbilityDefinitionGrimConvictionTalent3 extends AbilityDefinition
+```
+
+'AUv3' / [AbilityIds.grimConvictionTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-grimConvictionTalent3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHealthCost(int level, int value)`
+  % Health Cost / 'uvg1'
+- `setBonusSpellVamp(int level, int value)`
+  % Bonus Spell Vamp / 'uvg5'
+- `setBonusstrength(int level, int value)`
+- `setBonusLifeSteal(int level, int value)`
+  % Bonus Life Steal / 'uvg4'
+- `setDoublebonusbellowhealth(int level, int value)`
+  Double bonus bellow health % / 'uvg6'
+- `setBonusResolve(int level, int value)`
+  % Bonus Resolve / 'uvg3'
+- `presetHealthCost(IntLevelClosure lc)`
+- `presetBonusSpellVamp(IntLevelClosure lc)`
+- `presetBonusstrength(IntLevelClosure lc)`
+- `presetBonusLifeSteal(IntLevelClosure lc)`
+- `presetDoublebonusbellowhealth(IntLevelClosure lc)`
+- `presetBonusResolve(IntLevelClosure lc)`
+
+### AbilityDefinitionUndeadVengeanceAkaGrimConviction
+
+```wurst
+public class AbilityDefinitionUndeadVengeanceAkaGrimConviction extends AbilityDefinition
+```
+
+'AUvg' / [AbilityIds.undeadVengeanceAkaGrimConviction](/stdlib/ref/_wurst/AbilityIds.html#abilityids-undeadVengeanceAkaGrimConviction)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHealthCost(int level, int value)`
+  % Health Cost / 'uvg1'
+- `setBonusSpellVamp(int level, int value)`
+  % Bonus Spell Vamp / 'uvg5'
+- `setBonusstrength(int level, int value)`
+- `setBonusLifeSteal(int level, int value)`
+  % Bonus Life Steal / 'uvg4'
+- `setDoublebonusbellowhealth(int level, int value)`
+  Double bonus bellow health % / 'uvg6'
+- `setBonusResolve(int level, int value)`
+  % Bonus Resolve / 'uvg3'
+- `presetHealthCost(IntLevelClosure lc)`
+- `presetBonusSpellVamp(IntLevelClosure lc)`
+- `presetBonusstrength(IntLevelClosure lc)`
+- `presetBonusLifeSteal(IntLevelClosure lc)`
+- `presetDoublebonusbellowhealth(IntLevelClosure lc)`
+- `presetBonusResolve(IntLevelClosure lc)`
+
+### AbilityDefinitionWitheringFireTalent1
+
+```wurst
+public class AbilityDefinitionWitheringFireTalent1 extends AbilityDefinition
+```
+
+'AUw1' / [AbilityIds.witheringFireTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-witheringFireTalent1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMaxCharges(int level, int value)`
+- `setChargeRegenTime(int level, real value)`
+- `setDamage(int level, real value)`
+- `setCooldownReductionOnAutoAttack(int level, real value)`
+- `setTargetArmorReduction(int level, int value)`
+- `presetMaxCharges(IntLevelClosure lc)`
+- `presetChargeRegenTime(RealLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+- `presetCooldownReductionOnAutoAttack(RealLevelClosure lc)`
+- `presetTargetArmorReduction(IntLevelClosure lc)`
+
+### AbilityDefinitionWitheringFireTalent2
+
+```wurst
+public class AbilityDefinitionWitheringFireTalent2 extends AbilityDefinition
+```
+
+'AUw2' / [AbilityIds.witheringFireTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-witheringFireTalent2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMaxCharges(int level, int value)`
+- `setChargeRegenTime(int level, real value)`
+- `setDamage(int level, real value)`
+- `setCooldownReductionOnAutoAttack(int level, real value)`
+- `setTargetArmorReduction(int level, int value)`
+- `presetMaxCharges(IntLevelClosure lc)`
+- `presetChargeRegenTime(RealLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+- `presetCooldownReductionOnAutoAttack(RealLevelClosure lc)`
+- `presetTargetArmorReduction(IntLevelClosure lc)`
+
+### AbilityDefinitionWitheringFireTalent3
+
+```wurst
+public class AbilityDefinitionWitheringFireTalent3 extends AbilityDefinition
+```
+
+'AUw3' / [AbilityIds.witheringFireTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-witheringFireTalent3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMaxCharges(int level, int value)`
+- `setChargeRegenTime(int level, real value)`
+- `setDamage(int level, real value)`
+- `setCooldownReductionOnAutoAttack(int level, real value)`
+- `setTargetArmorReduction(int level, int value)`
+- `presetMaxCharges(IntLevelClosure lc)`
+- `presetChargeRegenTime(RealLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+- `presetCooldownReductionOnAutoAttack(RealLevelClosure lc)`
+- `presetTargetArmorReduction(IntLevelClosure lc)`
+
+### AbilityDefinitionBansheeSCallWail
+
+```wurst
+public class AbilityDefinitionBansheeSCallWail extends AbilityDefinition
+```
+
+'AUwc' / [AbilityIds.bansheeSCallWail](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bansheeSCallWail)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setNumberofSwarmUnits(int level, int value)`
+- `setUnitReleaseIntervalseconds(int level, real value)`
+- `setMaxSwarmUnitsPerTarget(int level, int value)`
+- `setDamageReturnThreshold(int level, real value)`
+- `setDamageReturnFactor(int level, real value)`
+- `setSwarmUnitType(int level, string value)`
+- `setFlatManaGain(int level, real value)`
+- `setHealingRadius(int level, real value)`
+- `presetNumberofSwarmUnits(IntLevelClosure lc)`
+- `presetUnitReleaseIntervalseconds(RealLevelClosure lc)`
+- `presetMaxSwarmUnitsPerTarget(IntLevelClosure lc)`
+- `presetDamageReturnThreshold(RealLevelClosure lc)`
+- `presetDamageReturnFactor(RealLevelClosure lc)`
+- `presetSwarmUnitType(StringLevelClosure lc)`
+- `presetFlatManaGain(RealLevelClosure lc)`
+- `presetHealingRadius(RealLevelClosure lc)`
+
+### AbilityDefinitionWitheringFire
+
+```wurst
+public class AbilityDefinitionWitheringFire extends AbilityDefinition
+```
+
+'AUwf' / [AbilityIds.witheringFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-witheringFire)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMaxCharges(int level, int value)`
+- `setChargeRegenTime(int level, real value)`
+- `setDamage(int level, real value)`
+- `setCooldownReductionOnAutoAttack(int level, real value)`
+- `setTargetArmorReduction(int level, int value)`
+- `presetMaxCharges(IntLevelClosure lc)`
+- `presetChargeRegenTime(RealLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+- `presetCooldownReductionOnAutoAttack(RealLevelClosure lc)`
+- `presetTargetArmorReduction(IntLevelClosure lc)`
+
+### AbilityDefinitionItemVampiricAura4
+
+```wurst
+public class AbilityDefinitionItemVampiricAura4 extends AbilityDefinition
+```
+
+'AVAq' / [AbilityIds.itemVampiricAura4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemVampiricAura4)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackDamageStolen(int level, real value)`
+  Attack Damage Stolen (%) / 'Uav1'
+- `presetAttackDamageStolen(RealLevelClosure lc)`
+
+### AbilityDefinitionInquisitorFlamingHandsVFX
+
+```wurst
+public class AbilityDefinitionInquisitorFlamingHandsVFX extends AbilityDefinition
+```
+
+'AViq' / [AbilityIds.inquisitorFlamingHandsVFX](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inquisitorFlamingHandsVFX)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDefenseBonus(int level, int value)`
+- `presetDefenseBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionShopBagVFX
+
+```wurst
+public class AbilityDefinitionShopBagVFX extends AbilityDefinition
+```
+
+'AVsb' / [AbilityIds.shopBagVFX](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shopBagVFX)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDefenseBonus(int level, int value)`
+- `presetDefenseBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionItemAllStatsPlus10
+
+```wurst
+public class AbilityDefinitionItemAllStatsPlus10 extends AbilityDefinition
+```
+
+'AX10' / [AbilityIds.itemAllStatsPlus10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAllStatsPlus10)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAgilityBonus(int level, int value)`
+- `setStrengthBonus(int level, int value)`
+- `setHideButton(int level, bool value)`
+- `setIntelligenceBonus(int level, int value)`
+- `presetAgilityBonus(IntLevelClosure lc)`
+- `presetStrengthBonus(IntLevelClosure lc)`
+- `presetHideButton(BooleanLevelClosure lc)`
+- `presetIntelligenceBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionItemArmorSCHeal
+
+```wurst
+public class AbilityDefinitionItemArmorSCHeal extends AbilityDefinition
+```
+
+'Aac1' / [AbilityIds.itemArmorSCHeal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorSCHeal)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHitPointsGained(int level, real value)`
+- `presetHitPointsGained(RealLevelClosure lc)`
+
+### AbilityDefinitionItemArmorSCAttack
+
+```wurst
+public class AbilityDefinitionItemArmorSCAttack extends AbilityDefinition
+```
+
+'Aac2' / [AbilityIds.itemArmorSCAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorSCAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAllowedDamageType(int level, string value)`
+- `setAbility(int level, string value)`
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `setTargetType(int level, string value)`
+- `presetAllowedDamageType(StringLevelClosure lc)`
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+
+### AbilityDefinitionItemChillAttack3
+
+```wurst
+public class AbilityDefinitionItemChillAttack3 extends AbilityDefinition
+```
+
+'Aac3' / [AbilityIds.itemChillAttack3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemChillAttack3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemChillAttack5
+
+```wurst
+public class AbilityDefinitionItemChillAttack5 extends AbilityDefinition
+```
+
+'Aac5' / [AbilityIds.itemChillAttack5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemChillAttack5)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionRaiseTheStandardAura
+
+```wurst
+public class AbilityDefinitionRaiseTheStandardAura extends AbilityDefinition
+```
+
+'Aaca' / [AbilityIds.raiseTheStandardAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-raiseTheStandardAura)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setGivenAbilities(int level, string value)`
+- `presetGivenAbilities(StringLevelClosure lc)`
+
+### AbilityDefinitionCurseAnyaBanshee
+
+```wurst
+public class AbilityDefinitionCurseAnyaBanshee extends AbilityDefinition
+```
+
+'Aacr' / [AbilityIds.curseAnyaBanshee](/stdlib/ref/_wurst/AbilityIds.html#abilityids-curseAnyaBanshee)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoMiss(int level, real value)`
+- `presetChancetoMiss(RealLevelClosure lc)`
+
+### AbilityDefinitionItemAuraOfDarkness
+
+```wurst
+public class AbilityDefinitionItemAuraOfDarkness extends AbilityDefinition
+```
+
+'Aadx' / [AbilityIds.itemAuraOfDarkness](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAuraOfDarkness)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionItemAgitatingTotem
+
+```wurst
+public class AbilityDefinitionItemAgitatingTotem extends AbilityDefinition
+```
+
+'Aagt' / [AbilityIds.itemAgitatingTotem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAgitatingTotem)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setScalingFactor(int level, real value)`
+- `setAttackSpeedIncrease(int level, real value)`
+  Attack Speed Increase (%) / 'Blo1'
+- `setMovementSpeedIncrease(int level, real value)`
+  Movement Speed Increase (%) / 'Blo2'
+- `presetScalingFactor(RealLevelClosure lc)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+- `presetMovementSpeedIncrease(RealLevelClosure lc)`
+
+### AbilityDefinitionItemArmorCorruptAttack2
+
+```wurst
+public class AbilityDefinitionItemArmorCorruptAttack2 extends AbilityDefinition
+```
+
+'Aah2' / [AbilityIds.itemArmorCorruptAttack2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorCorruptAttack2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemArmorCorruptAttack3
+
+```wurst
+public class AbilityDefinitionItemArmorCorruptAttack3 extends AbilityDefinition
+```
+
+'Aah3' / [AbilityIds.itemArmorCorruptAttack3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorCorruptAttack3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemArmorCorruptAttack5
+
+```wurst
+public class AbilityDefinitionItemArmorCorruptAttack5 extends AbilityDefinition
+```
+
+'Aah5' / [AbilityIds.itemArmorCorruptAttack5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorCorruptAttack5)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionOnBasicAttackSample
+
+```wurst
+public class AbilityDefinitionOnBasicAttackSample extends AbilityDefinition
+```
+
+'Aals' / [AbilityIds.onBasicAttackSample](/stdlib/ref/_wurst/AbilityIds.html#abilityids-onBasicAttackSample)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionAttributeModifierSkillRebirth
+
+```wurst
+public class AbilityDefinitionAttributeModifierSkillRebirth extends AbilityDefinition
+```
+
+'Aaml' / [AbilityIds.attributeModifierSkillRebirth](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attributeModifierSkillRebirth)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAgilityBonus(int level, int value)`
+- `setStrengthBonus(int level, int value)`
+- `setHideButton(int level, bool value)`
+- `setIntelligenceBonus(int level, int value)`
+- `presetAgilityBonus(IntLevelClosure lc)`
+- `presetStrengthBonus(IntLevelClosure lc)`
+- `presetHideButton(BooleanLevelClosure lc)`
+- `presetIntelligenceBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionItemArmorOfReanimationSummon
+
+```wurst
+public class AbilityDefinitionItemArmorOfReanimationSummon extends AbilityDefinition
+```
+
+'Aar1' / [AbilityIds.itemArmorOfReanimationSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorOfReanimationSummon)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSummonedUnitCount(int level, int value)`
+- `setSummonedUnitType(int level, string value)`
+- `presetSummonedUnitCount(IntLevelClosure lc)`
+- `presetSummonedUnitType(StringLevelClosure lc)`
+
+### AbilityDefinitionItemArmorOfReanimationAttack
+
+```wurst
+public class AbilityDefinitionItemArmorOfReanimationAttack extends AbilityDefinition
+```
+
+'Aar2' / [AbilityIds.itemArmorOfReanimationAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorOfReanimationAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAllowedDamageType(int level, string value)`
+- `setAbility(int level, string value)`
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `setTargetType(int level, string value)`
+- `presetAllowedDamageType(StringLevelClosure lc)`
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+
+### AbilityDefinitionItemArmorCorruptSpell2
+
+```wurst
+public class AbilityDefinitionItemArmorCorruptSpell2 extends AbilityDefinition
+```
+
+'Aas2' / [AbilityIds.itemArmorCorruptSpell2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorCorruptSpell2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSecondaryDamage(int level, real value)`
+- `setArmorPenalty(int level, int value)`
+- `setPrimaryDamage(int level, real value)`
+- `setMovementSpeedReduction(int level, real value)`
+  Movement Speed Reduction (%) / 'Nab1'
+- `setAttackSpeedReduction(int level, real value)`
+  Attack Speed Reduction (%) / 'Nab2'
+- `setDamageInterval(int level, real value)`
+- `presetSecondaryDamage(RealLevelClosure lc)`
+- `presetArmorPenalty(IntLevelClosure lc)`
+- `presetPrimaryDamage(RealLevelClosure lc)`
+- `presetMovementSpeedReduction(RealLevelClosure lc)`
+- `presetAttackSpeedReduction(RealLevelClosure lc)`
+- `presetDamageInterval(RealLevelClosure lc)`
+
+### AbilityDefinitionItemArmorCorruptSpell3
+
+```wurst
+public class AbilityDefinitionItemArmorCorruptSpell3 extends AbilityDefinition
+```
+
+'Aas3' / [AbilityIds.itemArmorCorruptSpell3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorCorruptSpell3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSecondaryDamage(int level, real value)`
+- `setArmorPenalty(int level, int value)`
+- `setPrimaryDamage(int level, real value)`
+- `setMovementSpeedReduction(int level, real value)`
+  Movement Speed Reduction (%) / 'Nab1'
+- `setAttackSpeedReduction(int level, real value)`
+  Attack Speed Reduction (%) / 'Nab2'
+- `setDamageInterval(int level, real value)`
+- `presetSecondaryDamage(RealLevelClosure lc)`
+- `presetArmorPenalty(IntLevelClosure lc)`
+- `presetPrimaryDamage(RealLevelClosure lc)`
+- `presetMovementSpeedReduction(RealLevelClosure lc)`
+- `presetAttackSpeedReduction(RealLevelClosure lc)`
+- `presetDamageInterval(RealLevelClosure lc)`
+
+### AbilityDefinitionItemArmorCorruptSpell5
+
+```wurst
+public class AbilityDefinitionItemArmorCorruptSpell5 extends AbilityDefinition
+```
+
+'Aas5' / [AbilityIds.itemArmorCorruptSpell5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorCorruptSpell5)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSecondaryDamage(int level, real value)`
+- `setArmorPenalty(int level, int value)`
+- `setPrimaryDamage(int level, real value)`
+- `setMovementSpeedReduction(int level, real value)`
+  Movement Speed Reduction (%) / 'Nab1'
+- `setAttackSpeedReduction(int level, real value)`
+  Attack Speed Reduction (%) / 'Nab2'
+- `setDamageInterval(int level, real value)`
+- `presetSecondaryDamage(RealLevelClosure lc)`
+- `presetArmorPenalty(IntLevelClosure lc)`
+- `presetPrimaryDamage(RealLevelClosure lc)`
+- `presetMovementSpeedReduction(RealLevelClosure lc)`
+- `presetAttackSpeedReduction(RealLevelClosure lc)`
+- `presetDamageInterval(RealLevelClosure lc)`
+
+### AbilityDefinitionArcaneSpellblade
+
+```wurst
+public class AbilityDefinitionArcaneSpellblade extends AbilityDefinition
+```
+
+'Aasb' / [AbilityIds.arcaneSpellblade](/stdlib/ref/_wurst/AbilityIds.html#abilityids-arcaneSpellblade)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setInitialDamage(int level, real value)`
+- `setDamagePerSecond(int level, real value)`
+- `presetInitialDamage(RealLevelClosure lc)`
+- `presetDamagePerSecond(RealLevelClosure lc)`
+
+### AbilityDefinitionRaiseTheStandardSpellCritical
+
+```wurst
+public class AbilityDefinitionRaiseTheStandardSpellCritical extends AbilityDefinition
+```
+
+'Aasc' / [AbilityIds.raiseTheStandardSpellCritical](/stdlib/ref/_wurst/AbilityIds.html#abilityids-raiseTheStandardSpellCritical)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemAvianaSTalonsMana
+
+```wurst
+public class AbilityDefinitionItemAvianaSTalonsMana extends AbilityDefinition
+```
+
+'Aat1' / [AbilityIds.itemAvianaSTalonsMana](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAvianaSTalonsMana)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionItemAvianaSTalonsAttack1
+
+```wurst
+public class AbilityDefinitionItemAvianaSTalonsAttack1 extends AbilityDefinition
+```
+
+'Aat2' / [AbilityIds.itemAvianaSTalonsAttack1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAvianaSTalonsAttack1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemAvianaSTalonsAttack2
+
+```wurst
+public class AbilityDefinitionItemAvianaSTalonsAttack2 extends AbilityDefinition
+```
+
+'Aat3' / [AbilityIds.itemAvianaSTalonsAttack2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAvianaSTalonsAttack2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionRaiseTheStandardCritical
+
+```wurst
+public class AbilityDefinitionRaiseTheStandardCritical extends AbilityDefinition
+```
+
+'Aaxr' / [AbilityIds.raiseTheStandardCritical](/stdlib/ref/_wurst/AbilityIds.html#abilityids-raiseTheStandardCritical)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setChancetoEvade(int level, real value)`
+- `setExcludeItemDamage(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionButchersAura1
+
+```wurst
+public class AbilityDefinitionButchersAura1 extends AbilityDefinition
+```
+
+'Aba1' / [AbilityIds.butchersAura1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-butchersAura1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackDamageStolen(int level, real value)`
+  Attack Damage Stolen (%) / 'Uav1'
+- `presetAttackDamageStolen(RealLevelClosure lc)`
+
+### AbilityDefinitionButchersAura2
+
+```wurst
+public class AbilityDefinitionButchersAura2 extends AbilityDefinition
+```
+
+'Aba2' / [AbilityIds.butchersAura2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-butchersAura2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackDamageStolen(int level, real value)`
+  Attack Damage Stolen (%) / 'Uav1'
+- `presetAttackDamageStolen(RealLevelClosure lc)`
+
+### AbilityDefinitionItemBoneCommanderSSkullAura
+
+```wurst
+public class AbilityDefinitionItemBoneCommanderSSkullAura extends AbilityDefinition
+```
+
+'Abcs' / [AbilityIds.itemBoneCommanderSSkullAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBoneCommanderSSkullAura)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMovementSpeedIncrease(int level, real value)`
+  Movement Speed Increase (%) / 'Oae1'
+- `setAttackSpeedIncrease(int level, real value)`
+  Attack Speed Increase (%) / 'Oae2'
+- `presetMovementSpeedIncrease(RealLevelClosure lc)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+
+### AbilityDefinitionBlueDragonFigurine
+
+```wurst
+public class AbilityDefinitionBlueDragonFigurine extends AbilityDefinition
+```
+
+'Abdf' / [AbilityIds.blueDragonFigurine](/stdlib/ref/_wurst/AbilityIds.html#abilityids-blueDragonFigurine)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDistance(int level, real value)`
+- `setDamagePerSecond(int level, real value)`
+- `setFinalArea(int level, real value)`
+- `setMaxDamage(int level, real value)`
+- `setDamage(int level, real value)`
+- `presetDistance(RealLevelClosure lc)`
+- `presetDamagePerSecond(RealLevelClosure lc)`
+- `presetFinalArea(RealLevelClosure lc)`
+- `presetMaxDamage(RealLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionBladeOfFrozenHungerAttack
+
+```wurst
+public class AbilityDefinitionBladeOfFrozenHungerAttack extends AbilityDefinition
+```
+
+'Abfa' / [AbilityIds.bladeOfFrozenHungerAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bladeOfFrozenHungerAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionBladeOfFrozenHungerHeal
+
+```wurst
+public class AbilityDefinitionBladeOfFrozenHungerHeal extends AbilityDefinition
+```
+
+'Abfh' / [AbilityIds.bladeOfFrozenHungerHeal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bladeOfFrozenHungerHeal)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHitPointsGained(int level, real value)`
+- `presetHitPointsGained(RealLevelClosure lc)`
+
+### AbilityDefinitionItemBindingsOfHelyaCW
+
+```wurst
+public class AbilityDefinitionItemBindingsOfHelyaCW extends AbilityDefinition
+```
+
+'Abh1' / [AbilityIds.itemBindingsOfHelyaCW](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBindingsOfHelyaCW)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDistance(int level, real value)`
+- `setFinalArea(int level, real value)`
+- `setMaxDamage(int level, real value)`
+- `setDamage(int level, real value)`
+- `presetDistance(RealLevelClosure lc)`
+- `presetFinalArea(RealLevelClosure lc)`
+- `presetMaxDamage(RealLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionItemBindingsOfHelyaAttack
+
+```wurst
+public class AbilityDefinitionItemBindingsOfHelyaAttack extends AbilityDefinition
+```
+
+'Abh2' / [AbilityIds.itemBindingsOfHelyaAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBindingsOfHelyaAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemBootsOfTheIcewalkerBoF
+
+```wurst
+public class AbilityDefinitionItemBootsOfTheIcewalkerBoF extends AbilityDefinition
+```
+
+'Abi1' / [AbilityIds.itemBootsOfTheIcewalkerBoF](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBootsOfTheIcewalkerBoF)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDistance(int level, real value)`
+- `setDamagePerSecond(int level, real value)`
+- `setFinalArea(int level, real value)`
+- `setMaxDamage(int level, real value)`
+- `setDamage(int level, real value)`
+- `presetDistance(RealLevelClosure lc)`
+- `presetDamagePerSecond(RealLevelClosure lc)`
+- `presetFinalArea(RealLevelClosure lc)`
+- `presetMaxDamage(RealLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionItemBootsOfTheIcewalkerAttack
+
+```wurst
+public class AbilityDefinitionItemBootsOfTheIcewalkerAttack extends AbilityDefinition
+```
+
+'Abi2' / [AbilityIds.itemBootsOfTheIcewalkerAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBootsOfTheIcewalkerAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionBanshee
+
+```wurst
+public class AbilityDefinitionBanshee extends AbilityDefinition
+```
+
+'Abns' / [AbilityIds.banshee](/stdlib/ref/_wurst/AbilityIds.html#abilityids-banshee)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionItemBottledStormTrinket
+
+```wurst
+public class AbilityDefinitionItemBottledStormTrinket extends AbilityDefinition
+```
+
+'Abos' / [AbilityIds.itemBottledStormTrinket](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBottledStormTrinket)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageDealt(int level, real value)`
+- `setDamageInterval(int level, real value)`
+- `setBuildingReduction(int level, real value)`
+- `presetDamageDealt(RealLevelClosure lc)`
+- `presetDamageInterval(RealLevelClosure lc)`
+- `presetBuildingReduction(RealLevelClosure lc)`
+
+### AbilityDefinitionItemBrimstoneSpell1
+
+```wurst
+public class AbilityDefinitionItemBrimstoneSpell1 extends AbilityDefinition
+```
+
+'Abr1' / [AbilityIds.itemBrimstoneSpell1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBrimstoneSpell1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSecondaryDamage(int level, real value)`
+- `setArmorPenalty(int level, int value)`
+- `setPrimaryDamage(int level, real value)`
+- `setMovementSpeedReduction(int level, real value)`
+  Movement Speed Reduction (%) / 'Nab1'
+- `setAttackSpeedReduction(int level, real value)`
+  Attack Speed Reduction (%) / 'Nab2'
+- `setDamageInterval(int level, real value)`
+- `presetSecondaryDamage(RealLevelClosure lc)`
+- `presetArmorPenalty(IntLevelClosure lc)`
+- `presetPrimaryDamage(RealLevelClosure lc)`
+- `presetMovementSpeedReduction(RealLevelClosure lc)`
+- `presetAttackSpeedReduction(RealLevelClosure lc)`
+- `presetDamageInterval(RealLevelClosure lc)`
+
+### AbilityDefinitionItemBrimstoneSpell2
+
+```wurst
+public class AbilityDefinitionItemBrimstoneSpell2 extends AbilityDefinition
+```
+
+'Abr2' / [AbilityIds.itemBrimstoneSpell2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBrimstoneSpell2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSecondaryDamage(int level, real value)`
+- `setArmorPenalty(int level, int value)`
+- `setPrimaryDamage(int level, real value)`
+- `setMovementSpeedReduction(int level, real value)`
+  Movement Speed Reduction (%) / 'Nab1'
+- `setAttackSpeedReduction(int level, real value)`
+  Attack Speed Reduction (%) / 'Nab2'
+- `setDamageInterval(int level, real value)`
+- `presetSecondaryDamage(RealLevelClosure lc)`
+- `presetArmorPenalty(IntLevelClosure lc)`
+- `presetPrimaryDamage(RealLevelClosure lc)`
+- `presetMovementSpeedReduction(RealLevelClosure lc)`
+- `presetAttackSpeedReduction(RealLevelClosure lc)`
+- `presetDamageInterval(RealLevelClosure lc)`
+
+### AbilityDefinitionItemBottledStormCL
+
+```wurst
+public class AbilityDefinitionItemBottledStormCL extends AbilityDefinition
+```
+
+'Abs1' / [AbilityIds.itemBottledStormCL](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBottledStormCL)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setNumberofTargetsHit(int level, int value)`
+- `setDamageperTarget(int level, real value)`
+- `setDamageReductionperTarget(int level, real value)`
+- `presetNumberofTargetsHit(IntLevelClosure lc)`
+- `presetDamageperTarget(RealLevelClosure lc)`
+- `presetDamageReductionperTarget(RealLevelClosure lc)`
+
+### AbilityDefinitionItemBottledStormAttack1
+
+```wurst
+public class AbilityDefinitionItemBottledStormAttack1 extends AbilityDefinition
+```
+
+'Abs2' / [AbilityIds.itemBottledStormAttack1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBottledStormAttack1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionAnyaBansheeCurseOrb
+
+```wurst
+public class AbilityDefinitionAnyaBansheeCurseOrb extends AbilityDefinition
+```
+
+'Absc' / [AbilityIds.anyaBansheeCurseOrb](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaBansheeCurseOrb)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChanceToHitUnits(int level, real value)`
+  Chance To Hit Units (%) / 'Iob2'
+- `setChanceToHitSummons(int level, real value)`
+  Chance To Hit Summons (%) / 'Iob4'
+- `setEffectAbility(int level, string value)`
+- `setChanceToHitHeros(int level, real value)`
+  Chance To Hit Heros (%) / 'Iob3'
+- `setDamageBonus(int level, real value)`
+- `setEnabledAttackIndex(int level, int value)`
+- `presetChanceToHitUnits(RealLevelClosure lc)`
+- `presetChanceToHitSummons(RealLevelClosure lc)`
+- `presetEffectAbility(StringLevelClosure lc)`
+- `presetChanceToHitHeros(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetEnabledAttackIndex(IntLevelClosure lc)`
+
+### AbilityDefinitionItemBorelgoreAttack
+
+```wurst
+public class AbilityDefinitionItemBorelgoreAttack extends AbilityDefinition
+```
+
+'Abx1' / [AbilityIds.itemBorelgoreAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBorelgoreAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemBrimstoneAttack1
+
+```wurst
+public class AbilityDefinitionItemBrimstoneAttack1 extends AbilityDefinition
+```
+
+'Abz1' / [AbilityIds.itemBrimstoneAttack1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBrimstoneAttack1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemBrimstoneAttack2
+
+```wurst
+public class AbilityDefinitionItemBrimstoneAttack2 extends AbilityDefinition
+```
+
+'Abz2' / [AbilityIds.itemBrimstoneAttack2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBrimstoneAttack2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemConsecratedMixture
+
+```wurst
+public class AbilityDefinitionItemConsecratedMixture extends AbilityDefinition
+```
+
+'Accm' / [AbilityIds.itemConsecratedMixture](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemConsecratedMixture)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAgilityBonus(int level, int value)`
+- `setStrengthBonus(int level, int value)`
+- `setHideButton(int level, bool value)`
+- `setIntelligenceBonus(int level, int value)`
+- `presetAgilityBonus(IntLevelClosure lc)`
+- `presetStrengthBonus(IntLevelClosure lc)`
+- `presetHideButton(BooleanLevelClosure lc)`
+- `presetIntelligenceBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionItemHelmCenarionHeal
+
+```wurst
+public class AbilityDefinitionItemHelmCenarionHeal extends AbilityDefinition
+```
+
+'Ace1' / [AbilityIds.itemHelmCenarionHeal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHelmCenarionHeal)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setNumberofTargetsHit(int level, int value)`
+- `setDamageperTarget(int level, real value)`
+- `setDamageReductionperTarget(int level, real value)`
+- `presetNumberofTargetsHit(IntLevelClosure lc)`
+- `presetDamageperTarget(RealLevelClosure lc)`
+- `presetDamageReductionperTarget(RealLevelClosure lc)`
+
+### AbilityDefinitionItemHelmCenarionAttack
+
+```wurst
+public class AbilityDefinitionItemHelmCenarionAttack extends AbilityDefinition
+```
+
+'Ace2' / [AbilityIds.itemHelmCenarionAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHelmCenarionAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemHelmCenarionSpellcast
+
+```wurst
+public class AbilityDefinitionItemHelmCenarionSpellcast extends AbilityDefinition
+```
+
+'Ace3' / [AbilityIds.itemHelmCenarionSpellcast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHelmCenarionSpellcast)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `setTargetType(int level, string value)`
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+
+### AbilityDefinitionItemElixirOfCunning
+
+```wurst
+public class AbilityDefinitionItemElixirOfCunning extends AbilityDefinition
+```
+
+'Acec' / [AbilityIds.itemElixirOfCunning](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemElixirOfCunning)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAgilityBonus(int level, int value)`
+- `setStrengthBonus(int level, int value)`
+- `setHideButton(int level, bool value)`
+- `setIntelligenceBonus(int level, int value)`
+- `presetAgilityBonus(IntLevelClosure lc)`
+- `presetStrengthBonus(IntLevelClosure lc)`
+- `presetHideButton(BooleanLevelClosure lc)`
+- `presetIntelligenceBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionItemElixirOfTheMonsterHunter
+
+```wurst
+public class AbilityDefinitionItemElixirOfTheMonsterHunter extends AbilityDefinition
+```
+
+'Acem' / [AbilityIds.itemElixirOfTheMonsterHunter](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemElixirOfTheMonsterHunter)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAgilityBonus(int level, int value)`
+- `setStrengthBonus(int level, int value)`
+- `setHideButton(int level, bool value)`
+- `setIntelligenceBonus(int level, int value)`
+- `presetAgilityBonus(IntLevelClosure lc)`
+- `presetStrengthBonus(IntLevelClosure lc)`
+- `presetHideButton(BooleanLevelClosure lc)`
+- `presetIntelligenceBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionItemElixirOfGreaterIntelligence
+
+```wurst
+public class AbilityDefinitionItemElixirOfGreaterIntelligence extends AbilityDefinition
+```
+
+'Acgi' / [AbilityIds.itemElixirOfGreaterIntelligence](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemElixirOfGreaterIntelligence)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAgilityBonus(int level, int value)`
+- `setStrengthBonus(int level, int value)`
+- `setHideButton(int level, bool value)`
+- `setIntelligenceBonus(int level, int value)`
+- `presetAgilityBonus(IntLevelClosure lc)`
+- `presetStrengthBonus(IntLevelClosure lc)`
+- `presetHideButton(BooleanLevelClosure lc)`
+- `presetIntelligenceBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionCursedGoldenRingCrit
+
+```wurst
+public class AbilityDefinitionCursedGoldenRingCrit extends AbilityDefinition
+```
+
+'Acgr' / [AbilityIds.cursedGoldenRingCrit](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cursedGoldenRingCrit)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setChancetoEvade(int level, real value)`
+- `setExcludeItemDamage(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemStaffCHTC
+
+```wurst
+public class AbilityDefinitionItemStaffCHTC extends AbilityDefinition
+```
+
+'Ach1' / [AbilityIds.itemStaffCHTC](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemStaffCHTC)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMovementSpeedReduction(int level, real value)`
+- `setExtraDamageToTarget(int level, real value)`
+- `setAttackSpeedReduction(int level, real value)`
+- `setDamage(int level, real value)`
+- `presetMovementSpeedReduction(RealLevelClosure lc)`
+- `presetExtraDamageToTarget(RealLevelClosure lc)`
+- `presetAttackSpeedReduction(RealLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionItemStaffCHSpellcast
+
+```wurst
+public class AbilityDefinitionItemStaffCHSpellcast extends AbilityDefinition
+```
+
+'Ach2' / [AbilityIds.itemStaffCHSpellcast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemStaffCHSpellcast)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `setTargetType(int level, string value)`
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+
+### AbilityDefinitionItemBladeCHDamage
+
+```wurst
+public class AbilityDefinitionItemBladeCHDamage extends AbilityDefinition
+```
+
+'Ach3' / [AbilityIds.itemBladeCHDamage](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBladeCHDamage)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setGraphicDuration(int level, real value)`
+- `setGraphicDelay(int level, real value)`
+- `setDamage(int level, real value)`
+- `presetGraphicDuration(RealLevelClosure lc)`
+- `presetGraphicDelay(RealLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionItemBladeCHHeal
+
+```wurst
+public class AbilityDefinitionItemBladeCHHeal extends AbilityDefinition
+```
+
+'Ach4' / [AbilityIds.itemBladeCHHeal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBladeCHHeal)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHitPointsGained(int level, real value)`
+- `presetHitPointsGained(RealLevelClosure lc)`
+
+### AbilityDefinitionItemBladeCHAttack1
+
+```wurst
+public class AbilityDefinitionItemBladeCHAttack1 extends AbilityDefinition
+```
+
+'Ach5' / [AbilityIds.itemBladeCHAttack1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBladeCHAttack1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemBladeCHAttack2
+
+```wurst
+public class AbilityDefinitionItemBladeCHAttack2 extends AbilityDefinition
+```
+
+'Ach6' / [AbilityIds.itemBladeCHAttack2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBladeCHAttack2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemElixirOfLesserIntelligence
+
+```wurst
+public class AbilityDefinitionItemElixirOfLesserIntelligence extends AbilityDefinition
+```
+
+'Acli' / [AbilityIds.itemElixirOfLesserIntelligence](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemElixirOfLesserIntelligence)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAgilityBonus(int level, int value)`
+- `setStrengthBonus(int level, int value)`
+- `setHideButton(int level, bool value)`
+- `setIntelligenceBonus(int level, int value)`
+- `presetAgilityBonus(IntLevelClosure lc)`
+- `presetStrengthBonus(IntLevelClosure lc)`
+- `presetHideButton(BooleanLevelClosure lc)`
+- `presetIntelligenceBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionItemCleave15
+
+```wurst
+public class AbilityDefinitionItemCleave15 extends AbilityDefinition
+```
+
+'Aclq' / [AbilityIds.itemCleave15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCleave15)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDistributedDamageFactor(int level, real value)`
+- `presetDistributedDamageFactor(RealLevelClosure lc)`
+
+### AbilityDefinitionItemColdbringersReachAttack
+
+```wurst
+public class AbilityDefinitionItemColdbringersReachAttack extends AbilityDefinition
+```
+
+'Acrx' / [AbilityIds.itemColdbringersReachAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemColdbringersReachAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemColdbringersReachFrostNova
+
+```wurst
+public class AbilityDefinitionItemColdbringersReachFrostNova extends AbilityDefinition
+```
+
+'Acrz' / [AbilityIds.itemColdbringersReachFrostNova](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemColdbringersReachFrostNova)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAreaofEffectDamage(int level, real value)`
+- `setSpecificTargetDamage(int level, real value)`
+- `setMaximumDamage(int level, real value)`
+- `presetAreaofEffectDamage(RealLevelClosure lc)`
+- `presetSpecificTargetDamage(RealLevelClosure lc)`
+- `presetMaximumDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionItemDeathbringerSBootsParasite
+
+```wurst
+public class AbilityDefinitionItemDeathbringerSBootsParasite extends AbilityDefinition
+```
+
+'Adb1' / [AbilityIds.itemDeathbringerSBootsParasite](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDeathbringerSBootsParasite)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageperSecond(int level, real value)`
+- `setSummonedUnitDuration(int level, real value)`
+- `setMovementSpeedFactor(int level, real value)`
+- `setSummonedUnitCount(int level, int value)`
+- `setUnitType(int level, string value)`
+- `setAttackSpeedFactor(int level, real value)`
+- `presetDamageperSecond(RealLevelClosure lc)`
+- `presetSummonedUnitDuration(RealLevelClosure lc)`
+- `presetMovementSpeedFactor(RealLevelClosure lc)`
+- `presetSummonedUnitCount(IntLevelClosure lc)`
+- `presetUnitType(StringLevelClosure lc)`
+- `presetAttackSpeedFactor(RealLevelClosure lc)`
+- `setStackingType(int level, int value)`
+- `presetStackingType(IntLevelClosure lc)`
+
+### AbilityDefinitionItemDeathbringerSBootsAttack
+
+```wurst
+public class AbilityDefinitionItemDeathbringerSBootsAttack extends AbilityDefinition
+```
+
+'Adb2' / [AbilityIds.itemDeathbringerSBootsAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDeathbringerSBootsAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAllowedDamageType(int level, string value)`
+- `setAbility(int level, string value)`
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `setTargetType(int level, string value)`
+- `presetAllowedDamageType(StringLevelClosure lc)`
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+
+### AbilityDefinitionItemDeathbloomLeaves
+
+```wurst
+public class AbilityDefinitionItemDeathbloomLeaves extends AbilityDefinition
+```
+
+'Adbl' / [AbilityIds.itemDeathbloomLeaves](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDeathbloomLeaves)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setUnitTypeOne(int level, string value)`
+- `setUnitsSummonedTypeTwo(int level, int value)`
+- `setUnitsSummonedTypeOne(int level, int value)`
+- `setUnitTypeTwo(int level, string value)`
+- `setUnitTypeForLimitCheck(int level, string value)`
+- `presetUnitTypeOne(StringLevelClosure lc)`
+- `presetUnitsSummonedTypeTwo(IntLevelClosure lc)`
+- `presetUnitsSummonedTypeOne(IntLevelClosure lc)`
+- `presetUnitTypeTwo(StringLevelClosure lc)`
+- `presetUnitTypeForLimitCheck(StringLevelClosure lc)`
+
+### AbilityDefinitionItemDeepseaBagCW
+
+```wurst
+public class AbilityDefinitionItemDeepseaBagCW extends AbilityDefinition
+```
+
+'Adbw' / [AbilityIds.itemDeepseaBagCW](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDeepseaBagCW)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDistance(int level, real value)`
+- `setFinalArea(int level, real value)`
+- `setMaxDamage(int level, real value)`
+- `setDamage(int level, real value)`
+- `presetDistance(RealLevelClosure lc)`
+- `presetFinalArea(RealLevelClosure lc)`
+- `presetMaxDamage(RealLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionEndlessFlaskRejuvenation
+
+```wurst
+public class AbilityDefinitionEndlessFlaskRejuvenation extends AbilityDefinition
+```
+
+'Aefr' / [AbilityIds.endlessFlaskRejuvenation](/stdlib/ref/_wurst/AbilityIds.html#abilityids-endlessFlaskRejuvenation)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setNoTargetRequired(int level, bool value)`
+- `setManaPointsGained(int level, real value)`
+- `setHitPointsGained(int level, real value)`
+- `presetNoTargetRequired(BooleanLevelClosure lc)`
+- `presetManaPointsGained(RealLevelClosure lc)`
+- `presetHitPointsGained(RealLevelClosure lc)`
+- `setAllowWhenFull(int level, int value)`
+- `presetAllowWhenFull(IntLevelClosure lc)`
+
+### AbilityDefinitionItemEssenciumMainSummon
+
+```wurst
+public class AbilityDefinitionItemEssenciumMainSummon extends AbilityDefinition
+```
+
+'Aes1' / [AbilityIds.itemEssenciumMainSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEssenciumMainSummon)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSpawnedUnits(int level, string value)`
+- `setMaximumNumberofUnits(int level, int value)`
+- `setMinimumNumberofUnits(int level, int value)`
+- `presetSpawnedUnits(StringLevelClosure lc)`
+- `presetMaximumNumberofUnits(IntLevelClosure lc)`
+- `presetMinimumNumberofUnits(IntLevelClosure lc)`
+
+### AbilityDefinitionItemEssenciumBlizzard
+
+```wurst
+public class AbilityDefinitionItemEssenciumBlizzard extends AbilityDefinition
+```
+
+'Aes2' / [AbilityIds.itemEssenciumBlizzard](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEssenciumBlizzard)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMaximumDamageperWave(int level, real value)`
+- `setDamagePerSecond(int level, real value)`
+- `setNumberofWaves(int level, int value)`
+- `setDamage(int level, real value)`
+- `setNumberofShards(int level, int value)`
+- `setBuildingReduction(int level, real value)`
+- `presetMaximumDamageperWave(RealLevelClosure lc)`
+- `presetDamagePerSecond(RealLevelClosure lc)`
+- `presetNumberofWaves(IntLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+- `presetNumberofShards(IntLevelClosure lc)`
+- `presetBuildingReduction(RealLevelClosure lc)`
+
+### AbilityDefinitionItemEssenciumRainOfFire
+
+```wurst
+public class AbilityDefinitionItemEssenciumRainOfFire extends AbilityDefinition
+```
+
+'Aes3' / [AbilityIds.itemEssenciumRainOfFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEssenciumRainOfFire)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMaximumDamageperWave(int level, real value)`
+- `setDamagePerSecond(int level, real value)`
+- `setNumberofWaves(int level, int value)`
+- `setDamage(int level, real value)`
+- `setNumberofShards(int level, int value)`
+- `setBuildingReduction(int level, real value)`
+- `presetMaximumDamageperWave(RealLevelClosure lc)`
+- `presetDamagePerSecond(RealLevelClosure lc)`
+- `presetNumberofWaves(IntLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+- `presetNumberofShards(IntLevelClosure lc)`
+- `presetBuildingReduction(RealLevelClosure lc)`
+
+### AbilityDefinitionItemEssenciumChainLightning
+
+```wurst
+public class AbilityDefinitionItemEssenciumChainLightning extends AbilityDefinition
+```
+
+'Aes4' / [AbilityIds.itemEssenciumChainLightning](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEssenciumChainLightning)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setNumberofTargetsHit(int level, int value)`
+- `setDamageperTarget(int level, real value)`
+- `setDamageReductionperTarget(int level, real value)`
+- `presetNumberofTargetsHit(IntLevelClosure lc)`
+- `presetDamageperTarget(RealLevelClosure lc)`
+- `presetDamageReductionperTarget(RealLevelClosure lc)`
+
+### AbilityDefinitionItemEssenciumCrushingWave
+
+```wurst
+public class AbilityDefinitionItemEssenciumCrushingWave extends AbilityDefinition
+```
+
+'Aes5' / [AbilityIds.itemEssenciumCrushingWave](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEssenciumCrushingWave)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDistance(int level, real value)`
+- `setFinalArea(int level, real value)`
+- `setMaxDamage(int level, real value)`
+- `setDamage(int level, real value)`
+- `presetDistance(RealLevelClosure lc)`
+- `presetFinalArea(RealLevelClosure lc)`
+- `presetMaxDamage(RealLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionItemEssenciumAttack1
+
+```wurst
+public class AbilityDefinitionItemEssenciumAttack1 extends AbilityDefinition
+```
+
+'Aes6' / [AbilityIds.itemEssenciumAttack1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEssenciumAttack1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemEssenciumAttack2
+
+```wurst
+public class AbilityDefinitionItemEssenciumAttack2 extends AbilityDefinition
+```
+
+'Aes7' / [AbilityIds.itemEssenciumAttack2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEssenciumAttack2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemEssenciumAttack3
+
+```wurst
+public class AbilityDefinitionItemEssenciumAttack3 extends AbilityDefinition
+```
+
+'Aes8' / [AbilityIds.itemEssenciumAttack3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEssenciumAttack3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemEssenciumAttack4
+
+```wurst
+public class AbilityDefinitionItemEssenciumAttack4 extends AbilityDefinition
+```
+
+'Aes9' / [AbilityIds.itemEssenciumAttack4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEssenciumAttack4)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemEarthenSignetAttack
+
+```wurst
+public class AbilityDefinitionItemEarthenSignetAttack extends AbilityDefinition
+```
+
+'Aesa' / [AbilityIds.itemEarthenSignetAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEarthenSignetAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAllowedDamageType(int level, string value)`
+- `setAbility(int level, string value)`
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `setTargetType(int level, string value)`
+- `presetAllowedDamageType(StringLevelClosure lc)`
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+
+### AbilityDefinitionEssenceOfTheSpiderQueen
+
+```wurst
+public class AbilityDefinitionEssenceOfTheSpiderQueen extends AbilityDefinition
+```
+
+'Aesq' / [AbilityIds.essenceOfTheSpiderQueen](/stdlib/ref/_wurst/AbilityIds.html#abilityids-essenceOfTheSpiderQueen)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setLifeStealAmount(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAmountIsRawValue(int level, bool value)`
+- `presetLifeStealAmount(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAmountIsRawValue(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemEarthenSignetWS
+
+```wurst
+public class AbilityDefinitionItemEarthenSignetWS extends AbilityDefinition
+```
+
+'Aesw' / [AbilityIds.itemEarthenSignetWS](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEarthenSignetWS)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamage(int level, real value)`
+- `presetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionApothecaryAcidBomb
+
+```wurst
+public class AbilityDefinitionApothecaryAcidBomb extends AbilityDefinition
+```
+
+'Afab' / [AbilityIds.apothecaryAcidBomb](/stdlib/ref/_wurst/AbilityIds.html#abilityids-apothecaryAcidBomb)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSecondaryDamage(int level, real value)`
+- `setArmorPenalty(int level, int value)`
+- `setPrimaryDamage(int level, real value)`
+- `setMovementSpeedReduction(int level, real value)`
+  Movement Speed Reduction (%) / 'Nab1'
+- `setAttackSpeedReduction(int level, real value)`
+  Attack Speed Reduction (%) / 'Nab2'
+- `setDamageInterval(int level, real value)`
+- `presetSecondaryDamage(RealLevelClosure lc)`
+- `presetArmorPenalty(IntLevelClosure lc)`
+- `presetPrimaryDamage(RealLevelClosure lc)`
+- `presetMovementSpeedReduction(RealLevelClosure lc)`
+- `presetAttackSpeedReduction(RealLevelClosure lc)`
+- `presetDamageInterval(RealLevelClosure lc)`
+
+### AbilityDefinitionItemForgottenFrostLotus
+
+```wurst
+public class AbilityDefinitionItemForgottenFrostLotus extends AbilityDefinition
+```
+
+'Affl' / [AbilityIds.itemForgottenFrostLotus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemForgottenFrostLotus)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setArmorBonus(int level, real value)`
+- `setArmorDuration(int level, real value)`
+- `presetArmorBonus(RealLevelClosure lc)`
+- `presetArmorDuration(RealLevelClosure lc)`
+
+### AbilityDefinitionApothecaryHealingSpray
+
+```wurst
+public class AbilityDefinitionApothecaryHealingSpray extends AbilityDefinition
+```
+
+'Afhs' / [AbilityIds.apothecaryHealingSpray](/stdlib/ref/_wurst/AbilityIds.html#abilityids-apothecaryHealingSpray)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setBuildingDamageFactor(int level, real value)`
+- `setWaveCount(int level, int value)`
+- `setDamageAmount(int level, real value)`
+- `setMaxDamage(int level, real value)`
+- `setDamageInterval(int level, real value)`
+- `setMissileCount(int level, int value)`
+- `presetBuildingDamageFactor(RealLevelClosure lc)`
+- `presetWaveCount(IntLevelClosure lc)`
+- `presetDamageAmount(RealLevelClosure lc)`
+- `presetMaxDamage(RealLevelClosure lc)`
+- `presetDamageInterval(RealLevelClosure lc)`
+- `presetMissileCount(IntLevelClosure lc)`
+
+### AbilityDefinitionItemGlovesOfTheFlamewalkerSwarm
+
+```wurst
+public class AbilityDefinitionItemGlovesOfTheFlamewalkerSwarm extends AbilityDefinition
+```
+
+'Afm1' / [AbilityIds.itemGlovesOfTheFlamewalkerSwarm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGlovesOfTheFlamewalkerSwarm)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setNumberofSwarmUnits(int level, int value)`
+- `setDamageReturnFactor(int level, real value)`
+- `setSwarmUnitType(int level, string value)`
+- `setUnitReleaseIntervalseconds(int level, real value)`
+- `setMaxSwarmUnitsPerTarget(int level, int value)`
+- `setDamageReturnThreshold(int level, real value)`
+- `presetNumberofSwarmUnits(IntLevelClosure lc)`
+- `presetDamageReturnFactor(RealLevelClosure lc)`
+- `presetSwarmUnitType(StringLevelClosure lc)`
+- `presetUnitReleaseIntervalseconds(RealLevelClosure lc)`
+- `presetMaxSwarmUnitsPerTarget(IntLevelClosure lc)`
+- `presetDamageReturnThreshold(RealLevelClosure lc)`
+
+### AbilityDefinitionItemGlovesOfTheFlamewalkerAttack
+
+```wurst
+public class AbilityDefinitionItemGlovesOfTheFlamewalkerAttack extends AbilityDefinition
+```
+
+'Afm2' / [AbilityIds.itemGlovesOfTheFlamewalkerAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGlovesOfTheFlamewalkerAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemFlameOfAlAr
+
+```wurst
+public class AbilityDefinitionItemFlameOfAlAr extends AbilityDefinition
+```
+
+'Afoa' / [AbilityIds.itemFlameOfAlAr](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemFlameOfAlAr)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setFullDamageInterval(int level, real value)`
+- `setFullDamageDealt(int level, real value)`
+- `setHalfDamageDealt(int level, real value)`
+- `setBuildingReduction(int level, real value)`
+- `setMaximumDamage(int level, real value)`
+- `setHalfDamageInterval(int level, real value)`
+- `presetFullDamageInterval(RealLevelClosure lc)`
+- `presetFullDamageDealt(RealLevelClosure lc)`
+- `presetHalfDamageDealt(RealLevelClosure lc)`
+- `presetBuildingReduction(RealLevelClosure lc)`
+- `presetMaximumDamage(RealLevelClosure lc)`
+- `presetHalfDamageInterval(RealLevelClosure lc)`
+
+### AbilityDefinitionApothecaryChemicalFrenzy
+
+```wurst
+public class AbilityDefinitionApothecaryChemicalFrenzy extends AbilityDefinition
+```
+
+'Afuf' / [AbilityIds.apothecaryChemicalFrenzy](/stdlib/ref/_wurst/AbilityIds.html#abilityids-apothecaryChemicalFrenzy)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackSpeedBonus(int level, real value)`
+  Attack Speed Bonus (%) / 'Uhf1'
+- `setDamageperSecond(int level, real value)`
+- `presetAttackSpeedBonus(RealLevelClosure lc)`
+- `presetDamageperSecond(RealLevelClosure lc)`
+
+### AbilityDefinitionItemGiftOfWrathAttack
+
+```wurst
+public class AbilityDefinitionItemGiftOfWrathAttack extends AbilityDefinition
+```
+
+'Agga' / [AbilityIds.itemGiftOfWrathAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGiftOfWrathAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAllowedDamageType(int level, string value)`
+- `setAbility(int level, string value)`
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `setTargetType(int level, string value)`
+- `presetAllowedDamageType(StringLevelClosure lc)`
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+
+### AbilityDefinitionItemGiftOfGreedPillage
+
+```wurst
+public class AbilityDefinitionItemGiftOfGreedPillage extends AbilityDefinition
+```
+
+'Aggp' / [AbilityIds.itemGiftOfGreedPillage](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGiftOfGreedPillage)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSalvageCostRatio(int level, real value)`
+- `setAccumulationStep(int level, int value)`
+- `presetSalvageCostRatio(RealLevelClosure lc)`
+- `presetAccumulationStep(IntLevelClosure lc)`
+
+### AbilityDefinitionItemGiftOfSlothSlow
+
+```wurst
+public class AbilityDefinitionItemGiftOfSlothSlow extends AbilityDefinition
+```
+
+'Aggs' / [AbilityIds.itemGiftOfSlothSlow](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGiftOfSlothSlow)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMovementSpeedIncrease(int level, real value)`
+  Movement Speed Increase (%) / 'Oae1'
+- `setAttackSpeedIncrease(int level, real value)`
+  Attack Speed Increase (%) / 'Oae2'
+- `presetMovementSpeedIncrease(RealLevelClosure lc)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+
+### AbilityDefinitionItemGiftOfWrathBloodlust
+
+```wurst
+public class AbilityDefinitionItemGiftOfWrathBloodlust extends AbilityDefinition
+```
+
+'Aggw' / [AbilityIds.itemGiftOfWrathBloodlust](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGiftOfWrathBloodlust)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setScalingFactor(int level, real value)`
+- `setAttackSpeedIncrease(int level, real value)`
+  Attack Speed Increase (%) / 'Blo1'
+- `setMovementSpeedIncrease(int level, real value)`
+  Movement Speed Increase (%) / 'Blo2'
+- `presetScalingFactor(RealLevelClosure lc)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+- `presetMovementSpeedIncrease(RealLevelClosure lc)`
+
+### AbilityDefinitionItemCurseOfPride
+
+```wurst
+public class AbilityDefinitionItemCurseOfPride extends AbilityDefinition
+```
+
+'Aggx' / [AbilityIds.itemCurseOfPride](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCurseOfPride)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionItemGlixsBomb
+
+```wurst
+public class AbilityDefinitionItemGlixsBomb extends AbilityDefinition
+```
+
+'Aglx' / [AbilityIds.itemGlixsBomb](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGlixsBomb)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setBuildingDamageFactor(int level, real value)`
+- `setDamageAmount(int level, real value)`
+- `setMaxDamage(int level, real value)`
+- `setDamageInterval(int level, real value)`
+- `setMissileCount(int level, int value)`
+- `setEffectDuration(int level, real value)`
+- `presetBuildingDamageFactor(RealLevelClosure lc)`
+- `presetDamageAmount(RealLevelClosure lc)`
+- `presetMaxDamage(RealLevelClosure lc)`
+- `presetDamageInterval(RealLevelClosure lc)`
+- `presetMissileCount(IntLevelClosure lc)`
+- `presetEffectDuration(RealLevelClosure lc)`
+
+### AbilityDefinitionItemGlovesOfNecromancySummon
+
+```wurst
+public class AbilityDefinitionItemGlovesOfNecromancySummon extends AbilityDefinition
+```
+
+'Agn1' / [AbilityIds.itemGlovesOfNecromancySummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGlovesOfNecromancySummon)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSummonedUnitCount(int level, int value)`
+- `setSummonedUnitType(int level, string value)`
+- `presetSummonedUnitCount(IntLevelClosure lc)`
+- `presetSummonedUnitType(StringLevelClosure lc)`
+
+### AbilityDefinitionItemGlovesOfNecromancyAttack
+
+```wurst
+public class AbilityDefinitionItemGlovesOfNecromancyAttack extends AbilityDefinition
+```
+
+'Agn2' / [AbilityIds.itemGlovesOfNecromancyAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGlovesOfNecromancyAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemGoldenNecklaceHeal
+
+```wurst
+public class AbilityDefinitionItemGoldenNecklaceHeal extends AbilityDefinition
+```
+
+'Agnh' / [AbilityIds.itemGoldenNecklaceHeal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGoldenNecklaceHeal)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHitPointsGained(int level, real value)`
+- `presetHitPointsGained(RealLevelClosure lc)`
+
+### AbilityDefinitionItemGoldenNecklaceSpellcast
+
+```wurst
+public class AbilityDefinitionItemGoldenNecklaceSpellcast extends AbilityDefinition
+```
+
+'Agns' / [AbilityIds.itemGoldenNecklaceSpellcast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGoldenNecklaceSpellcast)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `setTargetType(int level, string value)`
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+
+### AbilityDefinitionItemGlovesOfThePhoenixSpellcast
+
+```wurst
+public class AbilityDefinitionItemGlovesOfThePhoenixSpellcast extends AbilityDefinition
+```
+
+'Agpa' / [AbilityIds.itemGlovesOfThePhoenixSpellcast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGlovesOfThePhoenixSpellcast)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `setTargetType(int level, string value)`
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+
+### AbilityDefinitionItemGlovesOfThePhoenixDamage
+
+```wurst
+public class AbilityDefinitionItemGlovesOfThePhoenixDamage extends AbilityDefinition
+```
+
+'Agpd' / [AbilityIds.itemGlovesOfThePhoenixDamage](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGlovesOfThePhoenixDamage)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setGraphicDuration(int level, real value)`
+- `setGraphicDelay(int level, real value)`
+- `setDamage(int level, real value)`
+- `presetGraphicDuration(RealLevelClosure lc)`
+- `presetGraphicDelay(RealLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionItemGravelightDoT
+
+```wurst
+public class AbilityDefinitionItemGravelightDoT extends AbilityDefinition
+```
+
+'Agr1' / [AbilityIds.itemGravelightDoT](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGravelightDoT)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMovementSpeedFactor(int level, real value)`
+- `setDamageperSecond(int level, real value)`
+- `setAttackSpeedFactor(int level, real value)`
+- `presetMovementSpeedFactor(RealLevelClosure lc)`
+- `presetDamageperSecond(RealLevelClosure lc)`
+- `presetAttackSpeedFactor(RealLevelClosure lc)`
+- `setStackingType(int level, int value)`
+- `presetStackingType(IntLevelClosure lc)`
+
+### AbilityDefinitionItemGravelightMainSwarm
+
+```wurst
+public class AbilityDefinitionItemGravelightMainSwarm extends AbilityDefinition
+```
+
+'Agr2' / [AbilityIds.itemGravelightMainSwarm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGravelightMainSwarm)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setNumberofSwarmUnits(int level, int value)`
+- `setDamageReturnFactor(int level, real value)`
+- `setSwarmUnitType(int level, string value)`
+- `setUnitReleaseIntervalseconds(int level, real value)`
+- `setMaxSwarmUnitsPerTarget(int level, int value)`
+- `setDamageReturnThreshold(int level, real value)`
+- `presetNumberofSwarmUnits(IntLevelClosure lc)`
+- `presetDamageReturnFactor(RealLevelClosure lc)`
+- `presetSwarmUnitType(StringLevelClosure lc)`
+- `presetUnitReleaseIntervalseconds(RealLevelClosure lc)`
+- `presetMaxSwarmUnitsPerTarget(IntLevelClosure lc)`
+- `presetDamageReturnThreshold(RealLevelClosure lc)`
+
+### AbilityDefinitionItemGravelightSideSwarm
+
+```wurst
+public class AbilityDefinitionItemGravelightSideSwarm extends AbilityDefinition
+```
+
+'Agr3' / [AbilityIds.itemGravelightSideSwarm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGravelightSideSwarm)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setNumberofSwarmUnits(int level, int value)`
+- `setDamageReturnFactor(int level, real value)`
+- `setSwarmUnitType(int level, string value)`
+- `setUnitReleaseIntervalseconds(int level, real value)`
+- `setMaxSwarmUnitsPerTarget(int level, int value)`
+- `setDamageReturnThreshold(int level, real value)`
+- `presetNumberofSwarmUnits(IntLevelClosure lc)`
+- `presetDamageReturnFactor(RealLevelClosure lc)`
+- `presetSwarmUnitType(StringLevelClosure lc)`
+- `presetUnitReleaseIntervalseconds(RealLevelClosure lc)`
+- `presetMaxSwarmUnitsPerTarget(IntLevelClosure lc)`
+- `presetDamageReturnThreshold(RealLevelClosure lc)`
+
+### AbilityDefinitionItemGravelightAttackMain
+
+```wurst
+public class AbilityDefinitionItemGravelightAttackMain extends AbilityDefinition
+```
+
+'Agr4' / [AbilityIds.itemGravelightAttackMain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGravelightAttackMain)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemGravelightAttackSide
+
+```wurst
+public class AbilityDefinitionItemGravelightAttackSide extends AbilityDefinition
+```
+
+'Agr5' / [AbilityIds.itemGravelightAttackSide](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGravelightAttackSide)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemGlacialShard
+
+```wurst
+public class AbilityDefinitionItemGlacialShard extends AbilityDefinition
+```
+
+'Agsh' / [AbilityIds.itemGlacialShard](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGlacialShard)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMaximumDamageperWave(int level, real value)`
+- `setDamagePerSecond(int level, real value)`
+- `setNumberofWaves(int level, int value)`
+- `setDamage(int level, real value)`
+- `setNumberofShards(int level, int value)`
+- `setBuildingReduction(int level, real value)`
+- `presetMaximumDamageperWave(RealLevelClosure lc)`
+- `presetDamagePerSecond(RealLevelClosure lc)`
+- `presetNumberofWaves(IntLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+- `presetNumberofShards(IntLevelClosure lc)`
+- `presetBuildingReduction(RealLevelClosure lc)`
+
+### AbilityDefinitionHealingModifier
+
+```wurst
+public class AbilityDefinitionHealingModifier extends AbilityDefinition
+```
+
+'Ahem' / [AbilityIds.healingModifier](/stdlib/ref/_wurst/AbilityIds.html#abilityids-healingModifier)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHealingModifier(int level, real value)`
+  % Healing Modifier / 'hem1'
+- `presetHealingModifier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemHugeFlailWS
+
+```wurst
+public class AbilityDefinitionItemHugeFlailWS extends AbilityDefinition
+```
+
+'Ahf1' / [AbilityIds.itemHugeFlailWS](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHugeFlailWS)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamage(int level, real value)`
+- `presetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionItemHugeFlailAttack
+
+```wurst
+public class AbilityDefinitionItemHugeFlailAttack extends AbilityDefinition
+```
+
+'Ahf2' / [AbilityIds.itemHugeFlailAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHugeFlailAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionHeartOfTheFirebenderBoF
+
+```wurst
+public class AbilityDefinitionHeartOfTheFirebenderBoF extends AbilityDefinition
+```
+
+'Ahfb' / [AbilityIds.heartOfTheFirebenderBoF](/stdlib/ref/_wurst/AbilityIds.html#abilityids-heartOfTheFirebenderBoF)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDistance(int level, real value)`
+- `setDamagePerSecond(int level, real value)`
+- `setFinalArea(int level, real value)`
+- `setMaxDamage(int level, real value)`
+- `setDamage(int level, real value)`
+- `presetDistance(RealLevelClosure lc)`
+- `presetDamagePerSecond(RealLevelClosure lc)`
+- `presetFinalArea(RealLevelClosure lc)`
+- `presetMaxDamage(RealLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionHeartOfTheFirebenderOrb
+
+```wurst
+public class AbilityDefinitionHeartOfTheFirebenderOrb extends AbilityDefinition
+```
+
+'Ahfo' / [AbilityIds.heartOfTheFirebenderOrb](/stdlib/ref/_wurst/AbilityIds.html#abilityids-heartOfTheFirebenderOrb)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChanceToHitUnits(int level, real value)`
+  Chance To Hit Units (%) / 'Iob2'
+- `setChanceToHitSummons(int level, real value)`
+  Chance To Hit Summons (%) / 'Iob4'
+- `setEffectAbility(int level, string value)`
+- `setChanceToHitHeros(int level, real value)`
+  Chance To Hit Heros (%) / 'Iob3'
+- `setDamageBonus(int level, real value)`
+- `setEnabledAttackIndex(int level, int value)`
+- `presetChanceToHitUnits(RealLevelClosure lc)`
+- `presetChanceToHitSummons(RealLevelClosure lc)`
+- `presetEffectAbility(StringLevelClosure lc)`
+- `presetChanceToHitHeros(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetEnabledAttackIndex(IntLevelClosure lc)`
+
+### AbilityDefinitionHeadpieceOfTheHighInquisitor
+
+```wurst
+public class AbilityDefinitionHeadpieceOfTheHighInquisitor extends AbilityDefinition
+```
+
+'Ahhi' / [AbilityIds.headpieceOfTheHighInquisitor](/stdlib/ref/_wurst/AbilityIds.html#abilityids-headpieceOfTheHighInquisitor)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMovementSpeedIncrease(int level, real value)`
+  Movement Speed Increase (%) / 'Uau1'
+- `setLifeRegenerationIncrease(int level, real value)`
+  Life Regeneration Increase (%) / 'Uau2'
+- `setPercentBonus(int level, bool value)`
+- `presetMovementSpeedIncrease(RealLevelClosure lc)`
+- `presetLifeRegenerationIncrease(RealLevelClosure lc)`
+- `presetPercentBonus(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemHelmOfTheRimelordSpellcast
+
+```wurst
+public class AbilityDefinitionItemHelmOfTheRimelordSpellcast extends AbilityDefinition
+```
+
+'Ahrx' / [AbilityIds.itemHelmOfTheRimelordSpellcast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHelmOfTheRimelordSpellcast)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `setTargetType(int level, string value)`
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+
+### AbilityDefinitionItemHelmOfTheRimelordTC
+
+```wurst
+public class AbilityDefinitionItemHelmOfTheRimelordTC extends AbilityDefinition
+```
+
+'Ahrz' / [AbilityIds.itemHelmOfTheRimelordTC](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHelmOfTheRimelordTC)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMovementSpeedReduction(int level, real value)`
+- `setExtraDamageToTarget(int level, real value)`
+- `setAttackSpeedReduction(int level, real value)`
+- `setDamage(int level, real value)`
+- `presetMovementSpeedReduction(RealLevelClosure lc)`
+- `presetExtraDamageToTarget(RealLevelClosure lc)`
+- `presetAttackSpeedReduction(RealLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionItemHammerOfTheSilverHandAttack
+
+```wurst
+public class AbilityDefinitionItemHammerOfTheSilverHandAttack extends AbilityDefinition
+```
+
+'Ahsa' / [AbilityIds.itemHammerOfTheSilverHandAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHammerOfTheSilverHandAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemHammerOfTheSilverHandHeal
+
+```wurst
+public class AbilityDefinitionItemHammerOfTheSilverHandHeal extends AbilityDefinition
+```
+
+'Ahsh' / [AbilityIds.itemHammerOfTheSilverHandHeal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHammerOfTheSilverHandHeal)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHitPointsGained(int level, real value)`
+- `presetHitPointsGained(RealLevelClosure lc)`
+
+### AbilityDefinitionItemHandfulOfThrowingKnives
+
+```wurst
+public class AbilityDefinitionItemHandfulOfThrowingKnives extends AbilityDefinition
+```
+
+'Ahtk' / [AbilityIds.itemHandfulOfThrowingKnives](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHandfulOfThrowingKnives)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamagePerTarget(int level, real value)`
+- `setMaximumSpeedAdjustment(int level, real value)`
+- `setMaximumTotalDamage(int level, real value)`
+- `setMaximumNumberofTargets(int level, int value)`
+- `presetDamagePerTarget(RealLevelClosure lc)`
+- `presetMaximumSpeedAdjustment(RealLevelClosure lc)`
+- `presetMaximumTotalDamage(RealLevelClosure lc)`
+- `presetMaximumNumberofTargets(IntLevelClosure lc)`
+
+### AbilityDefinitionItemIcecrownRingFrostNova
+
+```wurst
+public class AbilityDefinitionItemIcecrownRingFrostNova extends AbilityDefinition
+```
+
+'Aic1' / [AbilityIds.itemIcecrownRingFrostNova](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemIcecrownRingFrostNova)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAreaofEffectDamage(int level, real value)`
+- `setSpecificTargetDamage(int level, real value)`
+- `setMaximumDamage(int level, real value)`
+- `presetAreaofEffectDamage(RealLevelClosure lc)`
+- `presetSpecificTargetDamage(RealLevelClosure lc)`
+- `presetMaximumDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionItemIcecrownRingFrostAttack
+
+```wurst
+public class AbilityDefinitionItemIcecrownRingFrostAttack extends AbilityDefinition
+```
+
+'Aic2' / [AbilityIds.itemIcecrownRingFrostAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemIcecrownRingFrostAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAllowedDamageType(int level, string value)`
+- `setAbility(int level, string value)`
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `setTargetType(int level, string value)`
+- `presetAllowedDamageType(StringLevelClosure lc)`
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+
+### AbilityDefinitionItemBladeOfInfernoRainOfFire
+
+```wurst
+public class AbilityDefinitionItemBladeOfInfernoRainOfFire extends AbilityDefinition
+```
+
+'Ain1' / [AbilityIds.itemBladeOfInfernoRainOfFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBladeOfInfernoRainOfFire)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMaximumDamageperWave(int level, real value)`
+- `setDamagePerSecond(int level, real value)`
+- `setNumberofWaves(int level, int value)`
+- `setDamage(int level, real value)`
+- `setNumberofShards(int level, int value)`
+- `setBuildingReduction(int level, real value)`
+- `presetMaximumDamageperWave(RealLevelClosure lc)`
+- `presetDamagePerSecond(RealLevelClosure lc)`
+- `presetNumberofWaves(IntLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+- `presetNumberofShards(IntLevelClosure lc)`
+- `presetBuildingReduction(RealLevelClosure lc)`
+
+### AbilityDefinitionItemBladeOfInfernoAttack
+
+```wurst
+public class AbilityDefinitionItemBladeOfInfernoAttack extends AbilityDefinition
+```
+
+'Ain2' / [AbilityIds.itemBladeOfInfernoAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBladeOfInfernoAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionAttackSpeedIncreaseGreaterAisy
+
+```wurst
+public class AbilityDefinitionAttackSpeedIncreaseGreaterAisy extends AbilityDefinition
+```
+
+'Aisy' / [AbilityIds.attackSpeedIncreaseGreaterAisy](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackSpeedIncreaseGreaterAisy)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAttackSpeedIncrease(int level, real value)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+
+### AbilityDefinitionItemKaldoreiMoonglaiveAttack
+
+```wurst
+public class AbilityDefinitionItemKaldoreiMoonglaiveAttack extends AbilityDefinition
+```
+
+'Akma' / [AbilityIds.itemKaldoreiMoonglaiveAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemKaldoreiMoonglaiveAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemKaldoreiMoonglaiveSummon
+
+```wurst
+public class AbilityDefinitionItemKaldoreiMoonglaiveSummon extends AbilityDefinition
+```
+
+'Akms' / [AbilityIds.itemKaldoreiMoonglaiveSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemKaldoreiMoonglaiveSummon)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSummonedUnitCount(int level, int value)`
+- `setSummonedUnitType(int level, string value)`
+- `presetSummonedUnitCount(IntLevelClosure lc)`
+- `presetSummonedUnitType(StringLevelClosure lc)`
+
+### AbilityDefinitionItemLanceOfTheFrozenPhoenix
+
+```wurst
+public class AbilityDefinitionItemLanceOfTheFrozenPhoenix extends AbilityDefinition
+```
+
+'Alfp' / [AbilityIds.itemLanceOfTheFrozenPhoenix](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLanceOfTheFrozenPhoenix)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setInitialDamage(int level, real value)`
+- `setDamagePerSecond(int level, real value)`
+- `presetInitialDamage(RealLevelClosure lc)`
+- `presetDamagePerSecond(RealLevelClosure lc)`
+
+### AbilityDefinitionItemLostForsakenQuiverSummon
+
+```wurst
+public class AbilityDefinitionItemLostForsakenQuiverSummon extends AbilityDefinition
+```
+
+'Alfq' / [AbilityIds.itemLostForsakenQuiverSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLostForsakenQuiverSummon)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSummonedUnitCount(int level, int value)`
+- `setSummonedUnitType(int level, string value)`
+- `presetSummonedUnitCount(IntLevelClosure lc)`
+- `presetSummonedUnitType(StringLevelClosure lc)`
+
+### AbilityDefinitionLionskinHelmetOfPrecision
+
+```wurst
+public class AbilityDefinitionLionskinHelmetOfPrecision extends AbilityDefinition
+```
+
+'Alhp' / [AbilityIds.lionskinHelmetOfPrecision](/stdlib/ref/_wurst/AbilityIds.html#abilityids-lionskinHelmetOfPrecision)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoCriticalStrike(int level, real value)`
+- `setChancetoEvade(int level, real value)`
+- `setExcludeItemDamage(int level, bool value)`
+- `setDamageMultiplier(int level, real value)`
+- `presetChancetoCriticalStrike(RealLevelClosure lc)`
+- `presetChancetoEvade(RealLevelClosure lc)`
+- `presetExcludeItemDamage(BooleanLevelClosure lc)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionLesserMarkOfTheForsaken
+
+```wurst
+public class AbilityDefinitionLesserMarkOfTheForsaken extends AbilityDefinition
+```
+
+'Almf' / [AbilityIds.lesserMarkOfTheForsaken](/stdlib/ref/_wurst/AbilityIds.html#abilityids-lesserMarkOfTheForsaken)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAmountHealedDamaged(int level, real value)`
+  Amount Healed/Damaged / 'Udc1'
+- `presetAmountHealedDamaged(RealLevelClosure lc)`
+
+### AbilityDefinitionItemPortableLightningRodAttack
+
+```wurst
+public class AbilityDefinitionItemPortableLightningRodAttack extends AbilityDefinition
+```
+
+'Alra' / [AbilityIds.itemPortableLightningRodAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemPortableLightningRodAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAllowedDamageType(int level, string value)`
+- `setAbility(int level, string value)`
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `setTargetType(int level, string value)`
+- `presetAllowedDamageType(StringLevelClosure lc)`
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+
+### AbilityDefinitionItemPortableLightningRodCL
+
+```wurst
+public class AbilityDefinitionItemPortableLightningRodCL extends AbilityDefinition
+```
+
+'Alrc' / [AbilityIds.itemPortableLightningRodCL](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemPortableLightningRodCL)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setNumberofTargetsHit(int level, int value)`
+- `setDamageperTarget(int level, real value)`
+- `setDamageReductionperTarget(int level, real value)`
+- `presetNumberofTargetsHit(IntLevelClosure lc)`
+- `presetDamageperTarget(RealLevelClosure lc)`
+- `presetDamageReductionperTarget(RealLevelClosure lc)`
+
+### AbilityDefinitionItemMordoSClub
+
+```wurst
+public class AbilityDefinitionItemMordoSClub extends AbilityDefinition
+```
+
+'Amcx' / [AbilityIds.itemMordoSClub](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMordoSClub)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMaxAttackSpeedStacks(int level, int value)`
+- `setPercentDamage(int level, real value)`
+- `setStacksRequired(int level, int value)`
+- `setBonusAttackSpeedperAttack(int level, real value)`
+- `setFlatDamage(int level, real value)`
+- `presetMaxAttackSpeedStacks(IntLevelClosure lc)`
+- `presetPercentDamage(RealLevelClosure lc)`
+- `presetStacksRequired(IntLevelClosure lc)`
+- `presetBonusAttackSpeedperAttack(RealLevelClosure lc)`
+- `presetFlatDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionAbilityDamageAmpBClvl1
+
+```wurst
+public class AbilityDefinitionAbilityDamageAmpBClvl1 extends AbilityDefinition
+```
+
+'Amda' / [AbilityIds.abilityDamageAmpBClvl1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-abilityDamageAmpBClvl1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setBonusMagicDamageFactor(int level, real value)`
+- `presetBonusMagicDamageFactor(RealLevelClosure lc)`
+
+### AbilityDefinitionItemManuscriptOfTheForsakenSummon
+
+```wurst
+public class AbilityDefinitionItemManuscriptOfTheForsakenSummon extends AbilityDefinition
+```
+
+'Amfs' / [AbilityIds.itemManuscriptOfTheForsakenSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManuscriptOfTheForsakenSummon)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSummonedUnitCount(int level, int value)`
+- `setSummonedUnitType(int level, string value)`
+- `presetSummonedUnitCount(IntLevelClosure lc)`
+- `presetSummonedUnitType(StringLevelClosure lc)`
+
+### AbilityDefinitionItemMonasteryMaceHeal
+
+```wurst
+public class AbilityDefinitionItemMonasteryMaceHeal extends AbilityDefinition
+```
+
+'Amm1' / [AbilityIds.itemMonasteryMaceHeal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMonasteryMaceHeal)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setNumberofTargetsHit(int level, int value)`
+- `setDamageperTarget(int level, real value)`
+- `setDamageReductionperTarget(int level, real value)`
+- `presetNumberofTargetsHit(IntLevelClosure lc)`
+- `presetDamageperTarget(RealLevelClosure lc)`
+- `presetDamageReductionperTarget(RealLevelClosure lc)`
+
+### AbilityDefinitionItemMonasteryMaceAttack
+
+```wurst
+public class AbilityDefinitionItemMonasteryMaceAttack extends AbilityDefinition
+```
+
+'Amm2' / [AbilityIds.itemMonasteryMaceAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMonasteryMaceAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemMarkOfThePhoenixBoF
+
+```wurst
+public class AbilityDefinitionItemMarkOfThePhoenixBoF extends AbilityDefinition
+```
+
+'Ampb' / [AbilityIds.itemMarkOfThePhoenixBoF](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMarkOfThePhoenixBoF)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDistance(int level, real value)`
+- `setDamagePerSecond(int level, real value)`
+- `setFinalArea(int level, real value)`
+- `setMaxDamage(int level, real value)`
+- `setDamage(int level, real value)`
+- `presetDistance(RealLevelClosure lc)`
+- `presetDamagePerSecond(RealLevelClosure lc)`
+- `presetFinalArea(RealLevelClosure lc)`
+- `presetMaxDamage(RealLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionMalachiteSwordCurse
+
+```wurst
+public class AbilityDefinitionMalachiteSwordCurse extends AbilityDefinition
+```
+
+'Amsc' / [AbilityIds.malachiteSwordCurse](/stdlib/ref/_wurst/AbilityIds.html#abilityids-malachiteSwordCurse)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoMiss(int level, real value)`
+- `presetChancetoMiss(RealLevelClosure lc)`
+
+### AbilityDefinitionMalachiteSwordOrb
+
+```wurst
+public class AbilityDefinitionMalachiteSwordOrb extends AbilityDefinition
+```
+
+'Amso' / [AbilityIds.malachiteSwordOrb](/stdlib/ref/_wurst/AbilityIds.html#abilityids-malachiteSwordOrb)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChanceToHitUnits(int level, real value)`
+  Chance To Hit Units (%) / 'Iob2'
+- `setChanceToHitSummons(int level, real value)`
+  Chance To Hit Summons (%) / 'Iob4'
+- `setEffectAbility(int level, string value)`
+- `setChanceToHitHeros(int level, real value)`
+  Chance To Hit Heros (%) / 'Iob3'
+- `setDamageBonus(int level, real value)`
+- `setEnabledAttackIndex(int level, int value)`
+- `presetChanceToHitUnits(RealLevelClosure lc)`
+- `presetChanceToHitSummons(RealLevelClosure lc)`
+- `presetEffectAbility(StringLevelClosure lc)`
+- `presetChanceToHitHeros(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetEnabledAttackIndex(IntLevelClosure lc)`
+
+### AbilityDefinitionAndb
+
+```wurst
+public class AbilityDefinitionAndb extends AbilityDefinition
+```
+
+'Andb' / [AbilityIds.andb](/stdlib/ref/_wurst/AbilityIds.html#abilityids-andb)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageMultiplier(int level, real value)`
+- `presetDamageMultiplier(RealLevelClosure lc)`
+
+### AbilityDefinitionItemNevermeltingIce
+
+```wurst
+public class AbilityDefinitionItemNevermeltingIce extends AbilityDefinition
+```
+
+'Anmi' / [AbilityIds.itemNevermeltingIce](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemNevermeltingIce)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMovementSpeedFactor(int level, real value)`
+- `setAttackSpeedFactor(int level, real value)`
+- `setExtraDamage(int level, real value)`
+- `presetMovementSpeedFactor(RealLevelClosure lc)`
+- `presetAttackSpeedFactor(RealLevelClosure lc)`
+- `presetExtraDamage(RealLevelClosure lc)`
+- `setStackFlags(int level, int value)`
+- `presetStackFlags(IntLevelClosure lc)`
+
+### AbilityDefinitionAoas
+
+```wurst
+public class AbilityDefinitionAoas extends AbilityDefinition
+```
+
+'Aoas' / [AbilityIds.aoas](/stdlib/ref/_wurst/AbilityIds.html#abilityids-aoas)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemOrbChill3s
+
+```wurst
+public class AbilityDefinitionItemOrbChill3s extends AbilityDefinition
+```
+
+'Aoc3' / [AbilityIds.itemOrbChill3s](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemOrbChill3s)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageBonus(int level, real value)`
+- `setEnabledAttackIndex(int level, int value)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetEnabledAttackIndex(IntLevelClosure lc)`
+
+### AbilityDefinitionOnHitSpellChainLightning
+
+```wurst
+public class AbilityDefinitionOnHitSpellChainLightning extends AbilityDefinition
+```
+
+'Aohl' / [AbilityIds.onHitSpellChainLightning](/stdlib/ref/_wurst/AbilityIds.html#abilityids-onHitSpellChainLightning)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAllowedDamageType(int level, string value)`
+- `setAbility(int level, string value)`
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `setTargetType(int level, string value)`
+- `presetAllowedDamageType(StringLevelClosure lc)`
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+
+### AbilityDefinitionItemTotemOgreMagiAttack
+
+```wurst
+public class AbilityDefinitionItemTotemOgreMagiAttack extends AbilityDefinition
+```
+
+'Aoma' / [AbilityIds.itemTotemOgreMagiAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemTotemOgreMagiAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemTotemOgreMagiBloodlust
+
+```wurst
+public class AbilityDefinitionItemTotemOgreMagiBloodlust extends AbilityDefinition
+```
+
+'Aomb' / [AbilityIds.itemTotemOgreMagiBloodlust](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemTotemOgreMagiBloodlust)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setScalingFactor(int level, real value)`
+- `setAttackSpeedIncrease(int level, real value)`
+  Attack Speed Increase (%) / 'Blo1'
+- `setMovementSpeedIncrease(int level, real value)`
+  Movement Speed Increase (%) / 'Blo2'
+- `presetScalingFactor(RealLevelClosure lc)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+- `presetMovementSpeedIncrease(RealLevelClosure lc)`
+
+### AbilityDefinitionItemBracersOgreMagiCL
+
+```wurst
+public class AbilityDefinitionItemBracersOgreMagiCL extends AbilityDefinition
+```
+
+'Aomc' / [AbilityIds.itemBracersOgreMagiCL](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBracersOgreMagiCL)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setNumberofTargetsHit(int level, int value)`
+- `setDamageperTarget(int level, real value)`
+- `setDamageReductionperTarget(int level, real value)`
+- `presetNumberofTargetsHit(IntLevelClosure lc)`
+- `presetDamageperTarget(RealLevelClosure lc)`
+- `presetDamageReductionperTarget(RealLevelClosure lc)`
+
+### AbilityDefinitionItemBracersOgreMagiHW
+
+```wurst
+public class AbilityDefinitionItemBracersOgreMagiHW extends AbilityDefinition
+```
+
+'Aomh' / [AbilityIds.itemBracersOgreMagiHW](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBracersOgreMagiHW)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setNumberofTargetsHit(int level, int value)`
+- `setDamageperTarget(int level, real value)`
+- `setDamageReductionperTarget(int level, real value)`
+- `presetNumberofTargetsHit(IntLevelClosure lc)`
+- `presetDamageperTarget(RealLevelClosure lc)`
+- `presetDamageReductionperTarget(RealLevelClosure lc)`
+
+### AbilityDefinitionItemTotemOgreMagiSummon
+
+```wurst
+public class AbilityDefinitionItemTotemOgreMagiSummon extends AbilityDefinition
+```
+
+'Aoms' / [AbilityIds.itemTotemOgreMagiSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemTotemOgreMagiSummon)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSummonedUnitCount(int level, int value)`
+- `setSummonedUnitType(int level, string value)`
+- `presetSummonedUnitCount(IntLevelClosure lc)`
+- `presetSummonedUnitType(StringLevelClosure lc)`
+
+### AbilityDefinitionItemBracersOgreMagiAttack2
+
+```wurst
+public class AbilityDefinitionItemBracersOgreMagiAttack2 extends AbilityDefinition
+```
+
+'Aomx' / [AbilityIds.itemBracersOgreMagiAttack2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBracersOgreMagiAttack2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemBracersOgreMagiAttack1
+
+```wurst
+public class AbilityDefinitionItemBracersOgreMagiAttack1 extends AbilityDefinition
+```
+
+'Aomz' / [AbilityIds.itemBracersOgreMagiAttack1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBracersOgreMagiAttack1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionPlaguebearerShortsword
+
+```wurst
+public class AbilityDefinitionPlaguebearerShortsword extends AbilityDefinition
+```
+
+'Apbs' / [AbilityIds.plaguebearerShortsword](/stdlib/ref/_wurst/AbilityIds.html#abilityids-plaguebearerShortsword)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMovementSpeedFactor(int level, real value)`
+- `setAttackSpeedFactor(int level, real value)`
+- `setDamagePerSecond(int level, real value)`
+- `presetMovementSpeedFactor(RealLevelClosure lc)`
+- `presetAttackSpeedFactor(RealLevelClosure lc)`
+- `presetDamagePerSecond(RealLevelClosure lc)`
+- `setStackingType(int level, int value)`
+- `presetStackingType(IntLevelClosure lc)`
+
+### AbilityDefinitionPlagueTossBlightweaver
+
+```wurst
+public class AbilityDefinitionPlagueTossBlightweaver extends AbilityDefinition
+```
+
+'Apbw' / [AbilityIds.plagueTossBlightweaver](/stdlib/ref/_wurst/AbilityIds.html#abilityids-plagueTossBlightweaver)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setWardUnitType(int level, string value)`
+- `presetWardUnitType(StringLevelClosure lc)`
+
+### AbilityDefinitionItemPlaguegreavesSpell
+
+```wurst
+public class AbilityDefinitionItemPlaguegreavesSpell extends AbilityDefinition
+```
+
+'Apl1' / [AbilityIds.itemPlaguegreavesSpell](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemPlaguegreavesSpell)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSecondaryDamage(int level, real value)`
+- `setArmorPenalty(int level, int value)`
+- `setPrimaryDamage(int level, real value)`
+- `setMovementSpeedReduction(int level, real value)`
+  Movement Speed Reduction (%) / 'Nab1'
+- `setAttackSpeedReduction(int level, real value)`
+  Attack Speed Reduction (%) / 'Nab2'
+- `setDamageInterval(int level, real value)`
+- `presetSecondaryDamage(RealLevelClosure lc)`
+- `presetArmorPenalty(IntLevelClosure lc)`
+- `presetPrimaryDamage(RealLevelClosure lc)`
+- `presetMovementSpeedReduction(RealLevelClosure lc)`
+- `presetAttackSpeedReduction(RealLevelClosure lc)`
+- `presetDamageInterval(RealLevelClosure lc)`
+
+### AbilityDefinitionItemPlaguegreavesAttack
+
+```wurst
+public class AbilityDefinitionItemPlaguegreavesAttack extends AbilityDefinition
+```
+
+'Apl2' / [AbilityIds.itemPlaguegreavesAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemPlaguegreavesAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAllowedDamageType(int level, string value)`
+- `setAbility(int level, string value)`
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `setTargetType(int level, string value)`
+- `presetAllowedDamageType(StringLevelClosure lc)`
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+
+### AbilityDefinitionPoisonNettleAttack
+
+```wurst
+public class AbilityDefinitionPoisonNettleAttack extends AbilityDefinition
+```
+
+'Apna' / [AbilityIds.poisonNettleAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-poisonNettleAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionPoisonNettleER
+
+```wurst
+public class AbilityDefinitionPoisonNettleER extends AbilityDefinition
+```
+
+'Apne' / [AbilityIds.poisonNettleER](/stdlib/ref/_wurst/AbilityIds.html#abilityids-poisonNettleER)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageperSecond(int level, real value)`
+- `presetDamageperSecond(RealLevelClosure lc)`
+
+### AbilityDefinitionPintOfAle
+
+```wurst
+public class AbilityDefinitionPintOfAle extends AbilityDefinition
+```
+
+'Apoa' / [AbilityIds.pintOfAle](/stdlib/ref/_wurst/AbilityIds.html#abilityids-pintOfAle)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChanceToMiss(int level, real value)`
+  Chance To Miss (%) / 'Nsi2'
+- `setAttackSpeedModifier(int level, real value)`
+- `setMovementSpeedModifier(int level, real value)`
+- `presetChanceToMiss(RealLevelClosure lc)`
+- `presetAttackSpeedModifier(RealLevelClosure lc)`
+- `presetMovementSpeedModifier(RealLevelClosure lc)`
+- `setAttacksPrevented(int level, int value)`
+- `presetAttacksPrevented(IntLevelClosure lc)`
+
+### AbilityDefinitionPhalanxShieldAura
+
+```wurst
+public class AbilityDefinitionPhalanxShieldAura extends AbilityDefinition
+```
+
+'Apsq' / [AbilityIds.phalanxShieldAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-phalanxShieldAura)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setPercentBonus(int level, bool value)`
+- `setArmorBonus(int level, real value)`
+- `presetPercentBonus(BooleanLevelClosure lc)`
+- `presetArmorBonus(RealLevelClosure lc)`
+
+### AbilityDefinitionItemProtectorSHStun
+
+```wurst
+public class AbilityDefinitionItemProtectorSHStun extends AbilityDefinition
+```
+
+'Apsx' / [AbilityIds.itemProtectorSHStun](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemProtectorSHStun)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamage(int level, real value)`
+- `presetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionItemProtectorSHAttack
+
+```wurst
+public class AbilityDefinitionItemProtectorSHAttack extends AbilityDefinition
+```
+
+'Apsz' / [AbilityIds.itemProtectorSHAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemProtectorSHAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAllowedDamageType(int level, string value)`
+- `setAbility(int level, string value)`
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `setTargetType(int level, string value)`
+- `presetAllowedDamageType(StringLevelClosure lc)`
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+
+### AbilityDefinitionItemPlaguewroughtAttack
+
+```wurst
+public class AbilityDefinitionItemPlaguewroughtAttack extends AbilityDefinition
+```
+
+'Apwa' / [AbilityIds.itemPlaguewroughtAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemPlaguewroughtAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemPlaguewroughtPoison
+
+```wurst
+public class AbilityDefinitionItemPlaguewroughtPoison extends AbilityDefinition
+```
+
+'Apwp' / [AbilityIds.itemPlaguewroughtPoison](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemPlaguewroughtPoison)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMovementSpeedFactor(int level, real value)`
+- `setAttackSpeedFactor(int level, real value)`
+- `setDamagePerSecond(int level, real value)`
+- `presetMovementSpeedFactor(RealLevelClosure lc)`
+- `presetAttackSpeedFactor(RealLevelClosure lc)`
+- `presetDamagePerSecond(RealLevelClosure lc)`
+- `setStackingType(int level, int value)`
+- `presetStackingType(IntLevelClosure lc)`
+
+### AbilityDefinitionItemPlaguewroughtCS
+
+```wurst
+public class AbilityDefinitionItemPlaguewroughtCS extends AbilityDefinition
+```
+
+'Apws' / [AbilityIds.itemPlaguewroughtCS](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemPlaguewroughtCS)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDistance(int level, real value)`
+- `setFinalArea(int level, real value)`
+- `setMaxDamage(int level, real value)`
+- `setDamage(int level, real value)`
+- `presetDistance(RealLevelClosure lc)`
+- `presetFinalArea(RealLevelClosure lc)`
+- `presetMaxDamage(RealLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionItemRestorativeBalm
+
+```wurst
+public class AbilityDefinitionItemRestorativeBalm extends AbilityDefinition
+```
+
+'Arba' / [AbilityIds.itemRestorativeBalm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRestorativeBalm)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setNumberofTargetsHit(int level, int value)`
+- `setDamageperTarget(int level, real value)`
+- `setDamageReductionperTarget(int level, real value)`
+- `presetNumberofTargetsHit(IntLevelClosure lc)`
+- `presetDamageperTarget(RealLevelClosure lc)`
+- `presetDamageReductionperTarget(RealLevelClosure lc)`
+
+### AbilityDefinitionItemDiamondRingCDR
+
+```wurst
+public class AbilityDefinitionItemDiamondRingCDR extends AbilityDefinition
+```
+
+'Ardr' / [AbilityIds.itemDiamondRingCDR](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDiamondRingCDR)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setCooldownReduction(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `presetCooldownReduction(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemRingOfHolyFireImmo
+
+```wurst
+public class AbilityDefinitionItemRingOfHolyFireImmo extends AbilityDefinition
+```
+
+'Arf1' / [AbilityIds.itemRingOfHolyFireImmo](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRingOfHolyFireImmo)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setManaUsedPerSecond(int level, int value)`
+- `setDamagePerDuration(int level, int value)`
+- `setExtraManaRequired(int level, int value)`
+- `presetManaUsedPerSecond(IntLevelClosure lc)`
+- `presetDamagePerDuration(IntLevelClosure lc)`
+- `presetExtraManaRequired(IntLevelClosure lc)`
+
+### AbilityDefinitionItemRingOfHolyFireFL
+
+```wurst
+public class AbilityDefinitionItemRingOfHolyFireFL extends AbilityDefinition
+```
+
+'Arf2' / [AbilityIds.itemRingOfHolyFireFL](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRingOfHolyFireFL)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setNumberofTargetsHit(int level, int value)`
+- `setDistance(int level, real value)`
+- `setFinalArea(int level, real value)`
+- `setDamageperTarget(int level, real value)`
+- `presetNumberofTargetsHit(IntLevelClosure lc)`
+- `presetDistance(RealLevelClosure lc)`
+- `presetFinalArea(RealLevelClosure lc)`
+- `presetDamageperTarget(RealLevelClosure lc)`
+
+### AbilityDefinitionItemRingOfHolyFireAttack
+
+```wurst
+public class AbilityDefinitionItemRingOfHolyFireAttack extends AbilityDefinition
+```
+
+'Arf3' / [AbilityIds.itemRingOfHolyFireAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRingOfHolyFireAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionRingOfTheFirelandsAttack
+
+```wurst
+public class AbilityDefinitionRingOfTheFirelandsAttack extends AbilityDefinition
+```
+
+'Arfa' / [AbilityIds.ringOfTheFirelandsAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ringOfTheFirelandsAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionRingOfTheFirelandsCR
+
+```wurst
+public class AbilityDefinitionRingOfTheFirelandsCR extends AbilityDefinition
+```
+
+'Arfc' / [AbilityIds.ringOfTheFirelandsCR](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ringOfTheFirelandsCR)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setBuildingDamageFactor(int level, real value)`
+- `setDamageAmount(int level, real value)`
+- `setMaxDamage(int level, real value)`
+- `setDamageInterval(int level, real value)`
+- `setMissileCount(int level, int value)`
+- `setEffectDuration(int level, real value)`
+- `presetBuildingDamageFactor(RealLevelClosure lc)`
+- `presetDamageAmount(RealLevelClosure lc)`
+- `presetMaxDamage(RealLevelClosure lc)`
+- `presetDamageInterval(RealLevelClosure lc)`
+- `presetMissileCount(IntLevelClosure lc)`
+- `presetEffectDuration(RealLevelClosure lc)`
+
+### AbilityDefinitionItemRazoriceAttack1
+
+```wurst
+public class AbilityDefinitionItemRazoriceAttack1 extends AbilityDefinition
+```
+
+'Ari1' / [AbilityIds.itemRazoriceAttack1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRazoriceAttack1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemRazoriceAttack2
+
+```wurst
+public class AbilityDefinitionItemRazoriceAttack2 extends AbilityDefinition
+```
+
+'Ari2' / [AbilityIds.itemRazoriceAttack2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRazoriceAttack2)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageBonus(int level, real value)`
+- `setEnabledAttackIndex(int level, int value)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetEnabledAttackIndex(IntLevelClosure lc)`
+
+### AbilityDefinitionItemRazoriceBoF
+
+```wurst
+public class AbilityDefinitionItemRazoriceBoF extends AbilityDefinition
+```
+
+'Ari3' / [AbilityIds.itemRazoriceBoF](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRazoriceBoF)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDistance(int level, real value)`
+- `setDamagePerSecond(int level, real value)`
+- `setFinalArea(int level, real value)`
+- `setMaxDamage(int level, real value)`
+- `setDamage(int level, real value)`
+- `presetDistance(RealLevelClosure lc)`
+- `presetDamagePerSecond(RealLevelClosure lc)`
+- `presetFinalArea(RealLevelClosure lc)`
+- `presetMaxDamage(RealLevelClosure lc)`
+- `presetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionItemRazoriceAttack4
+
+```wurst
+public class AbilityDefinitionItemRazoriceAttack4 extends AbilityDefinition
+```
+
+'Ari4' / [AbilityIds.itemRazoriceAttack4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRazoriceAttack4)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemRuneOfFire
+
+```wurst
+public class AbilityDefinitionItemRuneOfFire extends AbilityDefinition
+```
+
+'Arof' / [AbilityIds.itemRuneOfFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRuneOfFire)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamage(int level, real value)`
+- `presetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionItemRobesOfRevengeAttack
+
+```wurst
+public class AbilityDefinitionItemRobesOfRevengeAttack extends AbilityDefinition
+```
+
+'Arr1' / [AbilityIds.itemRobesOfRevengeAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRobesOfRevengeAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAllowedDamageType(int level, string value)`
+- `setAbility(int level, string value)`
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `setTargetType(int level, string value)`
+- `presetAllowedDamageType(StringLevelClosure lc)`
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+
+### AbilityDefinitionOnSpellAttackSample
+
+```wurst
+public class AbilityDefinitionOnSpellAttackSample extends AbilityDefinition
+```
+
+'Asas' / [AbilityIds.onSpellAttackSample](/stdlib/ref/_wurst/AbilityIds.html#abilityids-onSpellAttackSample)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `setTargetType(int level, string value)`
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+
+### AbilityDefinitionItemSanctifiedChestplateHeal
+
+```wurst
+public class AbilityDefinitionItemSanctifiedChestplateHeal extends AbilityDefinition
+```
+
+'Asc1' / [AbilityIds.itemSanctifiedChestplateHeal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSanctifiedChestplateHeal)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHitPointsGained(int level, real value)`
+- `presetHitPointsGained(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSanctifiedChestplateSpellcast
+
+```wurst
+public class AbilityDefinitionItemSanctifiedChestplateSpellcast extends AbilityDefinition
+```
+
+'Asc2' / [AbilityIds.itemSanctifiedChestplateSpellcast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSanctifiedChestplateSpellcast)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `setTargetType(int level, string value)`
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+
+### AbilityDefinitionItemChillNova3
+
+```wurst
+public class AbilityDefinitionItemChillNova3 extends AbilityDefinition
+```
+
+'Asc3' / [AbilityIds.itemChillNova3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemChillNova3)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAreaofEffectDamage(int level, real value)`
+- `setSpecificTargetDamage(int level, real value)`
+- `setMaximumDamage(int level, real value)`
+- `presetAreaofEffectDamage(RealLevelClosure lc)`
+- `presetSpecificTargetDamage(RealLevelClosure lc)`
+- `presetMaximumDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionItemChillNova5
+
+```wurst
+public class AbilityDefinitionItemChillNova5 extends AbilityDefinition
+```
+
+'Asc5' / [AbilityIds.itemChillNova5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemChillNova5)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAreaofEffectDamage(int level, real value)`
+- `setSpecificTargetDamage(int level, real value)`
+- `setMaximumDamage(int level, real value)`
+- `presetAreaofEffectDamage(RealLevelClosure lc)`
+- `presetSpecificTargetDamage(RealLevelClosure lc)`
+- `presetMaximumDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionItemShieldOfTheScarletCrusadeAttack
+
+```wurst
+public class AbilityDefinitionItemShieldOfTheScarletCrusadeAttack extends AbilityDefinition
+```
+
+'Asca' / [AbilityIds.itemShieldOfTheScarletCrusadeAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemShieldOfTheScarletCrusadeAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAllowedDamageType(int level, string value)`
+- `setAbility(int level, string value)`
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `setTargetType(int level, string value)`
+- `presetAllowedDamageType(StringLevelClosure lc)`
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+
+### AbilityDefinitionItemShieldOfTheScarletCrusadeHeal
+
+```wurst
+public class AbilityDefinitionItemShieldOfTheScarletCrusadeHeal extends AbilityDefinition
+```
+
+'Asch' / [AbilityIds.itemShieldOfTheScarletCrusadeHeal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemShieldOfTheScarletCrusadeHeal)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHitPointsGained(int level, real value)`
+- `presetHitPointsGained(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSanctifiedChestplateImmo
+
+```wurst
+public class AbilityDefinitionItemSanctifiedChestplateImmo extends AbilityDefinition
+```
+
+'Asci' / [AbilityIds.itemSanctifiedChestplateImmo](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSanctifiedChestplateImmo)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setManaUsedPerSecond(int level, int value)`
+- `setDamagePerDuration(int level, int value)`
+- `setExtraManaRequired(int level, int value)`
+- `presetManaUsedPerSecond(IntLevelClosure lc)`
+- `presetDamagePerDuration(IntLevelClosure lc)`
+- `presetExtraManaRequired(IntLevelClosure lc)`
+
+### AbilityDefinitionItemScepterOfDarknessSummon
+
+```wurst
+public class AbilityDefinitionItemScepterOfDarknessSummon extends AbilityDefinition
+```
+
+'Asdd' / [AbilityIds.itemScepterOfDarknessSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemScepterOfDarknessSummon)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSummonedUnitCount(int level, int value)`
+- `setSummonedUnitType(int level, string value)`
+- `presetSummonedUnitCount(IntLevelClosure lc)`
+- `presetSummonedUnitType(StringLevelClosure lc)`
+
+### AbilityDefinitionClericDispelMagic
+
+```wurst
+public class AbilityDefinitionClericDispelMagic extends AbilityDefinition
+```
+
+'Asdi' / [AbilityIds.clericDispelMagic](/stdlib/ref/_wurst/AbilityIds.html#abilityids-clericDispelMagic)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSummonedUnitDamage(int level, real value)`
+- `setManaLoss(int level, real value)`
+- `presetSummonedUnitDamage(RealLevelClosure lc)`
+- `presetManaLoss(RealLevelClosure lc)`
+
+### AbilityDefinitionItemScepterOfDarknessSpellcast
+
+```wurst
+public class AbilityDefinitionItemScepterOfDarknessSpellcast extends AbilityDefinition
+```
+
+'Asdx' / [AbilityIds.itemScepterOfDarknessSpellcast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemScepterOfDarknessSpellcast)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `setTargetType(int level, string value)`
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+
+### AbilityDefinitionClericHeal
+
+```wurst
+public class AbilityDefinitionClericHeal extends AbilityDefinition
+```
+
+'Asea' / [AbilityIds.clericHeal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-clericHeal)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHitPointsGained(int level, real value)`
+- `presetHitPointsGained(RealLevelClosure lc)`
+
+### AbilityDefinitionInquisitorFlamestrike
+
+```wurst
+public class AbilityDefinitionInquisitorFlamestrike extends AbilityDefinition
+```
+
+'Asfs' / [AbilityIds.inquisitorFlamestrike](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inquisitorFlamestrike)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setFullDamageInterval(int level, real value)`
+- `setFullDamageDealt(int level, real value)`
+- `setHalfDamageDealt(int level, real value)`
+- `setBuildingReduction(int level, real value)`
+- `setMaximumDamage(int level, real value)`
+- `setHalfDamageInterval(int level, real value)`
+- `presetFullDamageInterval(RealLevelClosure lc)`
+- `presetFullDamageDealt(RealLevelClosure lc)`
+- `presetHalfDamageDealt(RealLevelClosure lc)`
+- `presetBuildingReduction(RealLevelClosure lc)`
+- `presetMaximumDamage(RealLevelClosure lc)`
+- `presetHalfDamageInterval(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSanctifiedGauntletsImpale
+
+```wurst
+public class AbilityDefinitionItemSanctifiedGauntletsImpale extends AbilityDefinition
+```
+
+'Asg1' / [AbilityIds.itemSanctifiedGauntletsImpale](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSanctifiedGauntletsImpale)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setWaveTimeseconds(int level, real value)`
+- `setAirTimeseconds(int level, real value)`
+- `setDamageDealt(int level, real value)`
+- `setWaveDistance(int level, real value)`
+- `setUninterruptible(int level, bool value)`
+- `setAirborneTargetsVulnerable(int level, bool value)`
+- `presetWaveTimeseconds(RealLevelClosure lc)`
+- `presetAirTimeseconds(RealLevelClosure lc)`
+- `presetDamageDealt(RealLevelClosure lc)`
+- `presetWaveDistance(RealLevelClosure lc)`
+- `presetUninterruptible(BooleanLevelClosure lc)`
+- `presetAirborneTargetsVulnerable(BooleanLevelClosure lc)`
+
+### AbilityDefinitionItemSanctifiedGauntletsAttack
+
+```wurst
+public class AbilityDefinitionItemSanctifiedGauntletsAttack extends AbilityDefinition
+```
+
+'Asg2' / [AbilityIds.itemSanctifiedGauntletsAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSanctifiedGauntletsAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemSwordOfTheGhostlandsAttack
+
+```wurst
+public class AbilityDefinitionItemSwordOfTheGhostlandsAttack extends AbilityDefinition
+```
+
+'Asga' / [AbilityIds.itemSwordOfTheGhostlandsAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSwordOfTheGhostlandsAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemSwordOfTheGhostlandsHoT
+
+```wurst
+public class AbilityDefinitionItemSwordOfTheGhostlandsHoT extends AbilityDefinition
+```
+
+'Asgh' / [AbilityIds.itemSwordOfTheGhostlandsHoT](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSwordOfTheGhostlandsHoT)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setLifeRegenerationRate(int level, real value)`
+- `setDamageIncrease(int level, real value)`
+  Damage Increase (%) / 'Roa1'
+- `setManaRegen(int level, real value)`
+- `setDefenseIncrease(int level, int value)`
+- `setPreferHostiles(int level, bool value)`
+- `setPreferFriendlies(int level, bool value)`
+- `setMaxUnits(int level, int value)`
+- `presetLifeRegenerationRate(RealLevelClosure lc)`
+- `presetDamageIncrease(RealLevelClosure lc)`
+- `presetManaRegen(RealLevelClosure lc)`
+- `presetDefenseIncrease(IntLevelClosure lc)`
+- `presetPreferHostiles(BooleanLevelClosure lc)`
+- `presetPreferFriendlies(BooleanLevelClosure lc)`
+- `presetMaxUnits(IntLevelClosure lc)`
+
+### AbilityDefinitionItemShepherdSCurse
+
+```wurst
+public class AbilityDefinitionItemShepherdSCurse extends AbilityDefinition
+```
+
+'Ashc' / [AbilityIds.itemShepherdSCurse](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemShepherdSCurse)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMaximumCreepLevel(int level, int value)`
+- `setMorphUnitsAir(int level, string value)`
+- `setMorphUnitsGround(int level, string value)`
+- `setMorphUnitsWater(int level, string value)`
+- `setMorphUnitsAmphibious(int level, string value)`
+- `presetMaximumCreepLevel(IntLevelClosure lc)`
+- `presetMorphUnitsAir(StringLevelClosure lc)`
+- `presetMorphUnitsGround(StringLevelClosure lc)`
+- `presetMorphUnitsWater(StringLevelClosure lc)`
+- `presetMorphUnitsAmphibious(StringLevelClosure lc)`
+
+### AbilityDefinitionSummonInfectiousGhoul
+
+```wurst
+public class AbilityDefinitionSummonInfectiousGhoul extends AbilityDefinition
+```
+
+'Asic' / [AbilityIds.summonInfectiousGhoul](/stdlib/ref/_wurst/AbilityIds.html#abilityids-summonInfectiousGhoul)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSummonedUnitCount(int level, int value)`
+- `setSummonedUnitType(int level, string value)`
+- `presetSummonedUnitCount(IntLevelClosure lc)`
+- `presetSummonedUnitType(StringLevelClosure lc)`
+
+### AbilityDefinitionClericInnerFire
+
+```wurst
+public class AbilityDefinitionClericInnerFire extends AbilityDefinition
+```
+
+'Asif' / [AbilityIds.clericInnerFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-clericInnerFire)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageIncrease(int level, real value)`
+  Damage Increase (%) / 'Inf1'
+- `setDefenseIncrease(int level, int value)`
+- `setLifeRegenRate(int level, real value)`
+- `setAutocastRange(int level, real value)`
+- `presetDamageIncrease(RealLevelClosure lc)`
+- `presetDefenseIncrease(IntLevelClosure lc)`
+- `presetLifeRegenRate(RealLevelClosure lc)`
+- `presetAutocastRange(RealLevelClosure lc)`
+
+### AbilityDefinitionItemVestmentsStormKingMS
+
+```wurst
+public class AbilityDefinitionItemVestmentsStormKingMS extends AbilityDefinition
+```
+
+'Ask1' / [AbilityIds.itemVestmentsStormKingMS](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemVestmentsStormKingMS)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageDealt(int level, real value)`
+- `setDamageInterval(int level, real value)`
+- `setBuildingReduction(int level, real value)`
+- `presetDamageDealt(RealLevelClosure lc)`
+- `presetDamageInterval(RealLevelClosure lc)`
+- `presetBuildingReduction(RealLevelClosure lc)`
+
+### AbilityDefinitionItemVestmentsStormKingSpellcast
+
+```wurst
+public class AbilityDefinitionItemVestmentsStormKingSpellcast extends AbilityDefinition
+```
+
+'Ask2' / [AbilityIds.itemVestmentsStormKingSpellcast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemVestmentsStormKingSpellcast)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `setTargetType(int level, string value)`
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+
+### AbilityDefinitionItemTomeOfTheSpiderkindAttack
+
+```wurst
+public class AbilityDefinitionItemTomeOfTheSpiderkindAttack extends AbilityDefinition
+```
+
+'Aska' / [AbilityIds.itemTomeOfTheSpiderkindAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemTomeOfTheSpiderkindAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemTomeOfTheSpiderkindSummon
+
+```wurst
+public class AbilityDefinitionItemTomeOfTheSpiderkindSummon extends AbilityDefinition
+```
+
+'Asks' / [AbilityIds.itemTomeOfTheSpiderkindSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemTomeOfTheSpiderkindSummon)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSummonedUnitCount(int level, int value)`
+- `setSummonedUnitType(int level, string value)`
+- `presetSummonedUnitCount(IntLevelClosure lc)`
+- `presetSummonedUnitType(StringLevelClosure lc)`
+
+### AbilityDefinitionBandOfTheSkeletalMageFrostNova
+
+```wurst
+public class AbilityDefinitionBandOfTheSkeletalMageFrostNova extends AbilityDefinition
+```
+
+'Asmn' / [AbilityIds.bandOfTheSkeletalMageFrostNova](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bandOfTheSkeletalMageFrostNova)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAreaofEffectDamage(int level, real value)`
+- `setSpecificTargetDamage(int level, real value)`
+- `setMaximumDamage(int level, real value)`
+- `presetAreaofEffectDamage(RealLevelClosure lc)`
+- `presetSpecificTargetDamage(RealLevelClosure lc)`
+- `presetMaximumDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionBandOfTheSkeletalMageOrb
+
+```wurst
+public class AbilityDefinitionBandOfTheSkeletalMageOrb extends AbilityDefinition
+```
+
+'Asmo' / [AbilityIds.bandOfTheSkeletalMageOrb](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bandOfTheSkeletalMageOrb)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChanceToHitUnits(int level, real value)`
+  Chance To Hit Units (%) / 'Iob2'
+- `setChanceToHitSummons(int level, real value)`
+  Chance To Hit Summons (%) / 'Iob4'
+- `setEffectAbility(int level, string value)`
+- `setChanceToHitHeros(int level, real value)`
+  Chance To Hit Heros (%) / 'Iob3'
+- `setDamageBonus(int level, real value)`
+- `setEnabledAttackIndex(int level, int value)`
+- `presetChanceToHitUnits(RealLevelClosure lc)`
+- `presetChanceToHitSummons(RealLevelClosure lc)`
+- `presetEffectAbility(StringLevelClosure lc)`
+- `presetChanceToHitHeros(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetEnabledAttackIndex(IntLevelClosure lc)`
+
+### AbilityDefinitionItemScytheOfFrostAura
+
+```wurst
+public class AbilityDefinitionItemScytheOfFrostAura extends AbilityDefinition
+```
+
+'Asof' / [AbilityIds.itemScytheOfFrostAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemScytheOfFrostAura)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMovementSpeedIncrease(int level, real value)`
+  Movement Speed Increase (%) / 'Oae1'
+- `setAttackSpeedIncrease(int level, real value)`
+  Attack Speed Increase (%) / 'Oae2'
+- `presetMovementSpeedIncrease(RealLevelClosure lc)`
+- `presetAttackSpeedIncrease(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSoulstealerMana
+
+```wurst
+public class AbilityDefinitionItemSoulstealerMana extends AbilityDefinition
+```
+
+'Asr1' / [AbilityIds.itemSoulstealerMana](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSoulstealerMana)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionItemSoulstealerAttack
+
+```wurst
+public class AbilityDefinitionItemSoulstealerAttack extends AbilityDefinition
+```
+
+'Asr2' / [AbilityIds.itemSoulstealerAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSoulstealerAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemSeleneStarfall
+
+```wurst
+public class AbilityDefinitionItemSeleneStarfall extends AbilityDefinition
+```
+
+'Ass1' / [AbilityIds.itemSeleneStarfall](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSeleneStarfall)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageDealt(int level, real value)`
+- `setDamageInterval(int level, real value)`
+- `setBuildingReduction(int level, real value)`
+- `presetDamageDealt(RealLevelClosure lc)`
+- `presetDamageInterval(RealLevelClosure lc)`
+- `presetBuildingReduction(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSeleneSpellcast
+
+```wurst
+public class AbilityDefinitionItemSeleneSpellcast extends AbilityDefinition
+```
+
+'Ass2' / [AbilityIds.itemSeleneSpellcast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSeleneSpellcast)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `setTargetType(int level, string value)`
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+
+### AbilityDefinitionInquisitorSoulburn
+
+```wurst
+public class AbilityDefinitionInquisitorSoulburn extends AbilityDefinition
+```
+
+'Assb' / [AbilityIds.inquisitorSoulburn](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inquisitorSoulburn)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageAmount(int level, real value)`
+- `setDamagePeriod(int level, real value)`
+- `setMovementSpeedReduction(int level, real value)`
+  Movement Speed Reduction (%) / 'Nso4'
+- `setAttackSpeedReduction(int level, real value)`
+  Attack Speed Reduction (%) / 'Nso5'
+- `setDamagePenalty(int level, real value)`
+- `presetDamageAmount(RealLevelClosure lc)`
+- `presetDamagePeriod(RealLevelClosure lc)`
+- `presetMovementSpeedReduction(RealLevelClosure lc)`
+- `presetAttackSpeedReduction(RealLevelClosure lc)`
+- `presetDamagePenalty(RealLevelClosure lc)`
+
+### AbilityDefinitionItemSpellShield15
+
+```wurst
+public class AbilityDefinitionItemSpellShield15 extends AbilityDefinition
+```
+
+'Assq' / [AbilityIds.itemSpellShield15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellShield15)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionItemSpellShield12
+
+```wurst
+public class AbilityDefinitionItemSpellShield12 extends AbilityDefinition
+```
+
+'Assw' / [AbilityIds.itemSpellShield12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellShield12)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionItemStormwalkersTC
+
+```wurst
+public class AbilityDefinitionItemStormwalkersTC extends AbilityDefinition
+```
+
+'Asw1' / [AbilityIds.itemStormwalkersTC](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemStormwalkersTC)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMaximumDamage(int level, real value)`
+- `setMovementSpeedReduction(int level, real value)`
+  Movement Speed Reduction (%) / 'Htc3'
+- `setAttackSpeedReduction(int level, real value)`
+  Attack Speed Reduction (%) / 'Htc4'
+- `setAOEDamage(int level, real value)`
+- `setSpecificTargetDamage(int level, real value)`
+- `presetMaximumDamage(RealLevelClosure lc)`
+- `presetMovementSpeedReduction(RealLevelClosure lc)`
+- `presetAttackSpeedReduction(RealLevelClosure lc)`
+- `presetAOEDamage(RealLevelClosure lc)`
+- `presetSpecificTargetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionItemStormwalkersSpellcast
+
+```wurst
+public class AbilityDefinitionItemStormwalkersSpellcast extends AbilityDefinition
+```
+
+'Asw2' / [AbilityIds.itemStormwalkersSpellcast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemStormwalkersSpellcast)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `setTargetType(int level, string value)`
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+
+### AbilityDefinitionOnHitChainLightningAttack
+
+```wurst
+public class AbilityDefinitionOnHitChainLightningAttack extends AbilityDefinition
+```
+
+'Asx1' / [AbilityIds.onHitChainLightningAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-onHitChainLightningAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setNumberofTargetsHit(int level, int value)`
+- `setDamageperTarget(int level, real value)`
+- `setDamageReductionperTarget(int level, real value)`
+- `presetNumberofTargetsHit(IntLevelClosure lc)`
+- `presetDamageperTarget(RealLevelClosure lc)`
+- `presetDamageReductionperTarget(RealLevelClosure lc)`
+
+### AbilityDefinitionBagOfDust
+
+```wurst
+public class AbilityDefinitionBagOfDust extends AbilityDefinition
+```
+
+'Atbd' / [AbilityIds.bagOfDust](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bagOfDust)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChancetoMiss(int level, real value)`
+- `presetChancetoMiss(RealLevelClosure lc)`
+
+### AbilityDefinitionAtds
+
+```wurst
+public class AbilityDefinitionAtds extends AbilityDefinition
+```
+
+'Atds' / [AbilityIds.atds](/stdlib/ref/_wurst/AbilityIds.html#abilityids-atds)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAllowedDamageType(int level, string value)`
+- `setAbility(int level, string value)`
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `setTargetType(int level, string value)`
+- `presetAllowedDamageType(StringLevelClosure lc)`
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+
+### AbilityDefinitionForsakenFangs
+
+```wurst
+public class AbilityDefinitionForsakenFangs extends AbilityDefinition
+```
+
+'Atff' / [AbilityIds.forsakenFangs](/stdlib/ref/_wurst/AbilityIds.html#abilityids-forsakenFangs)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHitPointsperSecond(int level, real value)`
+- `setMaxHitPoints(int level, real value)`
+- `presetHitPointsperSecond(RealLevelClosure lc)`
+- `presetMaxHitPoints(RealLevelClosure lc)`
+
+### AbilityDefinitionKnightSJavelin
+
+```wurst
+public class AbilityDefinitionKnightSJavelin extends AbilityDefinition
+```
+
+'Atkj' / [AbilityIds.knightSJavelin](/stdlib/ref/_wurst/AbilityIds.html#abilityids-knightSJavelin)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamage(int level, real value)`
+- `presetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionTiaraOfTheKirinTor
+
+```wurst
+public class AbilityDefinitionTiaraOfTheKirinTor extends AbilityDefinition
+```
+
+'Atkt' / [AbilityIds.tiaraOfTheKirinTor](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tiaraOfTheKirinTor)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setInitialDamage(int level, real value)`
+- `setDamagePerSecond(int level, real value)`
+- `presetInitialDamage(RealLevelClosure lc)`
+- `presetDamagePerSecond(RealLevelClosure lc)`
+
+### AbilityDefinitionItemManaBauble
+
+```wurst
+public class AbilityDefinitionItemManaBauble extends AbilityDefinition
+```
+
+'Atmb' / [AbilityIds.itemManaBauble](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaBauble)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMaximumManaAbsorbed(int level, real value)`
+- `setMaximumLifeAbsorbed(int level, real value)`
+- `presetMaximumManaAbsorbed(RealLevelClosure lc)`
+- `presetMaximumLifeAbsorbed(RealLevelClosure lc)`
+
+### AbilityDefinitionTalismanOfNightmaresOrb
+
+```wurst
+public class AbilityDefinitionTalismanOfNightmaresOrb extends AbilityDefinition
+```
+
+'Atno' / [AbilityIds.talismanOfNightmaresOrb](/stdlib/ref/_wurst/AbilityIds.html#abilityids-talismanOfNightmaresOrb)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setChanceToHitUnits(int level, real value)`
+  Chance To Hit Units (%) / 'Iob2'
+- `setChanceToHitSummons(int level, real value)`
+  Chance To Hit Summons (%) / 'Iob4'
+- `setEffectAbility(int level, string value)`
+- `setChanceToHitHeros(int level, real value)`
+  Chance To Hit Heros (%) / 'Iob3'
+- `setDamageBonus(int level, real value)`
+- `setEnabledAttackIndex(int level, int value)`
+- `presetChanceToHitUnits(RealLevelClosure lc)`
+- `presetChanceToHitSummons(RealLevelClosure lc)`
+- `presetEffectAbility(StringLevelClosure lc)`
+- `presetChanceToHitHeros(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetEnabledAttackIndex(IntLevelClosure lc)`
+
+### AbilityDefinitionTalismanOfNightmaresSleep
+
+```wurst
+public class AbilityDefinitionTalismanOfNightmaresSleep extends AbilityDefinition
+```
+
+'Atns' / [AbilityIds.talismanOfNightmaresSleep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-talismanOfNightmaresSleep)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setStunDuration(int level, real value)`
+- `presetStunDuration(RealLevelClosure lc)`
+
+### AbilityDefinitionThornguardRapierAttack
+
+```wurst
+public class AbilityDefinitionThornguardRapierAttack extends AbilityDefinition
+```
+
+'Atra' / [AbilityIds.thornguardRapierAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-thornguardRapierAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionThornguardRapierRejuvenation
+
+```wurst
+public class AbilityDefinitionThornguardRapierRejuvenation extends AbilityDefinition
+```
+
+'Atrr' / [AbilityIds.thornguardRapierRejuvenation](/stdlib/ref/_wurst/AbilityIds.html#abilityids-thornguardRapierRejuvenation)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setNoTargetRequired(int level, bool value)`
+- `setManaPointsGained(int level, real value)`
+- `setHitPointsGained(int level, real value)`
+- `presetNoTargetRequired(BooleanLevelClosure lc)`
+- `presetManaPointsGained(RealLevelClosure lc)`
+- `presetHitPointsGained(RealLevelClosure lc)`
+- `setAllowWhenFull(int level, int value)`
+- `presetAllowWhenFull(IntLevelClosure lc)`
+
+### AbilityDefinitionItemTheScreecherHoT
+
+```wurst
+public class AbilityDefinitionItemTheScreecherHoT extends AbilityDefinition
+```
+
+'Ats1' / [AbilityIds.itemTheScreecherHoT](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemTheScreecherHoT)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setLifeRegenerationRate(int level, real value)`
+- `setDamageIncrease(int level, real value)`
+  Damage Increase (%) / 'Roa1'
+- `setManaRegen(int level, real value)`
+- `setDefenseIncrease(int level, int value)`
+- `setPreferHostiles(int level, bool value)`
+- `setPreferFriendlies(int level, bool value)`
+- `setMaxUnits(int level, int value)`
+- `presetLifeRegenerationRate(RealLevelClosure lc)`
+- `presetDamageIncrease(RealLevelClosure lc)`
+- `presetManaRegen(RealLevelClosure lc)`
+- `presetDefenseIncrease(IntLevelClosure lc)`
+- `presetPreferHostiles(BooleanLevelClosure lc)`
+- `presetPreferFriendlies(BooleanLevelClosure lc)`
+- `presetMaxUnits(IntLevelClosure lc)`
+
+### AbilityDefinitionItemTheScreecherAttack
+
+```wurst
+public class AbilityDefinitionItemTheScreecherAttack extends AbilityDefinition
+```
+
+'Ats2' / [AbilityIds.itemTheScreecherAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemTheScreecherAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionInfectiousClaws
+
+```wurst
+public class AbilityDefinitionInfectiousClaws extends AbilityDefinition
+```
+
+'Auic' / [AbilityIds.infectiousClaws](/stdlib/ref/_wurst/AbilityIds.html#abilityids-infectiousClaws)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageBonus(int level, real value)`
+- `setSummonedUnitType(int level, string value)`
+- `setNumberofSummonedUnits(int level, int value)`
+- `setSummonedUnitDurationseconds(int level, real value)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetSummonedUnitType(StringLevelClosure lc)`
+- `presetNumberofSummonedUnits(IntLevelClosure lc)`
+- `presetSummonedUnitDurationseconds(RealLevelClosure lc)`
+
+### AbilityDefinitionItemLostSpiritsHeal
+
+```wurst
+public class AbilityDefinitionItemLostSpiritsHeal extends AbilityDefinition
+```
+
+'Avb1' / [AbilityIds.itemLostSpiritsHeal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLostSpiritsHeal)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setNumberofTargetsHit(int level, int value)`
+- `setDamageperTarget(int level, real value)`
+- `setDamageReductionperTarget(int level, real value)`
+- `presetNumberofTargetsHit(IntLevelClosure lc)`
+- `presetDamageperTarget(RealLevelClosure lc)`
+- `presetDamageReductionperTarget(RealLevelClosure lc)`
+
+### AbilityDefinitionItemLostSpiritsSpellcast
+
+```wurst
+public class AbilityDefinitionItemLostSpiritsSpellcast extends AbilityDefinition
+```
+
+'Avb2' / [AbilityIds.itemLostSpiritsSpellcast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLostSpiritsSpellcast)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `setTargetType(int level, string value)`
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+
+### AbilityDefinitionItemVestmentsWaveHeal
+
+```wurst
+public class AbilityDefinitionItemVestmentsWaveHeal extends AbilityDefinition
+```
+
+'Avm1' / [AbilityIds.itemVestmentsWaveHeal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemVestmentsWaveHeal)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setNumberofTargetsHit(int level, int value)`
+- `setDamageperTarget(int level, real value)`
+- `setDamageReductionperTarget(int level, real value)`
+- `presetNumberofTargetsHit(IntLevelClosure lc)`
+- `presetDamageperTarget(RealLevelClosure lc)`
+- `presetDamageReductionperTarget(RealLevelClosure lc)`
+
+### AbilityDefinitionItemVestmentsWaveSpellcast
+
+```wurst
+public class AbilityDefinitionItemVestmentsWaveSpellcast extends AbilityDefinition
+```
+
+'Avm2' / [AbilityIds.itemVestmentsWaveSpellcast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemVestmentsWaveSpellcast)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `setTargetType(int level, string value)`
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+
+### AbilityDefinitionItemBloodstoneHeal
+
+```wurst
+public class AbilityDefinitionItemBloodstoneHeal extends AbilityDefinition
+```
+
+'Avs1' / [AbilityIds.itemBloodstoneHeal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBloodstoneHeal)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setNumberofTargetsHit(int level, int value)`
+- `setDamageperTarget(int level, real value)`
+- `setDamageReductionperTarget(int level, real value)`
+- `presetNumberofTargetsHit(IntLevelClosure lc)`
+- `presetDamageperTarget(RealLevelClosure lc)`
+- `presetDamageReductionperTarget(RealLevelClosure lc)`
+
+### AbilityDefinitionItemBloodstoneAttack
+
+```wurst
+public class AbilityDefinitionItemBloodstoneAttack extends AbilityDefinition
+```
+
+'Avs2' / [AbilityIds.itemBloodstoneAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBloodstoneAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionItemZandalariGiantcrusherWS
+
+```wurst
+public class AbilityDefinitionItemZandalariGiantcrusherWS extends AbilityDefinition
+```
+
+'Azgw' / [AbilityIds.itemZandalariGiantcrusherWS](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemZandalariGiantcrusherWS)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamage(int level, real value)`
+- `presetDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionItemZandalariGiantcrusherAttack
+
+```wurst
+public class AbilityDefinitionItemZandalariGiantcrusherAttack extends AbilityDefinition
+```
+
+'Azgx' / [AbilityIds.itemZandalariGiantcrusherAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemZandalariGiantcrusherAttack)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbility(int level, string value)`
+- `setHitchanceonHero(int level, int value)`
+  % Hit chance on Hero / 'oap2'
+- `setTargetType(int level, string value)`
+- `setHitchanceonCriticalStrike(int level, int value)`
+  % Hit chance on Critical Strike / 'oap4'
+- `setHitchanceonSummon(int level, int value)`
+  % Hit chance on Summon / 'oap3'
+- `setHitchanceonUnit(int level, int value)`
+  % Hit chance on Unit / 'oap1'
+- `setHitChance(int level, int value)`
+  % Hit Chance / 'opp2'
+- `presetAbility(StringLevelClosure lc)`
+- `presetHitchanceonHero(IntLevelClosure lc)`
+- `presetTargetType(StringLevelClosure lc)`
+- `presetHitchanceonCriticalStrike(IntLevelClosure lc)`
+- `presetHitchanceonSummon(IntLevelClosure lc)`
+- `presetHitchanceonUnit(IntLevelClosure lc)`
+- `presetHitChance(IntLevelClosure lc)`
+
+### AbilityDefinitionLeonidTalentTier1a
+
+```wurst
+public class AbilityDefinitionLeonidTalentTier1a extends AbilityDefinition
+```
+
+'BT1a' / [AbilityIds.leonidTalentTier1a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidTalentTier1a)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionLeonidTalentTier1b
+
+```wurst
+public class AbilityDefinitionLeonidTalentTier1b extends AbilityDefinition
+```
+
+'BT1b' / [AbilityIds.leonidTalentTier1b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidTalentTier1b)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionLeonidTalentTier1c
+
+```wurst
+public class AbilityDefinitionLeonidTalentTier1c extends AbilityDefinition
+```
+
+'BT1c' / [AbilityIds.leonidTalentTier1c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidTalentTier1c)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionLeonidTalentTier2a
+
+```wurst
+public class AbilityDefinitionLeonidTalentTier2a extends AbilityDefinition
+```
+
+'BT2a' / [AbilityIds.leonidTalentTier2a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidTalentTier2a)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionLeonidTalentTier2b
+
+```wurst
+public class AbilityDefinitionLeonidTalentTier2b extends AbilityDefinition
+```
+
+'BT2b' / [AbilityIds.leonidTalentTier2b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidTalentTier2b)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionLeonidTalentTier2c
+
+```wurst
+public class AbilityDefinitionLeonidTalentTier2c extends AbilityDefinition
+```
+
+'BT2c' / [AbilityIds.leonidTalentTier2c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidTalentTier2c)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionLeonidTalentTier3a
+
+```wurst
+public class AbilityDefinitionLeonidTalentTier3a extends AbilityDefinition
+```
+
+'BT3a' / [AbilityIds.leonidTalentTier3a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidTalentTier3a)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionLeonidTalentTier3b
+
+```wurst
+public class AbilityDefinitionLeonidTalentTier3b extends AbilityDefinition
+```
+
+'BT3b' / [AbilityIds.leonidTalentTier3b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidTalentTier3b)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionLeonidTalentTier3c
+
+```wurst
+public class AbilityDefinitionLeonidTalentTier3c extends AbilityDefinition
+```
+
+'BT3c' / [AbilityIds.leonidTalentTier3c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidTalentTier3c)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionLeonidTalentTier4a
+
+```wurst
+public class AbilityDefinitionLeonidTalentTier4a extends AbilityDefinition
+```
+
+'BT4a' / [AbilityIds.leonidTalentTier4a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidTalentTier4a)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionLeonidTalentTier4b
+
+```wurst
+public class AbilityDefinitionLeonidTalentTier4b extends AbilityDefinition
+```
+
+'BT4b' / [AbilityIds.leonidTalentTier4b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidTalentTier4b)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionLeonidTalentTier4c
+
+```wurst
+public class AbilityDefinitionLeonidTalentTier4c extends AbilityDefinition
+```
+
+'BT4c' / [AbilityIds.leonidTalentTier4c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidTalentTier4c)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionLeonidDamageReductionTalent
+
+```wurst
+public class AbilityDefinitionLeonidDamageReductionTalent extends AbilityDefinition
+```
+
+'BT5a' / [AbilityIds.leonidDamageReductionTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidDamageReductionTalent)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setMinimumDamage(int level, real value)`
+- `setIncludeRangedDamage(int level, bool value)`
+- `setIncludeMeleeDamage(int level, bool value)`
+- `setChancetoReduceDamage(int level, real value)`
+  Chance to Reduce Damage (%) / 'Ssk1'
+- `setIgnoredDamage(int level, real value)`
+- `presetMinimumDamage(RealLevelClosure lc)`
+- `presetIncludeRangedDamage(BooleanLevelClosure lc)`
+- `presetIncludeMeleeDamage(BooleanLevelClosure lc)`
+- `presetChancetoReduceDamage(RealLevelClosure lc)`
+- `presetIgnoredDamage(RealLevelClosure lc)`
+
+### AbilityDefinitionLeonidResolveTalent
+
+```wurst
+public class AbilityDefinitionLeonidResolveTalent extends AbilityDefinition
+```
+
+'BT5b' / [AbilityIds.leonidResolveTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidResolveTalent)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setResolve(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `presetResolve(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+
+### AbilityDefinitionLeonidHealthRegenerationTalent
+
+```wurst
+public class AbilityDefinitionLeonidHealthRegenerationTalent extends AbilityDefinition
+```
+
+'BT5c' / [AbilityIds.leonidHealthRegenerationTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidHealthRegenerationTalent)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setHitPointsRegeneratedPerSecond(int level, int value)`
+- `presetHitPointsRegeneratedPerSecond(IntLevelClosure lc)`
+
+### AbilityDefinitionLeonidPlusStrAgiTalent
+
+```wurst
+public class AbilityDefinitionLeonidPlusStrAgiTalent extends AbilityDefinition
+```
+
+'BT6a' / [AbilityIds.leonidPlusStrAgiTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidPlusStrAgiTalent)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAgilityBonus(int level, int value)`
+- `setStrengthBonus(int level, int value)`
+- `setHideButton(int level, bool value)`
+- `setIntelligenceBonus(int level, int value)`
+- `presetAgilityBonus(IntLevelClosure lc)`
+- `presetStrengthBonus(IntLevelClosure lc)`
+- `presetHideButton(BooleanLevelClosure lc)`
+- `presetIntelligenceBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionLeonidMagicResistTalent
+
+```wurst
+public class AbilityDefinitionLeonidMagicResistTalent extends AbilityDefinition
+```
+
+'BT6b' / [AbilityIds.leonidMagicResistTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidMagicResistTalent)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDamageBonus(int level, real value)`
+- `setDamageReduction(int level, real value)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetDamageReduction(RealLevelClosure lc)`
+
+### AbilityDefinitionLeonidManaEfficiencyTalent
+
+```wurst
+public class AbilityDefinitionLeonidManaEfficiencyTalent extends AbilityDefinition
+```
+
+'BT6c' / [AbilityIds.leonidManaEfficiencyTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidManaEfficiencyTalent)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setFlatBonus(int level, bool value)`
+- `setManaEfficiency(int level, real value)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetManaEfficiency(RealLevelClosure lc)`
+
+### AbilityDefinitionGarekTalentTier1a
+
+```wurst
+public class AbilityDefinitionGarekTalentTier1a extends AbilityDefinition
+```
+
+'GT1a' / [AbilityIds.garekTalentTier1a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekTalentTier1a)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionGarekTalentTier1b
+
+```wurst
+public class AbilityDefinitionGarekTalentTier1b extends AbilityDefinition
+```
+
+'GT1b' / [AbilityIds.garekTalentTier1b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekTalentTier1b)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionGarekTalentTier1c
+
+```wurst
+public class AbilityDefinitionGarekTalentTier1c extends AbilityDefinition
+```
+
+'GT1c' / [AbilityIds.garekTalentTier1c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekTalentTier1c)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionGarekTalentTier2a
+
+```wurst
+public class AbilityDefinitionGarekTalentTier2a extends AbilityDefinition
+```
+
+'GT2a' / [AbilityIds.garekTalentTier2a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekTalentTier2a)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionGarekTalentTier2b
+
+```wurst
+public class AbilityDefinitionGarekTalentTier2b extends AbilityDefinition
+```
+
+'GT2b' / [AbilityIds.garekTalentTier2b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekTalentTier2b)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionGarekTalentTier2c
+
+```wurst
+public class AbilityDefinitionGarekTalentTier2c extends AbilityDefinition
+```
+
+'GT2c' / [AbilityIds.garekTalentTier2c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekTalentTier2c)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionGarekTalentTier3a
+
+```wurst
+public class AbilityDefinitionGarekTalentTier3a extends AbilityDefinition
+```
+
+'GT3a' / [AbilityIds.garekTalentTier3a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekTalentTier3a)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionGarekTalentTier3b
+
+```wurst
+public class AbilityDefinitionGarekTalentTier3b extends AbilityDefinition
+```
+
+'GT3b' / [AbilityIds.garekTalentTier3b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekTalentTier3b)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionGarekTalentTier3c
+
+```wurst
+public class AbilityDefinitionGarekTalentTier3c extends AbilityDefinition
+```
+
+'GT3c' / [AbilityIds.garekTalentTier3c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekTalentTier3c)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionGarekTalentTier4a
+
+```wurst
+public class AbilityDefinitionGarekTalentTier4a extends AbilityDefinition
+```
+
+'GT4a' / [AbilityIds.garekTalentTier4a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekTalentTier4a)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionGarekTalentTier4b
+
+```wurst
+public class AbilityDefinitionGarekTalentTier4b extends AbilityDefinition
+```
+
+'GT4b' / [AbilityIds.garekTalentTier4b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekTalentTier4b)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionGarekTalentTier4c
+
+```wurst
+public class AbilityDefinitionGarekTalentTier4c extends AbilityDefinition
+```
+
+'GT4c' / [AbilityIds.garekTalentTier4c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekTalentTier4c)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionIlastarTalentTier1a
+
+```wurst
+public class AbilityDefinitionIlastarTalentTier1a extends AbilityDefinition
+```
+
+'IT1a' / [AbilityIds.ilastarTalentTier1a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarTalentTier1a)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionIlastarTalentTier1b
+
+```wurst
+public class AbilityDefinitionIlastarTalentTier1b extends AbilityDefinition
+```
+
+'IT1b' / [AbilityIds.ilastarTalentTier1b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarTalentTier1b)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionIlastarTalentTier1c
+
+```wurst
+public class AbilityDefinitionIlastarTalentTier1c extends AbilityDefinition
+```
+
+'IT1c' / [AbilityIds.ilastarTalentTier1c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarTalentTier1c)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionIlastarTalentTier2a
+
+```wurst
+public class AbilityDefinitionIlastarTalentTier2a extends AbilityDefinition
+```
+
+'IT2a' / [AbilityIds.ilastarTalentTier2a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarTalentTier2a)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionIlastarTalentTier2b
+
+```wurst
+public class AbilityDefinitionIlastarTalentTier2b extends AbilityDefinition
+```
+
+'IT2b' / [AbilityIds.ilastarTalentTier2b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarTalentTier2b)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionIlastarTalentTier2c
+
+```wurst
+public class AbilityDefinitionIlastarTalentTier2c extends AbilityDefinition
+```
+
+'IT2c' / [AbilityIds.ilastarTalentTier2c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarTalentTier2c)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionIlastarTalentTier3a
+
+```wurst
+public class AbilityDefinitionIlastarTalentTier3a extends AbilityDefinition
+```
+
+'IT3a' / [AbilityIds.ilastarTalentTier3a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarTalentTier3a)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionIlastarTalentTier3b
+
+```wurst
+public class AbilityDefinitionIlastarTalentTier3b extends AbilityDefinition
+```
+
+'IT3b' / [AbilityIds.ilastarTalentTier3b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarTalentTier3b)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionIlastarTalentTier3c
+
+```wurst
+public class AbilityDefinitionIlastarTalentTier3c extends AbilityDefinition
+```
+
+'IT3c' / [AbilityIds.ilastarTalentTier3c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarTalentTier3c)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionIlastarTalentTier4a
+
+```wurst
+public class AbilityDefinitionIlastarTalentTier4a extends AbilityDefinition
+```
+
+'IT4a' / [AbilityIds.ilastarTalentTier4a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarTalentTier4a)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionIlastarTalentTier4b
+
+```wurst
+public class AbilityDefinitionIlastarTalentTier4b extends AbilityDefinition
+```
+
+'IT4b' / [AbilityIds.ilastarTalentTier4b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarTalentTier4b)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionIlastarTalentTier4c
+
+```wurst
+public class AbilityDefinitionIlastarTalentTier4c extends AbilityDefinition
+```
+
+'IT4c' / [AbilityIds.ilastarTalentTier4c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarTalentTier4c)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionIlastarTalentTier6c
+
+```wurst
+public class AbilityDefinitionIlastarTalentTier6c extends AbilityDefinition
+```
+
+'IT6c' / [AbilityIds.ilastarTalentTier6c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarTalentTier6c)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionLandenTalentTier1a
+
+```wurst
+public class AbilityDefinitionLandenTalentTier1a extends AbilityDefinition
+```
+
+'LT1a' / [AbilityIds.landenTalentTier1a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-landenTalentTier1a)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionLandenTalentTier1b
+
+```wurst
+public class AbilityDefinitionLandenTalentTier1b extends AbilityDefinition
+```
+
+'LT1b' / [AbilityIds.landenTalentTier1b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-landenTalentTier1b)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionLandenTalentTier1c
+
+```wurst
+public class AbilityDefinitionLandenTalentTier1c extends AbilityDefinition
+```
+
+'LT1c' / [AbilityIds.landenTalentTier1c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-landenTalentTier1c)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionLandenTalentTier2a
+
+```wurst
+public class AbilityDefinitionLandenTalentTier2a extends AbilityDefinition
+```
+
+'LT2a' / [AbilityIds.landenTalentTier2a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-landenTalentTier2a)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionLandenTalentTier2b
+
+```wurst
+public class AbilityDefinitionLandenTalentTier2b extends AbilityDefinition
+```
+
+'LT2b' / [AbilityIds.landenTalentTier2b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-landenTalentTier2b)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionLandenTalentTier2c
+
+```wurst
+public class AbilityDefinitionLandenTalentTier2c extends AbilityDefinition
+```
+
+'LT2c' / [AbilityIds.landenTalentTier2c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-landenTalentTier2c)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionLandenTalentTier3a
+
+```wurst
+public class AbilityDefinitionLandenTalentTier3a extends AbilityDefinition
+```
+
+'LT3a' / [AbilityIds.landenTalentTier3a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-landenTalentTier3a)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionLandenTalentTier3b
+
+```wurst
+public class AbilityDefinitionLandenTalentTier3b extends AbilityDefinition
+```
+
+'LT3b' / [AbilityIds.landenTalentTier3b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-landenTalentTier3b)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionLandenTalentTier3c
+
+```wurst
+public class AbilityDefinitionLandenTalentTier3c extends AbilityDefinition
+```
+
+'LT3c' / [AbilityIds.landenTalentTier3c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-landenTalentTier3c)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionLandenTalentTier4a
+
+```wurst
+public class AbilityDefinitionLandenTalentTier4a extends AbilityDefinition
+```
+
+'LT4a' / [AbilityIds.landenTalentTier4a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-landenTalentTier4a)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionLandenTalentTier4b
+
+```wurst
+public class AbilityDefinitionLandenTalentTier4b extends AbilityDefinition
+```
+
+'LT4b' / [AbilityIds.landenTalentTier4b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-landenTalentTier4b)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionLandenTalentTier4c
+
+```wurst
+public class AbilityDefinitionLandenTalentTier4c extends AbilityDefinition
+```
+
+'LT4c' / [AbilityIds.landenTalentTier4c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-landenTalentTier4c)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionUgarekTalentTier1a
+
+```wurst
+public class AbilityDefinitionUgarekTalentTier1a extends AbilityDefinition
+```
+
+'UT1a' / [AbilityIds.ugarekTalentTier1a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ugarekTalentTier1a)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionUgarekTalentTier1b
+
+```wurst
+public class AbilityDefinitionUgarekTalentTier1b extends AbilityDefinition
+```
+
+'UT1b' / [AbilityIds.ugarekTalentTier1b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ugarekTalentTier1b)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionUgarekTalentTier1c
+
+```wurst
+public class AbilityDefinitionUgarekTalentTier1c extends AbilityDefinition
+```
+
+'UT1c' / [AbilityIds.ugarekTalentTier1c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ugarekTalentTier1c)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionUgarekTalentTier2a
+
+```wurst
+public class AbilityDefinitionUgarekTalentTier2a extends AbilityDefinition
+```
+
+'UT2a' / [AbilityIds.ugarekTalentTier2a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ugarekTalentTier2a)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionUgarekTalentTier2b
+
+```wurst
+public class AbilityDefinitionUgarekTalentTier2b extends AbilityDefinition
+```
+
+'UT2b' / [AbilityIds.ugarekTalentTier2b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ugarekTalentTier2b)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionUgarekTalentTier2c
+
+```wurst
+public class AbilityDefinitionUgarekTalentTier2c extends AbilityDefinition
+```
+
+'UT2c' / [AbilityIds.ugarekTalentTier2c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ugarekTalentTier2c)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionUgarekTalentTier3a
+
+```wurst
+public class AbilityDefinitionUgarekTalentTier3a extends AbilityDefinition
+```
+
+'UT3a' / [AbilityIds.ugarekTalentTier3a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ugarekTalentTier3a)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionUgarekTalentTier3b
+
+```wurst
+public class AbilityDefinitionUgarekTalentTier3b extends AbilityDefinition
+```
+
+'UT3b' / [AbilityIds.ugarekTalentTier3b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ugarekTalentTier3b)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionUgarekTalentTier3c
+
+```wurst
+public class AbilityDefinitionUgarekTalentTier3c extends AbilityDefinition
+```
+
+'UT3c' / [AbilityIds.ugarekTalentTier3c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ugarekTalentTier3c)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionUgarekTalentTier4a
+
+```wurst
+public class AbilityDefinitionUgarekTalentTier4a extends AbilityDefinition
+```
+
+'UT4a' / [AbilityIds.ugarekTalentTier4a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ugarekTalentTier4a)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionUgarekTalentTier4b
+
+```wurst
+public class AbilityDefinitionUgarekTalentTier4b extends AbilityDefinition
+```
+
+'UT4b' / [AbilityIds.ugarekTalentTier4b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ugarekTalentTier4b)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionUgarekTalentTier4c
+
+```wurst
+public class AbilityDefinitionUgarekTalentTier4c extends AbilityDefinition
+```
+
+'UT4c' / [AbilityIds.ugarekTalentTier4c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ugarekTalentTier4c)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAbilityUpgrade(int level, string value)`
+  Ability Upgrade 1 / 'Neg3'
+- `setAbilityUpgrade1(int level, string value)`
+  Ability Upgrade 3 / 'Neg5'
+- `setAbilityUpgrade2(int level, string value)`
+  Ability Upgrade 4 / 'Neg6'
+- `setMoveSpeedBonus(int level, real value)`
+- `setDamageBonus(int level, real value)`
+- `setAbilityUpgrade3(int level, string value)`
+  Ability Upgrade 2 / 'Neg4'
+- `presetAbilityUpgrade(StringLevelClosure lc)`
+- `presetAbilityUpgrade1(StringLevelClosure lc)`
+- `presetAbilityUpgrade2(StringLevelClosure lc)`
+- `presetMoveSpeedBonus(RealLevelClosure lc)`
+- `presetDamageBonus(RealLevelClosure lc)`
+- `presetAbilityUpgrade3(StringLevelClosure lc)`
+
+### AbilityDefinitionGarekArmorTalent
+
+```wurst
+public class AbilityDefinitionGarekArmorTalent extends AbilityDefinition
+```
+
+'UT5a' / [AbilityIds.garekArmorTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekArmorTalent)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDefenseBonus(int level, int value)`
+- `presetDefenseBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionGarekSpellAmpTalent
+
+```wurst
+public class AbilityDefinitionGarekSpellAmpTalent extends AbilityDefinition
+```
+
+'UT5b' / [AbilityIds.garekSpellAmpTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekSpellAmpTalent)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setSpellAmp(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `setAppliestoHealingfromItems(int level, bool value)`
+- `presetSpellAmp(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetAppliestoHealingfromItems(BooleanLevelClosure lc)`
+
+### AbilityDefinitionGarekPlusStrengIntTalent
+
+```wurst
+public class AbilityDefinitionGarekPlusStrengIntTalent extends AbilityDefinition
+```
+
+'UT5c' / [AbilityIds.garekPlusStrengIntTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekPlusStrengIntTalent)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setAgilityBonus(int level, int value)`
+- `setStrengthBonus(int level, int value)`
+- `setHideButton(int level, bool value)`
+- `setIntelligenceBonus(int level, int value)`
+- `presetAgilityBonus(IntLevelClosure lc)`
+- `presetStrengthBonus(IntLevelClosure lc)`
+- `presetHideButton(BooleanLevelClosure lc)`
+- `presetIntelligenceBonus(IntLevelClosure lc)`
+
+### AbilityDefinitionGarekCleaveTalent
+
+```wurst
+public class AbilityDefinitionGarekCleaveTalent extends AbilityDefinition
+```
+
+'UT6a' / [AbilityIds.garekCleaveTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekCleaveTalent)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setDistributedDamageFactor(int level, real value)`
+- `presetDistributedDamageFactor(RealLevelClosure lc)`
+
+### AbilityDefinitionGarekCooldownReductionTalent
+
+```wurst
+public class AbilityDefinitionGarekCooldownReductionTalent extends AbilityDefinition
+```
+
+'UT6b' / [AbilityIds.garekCooldownReductionTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekCooldownReductionTalent)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setCooldownReduction(int level, real value)`
+- `setFlatBonus(int level, bool value)`
+- `presetCooldownReduction(RealLevelClosure lc)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+
+### AbilityDefinitionGarekManaEfficiencyTalent
+
+```wurst
+public class AbilityDefinitionGarekManaEfficiencyTalent extends AbilityDefinition
+```
+
+'UT6c' / [AbilityIds.garekManaEfficiencyTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekManaEfficiencyTalent)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+- `setFlatBonus(int level, bool value)`
+- `setManaEfficiency(int level, real value)`
+- `presetFlatBonus(BooleanLevelClosure lc)`
+- `presetManaEfficiency(RealLevelClosure lc)`
+
+### AbilityDefinitionArmorBonus
+
+```wurst
+public class AbilityDefinitionArmorBonus extends AbilityDefinitionDefenseBonusPlus1
+```
+
+'AId1' / [AbilityIds.itemArmorBonus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorBonus)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionBeserk
+
+```wurst
+public class AbilityDefinitionBeserk extends AbilityDefinitionBerserk
+```
+
+'Absk' / [AbilityIds.berserkerRage1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-berserkerRage1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionAlliedBuilding
+
+```wurst
+public class AbilityDefinitionAlliedBuilding extends AbilityDefinitionShopSharing
+```
+
+'Aall' / [AbilityIds.shopSharingAlliedBldg](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shopSharingAlliedBldg)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionItemChainLightning
+
+```wurst
+public class AbilityDefinitionItemChainLightning extends AbilityDefinitionChainLightningcreep
+```
+
+'ACcl' / [AbilityIds.chainLightning](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chainLightning)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionSlow1
+
+```wurst
+public class AbilityDefinitionSlow1 extends AbilityDefinitionSlowCreep
+```
+
+'ACsw' / [AbilityIds.slow1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-slow1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionCyclone1
+
+```wurst
+public class AbilityDefinitionCyclone1 extends AbilityDefinitionCyclone
+```
+
+'Acyc' / [AbilityIds.cyclone1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cyclone1)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionColdArrows
+
+```wurst
+public class AbilityDefinitionColdArrows extends AbilityDefinitionRangerColdArrows
+```
+
+'AHca' / [AbilityIds.coldArrows](/stdlib/ref/_wurst/AbilityIds.html#abilityids-coldArrows)
+
+**Members:**
+
+- `construct(int newAbilityId)`
+
+### AbilityDefinitionHealingWard1
+
+```wurst
+public class AbilityDefinitionHealingWard1 extends AbilityDefinitionHealingWard
+```
+
+'Ahwd' / [AbilityIds.healingWard1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-healingWard1)
 
 **Members:**
 

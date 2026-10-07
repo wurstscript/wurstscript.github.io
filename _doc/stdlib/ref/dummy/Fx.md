@@ -85,3 +85,16 @@ public class Fx
   Set the position to the given xy vector tuple
 - `setXYZ(vec3 pos)`
   Set the position to the given xyz vector tuple
+- `setXYZ(vec3 pos, boolean ignoreTerrainHeight)`
+  Set the position to the given xyz vector tuple.
+  	 * It is possible to ignore the terrain height when desired.
+  	 * Use setXYheight when you never need terrain height.
+  	 *
+- `setZ(real z)`
+  Set the z coordinate (flyHeight)
+- `setFx(string newpath)`
+  Set the path to the sfx model that should be displayed.
+  	If there is already a model displayed, it will be replaced with the new one.
+- `hiddenDestroy()`
+  Destroys the Fx object without showing the effect's death animation
+  		Sort of a workaround by setting the position to the top right corner, hopefully not visible.

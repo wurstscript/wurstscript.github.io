@@ -30,6 +30,7 @@ public class SoundDefinition
 
 **Members:**
 
+- <a id="sounddefinition-soundStack"></a> `constant soundStack = new LinkedList<SoundInstance>()`
 - `construct(string file)`
 - `construct(string file, boolean looping)`
 - `construct(string file, boolean looping, boolean is3D)`

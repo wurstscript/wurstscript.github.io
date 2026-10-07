@@ -30,6 +30,16 @@ public enum OSKEY_META
 
 **Values:** `NONE`, `SHIFT`, `CTRL`, `CTRLSHIFT`, `ALT`, `ALTSHIFT`, `ALTCTRL`, `CTRLALTSHIT`, `META`, `METASHIFT`, `METACTRL`, `METACTRLSHIFT`, `METAALT`, `METAALTSHIFT`, `METAALTCTRL`, `ALL`
 
+## Functions
+
+### getMouseScreenPosition
+
+```wurst
+public function getMouseScreenPosition() returns vec2
+```
+
+Returns the local mouse position in window pixels.
+
 ## Extension Functions
 
 ### OSKEY_META.toInt
@@ -321,3 +331,39 @@ public function trigger.registerUpgradeCommandEvent(integer whichUpgrade) return
 ```wurst
 public function trigger.blzTriggerRegisterPlayerSyncEvent(player whichPlayer, string prefix, boolean fromServer) returns event
 ```
+
+### trigger.isRunning
+
+```wurst
+public function trigger.isRunning() returns boolean
+```
+
+### trigger.interrupt
+
+```wurst
+public function trigger.interrupt()
+```
+
+### oskeytype.isPressed
+
+```wurst
+public function oskeytype.isPressed() returns boolean
+```
+
+Returns local input state. Never use it to drive synchronized game state.
+
+### OSKEY_META.isPressed
+
+```wurst
+public function OSKEY_META.isPressed() returns boolean
+```
+
+Returns local input state. Never use it to drive synchronized game state.
+
+### mousebuttontype.isPressed
+
+```wurst
+public function mousebuttontype.isPressed() returns boolean
+```
+
+Returns local input state. Never use it to drive synchronized game state.

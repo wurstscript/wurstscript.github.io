@@ -10,6 +10,14 @@ generated: true
 toc: sections
 ---
 
+Creates a destructable by copying `origID` into the custom object `newID`.
+   Choose a non-colliding custom ID; `'B000'` is an example, not a reserved ID.
+```wurst
+@compiletime function createMyDestructable()
+    new DestructableDefinition('B000', 'LTlt')
+        ..setName("My Tree")
+```
+
 **[Source on GitHub](https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/objediting/DestructableObjEditing.wurst)**
 
 ## Classes

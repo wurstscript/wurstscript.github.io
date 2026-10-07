@@ -17,6 +17,12 @@ Use this class to create upgrade definitions. Constructors provide a "Clean"
 	upgrade definition, without any research cost or effects. Using the
 	addEffectXXX() methods will add additional effects, with a limit of 4
 	effects. Do not use the setEffect methods from the W3Q baseclass.
+    Import `ObjectIdGenerator` for this example:
+```wurst
+@compiletime function createMyUpgrade()
+    new UpgradeDefinition(UPGD_ID_GEN.next(), 3)
+        ..addEffectAttackDamageBonus(5, 2)
+```
 
 **[Source on GitHub](https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/objediting/UpgradeObjEditing.wurst)**
 
@@ -74,9 +80,13 @@ public class W3QDefinition
 - `presetTooltip(StringLevelClosure lc)`
 - `presetTooltipExtended(StringLevelClosure lc)`
 - `setEffectType(int effectIndex, UpgradeEffectType effectType)`
+  Selects the effect in slot 1 through 4. Use `UpgradeDefinition.addEffect...` methods for clean upgrades.
 - `setEffectBase(int effectIndex, real value)`
+  Sets the base value for effect slot 1 through 4; the effect type determines its meaning and units.
 - `setEffectIncrement(int effectIndex, real value)`
+  Sets the per-level increment for effect slot 1 through 4; the effect type determines its meaning and units.
 - `setEffectCode(int effectIndex, string value)`
+  Sets the rawcode string required by the selected effect, such as an ability or unit ID, in slot 1 through 4.
 - `setEffect(int effectIndex, UpgradeEffectType effectType, real base)`
 - `setEffect(int effectIndex, UpgradeEffectType effectType, real base, real increment)`
 - `setEffect(int effectIndex, UpgradeEffectType effectType, real base, real increment, string codeId)`

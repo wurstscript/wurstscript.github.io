@@ -114,6 +114,18 @@ Runs the camera through the cinematic camera
 	specified in cameraModelFile. Existing cameras are available
 	via Objects.cameraXXX paths"
 
+### setCameraType
+
+```wurst
+public function setCameraType(int cameraType)
+```
+
+### getCameraType
+
+```wurst
+public function getCameraType() returns int
+```
+
 ## Extension Functions
 
 ### camerafield.set
@@ -361,4 +373,40 @@ public function unit.setCameraOrientController(vec2 offset)
 
 ```wurst
 public function unit.setCameraOrientControllerForPlayer(vec2 offset, player whichPlayer)
+```
+
+### camerasetup.setCameraType
+
+```wurst
+public function camerasetup.setCameraType(int cameraType)
+```
+
+### camerasetup.getCameraType
+
+```wurst
+public function camerasetup.getCameraType() returns int
+```
+
+### camerafield.setControlledByInput
+
+```wurst
+public function camerafield.setControlledByInput(boolean controlled)
+```
+
+### camerafield.isControlledByInput
+
+```wurst
+public function camerafield.isControlledByInput() returns boolean
+```
+
+### rect.addCameraBlocker
+
+```wurst
+public function rect.addCameraBlocker()
+```
+
+### rect.setCameraBlockerEnabled
+
+```wurst
+public function rect.setCameraBlockerEnabled(boolean enabled)
 ```
