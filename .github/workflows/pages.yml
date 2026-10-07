@@ -12,6 +12,10 @@ on:
   pull_request:
     branches: [master]
   workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * 1"
+  repository_dispatch:
+    types: [stdlib-updated]
 
 permissions:
   contents: read
@@ -28,6 +32,24 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+
+      - name: Checkout standard library
+        uses: actions/checkout@v6
+        with:
+          repository: wurstscript/WurstStdlib2
+          ref: master
+          path: _stdlib
+
+      - name: Set up Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
+      - name: Verify and generate API reference
+        working-directory: tools/docgen
+        run: |
+          deno task test
+          deno task gen --src "$GITHUB_WORKSPACE/_stdlib/wurst" --out "$GITHUB_WORKSPACE"
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -53,6 +75,9 @@ jobs:
 
       - name: Verify built dependency assets
         run: npm test
+
+      - name: Verify reference pages and links
+        run: node tools/check-reference-pages.mjs
 
       - name: Generate Pagefind search index
         run: npx -y pagefind@1.5.2 --site _site

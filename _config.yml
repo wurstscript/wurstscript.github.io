@@ -15,6 +15,7 @@ exclude:
 - vendor
 - tools
 - node_modules
+- _stdlib
 - package.json
 - package-lock.json
 - assets/plugins/elegant_font/css/index.html

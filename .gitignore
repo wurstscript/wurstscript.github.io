@@ -9,3 +9,7 @@ _stdlib
 # with the content and breaks search.
 pagefind/
 node_modules/
+
+# API pages are generated from WurstStdlib2 during the site build.
+_doc/stdlib/ref/
+_data/stdlib_index.json

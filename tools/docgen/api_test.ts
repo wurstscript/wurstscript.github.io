@@ -1,5 +1,5 @@
 import { parseFile } from "./parser.ts";
-import { renderPackageIndex, renderPackagePage } from "./emit.ts";
+import { renderPackageIndex, renderPackagePage, renderTypePage, typeUrl } from "./emit.ts";
 import { hotdocToMarkdown } from "./hotdoc.ts";
 
 function expect(value: boolean, message: string) {
@@ -24,7 +24,7 @@ public class AbilityIds
   expect(!("entities" in records[0]), "Index duplicates the full API tree");
   expect(!renderPackageIndex([pkg]).includes("AHbz"), "Constant value leaked into index");
   expect(
-    renderPackagePage(pkg, { outDir: "", curated: new Map(), includes: new Set() })
+    renderTypePage(pkg, pkg.entities[0], { outDir: "", curated: new Map(), includes: new Set() })
       .includes("static constant blizzard = 'AHbz'"),
     "Reference page lost the actual API",
   );
@@ -73,7 +73,11 @@ public class AbilityIds
     members.find((m) => m.name === "setCooldown")?.doc === "",
     "Constructor doc leaked onto method",
   );
-  const page = renderPackagePage(pkg, { outDir: "", curated: new Map(), includes: new Set() });
+  const page = renderTypePage(pkg, pkg.entities[0], {
+    outDir: "",
+    curated: new Map(),
+    includes: new Set(),
+  });
   expect(page.includes("static constant blizzard = 'AHbz'"), "Rendered docs omit rawcode");
   expect(page.includes("Choose a base ID."), "Rendered docs omit constructor documentation");
   expect(page.includes('id="AbilityIds-blizzard"'), "Constant has no link target");
@@ -90,10 +94,16 @@ public class MurlocFleshEater_Med
     static constant stand2 = animationData(2, 3.)
 `,
   });
-  const page = renderPackagePage(pkg, { outDir: "", curated: new Map(), includes: new Set() });
-  const anchors = [...page.matchAll(/<a id="([^"]+)"/g)].map((m) => m[1]);
+  const page = pkg.entities.map((e) =>
+    renderTypePage(pkg, e, { outDir: "", curated: new Map(), includes: new Set() })
+  ).join("\n");
+  const anchors = [...page.matchAll(/id="([^"]+-stand2)"/g)].map((m) => m[1]);
   expect(anchors.length === 2, "Missing constant anchors");
   expect(new Set(anchors).size === 2, "Case-sensitive declarations share an anchor");
+  expect(
+    typeUrl(pkg, pkg.entities[0]).toLowerCase() !== typeUrl(pkg, pkg.entities[1]).toLowerCase(),
+    "Type files collide on Windows",
+  );
 });
 
 Deno.test("compact rawcode docs link to known constants without changing code examples", () => {
@@ -108,7 +118,7 @@ public class AbilityDefinitionArchMageBlizzard
 `,
   });
   const href = "/stdlib/ref/_wurst/assets/AbilityIds.html#AbilityIds-blizzard";
-  const page = renderPackagePage(pkg, {
+  const page = renderTypePage(pkg, pkg.entities[0], {
     outDir: "",
     curated: new Map(),
     includes: new Set(),
@@ -122,9 +132,47 @@ public class AbilityDefinitionArchMageBlizzard
     page.includes("new AbilityDefinitionArchMageBlizzard(AbilityIds.blizzard)"),
     "Code example changed",
   );
-  const unlinked = renderPackagePage(pkg, { outDir: "", curated: new Map(), includes: new Set() });
+  const unlinked = renderTypePage(pkg, pkg.entities[0], {
+    outDir: "",
+    curated: new Map(),
+    includes: new Set(),
+  });
   expect(
     unlinked.includes("'AHbz' / AbilityIds.blizzard"),
     "Unknown references must remain readable",
+  );
+});
+
+Deno.test("package directories omit member bodies and type pages keep collapsed docs", () => {
+  const pkg = parseFile({
+    category: "objediting",
+    sourcePath: "wurst/objediting/Abilities.wurst",
+    text: `package Abilities
+/** 'Ane2' / AbilityIds.neutralBuildinganyunit */
+public class SelectUnit extends AbilityDefinition
+    /** Creates a custom copy. */
+    construct(int id)
+    /** Damage Increase (%) / 'Roa1' */
+    function setDamage(real value)
+`,
+  });
+  const ctx = {
+    outDir: "",
+    curated: new Map<string, string>(),
+    includes: new Set<string>(),
+    typeLinks: new Map([["AbilityDefinition", "/base.html"]]),
+  };
+  const index = renderPackagePage(pkg, ctx);
+  expect(index.includes(typeUrl(pkg, pkg.entities[0])), "Type cannot be reached from directory");
+  expect(index.includes("Ane2"), "Directory cannot be searched by rawcode");
+  expect(!index.includes("Creates a custom copy"), "Member docs bloated the directory");
+  expect(index.includes('data-legacy-anchor="selectunit"'), "Old type fragments cannot be routed");
+  const detail = renderTypePage(pkg, pkg.entities[0], ctx);
+  expect(detail.includes("Creates a custom copy"), "Constructor doc missing");
+  expect(detail.includes("Damage Increase (%)"), "Setter doc missing");
+  expect(detail.includes("[AbilityDefinition](/base.html)"), "Inherited API is unreachable");
+  expect(
+    detail.includes("<details") && !detail.includes("<details open"),
+    "Members start expanded",
   );
 });
