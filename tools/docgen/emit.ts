@@ -285,18 +285,26 @@ export function renderIndex(packages: PackageDoc[]): string {
       categoryOrder(a) - categoryOrder(b)
     )
   ) {
+    let first = true;
     for (
       const pkg of packages.filter((p) => p.category === cat).sort((a, b) =>
         a.package.localeCompare(b.package)
       )
     ) {
       body.push(
-        `<a class="api-row" data-api-item href="${packageUrl(pkg)}"><span class="api-row-name">${
+        `<a class="api-row" data-api-item data-api-category="${esc(categoryLabel(cat))}"${
+          first
+            ? ` id="${
+              categoryLabel(cat).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")
+            }"`
+            : ""
+        } href="${packageUrl(pkg)}"><span class="api-row-name">${
           esc(pkg.package)
         }</span><span class="api-kind">${
           esc(categoryLabel(cat))
         }</span><span class="api-row-description">${esc(cleanDescription(pkg.summary))}</span></a>`,
       );
+      first = false;
     }
   }
   body.push(browserEnd());

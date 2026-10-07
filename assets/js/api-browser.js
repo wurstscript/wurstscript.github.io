@@ -15,9 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
     browser.querySelector(".api-tools").hidden = items.length <= 8;
     let page = 0;
     let matches = items;
+    let category = null;
     function render() {
       const words = search.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
-      matches = items.filter((item) => words.every((word) => texts.get(item).includes(word)));
+      matches = items.filter((item) => (!category || item.dataset.apiCategory === category) && words.every((word) => texts.get(item).includes(word)));
       const pages = Math.max(1, Math.ceil(matches.length / pageSize));
       page = Math.min(page, pages - 1);
       const visible = new Set(matches.slice(page * pageSize, (page + 1) * pageSize));
@@ -28,12 +29,13 @@ document.addEventListener("DOMContentLoaded", () => {
       next.disabled = page >= pages - 1;
       pageLabel.textContent = `${page + 1} / ${pages}`;
     }
-    search.addEventListener("input", () => { page = 0; render(); });
+    search.addEventListener("input", () => { category = null; page = 0; render(); });
     previous.addEventListener("click", () => { page--; render(); search.focus(); });
     next.addEventListener("click", () => { page++; render(); search.focus(); });
     controllers.set(browser, (item) => {
-      search.value = "";
-      page = Math.floor(items.indexOf(item) / pageSize);
+      category = item.dataset.apiCategory || null;
+      search.value = category || "";
+      page = category ? 0 : Math.floor(items.indexOf(item) / pageSize);
       render();
     });
     render();
@@ -46,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .find((item) => item.dataset.legacyAnchor === hash.toLowerCase() ||
         (item.matches("a.api-row") && hash.startsWith(item.querySelector(".api-row-name").textContent + "-")));
     if (!target) return;
-    if (target.matches("a.api-row")) {
+    if (target.matches("a.api-row") && !target.dataset.apiCategory) {
       const isMember = hash.includes("-");
       location.replace(target.href + (isMember ? `#${encodeURIComponent(hash)}` : ""));
       return;

@@ -1,6 +1,7 @@
 import { parseFile } from "./parser.ts";
 import {
   buildTypeLinks,
+  renderIndex,
   renderPackageIndex,
   renderPackagePage,
   renderTypePage,
@@ -11,6 +12,21 @@ import { hotdocToMarkdown } from "./hotdoc.ts";
 function expect(value: boolean, message: string) {
   if (!value) throw new Error(message);
 }
+
+Deno.test("API index preserves guide category fragments", () => {
+  const packages = ["objediting", "data", "closures", "event", "math"].map((category) =>
+    parseFile({
+      text: `package ${category}\npublic class Example\n`,
+      category,
+      sourcePath: `wurst/${category}/Example.wurst`,
+    })
+  );
+  const index = renderIndex(packages);
+  for (const id of ["object-editing", "data-structures", "closures", "events", "math"]) {
+    expect(index.includes(`id="${id}"`), `Missing category target ${id}`);
+  }
+  expect(index.includes('data-api-category="Object Editing"'), "Category cannot be filtered");
+});
 
 Deno.test("inheritance links resolve imports and public re-exports despite duplicate names", () => {
   const parse = (text: string) =>
