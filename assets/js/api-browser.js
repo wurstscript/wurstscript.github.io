@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const previous = browser.querySelector("[data-api-prev]");
     const next = browser.querySelector("[data-api-next]");
     const pageLabel = browser.querySelector("[data-api-page]");
-    const texts = new Map(items.map((item) => [item, item.textContent.toLowerCase()]));
+    const texts = new Map(items.map((item) => [item, `${item.textContent} ${item.dataset.apiSearchText || ""}`.toLowerCase()]));
     const pageSize = 40;
     browser.querySelector(".api-tools").hidden = items.length <= 8;
     let page = 0;

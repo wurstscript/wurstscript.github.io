@@ -18,9 +18,13 @@
   .content-inner > p { max-width: 78ch; }
 }
 .stdlibref-page {
+  .doc-wrapper { background: var(--surface-1); }
   .doc-container { max-width: 1100px; }
+  .doc-header { background: none; border: 0; box-shadow: none; padding: 0 0 20px; margin-bottom: 0; }
+  .doc-content { background: none; border: 0; box-shadow: none; padding: 0; }
+  .doc-content .content-inner { padding: 0; }
   .doc-title { font-size: clamp(24px, 3vw, 36px); letter-spacing: -.025em; }
-  .doc-content h2 { border: 0; margin-top: 32px; margin-bottom: 14px; }
+  .doc-content .content-inner h2 { font-size: 22px; border: 0; margin-top: 24px; margin-bottom: 14px; }
 }
 .api-browser {
   margin: 16px 0 28px;
@@ -57,10 +61,11 @@
   text-decoration: none !important;
   border-bottom: 1px solid var(--divider-dark);
   &:hover, &:focus-visible { background: var(--surface-2); }
-  .api-row-name { font-family: Consolas, monospace; font-size: 14px; font-weight: 600; overflow-wrap: anywhere; }
+  .api-row-name { color: var(--text-color-dark); font-size: 15px; font-weight: 500; overflow-wrap: anywhere; }
   .api-kind { color: var(--text-color-secondary); font-size: 12px; }
   .api-row-description { grid-column: 1 / -1; color: var(--text-color-secondary); font-size: 13px; overflow-wrap: anywhere; }
 }
+.api-rawcode { font-family: Consolas, monospace; padding: 1px 6px; background: var(--surface-2); border-radius: 4px; align-self: start; }
 .api-declaration {
   border-bottom: 1px solid var(--divider-dark);
   padding: 0 18px;

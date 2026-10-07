@@ -81,6 +81,10 @@ collections:
   tutorials:
     output: true
 
+# Jekyll otherwise skips underscore-prefixed package/type files.
+include:
+  - "_*.md"
+
 
 #
 # Default values

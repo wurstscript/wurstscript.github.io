@@ -110,14 +110,20 @@ export function renderPackagePage(pkg: PackageDoc, ctx: EmitContext): string {
   }
   const types = pkg.entities.filter(isType);
   if (types.length) {
-    body.push("## Types", "", browserStart("Filter types by name, rawcode, or description"));
+    body.push("## Types", "", browserStart("Filter types by name, rawcode, or description", true));
     for (const e of types) {
+      const rawcode = e.doc.trim().match(/^'([^']{4})' \/ \w+\.\w+$/)?.[1];
+      const description = rawcode ? "" : cleanDescription(e.doc);
       body.push(
-        `<a class="api-row" data-api-item data-legacy-anchor="${esc(legacyAnchor(e.name))}" href="${
+        `<a class="api-row" data-api-item data-api-search-text="${
+          esc(e.doc)
+        }" data-legacy-anchor="${esc(legacyAnchor(e.name))}" href="${
           typeUrl(pkg, e)
-        }"><span class="api-row-name">${esc(e.name)}</span><span class="api-kind">${
-          esc(e.kind)
-        }</span><span class="api-row-description">${esc(cleanDescription(e.doc))}</span></a>`,
+        }"><span class="api-row-name">${esc(e.name)}</span><span class="api-kind${
+          rawcode ? " api-rawcode" : ""
+        }">${esc(rawcode ?? e.kind)}</span>${
+          description ? `<span class="api-row-description">${esc(description)}</span>` : ""
+        }</a>`,
       );
     }
     body.push(browserEnd(), "");
@@ -213,10 +219,11 @@ function renderDoc(doc: string, ctx: EmitContext): string {
   const href = ref ? ctx.referenceLinks?.get(ref[2]) : undefined;
   return href ? `'${ref![1]}' / [${ref![2]}](${href})` : hotdocToMarkdown(doc);
 }
-function browserStart(label: string): string {
-  return `<div class="api-browser" data-api-browser markdown="1">\n<div class="api-tools" data-pagefind-ignore hidden><label>${
+function browserStart(label: string, directory = false): string {
+  const markdown = directory ? "0" : "1";
+  return `<div class="api-browser" data-api-browser markdown="${markdown}">\n<div class="api-tools" data-pagefind-ignore hidden><label>${
     esc(label)
-  }<input type="search" data-api-search placeholder="Type to filter…" autocomplete="off"></label><p data-api-status role="status" aria-live="polite"></p></div>\n<div class="api-results" markdown="1">`;
+  }<input type="search" data-api-search placeholder="Type to filter…" autocomplete="off"></label><p data-api-status role="status" aria-live="polite"></p></div>\n<div class="api-results" markdown="${markdown}">`;
 }
 function browserEnd(): string {
   return `</div>\n<div class="api-pagination" data-pagefind-ignore hidden><button type="button" data-api-prev>Previous</button><span data-api-page></span><button type="button" data-api-next>Next</button></div>\n</div>`;
@@ -233,7 +240,7 @@ export function renderIndex(packages: PackageDoc[]): string {
     "",
     "[Explore the standard library guides](/stdlib.html)",
     "",
-    browserStart("Filter packages by name, category, or description"),
+    browserStart("Filter packages by name, category, or description", true),
   ];
   for (
     const cat of [...new Set(packages.map((p) => p.category))].sort((a, b) =>
