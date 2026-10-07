@@ -108,7 +108,10 @@ export function renderPackagePage(pkg: PackageDoc, ctx: EmitContext): string {
   if (pkg.imports.length) {
     body.push(`**Re-exports:** ${pkg.imports.map((n) => `\`${n}\``).join(", ")}`, "");
   }
-  const types = pkg.entities.filter(isType);
+  const kinds = [...TYPE_KINDS];
+  const types = pkg.entities.filter(isType).sort((a, b) =>
+    kinds.indexOf(a.kind) - kinds.indexOf(b.kind) || a.name.localeCompare(b.name, "en")
+  );
   if (types.length) {
     body.push("## Types", "", browserStart("Filter types by name, rawcode, or description", true));
     for (const e of types) {

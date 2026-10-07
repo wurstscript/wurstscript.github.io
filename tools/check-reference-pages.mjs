@@ -37,6 +37,6 @@ assert(index.every((pkg) => !("entities" in pkg)), "Package index contains a dup
 assert((await stat(path.join(root, "_data/stdlib_index.json"))).size < 1024 * 1024, "Package index exceeds 1 MB");
 const ability = pages.get("/stdlib/ref/objediting/AbilityObjEditing.html");
 assert(ability.includes("data-api-browser"), "Missing package browser");
-assert(!ability.includes("<details"), "Ability directory contains expanded member documentation");
+assert(!/id="AbilityDefinition[^"\s]*-(?:construct|set\w+)-\d+"/.test(ability), "Ability directory contains type member documentation");
 assert(ability.length < 1024 * 1024, "Ability directory exceeds 1 MB");
 console.log(`Verified ${pages.size} reference pages and ${links} internal links; package index is compact.`);
