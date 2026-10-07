@@ -19,8 +19,8 @@ Execute an action after a certain time.
 
 	Example use:
 ```wurst
-	someTimer.doAfter(10.0) ->
-	 print("10 seconds later")
+someTimer.doAfter(10.0) ->
+ print("10 seconds later")
 ```
 
 **[Source on GitHub](https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/closures/ClosureTimers.wurst)**
@@ -100,8 +100,8 @@ Execute an action after a certain time.
 
 	Example use:
 ```wurst
-	doAfter(10.0) ->
-	 print("10 seconds later")
+doAfter(10.0) ->
+ print("10 seconds later")
 ```
 
 ### doAfterWithDialogue
@@ -116,9 +116,9 @@ Execute an action after a certain time.
 
 	Example use:
 ```wurst
-	doAfterWithDialogue(10.0, "Respawn in") ->
-	 hero.revive()
-	 print("10 seconds later")
+doAfterWithDialogue(10.0, "Respawn in") ->
+ hero.revive()
+ print("10 seconds later")
 ```
 
 ### nullTimer
@@ -141,9 +141,9 @@ Execute an action periodically.
 
 	Example use:
 ```wurst
-	doPeriodically(0.5) cb ->
-	 if i > 10
-		destroy cb
+doPeriodically(0.5) (_) ->
+ if i > 10
+	destroy it
 ```
 
 ### doPeriodicallyCounted
@@ -157,8 +157,8 @@ execute an action periodically, with a limited amount of calls
 
 	Example use:
 ```wurst
-	doPeriodicallyCounted(0.5, 100) cb ->
-	 doSomething()
+doPeriodicallyCounted(0.5, 100) (_) ->
+ doSomething()
 ```
 
 ### doPeriodicallyTimed
@@ -172,8 +172,8 @@ execute an action periodically, with a limited duration
 
 	Example use:
 ```wurst
-	doPeriodicallyCounted(0.5, 10.) ->
-	 doSomething()
+doPeriodicallyCounted(0.5, 10.) ->
+ doSomething()
 ```
 
 ## Extension Functions
@@ -196,9 +196,9 @@ Execute an action periodically.
 
 	Example use:
 ```wurst
-	someTimer.doPeriodically(0.5) cb ->
-	 if i > 10
-		destroy cb
+someTimer.doPeriodically(0.5) (_) ->
+ if i > 10
+	destroy it
 ```
 
 ### timer.doPeriodicallyCounted
@@ -213,8 +213,8 @@ execute an action periodically, with a limited amount of calls
 
 	Example use:
 ```wurst
-	someTimer.doPeriodicallyCounted(0.5, 100) cb ->
-	 doSomething()
+someTimer.doPeriodicallyCounted(0.5, 100) (_) ->
+ doSomething()
 ```
 
 ### timer.doPeriodicallyTimed
@@ -229,6 +229,6 @@ execute an action periodically, with a limited duration
 
 	Example use:
 ```wurst
-	someTimer.doPeriodicallyCounted(0.5, 10.) ->
-	 doSomething()
+someTimer.doPeriodicallyCounted(0.5, 10.) ->
+ doSomething()
 ```

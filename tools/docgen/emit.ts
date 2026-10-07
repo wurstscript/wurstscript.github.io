@@ -36,7 +36,7 @@ export async function emitAll(packages: PackageDoc[], ctx: EmitContext): Promise
 
   // 1. JSON index.
   const jsonPath = join(ctx.outDir, "_data", "stdlib_index.json");
-  await writeFile(jsonPath, JSON.stringify(packages, null, 2) + "\n");
+  await writeFile(jsonPath, renderPackageIndex(packages));
   written.push(jsonPath);
 
   // 2. Clean + regenerate the ref subtree.
@@ -56,6 +56,12 @@ export async function emitAll(packages: PackageDoc[], ctx: EmitContext): Promise
   written.push(indexPath);
 
   return written;
+}
+
+export function renderPackageIndex(packages: PackageDoc[]): string {
+  // Declarations are rendered in the reference pages, not duplicated in package metadata.
+  const records = packages.map(({ entities: _entities, ...metadata }) => metadata);
+  return JSON.stringify(records, null, 2) + "\n";
 }
 
 // --- per-package page --------------------------------------------------------
@@ -156,7 +162,7 @@ function renderEntity(e: Entity, ctx: EmitContext): string[] {
 }
 
 function constantAnchor(className: string, memberName: string): string {
-  return `${className.toLowerCase()}-${memberName}`;
+  return `${className}-${memberName}`;
 }
 
 function renderMember(m: Entity, className: string): string[] {

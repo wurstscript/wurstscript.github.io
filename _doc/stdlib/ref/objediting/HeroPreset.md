@@ -24,6 +24,7 @@ public class HeroPreset extends HeroDefinition
 
 **Members:**
 
+- <a id="HeroPreset-properNames"></a> `constant properNames = new LinkedList<string>()`
 - `construct(int newId, int origId, string name)`
 - `buildHero()`
 - `addProperName(string name)`

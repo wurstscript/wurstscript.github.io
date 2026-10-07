@@ -25,11 +25,39 @@ with stacktraces included.
 public class Base64Encoder
 ```
 
+**Members:**
+
+- `construct()`
+- `construct(int maxChunkLength)`
+- `writeByte(int n)`
+  Writes an unsigned byte to be serialized into Base64.
+- `writeShort(int n)`
+  Writes an unsigned short to be serialized into Base64.
+- `writeInt(int n)`
+  Writes a signed integer to be serialized into Base64.
+- `write(ByteBuffer data)`
+  Writes all bytes from the buffer to be serialized into Base64.
+- `consume(ByteBuffer data)`
+  Writes all bytes from the buffer to be serialized into Base64 and destroys the buffer.
+- `intoData() returns ChunkedString`
+  Consumes this encoder and returns the encoded data as a ChunkedString.
+
 ### Base64Decoder
 
 ```wurst
 public class Base64Decoder
 ```
+
+**Members:**
+
+- `append(string data)`
+  Appends a part of the Base64-encoded data.
+- `append(ChunkedString data)`
+  Appends a part of the Base64-encoded data.
+- `consume(ChunkedString data)`
+  Appends a part of the Base64-encoded data and destroys it.
+- `intoData() returns ByteBuffer`
+  Consumes this decoder and returns the decoded data as a ByteBuffer. *
 
 ## Extension Functions
 

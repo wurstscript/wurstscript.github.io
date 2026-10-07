@@ -116,6 +116,141 @@ on typecasting.
 public class ArrayList<T:>
 ```
 
+**Members:**
+
+- `construct()`
+  Creates a new empty list with default capacity (16)
+- `construct(int initialCapacity)`
+  Creates a new list with specified initial capacity - RECOMMENDED for performance
+- `construct(thistype base)`
+  Creates a new list by copying all elements from another list
+- `add(vararg T elems)`
+  Adds one or more elements to the end of the list (amortized O(1))
+- `unsafeAdd(T elem)`
+  Appends without checking capacity. **Reserve first.**
+  
+         It saves only the capacity check. With inlining on, `add` inlines as well, keeping just
+         the `grow()` call on its rare full path: in the 3.0.0 client an appending loop costs about
+         78 ns per element with `add` and 70 ns with this, without stack traces.
+  
+         The precondition is not a formality. The backing store is one array shared by every list,
+         each holding a section of it, so writing past this list's capacity does not overflow into
+         nothing - it silently overwrites whatever another list is keeping there. Call
+         `reserve(size + count)` first, and only append that many.
+  
+         Intended for a caller which already knows how many elements it is about to add, such as a
+         query copying out a result whose size it was told up front. Prefer `add` everywhere else.
+- `addAll(ArrayList<T> other)`
+  Adds all elements from another list
+- `reserve(int needed)`
+  Ensures capacity for at least the given number of elements, moving the
+         section at most once instead of once per doubling.
+  
+         Public so a caller which knows its final size can pay one capacity check for a whole batch
+         rather than one per element, which is also the precondition `unsafeAdd` needs.
+- `get(int index) returns T`
+  Returns the element at the specified index (O(1))
+- `set(int index, T elem)`
+  Sets the element at the specified index (O(1))
+- `op_index(int index) returns T`
+  Reads the element at the given index via the [] operator (O(1)).
+         Note: for tuple element types use get()/set() instead - the [] operator on
+         tuple-typed lists currently hits a compiler limitation.
+- `op_indexAssign(int index, T value)`
+  Writes the element at the given index via the [] operator (O(1)).
+         See op_index for the tuple element-type caveat.
+- `indexOf(T elem) returns int`
+  Returns the index of the specified element or -1 if it doesn't exist (O(n))
+- `has(T elem) returns boolean`
+  Returns whether the list contains the specified element (O(n))
+- `removeAtOrdered(int index) returns T`
+  Removes the element at the given index and returns it, shifting the
+         remaining elements left to preserve order (O(n))
+- `removeAt(int index) returns T`
+  ⚠️ _Deprecated. This operation shifts elements, consider using #removeAtUnordered if order is not important._
+  Removes the element at the given index and returns it (O(n) - shifts elements)
+- `removeAtUnordered(int index) returns T`
+  Removes the element at the given index by swapping with last element (O(1) - DOES NOT PRESERVE ORDER!)
+- `remove(T elem) returns bool`
+  ⚠️ _Deprecated. This operation shifts elements, consider using #removeUnordered if order is not important._
+  Removes the first occurrence of the element from the list (O(n))
+- `removeUnordered(T elem) returns bool`
+  Removes the first occurrence of the element from the list (O(n))
+- `size() returns int`
+  Returns the size of the list (O(1))
+- `isEmpty() returns boolean`
+  Checks whether this list is empty (O(1))
+- `getFirst() returns T`
+  Returns the first element in the list, or null if empty (O(1))
+- `getLast() returns T`
+  Returns the last element in the list, or null if empty (O(1))
+- `clear()`
+  Clears all elements from the list (reuse this list instead of creating new ones!).
+         O(1) on Jass; O(n) on Lua, where the slots are nulled so the GC can reclaim them.
+- `reset()`
+  Resets the logical size while retaining both capacity and old slot references (O(1)).
+  
+         This is intended for hot scratch-list reuse, where subsequent writes replace the stale
+         slots and the caller accepts that values remain GC-reachable up to the list's historical
+         high-water mark. Use #clear when releasing those references matters.
+- `truncate(int newSize)`
+  Drops everything past the given size, keeping capacity (O(1)).
+  
+         Like `reset`, this leaves the dropped slots holding their references until they are
+         overwritten or `clear` is called - which is what makes it O(1).
+- `copy() returns ArrayList<T>`
+  Returns a shallow copy of this list
+- `replace(T whichElement, T newElement) returns boolean`
+  Replaces the first occurrence of 'whichElement' with 'newElement'
+- `getRandomElement() returns T`
+  Returns a random element from this list or null if empty
+- `push(T elem)`
+  Adds an element to the end of the list (stack push)
+- `pop() returns T`
+  Returns and removes the last added element (LIFO)
+- `peek() returns T`
+  Returns the lastly added element without removing it, or null if empty
+- `enqueue(T elem)`
+  Adds an element to the end (queue enqueue)
+- `dequeue() returns T`
+  Returns and removes the first element (FIFO) - WARNING: O(n) operation!
+- `addtoStart(T elem)`
+  Adds element at the beginning of the list - WARNING: O(n) operation!
+- `addAt(T elem, int index)`
+  Adds the given element at the given index - WARNING: O(n) operation!
+- `removeIf(ArrayListPredicate<T> predicate)`
+  Removes elements that satisfy the predicate (O(n), preserves order).
+         If order is not important, use #removeUnorderedIf
+- `removeUnorderedIf(ArrayListPredicate<T> predicate)`
+  Removes elements that satisfy the predicate (O(n), does NOT preserve order)
+- `forEach(ALItrClosure<T> itr) returns ArrayList<T>`
+  Executes the closure for each element
+- `updateAll(ArrayListUpdater<T> f)`
+  Updates all elements
+- `map<Q:>(MapClosure<T, Q> itr) returns ArrayList<Q>`
+  Returns the list obtained by applying the given closure to each element
+- `filter(ArrayListPredicate<T> predicate) returns ArrayList<T>`
+  Returns a new list of elements that satisfy the predicate.
+  
+         Deliberately NOT presized to this list's size. The result shares the
+         per-type store with the source, so reserving `size` up front would need
+         2 * size slots at once and hit JASS_MAX_ARRAY_SIZE for any source
+         holding more than half the store - even when a selective predicate
+         matches only a handful of elements. Growth is amortised O(n) anyway.
+  
+         If you do not need to keep the original, prefer #removeIf, which filters
+         in place and needs no second section at all.
+- `foldl<Q:>(Q startValue, FoldClosure<T, Q> predicate) returns Q`
+  Folds this list into a single value of type Q
+- `find(ArrayListPredicate<T> predicate) returns T`
+  Returns the first element that satisfies the predicate, or null if none present
+- `shuffle()`
+  Performs a Fisher-Yates shuffle on this list
+- `sortWith(Comparator<T> comparator)`
+  Sorts the list using optimized quicksort with median-of-three pivot.
+         Unlike the other higher-order methods, the comparator is NOT destroyed so it
+         can be reused; destroy it yourself if it was allocated for a single sort.
+
 ## Interfaces
 
 ### ArrayListPredicate
@@ -124,11 +259,19 @@ public class ArrayList<T:>
 public interface ArrayListPredicate<T:>
 ```
 
+**Members:**
+
+- `isTrueFor(T t) returns boolean`
+
 ### ALItrClosure
 
 ```wurst
 public interface ALItrClosure<T:>
 ```
+
+**Members:**
+
+- `run(T t)`
 
 ### ArrayListUpdater
 
@@ -136,11 +279,19 @@ public interface ALItrClosure<T:>
 public interface ArrayListUpdater<T:>
 ```
 
+**Members:**
+
+- `update(T t) returns T`
+
 ### MapClosure
 
 ```wurst
 public interface MapClosure<T:, Q:>
 ```
+
+**Members:**
+
+- `run(T t) returns Q`
 
 ### FoldClosure
 
@@ -148,11 +299,19 @@ public interface MapClosure<T:, Q:>
 public interface FoldClosure<T:, Q:>
 ```
 
+**Members:**
+
+- `run(T t, Q q) returns Q`
+
 ### Comparator
 
 ```wurst
 public interface Comparator<T:>
 ```
+
+**Members:**
+
+- `compare(T o1, T o2) returns int`
 
 ## Functions
 

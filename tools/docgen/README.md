@@ -6,7 +6,8 @@ that powers the API reference under `/stdlib/ref/`.
 It is a small, dependency-light [Deno](https://deno.com) + TypeScript tool. It parses the
 `/** … */` "hotdoc" comments and public declarations out of every `.wurst` package and emits:
 
-- `_data/stdlib_index.json`: one machine-readable record per package (used by Liquid / search).
+- `_data/stdlib_index.json`: package metadata, summaries, tags, and source links. The API
+  declaration tree is rendered in the reference pages and is not duplicated in this index.
 - `_doc/stdlib/ref/<category>/<Package>.md`: one reference page per package.
 - `_doc/stdlib/ref/index.md`: the exhaustive grouped index.
 
@@ -39,7 +40,7 @@ enough. See `parser.ts` for the details and `types.ts` for the data model.
 
 Both tab and four-space indentation are supported. Public class constants retain their
 initializer values and documentation in the member list, alongside constructors and methods.
-Class constants have stable anchors such as `#abilityids-blizzard`. Compact generated rawcode
+Class constants have case-sensitive anchors such as `#AbilityIds-blizzard`. Compact generated rawcode
 comments (`'AHbz' / AbilityIds.blizzard`) link to those anchors when the referenced constant is
 part of the generated API. Code examples and unknown references are left unchanged.
 

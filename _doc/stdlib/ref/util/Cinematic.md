@@ -44,6 +44,20 @@ cine.skip_()
 public class Cinematic
 ```
 
+**Members:**
+
+- `construct(LinkedList<CineSeq> sequence, CineSeq ending)`
+  Build a cinematic from a sequence of CineSeqs, and one final CineSeq which should be used for cleanup. The final
+  CineSeq is run even if the cinematic is skip_()'d.
+- `static function fadeOutSeq(duration duration) returns CineSeq`
+- `static function fadeInSeq(duration duration) returns CineSeq`
+- `static function applyCameraSetupSeq(camerasetup setup) returns CineSeq`
+- `static function snapCameraPosSeq(vec2 pos) returns CineSeq`
+- `static function doNothingSeq(duration duration) returns CineSeq`
+- `skip_()`
+- `static function fadeOut(duration duration)`
+- `static function fadeIn(duration duration)`
+
 ## Interfaces
 
 ### CineSeq
@@ -59,3 +73,51 @@ A cinematic sequence. Cinematic has built-in cinematic sequences:
 - Cinematic.applyCameraSetupSeq(camerasetup)
 - Cinematic.snapCameraPosSeq(vec2)
 - Cinematic.doNothingSeq()
+
+**Members:**
+
+- `apply() returns duration`
+
+## Functions
+
+### preloadModelCinematic
+
+```wurst
+public function preloadModelCinematic(string modelPath) returns boolean
+```
+
+### playModelCinematic
+
+```wurst
+public function playModelCinematic(string modelPath, vec3 position, angle rotation)
+```
+
+### getModelCinematicCurrentShot
+
+```wurst
+public function getModelCinematicCurrentShot() returns int
+```
+
+### getModelCinematicShotCount
+
+```wurst
+public function getModelCinematicShotCount() returns int
+```
+
+### getModelCinematicRemainingTime
+
+```wurst
+public function getModelCinematicRemainingTime() returns real
+```
+
+### setDECinematicsEnabled
+
+```wurst
+public function setDECinematicsEnabled(boolean enabled)
+```
+
+### setThematicMusicPausedOnFocusLost
+
+```wurst
+public function setThematicMusicPausedOnFocusLost(boolean paused)
+```

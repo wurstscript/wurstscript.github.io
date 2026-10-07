@@ -394,6 +394,30 @@ public function booleanFromIndex(int index) returns boolean
 public function handle.getTCHandleId() returns int
 ```
 
+### int.toFogStyle
+
+```wurst
+public function int.toFogStyle() returns fogstyle
+```
+
+### int.toEquipmentType
+
+```wurst
+public function int.toEquipmentType() returns equipmentType
+```
+
+### int.toItemTag
+
+```wurst
+public function int.toItemTag() returns itemTag
+```
+
+### int.toLoadoutSlot
+
+```wurst
+public function int.toLoadoutSlot() returns loadoutslot
+```
+
 ## Constants
 
 ### R2I_PRECISION

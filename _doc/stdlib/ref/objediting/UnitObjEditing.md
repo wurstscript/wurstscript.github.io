@@ -13,6 +13,13 @@ toc: sections
 curated: /stdlib/unit_objed
 ---
 
+Creates a unit based on an existing unit ID. Import `ObjectIdGenerator` and `UnitIds` for this example:
+```wurst
+@compiletime function createMyUnit()
+    new UnitDefinition(UNIT_ID_GEN.next(), UnitIds.footman)
+        ..setName("My Footman")
+```
+
 **[Source on GitHub](https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/objediting/UnitObjEditing.wurst)**
 
 > 📖 Read the **[detailed guide](/stdlib/unit_objed)** for hand-written examples and background.
@@ -27,11 +34,14 @@ curated: /stdlib/unit_objed
 public class W3UDefinition
 ```
 
+Create and configure unit, hero, and building object data at compile time.
+
 **Members:**
 
 - `getNewId() returns int`
 - `getBaseId() returns int`
 - `construct(int newId, int baseId)`
+  Copies `baseId` into the custom object `newId`. Use a new ID that does not collide with another object.
 - `setTooltipExtended(string data)`
 - `setTooltipBasic(string data)`
 - `setRequirementsLevels(string data)`
@@ -255,6 +265,8 @@ public class UnitOrHeroDefinition extends UnitOrBuildingOrHeroDefinition
 public class HeroDefinition extends UnitOrHeroDefinition
 ```
 
+Creates a hero based on an existing hero ID. Configure it during compile-time object generation.
+
 **Members:**
 
 - `construct(int newId, int origId)`
@@ -296,6 +308,8 @@ public class UnitDefinition extends UnitOrHeroDefinition
 ```wurst
 public class BuildingDefinition extends UnitOrBuildingOrHeroDefinition
 ```
+
+Creates a building based on an existing building ID. Configure it during compile-time object generation.
 
 **Members:**
 

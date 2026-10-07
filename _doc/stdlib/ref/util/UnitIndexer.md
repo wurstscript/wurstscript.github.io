@@ -14,7 +14,8 @@ toc: sections
 
 Returns the int index of this unit.
 	Can be configured by the user to supply a custom unit indexer which won't break
-	other stdlib components.
+	other stdlib components, as long as it keeps firing onUnitIndex and onUnitDeindex:
+	UnitSpatialIndex, for one, registers units only through them.
 
 **[Source on GitHub](https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/util/UnitIndexer.wurst)**
 

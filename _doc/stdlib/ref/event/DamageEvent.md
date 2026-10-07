@@ -24,7 +24,7 @@ This package provides a light-weight damage detection system with priority-order
 
     if DETECT_NATIVE_ABILITIES is true:
 ```wurst
-        Any damage instance of attacktype ATTACK_TYPE_NORMAL is passed with DamageType SPELL
+Any damage instance of attacktype ATTACK_TYPE_NORMAL is passed with DamageType SPELL
 ```
 
 To listen to any damage instance firing:
@@ -92,17 +92,95 @@ Each damage instance can have a DamageElement associated to it.
 
    DamageElement can be extended to carry additional per-element settings.
 
+**Members:**
+
+- `construct(string name, colorA color)`
+- `getName() returns string`
+- `getColor() returns colorA`
+
 ### DamageEvent
 
 ```wurst
 public class DamageEvent
 ```
 
+**Members:**
+
+- `static function addListener(DamageListener listener) returns DamageListener`
+  Adds a damage event listener at priority 0.
+         If the order of firing is important, use addListener(priority, listener)
+- `static function addListener(int priority, DamageListener listener) returns DamageListener`
+  Adds a damage event listener with a given priority.
+         Listeners of different priorities fire from the lowest priority to the highest priority added.
+         Listeners of the same priority fire by order of addition (FIFO)
+- `static function addUnreducedListener(DamageListener listener) returns DamageListener`
+  Adds a damage event listener at priority 0 that fires before any damage reduction is applied
+         (such as armor). If the order of firing is important, use addUnreducedListener(priority, listener)
+- `static function addUnreducedListener(int priority, DamageListener listener) returns DamageListener`
+  Adds a damage event listener with a given priority that fires before any damage reduction is applied (such as armor).
+         Listeners of different priorities fire from the lowest priority to the highest priority added.
+         Listeners of the same priority fire by order of addition (FIFO)
+- `static function getId() returns int`
+  Returns the id of the damage instance being currently fired
+- `static function getSource() returns unit`
+  Returns the source of the damage instance being currently fired
+- `static function getTarget() returns unit`
+  Returns the target of the damage instance being currently fired
+- `static function getAmount() returns real`
+  Returns the damage amount of the damage instance being currently fired
+- `static function getOriginalAmount() returns real`
+  Returns the original reduced damage amount of the damage instance being currently fired
+- `static function getUnreducedAmount() returns real`
+  Returns the unreduced damage amount of the damage instance being currently fired
+- `static function getUnreducedOriginalAmount() returns real`
+  Returns the original unreduced damage amount of the damage instance being currently fired
+- `static function getNativeDamageReductionPercent() returns real`
+  Returns the percent of damage reduced from the *original unreduced amount* by damage reducing effects.
+         If the damage instance is still unreduced, returns zero
+- `static function getAttackType() returns attacktype`
+  Returns the attacktype of the damage instance being currently fired
+- `static function getDamageType() returns damagetype`
+  Returns the damagetype of the damage instance being currently fired
+- `static function getWeaponType() returns weapontype`
+  Returns the weapontype of the damage instance being currently fired
+- `static function getType() returns DamageType`
+  Returns the DamageType of the damage instance being currently fired
+- `static function getElement() returns DamageElement`
+  Returns the DamageElement of the damage instance being currently fired
+- `static function isFiring() returns bool`
+  Returns true if a damage instance is currently firing
+- `static function setAmount(real amount)`
+  Sets the damage amount of the damage instance being currently fired
+- `static function addAmount(real amount)`
+  Adds to the damage amount of the damage instance being currently fired
+- `static function subAmount(real amount)`
+  Subtracts from the damage amount of the damage instance being currently fired
+- `static function setAttackType(attacktype attackType)`
+  Sets the attacktype of the damage instance being currently fired
+- `static function setDamageType(damagetype damageType)`
+  Sets the damagetype of the damage instance being currently fired
+- `static function setWeaponType(weapontype weaponType)`
+  Sets the weapontype of the damage instance being currently fired
+- `static function setNextDamageId(int id)`
+  Sets the id for the next damage instance
+- `static function setNextDamageFromCode()`
+  Sets the DamageType to CODE for the next damage instance
+- `static function setNextDamageType(DamageType damageType)`
+  Sets the DamageType for the next damage instance
+- `static function setNextDamageElement(DamageElement damageElement)`
+  Sets the DamageElement for the next damage instance
+- `static function abortCurrent()`
+  Nulls the damage amount and skip all remaining listeners for the damage instance being currently fired
+
 ### DamageListener
 
 ```wurst
 public abstract class DamageListener
 ```
+
+**Members:**
+
+- `abstract function onEvent()`
 
 ## Enums
 
@@ -115,6 +193,8 @@ public enum DamageType
 Each damage instance has a DamageType associated to it.
    ATTACK and SPELL are detected by the system.
    CODE **must** be declared by the user using DamageEvent.setNextDamageFromCode() before dealing damage
+
+**Values:** `ATTACK`, `SPELL`, `CODE`, `NULLED`, `UNKNOWN`
 
 ## Functions
 

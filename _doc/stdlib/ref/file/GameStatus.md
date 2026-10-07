@@ -19,3 +19,5 @@ toc: sections
 ```wurst
 public enum GameStatus
 ```
+
+**Values:** `UNKNOWN`, `ONLINE`, `OFFLINE`, `REPLAY`

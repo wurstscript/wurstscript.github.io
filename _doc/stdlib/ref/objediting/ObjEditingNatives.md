@@ -10,6 +10,14 @@ generated: true
 toc: sections
 ---
 
+Copies `deriveFrom` into the custom object `newId` during compile-time object generation.
+   `fileType` selects the object kind: `w3u` unit, `w3a` ability, `w3t` item, `w3h` buff,
+   `w3b` destructable, `w3d` doodad, or `w3q` upgrade.
+   Choose a custom ID that does not collide with another object:
+```wurst
+let unitDef = createObjectDefinition("w3u", 'h000', 'hfoo')
+```
+
 **[Source on GitHub](https://github.com/wurstscript/WurstStdlib2/blob/master/wurst/objediting/ObjEditingNatives.wurst)**
 
 ## Interfaces
@@ -61,6 +69,9 @@ public interface BooleanLevelClosure
 ```wurst
 public tuple ObjectDefinition(string key)
 ```
+
+Low-level compile-time object-data editing. Prefer typed definitions for ordinary map code.
+   Level closures receive levels starting at 1.
 
 ## Functions
 

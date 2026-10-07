@@ -30,11 +30,20 @@ You should use 'createBuffObject' inside compiletime expressions:
 public class BuffDefinition
 ```
 
+Creates buff object data based on an existing buff ID. Import `BuffIds` and `ObjectIdGenerator` for this example:
+```wurst
+@compiletime function createMyBuff()
+    new BuffDefinition(BUFF_ID_GEN.next(), BuffIds.slow)
+        ..setName(1, "My Slow")
+```
+   Buff object data defines presentation; use an ability to apply the buff to a unit.
+
 **Members:**
 
 - `getNewId() returns int`
 - `getBaseId() returns int`
 - `construct(int newId, int baseId)`
+  Copies `baseId` into the custom buff `newId`. Use a new ID that does not collide with another buff.
 - `setName(int level, string value)`
 - `setEditorSuffix(int level, string value)`
 - `setRace(int level, string value)`

@@ -19,3 +19,19 @@ toc: sections
 ```wurst
 public abstract class Serializable
 ```
+
+**Members:**
+
+- `addProperty(string name, int value)`
+- `addProperty(string name, real value)`
+- `addProperty(string name, string value)`
+- `getIntProperty(string name) returns int`
+- `getRealProperty(string name) returns real`
+- `getStringProperty(string name) returns string`
+- `serialize() returns ChunkedString`
+  ⚠️ _Deprecated. Use FieldSerializable with SerializableFields from StructuredSerialization for new save formats._
+- `padHash() returns string`
+- `deserialize(ChunkedString input)`
+  ⚠️ _Deprecated. Use FieldSerializable with SerializableFields from StructuredSerialization for new save formats._
+- `abstract function serializeProperties()`
+- `abstract function deserializeProperties()`

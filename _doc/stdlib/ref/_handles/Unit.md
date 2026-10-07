@@ -1028,6 +1028,8 @@ public function unit.setPathing(boolean value)
 public function unit.setPos(vec2 pos)
 ```
 
+> 🔧 **Configurable.** Override it in your map's config package.
+
 ### unit.setPosFly
 
 ```wurst
@@ -1045,6 +1047,8 @@ public function unit.setPosReal(vec3 pos)
 ```wurst
 public function unit.setPos(real x, real y)
 ```
+
+> 🔧 **Configurable.** Override it in your map's config package.
 
 ### unit.setPropWindow
 
@@ -1129,11 +1133,15 @@ public function unit.setVertexColor(int r, int g, int b, int a)
 public function unit.setX(real x)
 ```
 
+> 🔧 **Configurable.** Override it in your map's config package.
+
 ### unit.setXY
 
 ```wurst
 public function unit.setXY(vec2 pos)
 ```
+
+> 🔧 **Configurable.** Override it in your map's config package.
 
 Sets the coordinmates of the unit to the given position.
 	Uses the SetUnitX/Y natives
@@ -1144,6 +1152,8 @@ Sets the coordinmates of the unit to the given position.
 public function unit.setXY(vec3 pos)
 ```
 
+> 🔧 **Configurable.** Override it in your map's config package.
+
 Sets the coordinmates of the unit to the given position.
 	Uses the SetUnitX/Y natives
 
@@ -1152,6 +1162,8 @@ Sets the coordinmates of the unit to the given position.
 ```wurst
 public function unit.setXYZ(vec3 pos)
 ```
+
+> 🔧 **Configurable.** Override it in your map's config package.
 
 Sets the coordinmates of the unit to the given position.
 	Z is being set as flyheight. Uses the SetUnitX/Y natives
@@ -1162,11 +1174,15 @@ Sets the coordinmates of the unit to the given position.
 public function unit.setXYZReal(vec3 pos)
 ```
 
+> 🔧 **Configurable.** Override it in your map's config package.
+
 ### unit.setY
 
 ```wurst
 public function unit.setY(real y)
 ```
+
+> 🔧 **Configurable.** Override it in your map's config package.
 
 ### unit.show
 
@@ -1941,4 +1957,70 @@ public function unit.clearOrders(boolean onlyQueued)
 
 ```wurst
 public function unit.forceStopOrder(boolean clearQueue)
+```
+
+### unit.setAbilityCooldownPercent
+
+```wurst
+public function unit.setAbilityCooldownPercent(int abilityId, real percent)
+```
+
+### unit.adjustAbilityCooldownPercent
+
+```wurst
+public function unit.adjustAbilityCooldownPercent(int abilityId, real percent)
+```
+
+### unit.getAbilityCooldownPercent
+
+```wurst
+public function unit.getAbilityCooldownPercent(int abilityId) returns real
+```
+
+### unit.setAbilityCooldownRemaining
+
+```wurst
+public function unit.setAbilityCooldownRemaining(int abilityId, real duration)
+```
+
+### unit.adjustAbilityCooldownRemaining
+
+```wurst
+public function unit.adjustAbilityCooldownRemaining(int abilityId, real duration)
+```
+
+### unit.getAnimationDuration
+
+```wurst
+public function unit.getAnimationDuration(string animation) returns real
+```
+
+### unit.getAnimationDuration
+
+```wurst
+public function unit.getAnimationDuration(int animationIndex) returns real
+```
+
+### unit.resetAttack
+
+```wurst
+public function unit.resetAttack(int weaponIndex)
+```
+
+### unit.setAurasEnabled
+
+```wurst
+public function unit.setAurasEnabled(boolean enabled, boolean affectsUI)
+```
+
+### unit.setHeroGlowAllowed
+
+```wurst
+public function unit.setHeroGlowAllowed(boolean allowed)
+```
+
+### unit.isHeroGlowAllowed
+
+```wurst
+public function unit.isHeroGlowAllowed() returns boolean
 ```
