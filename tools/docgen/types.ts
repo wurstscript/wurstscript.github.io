@@ -29,7 +29,7 @@ export interface Entity {
   doc: string;
   deprecated: Deprecation;
   configurable: boolean;
-  /** Public methods/constructors of a class/interface/module; empty otherwise. */
+  /** Public methods, constructors, and constants of a class/interface/module; empty otherwise. */
   members: Entity[];
   /** Enum case names (inline comments stripped); empty for non-enums. */
   enumMembers: string[];
