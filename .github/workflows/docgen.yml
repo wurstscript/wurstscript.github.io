@@ -36,6 +36,10 @@ jobs:
         with:
           deno-version: v2.x
 
+      - name: Test doc generator
+        working-directory: tools/docgen
+        run: deno task test
+
       - name: Generate reference
         working-directory: tools/docgen
         run: deno task gen --src "$GITHUB_WORKSPACE/_stdlib/wurst" --out "$GITHUB_WORKSPACE"

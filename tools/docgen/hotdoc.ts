@@ -22,7 +22,13 @@ export function hotdocToMarkdown(doc: string): string {
       }
       while (block.length && block[block.length - 1] === "") block.pop();
       out.push("```wurst");
-      out.push(...block);
+      // Comment indentation is not part of the code example; retain only relative indentation.
+      const nonBlank = block.filter((l) => l.trim() !== "");
+      let prefix = nonBlank[0]?.match(/^\s*/)?.[0] ?? "";
+      for (const line of nonBlank) {
+        while (!line.startsWith(prefix)) prefix = prefix.slice(0, -1);
+      }
+      out.push(...block.map((l) => l.slice(prefix.length)));
       out.push("```");
       continue;
     }

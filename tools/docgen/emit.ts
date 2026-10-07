@@ -11,12 +11,28 @@ export interface EmitContext {
   curated: Map<string, string>;
   /** Package names that have a _includes/stdlib_curated/<Package>.md transclude. */
   includes: Set<string>;
+  /** Qualified class constant names -> API reference anchors. */
+  referenceLinks?: Map<string, string>;
 }
 
 const REF_DIR = ["_doc", "stdlib", "ref"];
 
 export async function emitAll(packages: PackageDoc[], ctx: EmitContext): Promise<string[]> {
   const written: string[] = [];
+  const referenceLinks = new Map<string, string>();
+  for (const pkg of packages) {
+    for (const entity of pkg.entities) {
+      for (const member of entity.members.filter((m) => m.kind === "constant")) {
+        referenceLinks.set(
+          `${entity.name}.${member.name}`,
+          `/stdlib/ref/${pkg.category.replace(/^\./, "root")}/${pkg.package}.html#${
+            constantAnchor(entity.name, member.name)
+          }`,
+        );
+      }
+    }
+  }
+  ctx = { ...ctx, referenceLinks };
 
   // 1. JSON index.
   const jsonPath = join(ctx.outDir, "_data", "stdlib_index.json");
@@ -62,7 +78,10 @@ export function renderPackagePage(pkg: PackageDoc, ctx: EmitContext): string {
   if (pkg.summary) body.push(hotdocToMarkdown(pkg.summary), "");
   body.push(`**[Source on GitHub](${pkg.githubUrl})**`, "");
   if (curatedPath) {
-    body.push(`> 📖 Read the **[detailed guide](${curatedPath})** for hand-written examples and background.`, "");
+    body.push(
+      `> 📖 Read the **[detailed guide](${curatedPath})** for hand-written examples and background.`,
+      "",
+    );
   }
   if (ctx.includes.has(pkg.package)) {
     body.push(`{% include stdlib_curated/${pkg.package}.md %}`, "");
@@ -73,7 +92,7 @@ export function renderPackagePage(pkg: PackageDoc, ctx: EmitContext): string {
     body.push(`**Re-exports:** ${links}`, "");
   }
 
-  body.push(...renderEntities(pkg.entities));
+  body.push(...renderEntities(pkg.entities, ctx));
 
   return frontmatter(fm) + body.join("\n").replace(/\n{3,}/g, "\n\n").trimEnd() + "\n";
 }
@@ -94,18 +113,18 @@ const GROUPS: KindGroup[] = [
   { heading: "Constants", kinds: ["constant"] },
 ];
 
-function renderEntities(entities: Entity[]): string[] {
+function renderEntities(entities: Entity[], ctx: EmitContext): string[] {
   const out: string[] = [];
   for (const group of GROUPS) {
     const items = entities.filter((e) => group.kinds.includes(e.kind));
     if (items.length === 0) continue;
     out.push(`## ${group.heading}`, "");
-    for (const e of items) out.push(...renderEntity(e));
+    for (const e of items) out.push(...renderEntity(e, ctx));
   }
   return out;
 }
 
-function renderEntity(e: Entity): string[] {
+function renderEntity(e: Entity, ctx: EmitContext): string[] {
   const out: string[] = [];
   const title = e.receiver ? `${e.receiver}.${e.name}` : e.name;
   out.push(`### ${title}`, "");
@@ -116,21 +135,34 @@ function renderEntity(e: Entity): string[] {
   if (e.configurable) {
     out.push(`> 🔧 **Configurable.** Override it in your map's config package.`, "");
   }
-  if (e.doc) out.push(hotdocToMarkdown(e.doc), "");
+  if (e.doc) {
+    // The generated rawcode comment is a prose reference, not an executable code example.
+    const reference = e.doc.trim().match(/^'([^']{4})' \/ (\w+\.\w+)$/);
+    const href = reference ? ctx.referenceLinks?.get(reference[2]) : undefined;
+    out.push(
+      href ? `'${reference![1]}' / [${reference![2]}](${href})` : hotdocToMarkdown(e.doc),
+      "",
+    );
+  }
   if (e.enumMembers.length > 0) {
     out.push("**Values:** " + e.enumMembers.map((m) => `\`${m}\``).join(", "), "");
   }
   if (e.members.length > 0) {
     out.push("**Members:**", "");
-    for (const m of e.members) out.push(...renderMember(m));
+    for (const m of e.members) out.push(...renderMember(m, e.name));
     out.push("");
   }
   return out;
 }
 
-function renderMember(m: Entity): string[] {
+function constantAnchor(className: string, memberName: string): string {
+  return `${className.toLowerCase()}-${memberName}`;
+}
+
+function renderMember(m: Entity, className: string): string[] {
   const sig = m.signature.replace(/^function\s+/, "");
-  const head = `- \`${sig}\``;
+  const anchor = m.kind === "constant" ? `<a id="${constantAnchor(className, m.name)}"></a> ` : "";
+  const head = `- ${anchor}\`${sig}\``;
   if (!m.doc && !m.deprecated.flag) return [head];
   const lines: string[] = [head];
   if (m.deprecated.flag) {

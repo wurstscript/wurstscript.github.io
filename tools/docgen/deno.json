@@ -1,5 +1,6 @@
 {
   "tasks": {
+    "test": "deno test api_test.ts",
     "gen": "deno run --allow-read --allow-write main.ts",
     "check": "deno run --allow-read main.ts --check"
   },

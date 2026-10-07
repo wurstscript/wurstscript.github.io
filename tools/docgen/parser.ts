@@ -169,7 +169,8 @@ export function parseFile(input: ParseInput): PackageDoc {
     };
 
     const isMember = inContainer !== null &&
-      (decl.kind === "function" || decl.kind === "extension-function");
+      indent === inContainer.indent + 1 &&
+      (decl.kind === "function" || decl.kind === "extension-function" || decl.kind === "constant");
     const skipDecl = annos.skip;
 
     // Reset per-declaration state up front; container/enum reads advance `i` themselves.
@@ -271,7 +272,13 @@ function matchDeclaration(rest: string): DeclMatch | null {
     return { kind: "tuple", name: m[1], typeParams: "", receiver: null, hasParens: true };
   }
   if (s.startsWith("constant ")) {
-    return { kind: "constant", name: constantName(s), typeParams: "", receiver: null, hasParens: false };
+    return {
+      kind: "constant",
+      name: constantName(s),
+      typeParams: "",
+      receiver: null,
+      hasParens: false,
+    };
   }
   // Extension function: function <Recv>.<name>(...)
   if ((m = s.match(/^function\s+([A-Za-z_]\w*(?:<[^>]*>)?)\.([A-Za-z_]\w*)(<[^>]*>)?\s*\(/))) {
@@ -285,7 +292,13 @@ function matchDeclaration(rest: string): DeclMatch | null {
   }
   // Normal function.
   if ((m = s.match(/^function\s+([A-Za-z_]\w*)(<[^>]*>)?\s*\(/))) {
-    return { kind: "function", name: m[1], typeParams: m[2] ?? "", receiver: null, hasParens: true };
+    return {
+      kind: "function",
+      name: m[1],
+      typeParams: m[2] ?? "",
+      receiver: null,
+      hasParens: true,
+    };
   }
   // Constructor (only meaningful inside a container; caller decides).
   if (/^construct\s*\(/.test(s)) {
@@ -458,9 +471,13 @@ function resolveSummary(prePackage: string | null, entities: Entity[], pkgName: 
 // --- small helpers -----------------------------------------------------------
 
 function leadingTabs(s: string): number {
-  let n = 0;
-  while (n < s.length && s[n] === "\t") n++;
-  return n;
+  let columns = 0;
+  for (const char of s) {
+    if (char === "\t") columns += 4;
+    else if (char === " ") columns++;
+    else break;
+  }
+  return Math.floor(columns / 4);
 }
 
 function parensBalanced(s: string): boolean {

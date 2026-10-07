@@ -26,6 +26,8 @@ deno task gen
 deno task gen --src /path/to/WurstStdlib2/wurst --out ./_scratch
 # parse-only coverage report, writes nothing:
 deno task check
+# regression tests for constant values, constructor docs, and rawcode links:
+deno task test
 ```
 
 ## How parsing works
@@ -34,6 +36,12 @@ Hotdoc is intentionally simple: a `/** … */` block on the line(s) immediately 
 declaration (`function` / `class` / `interface` / `enum` / `tuple` / `module` / `constant`).
 Wurst enforces indented blocks, so there is no nesting to worry about. A line-based pass is
 enough. See `parser.ts` for the details and `types.ts` for the data model.
+
+Both tab and four-space indentation are supported. Public class constants retain their
+initializer values and documentation in the member list, alongside constructors and methods.
+Class constants have stable anchors such as `#abilityids-blizzard`. Compact generated rawcode
+comments (`'AHbz' / AbilityIds.blizzard`) link to those anchors when the referenced constant is
+part of the generated API. Code examples and unknown references are left unchanged.
 
 A package's summary is, in order of preference: a doc block directly above the `package` line;
 the doc of the entity whose name matches the package (e.g. `HashMap`); or the first multi-line
