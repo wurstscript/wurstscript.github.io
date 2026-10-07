@@ -148,7 +148,7 @@ Create ability object data at compile time. Levels start at 1; generated field p
 public class AbilityDefinitionTaunt extends AbilityDefinition
 ```
 
-'Atau' / [AbilityIds.taunt](/stdlib/ref/_wurst/AbilityIds.html#abilityids-taunt)
+'Atau' / [AbilityIds.taunt](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-taunt)
 
 **Members:**
 
@@ -174,7 +174,7 @@ public class AbilityDefinitionTaunt extends AbilityDefinition
 public class AbilityDefinitionPoisonArrows extends AbilityDefinition
 ```
 
-'AEpa' / [AbilityIds.poisonArrows](/stdlib/ref/_wurst/AbilityIds.html#abilityids-poisonArrows)
+'AEpa' / [AbilityIds.poisonArrows](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-poisonArrows)
 
 **Members:**
 
@@ -199,7 +199,7 @@ public class AbilityDefinitionPoisonArrows extends AbilityDefinition
 public class AbilityDefinitionRangerColdArrows extends AbilityDefinition
 ```
 
-'AHca' / [AbilityIds.coldArrows](/stdlib/ref/_wurst/AbilityIds.html#abilityids-coldArrows)
+'AHca' / [AbilityIds.coldArrows](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-coldArrows)
 
 **Members:**
 
@@ -221,7 +221,7 @@ public class AbilityDefinitionRangerColdArrows extends AbilityDefinition
 public class AbilityDefinitionSeaWitchTornado extends AbilityDefinition
 ```
 
-'ANto' / [AbilityIds.tornado](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tornado)
+'ANto' / [AbilityIds.tornado](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-tornado)
 
 **Members:**
 
@@ -235,7 +235,7 @@ public class AbilityDefinitionSeaWitchTornado extends AbilityDefinition
 public class AbilityDefinitionAgilityBonusPlus4 extends AbilityDefinition
 ```
 
-'AIa4' / [AbilityIds.agilityBonusPlus4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-agilityBonusPlus4)
+'AIa4' / [AbilityIds.agilityBonusPlus4](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-agilityBonusPlus4)
 
 **Members:**
 
@@ -255,7 +255,7 @@ public class AbilityDefinitionAgilityBonusPlus4 extends AbilityDefinition
 public class AbilityDefinitionAlchemistTransmute extends AbilityDefinition
 ```
 
-'ANtm' / [AbilityIds.transmute](/stdlib/ref/_wurst/AbilityIds.html#abilityids-transmute)
+'ANtm' / [AbilityIds.transmute](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-transmute)
 
 **Members:**
 
@@ -275,7 +275,7 @@ public class AbilityDefinitionAlchemistTransmute extends AbilityDefinition
 public class AbilityDefinitionAgilityBonusPlus3 extends AbilityDefinition
 ```
 
-'AIa3' / [AbilityIds.agilityBonusPlus3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-agilityBonusPlus3)
+'AIa3' / [AbilityIds.agilityBonusPlus3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-agilityBonusPlus3)
 
 **Members:**
 
@@ -295,7 +295,7 @@ public class AbilityDefinitionAgilityBonusPlus3 extends AbilityDefinition
 public class AbilityDefinitionAgilityBonusPlus1 extends AbilityDefinition
 ```
 
-'AIa1' / [AbilityIds.agilityBonusPlus1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-agilityBonusPlus1)
+'AIa1' / [AbilityIds.agilityBonusPlus1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-agilityBonusPlus1)
 
 **Members:**
 
@@ -315,7 +315,7 @@ public class AbilityDefinitionAgilityBonusPlus1 extends AbilityDefinition
 public class AbilityDefinitionAgilityBonusPlus2 extends AbilityDefinition
 ```
 
-'AIa2' / [AbilityIds.agilityBonusPlus2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-agilityBonusPlus2)
+'AIa2' / [AbilityIds.agilityBonusPlus2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-agilityBonusPlus2)
 
 **Members:**
 
@@ -335,7 +335,7 @@ public class AbilityDefinitionAgilityBonusPlus2 extends AbilityDefinition
 public class AbilityDefinitionAgilityBonusPlus5 extends AbilityDefinition
 ```
 
-'AIa5' / [AbilityIds.agilityBonusPlus5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-agilityBonusPlus5)
+'AIa5' / [AbilityIds.agilityBonusPlus5](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-agilityBonusPlus5)
 
 **Members:**
 
@@ -355,7 +355,7 @@ public class AbilityDefinitionAgilityBonusPlus5 extends AbilityDefinition
 public class AbilityDefinitionThornyShieldCreep extends AbilityDefinition
 ```
 
-'ANth' / [AbilityIds.thornyShieldCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-thornyShieldCreep)
+'ANth' / [AbilityIds.thornyShieldCreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-thornyShieldCreep)
 
 **Members:**
 
@@ -373,7 +373,7 @@ public class AbilityDefinitionThornyShieldCreep extends AbilityDefinition
 public class AbilityDefinitionAgilityBonusPlus6 extends AbilityDefinition
 ```
 
-'AIa6' / [AbilityIds.agilityBonusPlus6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-agilityBonusPlus6)
+'AIa6' / [AbilityIds.agilityBonusPlus6](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-agilityBonusPlus6)
 
 **Members:**
 
@@ -393,7 +393,7 @@ public class AbilityDefinitionAgilityBonusPlus6 extends AbilityDefinition
 public class AbilityDefinitionBloodMageSiphonMana extends AbilityDefinition
 ```
 
-'AHdr' / [AbilityIds.siphonMana](/stdlib/ref/_wurst/AbilityIds.html#abilityids-siphonMana)
+'AHdr' / [AbilityIds.siphonMana](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-siphonMana)
 
 **Members:**
 
@@ -423,7 +423,7 @@ public class AbilityDefinitionBloodMageSiphonMana extends AbilityDefinition
 public class AbilityDefinitionPossessioncreep extends AbilityDefinition
 ```
 
-'ACps' / [AbilityIds.possessioncreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-possessioncreep)
+'ACps' / [AbilityIds.possessioncreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-possessioncreep)
 
 **Members:**
 
@@ -437,7 +437,7 @@ public class AbilityDefinitionPossessioncreep extends AbilityDefinition
 public class AbilityDefinitionPaladinDivineShield extends AbilityDefinition
 ```
 
-'AHds' / [AbilityIds.divineShield](/stdlib/ref/_wurst/AbilityIds.html#abilityids-divineShield)
+'AHds' / [AbilityIds.divineShield](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-divineShield)
 
 **Members:**
 
@@ -451,7 +451,7 @@ public class AbilityDefinitionPaladinDivineShield extends AbilityDefinition
 public class AbilityDefinitionDivineShieldCreep extends AbilityDefinition
 ```
 
-'ACds' / [AbilityIds.divineShield1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-divineShield1)
+'ACds' / [AbilityIds.divineShield1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-divineShield1)
 
 **Members:**
 
@@ -465,7 +465,7 @@ public class AbilityDefinitionDivineShieldCreep extends AbilityDefinition
 public class AbilityDefinitionPurgeCreep extends AbilityDefinition
 ```
 
-'ACpu' / [AbilityIds.purgeCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-purgeCreep)
+'ACpu' / [AbilityIds.purgeCreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-purgeCreep)
 
 **Members:**
 
@@ -489,7 +489,7 @@ public class AbilityDefinitionPurgeCreep extends AbilityDefinition
 public class AbilityDefinitionRoarcreepSkeletalOrc extends AbilityDefinition
 ```
 
-'ACr1' / [AbilityIds.roarcreepSkeletalOrc](/stdlib/ref/_wurst/AbilityIds.html#abilityids-roarcreepSkeletalOrc)
+'ACr1' / [AbilityIds.roarcreepSkeletalOrc](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-roarcreepSkeletalOrc)
 
 **Members:**
 
@@ -516,7 +516,7 @@ public class AbilityDefinitionRoarcreepSkeletalOrc extends AbilityDefinition
 public class AbilityDefinitionTauntCreep extends AbilityDefinition
 ```
 
-'ANta' / [AbilityIds.taunt1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-taunt1)
+'ANta' / [AbilityIds.taunt1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-taunt1)
 
 **Members:**
 
@@ -542,7 +542,7 @@ public class AbilityDefinitionTauntCreep extends AbilityDefinition
 public class AbilityDefinitionRejuvinationFurbolg extends AbilityDefinition
 ```
 
-'ACr2' / [AbilityIds.rejuvenation](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rejuvenation)
+'ACr2' / [AbilityIds.rejuvenation](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-rejuvenation)
 
 **Members:**
 
@@ -563,7 +563,7 @@ public class AbilityDefinitionRejuvinationFurbolg extends AbilityDefinition
 public class AbilityDefinitionPulverizecreep extends AbilityDefinition
 ```
 
-'ACpv' / [AbilityIds.pulverize1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-pulverize1)
+'ACpv' / [AbilityIds.pulverize1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-pulverize1)
 
 **Members:**
 
@@ -584,7 +584,7 @@ public class AbilityDefinitionPulverizecreep extends AbilityDefinition
 public class AbilityDefinitionBeastMasterSummonHawk extends AbilityDefinition
 ```
 
-'ANsw' / [AbilityIds.beastMasterSummonHawk](/stdlib/ref/_wurst/AbilityIds.html#abilityids-beastMasterSummonHawk)
+'ANsw' / [AbilityIds.beastMasterSummonHawk](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-beastMasterSummonHawk)
 
 **Members:**
 
@@ -600,7 +600,7 @@ public class AbilityDefinitionBeastMasterSummonHawk extends AbilityDefinition
 public class AbilityDefinitionTinkererSummonFactoryLevel0 extends AbilityDefinition
 ```
 
-'ANsy' / [AbilityIds.tinkererSummonFactoryLevel0](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererSummonFactoryLevel0)
+'ANsy' / [AbilityIds.tinkererSummonFactoryLevel0](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-tinkererSummonFactoryLevel0)
 
 **Members:**
 
@@ -624,7 +624,7 @@ public class AbilityDefinitionTinkererSummonFactoryLevel0 extends AbilityDefinit
 public class AbilityDefinitionPolymorphcreep extends AbilityDefinition
 ```
 
-'ACpy' / [AbilityIds.polymorphcreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-polymorphcreep)
+'ACpy' / [AbilityIds.polymorphcreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-polymorphcreep)
 
 **Members:**
 
@@ -646,7 +646,7 @@ public class AbilityDefinitionPolymorphcreep extends AbilityDefinition
 public class AbilityDefinitionBeastMasterStampede extends AbilityDefinition
 ```
 
-'ANst' / [AbilityIds.beastMasterStampede](/stdlib/ref/_wurst/AbilityIds.html#abilityids-beastMasterStampede)
+'ANst' / [AbilityIds.beastMasterStampede](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-beastMasterStampede)
 
 **Members:**
 
@@ -668,7 +668,7 @@ public class AbilityDefinitionBeastMasterStampede extends AbilityDefinition
 public class AbilityDefinitionFirelordSoulBurn extends AbilityDefinition
 ```
 
-'ANso' / [AbilityIds.soulBurn](/stdlib/ref/_wurst/AbilityIds.html#abilityids-soulBurn)
+'ANso' / [AbilityIds.soulBurn](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-soulBurn)
 
 **Members:**
 
@@ -692,7 +692,7 @@ public class AbilityDefinitionFirelordSoulBurn extends AbilityDefinition
 public class AbilityDefinitionBeastMasterSummonQuilbeast extends AbilityDefinition
 ```
 
-'ANsq' / [AbilityIds.beastMasterSummonQuilbeast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-beastMasterSummonQuilbeast)
+'ANsq' / [AbilityIds.beastMasterSummonQuilbeast](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-beastMasterSummonQuilbeast)
 
 **Members:**
 
@@ -708,7 +708,7 @@ public class AbilityDefinitionBeastMasterSummonQuilbeast extends AbilityDefiniti
 public class AbilityDefinitionFrenzy extends AbilityDefinition
 ```
 
-'Afzy' / [AbilityIds.frenzy](/stdlib/ref/_wurst/AbilityIds.html#abilityids-frenzy)
+'Afzy' / [AbilityIds.frenzy](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-frenzy)
 
 **Members:**
 
@@ -728,7 +728,7 @@ public class AbilityDefinitionFrenzy extends AbilityDefinition
 public class AbilityDefinitionMalganisSoulPreservation extends AbilityDefinition
 ```
 
-'ANsl' / [AbilityIds.soulPreservation](/stdlib/ref/_wurst/AbilityIds.html#abilityids-soulPreservation)
+'ANsl' / [AbilityIds.soulPreservation](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-soulPreservation)
 
 **Members:**
 
@@ -742,7 +742,7 @@ public class AbilityDefinitionMalganisSoulPreservation extends AbilityDefinition
 public class AbilityDefinitionBeastMasterSummonBear extends AbilityDefinition
 ```
 
-'ANsg' / [AbilityIds.beastMasterSummonBear](/stdlib/ref/_wurst/AbilityIds.html#abilityids-beastMasterSummonBear)
+'ANsg' / [AbilityIds.beastMasterSummonBear](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-beastMasterSummonBear)
 
 **Members:**
 
@@ -758,7 +758,7 @@ public class AbilityDefinitionBeastMasterSummonBear extends AbilityDefinition
 public class AbilityDefinitionDarkRangerSilence extends AbilityDefinition
 ```
 
-'ANsi' / [AbilityIds.silence](/stdlib/ref/_wurst/AbilityIds.html#abilityids-silence)
+'ANsi' / [AbilityIds.silence](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-silence)
 
 **Members:**
 
@@ -779,7 +779,7 @@ public class AbilityDefinitionDarkRangerSilence extends AbilityDefinition
 public class AbilityDefinitionSanctuary extends AbilityDefinition
 ```
 
-'ANsa' / [AbilityIds.sanctuary](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sanctuary)
+'ANsa' / [AbilityIds.sanctuary](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-sanctuary)
 
 **Members:**
 
@@ -801,7 +801,7 @@ public class AbilityDefinitionSanctuary extends AbilityDefinition
 public class AbilityDefinitionShadowMeldInstant extends AbilityDefinition
 ```
 
-'Sshm' / [AbilityIds.shadowMeldInstant](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shadowMeldInstant)
+'Sshm' / [AbilityIds.shadowMeldInstant](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-shadowMeldInstant)
 
 **Members:**
 
@@ -822,7 +822,7 @@ public class AbilityDefinitionShadowMeldInstant extends AbilityDefinition
 public class AbilityDefinitionSpellShieldAOE extends AbilityDefinition
 ```
 
-'ANse' / [AbilityIds.spellShieldAOE](/stdlib/ref/_wurst/AbilityIds.html#abilityids-spellShieldAOE)
+'ANse' / [AbilityIds.spellShieldAOE](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-spellShieldAOE)
 
 **Members:**
 
@@ -836,7 +836,7 @@ public class AbilityDefinitionSpellShieldAOE extends AbilityDefinition
 public class AbilityDefinitionItemAuraEndurance extends AbilityDefinition
 ```
 
-'AIae' / [AbilityIds.itemAuraEndurance](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAuraEndurance)
+'AIae' / [AbilityIds.itemAuraEndurance](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAuraEndurance)
 
 **Members:**
 
@@ -854,7 +854,7 @@ public class AbilityDefinitionItemAuraEndurance extends AbilityDefinition
 public class AbilityDefinitionSpiritPigcreep extends AbilityDefinition
 ```
 
-'ACs9' / [AbilityIds.feralSpirit1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-feralSpirit1)
+'ACs9' / [AbilityIds.feralSpirit1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-feralSpirit1)
 
 **Members:**
 
@@ -870,7 +870,7 @@ public class AbilityDefinitionSpiritPigcreep extends AbilityDefinition
 public class AbilityDefinitionUnstableConcoction extends AbilityDefinition
 ```
 
-'Auco' / [AbilityIds.unstableConcoction](/stdlib/ref/_wurst/AbilityIds.html#abilityids-unstableConcoction)
+'Auco' / [AbilityIds.unstableConcoction](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-unstableConcoction)
 
 **Members:**
 
@@ -894,7 +894,7 @@ public class AbilityDefinitionUnstableConcoction extends AbilityDefinition
 public class AbilityDefinitionItemAuraDevotion extends AbilityDefinition
 ```
 
-'AIad' / [AbilityIds.itemAuraDevotion](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAuraDevotion)
+'AIad' / [AbilityIds.itemAuraDevotion](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAuraDevotion)
 
 **Members:**
 
@@ -910,7 +910,7 @@ public class AbilityDefinitionItemAuraDevotion extends AbilityDefinition
 public class AbilityDefinitionAttackMod extends AbilityDefinition
 ```
 
-'AIaa' / [AbilityIds.itemAttackDamageGain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackDamageGain)
+'AIaa' / [AbilityIds.itemAttackDamageGain](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAttackDamageGain)
 
 **Members:**
 
@@ -924,7 +924,7 @@ public class AbilityDefinitionAttackMod extends AbilityDefinition
 public class AbilityDefinitionMountainKingAvatar extends AbilityDefinition
 ```
 
-'AHav' / [AbilityIds.avatar](/stdlib/ref/_wurst/AbilityIds.html#abilityids-avatar)
+'AHav' / [AbilityIds.avatar](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-avatar)
 
 **Members:**
 
@@ -944,7 +944,7 @@ public class AbilityDefinitionMountainKingAvatar extends AbilityDefinition
 public class AbilityDefinitionAIab extends AbilityDefinition
 ```
 
-'AIab' / [AbilityIds.itemHeroStatBonus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHeroStatBonus)
+'AIab' / [AbilityIds.itemHeroStatBonus](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHeroStatBonus)
 
 **Members:**
 
@@ -964,7 +964,7 @@ public class AbilityDefinitionAIab extends AbilityDefinition
 public class AbilityDefinitionMannorothReincarnation extends AbilityDefinition
 ```
 
-'ANrn' / [AbilityIds.reincarnation](/stdlib/ref/_wurst/AbilityIds.html#abilityids-reincarnation)
+'ANrn' / [AbilityIds.reincarnation](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-reincarnation)
 
 **Members:**
 
@@ -978,7 +978,7 @@ public class AbilityDefinitionMannorothReincarnation extends AbilityDefinition
 public class AbilityDefinitionAnimateDead extends AbilityDefinition
 ```
 
-'AIan' / [AbilityIds.itemAnimateDead](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAnimateDead)
+'AIan' / [AbilityIds.itemAnimateDead](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAnimateDead)
 
 **Members:**
 
@@ -996,7 +996,7 @@ public class AbilityDefinitionAnimateDead extends AbilityDefinition
 public class AbilityDefinitionAgilityMod extends AbilityDefinition
 ```
 
-'AIam' / [AbilityIds.itemAgilityGain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAgilityGain)
+'AIam' / [AbilityIds.itemAgilityGain](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAgilityGain)
 
 **Members:**
 
@@ -1016,7 +1016,7 @@ public class AbilityDefinitionAgilityMod extends AbilityDefinition
 public class AbilityDefinitionRainofFirecreep extends AbilityDefinition
 ```
 
-'ACrf' / [AbilityIds.rainofFire1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rainofFire1)
+'ACrf' / [AbilityIds.rainofFire1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-rainofFire1)
 
 **Members:**
 
@@ -1040,7 +1040,7 @@ public class AbilityDefinitionRainofFirecreep extends AbilityDefinition
 public class AbilityDefinitionDreadlordSleep extends AbilityDefinition
 ```
 
-'AUsl' / [AbilityIds.sleep2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sleep2)
+'AUsl' / [AbilityIds.sleep2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-sleep2)
 
 **Members:**
 
@@ -1054,7 +1054,7 @@ public class AbilityDefinitionDreadlordSleep extends AbilityDefinition
 public class AbilityDefinitionRaiseDeadCreep extends AbilityDefinition
 ```
 
-'ACrd' / [AbilityIds.raiseDeadCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-raiseDeadCreep)
+'ACrd' / [AbilityIds.raiseDeadCreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-raiseDeadCreep)
 
 **Members:**
 
@@ -1076,7 +1076,7 @@ public class AbilityDefinitionRaiseDeadCreep extends AbilityDefinition
 public class AbilityDefinitionFaerieFireAfa2 extends AbilityDefinition
 ```
 
-'Afa2' / [AbilityIds.faerieFireAfa2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-faerieFireAfa2)
+'Afa2' / [AbilityIds.faerieFireAfa2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-faerieFireAfa2)
 
 **Members:**
 
@@ -1092,7 +1092,7 @@ public class AbilityDefinitionFaerieFireAfa2 extends AbilityDefinition
 public class AbilityDefinitionUnholyFrenzyWarlock extends AbilityDefinition
 ```
 
-'Suhf' / [AbilityIds.unholyFrenzy1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-unholyFrenzy1)
+'Suhf' / [AbilityIds.unholyFrenzy1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-unholyFrenzy1)
 
 **Members:**
 
@@ -1109,7 +1109,7 @@ public class AbilityDefinitionUnholyFrenzyWarlock extends AbilityDefinition
 public class AbilityDefinitionPaladinDevotionAura extends AbilityDefinition
 ```
 
-'AHad' / [AbilityIds.devotionAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-devotionAura)
+'AHad' / [AbilityIds.devotionAura](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-devotionAura)
 
 **Members:**
 
@@ -1125,7 +1125,7 @@ public class AbilityDefinitionPaladinDevotionAura extends AbilityDefinition
 public class AbilityDefinitionTinkererRoboGoblinLevel0 extends AbilityDefinition
 ```
 
-'ANrg' / [AbilityIds.tinkererRoboGoblinLevel0](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererRoboGoblinLevel0)
+'ANrg' / [AbilityIds.tinkererRoboGoblinLevel0](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-tinkererRoboGoblinLevel0)
 
 **Members:**
 
@@ -1153,7 +1153,7 @@ public class AbilityDefinitionTinkererRoboGoblinLevel0 extends AbilityDefinition
 public class AbilityDefinitionRejuvinationcreep extends AbilityDefinition
 ```
 
-'ACrj' / [AbilityIds.rejuvinationcreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rejuvinationcreep)
+'ACrj' / [AbilityIds.rejuvinationcreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-rejuvinationcreep)
 
 **Members:**
 
@@ -1174,7 +1174,7 @@ public class AbilityDefinitionRejuvinationcreep extends AbilityDefinition
 public class AbilityDefinitionRainofFire extends AbilityDefinition
 ```
 
-'ANrf' / [AbilityIds.rainofFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rainofFire)
+'ANrf' / [AbilityIds.rainofFire](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-rainofFire)
 
 **Members:**
 
@@ -1198,7 +1198,7 @@ public class AbilityDefinitionRainofFire extends AbilityDefinition
 public class AbilityDefinitionItemAuraVampiric extends AbilityDefinition
 ```
 
-'AIav' / [AbilityIds.itemAuraVampiric](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAuraVampiric)
+'AIav' / [AbilityIds.itemAuraVampiric](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAuraVampiric)
 
 **Members:**
 
@@ -1213,7 +1213,7 @@ public class AbilityDefinitionItemAuraVampiric extends AbilityDefinition
 public class AbilityDefinitionItemAuraUnholy extends AbilityDefinition
 ```
 
-'AIau' / [AbilityIds.itemAuraUnholy](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAuraUnholy)
+'AIau' / [AbilityIds.itemAuraUnholy](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAuraUnholy)
 
 **Members:**
 
@@ -1233,7 +1233,7 @@ public class AbilityDefinitionItemAuraUnholy extends AbilityDefinition
 public class AbilityDefinitionArchMageBrillianceAura extends AbilityDefinition
 ```
 
-'AHab' / [AbilityIds.brillianceAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-brillianceAura)
+'AHab' / [AbilityIds.brillianceAura](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-brillianceAura)
 
 **Members:**
 
@@ -1249,7 +1249,7 @@ public class AbilityDefinitionArchMageBrillianceAura extends AbilityDefinition
 public class AbilityDefinitionNeutralRegenmanaonly extends AbilityDefinition
 ```
 
-'ANre' / [AbilityIds.manaRegeneration](/stdlib/ref/_wurst/AbilityIds.html#abilityids-manaRegeneration)
+'ANre' / [AbilityIds.manaRegeneration](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-manaRegeneration)
 
 **Members:**
 
@@ -1265,7 +1265,7 @@ public class AbilityDefinitionNeutralRegenmanaonly extends AbilityDefinition
 public class AbilityDefinitionRoarcreep extends AbilityDefinition
 ```
 
-'ACro' / [AbilityIds.roarcreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-roarcreep)
+'ACro' / [AbilityIds.roarcreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-roarcreep)
 
 **Members:**
 
@@ -1292,7 +1292,7 @@ public class AbilityDefinitionRoarcreep extends AbilityDefinition
 public class AbilityDefinitionAttackBonus extends AbilityDefinition
 ```
 
-'AIat' / [AbilityIds.itemDamageBonus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDamageBonus)
+'AIat' / [AbilityIds.itemDamageBonus](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemDamageBonus)
 
 **Members:**
 
@@ -1306,7 +1306,7 @@ public class AbilityDefinitionAttackBonus extends AbilityDefinition
 public class AbilityDefinitionAIas extends AbilityDefinition
 ```
 
-'AIas' / [AbilityIds.itemAttackSpeedBonus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedBonus)
+'AIas' / [AbilityIds.itemAttackSpeedBonus](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAttackSpeedBonus)
 
 **Members:**
 
@@ -1320,7 +1320,7 @@ public class AbilityDefinitionAIas extends AbilityDefinition
 public class AbilityDefinitionReincarnationcreep extends AbilityDefinition
 ```
 
-'ACrn' / [AbilityIds.reincarnation1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-reincarnation1)
+'ACrn' / [AbilityIds.reincarnation1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-reincarnation1)
 
 **Members:**
 
@@ -1334,7 +1334,7 @@ public class AbilityDefinitionReincarnationcreep extends AbilityDefinition
 public class AbilityDefinitionItemAuraTrueshot extends AbilityDefinition
 ```
 
-'AIar' / [AbilityIds.itemAuraTrueshot](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAuraTrueshot)
+'AIar' / [AbilityIds.itemAuraTrueshot](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAuraTrueshot)
 
 **Members:**
 
@@ -1355,7 +1355,7 @@ public class AbilityDefinitionItemAuraTrueshot extends AbilityDefinition
 public class AbilityDefinitionThunderClapThunderLizard extends AbilityDefinition
 ```
 
-'ACt2' / [AbilityIds.slam1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-slam1)
+'ACt2' / [AbilityIds.slam1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-slam1)
 
 **Members:**
 
@@ -1375,7 +1375,7 @@ public class AbilityDefinitionThunderClapThunderLizard extends AbilityDefinition
 public class AbilityDefinitionWardenShadowStrike extends AbilityDefinition
 ```
 
-'AEsh' / [AbilityIds.shadowStrike](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shadowStrike)
+'AEsh' / [AbilityIds.shadowStrike](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-shadowStrike)
 
 **Members:**
 
@@ -1397,7 +1397,7 @@ public class AbilityDefinitionWardenShadowStrike extends AbilityDefinition
 public class AbilityDefinitionBloodMageBanish extends AbilityDefinition
 ```
 
-'AHbn' / [AbilityIds.banish](/stdlib/ref/_wurst/AbilityIds.html#abilityids-banish)
+'AHbn' / [AbilityIds.banish](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-banish)
 
 **Members:**
 
@@ -1415,7 +1415,7 @@ public class AbilityDefinitionBloodMageBanish extends AbilityDefinition
 public class AbilityDefinitionItemAuraBrilliance extends AbilityDefinition
 ```
 
-'AIba' / [AbilityIds.itemAuraBrilliance](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAuraBrilliance)
+'AIba' / [AbilityIds.itemAuraBrilliance](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAuraBrilliance)
 
 **Members:**
 
@@ -1431,7 +1431,7 @@ public class AbilityDefinitionItemAuraBrilliance extends AbilityDefinition
 public class AbilityDefinitionRainofChaos extends AbilityDefinition
 ```
 
-'ANrc' / [AbilityIds.rainofChaos](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rainofChaos)
+'ANrc' / [AbilityIds.rainofChaos](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-rainofChaos)
 
 **Members:**
 
@@ -1447,7 +1447,7 @@ public class AbilityDefinitionRainofChaos extends AbilityDefinition
 public class AbilityDefinitionBuildTinyGreatHall extends AbilityDefinition
 ```
 
-'AIbg' / [AbilityIds.buildTinyGreatHall](/stdlib/ref/_wurst/AbilityIds.html#abilityids-buildTinyGreatHall)
+'AIbg' / [AbilityIds.buildTinyGreatHall](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-buildTinyGreatHall)
 
 **Members:**
 
@@ -1461,7 +1461,7 @@ public class AbilityDefinitionBuildTinyGreatHall extends AbilityDefinition
 public class AbilityDefinitionCryptLordSpikedCarapace extends AbilityDefinition
 ```
 
-'AUts' / [AbilityIds.cryptLordSpikedCarapace](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cryptLordSpikedCarapace)
+'AUts' / [AbilityIds.cryptLordSpikedCarapace](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cryptLordSpikedCarapace)
 
 **Members:**
 
@@ -1479,7 +1479,7 @@ public class AbilityDefinitionCryptLordSpikedCarapace extends AbilityDefinition
 public class AbilityDefinitionCenariusBeefyStarfall extends AbilityDefinition
 ```
 
-'AEsb' / [AbilityIds.starfall1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-starfall1)
+'AEsb' / [AbilityIds.starfall1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-starfall1)
 
 **Members:**
 
@@ -1497,7 +1497,7 @@ public class AbilityDefinitionCenariusBeefyStarfall extends AbilityDefinition
 public class AbilityDefinitionMoonPriestessStarfall extends AbilityDefinition
 ```
 
-'AEsf' / [AbilityIds.starfall](/stdlib/ref/_wurst/AbilityIds.html#abilityids-starfall)
+'AEsf' / [AbilityIds.starfall](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-starfall)
 
 **Members:**
 
@@ -1515,7 +1515,7 @@ public class AbilityDefinitionMoonPriestessStarfall extends AbilityDefinition
 public class AbilityDefinitionArchMageBlizzard extends AbilityDefinition
 ```
 
-'AHbz' / [AbilityIds.blizzard](/stdlib/ref/_wurst/AbilityIds.html#abilityids-blizzard)
+'AHbz' / [AbilityIds.blizzard](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-blizzard)
 
 **Members:**
 
@@ -1539,7 +1539,7 @@ public class AbilityDefinitionArchMageBlizzard extends AbilityDefinition
 public class AbilityDefinitionDefenseBonusPlus1 extends AbilityDefinition
 ```
 
-'AId1' / [AbilityIds.itemArmorBonus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorBonus)
+'AId1' / [AbilityIds.itemArmorBonus](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemArmorBonus)
 
 **Members:**
 
@@ -1553,7 +1553,7 @@ public class AbilityDefinitionDefenseBonusPlus1 extends AbilityDefinition
 public class AbilityDefinitionSearingArrowscreep extends AbilityDefinition
 ```
 
-'ACsa' / [AbilityIds.searingArrows](/stdlib/ref/_wurst/AbilityIds.html#abilityids-searingArrows)
+'ACsa' / [AbilityIds.searingArrows](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-searingArrows)
 
 **Members:**
 
@@ -1567,7 +1567,7 @@ public class AbilityDefinitionSearingArrowscreep extends AbilityDefinition
 public class AbilityDefinitionTinkererSummonFactoryLevel1 extends AbilityDefinition
 ```
 
-'ANs1' / [AbilityIds.tinkererSummonFactoryLevel1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererSummonFactoryLevel1)
+'ANs1' / [AbilityIds.tinkererSummonFactoryLevel1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-tinkererSummonFactoryLevel1)
 
 **Members:**
 
@@ -1591,7 +1591,7 @@ public class AbilityDefinitionTinkererSummonFactoryLevel1 extends AbilityDefinit
 public class AbilityDefinitionDefenseBonusPlus3 extends AbilityDefinition
 ```
 
-'AId3' / [AbilityIds.defenseBonusPlus3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-defenseBonusPlus3)
+'AId3' / [AbilityIds.defenseBonusPlus3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-defenseBonusPlus3)
 
 **Members:**
 
@@ -1605,7 +1605,7 @@ public class AbilityDefinitionDefenseBonusPlus3 extends AbilityDefinition
 public class AbilityDefinitionDefenseBonusPlus2 extends AbilityDefinition
 ```
 
-'AId2' / [AbilityIds.defenseBonusPlus2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-defenseBonusPlus2)
+'AId2' / [AbilityIds.defenseBonusPlus2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-defenseBonusPlus2)
 
 **Members:**
 
@@ -1619,7 +1619,7 @@ public class AbilityDefinitionDefenseBonusPlus2 extends AbilityDefinition
 public class AbilityDefinitionTinkererSummonFactoryLevel3 extends AbilityDefinition
 ```
 
-'ANs3' / [AbilityIds.tinkererSummonFactoryLevel3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererSummonFactoryLevel3)
+'ANs3' / [AbilityIds.tinkererSummonFactoryLevel3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-tinkererSummonFactoryLevel3)
 
 **Members:**
 
@@ -1643,7 +1643,7 @@ public class AbilityDefinitionTinkererSummonFactoryLevel3 extends AbilityDefinit
 public class AbilityDefinitionSpiritWolfcreep extends AbilityDefinition
 ```
 
-'ACsf' / [AbilityIds.feralSpirit](/stdlib/ref/_wurst/AbilityIds.html#abilityids-feralSpirit)
+'ACsf' / [AbilityIds.feralSpirit](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-feralSpirit)
 
 **Members:**
 
@@ -1659,7 +1659,7 @@ public class AbilityDefinitionSpiritWolfcreep extends AbilityDefinition
 public class AbilityDefinitionTinkererSummonFactoryLevel2 extends AbilityDefinition
 ```
 
-'ANs2' / [AbilityIds.tinkererSummonFactoryLevel2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererSummonFactoryLevel2)
+'ANs2' / [AbilityIds.tinkererSummonFactoryLevel2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-tinkererSummonFactoryLevel2)
 
 **Members:**
 
@@ -1683,7 +1683,7 @@ public class AbilityDefinitionTinkererSummonFactoryLevel2 extends AbilityDefinit
 public class AbilityDefinitionMaxManaBonusMost extends AbilityDefinition
 ```
 
-'AIbm' / [AbilityIds.maxManaBonusMost](/stdlib/ref/_wurst/AbilityIds.html#abilityids-maxManaBonusMost)
+'AIbm' / [AbilityIds.maxManaBonusMost](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-maxManaBonusMost)
 
 **Members:**
 
@@ -1697,7 +1697,7 @@ public class AbilityDefinitionMaxManaBonusMost extends AbilityDefinition
 public class AbilityDefinitionShockwaveCreep extends AbilityDefinition
 ```
 
-'ACsh' / [AbilityIds.shockwave](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shockwave)
+'ACsh' / [AbilityIds.shockwave](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-shockwave)
 
 **Members:**
 
@@ -1717,7 +1717,7 @@ public class AbilityDefinitionShockwaveCreep extends AbilityDefinition
 public class AbilityDefinitionBuildTinyCastle extends AbilityDefinition
 ```
 
-'AIbl' / [AbilityIds.buildTinyCastle](/stdlib/ref/_wurst/AbilityIds.html#abilityids-buildTinyCastle)
+'AIbl' / [AbilityIds.buildTinyCastle](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-buildTinyCastle)
 
 **Members:**
 
@@ -1731,7 +1731,7 @@ public class AbilityDefinitionBuildTinyCastle extends AbilityDefinition
 public class AbilityDefinitionSilenceCreep extends AbilityDefinition
 ```
 
-'ACsi' / [AbilityIds.silenceCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-silenceCreep)
+'ACsi' / [AbilityIds.silenceCreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-silenceCreep)
 
 **Members:**
 
@@ -1752,7 +1752,7 @@ public class AbilityDefinitionSilenceCreep extends AbilityDefinition
 public class AbilityDefinitionSleepcreep extends AbilityDefinition
 ```
 
-'ACsl' / [AbilityIds.sleep1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sleep1)
+'ACsl' / [AbilityIds.sleep1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-sleep1)
 
 **Members:**
 
@@ -1766,7 +1766,7 @@ public class AbilityDefinitionSleepcreep extends AbilityDefinition
 public class AbilityDefinitionBashitem extends AbilityDefinition
 ```
 
-'AIbx' / [AbilityIds.bashitem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bashitem)
+'AIbx' / [AbilityIds.bashitem](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-bashitem)
 
 **Members:**
 
@@ -1788,7 +1788,7 @@ public class AbilityDefinitionBashitem extends AbilityDefinition
 public class AbilityDefinitionDefenseBonusPlus5 extends AbilityDefinition
 ```
 
-'AId5' / [AbilityIds.defenseBonusPlus5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-defenseBonusPlus5)
+'AId5' / [AbilityIds.defenseBonusPlus5](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-defenseBonusPlus5)
 
 **Members:**
 
@@ -1802,7 +1802,7 @@ public class AbilityDefinitionDefenseBonusPlus5 extends AbilityDefinition
 public class AbilityDefinitionMountainKingBash extends AbilityDefinition
 ```
 
-'AHbh' / [AbilityIds.bash](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bash)
+'AHbh' / [AbilityIds.bash](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-bash)
 
 **Members:**
 
@@ -1824,7 +1824,7 @@ public class AbilityDefinitionMountainKingBash extends AbilityDefinition
 public class AbilityDefinitionSiphonManaCreep extends AbilityDefinition
 ```
 
-'ACsm' / [AbilityIds.siphonManaCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-siphonManaCreep)
+'ACsm' / [AbilityIds.siphonManaCreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-siphonManaCreep)
 
 **Members:**
 
@@ -1854,7 +1854,7 @@ public class AbilityDefinitionSiphonManaCreep extends AbilityDefinition
 public class AbilityDefinitionDefenseBonusPlus4 extends AbilityDefinition
 ```
 
-'AId4' / [AbilityIds.defenseBonusPlus4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-defenseBonusPlus4)
+'AId4' / [AbilityIds.defenseBonusPlus4](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-defenseBonusPlus4)
 
 **Members:**
 
@@ -1868,7 +1868,7 @@ public class AbilityDefinitionDefenseBonusPlus4 extends AbilityDefinition
 public class AbilityDefinitionBuildTinyScoutTower extends AbilityDefinition
 ```
 
-'AIbt' / [AbilityIds.buildTinyScoutTower](/stdlib/ref/_wurst/AbilityIds.html#abilityids-buildTinyScoutTower)
+'AIbt' / [AbilityIds.buildTinyScoutTower](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-buildTinyScoutTower)
 
 **Members:**
 
@@ -1882,7 +1882,7 @@ public class AbilityDefinitionBuildTinyScoutTower extends AbilityDefinition
 public class AbilityDefinitionItemCloakOfFlames extends AbilityDefinition
 ```
 
-'AIcf' / [AbilityIds.itemImmolation](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemImmolation)
+'AIcf' / [AbilityIds.itemImmolation](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemImmolation)
 
 **Members:**
 
@@ -1900,7 +1900,7 @@ public class AbilityDefinitionItemCloakOfFlames extends AbilityDefinition
 public class AbilityDefinitionItemAuraCommand extends AbilityDefinition
 ```
 
-'AIcd' / [AbilityIds.itemAuraCommand](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAuraCommand)
+'AIcd' / [AbilityIds.itemAuraCommand](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAuraCommand)
 
 **Members:**
 
@@ -1920,7 +1920,7 @@ public class AbilityDefinitionItemAuraCommand extends AbilityDefinition
 public class AbilityDefinitionHarvest extends AbilityDefinition
 ```
 
-'Ahar' / [AbilityIds.harvest](/stdlib/ref/_wurst/AbilityIds.html#abilityids-harvest)
+'Ahar' / [AbilityIds.harvest](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-harvest)
 
 **Members:**
 
@@ -1938,7 +1938,7 @@ public class AbilityDefinitionHarvest extends AbilityDefinition
 public class AbilityDefinitionMagicImmunityDragons extends AbilityDefinition
 ```
 
-'ACm3' / [AbilityIds.spellImmunity1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-spellImmunity1)
+'ACm3' / [AbilityIds.spellImmunity1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-spellImmunity1)
 
 **Members:**
 
@@ -1952,7 +1952,7 @@ public class AbilityDefinitionMagicImmunityDragons extends AbilityDefinition
 public class AbilityDefinitionMagicImmunityArchimonde extends AbilityDefinition
 ```
 
-'ACm2' / [AbilityIds.spellImmunity](/stdlib/ref/_wurst/AbilityIds.html#abilityids-spellImmunity)
+'ACm2' / [AbilityIds.spellImmunity](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-spellImmunity)
 
 **Members:**
 
@@ -1966,7 +1966,7 @@ public class AbilityDefinitionMagicImmunityArchimonde extends AbilityDefinition
 public class AbilityDefinitionOrbofCorruption extends AbilityDefinition
 ```
 
-'AIcb' / [AbilityIds.orbofCorruption](/stdlib/ref/_wurst/AbilityIds.html#abilityids-orbofCorruption)
+'AIcb' / [AbilityIds.orbofCorruption](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-orbofCorruption)
 
 **Members:**
 
@@ -1984,7 +1984,7 @@ public class AbilityDefinitionOrbofCorruption extends AbilityDefinition
 public class AbilityDefinitionWardenSpiritofVengeance extends AbilityDefinition
 ```
 
-'AEsv' / [AbilityIds.wardenSpiritofVengeance](/stdlib/ref/_wurst/AbilityIds.html#abilityids-wardenSpiritofVengeance)
+'AEsv' / [AbilityIds.wardenSpiritofVengeance](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-wardenSpiritofVengeance)
 
 **Members:**
 
@@ -2000,7 +2000,7 @@ public class AbilityDefinitionWardenSpiritofVengeance extends AbilityDefinition
 public class AbilityDefinitionItemChangeTOD extends AbilityDefinition
 ```
 
-'AIct' / [AbilityIds.itemChangeTOD](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemChangeTOD)
+'AIct' / [AbilityIds.itemChangeTOD](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemChangeTOD)
 
 **Members:**
 
@@ -2016,7 +2016,7 @@ public class AbilityDefinitionItemChangeTOD extends AbilityDefinition
 public class AbilityDefinitionMoonPriestessScout extends AbilityDefinition
 ```
 
-'AEst' / [AbilityIds.scout](/stdlib/ref/_wurst/AbilityIds.html#abilityids-scout)
+'AEst' / [AbilityIds.scout](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-scout)
 
 **Members:**
 
@@ -2032,7 +2032,7 @@ public class AbilityDefinitionMoonPriestessScout extends AbilityDefinition
 public class AbilityDefinitionCycloneAIcy extends AbilityDefinition
 ```
 
-'AIcy' / [AbilityIds.cycloneAIcy](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cycloneAIcy)
+'AIcy' / [AbilityIds.cycloneAIcy](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cycloneAIcy)
 
 **Members:**
 
@@ -2046,7 +2046,7 @@ public class AbilityDefinitionCycloneAIcy extends AbilityDefinition
 public class AbilityDefinitionExhume extends AbilityDefinition
 ```
 
-'Aexh' / [AbilityIds.exhume](/stdlib/ref/_wurst/AbilityIds.html#abilityids-exhume)
+'Aexh' / [AbilityIds.exhume](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-exhume)
 
 **Members:**
 
@@ -2062,7 +2062,7 @@ public class AbilityDefinitionExhume extends AbilityDefinition
 public class AbilityDefinitionItemCommand extends AbilityDefinition
 ```
 
-'AIco' / [AbilityIds.itemCommand](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCommand)
+'AIco' / [AbilityIds.itemCommand](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCommand)
 
 **Members:**
 
@@ -2076,7 +2076,7 @@ public class AbilityDefinitionItemCommand extends AbilityDefinition
 public class AbilityDefinitionExperienceModgreater extends AbilityDefinition
 ```
 
-'AIe2' / [AbilityIds.experienceModgreater](/stdlib/ref/_wurst/AbilityIds.html#abilityids-experienceModgreater)
+'AIe2' / [AbilityIds.experienceModgreater](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-experienceModgreater)
 
 **Members:**
 
@@ -2090,7 +2090,7 @@ public class AbilityDefinitionExperienceModgreater extends AbilityDefinition
 public class AbilityDefinitionDefenseBonusPlus7 extends AbilityDefinition
 ```
 
-'AId7' / [AbilityIds.defenseBonusPlus7](/stdlib/ref/_wurst/AbilityIds.html#abilityids-defenseBonusPlus7)
+'AId7' / [AbilityIds.defenseBonusPlus7](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-defenseBonusPlus7)
 
 **Members:**
 
@@ -2104,7 +2104,7 @@ public class AbilityDefinitionDefenseBonusPlus7 extends AbilityDefinition
 public class AbilityDefinitionDefenseBonusPlus8 extends AbilityDefinition
 ```
 
-'AId8' / [AbilityIds.defenseBonusPlus8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-defenseBonusPlus8)
+'AId8' / [AbilityIds.defenseBonusPlus8](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-defenseBonusPlus8)
 
 **Members:**
 
@@ -2118,7 +2118,7 @@ public class AbilityDefinitionDefenseBonusPlus8 extends AbilityDefinition
 public class AbilityDefinitionDefenseBonusPlus10 extends AbilityDefinition
 ```
 
-'AId0' / [AbilityIds.defenseBonusPlus10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-defenseBonusPlus10)
+'AId0' / [AbilityIds.defenseBonusPlus10](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-defenseBonusPlus10)
 
 **Members:**
 
@@ -2132,7 +2132,7 @@ public class AbilityDefinitionDefenseBonusPlus10 extends AbilityDefinition
 public class AbilityDefinitionDefendItem extends AbilityDefinition
 ```
 
-'AIdd' / [AbilityIds.defendItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-defendItem)
+'AIdd' / [AbilityIds.defendItem](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-defendItem)
 
 **Members:**
 
@@ -2162,7 +2162,7 @@ public class AbilityDefinitionDefendItem extends AbilityDefinition
 public class AbilityDefinitionOrbofDarkness extends AbilityDefinition
 ```
 
-'AIdf' / [AbilityIds.orbofDarkness](/stdlib/ref/_wurst/AbilityIds.html#abilityids-orbofDarkness)
+'AIdf' / [AbilityIds.orbofDarkness](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-orbofDarkness)
 
 **Members:**
 
@@ -2189,7 +2189,7 @@ public class AbilityDefinitionOrbofDarkness extends AbilityDefinition
 public class AbilityDefinitionItemDispelAoe extends AbilityDefinition
 ```
 
-'AIdi' / [AbilityIds.itemDispel](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDispel)
+'AIdi' / [AbilityIds.itemDispel](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemDispel)
 
 **Members:**
 
@@ -2205,7 +2205,7 @@ public class AbilityDefinitionItemDispelAoe extends AbilityDefinition
 public class AbilityDefinitionLightningShieldcreep extends AbilityDefinition
 ```
 
-'ACls' / [AbilityIds.lightningShieldcreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-lightningShieldcreep)
+'ACls' / [AbilityIds.lightningShieldcreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-lightningShieldcreep)
 
 **Members:**
 
@@ -2219,7 +2219,7 @@ public class AbilityDefinitionLightningShieldcreep extends AbilityDefinition
 public class AbilityDefinitionCargoHoldShip extends AbilityDefinition
 ```
 
-'Sch5' / [AbilityIds.cargoHoldShip](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cargoHoldShip)
+'Sch5' / [AbilityIds.cargoHoldShip](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cargoHoldShip)
 
 **Members:**
 
@@ -2233,7 +2233,7 @@ public class AbilityDefinitionCargoHoldShip extends AbilityDefinition
 public class AbilityDefinitionCannibalize extends AbilityDefinition
 ```
 
-'Acan' / [AbilityIds.cannibalize](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cannibalize)
+'Acan' / [AbilityIds.cannibalize](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cannibalize)
 
 **Members:**
 
@@ -2249,7 +2249,7 @@ public class AbilityDefinitionCannibalize extends AbilityDefinition
 public class AbilityDefinitionCargoHoldTank extends AbilityDefinition
 ```
 
-'Sch4' / [AbilityIds.cargoHoldTank](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cargoHoldTank)
+'Sch4' / [AbilityIds.cargoHoldTank](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cargoHoldTank)
 
 **Members:**
 
@@ -2263,7 +2263,7 @@ public class AbilityDefinitionCargoHoldTank extends AbilityDefinition
 public class AbilityDefinitionItemDefenseAoe extends AbilityDefinition
 ```
 
-'AIda' / [AbilityIds.itemTemporaryAreaArmorBonus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemTemporaryAreaArmorBonus)
+'AIda' / [AbilityIds.itemTemporaryAreaArmorBonus](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemTemporaryAreaArmorBonus)
 
 **Members:**
 
@@ -2281,7 +2281,7 @@ public class AbilityDefinitionItemDefenseAoe extends AbilityDefinition
 public class AbilityDefinitionCargoHoldTransport extends AbilityDefinition
 ```
 
-'Sch3' / [AbilityIds.cargoHoldTransport](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cargoHoldTransport)
+'Sch3' / [AbilityIds.cargoHoldTransport](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cargoHoldTransport)
 
 **Members:**
 
@@ -2295,7 +2295,7 @@ public class AbilityDefinitionCargoHoldTransport extends AbilityDefinition
 public class AbilityDefinitionCargoHoldMeatWagon extends AbilityDefinition
 ```
 
-'Sch2' / [AbilityIds.cargoHoldMeatWagon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cargoHoldMeatWagon)
+'Sch2' / [AbilityIds.cargoHoldMeatWagon](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cargoHoldMeatWagon)
 
 **Members:**
 
@@ -2309,7 +2309,7 @@ public class AbilityDefinitionCargoHoldMeatWagon extends AbilityDefinition
 public class AbilityDefinitionItemDispelChain extends AbilityDefinition
 ```
 
-'AIdc' / [AbilityIds.itemDispelChain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDispelChain)
+'AIdc' / [AbilityIds.itemDispelChain](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemDispelChain)
 
 **Members:**
 
@@ -2327,7 +2327,7 @@ public class AbilityDefinitionItemDispelChain extends AbilityDefinition
 public class AbilityDefinitionTaurenChieftainEnduranceAura extends AbilityDefinition
 ```
 
-'AOae' / [AbilityIds.enduranceAura1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-enduranceAura1)
+'AOae' / [AbilityIds.enduranceAura1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-enduranceAura1)
 
 **Members:**
 
@@ -2345,7 +2345,7 @@ public class AbilityDefinitionTaurenChieftainEnduranceAura extends AbilityDefini
 public class AbilityDefinitionItemDefenseAoePlusHealing extends AbilityDefinition
 ```
 
-'AIdb' / [AbilityIds.itemDefenseAoePlusHealing](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDefenseAoePlusHealing)
+'AIdb' / [AbilityIds.itemDefenseAoePlusHealing](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemDefenseAoePlusHealing)
 
 **Members:**
 
@@ -2363,7 +2363,7 @@ public class AbilityDefinitionItemDefenseAoePlusHealing extends AbilityDefinitio
 public class AbilityDefinitionMagicImmunityCreep extends AbilityDefinition
 ```
 
-'ACmi' / [AbilityIds.magicImmunityCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-magicImmunityCreep)
+'ACmi' / [AbilityIds.magicImmunityCreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-magicImmunityCreep)
 
 **Members:**
 
@@ -2377,7 +2377,7 @@ public class AbilityDefinitionMagicImmunityCreep extends AbilityDefinition
 public class AbilityDefinitionKeeperoftheGroveTranquility extends AbilityDefinition
 ```
 
-'AEtq' / [AbilityIds.tranquility](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tranquility)
+'AEtq' / [AbilityIds.tranquility](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-tranquility)
 
 **Members:**
 
@@ -2397,7 +2397,7 @@ public class AbilityDefinitionKeeperoftheGroveTranquility extends AbilityDefinit
 public class AbilityDefinitionWindWalk extends AbilityDefinition
 ```
 
-'ANwk' / [AbilityIds.windWalk1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-windWalk1)
+'ANwk' / [AbilityIds.windWalk1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-windWalk1)
 
 **Members:**
 
@@ -2424,7 +2424,7 @@ public class AbilityDefinitionWindWalk extends AbilityDefinition
 public class AbilityDefinitionManaShieldCreep extends AbilityDefinition
 ```
 
-'ACmf' / [AbilityIds.manaShieldCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-manaShieldCreep)
+'ACmf' / [AbilityIds.manaShieldCreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-manaShieldCreep)
 
 **Members:**
 
@@ -2441,7 +2441,7 @@ public class AbilityDefinitionManaShieldCreep extends AbilityDefinition
 public class AbilityDefinitionWateryMinion extends AbilityDefinition
 ```
 
-'ANwm' / [AbilityIds.wateryMinion](/stdlib/ref/_wurst/AbilityIds.html#abilityids-wateryMinion)
+'ANwm' / [AbilityIds.wateryMinion](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-wateryMinion)
 
 **Members:**
 
@@ -2457,7 +2457,7 @@ public class AbilityDefinitionWateryMinion extends AbilityDefinition
 public class AbilityDefinitionItemDispelAoeWithCooldown extends AbilityDefinition
 ```
 
-'AIds' / [AbilityIds.itemDispelAoeWithCooldown](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDispelAoeWithCooldown)
+'AIds' / [AbilityIds.itemDispelAoeWithCooldown](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemDispelAoeWithCooldown)
 
 **Members:**
 
@@ -2473,7 +2473,7 @@ public class AbilityDefinitionItemDispelAoeWithCooldown extends AbilityDefinitio
 public class AbilityDefinitionEvilIllidanMetamorphosis extends AbilityDefinition
 ```
 
-'AEvi' / [AbilityIds.evilIllidanMetamorphosis](/stdlib/ref/_wurst/AbilityIds.html#abilityids-evilIllidanMetamorphosis)
+'AEvi' / [AbilityIds.evilIllidanMetamorphosis](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-evilIllidanMetamorphosis)
 
 **Members:**
 
@@ -2499,7 +2499,7 @@ public class AbilityDefinitionEvilIllidanMetamorphosis extends AbilityDefinition
 public class AbilityDefinitionImpaleCreep extends AbilityDefinition
 ```
 
-'ACmp' / [AbilityIds.impaleCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-impaleCreep)
+'ACmp' / [AbilityIds.impaleCreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-impaleCreep)
 
 **Members:**
 
@@ -2523,7 +2523,7 @@ public class AbilityDefinitionImpaleCreep extends AbilityDefinition
 public class AbilityDefinitionMonsooncreep extends AbilityDefinition
 ```
 
-'ACmo' / [AbilityIds.monsooncreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-monsooncreep)
+'ACmo' / [AbilityIds.monsooncreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-monsooncreep)
 
 **Members:**
 
@@ -2541,7 +2541,7 @@ public class AbilityDefinitionMonsooncreep extends AbilityDefinition
 public class AbilityDefinitionDevourMagic extends AbilityDefinition
 ```
 
-'Advm' / [AbilityIds.devourMagic](/stdlib/ref/_wurst/AbilityIds.html#abilityids-devourMagic)
+'Advm' / [AbilityIds.devourMagic](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-devourMagic)
 
 **Members:**
 
@@ -2565,7 +2565,7 @@ public class AbilityDefinitionDevourMagic extends AbilityDefinition
 public class AbilityDefinitionEvasion extends AbilityDefinition
 ```
 
-'ACev' / [AbilityIds.evasion](/stdlib/ref/_wurst/AbilityIds.html#abilityids-evasion)
+'ACev' / [AbilityIds.evasion](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-evasion)
 
 **Members:**
 
@@ -2579,7 +2579,7 @@ public class AbilityDefinitionEvasion extends AbilityDefinition
 public class AbilityDefinitionCargoHoldDevour extends AbilityDefinition
 ```
 
-'Advc' / [AbilityIds.devourCargo](/stdlib/ref/_wurst/AbilityIds.html#abilityids-devourCargo)
+'Advc' / [AbilityIds.devourCargo](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-devourCargo)
 
 **Members:**
 
@@ -2597,7 +2597,7 @@ public class AbilityDefinitionCargoHoldDevour extends AbilityDefinition
 public class AbilityDefinitionExperienceMod extends AbilityDefinition
 ```
 
-'AIem' / [AbilityIds.itemExperienceGain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemExperienceGain)
+'AIem' / [AbilityIds.itemExperienceGain](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemExperienceGain)
 
 **Members:**
 
@@ -2611,7 +2611,7 @@ public class AbilityDefinitionExperienceMod extends AbilityDefinition
 public class AbilityDefinitionCloudofFogItem extends AbilityDefinition
 ```
 
-'AIfg' / [AbilityIds.cloudofFogItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cloudofFogItem)
+'AIfg' / [AbilityIds.cloudofFogItem](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cloudofFogItem)
 
 **Members:**
 
@@ -2632,7 +2632,7 @@ public class AbilityDefinitionCloudofFogItem extends AbilityDefinition
 public class AbilityDefinitionDisenchantold extends AbilityDefinition
 ```
 
-'Adch' / [AbilityIds.disenchantold](/stdlib/ref/_wurst/AbilityIds.html#abilityids-disenchantold)
+'Adch' / [AbilityIds.disenchantold](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-disenchantold)
 
 **Members:**
 
@@ -2648,7 +2648,7 @@ public class AbilityDefinitionDisenchantold extends AbilityDefinition
 public class AbilityDefinitionPillage extends AbilityDefinition
 ```
 
-'Asal' / [AbilityIds.pillage](/stdlib/ref/_wurst/AbilityIds.html#abilityids-pillage)
+'Asal' / [AbilityIds.pillage](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-pillage)
 
 **Members:**
 
@@ -2664,7 +2664,7 @@ public class AbilityDefinitionPillage extends AbilityDefinition
 public class AbilityDefinitionInventoryPackMule extends AbilityDefinition
 ```
 
-'Apak' / [AbilityIds.inventoryPackMule](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inventoryPackMule)
+'Apak' / [AbilityIds.inventoryPackMule](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-inventoryPackMule)
 
 **Members:**
 
@@ -2686,7 +2686,7 @@ public class AbilityDefinitionInventoryPackMule extends AbilityDefinition
 public class AbilityDefinitionFigurineFurbolg extends AbilityDefinition
 ```
 
-'AIff' / [AbilityIds.itemFurbolgSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemFurbolgSummon)
+'AIff' / [AbilityIds.itemFurbolgSummon](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemFurbolgSummon)
 
 **Members:**
 
@@ -2710,7 +2710,7 @@ public class AbilityDefinitionFigurineFurbolg extends AbilityDefinition
 public class AbilityDefinitionFigurineFelHound extends AbilityDefinition
 ```
 
-'AIfh' / [AbilityIds.itemFelhoundSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemFelhoundSummon)
+'AIfh' / [AbilityIds.itemFelhoundSummon](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemFelhoundSummon)
 
 **Members:**
 
@@ -2734,7 +2734,7 @@ public class AbilityDefinitionFigurineFelHound extends AbilityDefinition
 public class AbilityDefinitionFireDamageBonus extends AbilityDefinition
 ```
 
-'AIfb' / [AbilityIds.itemAttackFireBonus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackFireBonus)
+'AIfb' / [AbilityIds.itemAttackFireBonus](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAttackFireBonus)
 
 **Members:**
 
@@ -2750,7 +2750,7 @@ public class AbilityDefinitionFireDamageBonus extends AbilityDefinition
 public class AbilityDefinitionHealReductionBonus extends AbilityDefinition
 ```
 
-'AIf2' / [AbilityIds.itemAttackHealReduction](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackHealReduction)
+'AIf2' / [AbilityIds.itemAttackHealReduction](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAttackHealReduction)
 
 **Members:**
 
@@ -2768,7 +2768,7 @@ public class AbilityDefinitionHealReductionBonus extends AbilityDefinition
 public class AbilityDefinitionDetectMagicSentinel extends AbilityDefinition
 ```
 
-'Adts' / [AbilityIds.magicSentry](/stdlib/ref/_wurst/AbilityIds.html#abilityids-magicSentry)
+'Adts' / [AbilityIds.magicSentry](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-magicSentry)
 
 **Members:**
 
@@ -2782,7 +2782,7 @@ public class AbilityDefinitionDetectMagicSentinel extends AbilityDefinition
 public class AbilityDefinitionFirelordVolcano extends AbilityDefinition
 ```
 
-'ANvc' / [AbilityIds.volcano](/stdlib/ref/_wurst/AbilityIds.html#abilityids-volcano)
+'ANvc' / [AbilityIds.volcano](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-volcano)
 
 **Members:**
 
@@ -2808,7 +2808,7 @@ public class AbilityDefinitionFirelordVolcano extends AbilityDefinition
 public class AbilityDefinitionFigurineRedDrake extends AbilityDefinition
 ```
 
-'AIfd' / [AbilityIds.itemRedDrakeSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRedDrakeSummon)
+'AIfd' / [AbilityIds.itemRedDrakeSummon](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemRedDrakeSummon)
 
 **Members:**
 
@@ -2832,7 +2832,7 @@ public class AbilityDefinitionFigurineRedDrake extends AbilityDefinition
 public class AbilityDefinitionHealingWard extends AbilityDefinition
 ```
 
-'Ahwd' / [AbilityIds.healingWard1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-healingWard1)
+'Ahwd' / [AbilityIds.healingWard1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-healingWard1)
 
 **Members:**
 
@@ -2846,7 +2846,7 @@ public class AbilityDefinitionHealingWard extends AbilityDefinition
 public class AbilityDefinitionFlareGun extends AbilityDefinition
 ```
 
-'AIfa' / [AbilityIds.flareGun](/stdlib/ref/_wurst/AbilityIds.html#abilityids-flareGun)
+'AIfa' / [AbilityIds.flareGun](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-flareGun)
 
 **Members:**
 
@@ -2862,7 +2862,7 @@ public class AbilityDefinitionFlareGun extends AbilityDefinition
 public class AbilityDefinitionLoadEntangledGoldMine extends AbilityDefinition
 ```
 
-'Slo2' / [AbilityIds.loadWisp](/stdlib/ref/_wurst/AbilityIds.html#abilityids-loadWisp)
+'Slo2' / [AbilityIds.loadWisp](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-loadWisp)
 
 **Members:**
 
@@ -2876,7 +2876,7 @@ public class AbilityDefinitionLoadEntangledGoldMine extends AbilityDefinition
 public class AbilityDefinitionNeutralRegenhealthonly extends AbilityDefinition
 ```
 
-'ACnr' / [AbilityIds.lifeRegenerationAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-lifeRegenerationAura)
+'ACnr' / [AbilityIds.lifeRegenerationAura](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-lifeRegenerationAura)
 
 **Members:**
 
@@ -2892,7 +2892,7 @@ public class AbilityDefinitionNeutralRegenhealthonly extends AbilityDefinition
 public class AbilityDefinitionAuraRegenerationHealingWard extends AbilityDefinition
 ```
 
-'Aoar' / [AbilityIds.healingWardAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-healingWardAura)
+'Aoar' / [AbilityIds.healingWardAura](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-healingWardAura)
 
 **Members:**
 
@@ -2908,7 +2908,7 @@ public class AbilityDefinitionAuraRegenerationHealingWard extends AbilityDefinit
 public class AbilityDefinitionLoadNavies extends AbilityDefinition
 ```
 
-'Slo3' / [AbilityIds.loadNavies](/stdlib/ref/_wurst/AbilityIds.html#abilityids-loadNavies)
+'Slo3' / [AbilityIds.loadNavies](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-loadNavies)
 
 **Members:**
 
@@ -2922,7 +2922,7 @@ public class AbilityDefinitionLoadNavies extends AbilityDefinition
 public class AbilityDefinitionInvisibility extends AbilityDefinition
 ```
 
-'Aivs' / [AbilityIds.invisibility](/stdlib/ref/_wurst/AbilityIds.html#abilityids-invisibility)
+'Aivs' / [AbilityIds.invisibility](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-invisibility)
 
 **Members:**
 
@@ -2936,7 +2936,7 @@ public class AbilityDefinitionInvisibility extends AbilityDefinition
 public class AbilityDefinitionSentryWard extends AbilityDefinition
 ```
 
-'Aeye' / [AbilityIds.sentryWard](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sentryWard)
+'Aeye' / [AbilityIds.sentryWard](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-sentryWard)
 
 **Members:**
 
@@ -2950,7 +2950,7 @@ public class AbilityDefinitionSentryWard extends AbilityDefinition
 public class AbilityDefinitionFigurineRockGolem extends AbilityDefinition
 ```
 
-'AIfr' / [AbilityIds.itemRockGolemSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRockGolemSummon)
+'AIfr' / [AbilityIds.itemRockGolemSummon](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemRockGolemSummon)
 
 **Members:**
 
@@ -2974,7 +2974,7 @@ public class AbilityDefinitionFigurineRockGolem extends AbilityDefinition
 public class AbilityDefinitionFigurineSkeleton extends AbilityDefinition
 ```
 
-'AIfs' / [AbilityIds.itemSkeletonSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSkeletonSummon)
+'AIfs' / [AbilityIds.itemSkeletonSummon](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSkeletonSummon)
 
 **Members:**
 
@@ -2998,7 +2998,7 @@ public class AbilityDefinitionFigurineSkeleton extends AbilityDefinition
 public class AbilityDefinitionSubmergeMyrmidon extends AbilityDefinition
 ```
 
-'Asb1' / [AbilityIds.submergeMyrmidon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-submergeMyrmidon)
+'Asb1' / [AbilityIds.submergeMyrmidon](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-submergeMyrmidon)
 
 **Members:**
 
@@ -3020,7 +3020,7 @@ public class AbilityDefinitionSubmergeMyrmidon extends AbilityDefinition
 public class AbilityDefinitionSubmergeRoyalGuard extends AbilityDefinition
 ```
 
-'Asb2' / [AbilityIds.submergeRoyalGuard](/stdlib/ref/_wurst/AbilityIds.html#abilityids-submergeRoyalGuard)
+'Asb2' / [AbilityIds.submergeRoyalGuard](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-submergeRoyalGuard)
 
 **Members:**
 
@@ -3042,7 +3042,7 @@ public class AbilityDefinitionSubmergeRoyalGuard extends AbilityDefinition
 public class AbilityDefinitionFigurineDoomGuard extends AbilityDefinition
 ```
 
-'AIfu' / [AbilityIds.itemDoomGuardSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDoomGuardSummon)
+'AIfu' / [AbilityIds.itemDoomGuardSummon](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemDoomGuardSummon)
 
 **Members:**
 
@@ -3066,7 +3066,7 @@ public class AbilityDefinitionFigurineDoomGuard extends AbilityDefinition
 public class AbilityDefinitionSubmergeSnapDragon extends AbilityDefinition
 ```
 
-'Asb3' / [AbilityIds.submergeSnapDragon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-submergeSnapDragon)
+'Asb3' / [AbilityIds.submergeSnapDragon](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-submergeSnapDragon)
 
 **Members:**
 
@@ -3088,7 +3088,7 @@ public class AbilityDefinitionSubmergeSnapDragon extends AbilityDefinition
 public class AbilityDefinitionItemHealLesser extends AbilityDefinition
 ```
 
-'AIh1' / [AbilityIds.itemHealLesser](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealLesser)
+'AIh1' / [AbilityIds.itemHealLesser](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHealLesser)
 
 **Members:**
 
@@ -3102,7 +3102,7 @@ public class AbilityDefinitionItemHealLesser extends AbilityDefinition
 public class AbilityDefinitionItemHealGreater extends AbilityDefinition
 ```
 
-'AIh2' / [AbilityIds.itemHealGreater](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealGreater)
+'AIh2' / [AbilityIds.itemHealGreater](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHealGreater)
 
 **Members:**
 
@@ -3116,7 +3116,7 @@ public class AbilityDefinitionItemHealGreater extends AbilityDefinition
 public class AbilityDefinitionItemHealLeast extends AbilityDefinition
 ```
 
-'AIh3' / [AbilityIds.itemHealLeast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealLeast)
+'AIh3' / [AbilityIds.itemHealLeast](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHealLeast)
 
 **Members:**
 
@@ -3130,7 +3130,7 @@ public class AbilityDefinitionItemHealLeast extends AbilityDefinition
 public class AbilityDefinitionGiveGold extends AbilityDefinition
 ```
 
-'AIgo' / [AbilityIds.giveGold](/stdlib/ref/_wurst/AbilityIds.html#abilityids-giveGold)
+'AIgo' / [AbilityIds.giveGold](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-giveGold)
 
 **Members:**
 
@@ -3144,7 +3144,7 @@ public class AbilityDefinitionGiveGold extends AbilityDefinition
 public class AbilityDefinitionIntelligenceBonusPlus1 extends AbilityDefinition
 ```
 
-'AIi1' / [AbilityIds.intelligenceBonusPlus1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-intelligenceBonusPlus1)
+'AIi1' / [AbilityIds.intelligenceBonusPlus1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-intelligenceBonusPlus1)
 
 **Members:**
 
@@ -3164,7 +3164,7 @@ public class AbilityDefinitionIntelligenceBonusPlus1 extends AbilityDefinition
 public class AbilityDefinitionIntelligenceBonusPlus2 extends AbilityDefinition
 ```
 
-'AIi2' / [AbilityIds.intelligenceBonusPlus2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-intelligenceBonusPlus2)
+'AIi2' / [AbilityIds.intelligenceBonusPlus2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-intelligenceBonusPlus2)
 
 **Members:**
 
@@ -3184,7 +3184,7 @@ public class AbilityDefinitionIntelligenceBonusPlus2 extends AbilityDefinition
 public class AbilityDefinitionIntelligenceBonusPlus5 extends AbilityDefinition
 ```
 
-'AIi5' / [AbilityIds.intelligenceBonusPlus5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-intelligenceBonusPlus5)
+'AIi5' / [AbilityIds.intelligenceBonusPlus5](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-intelligenceBonusPlus5)
 
 **Members:**
 
@@ -3204,7 +3204,7 @@ public class AbilityDefinitionIntelligenceBonusPlus5 extends AbilityDefinition
 public class AbilityDefinitionBurrowscarablvl2 extends AbilityDefinition
 ```
 
-'Abu2' / [AbilityIds.burrowscarablvl2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-burrowscarablvl2)
+'Abu2' / [AbilityIds.burrowscarablvl2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-burrowscarablvl2)
 
 **Members:**
 
@@ -3228,7 +3228,7 @@ public class AbilityDefinitionBurrowscarablvl2 extends AbilityDefinition
 public class AbilityDefinitionIntelligenceBonusPlus4 extends AbilityDefinition
 ```
 
-'AIi4' / [AbilityIds.intelligenceBonusPlus4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-intelligenceBonusPlus4)
+'AIi4' / [AbilityIds.intelligenceBonusPlus4](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-intelligenceBonusPlus4)
 
 **Members:**
 
@@ -3248,7 +3248,7 @@ public class AbilityDefinitionIntelligenceBonusPlus4 extends AbilityDefinition
 public class AbilityDefinitionFirelordSummonLavaSpawn extends AbilityDefinition
 ```
 
-'ANlm' / [AbilityIds.summonLavaSpawn](/stdlib/ref/_wurst/AbilityIds.html#abilityids-summonLavaSpawn)
+'ANlm' / [AbilityIds.summonLavaSpawn](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-summonLavaSpawn)
 
 **Members:**
 
@@ -3274,7 +3274,7 @@ public class AbilityDefinitionFirelordSummonLavaSpawn extends AbilityDefinition
 public class AbilityDefinitionBurrowscarablvl3 extends AbilityDefinition
 ```
 
-'Abu3' / [AbilityIds.burrowscarablvl3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-burrowscarablvl3)
+'Abu3' / [AbilityIds.burrowscarablvl3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-burrowscarablvl3)
 
 **Members:**
 
@@ -3298,7 +3298,7 @@ public class AbilityDefinitionBurrowscarablvl3 extends AbilityDefinition
 public class AbilityDefinitionHeal extends AbilityDefinition
 ```
 
-'Ahea' / [AbilityIds.heal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-heal)
+'Ahea' / [AbilityIds.heal](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-heal)
 
 **Members:**
 
@@ -3312,7 +3312,7 @@ public class AbilityDefinitionHeal extends AbilityDefinition
 public class AbilityDefinitionIntelligenceBonusPlus3 extends AbilityDefinition
 ```
 
-'AIi3' / [AbilityIds.intelligenceBonusPlus3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-intelligenceBonusPlus3)
+'AIi3' / [AbilityIds.intelligenceBonusPlus3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-intelligenceBonusPlus3)
 
 **Members:**
 
@@ -3332,7 +3332,7 @@ public class AbilityDefinitionIntelligenceBonusPlus3 extends AbilityDefinition
 public class AbilityDefinitionIntelligenceBonusPlus6 extends AbilityDefinition
 ```
 
-'AIi6' / [AbilityIds.intelligenceBonusPlus6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-intelligenceBonusPlus6)
+'AIi6' / [AbilityIds.intelligenceBonusPlus6](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-intelligenceBonusPlus6)
 
 **Members:**
 
@@ -3352,7 +3352,7 @@ public class AbilityDefinitionIntelligenceBonusPlus6 extends AbilityDefinition
 public class AbilityDefinitionBerserk extends AbilityDefinition
 ```
 
-'Absk' / [AbilityIds.berserkerRage1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-berserkerRage1)
+'Absk' / [AbilityIds.berserkerRage1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-berserkerRage1)
 
 **Members:**
 
@@ -3370,7 +3370,7 @@ public class AbilityDefinitionBerserk extends AbilityDefinition
 public class AbilityDefinitionReplenishLifeMana extends AbilityDefinition
 ```
 
-'Arpb' / [AbilityIds.replenishLifeMana](/stdlib/ref/_wurst/AbilityIds.html#abilityids-replenishLifeMana)
+'Arpb' / [AbilityIds.replenishLifeMana](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-replenishLifeMana)
 
 **Members:**
 
@@ -3394,7 +3394,7 @@ public class AbilityDefinitionReplenishLifeMana extends AbilityDefinition
 public class AbilityDefinitionUltraVisionGlyph extends AbilityDefinition
 ```
 
-'AIgu' / [AbilityIds.ultraVisionGlyph](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ultraVisionGlyph)
+'AIgu' / [AbilityIds.ultraVisionGlyph](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ultraVisionGlyph)
 
 **Members:**
 
@@ -3410,7 +3410,7 @@ public class AbilityDefinitionUltraVisionGlyph extends AbilityDefinition
 public class AbilityDefinitionReplenishLife extends AbilityDefinition
 ```
 
-'Arpl' / [AbilityIds.replenishLife](/stdlib/ref/_wurst/AbilityIds.html#abilityids-replenishLife)
+'Arpl' / [AbilityIds.replenishLife](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-replenishLife)
 
 **Members:**
 
@@ -3430,7 +3430,7 @@ public class AbilityDefinitionReplenishLife extends AbilityDefinition
 public class AbilityDefinitionInventory2slotunitUndead extends AbilityDefinition
 ```
 
-'Aiun' / [AbilityIds.inventory2slotunitUndead](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inventory2slotunitUndead)
+'Aiun' / [AbilityIds.inventory2slotunitUndead](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-inventory2slotunitUndead)
 
 **Members:**
 
@@ -3452,7 +3452,7 @@ public class AbilityDefinitionInventory2slotunitUndead extends AbilityDefinition
 public class AbilityDefinitionManaBattery extends AbilityDefinition
 ```
 
-'Ambt' / [AbilityIds.replenishManaandLife](/stdlib/ref/_wurst/AbilityIds.html#abilityids-replenishManaandLife)
+'Ambt' / [AbilityIds.replenishManaandLife](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-replenishManaandLife)
 
 **Members:**
 
@@ -3474,7 +3474,7 @@ public class AbilityDefinitionManaBattery extends AbilityDefinition
 public class AbilityDefinitionReplenishMana extends AbilityDefinition
 ```
 
-'Arpm' / [AbilityIds.replenishMana](/stdlib/ref/_wurst/AbilityIds.html#abilityids-replenishMana)
+'Arpm' / [AbilityIds.replenishMana](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-replenishMana)
 
 **Members:**
 
@@ -3494,7 +3494,7 @@ public class AbilityDefinitionReplenishMana extends AbilityDefinition
 public class AbilityDefinitionHealCreepNormal extends AbilityDefinition
 ```
 
-'Anh1' / [AbilityIds.healCreepNormal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-healCreepNormal)
+'Anh1' / [AbilityIds.healCreepNormal](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-healCreepNormal)
 
 **Members:**
 
@@ -3508,7 +3508,7 @@ public class AbilityDefinitionHealCreepNormal extends AbilityDefinition
 public class AbilityDefinitionHealCreepHigh extends AbilityDefinition
 ```
 
-'Anh2' / [AbilityIds.healCreepHigh](/stdlib/ref/_wurst/AbilityIds.html#abilityids-healCreepHigh)
+'Anh2' / [AbilityIds.healCreepHigh](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-healCreepHigh)
 
 **Members:**
 
@@ -3522,7 +3522,7 @@ public class AbilityDefinitionHealCreepHigh extends AbilityDefinition
 public class AbilityDefinitionAuraSlow extends AbilityDefinition
 ```
 
-'Aasl' / [AbilityIds.slowAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-slowAura)
+'Aasl' / [AbilityIds.slowAura](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-slowAura)
 
 **Members:**
 
@@ -3540,7 +3540,7 @@ public class AbilityDefinitionAuraSlow extends AbilityDefinition
 public class AbilityDefinitionCurse extends AbilityDefinition
 ```
 
-'Acrs' / [AbilityIds.curse](/stdlib/ref/_wurst/AbilityIds.html#abilityids-curse)
+'Acrs' / [AbilityIds.curse](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-curse)
 
 **Members:**
 
@@ -3554,7 +3554,7 @@ public class AbilityDefinitionCurse extends AbilityDefinition
 public class AbilityDefinitionSuperEarthquake extends AbilityDefinition
 ```
 
-'SNeq' / [AbilityIds.earthquake](/stdlib/ref/_wurst/AbilityIds.html#abilityids-earthquake)
+'SNeq' / [AbilityIds.earthquake](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-earthquake)
 
 **Members:**
 
@@ -3575,7 +3575,7 @@ public class AbilityDefinitionSuperEarthquake extends AbilityDefinition
 public class AbilityDefinitionFortificationGlyph extends AbilityDefinition
 ```
 
-'AIgf' / [AbilityIds.fortificationGlyph](/stdlib/ref/_wurst/AbilityIds.html#abilityids-fortificationGlyph)
+'AIgf' / [AbilityIds.fortificationGlyph](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-fortificationGlyph)
 
 **Members:**
 
@@ -3591,7 +3591,7 @@ public class AbilityDefinitionFortificationGlyph extends AbilityDefinition
 public class AbilityDefinitionManaBurndemonAmbd extends AbilityDefinition
 ```
 
-'Ambd' / [AbilityIds.manaBurn](/stdlib/ref/_wurst/AbilityIds.html#abilityids-manaBurn)
+'Ambd' / [AbilityIds.manaBurn](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-manaBurn)
 
 **Members:**
 
@@ -3609,7 +3609,7 @@ public class AbilityDefinitionManaBurndemonAmbd extends AbilityDefinition
 public class AbilityDefinitionFarseerFarSight extends AbilityDefinition
 ```
 
-'AOfs' / [AbilityIds.farSight](/stdlib/ref/_wurst/AbilityIds.html#abilityids-farSight)
+'AOfs' / [AbilityIds.farSight](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-farSight)
 
 **Members:**
 
@@ -3623,7 +3623,7 @@ public class AbilityDefinitionFarseerFarSight extends AbilityDefinition
 public class AbilityDefinitionAgilityModPlus2 extends AbilityDefinition
 ```
 
-'AIgm' / [AbilityIds.agilityModPlus2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-agilityModPlus2)
+'AIgm' / [AbilityIds.agilityModPlus2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-agilityModPlus2)
 
 **Members:**
 
@@ -3643,7 +3643,7 @@ public class AbilityDefinitionAgilityModPlus2 extends AbilityDefinition
 public class AbilityDefinitionHarvestLumberArchimondeghouls extends AbilityDefinition
 ```
 
-'Ahr2' / [AbilityIds.harvestLumberArchimondeghouls](/stdlib/ref/_wurst/AbilityIds.html#abilityids-harvestLumberArchimondeghouls)
+'Ahr2' / [AbilityIds.harvestLumberArchimondeghouls](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-harvestLumberArchimondeghouls)
 
 **Members:**
 
@@ -3659,7 +3659,7 @@ public class AbilityDefinitionHarvestLumberArchimondeghouls extends AbilityDefin
 public class AbilityDefinitionHealingWardAIhw extends AbilityDefinition
 ```
 
-'AIhw' / [AbilityIds.healingWardAIhw](/stdlib/ref/_wurst/AbilityIds.html#abilityids-healingWardAIhw)
+'AIhw' / [AbilityIds.healingWardAIhw](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-healingWardAIhw)
 
 **Members:**
 
@@ -3673,7 +3673,7 @@ public class AbilityDefinitionHealingWardAIhw extends AbilityDefinition
 public class AbilityDefinitionIllidanMetamorphosis extends AbilityDefinition
 ```
 
-'AEIl' / [AbilityIds.metamorphosis1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-metamorphosis1)
+'AEIl' / [AbilityIds.metamorphosis1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-metamorphosis1)
 
 **Members:**
 
@@ -3699,7 +3699,7 @@ public class AbilityDefinitionIllidanMetamorphosis extends AbilityDefinition
 public class AbilityDefinitionHexCreep extends AbilityDefinition
 ```
 
-'AChx' / [AbilityIds.hexCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-hexCreep)
+'AChx' / [AbilityIds.hexCreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-hexCreep)
 
 **Members:**
 
@@ -3721,7 +3721,7 @@ public class AbilityDefinitionHexCreep extends AbilityDefinition
 public class AbilityDefinitionHealingWardcreep extends AbilityDefinition
 ```
 
-'AChw' / [AbilityIds.healingWard](/stdlib/ref/_wurst/AbilityIds.html#abilityids-healingWard)
+'AChw' / [AbilityIds.healingWard](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-healingWard)
 
 **Members:**
 
@@ -3735,7 +3735,7 @@ public class AbilityDefinitionHealingWardcreep extends AbilityDefinition
 public class AbilityDefinitionBattlestations extends AbilityDefinition
 ```
 
-'Abtl' / [AbilityIds.battleStations](/stdlib/ref/_wurst/AbilityIds.html#abilityids-battleStations)
+'Abtl' / [AbilityIds.battleStations](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-battleStations)
 
 **Members:**
 
@@ -3751,7 +3751,7 @@ public class AbilityDefinitionBattlestations extends AbilityDefinition
 public class AbilityDefinitionHealingWaveCreep extends AbilityDefinition
 ```
 
-'AChv' / [AbilityIds.healingWaveCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-healingWaveCreep)
+'AChv' / [AbilityIds.healingWaveCreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-healingWaveCreep)
 
 **Members:**
 
@@ -3769,7 +3769,7 @@ public class AbilityDefinitionHealingWaveCreep extends AbilityDefinition
 public class AbilityDefinitionInnerFireCreep extends AbilityDefinition
 ```
 
-'ACif' / [AbilityIds.innerFireCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-innerFireCreep)
+'ACif' / [AbilityIds.innerFireCreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-innerFireCreep)
 
 **Members:**
 
@@ -3790,7 +3790,7 @@ public class AbilityDefinitionInnerFireCreep extends AbilityDefinition
 public class AbilityDefinitionAncestralSpirit extends AbilityDefinition
 ```
 
-'Aast' / [AbilityIds.ancestralSpirit](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ancestralSpirit)
+'Aast' / [AbilityIds.ancestralSpirit](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ancestralSpirit)
 
 **Members:**
 
@@ -3806,7 +3806,7 @@ public class AbilityDefinitionAncestralSpirit extends AbilityDefinition
 public class AbilityDefinitionHarvestLumbershredder extends AbilityDefinition
 ```
 
-'Ahr3' / [AbilityIds.harvest2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-harvest2)
+'Ahr3' / [AbilityIds.harvest2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-harvest2)
 
 **Members:**
 
@@ -3822,7 +3822,7 @@ public class AbilityDefinitionHarvestLumbershredder extends AbilityDefinition
 public class AbilityDefinitionItemHealAoeGreater extends AbilityDefinition
 ```
 
-'AIhb' / [AbilityIds.itemHealAoeGreater](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealAoeGreater)
+'AIhb' / [AbilityIds.itemHealAoeGreater](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHealAoeGreater)
 
 **Members:**
 
@@ -3836,7 +3836,7 @@ public class AbilityDefinitionItemHealAoeGreater extends AbilityDefinition
 public class AbilityDefinitionPulverize extends AbilityDefinition
 ```
 
-'Awar' / [AbilityIds.pulverize](/stdlib/ref/_wurst/AbilityIds.html#abilityids-pulverize)
+'Awar' / [AbilityIds.pulverize](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-pulverize)
 
 **Members:**
 
@@ -3857,7 +3857,7 @@ public class AbilityDefinitionPulverize extends AbilityDefinition
 public class AbilityDefinitionItemHealAoe extends AbilityDefinition
 ```
 
-'AIha' / [AbilityIds.itemAreaHealing](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAreaHealing)
+'AIha' / [AbilityIds.itemAreaHealing](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAreaHealing)
 
 **Members:**
 
@@ -3871,7 +3871,7 @@ public class AbilityDefinitionItemHealAoe extends AbilityDefinition
 public class AbilityDefinitionAIhe extends AbilityDefinition
 ```
 
-'AIhe' / [AbilityIds.itemHealing](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealing)
+'AIhe' / [AbilityIds.itemHealing](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHealing)
 
 **Members:**
 
@@ -3885,7 +3885,7 @@ public class AbilityDefinitionAIhe extends AbilityDefinition
 public class AbilityDefinitionFarseerEarthquake extends AbilityDefinition
 ```
 
-'AOeq' / [AbilityIds.earthquake1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-earthquake1)
+'AOeq' / [AbilityIds.earthquake1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-earthquake1)
 
 **Members:**
 
@@ -3906,7 +3906,7 @@ public class AbilityDefinitionFarseerEarthquake extends AbilityDefinition
 public class AbilityDefinitionDemonHunterImmolation extends AbilityDefinition
 ```
 
-'AEim' / [AbilityIds.immolation1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-immolation1)
+'AEim' / [AbilityIds.immolation1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-immolation1)
 
 **Members:**
 
@@ -3924,7 +3924,7 @@ public class AbilityDefinitionDemonHunterImmolation extends AbilityDefinition
 public class AbilityDefinitionNeutralDetectionRevealability extends AbilityDefinition
 ```
 
-'Andt' / [AbilityIds.reveal1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-reveal1)
+'Andt' / [AbilityIds.reveal1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-reveal1)
 
 **Members:**
 
@@ -3942,7 +3942,7 @@ public class AbilityDefinitionNeutralDetectionRevealability extends AbilityDefin
 public class AbilityDefinitionWeb extends AbilityDefinition
 ```
 
-'Aweb' / [AbilityIds.web](/stdlib/ref/_wurst/AbilityIds.html#abilityids-web)
+'Aweb' / [AbilityIds.web](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-web)
 
 **Members:**
 
@@ -3968,7 +3968,7 @@ public class AbilityDefinitionWeb extends AbilityDefinition
 public class AbilityDefinitionFigurineIceRevenant extends AbilityDefinition
 ```
 
-'AIir' / [AbilityIds.figurineIceRevenant](/stdlib/ref/_wurst/AbilityIds.html#abilityids-figurineIceRevenant)
+'AIir' / [AbilityIds.figurineIceRevenant](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-figurineIceRevenant)
 
 **Members:**
 
@@ -3992,7 +3992,7 @@ public class AbilityDefinitionFigurineIceRevenant extends AbilityDefinition
 public class AbilityDefinitionSuperDeathandDecay extends AbilityDefinition
 ```
 
-'SNdd' / [AbilityIds.deathAndDecay](/stdlib/ref/_wurst/AbilityIds.html#abilityids-deathAndDecay)
+'SNdd' / [AbilityIds.deathAndDecay](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-deathAndDecay)
 
 **Members:**
 
@@ -4009,7 +4009,7 @@ public class AbilityDefinitionSuperDeathandDecay extends AbilityDefinition
 public class AbilityDefinitionDarkConversionFast extends AbilityDefinition
 ```
 
-'SNdc' / [AbilityIds.darkConversionFast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-darkConversionFast)
+'SNdc' / [AbilityIds.darkConversionFast](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-darkConversionFast)
 
 **Members:**
 
@@ -4025,7 +4025,7 @@ public class AbilityDefinitionDarkConversionFast extends AbilityDefinition
 public class AbilityDefinitionImmolationcreep extends AbilityDefinition
 ```
 
-'ACim' / [AbilityIds.immolation](/stdlib/ref/_wurst/AbilityIds.html#abilityids-immolation)
+'ACim' / [AbilityIds.immolation](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-immolation)
 
 **Members:**
 
@@ -4043,7 +4043,7 @@ public class AbilityDefinitionImmolationcreep extends AbilityDefinition
 public class AbilityDefinitionIntelligenceMod extends AbilityDefinition
 ```
 
-'AIim' / [AbilityIds.itemIntelligenceGain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemIntelligenceGain)
+'AIim' / [AbilityIds.itemIntelligenceGain](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemIntelligenceGain)
 
 **Members:**
 
@@ -4063,7 +4063,7 @@ public class AbilityDefinitionIntelligenceMod extends AbilityDefinition
 public class AbilityDefinitionItemInferno extends AbilityDefinition
 ```
 
-'AIin' / [AbilityIds.itemInferno](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemInferno)
+'AIin' / [AbilityIds.itemInferno](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemInferno)
 
 **Members:**
 
@@ -4083,7 +4083,7 @@ public class AbilityDefinitionItemInferno extends AbilityDefinition
 public class AbilityDefinitionItemIllusion extends AbilityDefinition
 ```
 
-'AIil' / [AbilityIds.itemIllusions](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemIllusions)
+'AIil' / [AbilityIds.itemIllusions](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemIllusions)
 
 **Members:**
 
@@ -4100,7 +4100,7 @@ public class AbilityDefinitionItemIllusion extends AbilityDefinition
 public class AbilityDefinitionMagicDefense extends AbilityDefinition
 ```
 
-'Amdf' / [AbilityIds.magicDefense](/stdlib/ref/_wurst/AbilityIds.html#abilityids-magicDefense)
+'Amdf' / [AbilityIds.magicDefense](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-magicDefense)
 
 **Members:**
 
@@ -4130,7 +4130,7 @@ public class AbilityDefinitionMagicDefense extends AbilityDefinition
 public class AbilityDefinitionAvengerForm extends AbilityDefinition
 ```
 
-'Aave' / [AbilityIds.avengerForm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-avengerForm)
+'Aave' / [AbilityIds.avengerForm](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-avengerForm)
 
 **Members:**
 
@@ -4156,7 +4156,7 @@ public class AbilityDefinitionAvengerForm extends AbilityDefinition
 public class AbilityDefinitionHarvestLumber extends AbilityDefinition
 ```
 
-'Ahrl' / [AbilityIds.harvest1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-harvest1)
+'Ahrl' / [AbilityIds.harvest1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-harvest1)
 
 **Members:**
 
@@ -4172,7 +4172,7 @@ public class AbilityDefinitionHarvestLumber extends AbilityDefinition
 public class AbilityDefinitionNeutralBuilding extends AbilityDefinition
 ```
 
-'Aneu' / [AbilityIds.selectHero](/stdlib/ref/_wurst/AbilityIds.html#abilityids-selectHero)
+'Aneu' / [AbilityIds.selectHero](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-selectHero)
 
 **Members:**
 
@@ -4192,7 +4192,7 @@ public class AbilityDefinitionNeutralBuilding extends AbilityDefinition
 public class AbilityDefinitionShopSharing extends AbilityDefinition
 ```
 
-'Aall' / [AbilityIds.shopSharingAlliedBldg](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shopSharingAlliedBldg)
+'Aall' / [AbilityIds.shopSharingAlliedBldg](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-shopSharingAlliedBldg)
 
 **Members:**
 
@@ -4212,7 +4212,7 @@ public class AbilityDefinitionShopSharing extends AbilityDefinition
 public class AbilityDefinitionRepairHuman extends AbilityDefinition
 ```
 
-'Ahrp' / [AbilityIds.repairHuman](/stdlib/ref/_wurst/AbilityIds.html#abilityids-repairHuman)
+'Ahrp' / [AbilityIds.repairHuman](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-repairHuman)
 
 **Members:**
 
@@ -4234,7 +4234,7 @@ public class AbilityDefinitionRepairHuman extends AbilityDefinition
 public class AbilityDefinitionAhrs extends AbilityDefinition
 ```
 
-'Ahrs' / [AbilityIds.ahrs](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ahrs)
+'Ahrs' / [AbilityIds.ahrs](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ahrs)
 
 **Members:**
 
@@ -4252,7 +4252,7 @@ public class AbilityDefinitionAhrs extends AbilityDefinition
 public class AbilityDefinitionFirelordIncinerate extends AbilityDefinition
 ```
 
-'ANic' / [AbilityIds.firelordIncinerate](/stdlib/ref/_wurst/AbilityIds.html#abilityids-firelordIncinerate)
+'ANic' / [AbilityIds.firelordIncinerate](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-firelordIncinerate)
 
 **Members:**
 
@@ -4276,7 +4276,7 @@ public class AbilityDefinitionFirelordIncinerate extends AbilityDefinition
 public class AbilityDefinitionBearform extends AbilityDefinition
 ```
 
-'Abrf' / [AbilityIds.bearForm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bearForm)
+'Abrf' / [AbilityIds.bearForm](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-bearForm)
 
 **Members:**
 
@@ -4300,7 +4300,7 @@ public class AbilityDefinitionBearform extends AbilityDefinition
 public class AbilityDefinitionCryptLordLocustSwarm extends AbilityDefinition
 ```
 
-'AUls' / [AbilityIds.cryptLordLocustSwarm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cryptLordLocustSwarm)
+'AUls' / [AbilityIds.cryptLordLocustSwarm](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cryptLordLocustSwarm)
 
 **Members:**
 
@@ -4324,7 +4324,7 @@ public class AbilityDefinitionCryptLordLocustSwarm extends AbilityDefinition
 public class AbilityDefinitionRestoration extends AbilityDefinition
 ```
 
-'Arst' / [AbilityIds.restore](/stdlib/ref/_wurst/AbilityIds.html#abilityids-restore)
+'Arst' / [AbilityIds.restore](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-restore)
 
 **Members:**
 
@@ -4346,7 +4346,7 @@ public class AbilityDefinitionRestoration extends AbilityDefinition
 public class AbilityDefinitionFarseerChainLightning extends AbilityDefinition
 ```
 
-'AOcl' / [AbilityIds.chainLightning1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chainLightning1)
+'AOcl' / [AbilityIds.chainLightning1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-chainLightning1)
 
 **Members:**
 
@@ -4364,7 +4364,7 @@ public class AbilityDefinitionFarseerChainLightning extends AbilityDefinition
 public class AbilityDefinitionMaxLifeBonusGreater extends AbilityDefinition
 ```
 
-'AIl2' / [AbilityIds.maxLifeBonusGreater](/stdlib/ref/_wurst/AbilityIds.html#abilityids-maxLifeBonusGreater)
+'AIl2' / [AbilityIds.maxLifeBonusGreater](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-maxLifeBonusGreater)
 
 **Members:**
 
@@ -4378,7 +4378,7 @@ public class AbilityDefinitionMaxLifeBonusGreater extends AbilityDefinition
 public class AbilityDefinitionInferno extends AbilityDefinition
 ```
 
-'ANin' / [AbilityIds.inferno1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inferno1)
+'ANin' / [AbilityIds.inferno1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-inferno1)
 
 **Members:**
 
@@ -4398,7 +4398,7 @@ public class AbilityDefinitionInferno extends AbilityDefinition
 public class AbilityDefinitionMechanicalCritter extends AbilityDefinition
 ```
 
-'Amec' / [AbilityIds.mechanicalCritter](/stdlib/ref/_wurst/AbilityIds.html#abilityids-mechanicalCritter)
+'Amec' / [AbilityIds.mechanicalCritter](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-mechanicalCritter)
 
 **Members:**
 
@@ -4412,7 +4412,7 @@ public class AbilityDefinitionMechanicalCritter extends AbilityDefinition
 public class AbilityDefinitionMaxLifeBonusLesser extends AbilityDefinition
 ```
 
-'AIl1' / [AbilityIds.maxLifeBonusLesser](/stdlib/ref/_wurst/AbilityIds.html#abilityids-maxLifeBonusLesser)
+'AIl1' / [AbilityIds.maxLifeBonusLesser](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-maxLifeBonusLesser)
 
 **Members:**
 
@@ -4426,7 +4426,7 @@ public class AbilityDefinitionMaxLifeBonusLesser extends AbilityDefinition
 public class AbilityDefinitionPurgeApg2 extends AbilityDefinition
 ```
 
-'Apg2' / [AbilityIds.purgeApg2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-purgeApg2)
+'Apg2' / [AbilityIds.purgeApg2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-purgeApg2)
 
 **Members:**
 
@@ -4450,7 +4450,7 @@ public class AbilityDefinitionPurgeApg2 extends AbilityDefinition
 public class AbilityDefinitionBladeMasterCriticalStrike extends AbilityDefinition
 ```
 
-'AOcr' / [AbilityIds.criticalStrike1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-criticalStrike1)
+'AOcr' / [AbilityIds.criticalStrike1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-criticalStrike1)
 
 **Members:**
 
@@ -4474,7 +4474,7 @@ public class AbilityDefinitionBladeMasterCriticalStrike extends AbilityDefinitio
 public class AbilityDefinitionAuraPlagueAbomination extends AbilityDefinition
 ```
 
-'Aap1' / [AbilityIds.auraPlagueAbomination](/stdlib/ref/_wurst/AbilityIds.html#abilityids-auraPlagueAbomination)
+'Aap1' / [AbilityIds.auraPlagueAbomination](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-auraPlagueAbomination)
 
 **Members:**
 
@@ -4494,7 +4494,7 @@ public class AbilityDefinitionAuraPlagueAbomination extends AbilityDefinition
 public class AbilityDefinitionAuraPlagueCreep extends AbilityDefinition
 ```
 
-'Aap3' / [AbilityIds.auraPlagueCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-auraPlagueCreep)
+'Aap3' / [AbilityIds.auraPlagueCreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-auraPlagueCreep)
 
 **Members:**
 
@@ -4514,7 +4514,7 @@ public class AbilityDefinitionAuraPlagueCreep extends AbilityDefinition
 public class AbilityDefinitionPermanentImmolation extends AbilityDefinition
 ```
 
-'ANpi' / [AbilityIds.permanentImmolation](/stdlib/ref/_wurst/AbilityIds.html#abilityids-permanentImmolation)
+'ANpi' / [AbilityIds.permanentImmolation](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-permanentImmolation)
 
 **Members:**
 
@@ -4532,7 +4532,7 @@ public class AbilityDefinitionPermanentImmolation extends AbilityDefinition
 public class AbilityDefinitionAuraPlaguePlagueWard extends AbilityDefinition
 ```
 
-'Aap2' / [AbilityIds.diseaseCloud](/stdlib/ref/_wurst/AbilityIds.html#abilityids-diseaseCloud)
+'Aap2' / [AbilityIds.diseaseCloud](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-diseaseCloud)
 
 **Members:**
 
@@ -4552,7 +4552,7 @@ public class AbilityDefinitionAuraPlaguePlagueWard extends AbilityDefinition
 public class AbilityDefinitionCyclonecreep extends AbilityDefinition
 ```
 
-'ACcy' / [AbilityIds.cyclonecreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cyclonecreep)
+'ACcy' / [AbilityIds.cyclonecreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cyclonecreep)
 
 **Members:**
 
@@ -4566,7 +4566,7 @@ public class AbilityDefinitionCyclonecreep extends AbilityDefinition
 public class AbilityDefinitionAuraPlagueCreepnodamage extends AbilityDefinition
 ```
 
-'Aap4' / [AbilityIds.auraPlagueCreepnodamage](/stdlib/ref/_wurst/AbilityIds.html#abilityids-auraPlagueCreepnodamage)
+'Aap4' / [AbilityIds.auraPlagueCreepnodamage](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-auraPlagueCreepnodamage)
 
 **Members:**
 
@@ -4586,7 +4586,7 @@ public class AbilityDefinitionAuraPlagueCreepnodamage extends AbilityDefinition
 public class AbilityDefinitionLightningDamageBonus extends AbilityDefinition
 ```
 
-'AIlb' / [AbilityIds.itemAttackLightningBonus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackLightningBonus)
+'AIlb' / [AbilityIds.itemAttackLightningBonus](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAttackLightningBonus)
 
 **Members:**
 
@@ -4604,7 +4604,7 @@ public class AbilityDefinitionLightningDamageBonus extends AbilityDefinition
 public class AbilityDefinitionArtn extends AbilityDefinition
 ```
 
-'Artn' / [AbilityIds.return111](/stdlib/ref/_wurst/AbilityIds.html#abilityids-return111)
+'Artn' / [AbilityIds.return111](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-return111)
 
 **Members:**
 
@@ -4620,7 +4620,7 @@ public class AbilityDefinitionArtn extends AbilityDefinition
 public class AbilityDefinitionCrushingWave extends AbilityDefinition
 ```
 
-'ACcv' / [AbilityIds.crushingWave](/stdlib/ref/_wurst/AbilityIds.html#abilityids-crushingWave)
+'ACcv' / [AbilityIds.crushingWave](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-crushingWave)
 
 **Members:**
 
@@ -4640,7 +4640,7 @@ public class AbilityDefinitionCrushingWave extends AbilityDefinition
 public class AbilityDefinitionColdArrowscreep extends AbilityDefinition
 ```
 
-'ACcw' / [AbilityIds.coldArrows1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-coldArrows1)
+'ACcw' / [AbilityIds.coldArrows1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-coldArrows1)
 
 **Members:**
 
@@ -4662,7 +4662,7 @@ public class AbilityDefinitionColdArrowscreep extends AbilityDefinition
 public class AbilityDefinitionEatTree extends AbilityDefinition
 ```
 
-'Aeat' / [AbilityIds.eatTree](/stdlib/ref/_wurst/AbilityIds.html#abilityids-eatTree)
+'Aeat' / [AbilityIds.eatTree](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-eatTree)
 
 **Members:**
 
@@ -4680,7 +4680,7 @@ public class AbilityDefinitionEatTree extends AbilityDefinition
 public class AbilityDefinitionPreservation extends AbilityDefinition
 ```
 
-'ANpr' / [AbilityIds.preservation](/stdlib/ref/_wurst/AbilityIds.html#abilityids-preservation)
+'ANpr' / [AbilityIds.preservation](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-preservation)
 
 **Members:**
 
@@ -4694,7 +4694,7 @@ public class AbilityDefinitionPreservation extends AbilityDefinition
 public class AbilityDefinitionShadowMeldAkama extends AbilityDefinition
 ```
 
-'Ahid' / [AbilityIds.shadowMeldAkama](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shadowMeldAkama)
+'Ahid' / [AbilityIds.shadowMeldAkama](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-shadowMeldAkama)
 
 **Members:**
 
@@ -4713,7 +4713,7 @@ public class AbilityDefinitionShadowMeldAkama extends AbilityDefinition
 public class AbilityDefinitionCripplecreep extends AbilityDefinition
 ```
 
-'ACcr' / [AbilityIds.cripplecreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cripplecreep)
+'ACcr' / [AbilityIds.cripplecreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cripplecreep)
 
 **Members:**
 
@@ -4733,7 +4733,7 @@ public class AbilityDefinitionCripplecreep extends AbilityDefinition
 public class AbilityDefinitionCursecreep extends AbilityDefinition
 ```
 
-'ACcs' / [AbilityIds.cursecreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cursecreep)
+'ACcs' / [AbilityIds.cursecreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cursecreep)
 
 **Members:**
 
@@ -4747,7 +4747,7 @@ public class AbilityDefinitionCursecreep extends AbilityDefinition
 public class AbilityDefinitionCriticalStrikecreep extends AbilityDefinition
 ```
 
-'ACct' / [AbilityIds.criticalStrike](/stdlib/ref/_wurst/AbilityIds.html#abilityids-criticalStrike)
+'ACct' / [AbilityIds.criticalStrike](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-criticalStrike)
 
 **Members:**
 
@@ -4771,7 +4771,7 @@ public class AbilityDefinitionCriticalStrikecreep extends AbilityDefinition
 public class AbilityDefinitionCannibalizecreep extends AbilityDefinition
 ```
 
-'ACcn' / [AbilityIds.cannibalizecreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cannibalizecreep)
+'ACcn' / [AbilityIds.cannibalizecreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cannibalizecreep)
 
 **Members:**
 
@@ -4787,7 +4787,7 @@ public class AbilityDefinitionCannibalizecreep extends AbilityDefinition
 public class AbilityDefinitionCycloneCenarius extends AbilityDefinition
 ```
 
-'SCc1' / [AbilityIds.cyclone](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cyclone)
+'SCc1' / [AbilityIds.cyclone](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cyclone)
 
 **Members:**
 
@@ -4801,7 +4801,7 @@ public class AbilityDefinitionCycloneCenarius extends AbilityDefinition
 public class AbilityDefinitionItemManaRestoreGreater extends AbilityDefinition
 ```
 
-'AIm2' / [AbilityIds.itemManaRestoreGreater](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaRestoreGreater)
+'AIm2' / [AbilityIds.itemManaRestoreGreater](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemManaRestoreGreater)
 
 **Members:**
 
@@ -4815,7 +4815,7 @@ public class AbilityDefinitionItemManaRestoreGreater extends AbilityDefinition
 public class AbilityDefinitionItemManaRestoreLesser extends AbilityDefinition
 ```
 
-'AIm1' / [AbilityIds.itemManaRestoreLesser](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaRestoreLesser)
+'AIm1' / [AbilityIds.itemManaRestoreLesser](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemManaRestoreLesser)
 
 **Members:**
 
@@ -4829,7 +4829,7 @@ public class AbilityDefinitionItemManaRestoreLesser extends AbilityDefinition
 public class AbilityDefinitionStoneForm extends AbilityDefinition
 ```
 
-'Astn' / [AbilityIds.stoneForm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-stoneForm)
+'Astn' / [AbilityIds.stoneForm](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-stoneForm)
 
 **Members:**
 
@@ -4855,7 +4855,7 @@ public class AbilityDefinitionStoneForm extends AbilityDefinition
 public class AbilityDefinitionChainLightningcreep extends AbilityDefinition
 ```
 
-'ACcl' / [AbilityIds.chainLightning](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chainLightning)
+'ACcl' / [AbilityIds.chainLightning](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-chainLightning)
 
 **Members:**
 
@@ -4873,7 +4873,7 @@ public class AbilityDefinitionChainLightningcreep extends AbilityDefinition
 public class AbilityDefinitionFaerieFire extends AbilityDefinition
 ```
 
-'Afae' / [AbilityIds.faerieFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-faerieFire)
+'Afae' / [AbilityIds.faerieFire](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-faerieFire)
 
 **Members:**
 
@@ -4889,7 +4889,7 @@ public class AbilityDefinitionFaerieFire extends AbilityDefinition
 public class AbilityDefinitionCharm extends AbilityDefinition
 ```
 
-'ACch' / [AbilityIds.charm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-charm)
+'ACch' / [AbilityIds.charm](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-charm)
 
 **Members:**
 
@@ -4903,7 +4903,7 @@ public class AbilityDefinitionCharm extends AbilityDefinition
 public class AbilityDefinitionManaSteal extends AbilityDefinition
 ```
 
-'Aste' / [AbilityIds.manaSteal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-manaSteal)
+'Aste' / [AbilityIds.manaSteal](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-manaSteal)
 
 **Members:**
 
@@ -4925,7 +4925,7 @@ public class AbilityDefinitionManaSteal extends AbilityDefinition
 public class AbilityDefinitionAuraEnduranceCreep extends AbilityDefinition
 ```
 
-'SCae' / [AbilityIds.enduranceAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-enduranceAura)
+'SCae' / [AbilityIds.enduranceAura](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-enduranceAura)
 
 **Members:**
 
@@ -4943,7 +4943,7 @@ public class AbilityDefinitionAuraEnduranceCreep extends AbilityDefinition
 public class AbilityDefinitionTichondriusInferno extends AbilityDefinition
 ```
 
-'SNin' / [AbilityIds.inferno](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inferno)
+'SNin' / [AbilityIds.inferno](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-inferno)
 
 **Members:**
 
@@ -4963,7 +4963,7 @@ public class AbilityDefinitionTichondriusInferno extends AbilityDefinition
 public class AbilityDefinitionCryptLordImpale extends AbilityDefinition
 ```
 
-'AUim' / [AbilityIds.cryptLordImpale](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cryptLordImpale)
+'AUim' / [AbilityIds.cryptLordImpale](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cryptLordImpale)
 
 **Members:**
 
@@ -4987,7 +4987,7 @@ public class AbilityDefinitionCryptLordImpale extends AbilityDefinition
 public class AbilityDefinitionFrostBolt extends AbilityDefinition
 ```
 
-'ACcb' / [AbilityIds.frostBolt](/stdlib/ref/_wurst/AbilityIds.html#abilityids-frostBolt)
+'ACcb' / [AbilityIds.frostBolt](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-frostBolt)
 
 **Members:**
 
@@ -5001,7 +5001,7 @@ public class AbilityDefinitionFrostBolt extends AbilityDefinition
 public class AbilityDefinitionCarrionSwarmcreep extends AbilityDefinition
 ```
 
-'ACca' / [AbilityIds.carrionSwarm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-carrionSwarm)
+'ACca' / [AbilityIds.carrionSwarm](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-carrionSwarm)
 
 **Members:**
 
@@ -5021,7 +5021,7 @@ public class AbilityDefinitionCarrionSwarmcreep extends AbilityDefinition
 public class AbilityDefinitionDreadlordInferno extends AbilityDefinition
 ```
 
-'AUin' / [AbilityIds.inferno2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inferno2)
+'AUin' / [AbilityIds.inferno2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-inferno2)
 
 **Members:**
 
@@ -5041,7 +5041,7 @@ public class AbilityDefinitionDreadlordInferno extends AbilityDefinition
 public class AbilityDefinitionWispHarvestInvulnerable extends AbilityDefinition
 ```
 
-'Awh2' / [AbilityIds.gather1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-gather1)
+'Awh2' / [AbilityIds.gather1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-gather1)
 
 **Members:**
 
@@ -5059,7 +5059,7 @@ public class AbilityDefinitionWispHarvestInvulnerable extends AbilityDefinition
 public class AbilityDefinitionOrbofAnnihilation extends AbilityDefinition
 ```
 
-'Afak' / [AbilityIds.orbofAnnihilation](/stdlib/ref/_wurst/AbilityIds.html#abilityids-orbofAnnihilation)
+'Afak' / [AbilityIds.orbofAnnihilation](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-orbofAnnihilation)
 
 **Members:**
 
@@ -5081,7 +5081,7 @@ public class AbilityDefinitionOrbofAnnihilation extends AbilityDefinition
 public class AbilityDefinitionOrbOfAnnihilationQuillSpray extends AbilityDefinition
 ```
 
-'ANak' / [AbilityIds.quillSpray](/stdlib/ref/_wurst/AbilityIds.html#abilityids-quillSpray)
+'ANak' / [AbilityIds.quillSpray](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-quillSpray)
 
 **Members:**
 
@@ -5103,7 +5103,7 @@ public class AbilityDefinitionOrbOfAnnihilationQuillSpray extends AbilityDefinit
 public class AbilityDefinitionMaxManaBonusLeast extends AbilityDefinition
 ```
 
-'AImb' / [AbilityIds.maxManaBonusLeast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-maxManaBonusLeast)
+'AImb' / [AbilityIds.maxManaBonusLeast](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-maxManaBonusLeast)
 
 **Members:**
 
@@ -5117,7 +5117,7 @@ public class AbilityDefinitionMaxManaBonusLeast extends AbilityDefinition
 public class AbilityDefinitionNeutralBuildinganyunit extends AbilityDefinition
 ```
 
-'Ane2' / [AbilityIds.neutralBuildinganyunit](/stdlib/ref/_wurst/AbilityIds.html#abilityids-neutralBuildinganyunit)
+'Ane2' / [AbilityIds.neutralBuildinganyunit](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-neutralBuildinganyunit)
 
 **Members:**
 
@@ -5137,7 +5137,7 @@ public class AbilityDefinitionNeutralBuildinganyunit extends AbilityDefinition
 public class AbilityDefinitionGhost extends AbilityDefinition
 ```
 
-'Agho' / [AbilityIds.ghost](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ghost)
+'Agho' / [AbilityIds.ghost](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ghost)
 
 **Members:**
 
@@ -5155,7 +5155,7 @@ public class AbilityDefinitionGhost extends AbilityDefinition
 public class AbilityDefinitionDevourCreep extends AbilityDefinition
 ```
 
-'ACdv' / [AbilityIds.devour](/stdlib/ref/_wurst/AbilityIds.html#abilityids-devour)
+'ACdv' / [AbilityIds.devour](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-devour)
 
 **Members:**
 
@@ -5169,7 +5169,7 @@ public class AbilityDefinitionDevourCreep extends AbilityDefinition
 public class AbilityDefinitionGiveLumber extends AbilityDefinition
 ```
 
-'AIlu' / [AbilityIds.giveLumber](/stdlib/ref/_wurst/AbilityIds.html#abilityids-giveLumber)
+'AIlu' / [AbilityIds.giveLumber](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-giveLumber)
 
 **Members:**
 
@@ -5183,7 +5183,7 @@ public class AbilityDefinitionGiveLumber extends AbilityDefinition
 public class AbilityDefinitionFireBoltwarlock extends AbilityDefinition
 ```
 
-'Awfb' / [AbilityIds.firebolt2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-firebolt2)
+'Awfb' / [AbilityIds.firebolt2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-firebolt2)
 
 **Members:**
 
@@ -5197,7 +5197,7 @@ public class AbilityDefinitionFireBoltwarlock extends AbilityDefinition
 public class AbilityDefinitionDrainLifeCreep extends AbilityDefinition
 ```
 
-'ACdr' / [AbilityIds.drainLifeCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-drainLifeCreep)
+'ACdr' / [AbilityIds.drainLifeCreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-drainLifeCreep)
 
 **Members:**
 
@@ -5229,7 +5229,7 @@ public class AbilityDefinitionDrainLifeCreep extends AbilityDefinition
 public class AbilityDefinitionPaladinHolyLight extends AbilityDefinition
 ```
 
-'AHhb' / [AbilityIds.holyLight](/stdlib/ref/_wurst/AbilityIds.html#abilityids-holyLight)
+'AHhb' / [AbilityIds.holyLight](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-holyLight)
 
 **Members:**
 
@@ -5244,7 +5244,7 @@ public class AbilityDefinitionPaladinHolyLight extends AbilityDefinition
 public class AbilityDefinitionLevelMod extends AbilityDefinition
 ```
 
-'AIlm' / [AbilityIds.itemLevelGain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLevelGain)
+'AIlm' / [AbilityIds.itemLevelGain](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemLevelGain)
 
 **Members:**
 
@@ -5258,7 +5258,7 @@ public class AbilityDefinitionLevelMod extends AbilityDefinition
 public class AbilityDefinitionOrbofLightning extends AbilityDefinition
 ```
 
-'AIll' / [AbilityIds.orbofLightning](/stdlib/ref/_wurst/AbilityIds.html#abilityids-orbofLightning)
+'AIll' / [AbilityIds.orbofLightning](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-orbofLightning)
 
 **Members:**
 
@@ -5285,7 +5285,7 @@ public class AbilityDefinitionOrbofLightning extends AbilityDefinition
 public class AbilityDefinitionLightningShieldAIls extends AbilityDefinition
 ```
 
-'AIls' / [AbilityIds.lightningShieldAIls](/stdlib/ref/_wurst/AbilityIds.html#abilityids-lightningShieldAIls)
+'AIls' / [AbilityIds.lightningShieldAIls](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-lightningShieldAIls)
 
 **Members:**
 
@@ -5301,7 +5301,7 @@ public class AbilityDefinitionLightningShieldAIls extends AbilityDefinition
 public class AbilityDefinitionAbolishMagicCreep extends AbilityDefinition
 ```
 
-'ACdm' / [AbilityIds.abolishMagicCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-abolishMagicCreep)
+'ACdm' / [AbilityIds.abolishMagicCreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-abolishMagicCreep)
 
 **Members:**
 
@@ -5317,7 +5317,7 @@ public class AbilityDefinitionAbolishMagicCreep extends AbilityDefinition
 public class AbilityDefinitionLightningPurge extends AbilityDefinition
 ```
 
-'AIlp' / [AbilityIds.itemPurge](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemPurge)
+'AIlp' / [AbilityIds.itemPurge](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemPurge)
 
 **Members:**
 
@@ -5341,7 +5341,7 @@ public class AbilityDefinitionLightningPurge extends AbilityDefinition
 public class AbilityDefinitionMaxLifeBonusLeast extends AbilityDefinition
 ```
 
-'AIlf' / [AbilityIds.maxLifeBonusLeast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-maxLifeBonusLeast)
+'AIlf' / [AbilityIds.maxLifeBonusLeast](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-maxLifeBonusLeast)
 
 **Members:**
 
@@ -5355,7 +5355,7 @@ public class AbilityDefinitionMaxLifeBonusLeast extends AbilityDefinition
 public class AbilityDefinitionParasite extends AbilityDefinition
 ```
 
-'ANpa' / [AbilityIds.parasite](/stdlib/ref/_wurst/AbilityIds.html#abilityids-parasite)
+'ANpa' / [AbilityIds.parasite](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-parasite)
 
 **Members:**
 
@@ -5384,7 +5384,7 @@ public class AbilityDefinitionParasite extends AbilityDefinition
 public class AbilityDefinitionDemonHunterMetamorphosis extends AbilityDefinition
 ```
 
-'AEme' / [AbilityIds.metamorphosis](/stdlib/ref/_wurst/AbilityIds.html#abilityids-metamorphosis)
+'AEme' / [AbilityIds.metamorphosis](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-metamorphosis)
 
 **Members:**
 
@@ -5410,7 +5410,7 @@ public class AbilityDefinitionDemonHunterMetamorphosis extends AbilityDefinition
 public class AbilityDefinitionDevourMagiccreep extends AbilityDefinition
 ```
 
-'ACde' / [AbilityIds.devourMagiccreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-devourMagiccreep)
+'ACde' / [AbilityIds.devourMagiccreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-devourMagiccreep)
 
 **Members:**
 
@@ -5434,7 +5434,7 @@ public class AbilityDefinitionDevourMagiccreep extends AbilityDefinition
 public class AbilityDefinitionAapl extends AbilityDefinition
 ```
 
-'Aapl' / [AbilityIds.diseaseCloud1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-diseaseCloud1)
+'Aapl' / [AbilityIds.diseaseCloud1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-diseaseCloud1)
 
 **Members:**
 
@@ -5454,7 +5454,7 @@ public class AbilityDefinitionAapl extends AbilityDefinition
 public class AbilityDefinitionDeathCoilcreep extends AbilityDefinition
 ```
 
-'ACdc' / [AbilityIds.deathCoil](/stdlib/ref/_wurst/AbilityIds.html#abilityids-deathCoil)
+'ACdc' / [AbilityIds.deathCoil](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-deathCoil)
 
 **Members:**
 
@@ -5469,7 +5469,7 @@ public class AbilityDefinitionDeathCoilcreep extends AbilityDefinition
 public class AbilityDefinitionDemonHunterManaBurn extends AbilityDefinition
 ```
 
-'AEmb' / [AbilityIds.manaBurn1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-manaBurn1)
+'AEmb' / [AbilityIds.manaBurn1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-manaBurn1)
 
 **Members:**
 
@@ -5487,7 +5487,7 @@ public class AbilityDefinitionDemonHunterManaBurn extends AbilityDefinition
 public class AbilityDefinitionLichFrostArmorAutocast extends AbilityDefinition
 ```
 
-'AUfu' / [AbilityIds.lichFrostArmorAutocast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-lichFrostArmorAutocast)
+'AUfu' / [AbilityIds.lichFrostArmorAutocast](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-lichFrostArmorAutocast)
 
 **Members:**
 
@@ -5503,7 +5503,7 @@ public class AbilityDefinitionLichFrostArmorAutocast extends AbilityDefinition
 public class AbilityDefinitionAnimateDeaditemspecial extends AbilityDefinition
 ```
 
-'AInd' / [AbilityIds.animateDeaditemspecial](/stdlib/ref/_wurst/AbilityIds.html#abilityids-animateDeaditemspecial)
+'AInd' / [AbilityIds.animateDeaditemspecial](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-animateDeaditemspecial)
 
 **Members:**
 
@@ -5521,7 +5521,7 @@ public class AbilityDefinitionAnimateDeaditemspecial extends AbilityDefinition
 public class AbilityDefinitionFrostArmorcreep extends AbilityDefinition
 ```
 
-'ACfa' / [AbilityIds.frostArmor](/stdlib/ref/_wurst/AbilityIds.html#abilityids-frostArmor)
+'ACfa' / [AbilityIds.frostArmor](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-frostArmor)
 
 **Members:**
 
@@ -5537,7 +5537,7 @@ public class AbilityDefinitionFrostArmorcreep extends AbilityDefinition
 public class AbilityDefinitionManaBatteryObsidianStatue extends AbilityDefinition
 ```
 
-'Amb2' / [AbilityIds.manaBatteryObsidianStatue](/stdlib/ref/_wurst/AbilityIds.html#abilityids-manaBatteryObsidianStatue)
+'Amb2' / [AbilityIds.manaBatteryObsidianStatue](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-manaBatteryObsidianStatue)
 
 **Members:**
 
@@ -5559,7 +5559,7 @@ public class AbilityDefinitionManaBatteryObsidianStatue extends AbilityDefinitio
 public class AbilityDefinitionFireBoltcreep extends AbilityDefinition
 ```
 
-'ACfb' / [AbilityIds.firebolt1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-firebolt1)
+'ACfb' / [AbilityIds.firebolt1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-firebolt1)
 
 **Members:**
 
@@ -5573,7 +5573,7 @@ public class AbilityDefinitionFireBoltcreep extends AbilityDefinition
 public class AbilityDefinitionEvasioncreep100 extends AbilityDefinition
 ```
 
-'ACes' / [AbilityIds.evasion1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-evasion1)
+'ACes' / [AbilityIds.evasion1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-evasion1)
 
 **Members:**
 
@@ -5587,7 +5587,7 @@ public class AbilityDefinitionEvasioncreep100 extends AbilityDefinition
 public class AbilityDefinitionVenomSpears extends AbilityDefinition
 ```
 
-'Aven' / [AbilityIds.envenomedSpears](/stdlib/ref/_wurst/AbilityIds.html#abilityids-envenomedSpears)
+'Aven' / [AbilityIds.envenomedSpears](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-envenomedSpears)
 
 **Members:**
 
@@ -5610,7 +5610,7 @@ public class AbilityDefinitionVenomSpears extends AbilityDefinition
 public class AbilityDefinitionEvasioncreep extends AbilityDefinition
 ```
 
-'AIev' / [AbilityIds.evasion3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-evasion3)
+'AIev' / [AbilityIds.evasion3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-evasion3)
 
 **Members:**
 
@@ -5624,7 +5624,7 @@ public class AbilityDefinitionEvasioncreep extends AbilityDefinition
 public class AbilityDefinitionCargoHoldBurrow extends AbilityDefinition
 ```
 
-'Abun' / [AbilityIds.cargoHold](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cargoHold)
+'Abun' / [AbilityIds.cargoHold](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cargoHold)
 
 **Members:**
 
@@ -5638,7 +5638,7 @@ public class AbilityDefinitionCargoHoldBurrow extends AbilityDefinition
 public class AbilityDefinitionMagicImmunityAImx extends AbilityDefinition
 ```
 
-'AImx' / [AbilityIds.magicImmunityAImx](/stdlib/ref/_wurst/AbilityIds.html#abilityids-magicImmunityAImx)
+'AImx' / [AbilityIds.magicImmunityAImx](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-magicImmunityAImx)
 
 **Members:**
 
@@ -5652,7 +5652,7 @@ public class AbilityDefinitionMagicImmunityAImx extends AbilityDefinition
 public class AbilityDefinitionBurrow extends AbilityDefinition
 ```
 
-'Abur' / [AbilityIds.burrow](/stdlib/ref/_wurst/AbilityIds.html#abilityids-burrow)
+'Abur' / [AbilityIds.burrow](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-burrow)
 
 **Members:**
 
@@ -5676,7 +5676,7 @@ public class AbilityDefinitionBurrow extends AbilityDefinition
 public class AbilityDefinitionCyclone extends AbilityDefinition
 ```
 
-'Acyc' / [AbilityIds.cyclone1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cyclone1)
+'Acyc' / [AbilityIds.cyclone1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cyclone1)
 
 **Members:**
 
@@ -5690,7 +5690,7 @@ public class AbilityDefinitionCyclone extends AbilityDefinition
 public class AbilityDefinitionItemManaRestoreAoe extends AbilityDefinition
 ```
 
-'AImr' / [AbilityIds.itemAreaManaRegain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAreaManaRegain)
+'AImr' / [AbilityIds.itemAreaManaRegain](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAreaManaRegain)
 
 **Members:**
 
@@ -5704,7 +5704,7 @@ public class AbilityDefinitionItemManaRestoreAoe extends AbilityDefinition
 public class AbilityDefinitionStaffoTeleportation extends AbilityDefinition
 ```
 
-'AImt' / [AbilityIds.staffoTeleportation](/stdlib/ref/_wurst/AbilityIds.html#abilityids-staffoTeleportation)
+'AImt' / [AbilityIds.staffoTeleportation](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-staffoTeleportation)
 
 **Members:**
 
@@ -5722,7 +5722,7 @@ public class AbilityDefinitionStaffoTeleportation extends AbilityDefinition
 public class AbilityDefinitionEnsnareCreep extends AbilityDefinition
 ```
 
-'ACen' / [AbilityIds.ensnare](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ensnare)
+'ACen' / [AbilityIds.ensnare](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ensnare)
 
 **Members:**
 
@@ -5748,7 +5748,7 @@ public class AbilityDefinitionEnsnareCreep extends AbilityDefinition
 public class AbilityDefinitionMoveSpeedBonus extends AbilityDefinition
 ```
 
-'AIms' / [AbilityIds.itemMoveSpeedBonus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMoveSpeedBonus)
+'AIms' / [AbilityIds.itemMoveSpeedBonus](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemMoveSpeedBonus)
 
 **Members:**
 
@@ -5762,7 +5762,7 @@ public class AbilityDefinitionMoveSpeedBonus extends AbilityDefinition
 public class AbilityDefinitionPhoenix extends AbilityDefinition
 ```
 
-'Aphx' / [AbilityIds.phoenix2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-phoenix2)
+'Aphx' / [AbilityIds.phoenix2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-phoenix2)
 
 **Members:**
 
@@ -5786,7 +5786,7 @@ public class AbilityDefinitionPhoenix extends AbilityDefinition
 public class AbilityDefinitionNeutralSpell extends AbilityDefinition
 ```
 
-'AAns' / [AbilityIds.neutralSpell](/stdlib/ref/_wurst/AbilityIds.html#abilityids-neutralSpell)
+'AAns' / [AbilityIds.neutralSpell](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-neutralSpell)
 
 **Members:**
 
@@ -5806,7 +5806,7 @@ public class AbilityDefinitionNeutralSpell extends AbilityDefinition
 public class AbilityDefinitionAImm extends AbilityDefinition
 ```
 
-'AImm' / [AbilityIds.itemManaBonus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaBonus)
+'AImm' / [AbilityIds.itemManaBonus](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemManaBonus)
 
 **Members:**
 
@@ -5820,7 +5820,7 @@ public class AbilityDefinitionAImm extends AbilityDefinition
 public class AbilityDefinitionShadowHunterHealingWave extends AbilityDefinition
 ```
 
-'AOhw' / [AbilityIds.shadowHunterHealingWave](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shadowHunterHealingWave)
+'AOhw' / [AbilityIds.shadowHunterHealingWave](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-shadowHunterHealingWave)
 
 **Members:**
 
@@ -5838,7 +5838,7 @@ public class AbilityDefinitionShadowHunterHealingWave extends AbilityDefinition
 public class AbilityDefinitionShadowHunterHex extends AbilityDefinition
 ```
 
-'AOhx' / [AbilityIds.shadowHunterHex](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shadowHunterHex)
+'AOhx' / [AbilityIds.shadowHunterHex](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-shadowHunterHex)
 
 **Members:**
 
@@ -5860,7 +5860,7 @@ public class AbilityDefinitionShadowHunterHex extends AbilityDefinition
 public class AbilityDefinitionItemMonsterLure extends AbilityDefinition
 ```
 
-'AImo' / [AbilityIds.itemMonsterLure](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMonsterLure)
+'AImo' / [AbilityIds.itemMonsterLure](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemMonsterLure)
 
 **Members:**
 
@@ -5880,7 +5880,7 @@ public class AbilityDefinitionItemMonsterLure extends AbilityDefinition
 public class AbilityDefinitionAImi extends AbilityDefinition
 ```
 
-'AImi' / [AbilityIds.itemLifeGain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLifeGain)
+'AImi' / [AbilityIds.itemLifeGain](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemLifeGain)
 
 **Members:**
 
@@ -5894,7 +5894,7 @@ public class AbilityDefinitionAImi extends AbilityDefinition
 public class AbilityDefinitionAIml extends AbilityDefinition
 ```
 
-'AIml' / [AbilityIds.itemLifeBonus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLifeBonus)
+'AIml' / [AbilityIds.itemLifeBonus](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemLifeBonus)
 
 **Members:**
 
@@ -5908,7 +5908,7 @@ public class AbilityDefinitionAIml extends AbilityDefinition
 public class AbilityDefinitionPermanentHitpointBonusfromchargeditem extends AbilityDefinition
 ```
 
-'AImh' / [AbilityIds.permanentHitpointBonusfromchargeditem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-permanentHitpointBonusfromchargeditem)
+'AImh' / [AbilityIds.permanentHitpointBonusfromchargeditem](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-permanentHitpointBonusfromchargeditem)
 
 **Members:**
 
@@ -5922,7 +5922,7 @@ public class AbilityDefinitionPermanentHitpointBonusfromchargeditem extends Abil
 public class AbilityDefinitionFeedbackArcaneTower extends AbilityDefinition
 ```
 
-'Afbt' / [AbilityIds.feedbackArcaneTower](/stdlib/ref/_wurst/AbilityIds.html#abilityids-feedbackArcaneTower)
+'Afbt' / [AbilityIds.feedbackArcaneTower](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-feedbackArcaneTower)
 
 **Members:**
 
@@ -5946,7 +5946,7 @@ public class AbilityDefinitionFeedbackArcaneTower extends AbilityDefinition
 public class AbilityDefinitionChaosGrunt extends AbilityDefinition
 ```
 
-'Sca1' / [AbilityIds.chaosGrunt](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chaosGrunt)
+'Sca1' / [AbilityIds.chaosGrunt](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-chaosGrunt)
 
 **Members:**
 
@@ -5960,7 +5960,7 @@ public class AbilityDefinitionChaosGrunt extends AbilityDefinition
 public class AbilityDefinitionChaosRaider extends AbilityDefinition
 ```
 
-'Sca2' / [AbilityIds.chaosRaider](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chaosRaider)
+'Sca2' / [AbilityIds.chaosRaider](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-chaosRaider)
 
 **Members:**
 
@@ -5974,7 +5974,7 @@ public class AbilityDefinitionChaosRaider extends AbilityDefinition
 public class AbilityDefinitionStasisTrap extends AbilityDefinition
 ```
 
-'Asta' / [AbilityIds.stasisTrap](/stdlib/ref/_wurst/AbilityIds.html#abilityids-stasisTrap)
+'Asta' / [AbilityIds.stasisTrap](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-stasisTrap)
 
 **Members:**
 
@@ -5998,7 +5998,7 @@ public class AbilityDefinitionStasisTrap extends AbilityDefinition
 public class AbilityDefinitionPermanentImmolationgraphic extends AbilityDefinition
 ```
 
-'Apig' / [AbilityIds.permanentImmolationgraphic](/stdlib/ref/_wurst/AbilityIds.html#abilityids-permanentImmolationgraphic)
+'Apig' / [AbilityIds.permanentImmolationgraphic](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-permanentImmolationgraphic)
 
 **Members:**
 
@@ -6016,7 +6016,7 @@ public class AbilityDefinitionPermanentImmolationgraphic extends AbilityDefiniti
 public class AbilityDefinitionChaosShaman extends AbilityDefinition
 ```
 
-'Sca3' / [AbilityIds.chaosShaman](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chaosShaman)
+'Sca3' / [AbilityIds.chaosShaman](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-chaosShaman)
 
 **Members:**
 
@@ -6030,7 +6030,7 @@ public class AbilityDefinitionChaosShaman extends AbilityDefinition
 public class AbilityDefinitionChaosKodo extends AbilityDefinition
 ```
 
-'Sca4' / [AbilityIds.chaosKodo](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chaosKodo)
+'Sca4' / [AbilityIds.chaosKodo](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-chaosKodo)
 
 **Members:**
 
@@ -6044,7 +6044,7 @@ public class AbilityDefinitionChaosKodo extends AbilityDefinition
 public class AbilityDefinitionChaosPeon extends AbilityDefinition
 ```
 
-'Sca5' / [AbilityIds.chaosPeon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chaosPeon)
+'Sca5' / [AbilityIds.chaosPeon](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-chaosPeon)
 
 **Members:**
 
@@ -6058,7 +6058,7 @@ public class AbilityDefinitionChaosPeon extends AbilityDefinition
 public class AbilityDefinitionFrostDamageBonus extends AbilityDefinition
 ```
 
-'AIob' / [AbilityIds.itemAttackFrostBonus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackFrostBonus)
+'AIob' / [AbilityIds.itemAttackFrostBonus](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAttackFrostBonus)
 
 **Members:**
 
@@ -6074,7 +6074,7 @@ public class AbilityDefinitionFrostDamageBonus extends AbilityDefinition
 public class AbilityDefinitionChaosGrom extends AbilityDefinition
 ```
 
-'Sca6' / [AbilityIds.chaosGrom](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chaosGrom)
+'Sca6' / [AbilityIds.chaosGrom](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-chaosGrom)
 
 **Members:**
 
@@ -6088,7 +6088,7 @@ public class AbilityDefinitionChaosGrom extends AbilityDefinition
 public class AbilityDefinitionInnerFire extends AbilityDefinition
 ```
 
-'Ainf' / [AbilityIds.innerFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-innerFire)
+'Ainf' / [AbilityIds.innerFire](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-innerFire)
 
 **Members:**
 
@@ -6109,7 +6109,7 @@ public class AbilityDefinitionInnerFire extends AbilityDefinition
 public class AbilityDefinitionMoonPriestessSearingArrows extends AbilityDefinition
 ```
 
-'AHfa' / [AbilityIds.searingArrows1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-searingArrows1)
+'AHfa' / [AbilityIds.searingArrows1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-searingArrows1)
 
 **Members:**
 
@@ -6123,7 +6123,7 @@ public class AbilityDefinitionMoonPriestessSearingArrows extends AbilityDefiniti
 public class AbilityDefinitionMonsoon extends AbilityDefinition
 ```
 
-'ANmo' / [AbilityIds.monsoon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-monsoon)
+'ANmo' / [AbilityIds.monsoon](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-monsoon)
 
 **Members:**
 
@@ -6141,7 +6141,7 @@ public class AbilityDefinitionMonsoon extends AbilityDefinition
 public class AbilityDefinitionInventory extends AbilityDefinition
 ```
 
-'AInv' / [AbilityIds.inventory](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inventory)
+'AInv' / [AbilityIds.inventory](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-inventory)
 
 **Members:**
 
@@ -6163,7 +6163,7 @@ public class AbilityDefinitionInventory extends AbilityDefinition
 public class AbilityDefinitionnullroarsummoner extends AbilityDefinition
 ```
 
-'Ahnl' / [AbilityIds.nullroarsummoner](/stdlib/ref/_wurst/AbilityIds.html#abilityids-nullroarsummoner)
+'Ahnl' / [AbilityIds.nullroarsummoner](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-nullroarsummoner)
 
 **Members:**
 
@@ -6190,7 +6190,7 @@ public class AbilityDefinitionnullroarsummoner extends AbilityDefinition
 public class AbilityDefinitionSeaWitchManaShield extends AbilityDefinition
 ```
 
-'ANms' / [AbilityIds.seaWitchManaShield](/stdlib/ref/_wurst/AbilityIds.html#abilityids-seaWitchManaShield)
+'ANms' / [AbilityIds.seaWitchManaShield](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-seaWitchManaShield)
 
 **Members:**
 
@@ -6207,7 +6207,7 @@ public class AbilityDefinitionSeaWitchManaShield extends AbilityDefinition
 public class AbilityDefinitionSpawnSpiderlingOnDeath extends AbilityDefinition
 ```
 
-'Assp' / [AbilityIds.spawnSpiderlings](/stdlib/ref/_wurst/AbilityIds.html#abilityids-spawnSpiderlings)
+'Assp' / [AbilityIds.spawnSpiderlings](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-spawnSpiderlings)
 
 **Members:**
 
@@ -6223,7 +6223,7 @@ public class AbilityDefinitionSpawnSpiderlingOnDeath extends AbilityDefinition
 public class AbilityDefinitionScrollofRejuvII extends AbilityDefinition
 ```
 
-'AIp6' / [AbilityIds.scrollofRejuvII](/stdlib/ref/_wurst/AbilityIds.html#abilityids-scrollofRejuvII)
+'AIp6' / [AbilityIds.scrollofRejuvII](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-scrollofRejuvII)
 
 **Members:**
 
@@ -6246,7 +6246,7 @@ public class AbilityDefinitionScrollofRejuvII extends AbilityDefinition
 public class AbilityDefinitionMindRot extends AbilityDefinition
 ```
 
-'ANmr' / [AbilityIds.mindRot](/stdlib/ref/_wurst/AbilityIds.html#abilityids-mindRot)
+'ANmr' / [AbilityIds.mindRot](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-mindRot)
 
 **Members:**
 
@@ -6260,7 +6260,7 @@ public class AbilityDefinitionMindRot extends AbilityDefinition
 public class AbilityDefinitionFrostNovacreep extends AbilityDefinition
 ```
 
-'ACfn' / [AbilityIds.frostNova](/stdlib/ref/_wurst/AbilityIds.html#abilityids-frostNova)
+'ACfn' / [AbilityIds.frostNova](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-frostNova)
 
 **Members:**
 
@@ -6278,7 +6278,7 @@ public class AbilityDefinitionFrostNovacreep extends AbilityDefinition
 public class AbilityDefinitionScrollofRejuvI extends AbilityDefinition
 ```
 
-'AIp5' / [AbilityIds.scrollofRejuvI](/stdlib/ref/_wurst/AbilityIds.html#abilityids-scrollofRejuvI)
+'AIp5' / [AbilityIds.scrollofRejuvI](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-scrollofRejuvI)
 
 **Members:**
 
@@ -6301,7 +6301,7 @@ public class AbilityDefinitionScrollofRejuvI extends AbilityDefinition
 public class AbilityDefinitionPermanentInvisibility extends AbilityDefinition
 ```
 
-'Apiv' / [AbilityIds.permanentInvisibility](/stdlib/ref/_wurst/AbilityIds.html#abilityids-permanentInvisibility)
+'Apiv' / [AbilityIds.permanentInvisibility](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-permanentInvisibility)
 
 **Members:**
 
@@ -6315,7 +6315,7 @@ public class AbilityDefinitionPermanentInvisibility extends AbilityDefinition
 public class AbilityDefinitionFeedbackSpiritBeast extends AbilityDefinition
 ```
 
-'Afbb' / [AbilityIds.feedbackSpiritBeast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-feedbackSpiritBeast)
+'Afbb' / [AbilityIds.feedbackSpiritBeast](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-feedbackSpiritBeast)
 
 **Members:**
 
@@ -6339,7 +6339,7 @@ public class AbilityDefinitionFeedbackSpiritBeast extends AbilityDefinition
 public class AbilityDefinitionPotionofRejuvIV extends AbilityDefinition
 ```
 
-'AIp4' / [AbilityIds.potionofRejuvIV](/stdlib/ref/_wurst/AbilityIds.html#abilityids-potionofRejuvIV)
+'AIp4' / [AbilityIds.potionofRejuvIV](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-potionofRejuvIV)
 
 **Members:**
 
@@ -6362,7 +6362,7 @@ public class AbilityDefinitionPotionofRejuvIV extends AbilityDefinition
 public class AbilityDefinitionPotionofRejuvIII extends AbilityDefinition
 ```
 
-'AIp3' / [AbilityIds.potionofRejuvIII](/stdlib/ref/_wurst/AbilityIds.html#abilityids-potionofRejuvIII)
+'AIp3' / [AbilityIds.potionofRejuvIII](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-potionofRejuvIII)
 
 **Members:**
 
@@ -6385,7 +6385,7 @@ public class AbilityDefinitionPotionofRejuvIII extends AbilityDefinition
 public class AbilityDefinitionFlameStrikeCreep extends AbilityDefinition
 ```
 
-'ACfs' / [AbilityIds.flameStrikeCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-flameStrikeCreep)
+'ACfs' / [AbilityIds.flameStrikeCreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-flameStrikeCreep)
 
 **Members:**
 
@@ -6409,7 +6409,7 @@ public class AbilityDefinitionFlameStrikeCreep extends AbilityDefinition
 public class AbilityDefinitionWispHarvest extends AbilityDefinition
 ```
 
-'Awha' / [AbilityIds.gather](/stdlib/ref/_wurst/AbilityIds.html#abilityids-gather)
+'Awha' / [AbilityIds.gather](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-gather)
 
 **Members:**
 
@@ -6427,7 +6427,7 @@ public class AbilityDefinitionWispHarvest extends AbilityDefinition
 public class AbilityDefinitionPotionofRejuvII extends AbilityDefinition
 ```
 
-'AIp2' / [AbilityIds.potionofRejuvII](/stdlib/ref/_wurst/AbilityIds.html#abilityids-potionofRejuvII)
+'AIp2' / [AbilityIds.potionofRejuvII](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-potionofRejuvII)
 
 **Members:**
 
@@ -6450,7 +6450,7 @@ public class AbilityDefinitionPotionofRejuvII extends AbilityDefinition
 public class AbilityDefinitionHardenedSkin extends AbilityDefinition
 ```
 
-'Assk' / [AbilityIds.hardenedSkin](/stdlib/ref/_wurst/AbilityIds.html#abilityids-hardenedSkin)
+'Assk' / [AbilityIds.hardenedSkin](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-hardenedSkin)
 
 **Members:**
 
@@ -6473,7 +6473,7 @@ public class AbilityDefinitionHardenedSkin extends AbilityDefinition
 public class AbilityDefinitionForceofNaturecreep extends AbilityDefinition
 ```
 
-'ACfr' / [AbilityIds.forceofNature](/stdlib/ref/_wurst/AbilityIds.html#abilityids-forceofNature)
+'ACfr' / [AbilityIds.forceofNature](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-forceofNature)
 
 **Members:**
 
@@ -6489,7 +6489,7 @@ public class AbilityDefinitionForceofNaturecreep extends AbilityDefinition
 public class AbilityDefinitionPotionofRejuvI extends AbilityDefinition
 ```
 
-'AIp1' / [AbilityIds.potionofRejuvI](/stdlib/ref/_wurst/AbilityIds.html#abilityids-potionofRejuvI)
+'AIp1' / [AbilityIds.potionofRejuvI](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-potionofRejuvI)
 
 **Members:**
 
@@ -6512,7 +6512,7 @@ public class AbilityDefinitionPotionofRejuvI extends AbilityDefinition
 public class AbilityDefinitionFeedback extends AbilityDefinition
 ```
 
-'Afbk' / [AbilityIds.feedback](/stdlib/ref/_wurst/AbilityIds.html#abilityids-feedback)
+'Afbk' / [AbilityIds.feedback](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-feedback)
 
 **Members:**
 
@@ -6536,7 +6536,7 @@ public class AbilityDefinitionFeedback extends AbilityDefinition
 public class AbilityDefinitionStrengthModPlus2 extends AbilityDefinition
 ```
 
-'AInm' / [AbilityIds.strengthModPlus2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-strengthModPlus2)
+'AInm' / [AbilityIds.strengthModPlus2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-strengthModPlus2)
 
 **Members:**
 
@@ -6556,7 +6556,7 @@ public class AbilityDefinitionStrengthModPlus2 extends AbilityDefinition
 public class AbilityDefinitionFaerieFirecreep extends AbilityDefinition
 ```
 
-'ACff' / [AbilityIds.faerieFirecreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-faerieFirecreep)
+'ACff' / [AbilityIds.faerieFirecreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-faerieFirecreep)
 
 **Members:**
 
@@ -6572,7 +6572,7 @@ public class AbilityDefinitionFaerieFirecreep extends AbilityDefinition
 public class AbilityDefinitionAarm extends AbilityDefinition
 ```
 
-'Aarm' / [AbilityIds.manaRegenerationAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-manaRegenerationAura)
+'Aarm' / [AbilityIds.manaRegenerationAura](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-manaRegenerationAura)
 
 **Members:**
 
@@ -6588,7 +6588,7 @@ public class AbilityDefinitionAarm extends AbilityDefinition
 public class AbilityDefinitionBloodMageFlameStrike extends AbilityDefinition
 ```
 
-'AHfs' / [AbilityIds.bloodMageFlameStrike](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bloodMageFlameStrike)
+'AHfs' / [AbilityIds.bloodMageFlameStrike](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-bloodMageFlameStrike)
 
 **Members:**
 
@@ -6612,7 +6612,7 @@ public class AbilityDefinitionBloodMageFlameStrike extends AbilityDefinition
 public class AbilityDefinitionBloodlustCreep extends AbilityDefinition
 ```
 
-'ACbl' / [AbilityIds.bloodlust](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bloodlust)
+'ACbl' / [AbilityIds.bloodlust](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-bloodlust)
 
 **Members:**
 
@@ -6632,7 +6632,7 @@ public class AbilityDefinitionBloodlustCreep extends AbilityDefinition
 public class AbilityDefinitionRoarAIrr extends AbilityDefinition
 ```
 
-'AIrr' / [AbilityIds.roarAIrr](/stdlib/ref/_wurst/AbilityIds.html#abilityids-roarAIrr)
+'AIrr' / [AbilityIds.roarAIrr](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-roarAIrr)
 
 **Members:**
 
@@ -6659,7 +6659,7 @@ public class AbilityDefinitionRoarAIrr extends AbilityDefinition
 public class AbilityDefinitionResurrection extends AbilityDefinition
 ```
 
-'AIrs' / [AbilityIds.itemResurrection](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemResurrection)
+'AIrs' / [AbilityIds.itemResurrection](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemResurrection)
 
 **Members:**
 
@@ -6675,7 +6675,7 @@ public class AbilityDefinitionResurrection extends AbilityDefinition
 public class AbilityDefinitionItemRecall extends AbilityDefinition
 ```
 
-'AIrt' / [AbilityIds.itemRecall](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRecall)
+'AIrt' / [AbilityIds.itemRecall](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemRecall)
 
 **Members:**
 
@@ -6691,7 +6691,7 @@ public class AbilityDefinitionItemRecall extends AbilityDefinition
 public class AbilityDefinitionAttackBonusAIt6 extends AbilityDefinition
 ```
 
-'AIt6' / [AbilityIds.attackBonusAIt6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonusAIt6)
+'AIt6' / [AbilityIds.attackBonusAIt6](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-attackBonusAIt6)
 
 **Members:**
 
@@ -6705,7 +6705,7 @@ public class AbilityDefinitionAttackBonusAIt6 extends AbilityDefinition
 public class AbilityDefinitionItemRevealMap extends AbilityDefinition
 ```
 
-'AIrv' / [AbilityIds.itemRevealMap](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRevealMap)
+'AIrv' / [AbilityIds.itemRevealMap](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemRevealMap)
 
 **Members:**
 
@@ -6719,7 +6719,7 @@ public class AbilityDefinitionItemRevealMap extends AbilityDefinition
 public class AbilityDefinitionBashcreep extends AbilityDefinition
 ```
 
-'ACbh' / [AbilityIds.bash1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bash1)
+'ACbh' / [AbilityIds.bash1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-bash1)
 
 **Members:**
 
@@ -6741,7 +6741,7 @@ public class AbilityDefinitionBashcreep extends AbilityDefinition
 public class AbilityDefinitionAlchemistChemicalRage extends AbilityDefinition
 ```
 
-'ANcr' / [AbilityIds.alchemistChemicalRage](/stdlib/ref/_wurst/AbilityIds.html#abilityids-alchemistChemicalRage)
+'ANcr' / [AbilityIds.alchemistChemicalRage](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-alchemistChemicalRage)
 
 **Members:**
 
@@ -6769,7 +6769,7 @@ public class AbilityDefinitionAlchemistChemicalRage extends AbilityDefinition
 public class AbilityDefinitionTinkererClusterRocketsLevel0 extends AbilityDefinition
 ```
 
-'ANcs' / [AbilityIds.tinkererClusterRocketsLevel0](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererClusterRocketsLevel0)
+'ANcs' / [AbilityIds.tinkererClusterRocketsLevel0](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-tinkererClusterRocketsLevel0)
 
 **Members:**
 
@@ -6793,7 +6793,7 @@ public class AbilityDefinitionTinkererClusterRocketsLevel0 extends AbilityDefini
 public class AbilityDefinitionAttackBonusAIt9 extends AbilityDefinition
 ```
 
-'AIt9' / [AbilityIds.attackBonusAIt9](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonusAIt9)
+'AIt9' / [AbilityIds.attackBonusAIt9](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-attackBonusAIt9)
 
 **Members:**
 
@@ -6807,7 +6807,7 @@ public class AbilityDefinitionAttackBonusAIt9 extends AbilityDefinition
 public class AbilityDefinitionPossession extends AbilityDefinition
 ```
 
-'Apos' / [AbilityIds.possession](/stdlib/ref/_wurst/AbilityIds.html#abilityids-possession)
+'Apos' / [AbilityIds.possession](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-possession)
 
 **Members:**
 
@@ -6821,7 +6821,7 @@ public class AbilityDefinitionPossession extends AbilityDefinition
 public class AbilityDefinitionPotionofLifeRegen extends AbilityDefinition
 ```
 
-'AIrl' / [AbilityIds.potionofLifeRegen](/stdlib/ref/_wurst/AbilityIds.html#abilityids-potionofLifeRegen)
+'AIrl' / [AbilityIds.potionofLifeRegen](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-potionofLifeRegen)
 
 **Members:**
 
@@ -6844,7 +6844,7 @@ public class AbilityDefinitionPotionofLifeRegen extends AbilityDefinition
 public class AbilityDefinitionDarkRangerCharm extends AbilityDefinition
 ```
 
-'ANch' / [AbilityIds.darkRangerCharm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-darkRangerCharm)
+'ANch' / [AbilityIds.darkRangerCharm](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-darkRangerCharm)
 
 **Members:**
 
@@ -6858,7 +6858,7 @@ public class AbilityDefinitionDarkRangerCharm extends AbilityDefinition
 public class AbilityDefinitionBreathofFrostCreep extends AbilityDefinition
 ```
 
-'ACbf' / [AbilityIds.breathofFrostCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-breathofFrostCreep)
+'ACbf' / [AbilityIds.breathofFrostCreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-breathofFrostCreep)
 
 **Members:**
 
@@ -6880,7 +6880,7 @@ public class AbilityDefinitionBreathofFrostCreep extends AbilityDefinition
 public class AbilityDefinitionItemRegenMana extends AbilityDefinition
 ```
 
-'AIrm' / [AbilityIds.itemManaRegeneration](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaRegeneration)
+'AIrm' / [AbilityIds.itemManaRegeneration](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemManaRegeneration)
 
 **Members:**
 
@@ -6894,7 +6894,7 @@ public class AbilityDefinitionItemRegenMana extends AbilityDefinition
 public class AbilityDefinitionItemRegenManalesser extends AbilityDefinition
 ```
 
-'AIrn' / [AbilityIds.itemRegenManalesser](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRegenManalesser)
+'AIrn' / [AbilityIds.itemRegenManalesser](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemRegenManalesser)
 
 **Members:**
 
@@ -6908,7 +6908,7 @@ public class AbilityDefinitionItemRegenManalesser extends AbilityDefinition
 public class AbilityDefinitionAuraBrilliancecreep extends AbilityDefinition
 ```
 
-'ACba' / [AbilityIds.brillianceAura1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-brillianceAura1)
+'ACba' / [AbilityIds.brillianceAura1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-brillianceAura1)
 
 **Members:**
 
@@ -6924,7 +6924,7 @@ public class AbilityDefinitionAuraBrilliancecreep extends AbilityDefinition
 public class AbilityDefinitionIllidanChannel extends AbilityDefinition
 ```
 
-'ANcl' / [AbilityIds.channel](/stdlib/ref/_wurst/AbilityIds.html#abilityids-channel)
+'ANcl' / [AbilityIds.channel](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-channel)
 
 **Members:**
 
@@ -6948,7 +6948,7 @@ public class AbilityDefinitionIllidanChannel extends AbilityDefinition
 public class AbilityDefinitionBreathofFireCreep extends AbilityDefinition
 ```
 
-'ACbc' / [AbilityIds.breathofFireCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-breathofFireCreep)
+'ACbc' / [AbilityIds.breathofFireCreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-breathofFireCreep)
 
 **Members:**
 
@@ -6970,7 +6970,7 @@ public class AbilityDefinitionBreathofFireCreep extends AbilityDefinition
 public class AbilityDefinitionPitLordCleavingAttack extends AbilityDefinition
 ```
 
-'ANca' / [AbilityIds.pitLordCleavingAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-pitLordCleavingAttack)
+'ANca' / [AbilityIds.pitLordCleavingAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-pitLordCleavingAttack)
 
 **Members:**
 
@@ -6984,7 +6984,7 @@ public class AbilityDefinitionPitLordCleavingAttack extends AbilityDefinition
 public class AbilityDefinitionCleavingAttackCreep extends AbilityDefinition
 ```
 
-'ACce' / [AbilityIds.cleavingAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cleavingAttack)
+'ACce' / [AbilityIds.cleavingAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cleavingAttack)
 
 **Members:**
 
@@ -6998,7 +6998,7 @@ public class AbilityDefinitionCleavingAttackCreep extends AbilityDefinition
 public class AbilityDefinitionSilenceItem extends AbilityDefinition
 ```
 
-'AIse' / [AbilityIds.silenceItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-silenceItem)
+'AIse' / [AbilityIds.silenceItem](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-silenceItem)
 
 **Members:**
 
@@ -7019,7 +7019,7 @@ public class AbilityDefinitionSilenceItem extends AbilityDefinition
 public class AbilityDefinitionSummonHeadhunteritem extends AbilityDefinition
 ```
 
-'AIsh' / [AbilityIds.summonHeadhunteritem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-summonHeadhunteritem)
+'AIsh' / [AbilityIds.summonHeadhunteritem](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-summonHeadhunteritem)
 
 **Members:**
 
@@ -7035,7 +7035,7 @@ public class AbilityDefinitionSummonHeadhunteritem extends AbilityDefinition
 public class AbilityDefinitionSightBonus extends AbilityDefinition
 ```
 
-'AIsi' / [AbilityIds.itemSightRangeBonus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSightRangeBonus)
+'AIsi' / [AbilityIds.itemSightRangeBonus](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSightRangeBonus)
 
 **Members:**
 
@@ -7049,7 +7049,7 @@ public class AbilityDefinitionSightBonus extends AbilityDefinition
 public class AbilityDefinitionBlizzardcreep extends AbilityDefinition
 ```
 
-'ACbz' / [AbilityIds.blizzard1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-blizzard1)
+'ACbz' / [AbilityIds.blizzard1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-blizzard1)
 
 **Members:**
 
@@ -7073,7 +7073,7 @@ public class AbilityDefinitionBlizzardcreep extends AbilityDefinition
 public class AbilityDefinitionCloudofFog extends AbilityDefinition
 ```
 
-'Aclf' / [AbilityIds.cloudofFog](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cloudofFog)
+'Aclf' / [AbilityIds.cloudofFog](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cloudofFog)
 
 **Members:**
 
@@ -7094,7 +7094,7 @@ public class AbilityDefinitionCloudofFog extends AbilityDefinition
 public class AbilityDefinitionAntimagicShieldMatrix extends AbilityDefinition
 ```
 
-'Aam2' / [AbilityIds.antimagicShieldMatrix](/stdlib/ref/_wurst/AbilityIds.html#abilityids-antimagicShieldMatrix)
+'Aam2' / [AbilityIds.antimagicShieldMatrix](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-antimagicShieldMatrix)
 
 **Members:**
 
@@ -7114,7 +7114,7 @@ public class AbilityDefinitionAntimagicShieldMatrix extends AbilityDefinition
 public class AbilityDefinitionLoad extends AbilityDefinition
 ```
 
-'Aloa' / [AbilityIds.load](/stdlib/ref/_wurst/AbilityIds.html#abilityids-load)
+'Aloa' / [AbilityIds.load](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-load)
 
 **Members:**
 
@@ -7128,7 +7128,7 @@ public class AbilityDefinitionLoad extends AbilityDefinition
 public class AbilityDefinitionBladeMasterMirrorImage extends AbilityDefinition
 ```
 
-'AOmi' / [AbilityIds.mirrorImage](/stdlib/ref/_wurst/AbilityIds.html#abilityids-mirrorImage)
+'AOmi' / [AbilityIds.mirrorImage](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-mirrorImage)
 
 **Members:**
 
@@ -7150,7 +7150,7 @@ public class AbilityDefinitionBladeMasterMirrorImage extends AbilityDefinition
 public class AbilityDefinitionWardenBlink extends AbilityDefinition
 ```
 
-'AEbl' / [AbilityIds.wardenBlink](/stdlib/ref/_wurst/AbilityIds.html#abilityids-wardenBlink)
+'AEbl' / [AbilityIds.wardenBlink](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-wardenBlink)
 
 **Members:**
 
@@ -7166,7 +7166,7 @@ public class AbilityDefinitionWardenBlink extends AbilityDefinition
 public class AbilityDefinitionPoisonAttack extends AbilityDefinition
 ```
 
-'Apoi' / [AbilityIds.poisonSting](/stdlib/ref/_wurst/AbilityIds.html#abilityids-poisonSting)
+'Apoi' / [AbilityIds.poisonSting](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-poisonSting)
 
 **Members:**
 
@@ -7189,7 +7189,7 @@ public class AbilityDefinitionPoisonAttack extends AbilityDefinition
 public class AbilityDefinitionOrbofSpells extends AbilityDefinition
 ```
 
-'AIsb' / [AbilityIds.orbofSpells](/stdlib/ref/_wurst/AbilityIds.html#abilityids-orbofSpells)
+'AIsb' / [AbilityIds.orbofSpells](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-orbofSpells)
 
 **Members:**
 
@@ -7216,7 +7216,7 @@ public class AbilityDefinitionOrbofSpells extends AbilityDefinition
 public class AbilityDefinitionItemSpeedAoe extends AbilityDefinition
 ```
 
-'AIsa' / [AbilityIds.itemSpeedAoe](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpeedAoe)
+'AIsa' / [AbilityIds.itemSpeedAoe](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpeedAoe)
 
 **Members:**
 
@@ -7230,7 +7230,7 @@ public class AbilityDefinitionItemSpeedAoe extends AbilityDefinition
 public class AbilityDefinitionUnholyFrenzy extends AbilityDefinition
 ```
 
-'Auhf' / [AbilityIds.unholyFrenzy](/stdlib/ref/_wurst/AbilityIds.html#abilityids-unholyFrenzy)
+'Auhf' / [AbilityIds.unholyFrenzy](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-unholyFrenzy)
 
 **Members:**
 
@@ -7247,7 +7247,7 @@ public class AbilityDefinitionUnholyFrenzy extends AbilityDefinition
 public class AbilityDefinitionAntimagicShieldcreep extends AbilityDefinition
 ```
 
-'ACam' / [AbilityIds.antimagicShell](/stdlib/ref/_wurst/AbilityIds.html#abilityids-antimagicShell)
+'ACam' / [AbilityIds.antimagicShell](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-antimagicShell)
 
 **Members:**
 
@@ -7267,7 +7267,7 @@ public class AbilityDefinitionAntimagicShieldcreep extends AbilityDefinition
 public class AbilityDefinitionSpawnSpiderOnDeath extends AbilityDefinition
 ```
 
-'Aspd' / [AbilityIds.spawnSpiders](/stdlib/ref/_wurst/AbilityIds.html#abilityids-spawnSpiders)
+'Aspd' / [AbilityIds.spawnSpiders](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-spawnSpiders)
 
 **Members:**
 
@@ -7283,7 +7283,7 @@ public class AbilityDefinitionSpawnSpiderOnDeath extends AbilityDefinition
 public class AbilityDefinitionDarkRangerDrain extends AbilityDefinition
 ```
 
-'ANdr' / [AbilityIds.darkRangerDrain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-darkRangerDrain)
+'ANdr' / [AbilityIds.darkRangerDrain](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-darkRangerDrain)
 
 **Members:**
 
@@ -7317,7 +7317,7 @@ public class AbilityDefinitionDarkRangerDrain extends AbilityDefinition
 public class AbilityDefinitionFlare extends AbilityDefinition
 ```
 
-'Afla' / [AbilityIds.flare](/stdlib/ref/_wurst/AbilityIds.html#abilityids-flare)
+'Afla' / [AbilityIds.flare](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-flare)
 
 **Members:**
 
@@ -7335,7 +7335,7 @@ public class AbilityDefinitionFlare extends AbilityDefinition
 public class AbilityDefinitionStrengthBonusPlus6 extends AbilityDefinition
 ```
 
-'AIs6' / [AbilityIds.strengthBonusPlus6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-strengthBonusPlus6)
+'AIs6' / [AbilityIds.strengthBonusPlus6](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-strengthBonusPlus6)
 
 **Members:**
 
@@ -7355,7 +7355,7 @@ public class AbilityDefinitionStrengthBonusPlus6 extends AbilityDefinition
 public class AbilityDefinitionPitLordDoom extends AbilityDefinition
 ```
 
-'ANdo' / [AbilityIds.pitLordDoom](/stdlib/ref/_wurst/AbilityIds.html#abilityids-pitLordDoom)
+'ANdo' / [AbilityIds.pitLordDoom](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-pitLordDoom)
 
 **Members:**
 
@@ -7379,7 +7379,7 @@ public class AbilityDefinitionPitLordDoom extends AbilityDefinition
 public class AbilityDefinitionSpellBook extends AbilityDefinition
 ```
 
-'Aspb' / [AbilityIds.spellBook](/stdlib/ref/_wurst/AbilityIds.html#abilityids-spellBook)
+'Aspb' / [AbilityIds.spellBook](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-spellBook)
 
 **Members:**
 
@@ -7401,7 +7401,7 @@ public class AbilityDefinitionSpellBook extends AbilityDefinition
 public class AbilityDefinitionStrengthBonusPlus3 extends AbilityDefinition
 ```
 
-'AIs3' / [AbilityIds.strengthBonusPlus3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-strengthBonusPlus3)
+'AIs3' / [AbilityIds.strengthBonusPlus3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-strengthBonusPlus3)
 
 **Members:**
 
@@ -7421,7 +7421,7 @@ public class AbilityDefinitionStrengthBonusPlus3 extends AbilityDefinition
 public class AbilityDefinitionDarkPortal extends AbilityDefinition
 ```
 
-'ANdp' / [AbilityIds.darkPortal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-darkPortal)
+'ANdp' / [AbilityIds.darkPortal](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-darkPortal)
 
 **Members:**
 
@@ -7439,7 +7439,7 @@ public class AbilityDefinitionDarkPortal extends AbilityDefinition
 public class AbilityDefinitionMoonPriestessTrueshotAura extends AbilityDefinition
 ```
 
-'AEar' / [AbilityIds.trueshotAura1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-trueshotAura1)
+'AEar' / [AbilityIds.trueshotAura1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-trueshotAura1)
 
 **Members:**
 
@@ -7460,7 +7460,7 @@ public class AbilityDefinitionMoonPriestessTrueshotAura extends AbilityDefinitio
 public class AbilityDefinitionStrengthBonusPlus4 extends AbilityDefinition
 ```
 
-'AIs4' / [AbilityIds.strengthBonusPlus4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-strengthBonusPlus4)
+'AIs4' / [AbilityIds.strengthBonusPlus4](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-strengthBonusPlus4)
 
 **Members:**
 
@@ -7480,7 +7480,7 @@ public class AbilityDefinitionStrengthBonusPlus4 extends AbilityDefinition
 public class AbilityDefinitionSpiderAttack extends AbilityDefinition
 ```
 
-'Aspa' / [AbilityIds.spiderAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-spiderAttack)
+'Aspa' / [AbilityIds.spiderAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-spiderAttack)
 
 **Members:**
 
@@ -7494,7 +7494,7 @@ public class AbilityDefinitionSpiderAttack extends AbilityDefinition
 public class AbilityDefinitionSpiritLink extends AbilityDefinition
 ```
 
-'Aspl' / [AbilityIds.spiritLink](/stdlib/ref/_wurst/AbilityIds.html#abilityids-spiritLink)
+'Aspl' / [AbilityIds.spiritLink](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-spiritLink)
 
 **Members:**
 
@@ -7510,7 +7510,7 @@ public class AbilityDefinitionSpiritLink extends AbilityDefinition
 public class AbilityDefinitionAuraWarDrumsKodobeast extends AbilityDefinition
 ```
 
-'Aakb' / [AbilityIds.warDrums](/stdlib/ref/_wurst/AbilityIds.html#abilityids-warDrums)
+'Aakb' / [AbilityIds.warDrums](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-warDrums)
 
 **Members:**
 
@@ -7532,7 +7532,7 @@ public class AbilityDefinitionAuraWarDrumsKodobeast extends AbilityDefinition
 public class AbilityDefinitionArchMageMassTeleport extends AbilityDefinition
 ```
 
-'AHmt' / [AbilityIds.massTeleport](/stdlib/ref/_wurst/AbilityIds.html#abilityids-massTeleport)
+'AHmt' / [AbilityIds.massTeleport](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-massTeleport)
 
 **Members:**
 
@@ -7550,7 +7550,7 @@ public class AbilityDefinitionArchMageMassTeleport extends AbilityDefinition
 public class AbilityDefinitionGoldMine extends AbilityDefinition
 ```
 
-'Agld' / [AbilityIds.goldMineability](/stdlib/ref/_wurst/AbilityIds.html#abilityids-goldMineability)
+'Agld' / [AbilityIds.goldMineability](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-goldMineability)
 
 **Members:**
 
@@ -7568,7 +7568,7 @@ public class AbilityDefinitionGoldMine extends AbilityDefinition
 public class AbilityDefinitionAuraCommandCreep extends AbilityDefinition
 ```
 
-'ACac' / [AbilityIds.auraCommandCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-auraCommandCreep)
+'ACac' / [AbilityIds.auraCommandCreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-auraCommandCreep)
 
 **Members:**
 
@@ -7588,7 +7588,7 @@ public class AbilityDefinitionAuraCommandCreep extends AbilityDefinition
 public class AbilityDefinitionBrewmasterDrunkenHaze extends AbilityDefinition
 ```
 
-'ANdh' / [AbilityIds.brewmasterDrunkenHaze](/stdlib/ref/_wurst/AbilityIds.html#abilityids-brewmasterDrunkenHaze)
+'ANdh' / [AbilityIds.brewmasterDrunkenHaze](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-brewmasterDrunkenHaze)
 
 **Members:**
 
@@ -7609,7 +7609,7 @@ public class AbilityDefinitionBrewmasterDrunkenHaze extends AbilityDefinition
 public class AbilityDefinitionAnimateDeadcreep extends AbilityDefinition
 ```
 
-'ACad' / [AbilityIds.animateDead](/stdlib/ref/_wurst/AbilityIds.html#abilityids-animateDead)
+'ACad' / [AbilityIds.animateDead](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-animateDead)
 
 **Members:**
 
@@ -7627,7 +7627,7 @@ public class AbilityDefinitionAnimateDeadcreep extends AbilityDefinition
 public class AbilityDefinitionStrengthBonusPlus1 extends AbilityDefinition
 ```
 
-'AIs1' / [AbilityIds.strengthBonusPlus1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-strengthBonusPlus1)
+'AIs1' / [AbilityIds.strengthBonusPlus1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-strengthBonusPlus1)
 
 **Members:**
 
@@ -7647,7 +7647,7 @@ public class AbilityDefinitionStrengthBonusPlus1 extends AbilityDefinition
 public class AbilityDefinitionStrengthBonusPlus5 extends AbilityDefinition
 ```
 
-'AIs5' / [AbilityIds.strengthBonusPlus5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-strengthBonusPlus5)
+'AIs5' / [AbilityIds.strengthBonusPlus5](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-strengthBonusPlus5)
 
 **Members:**
 
@@ -7667,7 +7667,7 @@ public class AbilityDefinitionStrengthBonusPlus5 extends AbilityDefinition
 public class AbilityDefinitionAttackSpeedIncreaseGreater extends AbilityDefinition
 ```
 
-'AIs2' / [AbilityIds.attackSpeedIncreaseGreater](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackSpeedIncreaseGreater)
+'AIs2' / [AbilityIds.attackSpeedIncreaseGreater](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-attackSpeedIncreaseGreater)
 
 **Members:**
 
@@ -7689,7 +7689,7 @@ public class AbilityDefinitionAttackSpeedIncreaseGreater extends AbilityDefiniti
 public class AbilityDefinitionItemRestore extends AbilityDefinition
 ```
 
-'AIre' / [AbilityIds.itemHealManaRegain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealManaRegain)
+'AIre' / [AbilityIds.itemHealManaRegain](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHealManaRegain)
 
 **Members:**
 
@@ -7705,7 +7705,7 @@ public class AbilityDefinitionItemRestore extends AbilityDefinition
 public class AbilityDefinitionBrewmasterDrunkenBrawler extends AbilityDefinition
 ```
 
-'ANdb' / [AbilityIds.brewmasterDrunkenBrawler](/stdlib/ref/_wurst/AbilityIds.html#abilityids-brewmasterDrunkenBrawler)
+'ANdb' / [AbilityIds.brewmasterDrunkenBrawler](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-brewmasterDrunkenBrawler)
 
 **Members:**
 
@@ -7729,7 +7729,7 @@ public class AbilityDefinitionBrewmasterDrunkenBrawler extends AbilityDefinition
 public class AbilityDefinitionRaiseDeadItem extends AbilityDefinition
 ```
 
-'AIrd' / [AbilityIds.raiseDeadItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-raiseDeadItem)
+'AIrd' / [AbilityIds.raiseDeadItem](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-raiseDeadItem)
 
 **Members:**
 
@@ -7751,7 +7751,7 @@ public class AbilityDefinitionRaiseDeadItem extends AbilityDefinition
 public class AbilityDefinitionSpawnHydraHatchling extends AbilityDefinition
 ```
 
-'Aspt' / [AbilityIds.spawnHydraHatchling](/stdlib/ref/_wurst/AbilityIds.html#abilityids-spawnHydraHatchling)
+'Aspt' / [AbilityIds.spawnHydraHatchling](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-spawnHydraHatchling)
 
 **Members:**
 
@@ -7767,7 +7767,7 @@ public class AbilityDefinitionSpawnHydraHatchling extends AbilityDefinition
 public class AbilityDefinitionItemReincarnation extends AbilityDefinition
 ```
 
-'AIrc' / [AbilityIds.itemReincarnation](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemReincarnation)
+'AIrc' / [AbilityIds.itemReincarnation](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemReincarnation)
 
 **Members:**
 
@@ -7786,7 +7786,7 @@ public class AbilityDefinitionItemReincarnation extends AbilityDefinition
 public class AbilityDefinitionTinkererDemolishLevel0 extends AbilityDefinition
 ```
 
-'ANde' / [AbilityIds.tinkererDemolishLevel0](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererDemolishLevel0)
+'ANde' / [AbilityIds.tinkererDemolishLevel0](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-tinkererDemolishLevel0)
 
 **Members:**
 
@@ -7806,7 +7806,7 @@ public class AbilityDefinitionTinkererDemolishLevel0 extends AbilityDefinition
 public class AbilityDefinitionRuneofSpiritLink extends AbilityDefinition
 ```
 
-'Aspp' / [AbilityIds.runeofSpiritLink](/stdlib/ref/_wurst/AbilityIds.html#abilityids-runeofSpiritLink)
+'Aspp' / [AbilityIds.runeofSpiritLink](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-runeofSpiritLink)
 
 **Members:**
 
@@ -7822,7 +7822,7 @@ public class AbilityDefinitionRuneofSpiritLink extends AbilityDefinition
 public class AbilityDefinitionSlowPoison extends AbilityDefinition
 ```
 
-'Aspo' / [AbilityIds.slowPoison](/stdlib/ref/_wurst/AbilityIds.html#abilityids-slowPoison)
+'Aspo' / [AbilityIds.slowPoison](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-slowPoison)
 
 **Members:**
 
@@ -7845,7 +7845,7 @@ public class AbilityDefinitionSlowPoison extends AbilityDefinition
 public class AbilityDefinitionMalganisDarkConversion extends AbilityDefinition
 ```
 
-'ANdc' / [AbilityIds.darkConversion](/stdlib/ref/_wurst/AbilityIds.html#abilityids-darkConversion)
+'ANdc' / [AbilityIds.darkConversion](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-darkConversion)
 
 **Members:**
 
@@ -7861,7 +7861,7 @@ public class AbilityDefinitionMalganisDarkConversion extends AbilityDefinition
 public class AbilityDefinitionAuraDevotionCreep extends AbilityDefinition
 ```
 
-'ACav' / [AbilityIds.devotionAura1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-devotionAura1)
+'ACav' / [AbilityIds.devotionAura1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-devotionAura1)
 
 **Members:**
 
@@ -7877,7 +7877,7 @@ public class AbilityDefinitionAuraDevotionCreep extends AbilityDefinition
 public class AbilityDefinitionAuraTrueshotCreep extends AbilityDefinition
 ```
 
-'ACat' / [AbilityIds.trueshotAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-trueshotAura)
+'ACat' / [AbilityIds.trueshotAura](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-trueshotAura)
 
 **Members:**
 
@@ -7898,7 +7898,7 @@ public class AbilityDefinitionAuraTrueshotCreep extends AbilityDefinition
 public class AbilityDefinitionItemRestoreAoe extends AbilityDefinition
 ```
 
-'AIra' / [AbilityIds.itemAreaHealManaRegain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAreaHealManaRegain)
+'AIra' / [AbilityIds.itemAreaHealManaRegain](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAreaHealManaRegain)
 
 **Members:**
 
@@ -7914,7 +7914,7 @@ public class AbilityDefinitionItemRestoreAoe extends AbilityDefinition
 public class AbilityDefinitionKeeperoftheGroveThornsAura extends AbilityDefinition
 ```
 
-'AEah' / [AbilityIds.thornsAura1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-thornsAura1)
+'AEah' / [AbilityIds.thornsAura1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-thornsAura1)
 
 **Members:**
 
@@ -7930,7 +7930,7 @@ public class AbilityDefinitionKeeperoftheGroveThornsAura extends AbilityDefiniti
 public class AbilityDefinitionThornsAuraCreep extends AbilityDefinition
 ```
 
-'ACah' / [AbilityIds.thornsAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-thornsAura)
+'ACah' / [AbilityIds.thornsAura](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-thornsAura)
 
 **Members:**
 
@@ -7946,7 +7946,7 @@ public class AbilityDefinitionThornsAuraCreep extends AbilityDefinition
 public class AbilityDefinitionSpawnHydra extends AbilityDefinition
 ```
 
-'Aspy' / [AbilityIds.spawnHydra](/stdlib/ref/_wurst/AbilityIds.html#abilityids-spawnHydra)
+'Aspy' / [AbilityIds.spawnHydra](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-spawnHydra)
 
 **Members:**
 
@@ -7962,7 +7962,7 @@ public class AbilityDefinitionSpawnHydra extends AbilityDefinition
 public class AbilityDefinitionAspx extends AbilityDefinition
 ```
 
-'Aspx' / [AbilityIds.aspx](/stdlib/ref/_wurst/AbilityIds.html#abilityids-aspx)
+'Aspx' / [AbilityIds.aspx](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-aspx)
 
 **Members:**
 
@@ -7986,7 +7986,7 @@ public class AbilityDefinitionAspx extends AbilityDefinition
 public class AbilityDefinitionTinkererClusterRocketsLevel2 extends AbilityDefinition
 ```
 
-'ANc2' / [AbilityIds.tinkererClusterRocketsLevel2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererClusterRocketsLevel2)
+'ANc2' / [AbilityIds.tinkererClusterRocketsLevel2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-tinkererClusterRocketsLevel2)
 
 **Members:**
 
@@ -8010,7 +8010,7 @@ public class AbilityDefinitionTinkererClusterRocketsLevel2 extends AbilityDefini
 public class AbilityDefinitionDreadlordVampiricAura extends AbilityDefinition
 ```
 
-'AUav' / [AbilityIds.vampiricAura1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-vampiricAura1)
+'AUav' / [AbilityIds.vampiricAura1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-vampiricAura1)
 
 **Members:**
 
@@ -8025,7 +8025,7 @@ public class AbilityDefinitionDreadlordVampiricAura extends AbilityDefinition
 public class AbilityDefinitionTinkererClusterRocketsLevel3 extends AbilityDefinition
 ```
 
-'ANc3' / [AbilityIds.tinkererClusterRocketsLevel3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererClusterRocketsLevel3)
+'ANc3' / [AbilityIds.tinkererClusterRocketsLevel3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-tinkererClusterRocketsLevel3)
 
 **Members:**
 
@@ -8049,7 +8049,7 @@ public class AbilityDefinitionTinkererClusterRocketsLevel3 extends AbilityDefini
 public class AbilityDefinitionDeathKnightUnholyAura extends AbilityDefinition
 ```
 
-'AUau' / [AbilityIds.unholyAura1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-unholyAura1)
+'AUau' / [AbilityIds.unholyAura1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-unholyAura1)
 
 **Members:**
 
@@ -8069,7 +8069,7 @@ public class AbilityDefinitionDeathKnightUnholyAura extends AbilityDefinition
 public class AbilityDefinitionItemPotionVampirism extends AbilityDefinition
 ```
 
-'AIpv' / [AbilityIds.itemPotionVampirism](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemPotionVampirism)
+'AIpv' / [AbilityIds.itemPotionVampirism](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemPotionVampirism)
 
 **Members:**
 
@@ -8087,7 +8087,7 @@ public class AbilityDefinitionItemPotionVampirism extends AbilityDefinition
 public class AbilityDefinitionOrbofVenomPoisonAttack extends AbilityDefinition
 ```
 
-'Apo2' / [AbilityIds.orbofVenomPoisonAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-orbofVenomPoisonAttack)
+'Apo2' / [AbilityIds.orbofVenomPoisonAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-orbofVenomPoisonAttack)
 
 **Members:**
 
@@ -8110,7 +8110,7 @@ public class AbilityDefinitionOrbofVenomPoisonAttack extends AbilityDefinition
 public class AbilityDefinitionCoupleInstantArcher extends AbilityDefinition
 ```
 
-'Aco2' / [AbilityIds.coupleInstantArcher](/stdlib/ref/_wurst/AbilityIds.html#abilityids-coupleInstantArcher)
+'Aco2' / [AbilityIds.coupleInstantArcher](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-coupleInstantArcher)
 
 **Members:**
 
@@ -8128,7 +8128,7 @@ public class AbilityDefinitionCoupleInstantArcher extends AbilityDefinition
 public class AbilityDefinitionPotionofManaRegengreater extends AbilityDefinition
 ```
 
-'AIpr' / [AbilityIds.potionofManaRegengreater](/stdlib/ref/_wurst/AbilityIds.html#abilityids-potionofManaRegengreater)
+'AIpr' / [AbilityIds.potionofManaRegengreater](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-potionofManaRegengreater)
 
 **Members:**
 
@@ -8151,7 +8151,7 @@ public class AbilityDefinitionPotionofManaRegengreater extends AbilityDefinition
 public class AbilityDefinitionTinkererClusterRocketsLevel1 extends AbilityDefinition
 ```
 
-'ANc1' / [AbilityIds.tinkererClusterRocketsLevel1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererClusterRocketsLevel1)
+'ANc1' / [AbilityIds.tinkererClusterRocketsLevel1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-tinkererClusterRocketsLevel1)
 
 **Members:**
 
@@ -8175,7 +8175,7 @@ public class AbilityDefinitionTinkererClusterRocketsLevel1 extends AbilityDefini
 public class AbilityDefinitionCoupleInstantHippogryph extends AbilityDefinition
 ```
 
-'Aco3' / [AbilityIds.coupleInstantHippogryph](/stdlib/ref/_wurst/AbilityIds.html#abilityids-coupleInstantHippogryph)
+'Aco3' / [AbilityIds.coupleInstantHippogryph](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-coupleInstantHippogryph)
 
 **Members:**
 
@@ -8193,7 +8193,7 @@ public class AbilityDefinitionCoupleInstantHippogryph extends AbilityDefinition
 public class AbilityDefinitionSpawnOnDeathskeleton extends AbilityDefinition
 ```
 
-'Asod' / [AbilityIds.spawnOnDeathskeleton](/stdlib/ref/_wurst/AbilityIds.html#abilityids-spawnOnDeathskeleton)
+'Asod' / [AbilityIds.spawnOnDeathskeleton](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-spawnOnDeathskeleton)
 
 **Members:**
 
@@ -8209,7 +8209,7 @@ public class AbilityDefinitionSpawnOnDeathskeleton extends AbilityDefinition
 public class AbilityDefinitionPotionofManaRegenlesser extends AbilityDefinition
 ```
 
-'AIpl' / [AbilityIds.potionofManaRegenlesser](/stdlib/ref/_wurst/AbilityIds.html#abilityids-potionofManaRegenlesser)
+'AIpl' / [AbilityIds.potionofManaRegenlesser](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-potionofManaRegenlesser)
 
 **Members:**
 
@@ -8232,7 +8232,7 @@ public class AbilityDefinitionPotionofManaRegenlesser extends AbilityDefinition
 public class AbilityDefinitionDeathKnightAnimateDead extends AbilityDefinition
 ```
 
-'AUan' / [AbilityIds.animateDead1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-animateDead1)
+'AUan' / [AbilityIds.animateDead1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-animateDead1)
 
 **Members:**
 
@@ -8250,7 +8250,7 @@ public class AbilityDefinitionDeathKnightAnimateDead extends AbilityDefinition
 public class AbilityDefinitionItemPlaceMine extends AbilityDefinition
 ```
 
-'AIpm' / [AbilityIds.itemPlaceGoblinLandMine](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemPlaceGoblinLandMine)
+'AIpm' / [AbilityIds.itemPlaceGoblinLandMine](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemPlaceGoblinLandMine)
 
 **Members:**
 
@@ -8264,7 +8264,7 @@ public class AbilityDefinitionItemPlaceMine extends AbilityDefinition
 public class AbilityDefinitionBloodMagePhoenix extends AbilityDefinition
 ```
 
-'AHpx' / [AbilityIds.phoenix](/stdlib/ref/_wurst/AbilityIds.html#abilityids-phoenix)
+'AHpx' / [AbilityIds.phoenix](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-phoenix)
 
 **Members:**
 
@@ -8280,7 +8280,7 @@ public class AbilityDefinitionBloodMagePhoenix extends AbilityDefinition
 public class AbilityDefinitionAlchemistAcidBomb extends AbilityDefinition
 ```
 
-'ANab' / [AbilityIds.acidBomb](/stdlib/ref/_wurst/AbilityIds.html#abilityids-acidBomb)
+'ANab' / [AbilityIds.acidBomb](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-acidBomb)
 
 **Members:**
 
@@ -8306,7 +8306,7 @@ public class AbilityDefinitionAlchemistAcidBomb extends AbilityDefinition
 public class AbilityDefinitionPermanentImmolationflying extends AbilityDefinition
 ```
 
-'Apmf' / [AbilityIds.permanentImmolationflying](/stdlib/ref/_wurst/AbilityIds.html#abilityids-permanentImmolationflying)
+'Apmf' / [AbilityIds.permanentImmolationflying](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-permanentImmolationflying)
 
 **Members:**
 
@@ -8324,7 +8324,7 @@ public class AbilityDefinitionPermanentImmolationflying extends AbilityDefinitio
 public class AbilityDefinitionTornadoSpin extends AbilityDefinition
 ```
 
-'Atsp' / [AbilityIds.tornadoSpin](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tornadoSpin)
+'Atsp' / [AbilityIds.tornadoSpin](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-tornadoSpin)
 
 **Members:**
 
@@ -8340,7 +8340,7 @@ public class AbilityDefinitionTornadoSpin extends AbilityDefinition
 public class AbilityDefinitionAntimagicShield extends AbilityDefinition
 ```
 
-'Aams' / [AbilityIds.antimagicShell1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-antimagicShell1)
+'Aams' / [AbilityIds.antimagicShell1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-antimagicShell1)
 
 **Members:**
 
@@ -8360,7 +8360,7 @@ public class AbilityDefinitionAntimagicShield extends AbilityDefinition
 public class AbilityDefinitionOrbofDarknessBlackArrow extends AbilityDefinition
 ```
 
-'ANbs' / [AbilityIds.orbofDarknessBlackArrow](/stdlib/ref/_wurst/AbilityIds.html#abilityids-orbofDarknessBlackArrow)
+'ANbs' / [AbilityIds.orbofDarknessBlackArrow](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-orbofDarknessBlackArrow)
 
 **Members:**
 
@@ -8380,7 +8380,7 @@ public class AbilityDefinitionOrbofDarknessBlackArrow extends AbilityDefinition
 public class AbilityDefinitionTinkererDemolishLevel3 extends AbilityDefinition
 ```
 
-'ANd3' / [AbilityIds.tinkererDemolishLevel3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererDemolishLevel3)
+'ANd3' / [AbilityIds.tinkererDemolishLevel3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-tinkererDemolishLevel3)
 
 **Members:**
 
@@ -8400,7 +8400,7 @@ public class AbilityDefinitionTinkererDemolishLevel3 extends AbilityDefinition
 public class AbilityDefinitionSlowAIos extends AbilityDefinition
 ```
 
-'AIos' / [AbilityIds.slowAIos](/stdlib/ref/_wurst/AbilityIds.html#abilityids-slowAIos)
+'AIos' / [AbilityIds.slowAIos](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-slowAIos)
 
 **Members:**
 
@@ -8418,7 +8418,7 @@ public class AbilityDefinitionSlowAIos extends AbilityDefinition
 public class AbilityDefinitionBattleRoar extends AbilityDefinition
 ```
 
-'ANbr' / [AbilityIds.battleRoar](/stdlib/ref/_wurst/AbilityIds.html#abilityids-battleRoar)
+'ANbr' / [AbilityIds.battleRoar](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-battleRoar)
 
 **Members:**
 
@@ -8444,7 +8444,7 @@ public class AbilityDefinitionBattleRoar extends AbilityDefinition
 public class AbilityDefinitionTinkererDemolishLevel1 extends AbilityDefinition
 ```
 
-'ANd1' / [AbilityIds.tinkererDemolishLevel1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererDemolishLevel1)
+'ANd1' / [AbilityIds.tinkererDemolishLevel1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-tinkererDemolishLevel1)
 
 **Members:**
 
@@ -8464,7 +8464,7 @@ public class AbilityDefinitionTinkererDemolishLevel1 extends AbilityDefinition
 public class AbilityDefinitionTinkererDemolishLevel2 extends AbilityDefinition
 ```
 
-'ANd2' / [AbilityIds.tinkererDemolishLevel2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererDemolishLevel2)
+'ANd2' / [AbilityIds.tinkererDemolishLevel2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-tinkererDemolishLevel2)
 
 **Members:**
 
@@ -8484,7 +8484,7 @@ public class AbilityDefinitionTinkererDemolishLevel2 extends AbilityDefinition
 public class AbilityDefinitionAttributeModifierSkill extends AbilityDefinition
 ```
 
-'Aamk' / [AbilityIds.attributeModifierSkill](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attributeModifierSkill)
+'Aamk' / [AbilityIds.attributeModifierSkill](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-attributeModifierSkill)
 
 **Members:**
 
@@ -8504,7 +8504,7 @@ public class AbilityDefinitionAttributeModifierSkill extends AbilityDefinition
 public class AbilityDefinitionDispelMagic extends AbilityDefinition
 ```
 
-'Adis' / [AbilityIds.dispelMagic](/stdlib/ref/_wurst/AbilityIds.html#abilityids-dispelMagic)
+'Adis' / [AbilityIds.dispelMagic](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-dispelMagic)
 
 **Members:**
 
@@ -8520,7 +8520,7 @@ public class AbilityDefinitionDispelMagic extends AbilityDefinition
 public class AbilityDefinitionBashBeastmasterBear extends AbilityDefinition
 ```
 
-'ANbh' / [AbilityIds.bashBeastmasterBear](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bashBeastmasterBear)
+'ANbh' / [AbilityIds.bashBeastmasterBear](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-bashBeastmasterBear)
 
 **Members:**
 
@@ -8542,7 +8542,7 @@ public class AbilityDefinitionBashBeastmasterBear extends AbilityDefinition
 public class AbilityDefinitionBrewmasterBreathofFire extends AbilityDefinition
 ```
 
-'ANbf' / [AbilityIds.brewmasterBreathofFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-brewmasterBreathofFire)
+'ANbf' / [AbilityIds.brewmasterBreathofFire](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-brewmasterBreathofFire)
 
 **Members:**
 
@@ -8564,7 +8564,7 @@ public class AbilityDefinitionBrewmasterBreathofFire extends AbilityDefinition
 public class AbilityDefinitionPolymorph extends AbilityDefinition
 ```
 
-'Aply' / [AbilityIds.polymorph](/stdlib/ref/_wurst/AbilityIds.html#abilityids-polymorph)
+'Aply' / [AbilityIds.polymorph](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-polymorph)
 
 **Members:**
 
@@ -8586,7 +8586,7 @@ public class AbilityDefinitionPolymorph extends AbilityDefinition
 public class AbilityDefinitionPurgeorb extends AbilityDefinition
 ```
 
-'AIpg' / [AbilityIds.purgeorb](/stdlib/ref/_wurst/AbilityIds.html#abilityids-purgeorb)
+'AIpg' / [AbilityIds.purgeorb](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-purgeorb)
 
 **Members:**
 
@@ -8610,7 +8610,7 @@ public class AbilityDefinitionPurgeorb extends AbilityDefinition
 public class AbilityDefinitionDarkRangerBlackArrow extends AbilityDefinition
 ```
 
-'ANba' / [AbilityIds.darkRangerBlackArrow](/stdlib/ref/_wurst/AbilityIds.html#abilityids-darkRangerBlackArrow)
+'ANba' / [AbilityIds.darkRangerBlackArrow](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-darkRangerBlackArrow)
 
 **Members:**
 
@@ -8630,7 +8630,7 @@ public class AbilityDefinitionDarkRangerBlackArrow extends AbilityDefinition
 public class AbilityDefinitionCargoHoldEntangledGoldMine extends AbilityDefinition
 ```
 
-'Aenc' / [AbilityIds.load1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-load1)
+'Aenc' / [AbilityIds.load1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-load1)
 
 **Members:**
 
@@ -8644,7 +8644,7 @@ public class AbilityDefinitionCargoHoldEntangledGoldMine extends AbilityDefiniti
 public class AbilityDefinitionAerialShackles extends AbilityDefinition
 ```
 
-'Amls' / [AbilityIds.aerialShackles](/stdlib/ref/_wurst/AbilityIds.html#abilityids-aerialShackles)
+'Amls' / [AbilityIds.aerialShackles](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-aerialShackles)
 
 **Members:**
 
@@ -8658,7 +8658,7 @@ public class AbilityDefinitionAerialShackles extends AbilityDefinition
 public class AbilityDefinitionOrbofVenom extends AbilityDefinition
 ```
 
-'AIpb' / [AbilityIds.orbofVenom](/stdlib/ref/_wurst/AbilityIds.html#abilityids-orbofVenom)
+'AIpb' / [AbilityIds.orbofVenom](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-orbofVenom)
 
 **Members:**
 
@@ -8676,7 +8676,7 @@ public class AbilityDefinitionOrbofVenom extends AbilityDefinition
 public class AbilityDefinitionDetectShade extends AbilityDefinition
 ```
 
-'Atru' / [AbilityIds.trueSight2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-trueSight2)
+'Atru' / [AbilityIds.trueSight2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-trueSight2)
 
 **Members:**
 
@@ -8690,7 +8690,7 @@ public class AbilityDefinitionDetectShade extends AbilityDefinition
 public class AbilityDefinitionControlMagic extends AbilityDefinition
 ```
 
-'Acmg' / [AbilityIds.controlMagic](/stdlib/ref/_wurst/AbilityIds.html#abilityids-controlMagic)
+'Acmg' / [AbilityIds.controlMagic](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-controlMagic)
 
 **Members:**
 
@@ -8708,7 +8708,7 @@ public class AbilityDefinitionControlMagic extends AbilityDefinition
 public class AbilityDefinitionDreadlordCarrionSwarm extends AbilityDefinition
 ```
 
-'AUcs' / [AbilityIds.carrionSwarm1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-carrionSwarm1)
+'AUcs' / [AbilityIds.carrionSwarm1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-carrionSwarm1)
 
 **Members:**
 
@@ -8728,7 +8728,7 @@ public class AbilityDefinitionDreadlordCarrionSwarm extends AbilityDefinition
 public class AbilityDefinitionAllPlus1 extends AbilityDefinition
 ```
 
-'AIx1' / [AbilityIds.allPlus1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-allPlus1)
+'AIx1' / [AbilityIds.allPlus1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-allPlus1)
 
 **Members:**
 
@@ -8748,7 +8748,7 @@ public class AbilityDefinitionAllPlus1 extends AbilityDefinition
 public class AbilityDefinitionAllPlus2 extends AbilityDefinition
 ```
 
-'AIx2' / [AbilityIds.allPlus2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-allPlus2)
+'AIx2' / [AbilityIds.allPlus2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-allPlus2)
 
 **Members:**
 
@@ -8768,7 +8768,7 @@ public class AbilityDefinitionAllPlus2 extends AbilityDefinition
 public class AbilityDefinitionCrownofKingsAllPlus5 extends AbilityDefinition
 ```
 
-'AIx5' / [AbilityIds.crownofKingsAllPlus5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-crownofKingsAllPlus5)
+'AIx5' / [AbilityIds.crownofKingsAllPlus5](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-crownofKingsAllPlus5)
 
 **Members:**
 
@@ -8788,7 +8788,7 @@ public class AbilityDefinitionCrownofKingsAllPlus5 extends AbilityDefinition
 public class AbilityDefinitionCorrosiveBreath extends AbilityDefinition
 ```
 
-'Acor' / [AbilityIds.corrosiveBreath](/stdlib/ref/_wurst/AbilityIds.html#abilityids-corrosiveBreath)
+'Acor' / [AbilityIds.corrosiveBreath](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-corrosiveBreath)
 
 **Members:**
 
@@ -8802,7 +8802,7 @@ public class AbilityDefinitionCorrosiveBreath extends AbilityDefinition
 public class AbilityDefinitionRootAncients extends AbilityDefinition
 ```
 
-'Aro1' / [AbilityIds.rootAncients](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rootAncients)
+'Aro1' / [AbilityIds.rootAncients](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-rootAncients)
 
 **Members:**
 
@@ -8822,7 +8822,7 @@ public class AbilityDefinitionRootAncients extends AbilityDefinition
 public class AbilityDefinitionRootAncientProtector extends AbilityDefinition
 ```
 
-'Aro2' / [AbilityIds.rootAncientProtector](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rootAncientProtector)
+'Aro2' / [AbilityIds.rootAncientProtector](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-rootAncientProtector)
 
 **Members:**
 
@@ -8842,7 +8842,7 @@ public class AbilityDefinitionRootAncientProtector extends AbilityDefinition
 public class AbilityDefinitionFactory extends AbilityDefinition
 ```
 
-'ANfy' / [AbilityIds.factory](/stdlib/ref/_wurst/AbilityIds.html#abilityids-factory)
+'ANfy' / [AbilityIds.factory](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-factory)
 
 **Members:**
 
@@ -8860,7 +8860,7 @@ public class AbilityDefinitionFactory extends AbilityDefinition
 public class AbilityDefinitionKeeperoftheGroveForceofNature extends AbilityDefinition
 ```
 
-'AEfn' / [AbilityIds.forceofNature1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-forceofNature1)
+'AEfn' / [AbilityIds.forceofNature1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-forceofNature1)
 
 **Members:**
 
@@ -8876,7 +8876,7 @@ public class AbilityDefinitionKeeperoftheGroveForceofNature extends AbilityDefin
 public class AbilityDefinitionLichDeathandDecay extends AbilityDefinition
 ```
 
-'AUdd' / [AbilityIds.deathAndDecay1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-deathAndDecay1)
+'AUdd' / [AbilityIds.deathAndDecay1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-deathAndDecay1)
 
 **Members:**
 
@@ -8893,7 +8893,7 @@ public class AbilityDefinitionLichDeathandDecay extends AbilityDefinition
 public class AbilityDefinitionItemWeb extends AbilityDefinition
 ```
 
-'AIwb' / [AbilityIds.itemWeb](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemWeb)
+'AIwb' / [AbilityIds.itemWeb](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemWeb)
 
 **Members:**
 
@@ -8919,7 +8919,7 @@ public class AbilityDefinitionItemWeb extends AbilityDefinition
 public class AbilityDefinitionWardenFanofKnives extends AbilityDefinition
 ```
 
-'AEfk' / [AbilityIds.wardenFanofKnives](/stdlib/ref/_wurst/AbilityIds.html#abilityids-wardenFanofKnives)
+'AEfk' / [AbilityIds.wardenFanofKnives](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-wardenFanofKnives)
 
 **Members:**
 
@@ -8939,7 +8939,7 @@ public class AbilityDefinitionWardenFanofKnives extends AbilityDefinition
 public class AbilityDefinitionBattlestationsChaos extends AbilityDefinition
 ```
 
-'Sbtl' / [AbilityIds.battlestationsChaos](/stdlib/ref/_wurst/AbilityIds.html#abilityids-battlestationsChaos)
+'Sbtl' / [AbilityIds.battlestationsChaos](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-battlestationsChaos)
 
 **Members:**
 
@@ -8955,7 +8955,7 @@ public class AbilityDefinitionBattlestationsChaos extends AbilityDefinition
 public class AbilityDefinitionCorporealForm extends AbilityDefinition
 ```
 
-'Acpf' / [AbilityIds.corporealForm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-corporealForm)
+'Acpf' / [AbilityIds.corporealForm](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-corporealForm)
 
 **Members:**
 
@@ -8979,7 +8979,7 @@ public class AbilityDefinitionCorporealForm extends AbilityDefinition
 public class AbilityDefinitionDeathKnightDeathCoil extends AbilityDefinition
 ```
 
-'AUdc' / [AbilityIds.deathCoil1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-deathCoil1)
+'AUdc' / [AbilityIds.deathCoil1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-deathCoil1)
 
 **Members:**
 
@@ -8994,7 +8994,7 @@ public class AbilityDefinitionDeathKnightDeathCoil extends AbilityDefinition
 public class AbilityDefinitionPhaseShift extends AbilityDefinition
 ```
 
-'Apsh' / [AbilityIds.phaseShift](/stdlib/ref/_wurst/AbilityIds.html#abilityids-phaseShift)
+'Apsh' / [AbilityIds.phaseShift](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-phaseShift)
 
 **Members:**
 
@@ -9012,7 +9012,7 @@ public class AbilityDefinitionPhaseShift extends AbilityDefinition
 public class AbilityDefinitionSleepAlways extends AbilityDefinition
 ```
 
-'Asla' / [AbilityIds.sleepAlways](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sleepAlways)
+'Asla' / [AbilityIds.sleepAlways](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-sleepAlways)
 
 **Members:**
 
@@ -9028,7 +9028,7 @@ public class AbilityDefinitionSleepAlways extends AbilityDefinition
 public class AbilityDefinitionFigurineUrsaWarrior extends AbilityDefinition
 ```
 
-'AIuw' / [AbilityIds.figurineUrsaWarrior](/stdlib/ref/_wurst/AbilityIds.html#abilityids-figurineUrsaWarrior)
+'AIuw' / [AbilityIds.figurineUrsaWarrior](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-figurineUrsaWarrior)
 
 **Members:**
 
@@ -9052,7 +9052,7 @@ public class AbilityDefinitionFigurineUrsaWarrior extends AbilityDefinition
 public class AbilityDefinitionElunesGrace extends AbilityDefinition
 ```
 
-'Aegr' / [AbilityIds.elunesGrace](/stdlib/ref/_wurst/AbilityIds.html#abilityids-elunesGrace)
+'Aegr' / [AbilityIds.elunesGrace](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-elunesGrace)
 
 **Members:**
 
@@ -9082,7 +9082,7 @@ public class AbilityDefinitionElunesGrace extends AbilityDefinition
 public class AbilityDefinitionReturnLumber extends AbilityDefinition
 ```
 
-'Arlm' / [AbilityIds.returnLumber](/stdlib/ref/_wurst/AbilityIds.html#abilityids-returnLumber)
+'Arlm' / [AbilityIds.returnLumber](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-returnLumber)
 
 **Members:**
 
@@ -9098,7 +9098,7 @@ public class AbilityDefinitionReturnLumber extends AbilityDefinition
 public class AbilityDefinitionRegenLifeArll extends AbilityDefinition
 ```
 
-'Arll' / [AbilityIds.regenLifeArll](/stdlib/ref/_wurst/AbilityIds.html#abilityids-regenLifeArll)
+'Arll' / [AbilityIds.regenLifeArll](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-regenLifeArll)
 
 **Members:**
 
@@ -9112,7 +9112,7 @@ public class AbilityDefinitionRegenLifeArll extends AbilityDefinition
 public class AbilityDefinitionDemonHunterEvasion extends AbilityDefinition
 ```
 
-'AEev' / [AbilityIds.evasion2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-evasion2)
+'AEev' / [AbilityIds.evasion2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-evasion2)
 
 **Members:**
 
@@ -9126,7 +9126,7 @@ public class AbilityDefinitionDemonHunterEvasion extends AbilityDefinition
 public class AbilityDefinitionPitLordHowlofTerror extends AbilityDefinition
 ```
 
-'ANht' / [AbilityIds.pitLordHowlofTerror](/stdlib/ref/_wurst/AbilityIds.html#abilityids-pitLordHowlofTerror)
+'ANht' / [AbilityIds.pitLordHowlofTerror](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-pitLordHowlofTerror)
 
 **Members:**
 
@@ -9153,7 +9153,7 @@ public class AbilityDefinitionPitLordHowlofTerror extends AbilityDefinition
 public class AbilityDefinitionAlchemistHealingSpray extends AbilityDefinition
 ```
 
-'ANhs' / [AbilityIds.alchemistHealingSpray](/stdlib/ref/_wurst/AbilityIds.html#abilityids-alchemistHealingSpray)
+'ANhs' / [AbilityIds.alchemistHealingSpray](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-alchemistHealingSpray)
 
 **Members:**
 
@@ -9177,7 +9177,7 @@ public class AbilityDefinitionAlchemistHealingSpray extends AbilityDefinition
 public class AbilityDefinitionEntangledGoldMine extends AbilityDefinition
 ```
 
-'Aegm' / [AbilityIds.entangledGoldMineAbility](/stdlib/ref/_wurst/AbilityIds.html#abilityids-entangledGoldMineAbility)
+'Aegm' / [AbilityIds.entangledGoldMineAbility](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-entangledGoldMineAbility)
 
 **Members:**
 
@@ -9193,7 +9193,7 @@ public class AbilityDefinitionEntangledGoldMine extends AbilityDefinition
 public class AbilityDefinitionKeeperoftheGroveEntanglingRoots extends AbilityDefinition
 ```
 
-'AEer' / [AbilityIds.entanglingRoots1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-entanglingRoots1)
+'AEer' / [AbilityIds.entanglingRoots1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-entanglingRoots1)
 
 **Members:**
 
@@ -9207,7 +9207,7 @@ public class AbilityDefinitionKeeperoftheGroveEntanglingRoots extends AbilityDef
 public class AbilityDefinitionLightningShield extends AbilityDefinition
 ```
 
-'Alsh' / [AbilityIds.lightningShield](/stdlib/ref/_wurst/AbilityIds.html#abilityids-lightningShield)
+'Alsh' / [AbilityIds.lightningShield](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-lightningShield)
 
 **Members:**
 
@@ -9221,7 +9221,7 @@ public class AbilityDefinitionLightningShield extends AbilityDefinition
 public class AbilityDefinitionVampiricattackAIva extends AbilityDefinition
 ```
 
-'AIva' / [AbilityIds.itemLifeSteal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLifeSteal)
+'AIva' / [AbilityIds.itemLifeSteal](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemLifeSteal)
 
 **Members:**
 
@@ -9235,7 +9235,7 @@ public class AbilityDefinitionVampiricattackAIva extends AbilityDefinition
 public class AbilityDefinitionCoupleHippogryph extends AbilityDefinition
 ```
 
-'Acoh' / [AbilityIds.pickupArcher](/stdlib/ref/_wurst/AbilityIds.html#abilityids-pickupArcher)
+'Acoh' / [AbilityIds.pickupArcher](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-pickupArcher)
 
 **Members:**
 
@@ -9251,7 +9251,7 @@ public class AbilityDefinitionCoupleHippogryph extends AbilityDefinition
 public class AbilityDefinitionPaladinResurrection extends AbilityDefinition
 ```
 
-'AHre' / [AbilityIds.resurrection](/stdlib/ref/_wurst/AbilityIds.html#abilityids-resurrection)
+'AHre' / [AbilityIds.resurrection](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-resurrection)
 
 **Members:**
 
@@ -9267,7 +9267,7 @@ public class AbilityDefinitionPaladinResurrection extends AbilityDefinition
 public class AbilityDefinitionCryptLordCarrionScarabs extends AbilityDefinition
 ```
 
-'AUcb' / [AbilityIds.cryptLordCarrionScarabs](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cryptLordCarrionScarabs)
+'AUcb' / [AbilityIds.cryptLordCarrionScarabs](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cryptLordCarrionScarabs)
 
 **Members:**
 
@@ -9291,7 +9291,7 @@ public class AbilityDefinitionCryptLordCarrionScarabs extends AbilityDefinition
 public class AbilityDefinitionBerserkerUpgrade extends AbilityDefinition
 ```
 
-'Sbsk' / [AbilityIds.berserkerUpgrade](/stdlib/ref/_wurst/AbilityIds.html#abilityids-berserkerUpgrade)
+'Sbsk' / [AbilityIds.berserkerUpgrade](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-berserkerUpgrade)
 
 **Members:**
 
@@ -9305,7 +9305,7 @@ public class AbilityDefinitionBerserkerUpgrade extends AbilityDefinition
 public class AbilityDefinitionRuneofGreaterResurrection extends AbilityDefinition
 ```
 
-'APrr' / [AbilityIds.runeofGreaterResurrection](/stdlib/ref/_wurst/AbilityIds.html#abilityids-runeofGreaterResurrection)
+'APrr' / [AbilityIds.runeofGreaterResurrection](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-runeofGreaterResurrection)
 
 **Members:**
 
@@ -9321,7 +9321,7 @@ public class AbilityDefinitionRuneofGreaterResurrection extends AbilityDefinitio
 public class AbilityDefinitionManaFlare extends AbilityDefinition
 ```
 
-'Amfl' / [AbilityIds.manaFlare](/stdlib/ref/_wurst/AbilityIds.html#abilityids-manaFlare)
+'Amfl' / [AbilityIds.manaFlare](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-manaFlare)
 
 **Members:**
 
@@ -9345,7 +9345,7 @@ public class AbilityDefinitionManaFlare extends AbilityDefinition
 public class AbilityDefinitionTaurenChieftainReincarnation extends AbilityDefinition
 ```
 
-'AOre' / [AbilityIds.reincarnation2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-reincarnation2)
+'AOre' / [AbilityIds.reincarnation2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-reincarnation2)
 
 **Members:**
 
@@ -9359,7 +9359,7 @@ public class AbilityDefinitionTaurenChieftainReincarnation extends AbilityDefini
 public class AbilityDefinitionCoupleArcher extends AbilityDefinition
 ```
 
-'Acoa' / [AbilityIds.mountHippogryph](/stdlib/ref/_wurst/AbilityIds.html#abilityids-mountHippogryph)
+'Acoa' / [AbilityIds.mountHippogryph](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-mountHippogryph)
 
 **Members:**
 
@@ -9375,7 +9375,7 @@ public class AbilityDefinitionCoupleArcher extends AbilityDefinition
 public class AbilityDefinitionBallsofFire extends AbilityDefinition
 ```
 
-'Abof' / [AbilityIds.ballsofFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ballsofFire)
+'Abof' / [AbilityIds.ballsofFire](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ballsofFire)
 
 **Members:**
 
@@ -9399,7 +9399,7 @@ public class AbilityDefinitionBallsofFire extends AbilityDefinition
 public class AbilityDefinitionPurge extends AbilityDefinition
 ```
 
-'Aprg' / [AbilityIds.purge](/stdlib/ref/_wurst/AbilityIds.html#abilityids-purge)
+'Aprg' / [AbilityIds.purge](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-purge)
 
 **Members:**
 
@@ -9423,7 +9423,7 @@ public class AbilityDefinitionPurge extends AbilityDefinition
 public class AbilityDefinitionSlow extends AbilityDefinition
 ```
 
-'Aslo' / [AbilityIds.slow](/stdlib/ref/_wurst/AbilityIds.html#abilityids-slow)
+'Aslo' / [AbilityIds.slow](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-slow)
 
 **Members:**
 
@@ -9441,7 +9441,7 @@ public class AbilityDefinitionSlow extends AbilityDefinition
 public class AbilityDefinitionRuneofLesserResurrection extends AbilityDefinition
 ```
 
-'APrl' / [AbilityIds.runeofLesserResurrection](/stdlib/ref/_wurst/AbilityIds.html#abilityids-runeofLesserResurrection)
+'APrl' / [AbilityIds.runeofLesserResurrection](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-runeofLesserResurrection)
 
 **Members:**
 
@@ -9457,7 +9457,7 @@ public class AbilityDefinitionRuneofLesserResurrection extends AbilityDefinition
 public class AbilityDefinitionItemTownPortal extends AbilityDefinition
 ```
 
-'AItp' / [AbilityIds.itemTownPortal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemTownPortal)
+'AItp' / [AbilityIds.itemTownPortal](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemTownPortal)
 
 **Members:**
 
@@ -9473,7 +9473,7 @@ public class AbilityDefinitionItemTownPortal extends AbilityDefinition
 public class AbilityDefinitionTinkererRoboGoblinLevel1 extends AbilityDefinition
 ```
 
-'ANg1' / [AbilityIds.tinkererRoboGoblinLevel1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererRoboGoblinLevel1)
+'ANg1' / [AbilityIds.tinkererRoboGoblinLevel1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-tinkererRoboGoblinLevel1)
 
 **Members:**
 
@@ -9501,7 +9501,7 @@ public class AbilityDefinitionTinkererRoboGoblinLevel1 extends AbilityDefinition
 public class AbilityDefinitionMilitia extends AbilityDefinition
 ```
 
-'Amil' / [AbilityIds.calltoArms](/stdlib/ref/_wurst/AbilityIds.html#abilityids-calltoArms)
+'Amil' / [AbilityIds.calltoArms](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-calltoArms)
 
 **Members:**
 
@@ -9517,7 +9517,7 @@ public class AbilityDefinitionMilitia extends AbilityDefinition
 public class AbilityDefinitionVengeance extends AbilityDefinition
 ```
 
-'Avng' / [AbilityIds.vengeance](/stdlib/ref/_wurst/AbilityIds.html#abilityids-vengeance)
+'Avng' / [AbilityIds.vengeance](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-vengeance)
 
 **Members:**
 
@@ -9543,7 +9543,7 @@ public class AbilityDefinitionVengeance extends AbilityDefinition
 public class AbilityDefinitionIntelligenceModPlus2 extends AbilityDefinition
 ```
 
-'AItm' / [AbilityIds.intelligenceModPlus2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-intelligenceModPlus2)
+'AItm' / [AbilityIds.intelligenceModPlus2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-intelligenceModPlus2)
 
 **Members:**
 
@@ -9563,7 +9563,7 @@ public class AbilityDefinitionIntelligenceModPlus2 extends AbilityDefinition
 public class AbilityDefinitionAttackBonusPlus8 extends AbilityDefinition
 ```
 
-'AItl' / [AbilityIds.attackBonusPlus8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonusPlus8)
+'AItl' / [AbilityIds.attackBonusPlus8](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-attackBonusPlus8)
 
 **Members:**
 
@@ -9577,7 +9577,7 @@ public class AbilityDefinitionAttackBonusPlus8 extends AbilityDefinition
 public class AbilityDefinitionAttackBonusPlus10 extends AbilityDefinition
 ```
 
-'AItn' / [AbilityIds.attackBonusPlus10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonusPlus10)
+'AItn' / [AbilityIds.attackBonusPlus10](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-attackBonusPlus10)
 
 **Members:**
 
@@ -9591,7 +9591,7 @@ public class AbilityDefinitionAttackBonusPlus10 extends AbilityDefinition
 public class AbilityDefinitionTinkererRoboGoblinLevel3 extends AbilityDefinition
 ```
 
-'ANg3' / [AbilityIds.tinkererRoboGoblinLevel3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererRoboGoblinLevel3)
+'ANg3' / [AbilityIds.tinkererRoboGoblinLevel3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-tinkererRoboGoblinLevel3)
 
 **Members:**
 
@@ -9619,7 +9619,7 @@ public class AbilityDefinitionTinkererRoboGoblinLevel3 extends AbilityDefinition
 public class AbilityDefinitionDeathDamageAOEsapper extends AbilityDefinition
 ```
 
-'Adda' / [AbilityIds.aOEdamageupondeath](/stdlib/ref/_wurst/AbilityIds.html#abilityids-aOEdamageupondeath)
+'Adda' / [AbilityIds.aOEdamageupondeath](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-aOEdamageupondeath)
 
 **Members:**
 
@@ -9639,7 +9639,7 @@ public class AbilityDefinitionDeathDamageAOEsapper extends AbilityDefinition
 public class AbilityDefinitionAroo extends AbilityDefinition
 ```
 
-'Aroo' / [AbilityIds.root](/stdlib/ref/_wurst/AbilityIds.html#abilityids-root)
+'Aroo' / [AbilityIds.root](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-root)
 
 **Members:**
 
@@ -9659,7 +9659,7 @@ public class AbilityDefinitionAroo extends AbilityDefinition
 public class AbilityDefinitionTinkererRoboGoblinLevel2 extends AbilityDefinition
 ```
 
-'ANg2' / [AbilityIds.tinkererRoboGoblinLevel2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererRoboGoblinLevel2)
+'ANg2' / [AbilityIds.tinkererRoboGoblinLevel2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-tinkererRoboGoblinLevel2)
 
 **Members:**
 
@@ -9687,7 +9687,7 @@ public class AbilityDefinitionTinkererRoboGoblinLevel2 extends AbilityDefinition
 public class AbilityDefinitionLichFrostArmor extends AbilityDefinition
 ```
 
-'AUfa' / [AbilityIds.frostArmor1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-frostArmor1)
+'AUfa' / [AbilityIds.frostArmor1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-frostArmor1)
 
 **Members:**
 
@@ -9703,7 +9703,7 @@ public class AbilityDefinitionLichFrostArmor extends AbilityDefinition
 public class AbilityDefinitionTankUpgrade extends AbilityDefinition
 ```
 
-'Srtt' / [AbilityIds.tankUpgrade](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tankUpgrade)
+'Srtt' / [AbilityIds.tankUpgrade](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-tankUpgrade)
 
 **Members:**
 
@@ -9717,7 +9717,7 @@ public class AbilityDefinitionTankUpgrade extends AbilityDefinition
 public class AbilityDefinitionCripple extends AbilityDefinition
 ```
 
-'Acri' / [AbilityIds.cripple](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cripple)
+'Acri' / [AbilityIds.cripple](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cripple)
 
 **Members:**
 
@@ -9737,7 +9737,7 @@ public class AbilityDefinitionCripple extends AbilityDefinition
 public class AbilityDefinitionFlakCannon extends AbilityDefinition
 ```
 
-'Aflk' / [AbilityIds.flakCannon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-flakCannon)
+'Aflk' / [AbilityIds.flakCannon](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-flakCannon)
 
 **Members:**
 
@@ -9759,7 +9759,7 @@ public class AbilityDefinitionFlakCannon extends AbilityDefinition
 public class AbilityDefinitionPossessionChanneling extends AbilityDefinition
 ```
 
-'Aps2' / [AbilityIds.possessionChanneling](/stdlib/ref/_wurst/AbilityIds.html#abilityids-possessionChanneling)
+'Aps2' / [AbilityIds.possessionChanneling](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-possessionChanneling)
 
 **Members:**
 
@@ -9779,7 +9779,7 @@ public class AbilityDefinitionPossessionChanneling extends AbilityDefinition
 public class AbilityDefinitionRocketAttack extends AbilityDefinition
 ```
 
-'Aroc' / [AbilityIds.rocketAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rocketAttack)
+'Aroc' / [AbilityIds.rocketAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-rocketAttack)
 
 **Members:**
 
@@ -9797,7 +9797,7 @@ public class AbilityDefinitionRocketAttack extends AbilityDefinition
 public class AbilityDefinitionBrewmasterStormEarthandFire extends AbilityDefinition
 ```
 
-'ANef' / [AbilityIds.brewmasterStormEarthandFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-brewmasterStormEarthandFire)
+'ANef' / [AbilityIds.brewmasterStormEarthandFire](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-brewmasterStormEarthandFire)
 
 **Members:**
 
@@ -9811,7 +9811,7 @@ public class AbilityDefinitionBrewmasterStormEarthandFire extends AbilityDefinit
 public class AbilityDefinitionTinkererEngineeringUpgrade extends AbilityDefinition
 ```
 
-'ANeg' / [AbilityIds.tinkererEngineeringUpgrade](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tinkererEngineeringUpgrade)
+'ANeg' / [AbilityIds.tinkererEngineeringUpgrade](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-tinkererEngineeringUpgrade)
 
 **Members:**
 
@@ -9839,7 +9839,7 @@ public class AbilityDefinitionTinkererEngineeringUpgrade extends AbilityDefiniti
 public class AbilityDefinitionMine extends AbilityDefinition
 ```
 
-'Amin' / [AbilityIds.mineexploding](/stdlib/ref/_wurst/AbilityIds.html#abilityids-mineexploding)
+'Amin' / [AbilityIds.mineexploding](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-mineexploding)
 
 **Members:**
 
@@ -9855,7 +9855,7 @@ public class AbilityDefinitionMine extends AbilityDefinition
 public class AbilityDefinitionMagicImmunity extends AbilityDefinition
 ```
 
-'Amim' / [AbilityIds.spellImmunity2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-spellImmunity2)
+'Amim' / [AbilityIds.spellImmunity2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-spellImmunity2)
 
 **Members:**
 
@@ -9869,7 +9869,7 @@ public class AbilityDefinitionMagicImmunity extends AbilityDefinition
 public class AbilityDefinitionLichFrostNova extends AbilityDefinition
 ```
 
-'AUfn' / [AbilityIds.frostNova1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-frostNova1)
+'AUfn' / [AbilityIds.frostNova1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-frostNova1)
 
 **Members:**
 
@@ -9887,7 +9887,7 @@ public class AbilityDefinitionLichFrostNova extends AbilityDefinition
 public class AbilityDefinitionRoar extends AbilityDefinition
 ```
 
-'Aroa' / [AbilityIds.roar](/stdlib/ref/_wurst/AbilityIds.html#abilityids-roar)
+'Aroa' / [AbilityIds.roar](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-roar)
 
 **Members:**
 
@@ -9914,7 +9914,7 @@ public class AbilityDefinitionRoar extends AbilityDefinition
 public class AbilityDefinitionRunedBracers extends AbilityDefinition
 ```
 
-'AIsr' / [AbilityIds.runedBracers](/stdlib/ref/_wurst/AbilityIds.html#abilityids-runedBracers)
+'AIsr' / [AbilityIds.runedBracers](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-runedBracers)
 
 **Members:**
 
@@ -9930,7 +9930,7 @@ public class AbilityDefinitionRunedBracers extends AbilityDefinition
 public class AbilityDefinitionLichDarkRitual extends AbilityDefinition
 ```
 
-'AUdr' / [AbilityIds.darkRitual](/stdlib/ref/_wurst/AbilityIds.html#abilityids-darkRitual)
+'AUdr' / [AbilityIds.darkRitual](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-darkRitual)
 
 **Members:**
 
@@ -9952,7 +9952,7 @@ public class AbilityDefinitionLichDarkRitual extends AbilityDefinition
 public class AbilityDefinitionTichondriusDarkSummoning extends AbilityDefinition
 ```
 
-'AUds' / [AbilityIds.darkSummoning1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-darkSummoning1)
+'AUds' / [AbilityIds.darkSummoning1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-darkSummoning1)
 
 **Members:**
 
@@ -9970,7 +9970,7 @@ public class AbilityDefinitionTichondriusDarkSummoning extends AbilityDefinition
 public class AbilityDefinitionItemSpeed extends AbilityDefinition
 ```
 
-'AIsp' / [AbilityIds.itemTemporarySpeedBonus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemTemporarySpeedBonus)
+'AIsp' / [AbilityIds.itemTemporarySpeedBonus](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemTemporarySpeedBonus)
 
 **Members:**
 
@@ -9984,7 +9984,7 @@ public class AbilityDefinitionItemSpeed extends AbilityDefinition
 public class AbilityDefinitionBloodlust extends AbilityDefinition
 ```
 
-'Ablo' / [AbilityIds.bloodlust1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bloodlust1)
+'Ablo' / [AbilityIds.bloodlust1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-bloodlust1)
 
 **Members:**
 
@@ -10004,7 +10004,7 @@ public class AbilityDefinitionBloodlust extends AbilityDefinition
 public class AbilityDefinitionDeathKnightDeathPact extends AbilityDefinition
 ```
 
-'AUdp' / [AbilityIds.deathPact](/stdlib/ref/_wurst/AbilityIds.html#abilityids-deathPact)
+'AUdp' / [AbilityIds.deathPact](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-deathPact)
 
 **Members:**
 
@@ -10026,7 +10026,7 @@ public class AbilityDefinitionDeathKnightDeathPact extends AbilityDefinition
 public class AbilityDefinitionBlightPlacement extends AbilityDefinition
 ```
 
-'Ablp' / [AbilityIds.blightPlacement](/stdlib/ref/_wurst/AbilityIds.html#abilityids-blightPlacement)
+'Ablp' / [AbilityIds.blightPlacement](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-blightPlacement)
 
 **Members:**
 
@@ -10042,7 +10042,7 @@ public class AbilityDefinitionBlightPlacement extends AbilityDefinition
 public class AbilityDefinitionSeaWitchForkedLightning extends AbilityDefinition
 ```
 
-'ANfl' / [AbilityIds.seaWitchForkedLightning](/stdlib/ref/_wurst/AbilityIds.html#abilityids-seaWitchForkedLightning)
+'ANfl' / [AbilityIds.seaWitchForkedLightning](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-seaWitchForkedLightning)
 
 **Members:**
 
@@ -10062,7 +10062,7 @@ public class AbilityDefinitionSeaWitchForkedLightning extends AbilityDefinition
 public class AbilityDefinitionStrengthMod extends AbilityDefinition
 ```
 
-'AIsm' / [AbilityIds.itemStrengthGain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemStrengthGain)
+'AIsm' / [AbilityIds.itemStrengthGain](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemStrengthGain)
 
 **Members:**
 
@@ -10082,7 +10082,7 @@ public class AbilityDefinitionStrengthMod extends AbilityDefinition
 public class AbilityDefinitionScrollofLifeRegen extends AbilityDefinition
 ```
 
-'AIsl' / [AbilityIds.scrollofLifeRegen](/stdlib/ref/_wurst/AbilityIds.html#abilityids-scrollofLifeRegen)
+'AIsl' / [AbilityIds.scrollofLifeRegen](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-scrollofLifeRegen)
 
 **Members:**
 
@@ -10105,7 +10105,7 @@ public class AbilityDefinitionScrollofLifeRegen extends AbilityDefinition
 public class AbilityDefinitionHealCreepNormalAnhe extends AbilityDefinition
 ```
 
-'Anhe' / [AbilityIds.heal1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-heal1)
+'Anhe' / [AbilityIds.heal1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-heal1)
 
 **Members:**
 
@@ -10119,7 +10119,7 @@ public class AbilityDefinitionHealCreepNormalAnhe extends AbilityDefinition
 public class AbilityDefinitionAttackSpeedIncrease extends AbilityDefinition
 ```
 
-'AIsx' / [AbilityIds.attackSpeedIncrease](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackSpeedIncrease)
+'AIsx' / [AbilityIds.attackSpeedIncrease](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-attackSpeedIncrease)
 
 **Members:**
 
@@ -10133,7 +10133,7 @@ public class AbilityDefinitionAttackSpeedIncrease extends AbilityDefinition
 public class AbilityDefinitionDefend extends AbilityDefinition
 ```
 
-'Adef' / [AbilityIds.defend](/stdlib/ref/_wurst/AbilityIds.html#abilityids-defend)
+'Adef' / [AbilityIds.defend](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-defend)
 
 **Members:**
 
@@ -10163,7 +10163,7 @@ public class AbilityDefinitionDefend extends AbilityDefinition
 public class AbilityDefinitionSentryWardAIsw extends AbilityDefinition
 ```
 
-'AIsw' / [AbilityIds.sentryWardAIsw](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sentryWardAIsw)
+'AIsw' / [AbilityIds.sentryWardAIsw](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-sentryWardAIsw)
 
 **Members:**
 
@@ -10177,7 +10177,7 @@ public class AbilityDefinitionSentryWardAIsw extends AbilityDefinition
 public class AbilityDefinitionGrabTree extends AbilityDefinition
 ```
 
-'Agra' / [AbilityIds.grabTree](/stdlib/ref/_wurst/AbilityIds.html#abilityids-grabTree)
+'Agra' / [AbilityIds.grabTree](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-grabTree)
 
 **Members:**
 
@@ -10199,7 +10199,7 @@ public class AbilityDefinitionGrabTree extends AbilityDefinition
 public class AbilityDefinitionDecouple extends AbilityDefinition
 ```
 
-'Adec' / [AbilityIds.decouple](/stdlib/ref/_wurst/AbilityIds.html#abilityids-decouple)
+'Adec' / [AbilityIds.decouple](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-decouple)
 
 **Members:**
 
@@ -10215,7 +10215,7 @@ public class AbilityDefinitionDecouple extends AbilityDefinition
 public class AbilityDefinitionDustofAppearance extends AbilityDefinition
 ```
 
-'AItb' / [AbilityIds.dustofAppearance](/stdlib/ref/_wurst/AbilityIds.html#abilityids-dustofAppearance)
+'AItb' / [AbilityIds.dustofAppearance](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-dustofAppearance)
 
 **Members:**
 
@@ -10229,7 +10229,7 @@ public class AbilityDefinitionDustofAppearance extends AbilityDefinition
 public class AbilityDefinitionAttackBonusAItc extends AbilityDefinition
 ```
 
-'AItc' / [AbilityIds.attackBonusAItc](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonusAItc)
+'AItc' / [AbilityIds.attackBonusAItc](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-attackBonusAItc)
 
 **Members:**
 
@@ -10243,7 +10243,7 @@ public class AbilityDefinitionAttackBonusAItc extends AbilityDefinition
 public class AbilityDefinitionItemDetectAoe extends AbilityDefinition
 ```
 
-'AIta' / [AbilityIds.itemAreaDetection](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAreaDetection)
+'AIta' / [AbilityIds.itemAreaDetection](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAreaDetection)
 
 **Members:**
 
@@ -10257,7 +10257,7 @@ public class AbilityDefinitionItemDetectAoe extends AbilityDefinition
 public class AbilityDefinitionAttackBonusPlus5 extends AbilityDefinition
 ```
 
-'AItj' / [AbilityIds.attackBonusPlus5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonusPlus5)
+'AItj' / [AbilityIds.attackBonusPlus5](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-attackBonusPlus5)
 
 **Members:**
 
@@ -10271,7 +10271,7 @@ public class AbilityDefinitionAttackBonusPlus5 extends AbilityDefinition
 public class AbilityDefinitionAttackBonusPlus7 extends AbilityDefinition
 ```
 
-'AItk' / [AbilityIds.attackBonusPlus7](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonusPlus7)
+'AItk' / [AbilityIds.attackBonusPlus7](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-attackBonusPlus7)
 
 **Members:**
 
@@ -10285,7 +10285,7 @@ public class AbilityDefinitionAttackBonusPlus7 extends AbilityDefinition
 public class AbilityDefinitionAttackBonusPlus2 extends AbilityDefinition
 ```
 
-'AIth' / [AbilityIds.attackBonusPlus2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonusPlus2)
+'AIth' / [AbilityIds.attackBonusPlus2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-attackBonusPlus2)
 
 **Members:**
 
@@ -10299,7 +10299,7 @@ public class AbilityDefinitionAttackBonusPlus2 extends AbilityDefinition
 public class AbilityDefinitionDevour extends AbilityDefinition
 ```
 
-'Adev' / [AbilityIds.devour1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-devour1)
+'Adev' / [AbilityIds.devour1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-devour1)
 
 **Members:**
 
@@ -10313,7 +10313,7 @@ public class AbilityDefinitionDevour extends AbilityDefinition
 public class AbilityDefinitionAttackBonusPlus4 extends AbilityDefinition
 ```
 
-'AIti' / [AbilityIds.attackBonusPlus4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonusPlus4)
+'AIti' / [AbilityIds.attackBonusPlus4](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-attackBonusPlus4)
 
 **Members:**
 
@@ -10327,7 +10327,7 @@ public class AbilityDefinitionAttackBonusPlus4 extends AbilityDefinition
 public class AbilityDefinitionMountainKingThunderClap extends AbilityDefinition
 ```
 
-'AHtc' / [AbilityIds.thunderClap](/stdlib/ref/_wurst/AbilityIds.html#abilityids-thunderClap)
+'AHtc' / [AbilityIds.thunderClap](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-thunderClap)
 
 **Members:**
 
@@ -10351,7 +10351,7 @@ public class AbilityDefinitionMountainKingThunderClap extends AbilityDefinition
 public class AbilityDefinitionAttackBonusAItf extends AbilityDefinition
 ```
 
-'AItf' / [AbilityIds.attackBonusAItf](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonusAItf)
+'AItf' / [AbilityIds.attackBonusAItf](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-attackBonusAItf)
 
 **Members:**
 
@@ -10365,7 +10365,7 @@ public class AbilityDefinitionAttackBonusAItf extends AbilityDefinition
 public class AbilityDefinitionAdet extends AbilityDefinition
 ```
 
-'Adet' / [AbilityIds.detector](/stdlib/ref/_wurst/AbilityIds.html#abilityids-detector)
+'Adet' / [AbilityIds.detector](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-detector)
 
 **Members:**
 
@@ -10379,7 +10379,7 @@ public class AbilityDefinitionAdet extends AbilityDefinition
 public class AbilityDefinitionFingerofDeath extends AbilityDefinition
 ```
 
-'ANfd' / [AbilityIds.fingerofDeath](/stdlib/ref/_wurst/AbilityIds.html#abilityids-fingerofDeath)
+'ANfd' / [AbilityIds.fingerofDeath](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-fingerofDeath)
 
 **Members:**
 
@@ -10397,7 +10397,7 @@ public class AbilityDefinitionFingerofDeath extends AbilityDefinition
 public class AbilityDefinitionAttackBonusPlus1 extends AbilityDefinition
 ```
 
-'AItg' / [AbilityIds.attackBonusPlus1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonusPlus1)
+'AItg' / [AbilityIds.attackBonusPlus1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-attackBonusPlus1)
 
 **Members:**
 
@@ -10411,7 +10411,7 @@ public class AbilityDefinitionAttackBonusPlus1 extends AbilityDefinition
 public class AbilityDefinitionSeaWitchFrostArrows extends AbilityDefinition
 ```
 
-'ANfa' / [AbilityIds.seaWitchFrostArrows](/stdlib/ref/_wurst/AbilityIds.html#abilityids-seaWitchFrostArrows)
+'ANfa' / [AbilityIds.seaWitchFrostArrows](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-seaWitchFrostArrows)
 
 **Members:**
 
@@ -10433,7 +10433,7 @@ public class AbilityDefinitionSeaWitchFrostArrows extends AbilityDefinition
 public class AbilityDefinitionFireBolt extends AbilityDefinition
 ```
 
-'ANfb' / [AbilityIds.firebolt](/stdlib/ref/_wurst/AbilityIds.html#abilityids-firebolt)
+'ANfb' / [AbilityIds.firebolt](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-firebolt)
 
 **Members:**
 
@@ -10447,7 +10447,7 @@ public class AbilityDefinitionFireBolt extends AbilityDefinition
 public class AbilityDefinitionMountainKingThunderBolt extends AbilityDefinition
 ```
 
-'AHtb' / [AbilityIds.stormBolt](/stdlib/ref/_wurst/AbilityIds.html#abilityids-stormBolt)
+'AHtb' / [AbilityIds.stormBolt](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-stormBolt)
 
 **Members:**
 
@@ -10461,7 +10461,7 @@ public class AbilityDefinitionMountainKingThunderBolt extends AbilityDefinition
 public class AbilityDefinitionSentinel extends AbilityDefinition
 ```
 
-'Aesn' / [AbilityIds.sentinel](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sentinel)
+'Aesn' / [AbilityIds.sentinel](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-sentinel)
 
 **Members:**
 
@@ -10485,7 +10485,7 @@ public class AbilityDefinitionSentinel extends AbilityDefinition
 public class AbilityDefinitionArchMageSummonWaterElemental extends AbilityDefinition
 ```
 
-'AHwe' / [AbilityIds.summonWaterElemental](/stdlib/ref/_wurst/AbilityIds.html#abilityids-summonWaterElemental)
+'AHwe' / [AbilityIds.summonWaterElemental](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-summonWaterElemental)
 
 **Members:**
 
@@ -10501,7 +10501,7 @@ public class AbilityDefinitionArchMageSummonWaterElemental extends AbilityDefini
 public class AbilityDefinitionLoadBurrow extends AbilityDefinition
 ```
 
-'Sloa' / [AbilityIds.loadBurrow](/stdlib/ref/_wurst/AbilityIds.html#abilityids-loadBurrow)
+'Sloa' / [AbilityIds.loadBurrow](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-loadBurrow)
 
 **Members:**
 
@@ -10515,7 +10515,7 @@ public class AbilityDefinitionLoadBurrow extends AbilityDefinition
 public class AbilityDefinitionDispelMagiccreep extends AbilityDefinition
 ```
 
-'Adsm' / [AbilityIds.dispelMagic1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-dispelMagic1)
+'Adsm' / [AbilityIds.dispelMagic1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-dispelMagic1)
 
 **Members:**
 
@@ -10531,7 +10531,7 @@ public class AbilityDefinitionDispelMagiccreep extends AbilityDefinition
 public class AbilityDefinitionFragShards extends AbilityDefinition
 ```
 
-'Afsh' / [AbilityIds.fragShards](/stdlib/ref/_wurst/AbilityIds.html#abilityids-fragShards)
+'Afsh' / [AbilityIds.fragShards](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-fragShards)
 
 **Members:**
 
@@ -10553,7 +10553,7 @@ public class AbilityDefinitionFragShards extends AbilityDefinition
 public class AbilityDefinitionDetectSentryWard extends AbilityDefinition
 ```
 
-'Adt1' / [AbilityIds.detectSentryWard](/stdlib/ref/_wurst/AbilityIds.html#abilityids-detectSentryWard)
+'Adt1' / [AbilityIds.detectSentryWard](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-detectSentryWard)
 
 **Members:**
 
@@ -10567,7 +10567,7 @@ public class AbilityDefinitionDetectSentryWard extends AbilityDefinition
 public class AbilityDefinitionPhoenixFire extends AbilityDefinition
 ```
 
-'Apxf' / [AbilityIds.phoenixFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-phoenixFire)
+'Apxf' / [AbilityIds.phoenixFire](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-phoenixFire)
 
 **Members:**
 
@@ -10583,7 +10583,7 @@ public class AbilityDefinitionPhoenixFire extends AbilityDefinition
 public class AbilityDefinitionRaiseDead extends AbilityDefinition
 ```
 
-'Arai' / [AbilityIds.raiseDead](/stdlib/ref/_wurst/AbilityIds.html#abilityids-raiseDead)
+'Arai' / [AbilityIds.raiseDead](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-raiseDead)
 
 **Members:**
 
@@ -10605,7 +10605,7 @@ public class AbilityDefinitionRaiseDead extends AbilityDefinition
 public class AbilityDefinitionAnwm extends AbilityDefinition
 ```
 
-'Anwm' / [AbilityIds.anwm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anwm)
+'Anwm' / [AbilityIds.anwm](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-anwm)
 
 **Members:**
 
@@ -10621,7 +10621,7 @@ public class AbilityDefinitionAnwm extends AbilityDefinition
 public class AbilityDefinitionRayOfDisruption extends AbilityDefinition
 ```
 
-'Ache' / [AbilityIds.rayofDisruption](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rayofDisruption)
+'Ache' / [AbilityIds.rayofDisruption](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-rayofDisruption)
 
 **Members:**
 
@@ -10639,7 +10639,7 @@ public class AbilityDefinitionRayOfDisruption extends AbilityDefinition
 public class AbilityDefinitionShadowMeld extends AbilityDefinition
 ```
 
-'Ashm' / [AbilityIds.shadowMeld](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shadowMeld)
+'Ashm' / [AbilityIds.shadowMeld](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-shadowMeld)
 
 **Members:**
 
@@ -10660,7 +10660,7 @@ public class AbilityDefinitionShadowMeld extends AbilityDefinition
 public class AbilityDefinitionShadowMeldItem extends AbilityDefinition
 ```
 
-'AIhm' / [AbilityIds.itemShadowMeld](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemShadowMeld)
+'AIhm' / [AbilityIds.itemShadowMeld](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemShadowMeld)
 
 **Members:**
 
@@ -10681,7 +10681,7 @@ public class AbilityDefinitionShadowMeldItem extends AbilityDefinition
 public class AbilityDefinitionRoarAra2 extends AbilityDefinition
 ```
 
-'Ara2' / [AbilityIds.roarAra2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-roarAra2)
+'Ara2' / [AbilityIds.roarAra2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-roarAra2)
 
 **Members:**
 
@@ -10708,7 +10708,7 @@ public class AbilityDefinitionRoarAra2 extends AbilityDefinition
 public class AbilityDefinitionGhostVisible extends AbilityDefinition
 ```
 
-'Aeth' / [AbilityIds.ghostVisible](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ghostVisible)
+'Aeth' / [AbilityIds.ghostVisible](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ghostVisible)
 
 **Members:**
 
@@ -10724,7 +10724,7 @@ public class AbilityDefinitionGhostVisible extends AbilityDefinition
 public class AbilityDefinitionDetectgeneral extends AbilityDefinition
 ```
 
-'Adtg' / [AbilityIds.trueSight1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-trueSight1)
+'Adtg' / [AbilityIds.trueSight1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-trueSight1)
 
 **Members:**
 
@@ -10738,7 +10738,7 @@ public class AbilityDefinitionDetectgeneral extends AbilityDefinition
 public class AbilityDefinitionPIlotTankRifleman extends AbilityDefinition
 ```
 
-'Stpr' / [AbilityIds.pIlotTankRifleman](/stdlib/ref/_wurst/AbilityIds.html#abilityids-pIlotTankRifleman)
+'Stpr' / [AbilityIds.pIlotTankRifleman](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-pIlotTankRifleman)
 
 **Members:**
 
@@ -10754,7 +10754,7 @@ public class AbilityDefinitionPIlotTankRifleman extends AbilityDefinition
 public class AbilityDefinitionFreezeDamageBonus extends AbilityDefinition
 ```
 
-'AIzb' / [AbilityIds.itemFreezeDamageBonus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemFreezeDamageBonus)
+'AIzb' / [AbilityIds.itemFreezeDamageBonus](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemFreezeDamageBonus)
 
 **Members:**
 
@@ -10770,7 +10770,7 @@ public class AbilityDefinitionFreezeDamageBonus extends AbilityDefinition
 public class AbilityDefinitionEtherealForm extends AbilityDefinition
 ```
 
-'Aetf' / [AbilityIds.etherealForm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-etherealForm)
+'Aetf' / [AbilityIds.etherealForm](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-etherealForm)
 
 **Members:**
 
@@ -10794,7 +10794,7 @@ public class AbilityDefinitionEtherealForm extends AbilityDefinition
 public class AbilityDefinitionDetonate extends AbilityDefinition
 ```
 
-'Adtn' / [AbilityIds.detonate](/stdlib/ref/_wurst/AbilityIds.html#abilityids-detonate)
+'Adtn' / [AbilityIds.detonate](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-detonate)
 
 **Members:**
 
@@ -10810,7 +10810,7 @@ public class AbilityDefinitionDetonate extends AbilityDefinition
 public class AbilityDefinitionRavenFormMedivh extends AbilityDefinition
 ```
 
-'Amrf' / [AbilityIds.crowForm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-crowForm)
+'Amrf' / [AbilityIds.crowForm](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-crowForm)
 
 **Members:**
 
@@ -10834,7 +10834,7 @@ public class AbilityDefinitionRavenFormMedivh extends AbilityDefinition
 public class AbilityDefinitionShadowHunterSerpentWard extends AbilityDefinition
 ```
 
-'AOsw' / [AbilityIds.shadowHunterSerpentWard](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shadowHunterSerpentWard)
+'AOsw' / [AbilityIds.shadowHunterSerpentWard](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-shadowHunterSerpentWard)
 
 **Members:**
 
@@ -10850,7 +10850,7 @@ public class AbilityDefinitionShadowHunterSerpentWard extends AbilityDefinition
 public class AbilityDefinitionAbsorbMana extends AbilityDefinition
 ```
 
-'Aabs' / [AbilityIds.absorbMana](/stdlib/ref/_wurst/AbilityIds.html#abilityids-absorbMana)
+'Aabs' / [AbilityIds.absorbMana](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-absorbMana)
 
 **Members:**
 
@@ -10866,7 +10866,7 @@ public class AbilityDefinitionAbsorbMana extends AbilityDefinition
 public class AbilityDefinitionAuraRegenerationStatue extends AbilityDefinition
 ```
 
-'Aabr' / [AbilityIds.auraRegenerationStatue](/stdlib/ref/_wurst/AbilityIds.html#abilityids-auraRegenerationStatue)
+'Aabr' / [AbilityIds.auraRegenerationStatue](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-auraRegenerationStatue)
 
 **Members:**
 
@@ -10882,7 +10882,7 @@ public class AbilityDefinitionAuraRegenerationStatue extends AbilityDefinition
 public class AbilityDefinitionUnsummon extends AbilityDefinition
 ```
 
-'Auns' / [AbilityIds.unsummonBuilding](/stdlib/ref/_wurst/AbilityIds.html#abilityids-unsummonBuilding)
+'Auns' / [AbilityIds.unsummonBuilding](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-unsummonBuilding)
 
 **Members:**
 
@@ -10898,7 +10898,7 @@ public class AbilityDefinitionUnsummon extends AbilityDefinition
 public class AbilityDefinitionTaurenChieftainShockWave extends AbilityDefinition
 ```
 
-'AOsh' / [AbilityIds.shockwave2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shockwave2)
+'AOsh' / [AbilityIds.shockwave2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-shockwave2)
 
 **Members:**
 
@@ -10918,7 +10918,7 @@ public class AbilityDefinitionTaurenChieftainShockWave extends AbilityDefinition
 public class AbilityDefinitionCrippleWarlock extends AbilityDefinition
 ```
 
-'Scri' / [AbilityIds.cripple1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cripple1)
+'Scri' / [AbilityIds.cripple1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cripple1)
 
 **Members:**
 
@@ -10938,7 +10938,7 @@ public class AbilityDefinitionCrippleWarlock extends AbilityDefinition
 public class AbilityDefinitionFarseerSpiritWolf extends AbilityDefinition
 ```
 
-'AOsf' / [AbilityIds.feralSpirit2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-feralSpirit2)
+'AOsf' / [AbilityIds.feralSpirit2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-feralSpirit2)
 
 **Members:**
 
@@ -10954,7 +10954,7 @@ public class AbilityDefinitionFarseerSpiritWolf extends AbilityDefinition
 public class AbilityDefinitionPilotTankMortarTeam extends AbilityDefinition
 ```
 
-'Stpm' / [AbilityIds.pilotTankMortarTeam](/stdlib/ref/_wurst/AbilityIds.html#abilityids-pilotTankMortarTeam)
+'Stpm' / [AbilityIds.pilotTankMortarTeam](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-pilotTankMortarTeam)
 
 **Members:**
 
@@ -10970,7 +10970,7 @@ public class AbilityDefinitionPilotTankMortarTeam extends AbilityDefinition
 public class AbilityDefinitionAntimagicShieldAIxs extends AbilityDefinition
 ```
 
-'AIxs' / [AbilityIds.antimagicShieldAIxs](/stdlib/ref/_wurst/AbilityIds.html#abilityids-antimagicShieldAIxs)
+'AIxs' / [AbilityIds.antimagicShieldAIxs](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-antimagicShieldAIxs)
 
 **Members:**
 
@@ -10990,7 +10990,7 @@ public class AbilityDefinitionAntimagicShieldAIxs extends AbilityDefinition
 public class AbilityDefinitionPermanentAllPlus1 extends AbilityDefinition
 ```
 
-'AIxm' / [AbilityIds.itemIntAgiStrgain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemIntAgiStrgain)
+'AIxm' / [AbilityIds.itemIntAgiStrgain](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemIntAgiStrgain)
 
 **Members:**
 
@@ -11010,7 +11010,7 @@ public class AbilityDefinitionPermanentAllPlus1 extends AbilityDefinition
 public class AbilityDefinitionAbolishMagic extends AbilityDefinition
 ```
 
-'Aadm' / [AbilityIds.abolishMagic](/stdlib/ref/_wurst/AbilityIds.html#abilityids-abolishMagic)
+'Aadm' / [AbilityIds.abolishMagic](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-abolishMagic)
 
 **Members:**
 
@@ -11026,7 +11026,7 @@ public class AbilityDefinitionAbolishMagic extends AbilityDefinition
 public class AbilityDefinitionRavenFormDruidoftheTalon extends AbilityDefinition
 ```
 
-'Arav' / [AbilityIds.stormCrowForm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-stormCrowForm)
+'Arav' / [AbilityIds.stormCrowForm](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-stormCrowForm)
 
 **Members:**
 
@@ -11050,7 +11050,7 @@ public class AbilityDefinitionRavenFormDruidoftheTalon extends AbilityDefinition
 public class AbilityDefinitionPlagueToss extends AbilityDefinition
 ```
 
-'Apts' / [AbilityIds.diseaseCloud2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-diseaseCloud2)
+'Apts' / [AbilityIds.diseaseCloud2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-diseaseCloud2)
 
 **Members:**
 
@@ -11064,7 +11064,7 @@ public class AbilityDefinitionPlagueToss extends AbilityDefinition
 public class AbilityDefinitionVampiricattack extends AbilityDefinition
 ```
 
-'SCva' / [AbilityIds.vampiricattack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-vampiricattack)
+'SCva' / [AbilityIds.vampiricattack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-vampiricattack)
 
 **Members:**
 
@@ -11078,7 +11078,7 @@ public class AbilityDefinitionVampiricattack extends AbilityDefinition
 public class AbilityDefinitionCargoHoldDeath extends AbilityDefinition
 ```
 
-'Achd' / [AbilityIds.cargoHoldDeath](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cargoHoldDeath)
+'Achd' / [AbilityIds.cargoHoldDeath](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cargoHoldDeath)
 
 **Members:**
 
@@ -11096,7 +11096,7 @@ public class AbilityDefinitionCargoHoldDeath extends AbilityDefinition
 public class AbilityDefinitionAcha extends AbilityDefinition
 ```
 
-'Acha' / [AbilityIds.chaos](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chaos)
+'Acha' / [AbilityIds.chaos](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-chaos)
 
 **Members:**
 
@@ -11110,7 +11110,7 @@ public class AbilityDefinitionAcha extends AbilityDefinition
 public class AbilityDefinitionUnholyFrenzycreep extends AbilityDefinition
 ```
 
-'ACuf' / [AbilityIds.unholyFrenzycreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-unholyFrenzycreep)
+'ACuf' / [AbilityIds.unholyFrenzycreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-unholyFrenzycreep)
 
 **Members:**
 
@@ -11127,7 +11127,7 @@ public class AbilityDefinitionUnholyFrenzycreep extends AbilityDefinition
 public class AbilityDefinitionRenew extends AbilityDefinition
 ```
 
-'Aren' / [AbilityIds.renew](/stdlib/ref/_wurst/AbilityIds.html#abilityids-renew)
+'Aren' / [AbilityIds.renew](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-renew)
 
 **Members:**
 
@@ -11149,7 +11149,7 @@ public class AbilityDefinitionRenew extends AbilityDefinition
 public class AbilityDefinitionRegenLife extends AbilityDefinition
 ```
 
-'Arel' / [AbilityIds.itemLifeRegeneration](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLifeRegeneration)
+'Arel' / [AbilityIds.itemLifeRegeneration](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemLifeRegeneration)
 
 **Members:**
 
@@ -11163,7 +11163,7 @@ public class AbilityDefinitionRegenLife extends AbilityDefinition
 public class AbilityDefinitionBlightGrowthLarge extends AbilityDefinition
 ```
 
-'Abgl' / [AbilityIds.blightGrowthLarge](/stdlib/ref/_wurst/AbilityIds.html#abilityids-blightGrowthLarge)
+'Abgl' / [AbilityIds.blightGrowthLarge](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-blightGrowthLarge)
 
 **Members:**
 
@@ -11179,7 +11179,7 @@ public class AbilityDefinitionBlightGrowthLarge extends AbilityDefinition
 public class AbilityDefinitionBlightedGoldmine extends AbilityDefinition
 ```
 
-'Abgm' / [AbilityIds.blightedGoldMineAbility](/stdlib/ref/_wurst/AbilityIds.html#abilityids-blightedGoldMineAbility)
+'Abgm' / [AbilityIds.blightedGoldMineAbility](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-blightedGoldMineAbility)
 
 **Members:**
 
@@ -11199,7 +11199,7 @@ public class AbilityDefinitionBlightedGoldmine extends AbilityDefinition
 public class AbilityDefinitionUnholyAuracreep extends AbilityDefinition
 ```
 
-'ACua' / [AbilityIds.unholyAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-unholyAura)
+'ACua' / [AbilityIds.unholyAura](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-unholyAura)
 
 **Members:**
 
@@ -11219,7 +11219,7 @@ public class AbilityDefinitionUnholyAuracreep extends AbilityDefinition
 public class AbilityDefinitionRepairOrc extends AbilityDefinition
 ```
 
-'Arep' / [AbilityIds.repair](/stdlib/ref/_wurst/AbilityIds.html#abilityids-repair)
+'Arep' / [AbilityIds.repair](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-repair)
 
 **Members:**
 
@@ -11241,7 +11241,7 @@ public class AbilityDefinitionRepairOrc extends AbilityDefinition
 public class AbilityDefinitionEntanglingSeaweed extends AbilityDefinition
 ```
 
-'Aenw' / [AbilityIds.entanglingSeaweed](/stdlib/ref/_wurst/AbilityIds.html#abilityids-entanglingSeaweed)
+'Aenw' / [AbilityIds.entanglingSeaweed](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-entanglingSeaweed)
 
 **Members:**
 
@@ -11255,7 +11255,7 @@ public class AbilityDefinitionEntanglingSeaweed extends AbilityDefinition
 public class AbilityDefinitionNeutralSpies extends AbilityDefinition
 ```
 
-'Ansp' / [AbilityIds.neutralSpies](/stdlib/ref/_wurst/AbilityIds.html#abilityids-neutralSpies)
+'Ansp' / [AbilityIds.neutralSpies](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-neutralSpies)
 
 **Members:**
 
@@ -11273,7 +11273,7 @@ public class AbilityDefinitionNeutralSpies extends AbilityDefinition
 public class AbilityDefinitionEntangle extends AbilityDefinition
 ```
 
-'Aent' / [AbilityIds.entangleGoldMine](/stdlib/ref/_wurst/AbilityIds.html#abilityids-entangleGoldMine)
+'Aent' / [AbilityIds.entangleGoldMine](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-entangleGoldMine)
 
 **Members:**
 
@@ -11287,7 +11287,7 @@ public class AbilityDefinitionEntangle extends AbilityDefinition
 public class AbilityDefinitionRejuvination extends AbilityDefinition
 ```
 
-'Arej' / [AbilityIds.rejuvenation1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rejuvenation1)
+'Arej' / [AbilityIds.rejuvenation1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-rejuvenation1)
 
 **Members:**
 
@@ -11308,7 +11308,7 @@ public class AbilityDefinitionRejuvination extends AbilityDefinition
 public class AbilityDefinitionEntanglingRootscreep extends AbilityDefinition
 ```
 
-'Aenr' / [AbilityIds.entanglingRoots](/stdlib/ref/_wurst/AbilityIds.html#abilityids-entanglingRoots)
+'Aenr' / [AbilityIds.entanglingRoots](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-entanglingRoots)
 
 **Members:**
 
@@ -11322,7 +11322,7 @@ public class AbilityDefinitionEntanglingRootscreep extends AbilityDefinition
 public class AbilityDefinitionSelfDestruct extends AbilityDefinition
 ```
 
-'Asds' / [AbilityIds.kaboom](/stdlib/ref/_wurst/AbilityIds.html#abilityids-kaboom)
+'Asds' / [AbilityIds.kaboom](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-kaboom)
 
 **Members:**
 
@@ -11346,7 +11346,7 @@ public class AbilityDefinitionSelfDestruct extends AbilityDefinition
 public class AbilityDefinitionBlightGrowthSmall extends AbilityDefinition
 ```
 
-'Abgs' / [AbilityIds.blightGrowthSmall](/stdlib/ref/_wurst/AbilityIds.html#abilityids-blightGrowthSmall)
+'Abgs' / [AbilityIds.blightGrowthSmall](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-blightGrowthSmall)
 
 **Members:**
 
@@ -11362,7 +11362,7 @@ public class AbilityDefinitionBlightGrowthSmall extends AbilityDefinition
 public class AbilityDefinitionEnsnare extends AbilityDefinition
 ```
 
-'Aens' / [AbilityIds.ensnare1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ensnare1)
+'Aens' / [AbilityIds.ensnare1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ensnare1)
 
 **Members:**
 
@@ -11388,7 +11388,7 @@ public class AbilityDefinitionEnsnare extends AbilityDefinition
 public class AbilityDefinitionDeathDamageAOEmineBIG extends AbilityDefinition
 ```
 
-'Amnz' / [AbilityIds.deathDamageAOEmineBIG](/stdlib/ref/_wurst/AbilityIds.html#abilityids-deathDamageAOEmineBIG)
+'Amnz' / [AbilityIds.deathDamageAOEmineBIG](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-deathDamageAOEmineBIG)
 
 **Members:**
 
@@ -11408,7 +11408,7 @@ public class AbilityDefinitionDeathDamageAOEmineBIG extends AbilityDefinition
 public class AbilityDefinitionSerpentWardtentacleForgottenone extends AbilityDefinition
 ```
 
-'ACtn' / [AbilityIds.serpentWardtentacleForgottenone](/stdlib/ref/_wurst/AbilityIds.html#abilityids-serpentWardtentacleForgottenone)
+'ACtn' / [AbilityIds.serpentWardtentacleForgottenone](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-serpentWardtentacleForgottenone)
 
 **Members:**
 
@@ -11424,7 +11424,7 @@ public class AbilityDefinitionSerpentWardtentacleForgottenone extends AbilityDef
 public class AbilityDefinitionTornadoDamage extends AbilityDefinition
 ```
 
-'Atdg' / [AbilityIds.tornadoDamage](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tornadoDamage)
+'Atdg' / [AbilityIds.tornadoDamage](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-tornadoDamage)
 
 **Members:**
 
@@ -11446,7 +11446,7 @@ public class AbilityDefinitionTornadoDamage extends AbilityDefinition
 public class AbilityDefinitionThunderBoltCreep extends AbilityDefinition
 ```
 
-'ACtb' / [AbilityIds.hurlBoulder](/stdlib/ref/_wurst/AbilityIds.html#abilityids-hurlBoulder)
+'ACtb' / [AbilityIds.hurlBoulder](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-hurlBoulder)
 
 **Members:**
 
@@ -11460,7 +11460,7 @@ public class AbilityDefinitionThunderBoltCreep extends AbilityDefinition
 public class AbilityDefinitionThunderClapCreep extends AbilityDefinition
 ```
 
-'ACtc' / [AbilityIds.slam](/stdlib/ref/_wurst/AbilityIds.html#abilityids-slam)
+'ACtc' / [AbilityIds.slam](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-slam)
 
 **Members:**
 
@@ -11480,7 +11480,7 @@ public class AbilityDefinitionThunderClapCreep extends AbilityDefinition
 public class AbilityDefinitionSelfDestructClockwerkGoblins extends AbilityDefinition
 ```
 
-'Asdg' / [AbilityIds.selfDestructClockwerkGoblins](/stdlib/ref/_wurst/AbilityIds.html#abilityids-selfDestructClockwerkGoblins)
+'Asdg' / [AbilityIds.selfDestructClockwerkGoblins](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-selfDestructClockwerkGoblins)
 
 **Members:**
 
@@ -11504,7 +11504,7 @@ public class AbilityDefinitionSelfDestructClockwerkGoblins extends AbilityDefini
 public class AbilityDefinitionDeathDamageAOEmine extends AbilityDefinition
 ```
 
-'Amnx' / [AbilityIds.deathDamageAOEmine](/stdlib/ref/_wurst/AbilityIds.html#abilityids-deathDamageAOEmine)
+'Amnx' / [AbilityIds.deathDamageAOEmine](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-deathDamageAOEmine)
 
 **Members:**
 
@@ -11524,7 +11524,7 @@ public class AbilityDefinitionDeathDamageAOEmine extends AbilityDefinition
 public class AbilityDefinitionManaBurndemon extends AbilityDefinition
 ```
 
-'Amnb' / [AbilityIds.manaBurndemon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-manaBurndemon)
+'Amnb' / [AbilityIds.manaBurndemon](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-manaBurndemon)
 
 **Members:**
 
@@ -11542,7 +11542,7 @@ public class AbilityDefinitionManaBurndemon extends AbilityDefinition
 public class AbilityDefinitionShockwaveTrap extends AbilityDefinition
 ```
 
-'ACst' / [AbilityIds.shockwave1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shockwave1)
+'ACst' / [AbilityIds.shockwave1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-shockwave1)
 
 **Members:**
 
@@ -11562,7 +11562,7 @@ public class AbilityDefinitionShockwaveTrap extends AbilityDefinition
 public class AbilityDefinitionShadowStrikeCreep extends AbilityDefinition
 ```
 
-'ACss' / [AbilityIds.shadowStrikeCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shadowStrikeCreep)
+'ACss' / [AbilityIds.shadowStrikeCreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-shadowStrikeCreep)
 
 **Members:**
 
@@ -11584,7 +11584,7 @@ public class AbilityDefinitionShadowStrikeCreep extends AbilityDefinition
 public class AbilityDefinitionBashmaulSPBearlevel3 extends AbilityDefinition
 ```
 
-'ANb2' / [AbilityIds.bashmaulSPBearlevel3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bashmaulSPBearlevel3)
+'ANb2' / [AbilityIds.bashmaulSPBearlevel3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-bashmaulSPBearlevel3)
 
 **Members:**
 
@@ -11606,7 +11606,7 @@ public class AbilityDefinitionBashmaulSPBearlevel3 extends AbilityDefinition
 public class AbilityDefinitionSlowCreep extends AbilityDefinition
 ```
 
-'ACsw' / [AbilityIds.slow1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-slow1)
+'ACsw' / [AbilityIds.slow1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-slow1)
 
 **Members:**
 
@@ -11624,7 +11624,7 @@ public class AbilityDefinitionSlowCreep extends AbilityDefinition
 public class AbilityDefinitionReturnGold extends AbilityDefinition
 ```
 
-'Argd' / [AbilityIds.returnGold](/stdlib/ref/_wurst/AbilityIds.html#abilityids-returnGold)
+'Argd' / [AbilityIds.returnGold](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-returnGold)
 
 **Members:**
 
@@ -11640,7 +11640,7 @@ public class AbilityDefinitionReturnGold extends AbilityDefinition
 public class AbilityDefinitionWarStompseagiant extends AbilityDefinition
 ```
 
-'Awrg' / [AbilityIds.warStompseagiant](/stdlib/ref/_wurst/AbilityIds.html#abilityids-warStompseagiant)
+'Awrg' / [AbilityIds.warStompseagiant](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-warStompseagiant)
 
 **Members:**
 
@@ -11658,7 +11658,7 @@ public class AbilityDefinitionWarStompseagiant extends AbilityDefinition
 public class AbilityDefinitionBladeMasterBladestorm extends AbilityDefinition
 ```
 
-'AOww' / [AbilityIds.bladestorm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bladestorm)
+'AOww' / [AbilityIds.bladestorm](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-bladestorm)
 
 **Members:**
 
@@ -11674,7 +11674,7 @@ public class AbilityDefinitionBladeMasterBladestorm extends AbilityDefinition
 public class AbilityDefinitionTaurenChieftainWarStomp extends AbilityDefinition
 ```
 
-'AOws' / [AbilityIds.warStomp1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-warStomp1)
+'AOws' / [AbilityIds.warStomp1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-warStomp1)
 
 **Members:**
 
@@ -11688,7 +11688,7 @@ public class AbilityDefinitionTaurenChieftainWarStomp extends AbilityDefinition
 public class AbilityDefinitionWarStomphydra extends AbilityDefinition
 ```
 
-'Awrh' / [AbilityIds.warStomphydra](/stdlib/ref/_wurst/AbilityIds.html#abilityids-warStomphydra)
+'Awrh' / [AbilityIds.warStomphydra](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-warStomphydra)
 
 **Members:**
 
@@ -11706,7 +11706,7 @@ public class AbilityDefinitionWarStomphydra extends AbilityDefinition
 public class AbilityDefinitionBladeMasterWindWalk extends AbilityDefinition
 ```
 
-'AOwk' / [AbilityIds.windWalk](/stdlib/ref/_wurst/AbilityIds.html#abilityids-windWalk)
+'AOwk' / [AbilityIds.windWalk](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-windWalk)
 
 **Members:**
 
@@ -11735,7 +11735,7 @@ public class AbilityDefinitionBladeMasterWindWalk extends AbilityDefinition
 public class AbilityDefinitionSummonSeaElemental extends AbilityDefinition
 ```
 
-'ACwe' / [AbilityIds.summonSeaElemental](/stdlib/ref/_wurst/AbilityIds.html#abilityids-summonSeaElemental)
+'ACwe' / [AbilityIds.summonSeaElemental](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-summonSeaElemental)
 
 **Members:**
 
@@ -11751,7 +11751,7 @@ public class AbilityDefinitionSummonSeaElemental extends AbilityDefinition
 public class AbilityDefinitionWebcreep extends AbilityDefinition
 ```
 
-'ACwb' / [AbilityIds.webcreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-webcreep)
+'ACwb' / [AbilityIds.webcreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-webcreep)
 
 **Members:**
 
@@ -11777,7 +11777,7 @@ public class AbilityDefinitionWebcreep extends AbilityDefinition
 public class AbilityDefinitionReturnGoldLumber extends AbilityDefinition
 ```
 
-'Argl' / [AbilityIds.returnGoldLumber](/stdlib/ref/_wurst/AbilityIds.html#abilityids-returnGoldLumber)
+'Argl' / [AbilityIds.returnGoldLumber](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-returnGoldLumber)
 
 **Members:**
 
@@ -11793,7 +11793,7 @@ public class AbilityDefinitionReturnGoldLumber extends AbilityDefinition
 public class AbilityDefinitionSelfDestruct3ClockwerkGoblins extends AbilityDefinition
 ```
 
-'Asd3' / [AbilityIds.selfDestruct3ClockwerkGoblins](/stdlib/ref/_wurst/AbilityIds.html#abilityids-selfDestruct3ClockwerkGoblins)
+'Asd3' / [AbilityIds.selfDestruct3ClockwerkGoblins](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-selfDestruct3ClockwerkGoblins)
 
 **Members:**
 
@@ -11817,7 +11817,7 @@ public class AbilityDefinitionSelfDestruct3ClockwerkGoblins extends AbilityDefin
 public class AbilityDefinitionSelfDestruct2ClockwerkGoblins extends AbilityDefinition
 ```
 
-'Asd2' / [AbilityIds.selfDestruct2ClockwerkGoblins](/stdlib/ref/_wurst/AbilityIds.html#abilityids-selfDestruct2ClockwerkGoblins)
+'Asd2' / [AbilityIds.selfDestruct2ClockwerkGoblins](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-selfDestruct2ClockwerkGoblins)
 
 **Members:**
 
@@ -11841,7 +11841,7 @@ public class AbilityDefinitionSelfDestruct2ClockwerkGoblins extends AbilityDefin
 public class AbilityDefinitionGraveyard extends AbilityDefinition
 ```
 
-'Agyd' / [AbilityIds.createCorpse](/stdlib/ref/_wurst/AbilityIds.html#abilityids-createCorpse)
+'Agyd' / [AbilityIds.createCorpse](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-createCorpse)
 
 **Members:**
 
@@ -11861,7 +11861,7 @@ public class AbilityDefinitionGraveyard extends AbilityDefinition
 public class AbilityDefinitionWarStompcreep extends AbilityDefinition
 ```
 
-'Awrs' / [AbilityIds.warStomp](/stdlib/ref/_wurst/AbilityIds.html#abilityids-warStomp)
+'Awrs' / [AbilityIds.warStomp](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-warStomp)
 
 **Members:**
 
@@ -11879,7 +11879,7 @@ public class AbilityDefinitionWarStompcreep extends AbilityDefinition
 public class AbilityDefinitionWarp extends AbilityDefinition
 ```
 
-'Awrp' / [AbilityIds.waygateability](/stdlib/ref/_wurst/AbilityIds.html#abilityids-waygateability)
+'Awrp' / [AbilityIds.waygateability](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-waygateability)
 
 **Members:**
 
@@ -11895,7 +11895,7 @@ public class AbilityDefinitionWarp extends AbilityDefinition
 public class AbilityDefinitionVampiricAuracreep extends AbilityDefinition
 ```
 
-'ACvp' / [AbilityIds.vampiricAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-vampiricAura)
+'ACvp' / [AbilityIds.vampiricAura](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-vampiricAura)
 
 **Members:**
 
@@ -11910,7 +11910,7 @@ public class AbilityDefinitionVampiricAuracreep extends AbilityDefinition
 public class AbilityDefinitionVenomSpearsCreep extends AbilityDefinition
 ```
 
-'ACvs' / [AbilityIds.envenomedWeapons](/stdlib/ref/_wurst/AbilityIds.html#abilityids-envenomedWeapons)
+'ACvs' / [AbilityIds.envenomedWeapons](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-envenomedWeapons)
 
 **Members:**
 
@@ -11933,7 +11933,7 @@ public class AbilityDefinitionVenomSpearsCreep extends AbilityDefinition
 public class AbilityDefinitionBurrowDetectionFlyers extends AbilityDefinition
 ```
 
-'Abdt' / [AbilityIds.burrowDetectionFlyers](/stdlib/ref/_wurst/AbilityIds.html#abilityids-burrowDetectionFlyers)
+'Abdt' / [AbilityIds.burrowDetectionFlyers](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-burrowDetectionFlyers)
 
 **Members:**
 
@@ -11947,7 +11947,7 @@ public class AbilityDefinitionBurrowDetectionFlyers extends AbilityDefinition
 public class AbilityDefinitionBlightDispelSmall extends AbilityDefinition
 ```
 
-'Abds' / [AbilityIds.blightDispelSmall](/stdlib/ref/_wurst/AbilityIds.html#abilityids-blightDispelSmall)
+'Abds' / [AbilityIds.blightDispelSmall](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-blightDispelSmall)
 
 **Members:**
 
@@ -11963,7 +11963,7 @@ public class AbilityDefinitionBlightDispelSmall extends AbilityDefinition
 public class AbilityDefinitionLiquidFire extends AbilityDefinition
 ```
 
-'Aliq' / [AbilityIds.liquidFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-liquidFire)
+'Aliq' / [AbilityIds.liquidFire](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-liquidFire)
 
 **Members:**
 
@@ -11983,7 +11983,7 @@ public class AbilityDefinitionLiquidFire extends AbilityDefinition
 public class AbilityDefinitionDetectGyrocopter extends AbilityDefinition
 ```
 
-'Agyv' / [AbilityIds.trueSight](/stdlib/ref/_wurst/AbilityIds.html#abilityids-trueSight)
+'Agyv' / [AbilityIds.trueSight](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-trueSight)
 
 **Members:**
 
@@ -11997,7 +11997,7 @@ public class AbilityDefinitionDetectGyrocopter extends AbilityDefinition
 public class AbilityDefinitionLightningAttack extends AbilityDefinition
 ```
 
-'Alit' / [AbilityIds.lightningAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-lightningAttack)
+'Alit' / [AbilityIds.lightningAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-lightningAttack)
 
 **Members:**
 
@@ -12013,7 +12013,7 @@ public class AbilityDefinitionLightningAttack extends AbilityDefinition
 public class AbilityDefinitionBlightDispelLarge extends AbilityDefinition
 ```
 
-'Abdl' / [AbilityIds.blightDispelLarge](/stdlib/ref/_wurst/AbilityIds.html#abilityids-blightDispelLarge)
+'Abdl' / [AbilityIds.blightDispelLarge](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-blightDispelLarge)
 
 **Members:**
 
@@ -12029,7 +12029,7 @@ public class AbilityDefinitionBlightDispelLarge extends AbilityDefinition
 public class AbilityDefinitionChaosCargoLoad extends AbilityDefinition
 ```
 
-'Achl' / [AbilityIds.chaosCargoLoad](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chaosCargoLoad)
+'Achl' / [AbilityIds.chaosCargoLoad](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-chaosCargoLoad)
 
 **Members:**
 
@@ -12043,7 +12043,7 @@ public class AbilityDefinitionChaosCargoLoad extends AbilityDefinition
 public class AbilityDefinitionSunderingBlades extends AbilityDefinition
 ```
 
-'Ahsb' / [AbilityIds.sunderingBlades](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sunderingBlades)
+'Ahsb' / [AbilityIds.sunderingBlades](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-sunderingBlades)
 
 **Members:**
 
@@ -12063,7 +12063,7 @@ public class AbilityDefinitionSunderingBlades extends AbilityDefinition
 public class AbilityDefinitionPenguinSqueek extends AbilityDefinition
 ```
 
-'AIpz' / [AbilityIds.penguinSqueek](/stdlib/ref/_wurst/AbilityIds.html#abilityids-penguinSqueek)
+'AIpz' / [AbilityIds.penguinSqueek](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-penguinSqueek)
 
 **Members:**
 
@@ -12077,7 +12077,7 @@ public class AbilityDefinitionPenguinSqueek extends AbilityDefinition
 public class AbilityDefinitionPermanentHitPointBonusSmall extends AbilityDefinition
 ```
 
-'AIpx' / [AbilityIds.permanentHitPointBonusSmall](/stdlib/ref/_wurst/AbilityIds.html#abilityids-permanentHitPointBonusSmall)
+'AIpx' / [AbilityIds.permanentHitPointBonusSmall](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-permanentHitPointBonusSmall)
 
 **Members:**
 
@@ -12091,7 +12091,7 @@ public class AbilityDefinitionPermanentHitPointBonusSmall extends AbilityDefinit
 public class AbilityDefinitionFrostArmorCreepAutocast extends AbilityDefinition
 ```
 
-'ACf2' / [AbilityIds.frostArmorCreepAutocast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-frostArmorCreepAutocast)
+'ACf2' / [AbilityIds.frostArmorCreepAutocast](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-frostArmorCreepAutocast)
 
 **Members:**
 
@@ -12107,7 +12107,7 @@ public class AbilityDefinitionFrostArmorCreepAutocast extends AbilityDefinition
 public class AbilityDefinitionFingerOfPain21Button extends AbilityDefinition
 ```
 
-'ACf3' / [AbilityIds.fingerOfPain21Button](/stdlib/ref/_wurst/AbilityIds.html#abilityids-fingerOfPain21Button)
+'ACf3' / [AbilityIds.fingerOfPain21Button](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-fingerOfPain21Button)
 
 **Members:**
 
@@ -12125,7 +12125,7 @@ public class AbilityDefinitionFingerOfPain21Button extends AbilityDefinition
 public class AbilityDefinitionPurgeWandOfNegation extends AbilityDefinition
 ```
 
-'AIpw' / [AbilityIds.purgeWandOfNegation](/stdlib/ref/_wurst/AbilityIds.html#abilityids-purgeWandOfNegation)
+'AIpw' / [AbilityIds.purgeWandOfNegation](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-purgeWandOfNegation)
 
 **Members:**
 
@@ -12149,7 +12149,7 @@ public class AbilityDefinitionPurgeWandOfNegation extends AbilityDefinition
 public class AbilityDefinitionPurgeTotemSP extends AbilityDefinition
 ```
 
-'AIps' / [AbilityIds.purgeTotemSP](/stdlib/ref/_wurst/AbilityIds.html#abilityids-purgeTotemSP)
+'AIps' / [AbilityIds.purgeTotemSP](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-purgeTotemSP)
 
 **Members:**
 
@@ -12173,7 +12173,7 @@ public class AbilityDefinitionPurgeTotemSP extends AbilityDefinition
 public class AbilityDefinitionInventory2SlotUnitOrc extends AbilityDefinition
 ```
 
-'Aion' / [AbilityIds.inventory2SlotUnitOrc](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inventory2SlotUnitOrc)
+'Aion' / [AbilityIds.inventory2SlotUnitOrc](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-inventory2SlotUnitOrc)
 
 **Members:**
 
@@ -12195,7 +12195,7 @@ public class AbilityDefinitionInventory2SlotUnitOrc extends AbilityDefinition
 public class AbilityDefinitionChenDrunkenHaze extends AbilityDefinition
 ```
 
-'Acdh' / [AbilityIds.chenDrunkenHaze](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chenDrunkenHaze)
+'Acdh' / [AbilityIds.chenDrunkenHaze](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-chenDrunkenHaze)
 
 **Members:**
 
@@ -12216,7 +12216,7 @@ public class AbilityDefinitionChenDrunkenHaze extends AbilityDefinition
 public class AbilityDefinitionChenDrunkenBrawler extends AbilityDefinition
 ```
 
-'Acdb' / [AbilityIds.chenDrunkenBrawler](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chenDrunkenBrawler)
+'Acdb' / [AbilityIds.chenDrunkenBrawler](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-chenDrunkenBrawler)
 
 **Members:**
 
@@ -12239,7 +12239,7 @@ public class AbilityDefinitionChenDrunkenBrawler extends AbilityDefinition
 public class AbilityDefinitionFrostArmorAutocastNaga extends AbilityDefinition
 ```
 
-'ACfu' / [AbilityIds.frostArmorAutocastNaga](/stdlib/ref/_wurst/AbilityIds.html#abilityids-frostArmorAutocastNaga)
+'ACfu' / [AbilityIds.frostArmorAutocastNaga](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-frostArmorAutocastNaga)
 
 **Members:**
 
@@ -12255,7 +12255,7 @@ public class AbilityDefinitionFrostArmorAutocastNaga extends AbilityDefinition
 public class AbilityDefinitionResurrectionItem extends AbilityDefinition
 ```
 
-'AIrx' / [AbilityIds.resurrectionItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-resurrectionItem)
+'AIrx' / [AbilityIds.resurrectionItem](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-resurrectionItem)
 
 **Members:**
 
@@ -12271,7 +12271,7 @@ public class AbilityDefinitionResurrectionItem extends AbilityDefinition
 public class AbilityDefinitionForkedLightningCreep extends AbilityDefinition
 ```
 
-'ACfl' / [AbilityIds.forkedLightningCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-forkedLightningCreep)
+'ACfl' / [AbilityIds.forkedLightningCreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-forkedLightningCreep)
 
 **Members:**
 
@@ -12291,7 +12291,7 @@ public class AbilityDefinitionForkedLightningCreep extends AbilityDefinition
 public class AbilityDefinitionChenStormEarthAndFire extends AbilityDefinition
 ```
 
-'Acef' / [AbilityIds.chenStormEarthAndFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chenStormEarthAndFire)
+'Acef' / [AbilityIds.chenStormEarthAndFire](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-chenStormEarthAndFire)
 
 **Members:**
 
@@ -12305,7 +12305,7 @@ public class AbilityDefinitionChenStormEarthAndFire extends AbilityDefinition
 public class AbilityDefinitionFingerOfPain extends AbilityDefinition
 ```
 
-'ACfd' / [AbilityIds.fingerOfPain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-fingerOfPain)
+'ACfd' / [AbilityIds.fingerOfPain](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-fingerOfPain)
 
 **Members:**
 
@@ -12323,7 +12323,7 @@ public class AbilityDefinitionFingerOfPain extends AbilityDefinition
 public class AbilityDefinitionSlowPoisonItem extends AbilityDefinition
 ```
 
-'AIsz' / [AbilityIds.slowPoisonItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-slowPoisonItem)
+'AIsz' / [AbilityIds.slowPoisonItem](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-slowPoisonItem)
 
 **Members:**
 
@@ -12343,7 +12343,7 @@ public class AbilityDefinitionSlowPoisonItem extends AbilityDefinition
 public class AbilityDefinitionUnholyFrenzyItem extends AbilityDefinition
 ```
 
-'AIuf' / [AbilityIds.unholyFrenzyItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-unholyFrenzyItem)
+'AIuf' / [AbilityIds.unholyFrenzyItem](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-unholyFrenzyItem)
 
 **Members:**
 
@@ -12360,7 +12360,7 @@ public class AbilityDefinitionUnholyFrenzyItem extends AbilityDefinition
 public class AbilityDefinitionAttackBonusPlus20 extends AbilityDefinition
 ```
 
-'AItx' / [AbilityIds.attackBonusPlus20](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonusPlus20)
+'AItx' / [AbilityIds.attackBonusPlus20](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-attackBonusPlus20)
 
 **Members:**
 
@@ -12374,7 +12374,7 @@ public class AbilityDefinitionAttackBonusPlus20 extends AbilityDefinition
 public class AbilityDefinitionItemTransmute extends AbilityDefinition
 ```
 
-'AIts' / [AbilityIds.itemTransmute](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemTransmute)
+'AIts' / [AbilityIds.itemTransmute](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemTransmute)
 
 **Members:**
 
@@ -12394,7 +12394,7 @@ public class AbilityDefinitionItemTransmute extends AbilityDefinition
 public class AbilityDefinitionManaBonus200 extends AbilityDefinition
 ```
 
-'AI2m' / [AbilityIds.manaBonus200](/stdlib/ref/_wurst/AbilityIds.html#abilityids-manaBonus200)
+'AI2m' / [AbilityIds.manaBonus200](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-manaBonus200)
 
 **Members:**
 
@@ -12408,7 +12408,7 @@ public class AbilityDefinitionManaBonus200 extends AbilityDefinition
 public class AbilityDefinitionItemInvulLesser extends AbilityDefinition
 ```
 
-'AIvl' / [AbilityIds.itemInvulLesser](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemInvulLesser)
+'AIvl' / [AbilityIds.itemInvulLesser](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemInvulLesser)
 
 **Members:**
 
@@ -12423,7 +12423,7 @@ public class AbilityDefinitionItemInvulLesser extends AbilityDefinition
 public class AbilityDefinitionFingerOfDeath1 extends AbilityDefinition
 ```
 
-'Afod' / [AbilityIds.fingerOfDeath1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-fingerOfDeath1)
+'Afod' / [AbilityIds.fingerOfDeath1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-fingerOfDeath1)
 
 **Members:**
 
@@ -12441,7 +12441,7 @@ public class AbilityDefinitionFingerOfDeath1 extends AbilityDefinition
 public class AbilityDefinitionItemInvulDivinity extends AbilityDefinition
 ```
 
-'AIvg' / [AbilityIds.itemInvulDivinity](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemInvulDivinity)
+'AIvg' / [AbilityIds.itemInvulDivinity](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemInvulDivinity)
 
 **Members:**
 
@@ -12456,7 +12456,7 @@ public class AbilityDefinitionItemInvulDivinity extends AbilityDefinition
 public class AbilityDefinitionRevealArcaneTower extends AbilityDefinition
 ```
 
-'AHta' / [AbilityIds.revealArcaneTower](/stdlib/ref/_wurst/AbilityIds.html#abilityids-revealArcaneTower)
+'AHta' / [AbilityIds.revealArcaneTower](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-revealArcaneTower)
 
 **Members:**
 
@@ -12470,7 +12470,7 @@ public class AbilityDefinitionRevealArcaneTower extends AbilityDefinition
 public class AbilityDefinitionHowlOfTerror extends AbilityDefinition
 ```
 
-'Acht' / [AbilityIds.howlOfTerror](/stdlib/ref/_wurst/AbilityIds.html#abilityids-howlOfTerror)
+'Acht' / [AbilityIds.howlOfTerror](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-howlOfTerror)
 
 **Members:**
 
@@ -12497,7 +12497,7 @@ public class AbilityDefinitionHowlOfTerror extends AbilityDefinition
 public class AbilityDefinitionFigurineFurbolgTracker extends AbilityDefinition
 ```
 
-'AIut' / [AbilityIds.figurineFurbolgTracker](/stdlib/ref/_wurst/AbilityIds.html#abilityids-figurineFurbolgTracker)
+'AIut' / [AbilityIds.figurineFurbolgTracker](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-figurineFurbolgTracker)
 
 **Members:**
 
@@ -12521,7 +12521,7 @@ public class AbilityDefinitionFigurineFurbolgTracker extends AbilityDefinition
 public class AbilityDefinitionWateryMinionItem extends AbilityDefinition
 ```
 
-'AIwm' / [AbilityIds.wateryMinionItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-wateryMinionItem)
+'AIwm' / [AbilityIds.wateryMinionItem](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-wateryMinionItem)
 
 **Members:**
 
@@ -12537,7 +12537,7 @@ public class AbilityDefinitionWateryMinionItem extends AbilityDefinition
 public class AbilityDefinitionPowerupDispelAoe extends AbilityDefinition
 ```
 
-'APdi' / [AbilityIds.powerupDispelAoe](/stdlib/ref/_wurst/AbilityIds.html#abilityids-powerupDispelAoe)
+'APdi' / [AbilityIds.powerupDispelAoe](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-powerupDispelAoe)
 
 **Members:**
 
@@ -12553,7 +12553,7 @@ public class AbilityDefinitionPowerupDispelAoe extends AbilityDefinition
 public class AbilityDefinitionItemAuraWarDrums extends AbilityDefinition
 ```
 
-'AIwd' / [AbilityIds.itemAuraWarDrums](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAuraWarDrums)
+'AIwd' / [AbilityIds.itemAuraWarDrums](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAuraWarDrums)
 
 **Members:**
 
@@ -12575,7 +12575,7 @@ public class AbilityDefinitionItemAuraWarDrums extends AbilityDefinition
 public class AbilityDefinitionAllPlus4 extends AbilityDefinition
 ```
 
-'AIx4' / [AbilityIds.allPlus4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-allPlus4)
+'AIx4' / [AbilityIds.allPlus4](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-allPlus4)
 
 **Members:**
 
@@ -12595,7 +12595,7 @@ public class AbilityDefinitionAllPlus4 extends AbilityDefinition
 public class AbilityDefinitionAllPlus3 extends AbilityDefinition
 ```
 
-'AIx3' / [AbilityIds.allPlus3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-allPlus3)
+'AIx3' / [AbilityIds.allPlus3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-allPlus3)
 
 **Members:**
 
@@ -12615,7 +12615,7 @@ public class AbilityDefinitionAllPlus3 extends AbilityDefinition
 public class AbilityDefinitionBeserkItem extends AbilityDefinition
 ```
 
-'AIxk' / [AbilityIds.beserkItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-beserkItem)
+'AIxk' / [AbilityIds.beserkItem](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-beserkItem)
 
 **Members:**
 
@@ -12633,7 +12633,7 @@ public class AbilityDefinitionBeserkItem extends AbilityDefinition
 public class AbilityDefinitionPowerupHealAoeGreater extends AbilityDefinition
 ```
 
-'APh3' / [AbilityIds.powerupHealAoeGreater](/stdlib/ref/_wurst/AbilityIds.html#abilityids-powerupHealAoeGreater)
+'APh3' / [AbilityIds.powerupHealAoeGreater](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-powerupHealAoeGreater)
 
 **Members:**
 
@@ -12647,7 +12647,7 @@ public class AbilityDefinitionPowerupHealAoeGreater extends AbilityDefinition
 public class AbilityDefinitionPowerupHealAoeLesser extends AbilityDefinition
 ```
 
-'APh1' / [AbilityIds.powerupHealAoeLesser](/stdlib/ref/_wurst/AbilityIds.html#abilityids-powerupHealAoeLesser)
+'APh1' / [AbilityIds.powerupHealAoeLesser](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-powerupHealAoeLesser)
 
 **Members:**
 
@@ -12661,7 +12661,7 @@ public class AbilityDefinitionPowerupHealAoeLesser extends AbilityDefinition
 public class AbilityDefinitionPowerupHealAoe extends AbilityDefinition
 ```
 
-'APh2' / [AbilityIds.powerupHealAoe](/stdlib/ref/_wurst/AbilityIds.html#abilityids-powerupHealAoe)
+'APh2' / [AbilityIds.powerupHealAoe](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-powerupHealAoe)
 
 **Members:**
 
@@ -12675,7 +12675,7 @@ public class AbilityDefinitionPowerupHealAoe extends AbilityDefinition
 public class AbilityDefinitionBlinkBeastmasterBear extends AbilityDefinition
 ```
 
-'ANbl' / [AbilityIds.blinkBeastmasterBear](/stdlib/ref/_wurst/AbilityIds.html#abilityids-blinkBeastmasterBear)
+'ANbl' / [AbilityIds.blinkBeastmasterBear](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-blinkBeastmasterBear)
 
 **Members:**
 
@@ -12691,7 +12691,7 @@ public class AbilityDefinitionBlinkBeastmasterBear extends AbilityDefinition
 public class AbilityDefinitionAvatarGarithos extends AbilityDefinition
 ```
 
-'ANav' / [AbilityIds.avatarGarithos](/stdlib/ref/_wurst/AbilityIds.html#abilityids-avatarGarithos)
+'ANav' / [AbilityIds.avatarGarithos](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-avatarGarithos)
 
 **Members:**
 
@@ -12711,7 +12711,7 @@ public class AbilityDefinitionAvatarGarithos extends AbilityDefinition
 public class AbilityDefinitionSummonLobstrokPrawns extends AbilityDefinition
 ```
 
-'Aslp' / [AbilityIds.summonLobstrokPrawns](/stdlib/ref/_wurst/AbilityIds.html#abilityids-summonLobstrokPrawns)
+'Aslp' / [AbilityIds.summonLobstrokPrawns](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-summonLobstrokPrawns)
 
 **Members:**
 
@@ -12727,7 +12727,7 @@ public class AbilityDefinitionSummonLobstrokPrawns extends AbilityDefinition
 public class AbilityDefinitionChenBreathOfFire extends AbilityDefinition
 ```
 
-'ANcf' / [AbilityIds.chenBreathOfFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chenBreathOfFire)
+'ANcf' / [AbilityIds.chenBreathOfFire](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-chenBreathOfFire)
 
 **Members:**
 
@@ -12749,7 +12749,7 @@ public class AbilityDefinitionChenBreathOfFire extends AbilityDefinition
 public class AbilityDefinitionCannibalizeAbomination extends AbilityDefinition
 ```
 
-'Acn2' / [AbilityIds.cannibalizeAbomination](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cannibalizeAbomination)
+'Acn2' / [AbilityIds.cannibalizeAbomination](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cannibalizeAbomination)
 
 **Members:**
 
@@ -12765,7 +12765,7 @@ public class AbilityDefinitionCannibalizeAbomination extends AbilityDefinition
 public class AbilityDefinitionEnsnareNaga extends AbilityDefinition
 ```
 
-'ANen' / [AbilityIds.ensnareNaga](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ensnareNaga)
+'ANen' / [AbilityIds.ensnareNaga](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ensnareNaga)
 
 **Members:**
 
@@ -12791,7 +12791,7 @@ public class AbilityDefinitionEnsnareNaga extends AbilityDefinition
 public class AbilityDefinitionAbolishMagicNaga extends AbilityDefinition
 ```
 
-'Andm' / [AbilityIds.abolishMagicNaga](/stdlib/ref/_wurst/AbilityIds.html#abilityids-abolishMagicNaga)
+'Andm' / [AbilityIds.abolishMagicNaga](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-abolishMagicNaga)
 
 **Members:**
 
@@ -12807,7 +12807,7 @@ public class AbilityDefinitionAbolishMagicNaga extends AbilityDefinition
 public class AbilityDefinitionParasiteEredar extends AbilityDefinition
 ```
 
-'ACpa' / [AbilityIds.parasiteEredar](/stdlib/ref/_wurst/AbilityIds.html#abilityids-parasiteEredar)
+'ACpa' / [AbilityIds.parasiteEredar](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-parasiteEredar)
 
 **Members:**
 
@@ -12833,7 +12833,7 @@ public class AbilityDefinitionParasiteEredar extends AbilityDefinition
 public class AbilityDefinitionCycloneNaga extends AbilityDefinition
 ```
 
-'Acny' / [AbilityIds.cycloneNaga](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cycloneNaga)
+'Acny' / [AbilityIds.cycloneNaga](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cycloneNaga)
 
 **Members:**
 
@@ -12847,7 +12847,7 @@ public class AbilityDefinitionCycloneNaga extends AbilityDefinition
 public class AbilityDefinitionManaBurnHotkeyB extends AbilityDefinition
 ```
 
-'Ambb' / [AbilityIds.manaBurnHotkeyB](/stdlib/ref/_wurst/AbilityIds.html#abilityids-manaBurnHotkeyB)
+'Ambb' / [AbilityIds.manaBurnHotkeyB](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-manaBurnHotkeyB)
 
 **Members:**
 
@@ -12865,7 +12865,7 @@ public class AbilityDefinitionManaBurnHotkeyB extends AbilityDefinition
 public class AbilityDefinitionFlameStrikeImprovedCreep extends AbilityDefinition
 ```
 
-'ANfs' / [AbilityIds.flameStrikeImprovedCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-flameStrikeImprovedCreep)
+'ANfs' / [AbilityIds.flameStrikeImprovedCreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-flameStrikeImprovedCreep)
 
 **Members:**
 
@@ -12889,7 +12889,7 @@ public class AbilityDefinitionFlameStrikeImprovedCreep extends AbilityDefinition
 public class AbilityDefinitionSentinelNoResearch extends AbilityDefinition
 ```
 
-'Aesr' / [AbilityIds.sentinelNoResearch](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sentinelNoResearch)
+'Aesr' / [AbilityIds.sentinelNoResearch](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-sentinelNoResearch)
 
 **Members:**
 
@@ -12912,7 +12912,7 @@ public class AbilityDefinitionSentinelNoResearch extends AbilityDefinition
 public class AbilityDefinitionRainOfFireCreepGreater extends AbilityDefinition
 ```
 
-'ACrg' / [AbilityIds.rainOfFireCreepGreater](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rainOfFireCreepGreater)
+'ACrg' / [AbilityIds.rainOfFireCreepGreater](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-rainOfFireCreepGreater)
 
 **Members:**
 
@@ -12936,7 +12936,7 @@ public class AbilityDefinitionRainOfFireCreepGreater extends AbilityDefinition
 public class AbilityDefinitionFeralSpiritAkama extends AbilityDefinition
 ```
 
-'ACs7' / [AbilityIds.feralSpiritAkama](/stdlib/ref/_wurst/AbilityIds.html#abilityids-feralSpiritAkama)
+'ACs7' / [AbilityIds.feralSpiritAkama](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-feralSpiritAkama)
 
 **Members:**
 
@@ -12952,7 +12952,7 @@ public class AbilityDefinitionFeralSpiritAkama extends AbilityDefinition
 public class AbilityDefinitionFeralSpiritSpiritBeast extends AbilityDefinition
 ```
 
-'ACs8' / [AbilityIds.feralSpiritSpiritBeast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-feralSpiritSpiritBeast)
+'ACs8' / [AbilityIds.feralSpiritSpiritBeast](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-feralSpiritSpiritBeast)
 
 **Members:**
 
@@ -12968,7 +12968,7 @@ public class AbilityDefinitionFeralSpiritSpiritBeast extends AbilityDefinition
 public class AbilityDefinitionRokhanHealingWave extends AbilityDefinition
 ```
 
-'ANhw' / [AbilityIds.rokhanHealingWave](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rokhanHealingWave)
+'ANhw' / [AbilityIds.rokhanHealingWave](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-rokhanHealingWave)
 
 **Members:**
 
@@ -12986,7 +12986,7 @@ public class AbilityDefinitionRokhanHealingWave extends AbilityDefinition
 public class AbilityDefinitionRokhanHex extends AbilityDefinition
 ```
 
-'ANhx' / [AbilityIds.rokhanHex](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rokhanHex)
+'ANhx' / [AbilityIds.rokhanHex](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-rokhanHex)
 
 **Members:**
 
@@ -13008,7 +13008,7 @@ public class AbilityDefinitionRokhanHex extends AbilityDefinition
 public class AbilityDefinitionHarvestNaga extends AbilityDefinition
 ```
 
-'ANha' / [AbilityIds.harvestNaga](/stdlib/ref/_wurst/AbilityIds.html#abilityids-harvestNaga)
+'ANha' / [AbilityIds.harvestNaga](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-harvestNaga)
 
 **Members:**
 
@@ -13026,7 +13026,7 @@ public class AbilityDefinitionHarvestNaga extends AbilityDefinition
 public class AbilityDefinitionInciteUnholyFrenzy extends AbilityDefinition
 ```
 
-'Auuf' / [AbilityIds.inciteUnholyFrenzy](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inciteUnholyFrenzy)
+'Auuf' / [AbilityIds.inciteUnholyFrenzy](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-inciteUnholyFrenzy)
 
 **Members:**
 
@@ -13046,7 +13046,7 @@ public class AbilityDefinitionInciteUnholyFrenzy extends AbilityDefinition
 public class AbilityDefinitionRuneManaRestoreAoe extends AbilityDefinition
 ```
 
-'APmr' / [AbilityIds.runeManaRestoreAoe](/stdlib/ref/_wurst/AbilityIds.html#abilityids-runeManaRestoreAoe)
+'APmr' / [AbilityIds.runeManaRestoreAoe](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-runeManaRestoreAoe)
 
 **Members:**
 
@@ -13060,7 +13060,7 @@ public class AbilityDefinitionRuneManaRestoreAoe extends AbilityDefinition
 public class AbilityDefinitionRuneManaRestoreGreaterAoe extends AbilityDefinition
 ```
 
-'APmg' / [AbilityIds.runeManaRestoreGreaterAoe](/stdlib/ref/_wurst/AbilityIds.html#abilityids-runeManaRestoreGreaterAoe)
+'APmg' / [AbilityIds.runeManaRestoreGreaterAoe](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-runeManaRestoreGreaterAoe)
 
 **Members:**
 
@@ -13074,7 +13074,7 @@ public class AbilityDefinitionRuneManaRestoreGreaterAoe extends AbilityDefinitio
 public class AbilityDefinitionAuraPlagueAnimatedDead extends AbilityDefinition
 ```
 
-'Aap5' / [AbilityIds.auraPlagueAnimatedDead](/stdlib/ref/_wurst/AbilityIds.html#abilityids-auraPlagueAnimatedDead)
+'Aap5' / [AbilityIds.auraPlagueAnimatedDead](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-auraPlagueAnimatedDead)
 
 **Members:**
 
@@ -13094,7 +13094,7 @@ public class AbilityDefinitionAuraPlagueAnimatedDead extends AbilityDefinition
 public class AbilityDefinitionRokhanVoodooSpirits extends AbilityDefinition
 ```
 
-'AOls' / [AbilityIds.rokhanVoodooSpirits](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rokhanVoodooSpirits)
+'AOls' / [AbilityIds.rokhanVoodooSpirits](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-rokhanVoodooSpirits)
 
 **Members:**
 
@@ -13118,7 +13118,7 @@ public class AbilityDefinitionRokhanVoodooSpirits extends AbilityDefinition
 public class AbilityDefinitionBuildTinyLumberMill extends AbilityDefinition
 ```
 
-'AIbr' / [AbilityIds.buildTinyLumberMill](/stdlib/ref/_wurst/AbilityIds.html#abilityids-buildTinyLumberMill)
+'AIbr' / [AbilityIds.buildTinyLumberMill](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-buildTinyLumberMill)
 
 **Members:**
 
@@ -13132,7 +13132,7 @@ public class AbilityDefinitionBuildTinyLumberMill extends AbilityDefinition
 public class AbilityDefinitionBuildTinyBarracks extends AbilityDefinition
 ```
 
-'AIbs' / [AbilityIds.buildTinyBarracks](/stdlib/ref/_wurst/AbilityIds.html#abilityids-buildTinyBarracks)
+'AIbs' / [AbilityIds.buildTinyBarracks](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-buildTinyBarracks)
 
 **Members:**
 
@@ -13146,7 +13146,7 @@ public class AbilityDefinitionBuildTinyBarracks extends AbilityDefinition
 public class AbilityDefinitionRokhanSerpentWard extends AbilityDefinition
 ```
 
-'Arsw' / [AbilityIds.rokhanSerpentWard](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rokhanSerpentWard)
+'Arsw' / [AbilityIds.rokhanSerpentWard](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-rokhanSerpentWard)
 
 **Members:**
 
@@ -13162,7 +13162,7 @@ public class AbilityDefinitionRokhanSerpentWard extends AbilityDefinition
 public class AbilityDefinitionBlinkItem extends AbilityDefinition
 ```
 
-'AIbk' / [AbilityIds.blinkItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-blinkItem)
+'AIbk' / [AbilityIds.blinkItem](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-blinkItem)
 
 **Members:**
 
@@ -13178,7 +13178,7 @@ public class AbilityDefinitionBlinkItem extends AbilityDefinition
 public class AbilityDefinitionBuildTinyAltar extends AbilityDefinition
 ```
 
-'AIbh' / [AbilityIds.buildTinyAltar](/stdlib/ref/_wurst/AbilityIds.html#abilityids-buildTinyAltar)
+'AIbh' / [AbilityIds.buildTinyAltar](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-buildTinyAltar)
 
 **Members:**
 
@@ -13192,7 +13192,7 @@ public class AbilityDefinitionBuildTinyAltar extends AbilityDefinition
 public class AbilityDefinitionRexxarSummonQuilbeast extends AbilityDefinition
 ```
 
-'Arsq' / [AbilityIds.rexxarSummonQuilbeast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rexxarSummonQuilbeast)
+'Arsq' / [AbilityIds.rexxarSummonQuilbeast](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-rexxarSummonQuilbeast)
 
 **Members:**
 
@@ -13208,7 +13208,7 @@ public class AbilityDefinitionRexxarSummonQuilbeast extends AbilityDefinition
 public class AbilityDefinitionRexxarStampede extends AbilityDefinition
 ```
 
-'Arsp' / [AbilityIds.rexxarStampede](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rexxarStampede)
+'Arsp' / [AbilityIds.rexxarStampede](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-rexxarStampede)
 
 **Members:**
 
@@ -13230,7 +13230,7 @@ public class AbilityDefinitionRexxarStampede extends AbilityDefinition
 public class AbilityDefinitionBuildTinyFarm extends AbilityDefinition
 ```
 
-'AIbf' / [AbilityIds.buildTinyFarm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-buildTinyFarm)
+'AIbf' / [AbilityIds.buildTinyFarm](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-buildTinyFarm)
 
 **Members:**
 
@@ -13244,7 +13244,7 @@ public class AbilityDefinitionBuildTinyFarm extends AbilityDefinition
 public class AbilityDefinitionFigurineBlueDrake extends AbilityDefinition
 ```
 
-'AIbd' / [AbilityIds.figurineBlueDrake](/stdlib/ref/_wurst/AbilityIds.html#abilityids-figurineBlueDrake)
+'AIbd' / [AbilityIds.figurineBlueDrake](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-figurineBlueDrake)
 
 **Members:**
 
@@ -13268,7 +13268,7 @@ public class AbilityDefinitionFigurineBlueDrake extends AbilityDefinition
 public class AbilityDefinitionBuildTinyBlacksmith extends AbilityDefinition
 ```
 
-'AIbb' / [AbilityIds.buildTinyBlacksmith](/stdlib/ref/_wurst/AbilityIds.html#abilityids-buildTinyBlacksmith)
+'AIbb' / [AbilityIds.buildTinyBlacksmith](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-buildTinyBlacksmith)
 
 **Members:**
 
@@ -13282,7 +13282,7 @@ public class AbilityDefinitionBuildTinyBlacksmith extends AbilityDefinition
 public class AbilityDefinitionRexxarSummonBear extends AbilityDefinition
 ```
 
-'Arsg' / [AbilityIds.rexxarSummonBear](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rexxarSummonBear)
+'Arsg' / [AbilityIds.rexxarSummonBear](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-rexxarSummonBear)
 
 **Members:**
 
@@ -13298,7 +13298,7 @@ public class AbilityDefinitionRexxarSummonBear extends AbilityDefinition
 public class AbilityDefinitionBurrowBarbedArachnathid extends AbilityDefinition
 ```
 
-'Abu5' / [AbilityIds.burrowBarbedArachnathid](/stdlib/ref/_wurst/AbilityIds.html#abilityids-burrowBarbedArachnathid)
+'Abu5' / [AbilityIds.burrowBarbedArachnathid](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-burrowBarbedArachnathid)
 
 **Members:**
 
@@ -13320,7 +13320,7 @@ public class AbilityDefinitionBurrowBarbedArachnathid extends AbilityDefinition
 public class AbilityDefinitionAgilityBonusPlus10 extends AbilityDefinition
 ```
 
-'AIaz' / [AbilityIds.agilityBonusPlus10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-agilityBonusPlus10)
+'AIaz' / [AbilityIds.agilityBonusPlus10](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-agilityBonusPlus10)
 
 **Members:**
 
@@ -13340,7 +13340,7 @@ public class AbilityDefinitionAgilityBonusPlus10 extends AbilityDefinition
 public class AbilityDefinitionRuneRestoreAoe extends AbilityDefinition
 ```
 
-'APra' / [AbilityIds.runeRestoreAoe](/stdlib/ref/_wurst/AbilityIds.html#abilityids-runeRestoreAoe)
+'APra' / [AbilityIds.runeRestoreAoe](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-runeRestoreAoe)
 
 **Members:**
 
@@ -13356,7 +13356,7 @@ public class AbilityDefinitionRuneRestoreAoe extends AbilityDefinition
 public class AbilityDefinitionCriticalStrikeItem extends AbilityDefinition
 ```
 
-'AIcs' / [AbilityIds.criticalStrikeItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-criticalStrikeItem)
+'AIcs' / [AbilityIds.criticalStrikeItem](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-criticalStrikeItem)
 
 **Members:**
 
@@ -13380,7 +13380,7 @@ public class AbilityDefinitionCriticalStrikeItem extends AbilityDefinition
 public class AbilityDefinitionControlMagicItem extends AbilityDefinition
 ```
 
-'AIcm' / [AbilityIds.controlMagicItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-controlMagicItem)
+'AIcm' / [AbilityIds.controlMagicItem](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-controlMagicItem)
 
 **Members:**
 
@@ -13398,7 +13398,7 @@ public class AbilityDefinitionControlMagicItem extends AbilityDefinition
 public class AbilityDefinitionChainLightningItem extends AbilityDefinition
 ```
 
-'AIcl' / [AbilityIds.chainLightningItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chainLightningItem)
+'AIcl' / [AbilityIds.chainLightningItem](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-chainLightningItem)
 
 **Members:**
 
@@ -13416,7 +13416,7 @@ public class AbilityDefinitionChainLightningItem extends AbilityDefinition
 public class AbilityDefinitionAttackTargetPriority extends AbilityDefinition
 ```
 
-'Aatp' / [AbilityIds.attackTargetPriority](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackTargetPriority)
+'Aatp' / [AbilityIds.attackTargetPriority](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-attackTargetPriority)
 
 **Members:**
 
@@ -13431,7 +13431,7 @@ public class AbilityDefinitionAttackTargetPriority extends AbilityDefinition
 public class AbilityDefinitionRuneSpeedAoe extends AbilityDefinition
 ```
 
-'APsa' / [AbilityIds.runeSpeedAoe](/stdlib/ref/_wurst/AbilityIds.html#abilityids-runeSpeedAoe)
+'APsa' / [AbilityIds.runeSpeedAoe](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-runeSpeedAoe)
 
 **Members:**
 
@@ -13445,7 +13445,7 @@ public class AbilityDefinitionRuneSpeedAoe extends AbilityDefinition
 public class AbilityDefinitionDivineShieldItem extends AbilityDefinition
 ```
 
-'AIdv' / [AbilityIds.divineShieldItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-divineShieldItem)
+'AIdv' / [AbilityIds.divineShieldItem](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-divineShieldItem)
 
 **Members:**
 
@@ -13459,7 +13459,7 @@ public class AbilityDefinitionDivineShieldItem extends AbilityDefinition
 public class AbilityDefinitionDeathPactItem extends AbilityDefinition
 ```
 
-'AIdp' / [AbilityIds.deathPactItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-deathPactItem)
+'AIdp' / [AbilityIds.deathPactItem](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-deathPactItem)
 
 **Members:**
 
@@ -13481,7 +13481,7 @@ public class AbilityDefinitionDeathPactItem extends AbilityDefinition
 public class AbilityDefinitionShadowOrbAbility extends AbilityDefinition
 ```
 
-'AIdn' / [AbilityIds.shadowOrbAbility](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shadowOrbAbility)
+'AIdn' / [AbilityIds.shadowOrbAbility](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-shadowOrbAbility)
 
 **Members:**
 
@@ -13497,7 +13497,7 @@ public class AbilityDefinitionShadowOrbAbility extends AbilityDefinition
 public class AbilityDefinitionCairneEnduranceAura extends AbilityDefinition
 ```
 
-'AOr2' / [AbilityIds.cairneEnduranceAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cairneEnduranceAura)
+'AOr2' / [AbilityIds.cairneEnduranceAura](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cairneEnduranceAura)
 
 **Members:**
 
@@ -13515,7 +13515,7 @@ public class AbilityDefinitionCairneEnduranceAura extends AbilityDefinition
 public class AbilityDefinitionCairneReincarnation extends AbilityDefinition
 ```
 
-'AOr3' / [AbilityIds.cairneReincarnation](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cairneReincarnation)
+'AOr3' / [AbilityIds.cairneReincarnation](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cairneReincarnation)
 
 **Members:**
 
@@ -13529,7 +13529,7 @@ public class AbilityDefinitionCairneReincarnation extends AbilityDefinition
 public class AbilityDefinitionAIde extends AbilityDefinition
 ```
 
-'AIde' / [AbilityIds.aIde](/stdlib/ref/_wurst/AbilityIds.html#abilityids-aIde)
+'AIde' / [AbilityIds.aIde](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-aIde)
 
 **Members:**
 
@@ -13543,7 +13543,7 @@ public class AbilityDefinitionAIde extends AbilityDefinition
 public class AbilityDefinitionFigurineDragonspawnOverseer extends AbilityDefinition
 ```
 
-'AIes' / [AbilityIds.figurineDragonspawnOverseer](/stdlib/ref/_wurst/AbilityIds.html#abilityids-figurineDragonspawnOverseer)
+'AIes' / [AbilityIds.figurineDragonspawnOverseer](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-figurineDragonspawnOverseer)
 
 **Members:**
 
@@ -13567,7 +13567,7 @@ public class AbilityDefinitionFigurineDragonspawnOverseer extends AbilityDefinit
 public class AbilityDefinitionCairneShockWave extends AbilityDefinition
 ```
 
-'AOs2' / [AbilityIds.cairneShockWave](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cairneShockWave)
+'AOs2' / [AbilityIds.cairneShockWave](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cairneShockWave)
 
 **Members:**
 
@@ -13587,7 +13587,7 @@ public class AbilityDefinitionCairneShockWave extends AbilityDefinition
 public class AbilityDefinitionFingerOfDeathItem extends AbilityDefinition
 ```
 
-'AIfz' / [AbilityIds.fingerOfDeathItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-fingerOfDeathItem)
+'AIfz' / [AbilityIds.fingerOfDeathItem](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-fingerOfDeathItem)
 
 **Members:**
 
@@ -13605,7 +13605,7 @@ public class AbilityDefinitionFingerOfDeathItem extends AbilityDefinition
 public class AbilityDefinitionSearingBladeFireMelee extends AbilityDefinition
 ```
 
-'AIfw' / [AbilityIds.searingBladeFireMelee](/stdlib/ref/_wurst/AbilityIds.html#abilityids-searingBladeFireMelee)
+'AIfw' / [AbilityIds.searingBladeFireMelee](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-searingBladeFireMelee)
 
 **Members:**
 
@@ -13621,7 +13621,7 @@ public class AbilityDefinitionSearingBladeFireMelee extends AbilityDefinition
 public class AbilityDefinitionFrostguardFrostMelee extends AbilityDefinition
 ```
 
-'AIft' / [AbilityIds.frostguardFrostMelee](/stdlib/ref/_wurst/AbilityIds.html#abilityids-frostguardFrostMelee)
+'AIft' / [AbilityIds.frostguardFrostMelee](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-frostguardFrostMelee)
 
 **Members:**
 
@@ -13637,7 +13637,7 @@ public class AbilityDefinitionFrostguardFrostMelee extends AbilityDefinition
 public class AbilityDefinitionInventory2SlotUnitNightElf extends AbilityDefinition
 ```
 
-'Aien' / [AbilityIds.inventory2SlotUnitNightElf](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inventory2SlotUnitNightElf)
+'Aien' / [AbilityIds.inventory2SlotUnitNightElf](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-inventory2SlotUnitNightElf)
 
 **Members:**
 
@@ -13659,7 +13659,7 @@ public class AbilityDefinitionInventory2SlotUnitNightElf extends AbilityDefiniti
 public class AbilityDefinitionRainOfChaosButton02 extends AbilityDefinition
 ```
 
-'ANr3' / [AbilityIds.rainOfChaosButton02](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rainOfChaosButton02)
+'ANr3' / [AbilityIds.rainOfChaosButton02](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-rainOfChaosButton02)
 
 **Members:**
 
@@ -13675,7 +13675,7 @@ public class AbilityDefinitionRainOfChaosButton02 extends AbilityDefinition
 public class AbilityDefinitionReincarnationGeneric extends AbilityDefinition
 ```
 
-'ANr2' / [AbilityIds.reincarnationGeneric](/stdlib/ref/_wurst/AbilityIds.html#abilityids-reincarnationGeneric)
+'ANr2' / [AbilityIds.reincarnationGeneric](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-reincarnationGeneric)
 
 **Members:**
 
@@ -13689,7 +13689,7 @@ public class AbilityDefinitionReincarnationGeneric extends AbilityDefinition
 public class AbilityDefinitionAuraRegenerationItem extends AbilityDefinition
 ```
 
-'AIgx' / [AbilityIds.auraRegenerationItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-auraRegenerationItem)
+'AIgx' / [AbilityIds.auraRegenerationItem](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-auraRegenerationItem)
 
 **Members:**
 
@@ -13705,7 +13705,7 @@ public class AbilityDefinitionAuraRegenerationItem extends AbilityDefinition
 public class AbilityDefinitionOrbOfGuldan extends AbilityDefinition
 ```
 
-'AIgd' / [AbilityIds.orbOfGuldan](/stdlib/ref/_wurst/AbilityIds.html#abilityids-orbOfGuldan)
+'AIgd' / [AbilityIds.orbOfGuldan](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-orbOfGuldan)
 
 **Members:**
 
@@ -13721,7 +13721,7 @@ public class AbilityDefinitionOrbOfGuldan extends AbilityDefinition
 public class AbilityDefinitionRexxarStormBolt extends AbilityDefinition
 ```
 
-'ANsb' / [AbilityIds.rexxarStormBolt](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rexxarStormBolt)
+'ANsb' / [AbilityIds.rexxarStormBolt](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-rexxarStormBolt)
 
 **Members:**
 
@@ -13735,7 +13735,7 @@ public class AbilityDefinitionRexxarStormBolt extends AbilityDefinition
 public class AbilityDefinitionItemHealLeastest extends AbilityDefinition
 ```
 
-'AIhx' / [AbilityIds.itemHealLeastest](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealLeastest)
+'AIhx' / [AbilityIds.itemHealLeastest](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHealLeastest)
 
 **Members:**
 
@@ -13749,7 +13749,7 @@ public class AbilityDefinitionItemHealLeastest extends AbilityDefinition
 public class AbilityDefinitionHolyLightItem extends AbilityDefinition
 ```
 
-'AIhl' / [AbilityIds.holyLightItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-holyLightItem)
+'AIhl' / [AbilityIds.holyLightItem](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-holyLightItem)
 
 **Members:**
 
@@ -13764,7 +13764,7 @@ public class AbilityDefinitionHolyLightItem extends AbilityDefinition
 public class AbilityDefinitionThornyShieldDragonTurtle extends AbilityDefinition
 ```
 
-'ANt2' / [AbilityIds.thornyShieldDragonTurtle](/stdlib/ref/_wurst/AbilityIds.html#abilityids-thornyShieldDragonTurtle)
+'ANt2' / [AbilityIds.thornyShieldDragonTurtle](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-thornyShieldDragonTurtle)
 
 **Members:**
 
@@ -13782,7 +13782,7 @@ public class AbilityDefinitionThornyShieldDragonTurtle extends AbilityDefinition
 public class AbilityDefinitionInventory2SlotUnitHuman extends AbilityDefinition
 ```
 
-'Aihn' / [AbilityIds.inventory2SlotUnitHuman](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inventory2SlotUnitHuman)
+'Aihn' / [AbilityIds.inventory2SlotUnitHuman](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-inventory2SlotUnitHuman)
 
 **Members:**
 
@@ -13804,7 +13804,7 @@ public class AbilityDefinitionInventory2SlotUnitHuman extends AbilityDefinition
 public class AbilityDefinitionRuneOfTheWatcher extends AbilityDefinition
 ```
 
-'APwt' / [AbilityIds.runeOfTheWatcher](/stdlib/ref/_wurst/AbilityIds.html#abilityids-runeOfTheWatcher)
+'APwt' / [AbilityIds.runeOfTheWatcher](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-runeOfTheWatcher)
 
 **Members:**
 
@@ -13818,7 +13818,7 @@ public class AbilityDefinitionRuneOfTheWatcher extends AbilityDefinition
 public class AbilityDefinitionCairneWarStomp extends AbilityDefinition
 ```
 
-'AOw2' / [AbilityIds.cairneWarStomp](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cairneWarStomp)
+'AOw2' / [AbilityIds.cairneWarStomp](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cairneWarStomp)
 
 **Members:**
 
@@ -13832,7 +13832,7 @@ public class AbilityDefinitionCairneWarStomp extends AbilityDefinition
 public class AbilityDefinitionGarithosShockWave extends AbilityDefinition
 ```
 
-'ANsh' / [AbilityIds.garithosShockWave](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garithosShockWave)
+'ANsh' / [AbilityIds.garithosShockWave](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-garithosShockWave)
 
 **Members:**
 
@@ -13852,7 +13852,7 @@ public class AbilityDefinitionGarithosShockWave extends AbilityDefinition
 public class AbilityDefinitionDetectWarEagle extends AbilityDefinition
 ```
 
-'ANtr' / [AbilityIds.detectWarEagle](/stdlib/ref/_wurst/AbilityIds.html#abilityids-detectWarEagle)
+'ANtr' / [AbilityIds.detectWarEagle](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-detectWarEagle)
 
 **Members:**
 
@@ -13866,7 +13866,7 @@ public class AbilityDefinitionDetectWarEagle extends AbilityDefinition
 public class AbilityDefinitionHardenedSkinNagaTurtle extends AbilityDefinition
 ```
 
-'Ansk' / [AbilityIds.hardenedSkinNagaTurtle](/stdlib/ref/_wurst/AbilityIds.html#abilityids-hardenedSkinNagaTurtle)
+'Ansk' / [AbilityIds.hardenedSkinNagaTurtle](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-hardenedSkinNagaTurtle)
 
 **Members:**
 
@@ -13889,7 +13889,7 @@ public class AbilityDefinitionHardenedSkinNagaTurtle extends AbilityDefinition
 public class AbilityDefinitionMaxLifeBonusLeastest extends AbilityDefinition
 ```
 
-'AIlz' / [AbilityIds.maxLifeBonusLeastest](/stdlib/ref/_wurst/AbilityIds.html#abilityids-maxLifeBonusLeastest)
+'AIlz' / [AbilityIds.maxLifeBonusLeastest](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-maxLifeBonusLeastest)
 
 **Members:**
 
@@ -13903,7 +13903,7 @@ public class AbilityDefinitionMaxLifeBonusLeastest extends AbilityDefinition
 public class AbilityDefinitionShamanClawsLightningMelee extends AbilityDefinition
 ```
 
-'AIlx' / [AbilityIds.shamanClawsLightningMelee](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shamanClawsLightningMelee)
+'AIlx' / [AbilityIds.shamanClawsLightningMelee](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-shamanClawsLightningMelee)
 
 **Members:**
 
@@ -13930,7 +13930,7 @@ public class AbilityDefinitionShamanClawsLightningMelee extends AbilityDefinitio
 public class AbilityDefinitionMaxManaBonusLeastest extends AbilityDefinition
 ```
 
-'AImz' / [AbilityIds.maxManaBonusLeastest](/stdlib/ref/_wurst/AbilityIds.html#abilityids-maxManaBonusLeastest)
+'AImz' / [AbilityIds.maxManaBonusLeastest](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-maxManaBonusLeastest)
 
 **Members:**
 
@@ -13944,7 +13944,7 @@ public class AbilityDefinitionMaxManaBonusLeastest extends AbilityDefinition
 public class AbilityDefinitionCrushingWaveLesser extends AbilityDefinition
 ```
 
-'ACc3' / [AbilityIds.crushingWaveLesser](/stdlib/ref/_wurst/AbilityIds.html#abilityids-crushingWaveLesser)
+'ACc3' / [AbilityIds.crushingWaveLesser](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-crushingWaveLesser)
 
 **Members:**
 
@@ -13964,7 +13964,7 @@ public class AbilityDefinitionCrushingWaveLesser extends AbilityDefinition
 public class AbilityDefinitionCrushingWaveDragonTurtle extends AbilityDefinition
 ```
 
-'ACc2' / [AbilityIds.crushingWaveDragonTurtle](/stdlib/ref/_wurst/AbilityIds.html#abilityids-crushingWaveDragonTurtle)
+'ACc2' / [AbilityIds.crushingWaveDragonTurtle](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-crushingWaveDragonTurtle)
 
 **Members:**
 
@@ -13984,7 +13984,7 @@ public class AbilityDefinitionCrushingWaveDragonTurtle extends AbilityDefinition
 public class AbilityDefinitionMaxManaBonusLeastestReally extends AbilityDefinition
 ```
 
-'AImv' / [AbilityIds.maxManaBonusLeastestReally](/stdlib/ref/_wurst/AbilityIds.html#abilityids-maxManaBonusLeastestReally)
+'AImv' / [AbilityIds.maxManaBonusLeastestReally](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-maxManaBonusLeastestReally)
 
 **Members:**
 
@@ -13998,7 +13998,7 @@ public class AbilityDefinitionMaxManaBonusLeastestReally extends AbilityDefiniti
 public class AbilityDefinitionAbolishMagicCreep12Pos extends AbilityDefinition
 ```
 
-'ACd2' / [AbilityIds.abolishMagicCreep12Pos](/stdlib/ref/_wurst/AbilityIds.html#abilityids-abolishMagicCreep12Pos)
+'ACd2' / [AbilityIds.abolishMagicCreep12Pos](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-abolishMagicCreep12Pos)
 
 **Members:**
 
@@ -14014,7 +14014,7 @@ public class AbilityDefinitionAbolishMagicCreep12Pos extends AbilityDefinition
 public class AbilityDefinitionBanishCreep extends AbilityDefinition
 ```
 
-'ACbn' / [AbilityIds.banishCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-banishCreep)
+'ACbn' / [AbilityIds.banishCreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-banishCreep)
 
 **Members:**
 
@@ -14032,7 +14032,7 @@ public class AbilityDefinitionBanishCreep extends AbilityDefinition
 public class AbilityDefinitionDisenchantNew extends AbilityDefinition
 ```
 
-'Adcn' / [AbilityIds.disenchantNew](/stdlib/ref/_wurst/AbilityIds.html#abilityids-disenchantNew)
+'Adcn' / [AbilityIds.disenchantNew](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-disenchantNew)
 
 **Members:**
 
@@ -14048,7 +14048,7 @@ public class AbilityDefinitionDisenchantNew extends AbilityDefinition
 public class AbilityDefinitionBlackArrowMeleeCreep extends AbilityDefinition
 ```
 
-'ACbk' / [AbilityIds.blackArrowMeleeCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-blackArrowMeleeCreep)
+'ACbk' / [AbilityIds.blackArrowMeleeCreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-blackArrowMeleeCreep)
 
 **Members:**
 
@@ -14068,7 +14068,7 @@ public class AbilityDefinitionBlackArrowMeleeCreep extends AbilityDefinition
 public class AbilityDefinitionBloodlustCreepHotkeyB extends AbilityDefinition
 ```
 
-'ACbb' / [AbilityIds.bloodlustCreepHotkeyB](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bloodlustCreepHotkeyB)
+'ACbb' / [AbilityIds.bloodlustCreepHotkeyB](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-bloodlustCreepHotkeyB)
 
 **Members:**
 
@@ -14088,7 +14088,7 @@ public class AbilityDefinitionBloodlustCreepHotkeyB extends AbilityDefinition
 public class AbilityDefinitionPassiveHumanLumberHarvestingRhlh extends AbilityDefinition
 ```
 
-'Ahlh' / [AbilityIds.passiveHumanLumberHarvestingRhlh](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveHumanLumberHarvestingRhlh)
+'Ahlh' / [AbilityIds.passiveHumanLumberHarvestingRhlh](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-passiveHumanLumberHarvestingRhlh)
 
 **Members:**
 
@@ -14100,7 +14100,7 @@ public class AbilityDefinitionPassiveHumanLumberHarvestingRhlh extends AbilityDe
 public class AbilityDefinitionPassiveGhostIconOnlyUndeadAgho extends AbilityDefinition
 ```
 
-'Augh' / [AbilityIds.passiveGhostIconOnlyUndeadAgho](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveGhostIconOnlyUndeadAgho)
+'Augh' / [AbilityIds.passiveGhostIconOnlyUndeadAgho](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-passiveGhostIconOnlyUndeadAgho)
 
 **Members:**
 
@@ -14112,7 +14112,7 @@ public class AbilityDefinitionPassiveGhostIconOnlyUndeadAgho extends AbilityDefi
 public class AbilityDefinitionPassiveUndeadGhoulFrenzyRugf extends AbilityDefinition
 ```
 
-'Augf' / [AbilityIds.passiveUndeadGhoulFrenzyRugf](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveUndeadGhoulFrenzyRugf)
+'Augf' / [AbilityIds.passiveUndeadGhoulFrenzyRugf](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-passiveUndeadGhoulFrenzyRugf)
 
 **Members:**
 
@@ -14124,7 +14124,7 @@ public class AbilityDefinitionPassiveUndeadGhoulFrenzyRugf extends AbilityDefini
 public class AbilityDefinitionOnFireUndead extends AbilityDefinition
 ```
 
-'Afiu' / [AbilityIds.onFireUndead](/stdlib/ref/_wurst/AbilityIds.html#abilityids-onFireUndead)
+'Afiu' / [AbilityIds.onFireUndead](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-onFireUndead)
 
 **Members:**
 
@@ -14136,7 +14136,7 @@ public class AbilityDefinitionOnFireUndead extends AbilityDefinition
 public class AbilityDefinitionOnFire extends AbilityDefinition
 ```
 
-'Afir' / [AbilityIds.onFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-onFire)
+'Afir' / [AbilityIds.onFire](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-onFire)
 
 **Members:**
 
@@ -14148,7 +14148,7 @@ public class AbilityDefinitionOnFire extends AbilityDefinition
 public class AbilityDefinitionOnFireOrc extends AbilityDefinition
 ```
 
-'Afio' / [AbilityIds.onFireOrc](/stdlib/ref/_wurst/AbilityIds.html#abilityids-onFireOrc)
+'Afio' / [AbilityIds.onFireOrc](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-onFireOrc)
 
 **Members:**
 
@@ -14160,7 +14160,7 @@ public class AbilityDefinitionOnFireOrc extends AbilityDefinition
 public class AbilityDefinitionOnFireNightElf extends AbilityDefinition
 ```
 
-'Afin' / [AbilityIds.onFireNightElf](/stdlib/ref/_wurst/AbilityIds.html#abilityids-onFireNightElf)
+'Afin' / [AbilityIds.onFireNightElf](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-onFireNightElf)
 
 **Members:**
 
@@ -14172,7 +14172,7 @@ public class AbilityDefinitionOnFireNightElf extends AbilityDefinition
 public class AbilityDefinitionOnFireHuman extends AbilityDefinition
 ```
 
-'Afih' / [AbilityIds.onFireHuman](/stdlib/ref/_wurst/AbilityIds.html#abilityids-onFireHuman)
+'Afih' / [AbilityIds.onFireHuman](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-onFireHuman)
 
 **Members:**
 
@@ -14184,7 +14184,7 @@ public class AbilityDefinitionOnFireHuman extends AbilityDefinition
 public class AbilityDefinitionDrop1 extends AbilityDefinition
 ```
 
-'Sdro' / [AbilityIds.drop1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-drop1)
+'Sdro' / [AbilityIds.drop1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-drop1)
 
 **Members:**
 
@@ -14196,7 +14196,7 @@ public class AbilityDefinitionDrop1 extends AbilityDefinition
 public class AbilityDefinitionPassivePhoenixFireAndEgg extends AbilityDefinition
 ```
 
-'Ahpe' / [AbilityIds.passivePhoenixFireAndEgg](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passivePhoenixFireAndEgg)
+'Ahpe' / [AbilityIds.passivePhoenixFireAndEgg](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-passivePhoenixFireAndEgg)
 
 **Members:**
 
@@ -14208,7 +14208,7 @@ public class AbilityDefinitionPassivePhoenixFireAndEgg extends AbilityDefinition
 public class AbilityDefinitionPassiveHumanRiflemanPlusRangeRhri extends AbilityDefinition
 ```
 
-'Ahri' / [AbilityIds.passiveHumanRiflemanPlusRangeRhri](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveHumanRiflemanPlusRangeRhri)
+'Ahri' / [AbilityIds.passiveHumanRiflemanPlusRangeRhri](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-passiveHumanRiflemanPlusRangeRhri)
 
 **Members:**
 
@@ -14220,7 +14220,7 @@ public class AbilityDefinitionPassiveHumanRiflemanPlusRangeRhri extends AbilityD
 public class AbilityDefinitionShadowSight extends AbilityDefinition
 ```
 
-'Ashs' / [AbilityIds.shadowSight](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shadowSight)
+'Ashs' / [AbilityIds.shadowSight](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-shadowSight)
 
 **Members:**
 
@@ -14232,7 +14232,7 @@ public class AbilityDefinitionShadowSight extends AbilityDefinition
 public class AbilityDefinitionUltravision extends AbilityDefinition
 ```
 
-'Ault' / [AbilityIds.ultravision](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ultravision)
+'Ault' / [AbilityIds.ultravision](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ultravision)
 
 **Members:**
 
@@ -14244,7 +14244,7 @@ public class AbilityDefinitionUltravision extends AbilityDefinition
 public class AbilityDefinitionPassiveOrcGruntBerserkRobs extends AbilityDefinition
 ```
 
-'Aobs' / [AbilityIds.passiveOrcGruntBerserkRobs](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveOrcGruntBerserkRobs)
+'Aobs' / [AbilityIds.passiveOrcGruntBerserkRobs](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-passiveOrcGruntBerserkRobs)
 
 **Members:**
 
@@ -14256,7 +14256,7 @@ public class AbilityDefinitionPassiveOrcGruntBerserkRobs extends AbilityDefiniti
 public class AbilityDefinitionPassiveOrcBerserkersRobk extends AbilityDefinition
 ```
 
-'Aobk' / [AbilityIds.passiveOrcBerserkersRobk](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveOrcBerserkersRobk)
+'Aobk' / [AbilityIds.passiveOrcBerserkersRobk](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-passiveOrcBerserkersRobk)
 
 **Members:**
 
@@ -14268,7 +14268,7 @@ public class AbilityDefinitionPassiveOrcBerserkersRobk extends AbilityDefinition
 public class AbilityDefinitionFrostAttack12 extends AbilityDefinition
 ```
 
-'Afr2' / [AbilityIds.frostAttack12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-frostAttack12)
+'Afr2' / [AbilityIds.frostAttack12](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-frostAttack12)
 
 **Members:**
 
@@ -14280,7 +14280,7 @@ public class AbilityDefinitionFrostAttack12 extends AbilityDefinition
 public class AbilityDefinitionFrostBreathNewHasIcon extends AbilityDefinition
 ```
 
-'Afrc' / [AbilityIds.frostBreathNewHasIcon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-frostBreathNewHasIcon)
+'Afrc' / [AbilityIds.frostBreathNewHasIcon](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-frostBreathNewHasIcon)
 
 **Members:**
 
@@ -14292,7 +14292,7 @@ public class AbilityDefinitionFrostBreathNewHasIcon extends AbilityDefinition
 public class AbilityDefinitionFrostBreath extends AbilityDefinition
 ```
 
-'Afrb' / [AbilityIds.frostBreath](/stdlib/ref/_wurst/AbilityIds.html#abilityids-frostBreath)
+'Afrb' / [AbilityIds.frostBreath](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-frostBreath)
 
 **Members:**
 
@@ -14304,7 +14304,7 @@ public class AbilityDefinitionFrostBreath extends AbilityDefinition
 public class AbilityDefinitionFrostAttack extends AbilityDefinition
 ```
 
-'Afra' / [AbilityIds.frostAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-frostAttack)
+'Afra' / [AbilityIds.frostAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-frostAttack)
 
 **Members:**
 
@@ -14316,7 +14316,7 @@ public class AbilityDefinitionFrostAttack extends AbilityDefinition
 public class AbilityDefinitionFreezingBreath extends AbilityDefinition
 ```
 
-'Afrz' / [AbilityIds.freezingBreath](/stdlib/ref/_wurst/AbilityIds.html#abilityids-freezingBreath)
+'Afrz' / [AbilityIds.freezingBreath](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-freezingBreath)
 
 **Members:**
 
@@ -14328,7 +14328,7 @@ public class AbilityDefinitionFreezingBreath extends AbilityDefinition
 public class AbilityDefinitionSphereSoVLevel6 extends AbilityDefinition
 ```
 
-'Asp6' / [AbilityIds.sphereSoVLevel6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sphereSoVLevel6)
+'Asp6' / [AbilityIds.sphereSoVLevel6](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-sphereSoVLevel6)
 
 **Members:**
 
@@ -14340,7 +14340,7 @@ public class AbilityDefinitionSphereSoVLevel6 extends AbilityDefinition
 public class AbilityDefinitionSphereSoVLevel5 extends AbilityDefinition
 ```
 
-'Asp5' / [AbilityIds.sphereSoVLevel5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sphereSoVLevel5)
+'Asp5' / [AbilityIds.sphereSoVLevel5](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-sphereSoVLevel5)
 
 **Members:**
 
@@ -14352,7 +14352,7 @@ public class AbilityDefinitionSphereSoVLevel5 extends AbilityDefinition
 public class AbilityDefinitionSphereSoVLevel4 extends AbilityDefinition
 ```
 
-'Asp4' / [AbilityIds.sphereSoVLevel4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sphereSoVLevel4)
+'Asp4' / [AbilityIds.sphereSoVLevel4](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-sphereSoVLevel4)
 
 **Members:**
 
@@ -14364,7 +14364,7 @@ public class AbilityDefinitionSphereSoVLevel4 extends AbilityDefinition
 public class AbilityDefinitionSphereSoVLevel3 extends AbilityDefinition
 ```
 
-'Asp3' / [AbilityIds.sphereSoVLevel3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sphereSoVLevel3)
+'Asp3' / [AbilityIds.sphereSoVLevel3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-sphereSoVLevel3)
 
 **Members:**
 
@@ -14376,7 +14376,7 @@ public class AbilityDefinitionSphereSoVLevel3 extends AbilityDefinition
 public class AbilityDefinitionSphereSoVLevel2 extends AbilityDefinition
 ```
 
-'Asp2' / [AbilityIds.sphereSoVLevel2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sphereSoVLevel2)
+'Asp2' / [AbilityIds.sphereSoVLevel2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-sphereSoVLevel2)
 
 **Members:**
 
@@ -14388,7 +14388,7 @@ public class AbilityDefinitionSphereSoVLevel2 extends AbilityDefinition
 public class AbilityDefinitionSphereSoVLevel1 extends AbilityDefinition
 ```
 
-'Asp1' / [AbilityIds.sphereSoVLevel1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sphereSoVLevel1)
+'Asp1' / [AbilityIds.sphereSoVLevel1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-sphereSoVLevel1)
 
 **Members:**
 
@@ -14400,7 +14400,7 @@ public class AbilityDefinitionSphereSoVLevel1 extends AbilityDefinition
 public class AbilityDefinitionPassiveUndeadSkeletalMasteryRusm extends AbilityDefinition
 ```
 
-'Ausm' / [AbilityIds.passiveUndeadSkeletalMasteryRusm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveUndeadSkeletalMasteryRusm)
+'Ausm' / [AbilityIds.passiveUndeadSkeletalMasteryRusm](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-passiveUndeadSkeletalMasteryRusm)
 
 **Members:**
 
@@ -14412,7 +14412,7 @@ public class AbilityDefinitionPassiveUndeadSkeletalMasteryRusm extends AbilityDe
 public class AbilityDefinitionSpellSteal extends AbilityDefinition
 ```
 
-'Asps' / [AbilityIds.spellSteal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-spellSteal)
+'Asps' / [AbilityIds.spellSteal](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-spellSteal)
 
 **Members:**
 
@@ -14424,7 +14424,7 @@ public class AbilityDefinitionSpellSteal extends AbilityDefinition
 public class AbilityDefinitionSpikedBarricades extends AbilityDefinition
 ```
 
-'Aspi' / [AbilityIds.spikedBarricades](/stdlib/ref/_wurst/AbilityIds.html#abilityids-spikedBarricades)
+'Aspi' / [AbilityIds.spikedBarricades](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-spikedBarricades)
 
 **Members:**
 
@@ -14436,7 +14436,7 @@ public class AbilityDefinitionSpikedBarricades extends AbilityDefinition
 public class AbilityDefinitionSphere extends AbilityDefinition
 ```
 
-'Asph' / [AbilityIds.sphere](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sphere)
+'Asph' / [AbilityIds.sphere](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-sphere)
 
 **Members:**
 
@@ -14448,7 +14448,7 @@ public class AbilityDefinitionSphere extends AbilityDefinition
 public class AbilityDefinitionMoonGlaiveNoResearch extends AbilityDefinition
 ```
 
-'Amgr' / [AbilityIds.moonGlaiveNoResearch](/stdlib/ref/_wurst/AbilityIds.html#abilityids-moonGlaiveNoResearch)
+'Amgr' / [AbilityIds.moonGlaiveNoResearch](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-moonGlaiveNoResearch)
 
 **Members:**
 
@@ -14460,7 +14460,7 @@ public class AbilityDefinitionMoonGlaiveNoResearch extends AbilityDefinition
 public class AbilityDefinitionMoonGlaive extends AbilityDefinition
 ```
 
-'Amgl' / [AbilityIds.moonGlaive](/stdlib/ref/_wurst/AbilityIds.html#abilityids-moonGlaive)
+'Amgl' / [AbilityIds.moonGlaive](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-moonGlaive)
 
 **Members:**
 
@@ -14472,7 +14472,7 @@ public class AbilityDefinitionMoonGlaive extends AbilityDefinition
 public class AbilityDefinitionBouncingMissileFilter extends AbilityDefinition
 ```
 
-'Amgi' / [AbilityIds.bouncingMissileFilter](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bouncingMissileFilter)
+'Amgi' / [AbilityIds.bouncingMissileFilter](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-bouncingMissileFilter)
 
 **Members:**
 
@@ -14484,7 +14484,7 @@ public class AbilityDefinitionBouncingMissileFilter extends AbilityDefinition
 public class AbilityDefinitionStormHammers extends AbilityDefinition
 ```
 
-'Asth' / [AbilityIds.stormHammers](/stdlib/ref/_wurst/AbilityIds.html#abilityids-stormHammers)
+'Asth' / [AbilityIds.stormHammers](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-stormHammers)
 
 **Members:**
 
@@ -14496,7 +14496,7 @@ public class AbilityDefinitionStormHammers extends AbilityDefinition
 public class AbilityDefinitionStandDown extends AbilityDefinition
 ```
 
-'Astd' / [AbilityIds.standDown](/stdlib/ref/_wurst/AbilityIds.html#abilityids-standDown)
+'Astd' / [AbilityIds.standDown](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-standDown)
 
 **Members:**
 
@@ -14508,7 +14508,7 @@ public class AbilityDefinitionStandDown extends AbilityDefinition
 public class AbilityDefinitionSellUnit extends AbilityDefinition
 ```
 
-'Asud' / [AbilityIds.sellUnitDynamic](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sellUnitDynamic)
+'Asud' / [AbilityIds.sellUnitDynamic](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-sellUnitDynamic)
 
 **Members:**
 
@@ -14520,7 +14520,7 @@ public class AbilityDefinitionSellUnit extends AbilityDefinition
 public class AbilityDefinitionPassiveOrcReinforcedDefenseRorb extends AbilityDefinition
 ```
 
-'Aorb' / [AbilityIds.passiveOrcReinforcedDefenseRorb](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveOrcReinforcedDefenseRorb)
+'Aorb' / [AbilityIds.passiveOrcReinforcedDefenseRorb](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-passiveOrcReinforcedDefenseRorb)
 
 **Members:**
 
@@ -14532,7 +14532,7 @@ public class AbilityDefinitionPassiveOrcReinforcedDefenseRorb extends AbilityDef
 public class AbilityDefinitionFlagOrcBattleStandard extends AbilityDefinition
 ```
 
-'AIfx' / [AbilityIds.flagOrcBattleStandard](/stdlib/ref/_wurst/AbilityIds.html#abilityids-flagOrcBattleStandard)
+'AIfx' / [AbilityIds.flagOrcBattleStandard](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-flagOrcBattleStandard)
 
 **Members:**
 
@@ -14544,7 +14544,7 @@ public class AbilityDefinitionFlagOrcBattleStandard extends AbilityDefinition
 public class AbilityDefinitionMove extends AbilityDefinition
 ```
 
-'Amov' / [AbilityIds.move](/stdlib/ref/_wurst/AbilityIds.html#abilityids-move)
+'Amov' / [AbilityIds.move](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-move)
 
 **Members:**
 
@@ -14556,7 +14556,7 @@ public class AbilityDefinitionMove extends AbilityDefinition
 public class AbilityDefinitionPassiveOrcSpikedBarricadeRosp extends AbilityDefinition
 ```
 
-'Aosp' / [AbilityIds.passiveOrcSpikedBarricadeRosp](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveOrcSpikedBarricadeRosp)
+'Aosp' / [AbilityIds.passiveOrcSpikedBarricadeRosp](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-passiveOrcSpikedBarricadeRosp)
 
 **Members:**
 
@@ -14568,7 +14568,7 @@ public class AbilityDefinitionPassiveOrcSpikedBarricadeRosp extends AbilityDefin
 public class AbilityDefinitionPassiveOrcTrollRegenerationRotr extends AbilityDefinition
 ```
 
-'Aotr' / [AbilityIds.passiveOrcTrollRegenerationRotr](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveOrcTrollRegenerationRotr)
+'Aotr' / [AbilityIds.passiveOrcTrollRegenerationRotr](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-passiveOrcTrollRegenerationRotr)
 
 **Members:**
 
@@ -14580,7 +14580,7 @@ public class AbilityDefinitionPassiveOrcTrollRegenerationRotr extends AbilityDef
 public class AbilityDefinitionPassiveOrcGhostIconOnlyOrcAethUnused extends AbilityDefinition
 ```
 
-'Aoth' / [AbilityIds.passiveOrcGhostIconOnlyOrcAethUnused](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveOrcGhostIconOnlyOrcAethUnused)
+'Aoth' / [AbilityIds.passiveOrcGhostIconOnlyOrcAethUnused](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-passiveOrcGhostIconOnlyOrcAethUnused)
 
 **Members:**
 
@@ -14592,7 +14592,7 @@ public class AbilityDefinitionPassiveOrcGhostIconOnlyOrcAethUnused extends Abili
 public class AbilityDefinitionImpalingBolt extends AbilityDefinition
 ```
 
-'Aimp' / [AbilityIds.impalingBolt](/stdlib/ref/_wurst/AbilityIds.html#abilityids-impalingBolt)
+'Aimp' / [AbilityIds.impalingBolt](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-impalingBolt)
 
 **Members:**
 
@@ -14604,7 +14604,7 @@ public class AbilityDefinitionImpalingBolt extends AbilityDefinition
 public class AbilityDefinitionDropPilot extends AbilityDefinition
 ```
 
-'Atdp' / [AbilityIds.dropPilot](/stdlib/ref/_wurst/AbilityIds.html#abilityids-dropPilot)
+'Atdp' / [AbilityIds.dropPilot](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-dropPilot)
 
 **Members:**
 
@@ -14616,7 +14616,7 @@ public class AbilityDefinitionDropPilot extends AbilityDefinition
 public class AbilityDefinitionItemRandomItem extends AbilityDefinition
 ```
 
-'AIri' / [AbilityIds.itemRandomItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRandomItem)
+'AIri' / [AbilityIds.itemRandomItem](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemRandomItem)
 
 **Members:**
 
@@ -14628,7 +14628,7 @@ public class AbilityDefinitionItemRandomItem extends AbilityDefinition
 public class AbilityDefinitionPassiveNightelfImprovedBowsReib extends AbilityDefinition
 ```
 
-'Aeib' / [AbilityIds.passiveNightelfImprovedBowsReib](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveNightelfImprovedBowsReib)
+'Aeib' / [AbilityIds.passiveNightelfImprovedBowsReib](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-passiveNightelfImprovedBowsReib)
 
 **Members:**
 
@@ -14640,7 +14640,7 @@ public class AbilityDefinitionPassiveNightelfImprovedBowsReib extends AbilityDef
 public class AbilityDefinitionRuneOfRebirth extends AbilityDefinition
 ```
 
-'AIrb' / [AbilityIds.runeOfRebirth](/stdlib/ref/_wurst/AbilityIds.html#abilityids-runeOfRebirth)
+'AIrb' / [AbilityIds.runeOfRebirth](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-runeOfRebirth)
 
 **Members:**
 
@@ -14652,7 +14652,7 @@ public class AbilityDefinitionRuneOfRebirth extends AbilityDefinition
 public class AbilityDefinitionReinforcedBurrows extends AbilityDefinition
 ```
 
-'Arbr' / [AbilityIds.reinforcedBurrows](/stdlib/ref/_wurst/AbilityIds.html#abilityids-reinforcedBurrows)
+'Arbr' / [AbilityIds.reinforcedBurrows](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-reinforcedBurrows)
 
 **Members:**
 
@@ -14664,7 +14664,7 @@ public class AbilityDefinitionReinforcedBurrows extends AbilityDefinition
 public class AbilityDefinitionPassiveSimple extends AbilityDefinition
 ```
 
-'APai' / [AbilityIds.passiveSimple](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveSimple)
+'APai' / [AbilityIds.passiveSimple](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-passiveSimple)
 
 **Members:**
 
@@ -14676,7 +14676,7 @@ public class AbilityDefinitionPassiveSimple extends AbilityDefinition
 public class AbilityDefinitionItemInvisGreater extends AbilityDefinition
 ```
 
-'AIv2' / [AbilityIds.itemInvisGreater](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemInvisGreater)
+'AIv2' / [AbilityIds.itemInvisGreater](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemInvisGreater)
 
 **Members:**
 
@@ -14688,7 +14688,7 @@ public class AbilityDefinitionItemInvisGreater extends AbilityDefinition
 public class AbilityDefinitionItemInvisLesser extends AbilityDefinition
 ```
 
-'AIv1' / [AbilityIds.itemInvisLesser](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemInvisLesser)
+'AIv1' / [AbilityIds.itemInvisLesser](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemInvisLesser)
 
 **Members:**
 
@@ -14700,7 +14700,7 @@ public class AbilityDefinitionItemInvisLesser extends AbilityDefinition
 public class AbilityDefinitionReassignableAttributeBonusPlus1 extends AbilityDefinition
 ```
 
-'AIvm' / [AbilityIds.reassignableAttributeBonusPlus1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-reassignableAttributeBonusPlus1)
+'AIvm' / [AbilityIds.reassignableAttributeBonusPlus1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-reassignableAttributeBonusPlus1)
 
 **Members:**
 
@@ -14712,7 +14712,7 @@ public class AbilityDefinitionReassignableAttributeBonusPlus1 extends AbilityDef
 public class AbilityDefinitionItemUltravision extends AbilityDefinition
 ```
 
-'AIuv' / [AbilityIds.itemUltravision](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemUltravision)
+'AIuv' / [AbilityIds.itemUltravision](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemUltravision)
 
 **Members:**
 
@@ -14724,7 +14724,7 @@ public class AbilityDefinitionItemUltravision extends AbilityDefinition
 public class AbilityDefinitionRetrain extends AbilityDefinition
 ```
 
-'Aret' / [AbilityIds.retrain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-retrain)
+'Aret' / [AbilityIds.retrain](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-retrain)
 
 **Members:**
 
@@ -14736,7 +14736,7 @@ public class AbilityDefinitionRetrain extends AbilityDefinition
 public class AbilityDefinitionPassiveNightelfMarksmanshipRemk extends AbilityDefinition
 ```
 
-'Aemk' / [AbilityIds.passiveNightelfMarksmanshipRemk](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveNightelfMarksmanshipRemk)
+'Aemk' / [AbilityIds.passiveNightelfMarksmanshipRemk](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-passiveNightelfMarksmanshipRemk)
 
 **Members:**
 
@@ -14748,7 +14748,7 @@ public class AbilityDefinitionPassiveNightelfMarksmanshipRemk extends AbilityDef
 public class AbilityDefinitionLoadPilot extends AbilityDefinition
 ```
 
-'Atlp' / [AbilityIds.loadPilot](/stdlib/ref/_wurst/AbilityIds.html#abilityids-loadPilot)
+'Atlp' / [AbilityIds.loadPilot](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-loadPilot)
 
 **Members:**
 
@@ -14760,7 +14760,7 @@ public class AbilityDefinitionLoadPilot extends AbilityDefinition
 public class AbilityDefinitionEthereal extends AbilityDefinition
 ```
 
-'Aetl' / [AbilityIds.ethereal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ethereal)
+'Aetl' / [AbilityIds.ethereal](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ethereal)
 
 **Members:**
 
@@ -14772,7 +14772,7 @@ public class AbilityDefinitionEthereal extends AbilityDefinition
 public class AbilityDefinitionInvulnerable extends AbilityDefinition
 ```
 
-'Avul' / [AbilityIds.invulnerable](/stdlib/ref/_wurst/AbilityIds.html#abilityids-invulnerable)
+'Avul' / [AbilityIds.invulnerable](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-invulnerable)
 
 **Members:**
 
@@ -14784,7 +14784,7 @@ public class AbilityDefinitionInvulnerable extends AbilityDefinition
 public class AbilityDefinitionGyrocopterBombs extends AbilityDefinition
 ```
 
-'Agyb' / [AbilityIds.gyrocopterBombs](/stdlib/ref/_wurst/AbilityIds.html#abilityids-gyrocopterBombs)
+'Agyb' / [AbilityIds.gyrocopterBombs](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-gyrocopterBombs)
 
 **Members:**
 
@@ -14796,7 +14796,7 @@ public class AbilityDefinitionGyrocopterBombs extends AbilityDefinition
 public class AbilityDefinitionRevenge extends AbilityDefinition
 ```
 
-'Arng' / [AbilityIds.revenge](/stdlib/ref/_wurst/AbilityIds.html#abilityids-revenge)
+'Arng' / [AbilityIds.revenge](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-revenge)
 
 **Members:**
 
@@ -14808,7 +14808,7 @@ public class AbilityDefinitionRevenge extends AbilityDefinition
 public class AbilityDefinitionAlarm extends AbilityDefinition
 ```
 
-'Aalr' / [AbilityIds.alarm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-alarm)
+'Aalr' / [AbilityIds.alarm](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-alarm)
 
 **Members:**
 
@@ -14820,7 +14820,7 @@ public class AbilityDefinitionAlarm extends AbilityDefinition
 public class AbilityDefinitionRally extends AbilityDefinition
 ```
 
-'ARal' / [AbilityIds.rallyPoint](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rallyPoint)
+'ARal' / [AbilityIds.rallyPoint](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-rallyPoint)
 
 **Members:**
 
@@ -14832,7 +14832,7 @@ public class AbilityDefinitionRally extends AbilityDefinition
 public class AbilityDefinitionShadowHunterVoodooo extends AbilityDefinition
 ```
 
-'AOvd' / [AbilityIds.bigBadVoodoo](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bigBadVoodoo)
+'AOvd' / [AbilityIds.bigBadVoodoo](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-bigBadVoodoo)
 
 **Members:**
 
@@ -14844,7 +14844,7 @@ public class AbilityDefinitionShadowHunterVoodooo extends AbilityDefinition
 public class AbilityDefinitionAcolyteHarvest extends AbilityDefinition
 ```
 
-'Aaha' / [AbilityIds.gather2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-gather2)
+'Aaha' / [AbilityIds.gather2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-gather2)
 
 **Members:**
 
@@ -14856,7 +14856,7 @@ public class AbilityDefinitionAcolyteHarvest extends AbilityDefinition
 public class AbilityDefinitionAwaken extends AbilityDefinition
 ```
 
-'Aawa' / [AbilityIds.awakenHero](/stdlib/ref/_wurst/AbilityIds.html#abilityids-awakenHero)
+'Aawa' / [AbilityIds.awakenHero](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-awakenHero)
 
 **Members:**
 
@@ -14868,7 +14868,7 @@ public class AbilityDefinitionAwaken extends AbilityDefinition
 public class AbilityDefinitionBuildNeutral extends AbilityDefinition
 ```
 
-'ANbu' / [AbilityIds.neutralBuild](/stdlib/ref/_wurst/AbilityIds.html#abilityids-neutralBuild)
+'ANbu' / [AbilityIds.neutralBuild](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-neutralBuild)
 
 **Members:**
 
@@ -14880,7 +14880,7 @@ public class AbilityDefinitionBuildNeutral extends AbilityDefinition
 public class AbilityDefinitionBuildHuman extends AbilityDefinition
 ```
 
-'AHbu' / [AbilityIds.humanBuild](/stdlib/ref/_wurst/AbilityIds.html#abilityids-humanBuild)
+'AHbu' / [AbilityIds.humanBuild](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-humanBuild)
 
 **Members:**
 
@@ -14892,7 +14892,7 @@ public class AbilityDefinitionBuildHuman extends AbilityDefinition
 public class AbilityDefinitionBuildOrc extends AbilityDefinition
 ```
 
-'AObu' / [AbilityIds.orcBuild](/stdlib/ref/_wurst/AbilityIds.html#abilityids-orcBuild)
+'AObu' / [AbilityIds.orcBuild](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-orcBuild)
 
 **Members:**
 
@@ -14904,7 +14904,7 @@ public class AbilityDefinitionBuildOrc extends AbilityDefinition
 public class AbilityDefinitionBuildNightElf extends AbilityDefinition
 ```
 
-'AEbu' / [AbilityIds.nightElfBuild](/stdlib/ref/_wurst/AbilityIds.html#abilityids-nightElfBuild)
+'AEbu' / [AbilityIds.nightElfBuild](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-nightElfBuild)
 
 **Members:**
 
@@ -14916,7 +14916,7 @@ public class AbilityDefinitionBuildNightElf extends AbilityDefinition
 public class AbilityDefinitionBuildNaga extends AbilityDefinition
 ```
 
-'AGbu' / [AbilityIds.nagaBuild](/stdlib/ref/_wurst/AbilityIds.html#abilityids-nagaBuild)
+'AGbu' / [AbilityIds.nagaBuild](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-nagaBuild)
 
 **Members:**
 
@@ -14928,7 +14928,7 @@ public class AbilityDefinitionBuildNaga extends AbilityDefinition
 public class AbilityDefinitionCreepSleep extends AbilityDefinition
 ```
 
-'ACsp' / [AbilityIds.sleep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sleep)
+'ACsp' / [AbilityIds.sleep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-sleep)
 
 **Members:**
 
@@ -14940,7 +14940,7 @@ public class AbilityDefinitionCreepSleep extends AbilityDefinition
 public class AbilityDefinitionDropInstant extends AbilityDefinition
 ```
 
-'Adri' / [AbilityIds.unloadInstant](/stdlib/ref/_wurst/AbilityIds.html#abilityids-unloadInstant)
+'Adri' / [AbilityIds.unloadInstant](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-unloadInstant)
 
 **Members:**
 
@@ -14952,7 +14952,7 @@ public class AbilityDefinitionDropInstant extends AbilityDefinition
 public class AbilityDefinitionDrop extends AbilityDefinition
 ```
 
-'Adro' / [AbilityIds.unload](/stdlib/ref/_wurst/AbilityIds.html#abilityids-unload)
+'Adro' / [AbilityIds.unload](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-unload)
 
 **Members:**
 
@@ -14964,7 +14964,7 @@ public class AbilityDefinitionDrop extends AbilityDefinition
 public class AbilityDefinitionMeatDrop extends AbilityDefinition
 ```
 
-'Amed' / [AbilityIds.dropCorpse](/stdlib/ref/_wurst/AbilityIds.html#abilityids-dropCorpse)
+'Amed' / [AbilityIds.dropCorpse](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-dropCorpse)
 
 **Members:**
 
@@ -14976,7 +14976,7 @@ public class AbilityDefinitionMeatDrop extends AbilityDefinition
 public class AbilityDefinitionMeatLoad extends AbilityDefinition
 ```
 
-'Amel' / [AbilityIds.getCorpse](/stdlib/ref/_wurst/AbilityIds.html#abilityids-getCorpse)
+'Amel' / [AbilityIds.getCorpse](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-getCorpse)
 
 **Members:**
 
@@ -14988,7 +14988,7 @@ public class AbilityDefinitionMeatLoad extends AbilityDefinition
 public class AbilityDefinitionMilitiaConversion extends AbilityDefinition
 ```
 
-'Amic' / [AbilityIds.callToArms](/stdlib/ref/_wurst/AbilityIds.html#abilityids-callToArms)
+'Amic' / [AbilityIds.callToArms](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-callToArms)
 
 **Members:**
 
@@ -15000,7 +15000,7 @@ public class AbilityDefinitionMilitiaConversion extends AbilityDefinition
 public class AbilityDefinitionPurchaseItem extends AbilityDefinition
 ```
 
-'Apit' / [AbilityIds.shopPurchaseItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shopPurchaseItem)
+'Apit' / [AbilityIds.shopPurchaseItem](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-shopPurchaseItem)
 
 **Members:**
 
@@ -15012,7 +15012,7 @@ public class AbilityDefinitionPurchaseItem extends AbilityDefinition
 public class AbilityDefinitionRevive extends AbilityDefinition
 ```
 
-'Arev' / [AbilityIds.reviveHero](/stdlib/ref/_wurst/AbilityIds.html#abilityids-reviveHero)
+'Arev' / [AbilityIds.reviveHero](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-reviveHero)
 
 **Members:**
 
@@ -15024,7 +15024,7 @@ public class AbilityDefinitionRevive extends AbilityDefinition
 public class AbilityDefinitionSacrificeSacrificialPit extends AbilityDefinition
 ```
 
-'Asac' / [AbilityIds.sacrifice1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sacrifice1)
+'Asac' / [AbilityIds.sacrifice1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-sacrifice1)
 
 **Members:**
 
@@ -15036,7 +15036,7 @@ public class AbilityDefinitionSacrificeSacrificialPit extends AbilityDefinition
 public class AbilityDefinitionSacrificeAcolyte extends AbilityDefinition
 ```
 
-'Alam' / [AbilityIds.sacrifice](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sacrifice)
+'Alam' / [AbilityIds.sacrifice](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-sacrifice)
 
 **Members:**
 
@@ -15048,7 +15048,7 @@ public class AbilityDefinitionSacrificeAcolyte extends AbilityDefinition
 public class AbilityDefinitionSellItem extends AbilityDefinition
 ```
 
-'Asid' / [AbilityIds.sellItems](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sellItems)
+'Asid' / [AbilityIds.sellItems](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-sellItems)
 
 **Members:**
 
@@ -15060,7 +15060,7 @@ public class AbilityDefinitionSellItem extends AbilityDefinition
 public class AbilityDefinitionTreeOfLifeForAttachingArt extends AbilityDefinition
 ```
 
-'Atol' / [AbilityIds.treeofLifeupgradeability](/stdlib/ref/_wurst/AbilityIds.html#abilityids-treeofLifeupgradeability)
+'Atol' / [AbilityIds.treeofLifeupgradeability](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-treeofLifeupgradeability)
 
 **Members:**
 
@@ -15072,7 +15072,7 @@ public class AbilityDefinitionTreeOfLifeForAttachingArt extends AbilityDefinitio
 public class AbilityDefinitionFlag extends AbilityDefinition
 ```
 
-'AIfl' / [AbilityIds.itemCaptureTheFlag](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCaptureTheFlag)
+'AIfl' / [AbilityIds.itemCaptureTheFlag](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCaptureTheFlag)
 
 **Members:**
 
@@ -15084,7 +15084,7 @@ public class AbilityDefinitionFlag extends AbilityDefinition
 public class AbilityDefinitionFlagHuman extends AbilityDefinition
 ```
 
-'AIfm' / [AbilityIds.itemCaptureTheFlag1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCaptureTheFlag1)
+'AIfm' / [AbilityIds.itemCaptureTheFlag1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCaptureTheFlag1)
 
 **Members:**
 
@@ -15096,7 +15096,7 @@ public class AbilityDefinitionFlagHuman extends AbilityDefinition
 public class AbilityDefinitionFlagOrc extends AbilityDefinition
 ```
 
-'AIfo' / [AbilityIds.itemCaptureTheFlag3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCaptureTheFlag3)
+'AIfo' / [AbilityIds.itemCaptureTheFlag3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCaptureTheFlag3)
 
 **Members:**
 
@@ -15108,7 +15108,7 @@ public class AbilityDefinitionFlagOrc extends AbilityDefinition
 public class AbilityDefinitionFlagNightElf extends AbilityDefinition
 ```
 
-'AIfn' / [AbilityIds.itemCaptureTheFlag2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCaptureTheFlag2)
+'AIfn' / [AbilityIds.itemCaptureTheFlag2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCaptureTheFlag2)
 
 **Members:**
 
@@ -15120,7 +15120,7 @@ public class AbilityDefinitionFlagNightElf extends AbilityDefinition
 public class AbilityDefinitionFlagUndead extends AbilityDefinition
 ```
 
-'AIfe' / [AbilityIds.itemCaptureTheFlag4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCaptureTheFlag4)
+'AIfe' / [AbilityIds.itemCaptureTheFlag4](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCaptureTheFlag4)
 
 **Members:**
 
@@ -15132,7 +15132,7 @@ public class AbilityDefinitionFlagUndead extends AbilityDefinition
 public class AbilityDefinitionSoulTrap extends AbilityDefinition
 ```
 
-'AIso' / [AbilityIds.itemSoulTheft](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSoulTheft)
+'AIso' / [AbilityIds.itemSoulTheft](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSoulTheft)
 
 **Members:**
 
@@ -15144,7 +15144,7 @@ public class AbilityDefinitionSoulTrap extends AbilityDefinition
 public class AbilityDefinitionSoulPossession extends AbilityDefinition
 ```
 
-'Asou' / [AbilityIds.itemSoulPossession](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSoulPossession)
+'Asou' / [AbilityIds.itemSoulPossession](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSoulPossession)
 
 **Members:**
 
@@ -15156,7 +15156,7 @@ public class AbilityDefinitionSoulPossession extends AbilityDefinition
 public class AbilityDefinitionItemDamageAoe extends AbilityDefinition
 ```
 
-'AIdm' / [AbilityIds.itemAreatreewalldamage](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAreatreewalldamage)
+'AIdm' / [AbilityIds.itemAreatreewalldamage](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAreatreewalldamage)
 
 **Members:**
 
@@ -15168,7 +15168,7 @@ public class AbilityDefinitionItemDamageAoe extends AbilityDefinition
 public class AbilityDefinitionItemInvulNormal extends AbilityDefinition
 ```
 
-'AIvu' / [AbilityIds.itemTemporaryInvulnerability](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemTemporaryInvulnerability)
+'AIvu' / [AbilityIds.itemTemporaryInvulnerability](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemTemporaryInvulnerability)
 
 **Members:**
 
@@ -15183,7 +15183,7 @@ public class AbilityDefinitionItemInvulNormal extends AbilityDefinition
 public class AbilityDefinitionItemRitualDaggerInstant extends AbilityDefinition
 ```
 
-'AIdg' / [AbilityIds.ritualDaggerInstantHeal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ritualDaggerInstantHeal)
+'AIdg' / [AbilityIds.ritualDaggerInstantHeal](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ritualDaggerInstantHeal)
 
 **Members:**
 
@@ -15208,7 +15208,7 @@ public class AbilityDefinitionItemRitualDaggerInstant extends AbilityDefinition
 public class AbilityDefinitionItemRitualDaggerRegen extends AbilityDefinition
 ```
 
-'AIg2' / [AbilityIds.ritualDaggerRegenerate](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ritualDaggerRegenerate)
+'AIg2' / [AbilityIds.ritualDaggerRegenerate](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ritualDaggerRegenerate)
 
 **Members:**
 
@@ -15233,7 +15233,7 @@ public class AbilityDefinitionItemRitualDaggerRegen extends AbilityDefinition
 public class AbilityDefinitionSlow2 extends AbilityDefinition
 ```
 
-'AIno' / [AbilityIds.itemOrbOfVenom](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemOrbOfVenom)
+'AIno' / [AbilityIds.itemOrbOfVenom](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemOrbOfVenom)
 
 **Members:**
 
@@ -15251,7 +15251,7 @@ public class AbilityDefinitionSlow2 extends AbilityDefinition
 public class AbilityDefinitionDeathKnightAnimateDead1 extends AbilityDefinition
 ```
 
-'AUa2' / [AbilityIds.animateDeadDk](/stdlib/ref/_wurst/AbilityIds.html#abilityids-animateDeadDk)
+'AUa2' / [AbilityIds.animateDeadDk](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-animateDeadDk)
 
 **Members:**
 
@@ -15269,7 +15269,7 @@ public class AbilityDefinitionDeathKnightAnimateDead1 extends AbilityDefinition
 public class AbilityDefinitionResistantSkinCreep extends AbilityDefinition
 ```
 
-'ACrk' / [AbilityIds.resistantSkinCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-resistantSkinCreep)
+'ACrk' / [AbilityIds.resistantSkinCreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-resistantSkinCreep)
 
 **Members:**
 
@@ -15281,7 +15281,7 @@ public class AbilityDefinitionResistantSkinCreep extends AbilityDefinition
 public class AbilityDefinitionResistantSkin31PosCreep extends AbilityDefinition
 ```
 
-'ACsk' / [AbilityIds.resistantSkin31PosCreep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-resistantSkin31PosCreep)
+'ACsk' / [AbilityIds.resistantSkin31PosCreep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-resistantSkin31PosCreep)
 
 **Members:**
 
@@ -15293,7 +15293,7 @@ public class AbilityDefinitionResistantSkin31PosCreep extends AbilityDefinition
 public class AbilityDefinitionTankTurret extends AbilityDefinition
 ```
 
-'Attu' / [AbilityIds.tankTurret](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tankTurret)
+'Attu' / [AbilityIds.tankTurret](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-tankTurret)
 
 **Members:**
 
@@ -15305,7 +15305,7 @@ public class AbilityDefinitionTankTurret extends AbilityDefinition
 public class AbilityDefinitionFirelordIncinerate1 extends AbilityDefinition
 ```
 
-'ANia' / [AbilityIds.firelordIncinerate1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-firelordIncinerate1)
+'ANia' / [AbilityIds.firelordIncinerate1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-firelordIncinerate1)
 
 **Members:**
 
@@ -15317,7 +15317,7 @@ public class AbilityDefinitionFirelordIncinerate1 extends AbilityDefinition
 public class AbilityDefinitionPassiveNightelfWellSpringRews extends AbilityDefinition
 ```
 
-'Aews' / [AbilityIds.passiveNightelfWellSpringRews](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveNightelfWellSpringRews)
+'Aews' / [AbilityIds.passiveNightelfWellSpringRews](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-passiveNightelfWellSpringRews)
 
 **Members:**
 
@@ -15329,7 +15329,7 @@ public class AbilityDefinitionPassiveNightelfWellSpringRews extends AbilityDefin
 public class AbilityDefinitionTornadoWander extends AbilityDefinition
 ```
 
-'Atwa' / [AbilityIds.tornadoWander](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tornadoWander)
+'Atwa' / [AbilityIds.tornadoWander](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-tornadoWander)
 
 **Members:**
 
@@ -15341,7 +15341,7 @@ public class AbilityDefinitionTornadoWander extends AbilityDefinition
 public class AbilityDefinitionResistantSkin extends AbilityDefinition
 ```
 
-'Arsk' / [AbilityIds.resistantSkin](/stdlib/ref/_wurst/AbilityIds.html#abilityids-resistantSkin)
+'Arsk' / [AbilityIds.resistantSkin](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-resistantSkin)
 
 **Members:**
 
@@ -15353,7 +15353,7 @@ public class AbilityDefinitionResistantSkin extends AbilityDefinition
 public class AbilityDefinitionBuildUndead extends AbilityDefinition
 ```
 
-'AUbu' / [AbilityIds.undeadBuild](/stdlib/ref/_wurst/AbilityIds.html#abilityids-undeadBuild)
+'AUbu' / [AbilityIds.undeadBuild](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-undeadBuild)
 
 **Members:**
 
@@ -15365,7 +15365,7 @@ public class AbilityDefinitionBuildUndead extends AbilityDefinition
 public class AbilityDefinitionAttack extends AbilityDefinition
 ```
 
-'Aatk' / [AbilityIds.attack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attack)
+'Aatk' / [AbilityIds.attack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-attack)
 
 **Members:**
 
@@ -15377,7 +15377,7 @@ public class AbilityDefinitionAttack extends AbilityDefinition
 public class AbilityDefinitionPassiveHumanAnimalBreedingRhan extends AbilityDefinition
 ```
 
-'Ahan' / [AbilityIds.passiveHumanAnimalBreedingRhan](/stdlib/ref/_wurst/AbilityIds.html#abilityids-passiveHumanAnimalBreedingRhan)
+'Ahan' / [AbilityIds.passiveHumanAnimalBreedingRhan](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-passiveHumanAnimalBreedingRhan)
 
 **Members:**
 
@@ -15389,7 +15389,7 @@ public class AbilityDefinitionPassiveHumanAnimalBreedingRhan extends AbilityDefi
 public class AbilityDefinitionHero extends AbilityDefinition
 ```
 
-'AHer' / [AbilityIds.hero](/stdlib/ref/_wurst/AbilityIds.html#abilityids-hero)
+'AHer' / [AbilityIds.hero](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-hero)
 
 **Members:**
 
@@ -15401,7 +15401,7 @@ public class AbilityDefinitionHero extends AbilityDefinition
 public class AbilityDefinitionWander extends AbilityDefinition
 ```
 
-'Awan' / [AbilityIds.wander](/stdlib/ref/_wurst/AbilityIds.html#abilityids-wander)
+'Awan' / [AbilityIds.wander](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-wander)
 
 **Members:**
 
@@ -15413,7 +15413,7 @@ public class AbilityDefinitionWander extends AbilityDefinition
 public class AbilityDefinitionLocust extends AbilityDefinition
 ```
 
-'Aloc' / [AbilityIds.locust](/stdlib/ref/_wurst/AbilityIds.html#abilityids-locust)
+'Aloc' / [AbilityIds.locust](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-locust)
 
 **Members:**
 
@@ -15425,7 +15425,7 @@ public class AbilityDefinitionLocust extends AbilityDefinition
 public class AbilityDefinitionSpellShield extends AbilityDefinition
 ```
 
-'ANss' / [AbilityIds.spellShield](/stdlib/ref/_wurst/AbilityIds.html#abilityids-spellShield)
+'ANss' / [AbilityIds.spellShield](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-spellShield)
 
 **Members:**
 
@@ -15437,7 +15437,7 @@ public class AbilityDefinitionSpellShield extends AbilityDefinition
 public class AbilityDefinitionAgilityBonusPlus12 extends AbilityDefinition
 ```
 
-'AA12' / [AbilityIds.agilityBonusPlus12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-agilityBonusPlus12)
+'AA12' / [AbilityIds.agilityBonusPlus12](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-agilityBonusPlus12)
 
 **Members:**
 
@@ -15457,7 +15457,7 @@ public class AbilityDefinitionAgilityBonusPlus12 extends AbilityDefinition
 public class AbilityDefinitionItemArmorCorrupt5 extends AbilityDefinition
 ```
 
-'AACe' / [AbilityIds.itemArmorCorrupt5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorCorrupt5)
+'AACe' / [AbilityIds.itemArmorCorrupt5](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemArmorCorrupt5)
 
 **Members:**
 
@@ -15475,7 +15475,7 @@ public class AbilityDefinitionItemArmorCorrupt5 extends AbilityDefinition
 public class AbilityDefinitionItemArmorCorrupt2 extends AbilityDefinition
 ```
 
-'AACq' / [AbilityIds.itemArmorCorrupt2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorCorrupt2)
+'AACq' / [AbilityIds.itemArmorCorrupt2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemArmorCorrupt2)
 
 **Members:**
 
@@ -15493,7 +15493,7 @@ public class AbilityDefinitionItemArmorCorrupt2 extends AbilityDefinition
 public class AbilityDefinitionItemArmorCorrupt3 extends AbilityDefinition
 ```
 
-'AACw' / [AbilityIds.itemArmorCorrupt3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorCorrupt3)
+'AACw' / [AbilityIds.itemArmorCorrupt3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemArmorCorrupt3)
 
 **Members:**
 
@@ -15511,7 +15511,7 @@ public class AbilityDefinitionItemArmorCorrupt3 extends AbilityDefinition
 public class AbilityDefinitionItemSpellDamage8 extends AbilityDefinition
 ```
 
-'AADe' / [AbilityIds.itemSpellDamage8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellDamage8)
+'AADe' / [AbilityIds.itemSpellDamage8](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellDamage8)
 
 **Members:**
 
@@ -15529,7 +15529,7 @@ public class AbilityDefinitionItemSpellDamage8 extends AbilityDefinition
 public class AbilityDefinitionItemSpellDamage7 extends AbilityDefinition
 ```
 
-'AADi' / [AbilityIds.itemSpellDamage7](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellDamage7)
+'AADi' / [AbilityIds.itemSpellDamage7](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellDamage7)
 
 **Members:**
 
@@ -15547,7 +15547,7 @@ public class AbilityDefinitionItemSpellDamage7 extends AbilityDefinition
 public class AbilityDefinitionItemSpellDamage2 extends AbilityDefinition
 ```
 
-'AADo' / [AbilityIds.itemSpellDamage2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellDamage2)
+'AADo' / [AbilityIds.itemSpellDamage2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellDamage2)
 
 **Members:**
 
@@ -15565,7 +15565,7 @@ public class AbilityDefinitionItemSpellDamage2 extends AbilityDefinition
 public class AbilityDefinitionItemSpellDamage3 extends AbilityDefinition
 ```
 
-'AADq' / [AbilityIds.itemSpellDamage3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellDamage3)
+'AADq' / [AbilityIds.itemSpellDamage3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellDamage3)
 
 **Members:**
 
@@ -15583,7 +15583,7 @@ public class AbilityDefinitionItemSpellDamage3 extends AbilityDefinition
 public class AbilityDefinitionItemSpellDamage4 extends AbilityDefinition
 ```
 
-'AADr' / [AbilityIds.itemSpellDamage4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellDamage4)
+'AADr' / [AbilityIds.itemSpellDamage4](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellDamage4)
 
 **Members:**
 
@@ -15601,7 +15601,7 @@ public class AbilityDefinitionItemSpellDamage4 extends AbilityDefinition
 public class AbilityDefinitionItemSpellDamage10 extends AbilityDefinition
 ```
 
-'AADt' / [AbilityIds.itemSpellDamage10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellDamage10)
+'AADt' / [AbilityIds.itemSpellDamage10](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellDamage10)
 
 **Members:**
 
@@ -15619,7 +15619,7 @@ public class AbilityDefinitionItemSpellDamage10 extends AbilityDefinition
 public class AbilityDefinitionItemSpellDamage6 extends AbilityDefinition
 ```
 
-'AADu' / [AbilityIds.itemSpellDamage6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellDamage6)
+'AADu' / [AbilityIds.itemSpellDamage6](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellDamage6)
 
 **Members:**
 
@@ -15637,7 +15637,7 @@ public class AbilityDefinitionItemSpellDamage6 extends AbilityDefinition
 public class AbilityDefinitionItemSpellDamage5 extends AbilityDefinition
 ```
 
-'AADw' / [AbilityIds.itemSpellDamage5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellDamage5)
+'AADw' / [AbilityIds.itemSpellDamage5](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellDamage5)
 
 **Members:**
 
@@ -15655,7 +15655,7 @@ public class AbilityDefinitionItemSpellDamage5 extends AbilityDefinition
 public class AbilityDefinitionItemSpellDamage12 extends AbilityDefinition
 ```
 
-'AADy' / [AbilityIds.itemSpellDamage12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellDamage12)
+'AADy' / [AbilityIds.itemSpellDamage12](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellDamage12)
 
 **Members:**
 
@@ -15673,7 +15673,7 @@ public class AbilityDefinitionItemSpellDamage12 extends AbilityDefinition
 public class AbilityDefinitionItemSpellAmp20 extends AbilityDefinition
 ```
 
-'AAPa' / [AbilityIds.itemSpellAmp20](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellAmp20)
+'AAPa' / [AbilityIds.itemSpellAmp20](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellAmp20)
 
 **Members:**
 
@@ -15691,7 +15691,7 @@ public class AbilityDefinitionItemSpellAmp20 extends AbilityDefinition
 public class AbilityDefinitionItemSpellAmp3 extends AbilityDefinition
 ```
 
-'AAPe' / [AbilityIds.itemSpellAmp3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellAmp3)
+'AAPe' / [AbilityIds.itemSpellAmp3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellAmp3)
 
 **Members:**
 
@@ -15709,7 +15709,7 @@ public class AbilityDefinitionItemSpellAmp3 extends AbilityDefinition
 public class AbilityDefinitionItemSpellAmp4 extends AbilityDefinition
 ```
 
-'AAPi' / [AbilityIds.itemSpellAmp4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellAmp4)
+'AAPi' / [AbilityIds.itemSpellAmp4](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellAmp4)
 
 **Members:**
 
@@ -15727,7 +15727,7 @@ public class AbilityDefinitionItemSpellAmp4 extends AbilityDefinition
 public class AbilityDefinitionItemSpellAmp6 extends AbilityDefinition
 ```
 
-'AAPo' / [AbilityIds.itemSpellAmp6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellAmp6)
+'AAPo' / [AbilityIds.itemSpellAmp6](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellAmp6)
 
 **Members:**
 
@@ -15745,7 +15745,7 @@ public class AbilityDefinitionItemSpellAmp6 extends AbilityDefinition
 public class AbilityDefinitionItemSpellAmp15 extends AbilityDefinition
 ```
 
-'AAPp' / [AbilityIds.itemSpellAmp15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellAmp15)
+'AAPp' / [AbilityIds.itemSpellAmp15](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellAmp15)
 
 **Members:**
 
@@ -15763,7 +15763,7 @@ public class AbilityDefinitionItemSpellAmp15 extends AbilityDefinition
 public class AbilityDefinitionItemSpellAmp12 extends AbilityDefinition
 ```
 
-'AAPq' / [AbilityIds.itemSpellAmp12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellAmp12)
+'AAPq' / [AbilityIds.itemSpellAmp12](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellAmp12)
 
 **Members:**
 
@@ -15781,7 +15781,7 @@ public class AbilityDefinitionItemSpellAmp12 extends AbilityDefinition
 public class AbilityDefinitionItemSpellAmp8 extends AbilityDefinition
 ```
 
-'AAPr' / [AbilityIds.itemSpellAmp8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellAmp8)
+'AAPr' / [AbilityIds.itemSpellAmp8](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellAmp8)
 
 **Members:**
 
@@ -15799,7 +15799,7 @@ public class AbilityDefinitionItemSpellAmp8 extends AbilityDefinition
 public class AbilityDefinitionItemSpellAmp101 extends AbilityDefinition
 ```
 
-'AAPs' / [AbilityIds.itemSpellAmp101](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellAmp101)
+'AAPs' / [AbilityIds.itemSpellAmp101](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellAmp101)
 
 **Members:**
 
@@ -15817,7 +15817,7 @@ public class AbilityDefinitionItemSpellAmp101 extends AbilityDefinition
 public class AbilityDefinitionItemSpellAmp13 extends AbilityDefinition
 ```
 
-'AAPt' / [AbilityIds.itemSpellAmp13](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellAmp13)
+'AAPt' / [AbilityIds.itemSpellAmp13](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellAmp13)
 
 **Members:**
 
@@ -15835,7 +15835,7 @@ public class AbilityDefinitionItemSpellAmp13 extends AbilityDefinition
 public class AbilityDefinitionItemSpellAmp18 extends AbilityDefinition
 ```
 
-'AAPu' / [AbilityIds.itemSpellAmp18](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellAmp18)
+'AAPu' / [AbilityIds.itemSpellAmp18](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellAmp18)
 
 **Members:**
 
@@ -15853,7 +15853,7 @@ public class AbilityDefinitionItemSpellAmp18 extends AbilityDefinition
 public class AbilityDefinitionItemSpellAmp5 extends AbilityDefinition
 ```
 
-'AAPw' / [AbilityIds.itemSpellAmp5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellAmp5)
+'AAPw' / [AbilityIds.itemSpellAmp5](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellAmp5)
 
 **Members:**
 
@@ -15871,7 +15871,7 @@ public class AbilityDefinitionItemSpellAmp5 extends AbilityDefinition
 public class AbilityDefinitionItemSpellAmp26 extends AbilityDefinition
 ```
 
-'AAPx' / [AbilityIds.itemSpellAmp26](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellAmp26)
+'AAPx' / [AbilityIds.itemSpellAmp26](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellAmp26)
 
 **Members:**
 
@@ -15889,7 +15889,7 @@ public class AbilityDefinitionItemSpellAmp26 extends AbilityDefinition
 public class AbilityDefinitionItemSpellAmp7 extends AbilityDefinition
 ```
 
-'AAPy' / [AbilityIds.itemSpellAmp7](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellAmp7)
+'AAPy' / [AbilityIds.itemSpellAmp7](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellAmp7)
 
 **Members:**
 
@@ -15907,7 +15907,7 @@ public class AbilityDefinitionItemSpellAmp7 extends AbilityDefinition
 public class AbilityDefinitionItemHealthRegenAura3 extends AbilityDefinition
 ```
 
-'AARe' / [AbilityIds.itemHealthRegenAura3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealthRegenAura3)
+'AARe' / [AbilityIds.itemHealthRegenAura3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHealthRegenAura3)
 
 **Members:**
 
@@ -15923,7 +15923,7 @@ public class AbilityDefinitionItemHealthRegenAura3 extends AbilityDefinition
 public class AbilityDefinitionItemHealthRegenAura1 extends AbilityDefinition
 ```
 
-'AARq' / [AbilityIds.itemHealthRegenAura1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealthRegenAura1)
+'AARq' / [AbilityIds.itemHealthRegenAura1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHealthRegenAura1)
 
 **Members:**
 
@@ -15939,7 +15939,7 @@ public class AbilityDefinitionItemHealthRegenAura1 extends AbilityDefinition
 public class AbilityDefinitionItemHealthRegenAura2 extends AbilityDefinition
 ```
 
-'AARw' / [AbilityIds.itemHealthRegenAura2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealthRegenAura2)
+'AARw' / [AbilityIds.itemHealthRegenAura2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHealthRegenAura2)
 
 **Members:**
 
@@ -15955,7 +15955,7 @@ public class AbilityDefinitionItemHealthRegenAura2 extends AbilityDefinition
 public class AbilityDefinitionItemAttackSpeedIncrease101 extends AbilityDefinition
 ```
 
-'AASa' / [AbilityIds.itemAttackSpeedIncrease101](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease101)
+'AASa' / [AbilityIds.itemAttackSpeedIncrease101](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAttackSpeedIncrease101)
 
 **Members:**
 
@@ -15969,7 +15969,7 @@ public class AbilityDefinitionItemAttackSpeedIncrease101 extends AbilityDefiniti
 public class AbilityDefinitionItemAttackSpeedIncrease4 extends AbilityDefinition
 ```
 
-'AASd' / [AbilityIds.itemAttackSpeedIncrease4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease4)
+'AASd' / [AbilityIds.itemAttackSpeedIncrease4](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAttackSpeedIncrease4)
 
 **Members:**
 
@@ -15983,7 +15983,7 @@ public class AbilityDefinitionItemAttackSpeedIncrease4 extends AbilityDefinition
 public class AbilityDefinitionItemAttackSpeedIncrease8 extends AbilityDefinition
 ```
 
-'AASe' / [AbilityIds.itemAttackSpeedIncrease8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease8)
+'AASe' / [AbilityIds.itemAttackSpeedIncrease8](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAttackSpeedIncrease8)
 
 **Members:**
 
@@ -15997,7 +15997,7 @@ public class AbilityDefinitionItemAttackSpeedIncrease8 extends AbilityDefinition
 public class AbilityDefinitionItemAttackSpeedIncrease24 extends AbilityDefinition
 ```
 
-'AASf' / [AbilityIds.itemAttackSpeedIncrease24](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease24)
+'AASf' / [AbilityIds.itemAttackSpeedIncrease24](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAttackSpeedIncrease24)
 
 **Members:**
 
@@ -16011,7 +16011,7 @@ public class AbilityDefinitionItemAttackSpeedIncrease24 extends AbilityDefinitio
 public class AbilityDefinitionItemAttackSpeedIncrease30 extends AbilityDefinition
 ```
 
-'AASg' / [AbilityIds.itemAttackSpeedIncrease30](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease30)
+'AASg' / [AbilityIds.itemAttackSpeedIncrease30](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAttackSpeedIncrease30)
 
 **Members:**
 
@@ -16025,7 +16025,7 @@ public class AbilityDefinitionItemAttackSpeedIncrease30 extends AbilityDefinitio
 public class AbilityDefinitionItemAttackSpeedIncrease201 extends AbilityDefinition
 ```
 
-'AASh' / [AbilityIds.itemAttackSpeedIncrease201](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease201)
+'AASh' / [AbilityIds.itemAttackSpeedIncrease201](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAttackSpeedIncrease201)
 
 **Members:**
 
@@ -16039,7 +16039,7 @@ public class AbilityDefinitionItemAttackSpeedIncrease201 extends AbilityDefiniti
 public class AbilityDefinitionItemAttackSpeedIncrease12 extends AbilityDefinition
 ```
 
-'AASi' / [AbilityIds.itemAttackSpeedIncrease12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease12)
+'AASi' / [AbilityIds.itemAttackSpeedIncrease12](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAttackSpeedIncrease12)
 
 **Members:**
 
@@ -16053,7 +16053,7 @@ public class AbilityDefinitionItemAttackSpeedIncrease12 extends AbilityDefinitio
 public class AbilityDefinitionItemAttackSpeedIncrease25 extends AbilityDefinition
 ```
 
-'AASo' / [AbilityIds.itemAttackSpeedIncrease25](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease25)
+'AASo' / [AbilityIds.itemAttackSpeedIncrease25](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAttackSpeedIncrease25)
 
 **Members:**
 
@@ -16067,7 +16067,7 @@ public class AbilityDefinitionItemAttackSpeedIncrease25 extends AbilityDefinitio
 public class AbilityDefinitionItemAttackSpeedIncrease20 extends AbilityDefinition
 ```
 
-'AASp' / [AbilityIds.itemAttackSpeedIncrease20](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease20)
+'AASp' / [AbilityIds.itemAttackSpeedIncrease20](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAttackSpeedIncrease20)
 
 **Members:**
 
@@ -16081,7 +16081,7 @@ public class AbilityDefinitionItemAttackSpeedIncrease20 extends AbilityDefinitio
 public class AbilityDefinitionItemAttackSpeedIncrease15 extends AbilityDefinition
 ```
 
-'AASq' / [AbilityIds.itemAttackSpeedIncrease15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease15)
+'AASq' / [AbilityIds.itemAttackSpeedIncrease15](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAttackSpeedIncrease15)
 
 **Members:**
 
@@ -16095,7 +16095,7 @@ public class AbilityDefinitionItemAttackSpeedIncrease15 extends AbilityDefinitio
 public class AbilityDefinitionItemAttackSpeedIncrease10 extends AbilityDefinition
 ```
 
-'AASr' / [AbilityIds.itemAttackSpeedIncrease10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease10)
+'AASr' / [AbilityIds.itemAttackSpeedIncrease10](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAttackSpeedIncrease10)
 
 **Members:**
 
@@ -16109,7 +16109,7 @@ public class AbilityDefinitionItemAttackSpeedIncrease10 extends AbilityDefinitio
 public class AbilityDefinitionItemAttackSpeedIncrease3 extends AbilityDefinition
 ```
 
-'AASs' / [AbilityIds.itemAttackSpeedIncrease3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease3)
+'AASs' / [AbilityIds.itemAttackSpeedIncrease3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAttackSpeedIncrease3)
 
 **Members:**
 
@@ -16123,7 +16123,7 @@ public class AbilityDefinitionItemAttackSpeedIncrease3 extends AbilityDefinition
 public class AbilityDefinitionItemAttackSpeedIncrease16 extends AbilityDefinition
 ```
 
-'AASu' / [AbilityIds.itemAttackSpeedIncrease16](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease16)
+'AASu' / [AbilityIds.itemAttackSpeedIncrease16](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAttackSpeedIncrease16)
 
 **Members:**
 
@@ -16137,7 +16137,7 @@ public class AbilityDefinitionItemAttackSpeedIncrease16 extends AbilityDefinitio
 public class AbilityDefinitionItemAttackSpeedIncrease9 extends AbilityDefinition
 ```
 
-'AASw' / [AbilityIds.itemAttackSpeedIncrease9](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease9)
+'AASw' / [AbilityIds.itemAttackSpeedIncrease9](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAttackSpeedIncrease9)
 
 **Members:**
 
@@ -16151,7 +16151,7 @@ public class AbilityDefinitionItemAttackSpeedIncrease9 extends AbilityDefinition
 public class AbilityDefinitionItemAttackSpeedIncrease6 extends AbilityDefinition
 ```
 
-'AASy' / [AbilityIds.itemAttackSpeedIncrease6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease6)
+'AASy' / [AbilityIds.itemAttackSpeedIncrease6](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAttackSpeedIncrease6)
 
 **Members:**
 
@@ -16165,7 +16165,7 @@ public class AbilityDefinitionItemAttackSpeedIncrease6 extends AbilityDefinition
 public class AbilityDefinitionItemAbilitySpeed25 extends AbilityDefinition
 ```
 
-'ACDa' / [AbilityIds.itemAbilitySpeed25](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAbilitySpeed25)
+'ACDa' / [AbilityIds.itemAbilitySpeed25](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAbilitySpeed25)
 
 **Members:**
 
@@ -16181,7 +16181,7 @@ public class AbilityDefinitionItemAbilitySpeed25 extends AbilityDefinition
 public class AbilityDefinitionItemAbilitySpeed15 extends AbilityDefinition
 ```
 
-'ACDd' / [AbilityIds.itemAbilitySpeed15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAbilitySpeed15)
+'ACDd' / [AbilityIds.itemAbilitySpeed15](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAbilitySpeed15)
 
 **Members:**
 
@@ -16197,7 +16197,7 @@ public class AbilityDefinitionItemAbilitySpeed15 extends AbilityDefinition
 public class AbilityDefinitionItemAbilitySpeed20 extends AbilityDefinition
 ```
 
-'ACDf' / [AbilityIds.itemAbilitySpeed20](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAbilitySpeed20)
+'ACDf' / [AbilityIds.itemAbilitySpeed20](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAbilitySpeed20)
 
 **Members:**
 
@@ -16213,7 +16213,7 @@ public class AbilityDefinitionItemAbilitySpeed20 extends AbilityDefinition
 public class AbilityDefinitionItemAbilitySpeed8 extends AbilityDefinition
 ```
 
-'ACDi' / [AbilityIds.itemAbilitySpeed8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAbilitySpeed8)
+'ACDi' / [AbilityIds.itemAbilitySpeed8](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAbilitySpeed8)
 
 **Members:**
 
@@ -16229,7 +16229,7 @@ public class AbilityDefinitionItemAbilitySpeed8 extends AbilityDefinition
 public class AbilityDefinitionItemAbilitySpeed10 extends AbilityDefinition
 ```
 
-'ACDo' / [AbilityIds.itemAbilitySpeed10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAbilitySpeed10)
+'ACDo' / [AbilityIds.itemAbilitySpeed10](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAbilitySpeed10)
 
 **Members:**
 
@@ -16245,7 +16245,7 @@ public class AbilityDefinitionItemAbilitySpeed10 extends AbilityDefinition
 public class AbilityDefinitionItemAbilitySpeed2 extends AbilityDefinition
 ```
 
-'ACDp' / [AbilityIds.itemAbilitySpeed2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAbilitySpeed2)
+'ACDp' / [AbilityIds.itemAbilitySpeed2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAbilitySpeed2)
 
 **Members:**
 
@@ -16261,7 +16261,7 @@ public class AbilityDefinitionItemAbilitySpeed2 extends AbilityDefinition
 public class AbilityDefinitionItemAbilitySpeed12 extends AbilityDefinition
 ```
 
-'ACDq' / [AbilityIds.itemAbilitySpeed12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAbilitySpeed12)
+'ACDq' / [AbilityIds.itemAbilitySpeed12](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAbilitySpeed12)
 
 **Members:**
 
@@ -16277,7 +16277,7 @@ public class AbilityDefinitionItemAbilitySpeed12 extends AbilityDefinition
 public class AbilityDefinitionItemAbilitySpeed5 extends AbilityDefinition
 ```
 
-'ACDt' / [AbilityIds.itemAbilitySpeed5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAbilitySpeed5)
+'ACDt' / [AbilityIds.itemAbilitySpeed5](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAbilitySpeed5)
 
 **Members:**
 
@@ -16293,7 +16293,7 @@ public class AbilityDefinitionItemAbilitySpeed5 extends AbilityDefinition
 public class AbilityDefinitionItemAbilitySpeed6 extends AbilityDefinition
 ```
 
-'ACDu' / [AbilityIds.itemAbilitySpeed6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAbilitySpeed6)
+'ACDu' / [AbilityIds.itemAbilitySpeed6](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAbilitySpeed6)
 
 **Members:**
 
@@ -16309,7 +16309,7 @@ public class AbilityDefinitionItemAbilitySpeed6 extends AbilityDefinition
 public class AbilityDefinitionItemAbilitySpeed3 extends AbilityDefinition
 ```
 
-'ACDw' / [AbilityIds.itemAbilitySpeed3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAbilitySpeed3)
+'ACDw' / [AbilityIds.itemAbilitySpeed3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAbilitySpeed3)
 
 **Members:**
 
@@ -16325,7 +16325,7 @@ public class AbilityDefinitionItemAbilitySpeed3 extends AbilityDefinition
 public class AbilityDefinitionItemAbilitySpeed4 extends AbilityDefinition
 ```
 
-'ACDy' / [AbilityIds.itemAbilitySpeed4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAbilitySpeed4)
+'ACDy' / [AbilityIds.itemAbilitySpeed4](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAbilitySpeed4)
 
 **Members:**
 
@@ -16341,7 +16341,7 @@ public class AbilityDefinitionItemAbilitySpeed4 extends AbilityDefinition
 public class AbilityDefinitionChronomasterSGlovesAlly extends AbilityDefinition
 ```
 
-'ACGa' / [AbilityIds.chronomasterSGlovesAlly](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chronomasterSGlovesAlly)
+'ACGa' / [AbilityIds.chronomasterSGlovesAlly](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-chronomasterSGlovesAlly)
 
 **Members:**
 
@@ -16359,7 +16359,7 @@ public class AbilityDefinitionChronomasterSGlovesAlly extends AbilityDefinition
 public class AbilityDefinitionChronomasterSGlovesEnemy extends AbilityDefinition
 ```
 
-'ACGe' / [AbilityIds.chronomasterSGlovesEnemy](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chronomasterSGlovesEnemy)
+'ACGe' / [AbilityIds.chronomasterSGlovesEnemy](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-chronomasterSGlovesEnemy)
 
 **Members:**
 
@@ -16377,7 +16377,7 @@ public class AbilityDefinitionChronomasterSGlovesEnemy extends AbilityDefinition
 public class AbilityDefinitionItemCleave30 extends AbilityDefinition
 ```
 
-'ACLw' / [AbilityIds.itemCleave30](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCleave30)
+'ACLw' / [AbilityIds.itemCleave30](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCleave30)
 
 **Members:**
 
@@ -16391,7 +16391,7 @@ public class AbilityDefinitionItemCleave30 extends AbilityDefinition
 public class AbilityDefinitionItemCriticalChance20 extends AbilityDefinition
 ```
 
-'ACSb' / [AbilityIds.itemCriticalChance20](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalChance20)
+'ACSb' / [AbilityIds.itemCriticalChance20](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCriticalChance20)
 
 **Members:**
 
@@ -16411,7 +16411,7 @@ public class AbilityDefinitionItemCriticalChance20 extends AbilityDefinition
 public class AbilityDefinitionItemCriticalChance12 extends AbilityDefinition
 ```
 
-'ACSc' / [AbilityIds.itemCriticalChance12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalChance12)
+'ACSc' / [AbilityIds.itemCriticalChance12](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCriticalChance12)
 
 **Members:**
 
@@ -16431,7 +16431,7 @@ public class AbilityDefinitionItemCriticalChance12 extends AbilityDefinition
 public class AbilityDefinitionItemCriticalChance7 extends AbilityDefinition
 ```
 
-'ACSd' / [AbilityIds.itemCriticalChance7](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalChance7)
+'ACSd' / [AbilityIds.itemCriticalChance7](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCriticalChance7)
 
 **Members:**
 
@@ -16451,7 +16451,7 @@ public class AbilityDefinitionItemCriticalChance7 extends AbilityDefinition
 public class AbilityDefinitionItemCriticalChance3 extends AbilityDefinition
 ```
 
-'ACSe' / [AbilityIds.itemCriticalChance3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalChance3)
+'ACSe' / [AbilityIds.itemCriticalChance3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCriticalChance3)
 
 **Members:**
 
@@ -16471,7 +16471,7 @@ public class AbilityDefinitionItemCriticalChance3 extends AbilityDefinition
 public class AbilityDefinitionItemCriticalChance30 extends AbilityDefinition
 ```
 
-'ACSg' / [AbilityIds.itemCriticalChance30](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalChance30)
+'ACSg' / [AbilityIds.itemCriticalChance30](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCriticalChance30)
 
 **Members:**
 
@@ -16491,7 +16491,7 @@ public class AbilityDefinitionItemCriticalChance30 extends AbilityDefinition
 public class AbilityDefinitionItemCriticalChance6 extends AbilityDefinition
 ```
 
-'ACSj' / [AbilityIds.itemCriticalChance6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalChance6)
+'ACSj' / [AbilityIds.itemCriticalChance6](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCriticalChance6)
 
 **Members:**
 
@@ -16511,7 +16511,7 @@ public class AbilityDefinitionItemCriticalChance6 extends AbilityDefinition
 public class AbilityDefinitionItemCriticalChance16 extends AbilityDefinition
 ```
 
-'ACSn' / [AbilityIds.itemCriticalChance16](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalChance16)
+'ACSn' / [AbilityIds.itemCriticalChance16](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCriticalChance16)
 
 **Members:**
 
@@ -16531,7 +16531,7 @@ public class AbilityDefinitionItemCriticalChance16 extends AbilityDefinition
 public class AbilityDefinitionItemCriticalChance8 extends AbilityDefinition
 ```
 
-'ACSo' / [AbilityIds.itemCriticalChance8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalChance8)
+'ACSo' / [AbilityIds.itemCriticalChance8](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCriticalChance8)
 
 **Members:**
 
@@ -16551,7 +16551,7 @@ public class AbilityDefinitionItemCriticalChance8 extends AbilityDefinition
 public class AbilityDefinitionItemCriticalChance10 extends AbilityDefinition
 ```
 
-'ACSq' / [AbilityIds.itemCriticalChance10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalChance10)
+'ACSq' / [AbilityIds.itemCriticalChance10](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCriticalChance10)
 
 **Members:**
 
@@ -16571,7 +16571,7 @@ public class AbilityDefinitionItemCriticalChance10 extends AbilityDefinition
 public class AbilityDefinitionItemCriticalChance2 extends AbilityDefinition
 ```
 
-'ACSr' / [AbilityIds.itemCriticalChance2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalChance2)
+'ACSr' / [AbilityIds.itemCriticalChance2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCriticalChance2)
 
 **Members:**
 
@@ -16591,7 +16591,7 @@ public class AbilityDefinitionItemCriticalChance2 extends AbilityDefinition
 public class AbilityDefinitionItemCriticalChance4 extends AbilityDefinition
 ```
 
-'ACSu' / [AbilityIds.itemCriticalChance4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalChance4)
+'ACSu' / [AbilityIds.itemCriticalChance4](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCriticalChance4)
 
 **Members:**
 
@@ -16611,7 +16611,7 @@ public class AbilityDefinitionItemCriticalChance4 extends AbilityDefinition
 public class AbilityDefinitionItemCriticalChance18 extends AbilityDefinition
 ```
 
-'ACSv' / [AbilityIds.itemCriticalChance18](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalChance18)
+'ACSv' / [AbilityIds.itemCriticalChance18](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCriticalChance18)
 
 **Members:**
 
@@ -16631,7 +16631,7 @@ public class AbilityDefinitionItemCriticalChance18 extends AbilityDefinition
 public class AbilityDefinitionItemCriticalChance15 extends AbilityDefinition
 ```
 
-'ACSx' / [AbilityIds.itemCriticalChance15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalChance15)
+'ACSx' / [AbilityIds.itemCriticalChance15](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCriticalChance15)
 
 **Members:**
 
@@ -16651,7 +16651,7 @@ public class AbilityDefinitionItemCriticalChance15 extends AbilityDefinition
 public class AbilityDefinitionItemCriticalChance5 extends AbilityDefinition
 ```
 
-'ACSy' / [AbilityIds.itemCriticalChance5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalChance5)
+'ACSy' / [AbilityIds.itemCriticalChance5](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCriticalChance5)
 
 **Members:**
 
@@ -16671,7 +16671,7 @@ public class AbilityDefinitionItemCriticalChance5 extends AbilityDefinition
 public class AbilityDefinitionItemCriticalChance25 extends AbilityDefinition
 ```
 
-'ACSz' / [AbilityIds.itemCriticalChance25](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalChance25)
+'ACSz' / [AbilityIds.itemCriticalChance25](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCriticalChance25)
 
 **Members:**
 
@@ -16691,7 +16691,7 @@ public class AbilityDefinitionItemCriticalChance25 extends AbilityDefinition
 public class AbilityDefinitionItemCriticalDamage10 extends AbilityDefinition
 ```
 
-'ACXe' / [AbilityIds.itemCriticalDamage10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalDamage10)
+'ACXe' / [AbilityIds.itemCriticalDamage10](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCriticalDamage10)
 
 **Members:**
 
@@ -16711,7 +16711,7 @@ public class AbilityDefinitionItemCriticalDamage10 extends AbilityDefinition
 public class AbilityDefinitionItemCriticalDamage20 extends AbilityDefinition
 ```
 
-'ACXi' / [AbilityIds.itemCriticalDamage20](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalDamage20)
+'ACXi' / [AbilityIds.itemCriticalDamage20](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCriticalDamage20)
 
 **Members:**
 
@@ -16731,7 +16731,7 @@ public class AbilityDefinitionItemCriticalDamage20 extends AbilityDefinition
 public class AbilityDefinitionItemCriticalDamage12 extends AbilityDefinition
 ```
 
-'ACXo' / [AbilityIds.itemCriticalDamage12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalDamage12)
+'ACXo' / [AbilityIds.itemCriticalDamage12](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCriticalDamage12)
 
 **Members:**
 
@@ -16751,7 +16751,7 @@ public class AbilityDefinitionItemCriticalDamage12 extends AbilityDefinition
 public class AbilityDefinitionItemCriticalDamage5 extends AbilityDefinition
 ```
 
-'ACXq' / [AbilityIds.itemCriticalDamage5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalDamage5)
+'ACXq' / [AbilityIds.itemCriticalDamage5](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCriticalDamage5)
 
 **Members:**
 
@@ -16771,7 +16771,7 @@ public class AbilityDefinitionItemCriticalDamage5 extends AbilityDefinition
 public class AbilityDefinitionItemCriticalDamage13 extends AbilityDefinition
 ```
 
-'ACXr' / [AbilityIds.itemCriticalDamage13](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalDamage13)
+'ACXr' / [AbilityIds.itemCriticalDamage13](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCriticalDamage13)
 
 **Members:**
 
@@ -16791,7 +16791,7 @@ public class AbilityDefinitionItemCriticalDamage13 extends AbilityDefinition
 public class AbilityDefinitionItemCriticalDamage30 extends AbilityDefinition
 ```
 
-'ACXt' / [AbilityIds.itemCriticalDamage30](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalDamage30)
+'ACXt' / [AbilityIds.itemCriticalDamage30](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCriticalDamage30)
 
 **Members:**
 
@@ -16811,7 +16811,7 @@ public class AbilityDefinitionItemCriticalDamage30 extends AbilityDefinition
 public class AbilityDefinitionItemCriticalDamage25 extends AbilityDefinition
 ```
 
-'ACXu' / [AbilityIds.itemCriticalDamage25](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalDamage25)
+'ACXu' / [AbilityIds.itemCriticalDamage25](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCriticalDamage25)
 
 **Members:**
 
@@ -16831,7 +16831,7 @@ public class AbilityDefinitionItemCriticalDamage25 extends AbilityDefinition
 public class AbilityDefinitionItemCriticalDamage15 extends AbilityDefinition
 ```
 
-'ACXw' / [AbilityIds.itemCriticalDamage15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalDamage15)
+'ACXw' / [AbilityIds.itemCriticalDamage15](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCriticalDamage15)
 
 **Members:**
 
@@ -16851,7 +16851,7 @@ public class AbilityDefinitionItemCriticalDamage15 extends AbilityDefinition
 public class AbilityDefinitionItemCriticalDamage40 extends AbilityDefinition
 ```
 
-'ACXy' / [AbilityIds.itemCriticalDamage40](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalDamage40)
+'ACXy' / [AbilityIds.itemCriticalDamage40](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCriticalDamage40)
 
 **Members:**
 
@@ -16871,7 +16871,7 @@ public class AbilityDefinitionItemCriticalDamage40 extends AbilityDefinition
 public class AbilityDefinitionAttackBonusPlus18 extends AbilityDefinition
 ```
 
-'AD18' / [AbilityIds.attackBonusPlus18](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonusPlus18)
+'AD18' / [AbilityIds.attackBonusPlus18](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-attackBonusPlus18)
 
 **Members:**
 
@@ -16885,7 +16885,7 @@ public class AbilityDefinitionAttackBonusPlus18 extends AbilityDefinition
 public class AbilityDefinitionItemDamage20 extends AbilityDefinition
 ```
 
-'AD20' / [AbilityIds.itemDamage20](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDamage20)
+'AD20' / [AbilityIds.itemDamage20](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemDamage20)
 
 **Members:**
 
@@ -16899,7 +16899,7 @@ public class AbilityDefinitionItemDamage20 extends AbilityDefinition
 public class AbilityDefinitionAttackBonusPlus24 extends AbilityDefinition
 ```
 
-'AD24' / [AbilityIds.attackBonusPlus24](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonusPlus24)
+'AD24' / [AbilityIds.attackBonusPlus24](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-attackBonusPlus24)
 
 **Members:**
 
@@ -16913,7 +16913,7 @@ public class AbilityDefinitionAttackBonusPlus24 extends AbilityDefinition
 public class AbilityDefinitionAttackBonusPlus45 extends AbilityDefinition
 ```
 
-'AD45' / [AbilityIds.attackBonusPlus45](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonusPlus45)
+'AD45' / [AbilityIds.attackBonusPlus45](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-attackBonusPlus45)
 
 **Members:**
 
@@ -16927,7 +16927,7 @@ public class AbilityDefinitionAttackBonusPlus45 extends AbilityDefinition
 public class AbilityDefinitionItemDaybreakerAttack extends AbilityDefinition
 ```
 
-'ADBa' / [AbilityIds.itemDaybreakerAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDaybreakerAttack)
+'ADBa' / [AbilityIds.itemDaybreakerAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemDaybreakerAttack)
 
 **Members:**
 
@@ -16958,7 +16958,7 @@ public class AbilityDefinitionItemDaybreakerAttack extends AbilityDefinition
 public class AbilityDefinitionItemDaybreakerFS extends AbilityDefinition
 ```
 
-'ADBf' / [AbilityIds.itemDaybreakerFS](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDaybreakerFS)
+'ADBf' / [AbilityIds.itemDaybreakerFS](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemDaybreakerFS)
 
 **Members:**
 
@@ -16982,7 +16982,7 @@ public class AbilityDefinitionItemDaybreakerFS extends AbilityDefinition
 public class AbilityDefinitionDarkCommandersAura extends AbilityDefinition
 ```
 
-'ADCa' / [AbilityIds.darkCommandersAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-darkCommandersAura)
+'ADCa' / [AbilityIds.darkCommandersAura](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-darkCommandersAura)
 
 **Members:**
 
@@ -16994,7 +16994,7 @@ public class AbilityDefinitionDarkCommandersAura extends AbilityDefinition
 public class AbilityDefinitionItemDiseaseCloud1 extends AbilityDefinition
 ```
 
-'ADCq' / [AbilityIds.itemDiseaseCloud1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDiseaseCloud1)
+'ADCq' / [AbilityIds.itemDiseaseCloud1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemDiseaseCloud1)
 
 **Members:**
 
@@ -17014,7 +17014,7 @@ public class AbilityDefinitionItemDiseaseCloud1 extends AbilityDefinition
 public class AbilityDefinitionDarkMistressAura extends AbilityDefinition
 ```
 
-'ADMa' / [AbilityIds.darkMistressAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-darkMistressAura)
+'ADMa' / [AbilityIds.darkMistressAura](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-darkMistressAura)
 
 **Members:**
 
@@ -17032,7 +17032,7 @@ public class AbilityDefinitionDarkMistressAura extends AbilityDefinition
 public class AbilityDefinitionAttackBonus5 extends AbilityDefinition
 ```
 
-'ADN5' / [AbilityIds.attackBonus5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackBonus5)
+'ADN5' / [AbilityIds.attackBonus5](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-attackBonus5)
 
 **Members:**
 
@@ -17046,7 +17046,7 @@ public class AbilityDefinitionAttackBonus5 extends AbilityDefinition
 public class AbilityDefinitionItemDamageReflect15 extends AbilityDefinition
 ```
 
-'ADRq' / [AbilityIds.itemDamageReflect15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDamageReflect15)
+'ADRq' / [AbilityIds.itemDamageReflect15](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemDamageReflect15)
 
 **Members:**
 
@@ -17064,7 +17064,7 @@ public class AbilityDefinitionItemDamageReflect15 extends AbilityDefinition
 public class AbilityDefinitionItemDamageReflect20 extends AbilityDefinition
 ```
 
-'ADRw' / [AbilityIds.itemDamageReflect20](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDamageReflect20)
+'ADRw' / [AbilityIds.itemDamageReflect20](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemDamageReflect20)
 
 **Members:**
 
@@ -17082,7 +17082,7 @@ public class AbilityDefinitionItemDamageReflect20 extends AbilityDefinition
 public class AbilityDefinitionAltarOfDarknessHealthRegen extends AbilityDefinition
 ```
 
-'ADhr' / [AbilityIds.altarOfDarknessHealthRegen](/stdlib/ref/_wurst/AbilityIds.html#abilityids-altarOfDarknessHealthRegen)
+'ADhr' / [AbilityIds.altarOfDarknessHealthRegen](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-altarOfDarknessHealthRegen)
 
 **Members:**
 
@@ -17098,7 +17098,7 @@ public class AbilityDefinitionAltarOfDarknessHealthRegen extends AbilityDefiniti
 public class AbilityDefinitionAltarOfDarknessManaRegen extends AbilityDefinition
 ```
 
-'ADmr' / [AbilityIds.altarOfDarknessManaRegen](/stdlib/ref/_wurst/AbilityIds.html#abilityids-altarOfDarknessManaRegen)
+'ADmr' / [AbilityIds.altarOfDarknessManaRegen](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-altarOfDarknessManaRegen)
 
 **Members:**
 
@@ -17114,7 +17114,7 @@ public class AbilityDefinitionAltarOfDarknessManaRegen extends AbilityDefinition
 public class AbilityDefinitionPurifierBladeHolyLightItem extends AbilityDefinition
 ```
 
-'AEhl' / [AbilityIds.purifierBladeHolyLightItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-purifierBladeHolyLightItem)
+'AEhl' / [AbilityIds.purifierBladeHolyLightItem](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-purifierBladeHolyLightItem)
 
 **Members:**
 
@@ -17129,7 +17129,7 @@ public class AbilityDefinitionPurifierBladeHolyLightItem extends AbilityDefiniti
 public class AbilityDefinitionPurifierBladeItem extends AbilityDefinition
 ```
 
-'AEpb' / [AbilityIds.purifierBladeItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-purifierBladeItem)
+'AEpb' / [AbilityIds.purifierBladeItem](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-purifierBladeItem)
 
 **Members:**
 
@@ -17156,7 +17156,7 @@ public class AbilityDefinitionPurifierBladeItem extends AbilityDefinition
 public class AbilityDefinitionEquipmentInventory1 extends AbilityDefinition
 ```
 
-'AEqu' / [AbilityIds.equipmentInventory1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-equipmentInventory1)
+'AEqu' / [AbilityIds.equipmentInventory1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-equipmentInventory1)
 
 **Members:**
 
@@ -17170,7 +17170,7 @@ public class AbilityDefinitionEquipmentInventory1 extends AbilityDefinition
 public class AbilityDefinitionItemFeedback4 extends AbilityDefinition
 ```
 
-'AFBq' / [AbilityIds.itemFeedback4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemFeedback4)
+'AFBq' / [AbilityIds.itemFeedback4](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemFeedback4)
 
 **Members:**
 
@@ -17194,7 +17194,7 @@ public class AbilityDefinitionItemFeedback4 extends AbilityDefinition
 public class AbilityDefinitionItemFingerOfDeath8 extends AbilityDefinition
 ```
 
-'AFDe' / [AbilityIds.itemFingerOfDeath8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemFingerOfDeath8)
+'AFDe' / [AbilityIds.itemFingerOfDeath8](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemFingerOfDeath8)
 
 **Members:**
 
@@ -17212,7 +17212,7 @@ public class AbilityDefinitionItemFingerOfDeath8 extends AbilityDefinition
 public class AbilityDefinitionItemFingerOfDeath12 extends AbilityDefinition
 ```
 
-'AFDq' / [AbilityIds.itemFingerOfDeath12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemFingerOfDeath12)
+'AFDq' / [AbilityIds.itemFingerOfDeath12](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemFingerOfDeath12)
 
 **Members:**
 
@@ -17230,7 +17230,7 @@ public class AbilityDefinitionItemFingerOfDeath12 extends AbilityDefinition
 public class AbilityDefinitionItemFingerOfDeath15 extends AbilityDefinition
 ```
 
-'AFDw' / [AbilityIds.itemFingerOfDeath15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemFingerOfDeath15)
+'AFDw' / [AbilityIds.itemFingerOfDeath15](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemFingerOfDeath15)
 
 **Members:**
 
@@ -17248,7 +17248,7 @@ public class AbilityDefinitionItemFingerOfDeath15 extends AbilityDefinition
 public class AbilityDefinitionDarkRangerSBracersSummon extends AbilityDefinition
 ```
 
-'AFRq' / [AbilityIds.darkRangerSBracersSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-darkRangerSBracersSummon)
+'AFRq' / [AbilityIds.darkRangerSBracersSummon](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-darkRangerSBracersSummon)
 
 **Members:**
 
@@ -17264,7 +17264,7 @@ public class AbilityDefinitionDarkRangerSBracersSummon extends AbilityDefinition
 public class AbilityDefinitionDarkRangerSInsigniaSummon extends AbilityDefinition
 ```
 
-'AFRw' / [AbilityIds.darkRangerSInsigniaSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-darkRangerSInsigniaSummon)
+'AFRw' / [AbilityIds.darkRangerSInsigniaSummon](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-darkRangerSInsigniaSummon)
 
 **Members:**
 
@@ -17280,7 +17280,7 @@ public class AbilityDefinitionDarkRangerSInsigniaSummon extends AbilityDefinitio
 public class AbilityDefinitionDarkRangerSBracersAttack extends AbilityDefinition
 ```
 
-'AFRx' / [AbilityIds.darkRangerSBracersAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-darkRangerSBracersAttack)
+'AFRx' / [AbilityIds.darkRangerSBracersAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-darkRangerSBracersAttack)
 
 **Members:**
 
@@ -17311,7 +17311,7 @@ public class AbilityDefinitionDarkRangerSBracersAttack extends AbilityDefinition
 public class AbilityDefinitionItemDarkRangerSHoodSpellcast extends AbilityDefinition
 ```
 
-'AFRy' / [AbilityIds.itemDarkRangerSHoodSpellcast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDarkRangerSHoodSpellcast)
+'AFRy' / [AbilityIds.itemDarkRangerSHoodSpellcast](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemDarkRangerSHoodSpellcast)
 
 **Members:**
 
@@ -17330,7 +17330,7 @@ public class AbilityDefinitionItemDarkRangerSHoodSpellcast extends AbilityDefini
 public class AbilityDefinitionGnomishZapperAttack extends AbilityDefinition
 ```
 
-'AGZa' / [AbilityIds.gnomishZapperAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-gnomishZapperAttack)
+'AGZa' / [AbilityIds.gnomishZapperAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-gnomishZapperAttack)
 
 **Members:**
 
@@ -17361,7 +17361,7 @@ public class AbilityDefinitionGnomishZapperAttack extends AbilityDefinition
 public class AbilityDefinitionGnomishZapperFL extends AbilityDefinition
 ```
 
-'AGZf' / [AbilityIds.gnomishZapperFL](/stdlib/ref/_wurst/AbilityIds.html#abilityids-gnomishZapperFL)
+'AGZf' / [AbilityIds.gnomishZapperFL](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-gnomishZapperFL)
 
 **Members:**
 
@@ -17381,7 +17381,7 @@ public class AbilityDefinitionGnomishZapperFL extends AbilityDefinition
 public class AbilityDefinitionGarekCleavingAttack extends AbilityDefinition
 ```
 
-'AGca' / [AbilityIds.garekCleavingAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekCleavingAttack)
+'AGca' / [AbilityIds.garekCleavingAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-garekCleavingAttack)
 
 **Members:**
 
@@ -17395,7 +17395,7 @@ public class AbilityDefinitionGarekCleavingAttack extends AbilityDefinition
 public class AbilityDefinitionGarekWarcryLifesteal extends AbilityDefinition
 ```
 
-'AGls' / [AbilityIds.garekWarcryLifesteal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekWarcryLifesteal)
+'AGls' / [AbilityIds.garekWarcryLifesteal](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-garekWarcryLifesteal)
 
 **Members:**
 
@@ -17409,7 +17409,7 @@ public class AbilityDefinitionGarekWarcryLifesteal extends AbilityDefinition
 public class AbilityDefinitionGarekWarcrySpellVamp extends AbilityDefinition
 ```
 
-'AGsv' / [AbilityIds.garekWarcrySpellVamp](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekWarcrySpellVamp)
+'AGsv' / [AbilityIds.garekWarcrySpellVamp](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-garekWarcrySpellVamp)
 
 **Members:**
 
@@ -17425,7 +17425,7 @@ public class AbilityDefinitionGarekWarcrySpellVamp extends AbilityDefinition
 public class AbilityDefinitionItemHeroDamageX125 extends AbilityDefinition
 ```
 
-'AHDq' / [AbilityIds.itemHeroDamageX125](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHeroDamageX125)
+'AHDq' / [AbilityIds.itemHeroDamageX125](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHeroDamageX125)
 
 **Members:**
 
@@ -17445,7 +17445,7 @@ public class AbilityDefinitionItemHeroDamageX125 extends AbilityDefinition
 public class AbilityDefinitionItemHeroDamageX115 extends AbilityDefinition
 ```
 
-'AHDw' / [AbilityIds.itemHeroDamageX115](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHeroDamageX115)
+'AHDw' / [AbilityIds.itemHeroDamageX115](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHeroDamageX115)
 
 **Members:**
 
@@ -17465,7 +17465,7 @@ public class AbilityDefinitionItemHeroDamageX115 extends AbilityDefinition
 public class AbilityDefinitionItemHealthRegeneration51 extends AbilityDefinition
 ```
 
-'AHRa' / [AbilityIds.rangerArrow](/stdlib/ref/_wurst/AbilityIds.html#abilityids-rangerArrow)
+'AHRa' / [AbilityIds.rangerArrow](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-rangerArrow)
 
 **Members:**
 
@@ -17479,7 +17479,7 @@ public class AbilityDefinitionItemHealthRegeneration51 extends AbilityDefinition
 public class AbilityDefinitionItemHealthRegeneration10 extends AbilityDefinition
 ```
 
-'AHRd' / [AbilityIds.itemHealthRegeneration10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealthRegeneration10)
+'AHRd' / [AbilityIds.itemHealthRegeneration10](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHealthRegeneration10)
 
 **Members:**
 
@@ -17493,7 +17493,7 @@ public class AbilityDefinitionItemHealthRegeneration10 extends AbilityDefinition
 public class AbilityDefinitionItemHealthRegeneration15 extends AbilityDefinition
 ```
 
-'AHRf' / [AbilityIds.itemHealthRegeneration15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealthRegeneration15)
+'AHRf' / [AbilityIds.itemHealthRegeneration15](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHealthRegeneration15)
 
 **Members:**
 
@@ -17507,7 +17507,7 @@ public class AbilityDefinitionItemHealthRegeneration15 extends AbilityDefinition
 public class AbilityDefinitionItemHealthRegeneration8 extends AbilityDefinition
 ```
 
-'AHRo' / [AbilityIds.itemHealthRegeneration8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealthRegeneration8)
+'AHRo' / [AbilityIds.itemHealthRegeneration8](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHealthRegeneration8)
 
 **Members:**
 
@@ -17521,7 +17521,7 @@ public class AbilityDefinitionItemHealthRegeneration8 extends AbilityDefinition
 public class AbilityDefinitionItemHealthRegeneration3 extends AbilityDefinition
 ```
 
-'AHRq' / [AbilityIds.itemHealthRegeneration3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealthRegeneration3)
+'AHRq' / [AbilityIds.itemHealthRegeneration3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHealthRegeneration3)
 
 **Members:**
 
@@ -17535,7 +17535,7 @@ public class AbilityDefinitionItemHealthRegeneration3 extends AbilityDefinition
 public class AbilityDefinitionItemHealthRegeneration7 extends AbilityDefinition
 ```
 
-'AHRs' / [AbilityIds.itemHealthRegeneration7](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealthRegeneration7)
+'AHRs' / [AbilityIds.itemHealthRegeneration7](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHealthRegeneration7)
 
 **Members:**
 
@@ -17549,7 +17549,7 @@ public class AbilityDefinitionItemHealthRegeneration7 extends AbilityDefinition
 public class AbilityDefinitionItemHealthRegeneration5 extends AbilityDefinition
 ```
 
-'AHRt' / [AbilityIds.itemHealthRegeneration5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealthRegeneration5)
+'AHRt' / [AbilityIds.itemHealthRegeneration5](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHealthRegeneration5)
 
 **Members:**
 
@@ -17563,7 +17563,7 @@ public class AbilityDefinitionItemHealthRegeneration5 extends AbilityDefinition
 public class AbilityDefinitionItemHealthRegeneration6 extends AbilityDefinition
 ```
 
-'AHRu' / [AbilityIds.itemHealthRegeneration6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealthRegeneration6)
+'AHRu' / [AbilityIds.itemHealthRegeneration6](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHealthRegeneration6)
 
 **Members:**
 
@@ -17577,7 +17577,7 @@ public class AbilityDefinitionItemHealthRegeneration6 extends AbilityDefinition
 public class AbilityDefinitionItemHealthRegeneration31 extends AbilityDefinition
 ```
 
-'AHRw' / [AbilityIds.itemHealthRegeneration31](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealthRegeneration31)
+'AHRw' / [AbilityIds.itemHealthRegeneration31](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHealthRegeneration31)
 
 **Members:**
 
@@ -17591,7 +17591,7 @@ public class AbilityDefinitionItemHealthRegeneration31 extends AbilityDefinition
 public class AbilityDefinitionItemHealthRegeneration4 extends AbilityDefinition
 ```
 
-'AHRy' / [AbilityIds.itemHealthRegeneration4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealthRegeneration4)
+'AHRy' / [AbilityIds.itemHealthRegeneration4](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHealthRegeneration4)
 
 **Members:**
 
@@ -17605,7 +17605,7 @@ public class AbilityDefinitionItemHealthRegeneration4 extends AbilityDefinition
 public class AbilityDefinitionItemHardenedSkin1007MTRT extends AbilityDefinition
 ```
 
-'AHSe' / [AbilityIds.itemHardenedSkin1007MTRT](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHardenedSkin1007MTRT)
+'AHSe' / [AbilityIds.itemHardenedSkin1007MTRT](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHardenedSkin1007MTRT)
 
 **Members:**
 
@@ -17628,7 +17628,7 @@ public class AbilityDefinitionItemHardenedSkin1007MTRT extends AbilityDefinition
 public class AbilityDefinitionItemHardenedSkin1002MTRT extends AbilityDefinition
 ```
 
-'AHSq' / [AbilityIds.itemHardenedSkin1002MTRT](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHardenedSkin1002MTRT)
+'AHSq' / [AbilityIds.itemHardenedSkin1002MTRT](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHardenedSkin1002MTRT)
 
 **Members:**
 
@@ -17651,7 +17651,7 @@ public class AbilityDefinitionItemHardenedSkin1002MTRT extends AbilityDefinition
 public class AbilityDefinitionHighTemplarSFlameIncinerate extends AbilityDefinition
 ```
 
-'AHTf' / [AbilityIds.highTemplarSFlameIncinerate](/stdlib/ref/_wurst/AbilityIds.html#abilityids-highTemplarSFlameIncinerate)
+'AHTf' / [AbilityIds.highTemplarSFlameIncinerate](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-highTemplarSFlameIncinerate)
 
 **Members:**
 
@@ -17675,7 +17675,7 @@ public class AbilityDefinitionHighTemplarSFlameIncinerate extends AbilityDefinit
 public class AbilityDefinitionHighTemplarSConquerorHeal extends AbilityDefinition
 ```
 
-'AHTh' / [AbilityIds.highTemplarSConquerorHeal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-highTemplarSConquerorHeal)
+'AHTh' / [AbilityIds.highTemplarSConquerorHeal](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-highTemplarSConquerorHeal)
 
 **Members:**
 
@@ -17689,7 +17689,7 @@ public class AbilityDefinitionHighTemplarSConquerorHeal extends AbilityDefinitio
 public class AbilityDefinitionHighTemplarSVisageIF extends AbilityDefinition
 ```
 
-'AHTi' / [AbilityIds.highTemplarSVisageIF](/stdlib/ref/_wurst/AbilityIds.html#abilityids-highTemplarSVisageIF)
+'AHTi' / [AbilityIds.highTemplarSVisageIF](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-highTemplarSVisageIF)
 
 **Members:**
 
@@ -17710,7 +17710,7 @@ public class AbilityDefinitionHighTemplarSVisageIF extends AbilityDefinition
 public class AbilityDefinitionHighTemplarSJudgmentAttack extends AbilityDefinition
 ```
 
-'AHTj' / [AbilityIds.highTemplarSJudgmentAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-highTemplarSJudgmentAttack)
+'AHTj' / [AbilityIds.highTemplarSJudgmentAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-highTemplarSJudgmentAttack)
 
 **Members:**
 
@@ -17741,7 +17741,7 @@ public class AbilityDefinitionHighTemplarSJudgmentAttack extends AbilityDefiniti
 public class AbilityDefinitionHighTemplarSConquerorAttack extends AbilityDefinition
 ```
 
-'AHTq' / [AbilityIds.highTemplarSConquerorAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-highTemplarSConquerorAttack)
+'AHTq' / [AbilityIds.highTemplarSConquerorAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-highTemplarSConquerorAttack)
 
 **Members:**
 
@@ -17772,7 +17772,7 @@ public class AbilityDefinitionHighTemplarSConquerorAttack extends AbilityDefinit
 public class AbilityDefinitionHighTemplarSJudgmentShockwave extends AbilityDefinition
 ```
 
-'AHTs' / [AbilityIds.highTemplarSJudgmentShockwave](/stdlib/ref/_wurst/AbilityIds.html#abilityids-highTemplarSJudgmentShockwave)
+'AHTs' / [AbilityIds.highTemplarSJudgmentShockwave](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-highTemplarSJudgmentShockwave)
 
 **Members:**
 
@@ -17792,7 +17792,7 @@ public class AbilityDefinitionHighTemplarSJudgmentShockwave extends AbilityDefin
 public class AbilityDefinitionHighTemplarSVisageAttack extends AbilityDefinition
 ```
 
-'AHTv' / [AbilityIds.highTemplarSVisageAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-highTemplarSVisageAttack)
+'AHTv' / [AbilityIds.highTemplarSVisageAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-highTemplarSVisageAttack)
 
 **Members:**
 
@@ -17823,7 +17823,7 @@ public class AbilityDefinitionHighTemplarSVisageAttack extends AbilityDefinition
 public class AbilityDefinitionIlastarSacredAuraTalent1 extends AbilityDefinition
 ```
 
-'AHa1' / [AbilityIds.ilastarSacredAuraTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarSacredAuraTalent1)
+'AHa1' / [AbilityIds.ilastarSacredAuraTalent1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ilastarSacredAuraTalent1)
 
 **Members:**
 
@@ -17855,7 +17855,7 @@ public class AbilityDefinitionIlastarSacredAuraTalent1 extends AbilityDefinition
 public class AbilityDefinitionIlastarSacredAuraTalent2 extends AbilityDefinition
 ```
 
-'AHa2' / [AbilityIds.ilastarSacredAuraTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarSacredAuraTalent2)
+'AHa2' / [AbilityIds.ilastarSacredAuraTalent2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ilastarSacredAuraTalent2)
 
 **Members:**
 
@@ -17887,7 +17887,7 @@ public class AbilityDefinitionIlastarSacredAuraTalent2 extends AbilityDefinition
 public class AbilityDefinitionIlastarSacredAuraTalent3 extends AbilityDefinition
 ```
 
-'AHa3' / [AbilityIds.ilastarSacredAuraTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarSacredAuraTalent3)
+'AHa3' / [AbilityIds.ilastarSacredAuraTalent3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ilastarSacredAuraTalent3)
 
 **Members:**
 
@@ -17919,7 +17919,7 @@ public class AbilityDefinitionIlastarSacredAuraTalent3 extends AbilityDefinition
 public class AbilityDefinitionAvatarOfLight extends AbilityDefinition
 ```
 
-'AHal' / [AbilityIds.avatarOfLight](/stdlib/ref/_wurst/AbilityIds.html#abilityids-avatarOfLight)
+'AHal' / [AbilityIds.avatarOfLight](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-avatarOfLight)
 
 **Members:**
 
@@ -17956,7 +17956,7 @@ public class AbilityDefinitionAvatarOfLight extends AbilityDefinition
 public class AbilityDefinitionApprehendAOETalent1 extends AbilityDefinition
 ```
 
-'AHap' / [AbilityIds.apprehendAOETalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-apprehendAOETalent1)
+'AHap' / [AbilityIds.apprehendAOETalent1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-apprehendAOETalent1)
 
 **Members:**
 
@@ -17982,7 +17982,7 @@ public class AbilityDefinitionApprehendAOETalent1 extends AbilityDefinition
 public class AbilityDefinitionIlastarSacredAura extends AbilityDefinition
 ```
 
-'AHas' / [AbilityIds.ilastarSacredAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarSacredAura)
+'AHas' / [AbilityIds.ilastarSacredAura](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ilastarSacredAura)
 
 **Members:**
 
@@ -18014,7 +18014,7 @@ public class AbilityDefinitionIlastarSacredAura extends AbilityDefinition
 public class AbilityDefinitionUnyieldingGuardT1DamageReflect extends AbilityDefinition
 ```
 
-'AHb1' / [AbilityIds.unyieldingGuardT1DamageReflect](/stdlib/ref/_wurst/AbilityIds.html#abilityids-unyieldingGuardT1DamageReflect)
+'AHb1' / [AbilityIds.unyieldingGuardT1DamageReflect](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-unyieldingGuardT1DamageReflect)
 
 **Members:**
 
@@ -18047,7 +18047,7 @@ public class AbilityDefinitionUnyieldingGuardT1DamageReflect extends AbilityDefi
 public class AbilityDefinitionUnyieldingGuardT2SWCDReduce extends AbilityDefinition
 ```
 
-'AHb2' / [AbilityIds.unyieldingGuardT2SWCDReduce](/stdlib/ref/_wurst/AbilityIds.html#abilityids-unyieldingGuardT2SWCDReduce)
+'AHb2' / [AbilityIds.unyieldingGuardT2SWCDReduce](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-unyieldingGuardT2SWCDReduce)
 
 **Members:**
 
@@ -18080,7 +18080,7 @@ public class AbilityDefinitionUnyieldingGuardT2SWCDReduce extends AbilityDefinit
 public class AbilityDefinitionUnyieldingGuardT3DurationIncrease extends AbilityDefinition
 ```
 
-'AHb3' / [AbilityIds.unyieldingGuardT3DurationIncrease](/stdlib/ref/_wurst/AbilityIds.html#abilityids-unyieldingGuardT3DurationIncrease)
+'AHb3' / [AbilityIds.unyieldingGuardT3DurationIncrease](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-unyieldingGuardT3DurationIncrease)
 
 **Members:**
 
@@ -18113,7 +18113,7 @@ public class AbilityDefinitionUnyieldingGuardT3DurationIncrease extends AbilityD
 public class AbilityDefinitionUnyieldingGuard extends AbilityDefinition
 ```
 
-'AHbd' / [AbilityIds.unyieldingGuard](/stdlib/ref/_wurst/AbilityIds.html#abilityids-unyieldingGuard)
+'AHbd' / [AbilityIds.unyieldingGuard](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-unyieldingGuard)
 
 **Members:**
 
@@ -18146,7 +18146,7 @@ public class AbilityDefinitionUnyieldingGuard extends AbilityDefinition
 public class AbilityDefinitionValiantChargeT1CritChance extends AbilityDefinition
 ```
 
-'AHc1' / [AbilityIds.valiantChargeT1CritChance](/stdlib/ref/_wurst/AbilityIds.html#abilityids-valiantChargeT1CritChance)
+'AHc1' / [AbilityIds.valiantChargeT1CritChance](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-valiantChargeT1CritChance)
 
 **Members:**
 
@@ -18172,7 +18172,7 @@ public class AbilityDefinitionValiantChargeT1CritChance extends AbilityDefinitio
 public class AbilityDefinitionValiantChargeT2HeroStunDuration extends AbilityDefinition
 ```
 
-'AHc2' / [AbilityIds.valiantChargeT2HeroStunDuration](/stdlib/ref/_wurst/AbilityIds.html#abilityids-valiantChargeT2HeroStunDuration)
+'AHc2' / [AbilityIds.valiantChargeT2HeroStunDuration](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-valiantChargeT2HeroStunDuration)
 
 **Members:**
 
@@ -18198,7 +18198,7 @@ public class AbilityDefinitionValiantChargeT2HeroStunDuration extends AbilityDef
 public class AbilityDefinitionValiantChargeT3ManaCostDispel extends AbilityDefinition
 ```
 
-'AHc3' / [AbilityIds.valiantChargeT3ManaCostDispel](/stdlib/ref/_wurst/AbilityIds.html#abilityids-valiantChargeT3ManaCostDispel)
+'AHc3' / [AbilityIds.valiantChargeT3ManaCostDispel](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-valiantChargeT3ManaCostDispel)
 
 **Members:**
 
@@ -18224,7 +18224,7 @@ public class AbilityDefinitionValiantChargeT3ManaCostDispel extends AbilityDefin
 public class AbilityDefinitionValiantCharge extends AbilityDefinition
 ```
 
-'AHch' / [AbilityIds.valiantCharge](/stdlib/ref/_wurst/AbilityIds.html#abilityids-valiantCharge)
+'AHch' / [AbilityIds.valiantCharge](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-valiantCharge)
 
 **Members:**
 
@@ -18250,7 +18250,7 @@ public class AbilityDefinitionValiantCharge extends AbilityDefinition
 public class AbilityDefinitionCleansingFire extends AbilityDefinition
 ```
 
-'AHcl' / [AbilityIds.cleansingFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cleansingFire)
+'AHcl' / [AbilityIds.cleansingFire](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cleansingFire)
 
 **Members:**
 
@@ -18276,7 +18276,7 @@ public class AbilityDefinitionCleansingFire extends AbilityDefinition
 public class AbilityDefinitionConsecration extends AbilityDefinition
 ```
 
-'AHcr' / [AbilityIds.consecration](/stdlib/ref/_wurst/AbilityIds.html#abilityids-consecration)
+'AHcr' / [AbilityIds.consecration](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-consecration)
 
 **Members:**
 
@@ -18294,7 +18294,7 @@ public class AbilityDefinitionConsecration extends AbilityDefinition
 public class AbilityDefinitionLandenRaiseTheBanner extends AbilityDefinition
 ```
 
-'AHct' / [AbilityIds.landenRaiseTheBanner](/stdlib/ref/_wurst/AbilityIds.html#abilityids-landenRaiseTheBanner)
+'AHct' / [AbilityIds.landenRaiseTheBanner](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-landenRaiseTheBanner)
 
 **Members:**
 
@@ -18310,7 +18310,7 @@ public class AbilityDefinitionLandenRaiseTheBanner extends AbilityDefinition
 public class AbilityDefinitionApprehendTalent2 extends AbilityDefinition
 ```
 
-'AHe2' / [AbilityIds.apprehendTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-apprehendTalent2)
+'AHe2' / [AbilityIds.apprehendTalent2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-apprehendTalent2)
 
 **Members:**
 
@@ -18336,7 +18336,7 @@ public class AbilityDefinitionApprehendTalent2 extends AbilityDefinition
 public class AbilityDefinitionApprehendTalent3 extends AbilityDefinition
 ```
 
-'AHe3' / [AbilityIds.apprehendTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-apprehendTalent3)
+'AHe3' / [AbilityIds.apprehendTalent3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-apprehendTalent3)
 
 **Members:**
 
@@ -18362,7 +18362,7 @@ public class AbilityDefinitionApprehendTalent3 extends AbilityDefinition
 public class AbilityDefinitionLandenApprehendSingleTarget extends AbilityDefinition
 ```
 
-'AHen' / [AbilityIds.landenApprehendSingleTarget](/stdlib/ref/_wurst/AbilityIds.html#abilityids-landenApprehendSingleTarget)
+'AHen' / [AbilityIds.landenApprehendSingleTarget](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-landenApprehendSingleTarget)
 
 **Members:**
 
@@ -18388,7 +18388,7 @@ public class AbilityDefinitionLandenApprehendSingleTarget extends AbilityDefinit
 public class AbilityDefinitionEvasionStackable extends AbilityDefinition
 ```
 
-'AHes' / [AbilityIds.evasionStackable](/stdlib/ref/_wurst/AbilityIds.html#abilityids-evasionStackable)
+'AHes' / [AbilityIds.evasionStackable](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-evasionStackable)
 
 **Members:**
 
@@ -18402,7 +18402,7 @@ public class AbilityDefinitionEvasionStackable extends AbilityDefinition
 public class AbilityDefinitionGritTalent1 extends AbilityDefinition
 ```
 
-'AHg1' / [AbilityIds.gritTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-gritTalent1)
+'AHg1' / [AbilityIds.gritTalent1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-gritTalent1)
 
 **Members:**
 
@@ -18422,7 +18422,7 @@ public class AbilityDefinitionGritTalent1 extends AbilityDefinition
 public class AbilityDefinitionGritTalent2 extends AbilityDefinition
 ```
 
-'AHg2' / [AbilityIds.gritTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-gritTalent2)
+'AHg2' / [AbilityIds.gritTalent2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-gritTalent2)
 
 **Members:**
 
@@ -18442,7 +18442,7 @@ public class AbilityDefinitionGritTalent2 extends AbilityDefinition
 public class AbilityDefinitionGritTalent3 extends AbilityDefinition
 ```
 
-'AHg3' / [AbilityIds.gritTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-gritTalent3)
+'AHg3' / [AbilityIds.gritTalent3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-gritTalent3)
 
 **Members:**
 
@@ -18462,7 +18462,7 @@ public class AbilityDefinitionGritTalent3 extends AbilityDefinition
 public class AbilityDefinitionGuidingHand extends AbilityDefinition
 ```
 
-'AHgh' / [AbilityIds.guidingHand](/stdlib/ref/_wurst/AbilityIds.html#abilityids-guidingHand)
+'AHgh' / [AbilityIds.guidingHand](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-guidingHand)
 
 **Members:**
 
@@ -18488,7 +18488,7 @@ public class AbilityDefinitionGuidingHand extends AbilityDefinition
 public class AbilityDefinitionGrit extends AbilityDefinition
 ```
 
-'AHgr' / [AbilityIds.grit](/stdlib/ref/_wurst/AbilityIds.html#abilityids-grit)
+'AHgr' / [AbilityIds.grit](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-grit)
 
 **Members:**
 
@@ -18508,7 +18508,7 @@ public class AbilityDefinitionGrit extends AbilityDefinition
 public class AbilityDefinitionHeadsplitterTalent1 extends AbilityDefinition
 ```
 
-'AHh1' / [AbilityIds.headsplitterTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-headsplitterTalent1)
+'AHh1' / [AbilityIds.headsplitterTalent1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-headsplitterTalent1)
 
 **Members:**
 
@@ -18534,7 +18534,7 @@ public class AbilityDefinitionHeadsplitterTalent1 extends AbilityDefinition
 public class AbilityDefinitionHeadsplitterTalent2 extends AbilityDefinition
 ```
 
-'AHh2' / [AbilityIds.headsplitterTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-headsplitterTalent2)
+'AHh2' / [AbilityIds.headsplitterTalent2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-headsplitterTalent2)
 
 **Members:**
 
@@ -18560,7 +18560,7 @@ public class AbilityDefinitionHeadsplitterTalent2 extends AbilityDefinition
 public class AbilityDefinitionHeadsplitterTalent3 extends AbilityDefinition
 ```
 
-'AHh3' / [AbilityIds.headsplitterTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-headsplitterTalent3)
+'AHh3' / [AbilityIds.headsplitterTalent3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-headsplitterTalent3)
 
 **Members:**
 
@@ -18586,7 +18586,7 @@ public class AbilityDefinitionHeadsplitterTalent3 extends AbilityDefinition
 public class AbilityDefinitionHeroicChallengeAkaProvoke extends AbilityDefinition
 ```
 
-'AHhc' / [AbilityIds.heroicChallengeAkaProvoke](/stdlib/ref/_wurst/AbilityIds.html#abilityids-heroicChallengeAkaProvoke)
+'AHhc' / [AbilityIds.heroicChallengeAkaProvoke](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-heroicChallengeAkaProvoke)
 
 **Members:**
 
@@ -18606,7 +18606,7 @@ public class AbilityDefinitionHeroicChallengeAkaProvoke extends AbilityDefinitio
 public class AbilityDefinitionHeadsplitter extends AbilityDefinition
 ```
 
-'AHhr' / [AbilityIds.headsplitter](/stdlib/ref/_wurst/AbilityIds.html#abilityids-headsplitter)
+'AHhr' / [AbilityIds.headsplitter](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-headsplitter)
 
 **Members:**
 
@@ -18632,7 +18632,7 @@ public class AbilityDefinitionHeadsplitter extends AbilityDefinition
 public class AbilityDefinitionHeroicSlash extends AbilityDefinition
 ```
 
-'AHhs' / [AbilityIds.heroicSlash](/stdlib/ref/_wurst/AbilityIds.html#abilityids-heroicSlash)
+'AHhs' / [AbilityIds.heroicSlash](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-heroicSlash)
 
 **Members:**
 
@@ -18652,7 +18652,7 @@ public class AbilityDefinitionHeroicSlash extends AbilityDefinition
 public class AbilityDefinitionInspireCourageTalent1 extends AbilityDefinition
 ```
 
-'AHi1' / [AbilityIds.inspireCourageTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inspireCourageTalent1)
+'AHi1' / [AbilityIds.inspireCourageTalent1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-inspireCourageTalent1)
 
 **Members:**
 
@@ -18672,7 +18672,7 @@ public class AbilityDefinitionInspireCourageTalent1 extends AbilityDefinition
 public class AbilityDefinitionInspireCourageTalent2 extends AbilityDefinition
 ```
 
-'AHi2' / [AbilityIds.inspireCourageTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inspireCourageTalent2)
+'AHi2' / [AbilityIds.inspireCourageTalent2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-inspireCourageTalent2)
 
 **Members:**
 
@@ -18692,7 +18692,7 @@ public class AbilityDefinitionInspireCourageTalent2 extends AbilityDefinition
 public class AbilityDefinitionInspireCourageTalent3 extends AbilityDefinition
 ```
 
-'AHi3' / [AbilityIds.inspireCourageTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inspireCourageTalent3)
+'AHi3' / [AbilityIds.inspireCourageTalent3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-inspireCourageTalent3)
 
 **Members:**
 
@@ -18712,7 +18712,7 @@ public class AbilityDefinitionInspireCourageTalent3 extends AbilityDefinition
 public class AbilityDefinitionInspireCourage extends AbilityDefinition
 ```
 
-'AHic' / [AbilityIds.inspireCourage](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inspireCourage)
+'AHic' / [AbilityIds.inspireCourage](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-inspireCourage)
 
 **Members:**
 
@@ -18732,7 +18732,7 @@ public class AbilityDefinitionInspireCourage extends AbilityDefinition
 public class AbilityDefinitionIlastarSurgeOfLightTalent1 extends AbilityDefinition
 ```
 
-'AHl1' / [AbilityIds.ilastarSurgeOfLightTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarSurgeOfLightTalent1)
+'AHl1' / [AbilityIds.ilastarSurgeOfLightTalent1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ilastarSurgeOfLightTalent1)
 
 **Members:**
 
@@ -18765,7 +18765,7 @@ public class AbilityDefinitionIlastarSurgeOfLightTalent1 extends AbilityDefiniti
 public class AbilityDefinitionIlastarSurgeOfLightTalent2 extends AbilityDefinition
 ```
 
-'AHl2' / [AbilityIds.ilastarSurgeOfLightTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarSurgeOfLightTalent2)
+'AHl2' / [AbilityIds.ilastarSurgeOfLightTalent2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ilastarSurgeOfLightTalent2)
 
 **Members:**
 
@@ -18798,7 +18798,7 @@ public class AbilityDefinitionIlastarSurgeOfLightTalent2 extends AbilityDefiniti
 public class AbilityDefinitionIlastarSurgeOfLightTalent3 extends AbilityDefinition
 ```
 
-'AHl3' / [AbilityIds.ilastarSurgeOfLightTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarSurgeOfLightTalent3)
+'AHl3' / [AbilityIds.ilastarSurgeOfLightTalent3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ilastarSurgeOfLightTalent3)
 
 **Members:**
 
@@ -18831,7 +18831,7 @@ public class AbilityDefinitionIlastarSurgeOfLightTalent3 extends AbilityDefiniti
 public class AbilityDefinitionLightSMercyTalent1 extends AbilityDefinition
 ```
 
-'AHm1' / [AbilityIds.lightSMercyTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-lightSMercyTalent1)
+'AHm1' / [AbilityIds.lightSMercyTalent1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-lightSMercyTalent1)
 
 **Members:**
 
@@ -18857,7 +18857,7 @@ public class AbilityDefinitionLightSMercyTalent1 extends AbilityDefinition
 public class AbilityDefinitionLightSMercyTalent2 extends AbilityDefinition
 ```
 
-'AHm2' / [AbilityIds.lightSMercyTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-lightSMercyTalent2)
+'AHm2' / [AbilityIds.lightSMercyTalent2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-lightSMercyTalent2)
 
 **Members:**
 
@@ -18883,7 +18883,7 @@ public class AbilityDefinitionLightSMercyTalent2 extends AbilityDefinition
 public class AbilityDefinitionLightSMercyTalent3 extends AbilityDefinition
 ```
 
-'AHm3' / [AbilityIds.lightSMercyTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-lightSMercyTalent3)
+'AHm3' / [AbilityIds.lightSMercyTalent3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-lightSMercyTalent3)
 
 **Members:**
 
@@ -18909,7 +18909,7 @@ public class AbilityDefinitionLightSMercyTalent3 extends AbilityDefinition
 public class AbilityDefinitionClericMindControl extends AbilityDefinition
 ```
 
-'AHmc' / [AbilityIds.clericMindControl](/stdlib/ref/_wurst/AbilityIds.html#abilityids-clericMindControl)
+'AHmc' / [AbilityIds.clericMindControl](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-clericMindControl)
 
 **Members:**
 
@@ -18931,7 +18931,7 @@ public class AbilityDefinitionClericMindControl extends AbilityDefinition
 public class AbilityDefinitionChallengingCall extends AbilityDefinition
 ```
 
-'AHnt' / [AbilityIds.challengingCall](/stdlib/ref/_wurst/AbilityIds.html#abilityids-challengingCall)
+'AHnt' / [AbilityIds.challengingCall](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-challengingCall)
 
 **Members:**
 
@@ -18963,7 +18963,7 @@ public class AbilityDefinitionChallengingCall extends AbilityDefinition
 public class AbilityDefinitionForsakenPaladinSacredAura extends AbilityDefinition
 ```
 
-'AHpa' / [AbilityIds.forsakenPaladinSacredAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-forsakenPaladinSacredAura)
+'AHpa' / [AbilityIds.forsakenPaladinSacredAura](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-forsakenPaladinSacredAura)
 
 **Members:**
 
@@ -18995,7 +18995,7 @@ public class AbilityDefinitionForsakenPaladinSacredAura extends AbilityDefinitio
 public class AbilityDefinitionHolyWrath extends AbilityDefinition
 ```
 
-'AHpb' / [AbilityIds.holyWrath](/stdlib/ref/_wurst/AbilityIds.html#abilityids-holyWrath)
+'AHpb' / [AbilityIds.holyWrath](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-holyWrath)
 
 **Members:**
 
@@ -19024,7 +19024,7 @@ public class AbilityDefinitionHolyWrath extends AbilityDefinition
 public class AbilityDefinitionGuidingHandTalent1 extends AbilityDefinition
 ```
 
-'AHq1' / [AbilityIds.guidingHandTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-guidingHandTalent1)
+'AHq1' / [AbilityIds.guidingHandTalent1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-guidingHandTalent1)
 
 **Members:**
 
@@ -19050,7 +19050,7 @@ public class AbilityDefinitionGuidingHandTalent1 extends AbilityDefinition
 public class AbilityDefinitionGuidingHandTalent2 extends AbilityDefinition
 ```
 
-'AHq2' / [AbilityIds.guidingHandTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-guidingHandTalent2)
+'AHq2' / [AbilityIds.guidingHandTalent2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-guidingHandTalent2)
 
 **Members:**
 
@@ -19076,7 +19076,7 @@ public class AbilityDefinitionGuidingHandTalent2 extends AbilityDefinition
 public class AbilityDefinitionGuidingHandTalent3 extends AbilityDefinition
 ```
 
-'AHq3' / [AbilityIds.guidingHandTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-guidingHandTalent3)
+'AHq3' / [AbilityIds.guidingHandTalent3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-guidingHandTalent3)
 
 **Members:**
 
@@ -19102,7 +19102,7 @@ public class AbilityDefinitionGuidingHandTalent3 extends AbilityDefinition
 public class AbilityDefinitionSweepingStrikeT1ASReduce extends AbilityDefinition
 ```
 
-'AHs1' / [AbilityIds.sweepingStrikeT1ASReduce](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sweepingStrikeT1ASReduce)
+'AHs1' / [AbilityIds.sweepingStrikeT1ASReduce](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-sweepingStrikeT1ASReduce)
 
 **Members:**
 
@@ -19151,7 +19151,7 @@ public class AbilityDefinitionSweepingStrikeT1ASReduce extends AbilityDefinition
 public class AbilityDefinitionSweepingStrikeT2ArmorReduce extends AbilityDefinition
 ```
 
-'AHs2' / [AbilityIds.sweepingStrikeT2ArmorReduce](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sweepingStrikeT2ArmorReduce)
+'AHs2' / [AbilityIds.sweepingStrikeT2ArmorReduce](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-sweepingStrikeT2ArmorReduce)
 
 **Members:**
 
@@ -19200,7 +19200,7 @@ public class AbilityDefinitionSweepingStrikeT2ArmorReduce extends AbilityDefinit
 public class AbilityDefinitionSweepingStrikeT3CDReduce extends AbilityDefinition
 ```
 
-'AHs3' / [AbilityIds.sweepingStrikeT3CDReduce](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sweepingStrikeT3CDReduce)
+'AHs3' / [AbilityIds.sweepingStrikeT3CDReduce](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-sweepingStrikeT3CDReduce)
 
 **Members:**
 
@@ -19249,7 +19249,7 @@ public class AbilityDefinitionSweepingStrikeT3CDReduce extends AbilityDefinition
 public class AbilityDefinitionClericSacredFlameLightSMercy extends AbilityDefinition
 ```
 
-'AHsf' / [AbilityIds.clericSacredFlameLightSMercy](/stdlib/ref/_wurst/AbilityIds.html#abilityids-clericSacredFlameLightSMercy)
+'AHsf' / [AbilityIds.clericSacredFlameLightSMercy](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-clericSacredFlameLightSMercy)
 
 **Members:**
 
@@ -19275,7 +19275,7 @@ public class AbilityDefinitionClericSacredFlameLightSMercy extends AbilityDefini
 public class AbilityDefinitionIlastarSurgeOfLight extends AbilityDefinition
 ```
 
-'AHsl' / [AbilityIds.ilastarSurgeOfLight](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarSurgeOfLight)
+'AHsl' / [AbilityIds.ilastarSurgeOfLight](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ilastarSurgeOfLight)
 
 **Members:**
 
@@ -19308,7 +19308,7 @@ public class AbilityDefinitionIlastarSurgeOfLight extends AbilityDefinition
 public class AbilityDefinitionHardenedSkinStacking extends AbilityDefinition
 ```
 
-'AHss' / [AbilityIds.hardenedSkinStacking](/stdlib/ref/_wurst/AbilityIds.html#abilityids-hardenedSkinStacking)
+'AHss' / [AbilityIds.hardenedSkinStacking](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-hardenedSkinStacking)
 
 **Members:**
 
@@ -19331,7 +19331,7 @@ public class AbilityDefinitionHardenedSkinStacking extends AbilityDefinition
 public class AbilityDefinitionSweepingStrike extends AbilityDefinition
 ```
 
-'AHsw' / [AbilityIds.sweepingStrike](/stdlib/ref/_wurst/AbilityIds.html#abilityids-sweepingStrike)
+'AHsw' / [AbilityIds.sweepingStrike](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-sweepingStrike)
 
 **Members:**
 
@@ -19380,7 +19380,7 @@ public class AbilityDefinitionSweepingStrike extends AbilityDefinition
 public class AbilityDefinitionHeroicChallengeTalent1 extends AbilityDefinition
 ```
 
-'AHu1' / [AbilityIds.heroicChallengeTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-heroicChallengeTalent1)
+'AHu1' / [AbilityIds.heroicChallengeTalent1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-heroicChallengeTalent1)
 
 **Members:**
 
@@ -19400,7 +19400,7 @@ public class AbilityDefinitionHeroicChallengeTalent1 extends AbilityDefinition
 public class AbilityDefinitionHeroicChallengeTalent2 extends AbilityDefinition
 ```
 
-'AHu2' / [AbilityIds.heroicChallengeTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-heroicChallengeTalent2)
+'AHu2' / [AbilityIds.heroicChallengeTalent2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-heroicChallengeTalent2)
 
 **Members:**
 
@@ -19420,7 +19420,7 @@ public class AbilityDefinitionHeroicChallengeTalent2 extends AbilityDefinition
 public class AbilityDefinitionHeroicChallengeTalent3 extends AbilityDefinition
 ```
 
-'AHu3' / [AbilityIds.heroicChallengeTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-heroicChallengeTalent3)
+'AHu3' / [AbilityIds.heroicChallengeTalent3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-heroicChallengeTalent3)
 
 **Members:**
 
@@ -19440,7 +19440,7 @@ public class AbilityDefinitionHeroicChallengeTalent3 extends AbilityDefinition
 public class AbilityDefinitionHeroicSlashTalent1 extends AbilityDefinition
 ```
 
-'AHv1' / [AbilityIds.heroicSlashTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-heroicSlashTalent1)
+'AHv1' / [AbilityIds.heroicSlashTalent1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-heroicSlashTalent1)
 
 **Members:**
 
@@ -19460,7 +19460,7 @@ public class AbilityDefinitionHeroicSlashTalent1 extends AbilityDefinition
 public class AbilityDefinitionHeroicSlashTalent2 extends AbilityDefinition
 ```
 
-'AHv2' / [AbilityIds.heroicSlashTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-heroicSlashTalent2)
+'AHv2' / [AbilityIds.heroicSlashTalent2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-heroicSlashTalent2)
 
 **Members:**
 
@@ -19480,7 +19480,7 @@ public class AbilityDefinitionHeroicSlashTalent2 extends AbilityDefinition
 public class AbilityDefinitionHeroicSlashTalent3 extends AbilityDefinition
 ```
 
-'AHv3' / [AbilityIds.heroicSlashTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-heroicSlashTalent3)
+'AHv3' / [AbilityIds.heroicSlashTalent3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-heroicSlashTalent3)
 
 **Members:**
 
@@ -19500,7 +19500,7 @@ public class AbilityDefinitionHeroicSlashTalent3 extends AbilityDefinition
 public class AbilityDefinitionWarcryT1MagicImmunity extends AbilityDefinition
 ```
 
-'AHw1' / [AbilityIds.warcryT1MagicImmunity](/stdlib/ref/_wurst/AbilityIds.html#abilityids-warcryT1MagicImmunity)
+'AHw1' / [AbilityIds.warcryT1MagicImmunity](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-warcryT1MagicImmunity)
 
 **Members:**
 
@@ -19514,7 +19514,7 @@ public class AbilityDefinitionWarcryT1MagicImmunity extends AbilityDefinition
 public class AbilityDefinitionWarcryT1SpellCrit extends AbilityDefinition
 ```
 
-'AHw2' / [AbilityIds.warcryT1SpellCrit](/stdlib/ref/_wurst/AbilityIds.html#abilityids-warcryT1SpellCrit)
+'AHw2' / [AbilityIds.warcryT1SpellCrit](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-warcryT1SpellCrit)
 
 **Members:**
 
@@ -19528,7 +19528,7 @@ public class AbilityDefinitionWarcryT1SpellCrit extends AbilityDefinition
 public class AbilityDefinitionWarcryT1MaxLifestealPlusAttackDamage extends AbilityDefinition
 ```
 
-'AHw3' / [AbilityIds.warcryT1MaxLifestealPlusAttackDamage](/stdlib/ref/_wurst/AbilityIds.html#abilityids-warcryT1MaxLifestealPlusAttackDamage)
+'AHw3' / [AbilityIds.warcryT1MaxLifestealPlusAttackDamage](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-warcryT1MaxLifestealPlusAttackDamage)
 
 **Members:**
 
@@ -19542,7 +19542,7 @@ public class AbilityDefinitionWarcryT1MaxLifestealPlusAttackDamage extends Abili
 public class AbilityDefinitionWarcryMagicImmunityPassive extends AbilityDefinition
 ```
 
-'AHw4' / [AbilityIds.warcryMagicImmunityPassive](/stdlib/ref/_wurst/AbilityIds.html#abilityids-warcryMagicImmunityPassive)
+'AHw4' / [AbilityIds.warcryMagicImmunityPassive](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-warcryMagicImmunityPassive)
 
 **Members:**
 
@@ -19556,7 +19556,7 @@ public class AbilityDefinitionWarcryMagicImmunityPassive extends AbilityDefiniti
 public class AbilityDefinitionWarcrySpellCritPassive extends AbilityDefinition
 ```
 
-'AHw5' / [AbilityIds.warcrySpellCritPassive](/stdlib/ref/_wurst/AbilityIds.html#abilityids-warcrySpellCritPassive)
+'AHw5' / [AbilityIds.warcrySpellCritPassive](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-warcrySpellCritPassive)
 
 **Members:**
 
@@ -19572,7 +19572,7 @@ public class AbilityDefinitionWarcrySpellCritPassive extends AbilityDefinition
 public class AbilityDefinitionWarcryLifestealEnhanced extends AbilityDefinition
 ```
 
-'AHw6' / [AbilityIds.warcryLifestealEnhanced](/stdlib/ref/_wurst/AbilityIds.html#abilityids-warcryLifestealEnhanced)
+'AHw6' / [AbilityIds.warcryLifestealEnhanced](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-warcryLifestealEnhanced)
 
 **Members:**
 
@@ -19586,7 +19586,7 @@ public class AbilityDefinitionWarcryLifestealEnhanced extends AbilityDefinition
 public class AbilityDefinitionWarcryDamageEnhanced extends AbilityDefinition
 ```
 
-'AHw7' / [AbilityIds.warcryDamageEnhanced](/stdlib/ref/_wurst/AbilityIds.html#abilityids-warcryDamageEnhanced)
+'AHw7' / [AbilityIds.warcryDamageEnhanced](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-warcryDamageEnhanced)
 
 **Members:**
 
@@ -19600,7 +19600,7 @@ public class AbilityDefinitionWarcryDamageEnhanced extends AbilityDefinition
 public class AbilityDefinitionWarcryCleaveEnhanced extends AbilityDefinition
 ```
 
-'AHw8' / [AbilityIds.warcryCleaveEnhanced](/stdlib/ref/_wurst/AbilityIds.html#abilityids-warcryCleaveEnhanced)
+'AHw8' / [AbilityIds.warcryCleaveEnhanced](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-warcryCleaveEnhanced)
 
 **Members:**
 
@@ -19614,7 +19614,7 @@ public class AbilityDefinitionWarcryCleaveEnhanced extends AbilityDefinition
 public class AbilityDefinitionWarcryAbilitySpeed extends AbilityDefinition
 ```
 
-'AHw9' / [AbilityIds.warcryAbilitySpeed](/stdlib/ref/_wurst/AbilityIds.html#abilityids-warcryAbilitySpeed)
+'AHw9' / [AbilityIds.warcryAbilitySpeed](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-warcryAbilitySpeed)
 
 **Members:**
 
@@ -19630,7 +19630,7 @@ public class AbilityDefinitionWarcryAbilitySpeed extends AbilityDefinition
 public class AbilityDefinitionWarcry extends AbilityDefinition
 ```
 
-'AHwc' / [AbilityIds.warcry](/stdlib/ref/_wurst/AbilityIds.html#abilityids-warcry)
+'AHwc' / [AbilityIds.warcry](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-warcry)
 
 **Members:**
 
@@ -19644,7 +19644,7 @@ public class AbilityDefinitionWarcry extends AbilityDefinition
 public class AbilityDefinitionClericMindControlTalent1 extends AbilityDefinition
 ```
 
-'AHz1' / [AbilityIds.clericMindControlTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-clericMindControlTalent1)
+'AHz1' / [AbilityIds.clericMindControlTalent1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-clericMindControlTalent1)
 
 **Members:**
 
@@ -19666,7 +19666,7 @@ public class AbilityDefinitionClericMindControlTalent1 extends AbilityDefinition
 public class AbilityDefinitionClericMindControlTalent2 extends AbilityDefinition
 ```
 
-'AHz2' / [AbilityIds.clericMindControlTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-clericMindControlTalent2)
+'AHz2' / [AbilityIds.clericMindControlTalent2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-clericMindControlTalent2)
 
 **Members:**
 
@@ -19688,7 +19688,7 @@ public class AbilityDefinitionClericMindControlTalent2 extends AbilityDefinition
 public class AbilityDefinitionClericMindControlTalent3 extends AbilityDefinition
 ```
 
-'AHz3' / [AbilityIds.clericMindControlTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-clericMindControlTalent3)
+'AHz3' / [AbilityIds.clericMindControlTalent3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-clericMindControlTalent3)
 
 **Members:**
 
@@ -19710,7 +19710,7 @@ public class AbilityDefinitionClericMindControlTalent3 extends AbilityDefinition
 public class AbilityDefinitionIntelligenceBonusPlus10 extends AbilityDefinition
 ```
 
-'AI10' / [AbilityIds.intelligenceBonusPlus10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-intelligenceBonusPlus10)
+'AI10' / [AbilityIds.intelligenceBonusPlus10](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-intelligenceBonusPlus10)
 
 **Members:**
 
@@ -19730,7 +19730,7 @@ public class AbilityDefinitionIntelligenceBonusPlus10 extends AbilityDefinition
 public class AbilityDefinitionIntelligenceBonusPlus11 extends AbilityDefinition
 ```
 
-'AI11' / [AbilityIds.intelligenceBonusPlus11](/stdlib/ref/_wurst/AbilityIds.html#abilityids-intelligenceBonusPlus11)
+'AI11' / [AbilityIds.intelligenceBonusPlus11](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-intelligenceBonusPlus11)
 
 **Members:**
 
@@ -19750,7 +19750,7 @@ public class AbilityDefinitionIntelligenceBonusPlus11 extends AbilityDefinition
 public class AbilityDefinitionIntelligenceBonusPlus12 extends AbilityDefinition
 ```
 
-'AI12' / [AbilityIds.intelligenceBonusPlus12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-intelligenceBonusPlus12)
+'AI12' / [AbilityIds.intelligenceBonusPlus12](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-intelligenceBonusPlus12)
 
 **Members:**
 
@@ -19770,7 +19770,7 @@ public class AbilityDefinitionIntelligenceBonusPlus12 extends AbilityDefinition
 public class AbilityDefinitionItemArmorBonus1 extends AbilityDefinition
 ```
 
-'AIAq' / [AbilityIds.itemArmorBonus1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorBonus1)
+'AIAq' / [AbilityIds.itemArmorBonus1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemArmorBonus1)
 
 **Members:**
 
@@ -19784,7 +19784,7 @@ public class AbilityDefinitionItemArmorBonus1 extends AbilityDefinition
 public class AbilityDefinitionItemArmorBonus2 extends AbilityDefinition
 ```
 
-'AIAw' / [AbilityIds.itemArmorBonus2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorBonus2)
+'AIAw' / [AbilityIds.itemArmorBonus2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemArmorBonus2)
 
 **Members:**
 
@@ -19798,7 +19798,7 @@ public class AbilityDefinitionItemArmorBonus2 extends AbilityDefinition
 public class AbilityDefinitionItemBash15251 extends AbilityDefinition
 ```
 
-'AIBq' / [AbilityIds.itemBash15251](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBash15251)
+'AIBq' / [AbilityIds.itemBash15251](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemBash15251)
 
 **Members:**
 
@@ -19820,7 +19820,7 @@ public class AbilityDefinitionItemBash15251 extends AbilityDefinition
 public class AbilityDefinitionItemBash10252 extends AbilityDefinition
 ```
 
-'AIBw' / [AbilityIds.itemBash10252](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBash10252)
+'AIBw' / [AbilityIds.itemBash10252](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemBash10252)
 
 **Members:**
 
@@ -19842,7 +19842,7 @@ public class AbilityDefinitionItemBash10252 extends AbilityDefinition
 public class AbilityDefinitionItemEvasion12 extends AbilityDefinition
 ```
 
-'AIEi' / [AbilityIds.itemEvasion12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEvasion12)
+'AIEi' / [AbilityIds.itemEvasion12](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemEvasion12)
 
 **Members:**
 
@@ -19856,7 +19856,7 @@ public class AbilityDefinitionItemEvasion12 extends AbilityDefinition
 public class AbilityDefinitionItemEvasion2 extends AbilityDefinition
 ```
 
-'AIEq' / [AbilityIds.itemEvasion2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEvasion2)
+'AIEq' / [AbilityIds.itemEvasion2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemEvasion2)
 
 **Members:**
 
@@ -19870,7 +19870,7 @@ public class AbilityDefinitionItemEvasion2 extends AbilityDefinition
 public class AbilityDefinitionItemEvasion5 extends AbilityDefinition
 ```
 
-'AIEr' / [AbilityIds.itemEvasion5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEvasion5)
+'AIEr' / [AbilityIds.itemEvasion5](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemEvasion5)
 
 **Members:**
 
@@ -19884,7 +19884,7 @@ public class AbilityDefinitionItemEvasion5 extends AbilityDefinition
 public class AbilityDefinitionItemEvasion7 extends AbilityDefinition
 ```
 
-'AIEt' / [AbilityIds.itemEvasion7](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEvasion7)
+'AIEt' / [AbilityIds.itemEvasion7](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemEvasion7)
 
 **Members:**
 
@@ -19898,7 +19898,7 @@ public class AbilityDefinitionItemEvasion7 extends AbilityDefinition
 public class AbilityDefinitionItemEvasion10 extends AbilityDefinition
 ```
 
-'AIEu' / [AbilityIds.itemEvasion10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEvasion10)
+'AIEu' / [AbilityIds.itemEvasion10](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemEvasion10)
 
 **Members:**
 
@@ -19912,7 +19912,7 @@ public class AbilityDefinitionItemEvasion10 extends AbilityDefinition
 public class AbilityDefinitionItemEvasion4 extends AbilityDefinition
 ```
 
-'AIEw' / [AbilityIds.itemEvasion4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEvasion4)
+'AIEw' / [AbilityIds.itemEvasion4](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemEvasion4)
 
 **Members:**
 
@@ -19926,7 +19926,7 @@ public class AbilityDefinitionItemEvasion4 extends AbilityDefinition
 public class AbilityDefinitionItemEvasion8 extends AbilityDefinition
 ```
 
-'AIEy' / [AbilityIds.itemEvasion8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEvasion8)
+'AIEy' / [AbilityIds.itemEvasion8](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemEvasion8)
 
 **Members:**
 
@@ -19940,7 +19940,7 @@ public class AbilityDefinitionItemEvasion8 extends AbilityDefinition
 public class AbilityDefinitionItemMaxLifeBonus250 extends AbilityDefinition
 ```
 
-'AILa' / [AbilityIds.itemMaxLifeBonus250](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMaxLifeBonus250)
+'AILa' / [AbilityIds.itemMaxLifeBonus250](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemMaxLifeBonus250)
 
 **Members:**
 
@@ -19954,7 +19954,7 @@ public class AbilityDefinitionItemMaxLifeBonus250 extends AbilityDefinition
 public class AbilityDefinitionItemMaxLifeBonus280 extends AbilityDefinition
 ```
 
-'AILe' / [AbilityIds.itemMaxLifeBonus280](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMaxLifeBonus280)
+'AILe' / [AbilityIds.itemMaxLifeBonus280](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemMaxLifeBonus280)
 
 **Members:**
 
@@ -19968,7 +19968,7 @@ public class AbilityDefinitionItemMaxLifeBonus280 extends AbilityDefinition
 public class AbilityDefinitionItemMaxLifeBonus40 extends AbilityDefinition
 ```
 
-'AILi' / [AbilityIds.itemMaxLifeBonus40](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMaxLifeBonus40)
+'AILi' / [AbilityIds.itemMaxLifeBonus40](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemMaxLifeBonus40)
 
 **Members:**
 
@@ -19982,7 +19982,7 @@ public class AbilityDefinitionItemMaxLifeBonus40 extends AbilityDefinition
 public class AbilityDefinitionItemMaxLifeBonus60 extends AbilityDefinition
 ```
 
-'AILr' / [AbilityIds.itemMaxLifeBonus60](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMaxLifeBonus60)
+'AILr' / [AbilityIds.itemMaxLifeBonus60](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemMaxLifeBonus60)
 
 **Members:**
 
@@ -19996,7 +19996,7 @@ public class AbilityDefinitionItemMaxLifeBonus60 extends AbilityDefinition
 public class AbilityDefinitionItemMaxLifeBonus200 extends AbilityDefinition
 ```
 
-'AILt' / [AbilityIds.itemMaxLifeBonus200](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMaxLifeBonus200)
+'AILt' / [AbilityIds.itemMaxLifeBonus200](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemMaxLifeBonus200)
 
 **Members:**
 
@@ -20010,7 +20010,7 @@ public class AbilityDefinitionItemMaxLifeBonus200 extends AbilityDefinition
 public class AbilityDefinitionItemMaxLifeBonus50 extends AbilityDefinition
 ```
 
-'AILw' / [AbilityIds.itemMaxLifeBonus50](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMaxLifeBonus50)
+'AILw' / [AbilityIds.itemMaxLifeBonus50](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemMaxLifeBonus50)
 
 **Members:**
 
@@ -20024,7 +20024,7 @@ public class AbilityDefinitionItemMaxLifeBonus50 extends AbilityDefinition
 public class AbilityDefinitionItemMaxLifeBonus20 extends AbilityDefinition
 ```
 
-'AILy' / [AbilityIds.itemMaxLifeBonus20](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMaxLifeBonus20)
+'AILy' / [AbilityIds.itemMaxLifeBonus20](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemMaxLifeBonus20)
 
 **Members:**
 
@@ -20038,7 +20038,7 @@ public class AbilityDefinitionItemMaxLifeBonus20 extends AbilityDefinition
 public class AbilityDefinitionItemResolve5 extends AbilityDefinition
 ```
 
-'AIR5' / [AbilityIds.itemResolve5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemResolve5)
+'AIR5' / [AbilityIds.itemResolve5](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemResolve5)
 
 **Members:**
 
@@ -20054,7 +20054,7 @@ public class AbilityDefinitionItemResolve5 extends AbilityDefinition
 public class AbilityDefinitionItemResolve20 extends AbilityDefinition
 ```
 
-'AIRo' / [AbilityIds.itemResolve20](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemResolve20)
+'AIRo' / [AbilityIds.itemResolve20](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemResolve20)
 
 **Members:**
 
@@ -20070,7 +20070,7 @@ public class AbilityDefinitionItemResolve20 extends AbilityDefinition
 public class AbilityDefinitionItemResolve12 extends AbilityDefinition
 ```
 
-'AIRp' / [AbilityIds.itemResolve12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemResolve12)
+'AIRp' / [AbilityIds.itemResolve12](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemResolve12)
 
 **Members:**
 
@@ -20086,7 +20086,7 @@ public class AbilityDefinitionItemResolve12 extends AbilityDefinition
 public class AbilityDefinitionItemResolve10 extends AbilityDefinition
 ```
 
-'AIRq' / [AbilityIds.itemResolve10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemResolve10)
+'AIRq' / [AbilityIds.itemResolve10](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemResolve10)
 
 **Members:**
 
@@ -20102,7 +20102,7 @@ public class AbilityDefinitionItemResolve10 extends AbilityDefinition
 public class AbilityDefinitionItemResolve16 extends AbilityDefinition
 ```
 
-'AIRu' / [AbilityIds.itemResolve16](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemResolve16)
+'AIRu' / [AbilityIds.itemResolve16](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemResolve16)
 
 **Members:**
 
@@ -20118,7 +20118,7 @@ public class AbilityDefinitionItemResolve16 extends AbilityDefinition
 public class AbilityDefinitionItemResolve8 extends AbilityDefinition
 ```
 
-'AIRw' / [AbilityIds.itemResolve8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemResolve8)
+'AIRw' / [AbilityIds.itemResolve8](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemResolve8)
 
 **Members:**
 
@@ -20134,7 +20134,7 @@ public class AbilityDefinitionItemResolve8 extends AbilityDefinition
 public class AbilityDefinitionItemResolve6 extends AbilityDefinition
 ```
 
-'AIRy' / [AbilityIds.itemResolve6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemResolve6)
+'AIRy' / [AbilityIds.itemResolve6](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemResolve6)
 
 **Members:**
 
@@ -20150,7 +20150,7 @@ public class AbilityDefinitionItemResolve6 extends AbilityDefinition
 public class AbilityDefinitionAgilityBonusPlus7 extends AbilityDefinition
 ```
 
-'AIa7' / [AbilityIds.agilityBonusPlus7](/stdlib/ref/_wurst/AbilityIds.html#abilityids-agilityBonusPlus7)
+'AIa7' / [AbilityIds.agilityBonusPlus7](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-agilityBonusPlus7)
 
 **Members:**
 
@@ -20170,7 +20170,7 @@ public class AbilityDefinitionAgilityBonusPlus7 extends AbilityDefinition
 public class AbilityDefinitionAgilityBonusPlus8 extends AbilityDefinition
 ```
 
-'AIa8' / [AbilityIds.agilityBonusPlus8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-agilityBonusPlus8)
+'AIa8' / [AbilityIds.agilityBonusPlus8](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-agilityBonusPlus8)
 
 **Members:**
 
@@ -20190,7 +20190,7 @@ public class AbilityDefinitionAgilityBonusPlus8 extends AbilityDefinition
 public class AbilityDefinitionItemSpellAmp10 extends AbilityDefinition
 ```
 
-'AIap' / [AbilityIds.itemSpellAmp10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellAmp10)
+'AIap' / [AbilityIds.itemSpellAmp10](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellAmp10)
 
 **Members:**
 
@@ -20208,7 +20208,7 @@ public class AbilityDefinitionItemSpellAmp10 extends AbilityDefinition
 public class AbilityDefinitionItemAuraCommand8 extends AbilityDefinition
 ```
 
-'AIcq' / [AbilityIds.itemAuraCommand8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAuraCommand8)
+'AIcq' / [AbilityIds.itemAuraCommand8](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAuraCommand8)
 
 **Members:**
 
@@ -20220,7 +20220,7 @@ public class AbilityDefinitionItemAuraCommand8 extends AbilityDefinition
 public class AbilityDefinitionItemCooldownReduction extends AbilityDefinition
 ```
 
-'AIcr' / [AbilityIds.itemCooldownReduction](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCooldownReduction)
+'AIcr' / [AbilityIds.itemCooldownReduction](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCooldownReduction)
 
 **Members:**
 
@@ -20236,7 +20236,7 @@ public class AbilityDefinitionItemCooldownReduction extends AbilityDefinition
 public class AbilityDefinitionDefenseBonusPlus6 extends AbilityDefinition
 ```
 
-'AId6' / [AbilityIds.defenseBonusPlus6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-defenseBonusPlus6)
+'AId6' / [AbilityIds.defenseBonusPlus6](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-defenseBonusPlus6)
 
 **Members:**
 
@@ -20250,7 +20250,7 @@ public class AbilityDefinitionDefenseBonusPlus6 extends AbilityDefinition
 public class AbilityDefinitionEdricsEye extends AbilityDefinition
 ```
 
-'AIee' / [AbilityIds.edricsEye](/stdlib/ref/_wurst/AbilityIds.html#abilityids-edricsEye)
+'AIee' / [AbilityIds.edricsEye](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-edricsEye)
 
 **Members:**
 
@@ -20266,7 +20266,7 @@ public class AbilityDefinitionEdricsEye extends AbilityDefinition
 public class AbilityDefinitionItemHealUltimate extends AbilityDefinition
 ```
 
-'AIh4' / [AbilityIds.itemHealUltimate](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealUltimate)
+'AIh4' / [AbilityIds.itemHealUltimate](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHealUltimate)
 
 **Members:**
 
@@ -20280,7 +20280,7 @@ public class AbilityDefinitionItemHealUltimate extends AbilityDefinition
 public class AbilityDefinitionItemHealFinal extends AbilityDefinition
 ```
 
-'AIh5' / [AbilityIds.itemHealFinal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHealFinal)
+'AIh5' / [AbilityIds.itemHealFinal](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHealFinal)
 
 **Members:**
 
@@ -20294,7 +20294,7 @@ public class AbilityDefinitionItemHealFinal extends AbilityDefinition
 public class AbilityDefinitionHardenedSkinItem extends AbilityDefinition
 ```
 
-'AIhs' / [AbilityIds.hardenedSkinItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-hardenedSkinItem)
+'AIhs' / [AbilityIds.hardenedSkinItem](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-hardenedSkinItem)
 
 **Members:**
 
@@ -20317,7 +20317,7 @@ public class AbilityDefinitionHardenedSkinItem extends AbilityDefinition
 public class AbilityDefinitionIntelligenceBonusPlus8 extends AbilityDefinition
 ```
 
-'AIi8' / [AbilityIds.intelligenceBonusPlus8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-intelligenceBonusPlus8)
+'AIi8' / [AbilityIds.intelligenceBonusPlus8](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-intelligenceBonusPlus8)
 
 **Members:**
 
@@ -20337,7 +20337,7 @@ public class AbilityDefinitionIntelligenceBonusPlus8 extends AbilityDefinition
 public class AbilityDefinitionKrisIncinerate extends AbilityDefinition
 ```
 
-'AIki' / [AbilityIds.krisIncinerate](/stdlib/ref/_wurst/AbilityIds.html#abilityids-krisIncinerate)
+'AIki' / [AbilityIds.krisIncinerate](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-krisIncinerate)
 
 **Members:**
 
@@ -20361,7 +20361,7 @@ public class AbilityDefinitionKrisIncinerate extends AbilityDefinition
 public class AbilityDefinitionItemMaxLifeBonus25 extends AbilityDefinition
 ```
 
-'AIl3' / [AbilityIds.itemMaxLifeBonus25](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMaxLifeBonus25)
+'AIl3' / [AbilityIds.itemMaxLifeBonus25](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemMaxLifeBonus25)
 
 **Members:**
 
@@ -20375,7 +20375,7 @@ public class AbilityDefinitionItemMaxLifeBonus25 extends AbilityDefinition
 public class AbilityDefinitionLichOrb extends AbilityDefinition
 ```
 
-'AIlo' / [AbilityIds.lichOrb](/stdlib/ref/_wurst/AbilityIds.html#abilityids-lichOrb)
+'AIlo' / [AbilityIds.lichOrb](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-lichOrb)
 
 **Members:**
 
@@ -20394,7 +20394,7 @@ public class AbilityDefinitionLichOrb extends AbilityDefinition
 public class AbilityDefinitionItemMaxLifeBonus100 extends AbilityDefinition
 ```
 
-'AIlq' / [AbilityIds.itemMaxLifeBonus100](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMaxLifeBonus100)
+'AIlq' / [AbilityIds.itemMaxLifeBonus100](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemMaxLifeBonus100)
 
 **Members:**
 
@@ -20408,7 +20408,7 @@ public class AbilityDefinitionItemMaxLifeBonus100 extends AbilityDefinition
 public class AbilityDefinitionItemResolve30 extends AbilityDefinition
 ```
 
-'AIlv' / [AbilityIds.itemResolve30](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemResolve30)
+'AIlv' / [AbilityIds.itemResolve30](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemResolve30)
 
 **Members:**
 
@@ -20424,7 +20424,7 @@ public class AbilityDefinitionItemResolve30 extends AbilityDefinition
 public class AbilityDefinitionItemManaRestoreUltimate extends AbilityDefinition
 ```
 
-'AIm4' / [AbilityIds.itemManaRestoreUltimate](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaRestoreUltimate)
+'AIm4' / [AbilityIds.itemManaRestoreUltimate](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemManaRestoreUltimate)
 
 **Members:**
 
@@ -20436,7 +20436,7 @@ public class AbilityDefinitionItemManaRestoreUltimate extends AbilityDefinition
 public class AbilityDefinitionItemManaEfficiency extends AbilityDefinition
 ```
 
-'AIme' / [AbilityIds.itemManaEfficiency](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaEfficiency)
+'AIme' / [AbilityIds.itemManaEfficiency](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemManaEfficiency)
 
 **Members:**
 
@@ -20452,7 +20452,7 @@ public class AbilityDefinitionItemManaEfficiency extends AbilityDefinition
 public class AbilityDefinitionItemManaEfficiency2 extends AbilityDefinition
 ```
 
-'AImq' / [AbilityIds.itemManaEfficiency2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaEfficiency2)
+'AImq' / [AbilityIds.itemManaEfficiency2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemManaEfficiency2)
 
 **Members:**
 
@@ -20468,7 +20468,7 @@ public class AbilityDefinitionItemManaEfficiency2 extends AbilityDefinition
 public class AbilityDefinitionItemManaEfficiency5 extends AbilityDefinition
 ```
 
-'AImw' / [AbilityIds.itemManaEfficiency5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaEfficiency5)
+'AImw' / [AbilityIds.itemManaEfficiency5](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemManaEfficiency5)
 
 **Members:**
 
@@ -20484,7 +20484,7 @@ public class AbilityDefinitionItemManaEfficiency5 extends AbilityDefinition
 public class AbilityDefinitionExtendedInventoryItem extends AbilityDefinition
 ```
 
-'AIni' / [AbilityIds.extendedInventoryItem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-extendedInventoryItem)
+'AIni' / [AbilityIds.extendedInventoryItem](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-extendedInventoryItem)
 
 **Members:**
 
@@ -20498,7 +20498,7 @@ public class AbilityDefinitionExtendedInventoryItem extends AbilityDefinition
 public class AbilityDefinitionNecromancersPlaguegreaves extends AbilityDefinition
 ```
 
-'AInp' / [AbilityIds.necromancersPlaguegreaves](/stdlib/ref/_wurst/AbilityIds.html#abilityids-necromancersPlaguegreaves)
+'AInp' / [AbilityIds.necromancersPlaguegreaves](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-necromancersPlaguegreaves)
 
 **Members:**
 
@@ -20518,7 +20518,7 @@ public class AbilityDefinitionNecromancersPlaguegreaves extends AbilityDefinitio
 public class AbilityDefinitionEquipmentInventory extends AbilityDefinition
 ```
 
-'AInx' / [AbilityIds.equipmentInventory](/stdlib/ref/_wurst/AbilityIds.html#abilityids-equipmentInventory)
+'AInx' / [AbilityIds.equipmentInventory](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-equipmentInventory)
 
 **Members:**
 
@@ -20532,7 +20532,7 @@ public class AbilityDefinitionEquipmentInventory extends AbilityDefinition
 public class AbilityDefinitionOgreWarclubStats extends AbilityDefinition
 ```
 
-'AIow' / [AbilityIds.ogreWarclubStats](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ogreWarclubStats)
+'AIow' / [AbilityIds.ogreWarclubStats](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ogreWarclubStats)
 
 **Members:**
 
@@ -20552,7 +20552,7 @@ public class AbilityDefinitionOgreWarclubStats extends AbilityDefinition
 public class AbilityDefinitionStrengthBonusPlus7 extends AbilityDefinition
 ```
 
-'AIs7' / [AbilityIds.strengthBonusPlus7](/stdlib/ref/_wurst/AbilityIds.html#abilityids-strengthBonusPlus7)
+'AIs7' / [AbilityIds.strengthBonusPlus7](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-strengthBonusPlus7)
 
 **Members:**
 
@@ -20572,7 +20572,7 @@ public class AbilityDefinitionStrengthBonusPlus7 extends AbilityDefinition
 public class AbilityDefinitionStrengthBonusPlus8 extends AbilityDefinition
 ```
 
-'AIs8' / [AbilityIds.strengthBonusPlus8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-strengthBonusPlus8)
+'AIs8' / [AbilityIds.strengthBonusPlus8](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-strengthBonusPlus8)
 
 **Members:**
 
@@ -20592,7 +20592,7 @@ public class AbilityDefinitionStrengthBonusPlus8 extends AbilityDefinition
 public class AbilityDefinitionItemSpellCrit extends AbilityDefinition
 ```
 
-'AIsc' / [AbilityIds.itemSpellCrit](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellCrit)
+'AIsc' / [AbilityIds.itemSpellCrit](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellCrit)
 
 **Members:**
 
@@ -20608,7 +20608,7 @@ public class AbilityDefinitionItemSpellCrit extends AbilityDefinition
 public class AbilityDefinitionSignetOfDecay extends AbilityDefinition
 ```
 
-'AIsd' / [AbilityIds.signetOfDecay](/stdlib/ref/_wurst/AbilityIds.html#abilityids-signetOfDecay)
+'AIsd' / [AbilityIds.signetOfDecay](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-signetOfDecay)
 
 **Members:**
 
@@ -20626,7 +20626,7 @@ public class AbilityDefinitionSignetOfDecay extends AbilityDefinition
 public class AbilityDefinitionItemAttackSpeedIncrease5 extends AbilityDefinition
 ```
 
-'AIsq' / [AbilityIds.itemAttackSpeedIncrease5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAttackSpeedIncrease5)
+'AIsq' / [AbilityIds.itemAttackSpeedIncrease5](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAttackSpeedIncrease5)
 
 **Members:**
 
@@ -20640,7 +20640,7 @@ public class AbilityDefinitionItemAttackSpeedIncrease5 extends AbilityDefinition
 public class AbilityDefinitionMagicResistStacking extends AbilityDefinition
 ```
 
-'AIss' / [AbilityIds.magicResistStacking](/stdlib/ref/_wurst/AbilityIds.html#abilityids-magicResistStacking)
+'AIss' / [AbilityIds.magicResistStacking](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-magicResistStacking)
 
 **Members:**
 
@@ -20656,7 +20656,7 @@ public class AbilityDefinitionMagicResistStacking extends AbilityDefinition
 public class AbilityDefinitionItemSpellVamp25 extends AbilityDefinition
 ```
 
-'AIsv' / [AbilityIds.itemSpellVamp25](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellVamp25)
+'AIsv' / [AbilityIds.itemSpellVamp25](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellVamp25)
 
 **Members:**
 
@@ -20672,7 +20672,7 @@ public class AbilityDefinitionItemSpellVamp25 extends AbilityDefinition
 public class AbilityDefinitionVampiricAttackStacking extends AbilityDefinition
 ```
 
-'AIvx' / [AbilityIds.vampiricAttackStacking](/stdlib/ref/_wurst/AbilityIds.html#abilityids-vampiricAttackStacking)
+'AIvx' / [AbilityIds.vampiricAttackStacking](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-vampiricAttackStacking)
 
 **Members:**
 
@@ -20686,7 +20686,7 @@ public class AbilityDefinitionVampiricAttackStacking extends AbilityDefinition
 public class AbilityDefinitionItemAllStatsPlus6 extends AbilityDefinition
 ```
 
-'AIx6' / [AbilityIds.itemAllStatsPlus6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAllStatsPlus6)
+'AIx6' / [AbilityIds.itemAllStatsPlus6](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAllStatsPlus6)
 
 **Members:**
 
@@ -20706,7 +20706,7 @@ public class AbilityDefinitionItemAllStatsPlus6 extends AbilityDefinition
 public class AbilityDefinitionItemAllStatsPlus7 extends AbilityDefinition
 ```
 
-'AIx7' / [AbilityIds.itemAllStatsPlus7](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAllStatsPlus7)
+'AIx7' / [AbilityIds.itemAllStatsPlus7](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAllStatsPlus7)
 
 **Members:**
 
@@ -20726,7 +20726,7 @@ public class AbilityDefinitionItemAllStatsPlus7 extends AbilityDefinition
 public class AbilityDefinitionItemCriticalStrikeSystem extends AbilityDefinition
 ```
 
-'AIxr' / [AbilityIds.itemCriticalStrikeSystem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCriticalStrikeSystem)
+'AIxr' / [AbilityIds.itemCriticalStrikeSystem](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCriticalStrikeSystem)
 
 **Members:**
 
@@ -20746,7 +20746,7 @@ public class AbilityDefinitionItemCriticalStrikeSystem extends AbilityDefinition
 public class AbilityDefinitionItemLifesteal10 extends AbilityDefinition
 ```
 
-'AL10' / [AbilityIds.itemLifesteal10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLifesteal10)
+'AL10' / [AbilityIds.itemLifesteal10](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemLifesteal10)
 
 **Members:**
 
@@ -20760,7 +20760,7 @@ public class AbilityDefinitionItemLifesteal10 extends AbilityDefinition
 public class AbilityDefinitionItemLanceOfTheDawnAttack extends AbilityDefinition
 ```
 
-'ALDa' / [AbilityIds.itemLanceOfTheDawnAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLanceOfTheDawnAttack)
+'ALDa' / [AbilityIds.itemLanceOfTheDawnAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemLanceOfTheDawnAttack)
 
 **Members:**
 
@@ -20791,7 +20791,7 @@ public class AbilityDefinitionItemLanceOfTheDawnAttack extends AbilityDefinition
 public class AbilityDefinitionLesserMarkOfTime extends AbilityDefinition
 ```
 
-'ALmt' / [AbilityIds.lesserMarkOfTime](/stdlib/ref/_wurst/AbilityIds.html#abilityids-lesserMarkOfTime)
+'ALmt' / [AbilityIds.lesserMarkOfTime](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-lesserMarkOfTime)
 
 **Members:**
 
@@ -20809,7 +20809,7 @@ public class AbilityDefinitionLesserMarkOfTime extends AbilityDefinition
 public class AbilityDefinitionItemLifesteal1 extends AbilityDefinition
 ```
 
-'ALs1' / [AbilityIds.itemLifesteal1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLifesteal1)
+'ALs1' / [AbilityIds.itemLifesteal1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemLifesteal1)
 
 **Members:**
 
@@ -20823,7 +20823,7 @@ public class AbilityDefinitionItemLifesteal1 extends AbilityDefinition
 public class AbilityDefinitionItemLifesteal3 extends AbilityDefinition
 ```
 
-'ALs3' / [AbilityIds.itemLifesteal3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLifesteal3)
+'ALs3' / [AbilityIds.itemLifesteal3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemLifesteal3)
 
 **Members:**
 
@@ -20837,7 +20837,7 @@ public class AbilityDefinitionItemLifesteal3 extends AbilityDefinition
 public class AbilityDefinitionItemLifesteal4 extends AbilityDefinition
 ```
 
-'ALs4' / [AbilityIds.itemLifesteal4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLifesteal4)
+'ALs4' / [AbilityIds.itemLifesteal4](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemLifesteal4)
 
 **Members:**
 
@@ -20851,7 +20851,7 @@ public class AbilityDefinitionItemLifesteal4 extends AbilityDefinition
 public class AbilityDefinitionItemLifesteal5 extends AbilityDefinition
 ```
 
-'ALs5' / [AbilityIds.itemLifesteal5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLifesteal5)
+'ALs5' / [AbilityIds.itemLifesteal5](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemLifesteal5)
 
 **Members:**
 
@@ -20865,7 +20865,7 @@ public class AbilityDefinitionItemLifesteal5 extends AbilityDefinition
 public class AbilityDefinitionItemLifesteal8 extends AbilityDefinition
 ```
 
-'ALs8' / [AbilityIds.itemLifesteal8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLifesteal8)
+'ALs8' / [AbilityIds.itemLifesteal8](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemLifesteal8)
 
 **Members:**
 
@@ -20879,7 +20879,7 @@ public class AbilityDefinitionItemLifesteal8 extends AbilityDefinition
 public class AbilityDefinitionItemManaEfficiency12 extends AbilityDefinition
 ```
 
-'AMEi' / [AbilityIds.itemManaEfficiency12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaEfficiency12)
+'AMEi' / [AbilityIds.itemManaEfficiency12](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemManaEfficiency12)
 
 **Members:**
 
@@ -20895,7 +20895,7 @@ public class AbilityDefinitionItemManaEfficiency12 extends AbilityDefinition
 public class AbilityDefinitionItemManaEfficiency7 extends AbilityDefinition
 ```
 
-'AMEq' / [AbilityIds.itemManaEfficiency7](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaEfficiency7)
+'AMEq' / [AbilityIds.itemManaEfficiency7](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemManaEfficiency7)
 
 **Members:**
 
@@ -20911,7 +20911,7 @@ public class AbilityDefinitionItemManaEfficiency7 extends AbilityDefinition
 public class AbilityDefinitionItemManaEfficiency4 extends AbilityDefinition
 ```
 
-'AMEr' / [AbilityIds.itemManaEfficiency4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaEfficiency4)
+'AMEr' / [AbilityIds.itemManaEfficiency4](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemManaEfficiency4)
 
 **Members:**
 
@@ -20927,7 +20927,7 @@ public class AbilityDefinitionItemManaEfficiency4 extends AbilityDefinition
 public class AbilityDefinitionItemManaEfficiency8 extends AbilityDefinition
 ```
 
-'AMEt' / [AbilityIds.itemManaEfficiency8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaEfficiency8)
+'AMEt' / [AbilityIds.itemManaEfficiency8](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemManaEfficiency8)
 
 **Members:**
 
@@ -20943,7 +20943,7 @@ public class AbilityDefinitionItemManaEfficiency8 extends AbilityDefinition
 public class AbilityDefinitionItemManaEfficiency15 extends AbilityDefinition
 ```
 
-'AMEu' / [AbilityIds.itemManaEfficiency15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaEfficiency15)
+'AMEu' / [AbilityIds.itemManaEfficiency15](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemManaEfficiency15)
 
 **Members:**
 
@@ -20959,7 +20959,7 @@ public class AbilityDefinitionItemManaEfficiency15 extends AbilityDefinition
 public class AbilityDefinitionItemManaEfficiency6 extends AbilityDefinition
 ```
 
-'AMEw' / [AbilityIds.itemManaEfficiency6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaEfficiency6)
+'AMEw' / [AbilityIds.itemManaEfficiency6](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemManaEfficiency6)
 
 **Members:**
 
@@ -20975,7 +20975,7 @@ public class AbilityDefinitionItemManaEfficiency6 extends AbilityDefinition
 public class AbilityDefinitionItemManaEfficiency10 extends AbilityDefinition
 ```
 
-'AMEy' / [AbilityIds.itemManaEfficiency10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaEfficiency10)
+'AMEy' / [AbilityIds.itemManaEfficiency10](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemManaEfficiency10)
 
 **Members:**
 
@@ -20991,7 +20991,7 @@ public class AbilityDefinitionItemManaEfficiency10 extends AbilityDefinition
 public class AbilityDefinitionItemManaRefund5 extends AbilityDefinition
 ```
 
-'AMFq' / [AbilityIds.itemManaRefund5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaRefund5)
+'AMFq' / [AbilityIds.itemManaRefund5](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemManaRefund5)
 
 **Members:**
 
@@ -21007,7 +21007,7 @@ public class AbilityDefinitionItemManaRefund5 extends AbilityDefinition
 public class AbilityDefinitionItemMaxManaBonus120 extends AbilityDefinition
 ```
 
-'AMMe' / [AbilityIds.itemMaxManaBonus120](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMaxManaBonus120)
+'AMMe' / [AbilityIds.itemMaxManaBonus120](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemMaxManaBonus120)
 
 **Members:**
 
@@ -21021,7 +21021,7 @@ public class AbilityDefinitionItemMaxManaBonus120 extends AbilityDefinition
 public class AbilityDefinitionItemMaxManaBonus25 extends AbilityDefinition
 ```
 
-'AMMq' / [AbilityIds.itemMaxManaBonus25](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMaxManaBonus25)
+'AMMq' / [AbilityIds.itemMaxManaBonus25](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemMaxManaBonus25)
 
 **Members:**
 
@@ -21035,7 +21035,7 @@ public class AbilityDefinitionItemMaxManaBonus25 extends AbilityDefinition
 public class AbilityDefinitionItemMaxManaBonus150 extends AbilityDefinition
 ```
 
-'AMMw' / [AbilityIds.itemMaxManaBonus150](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMaxManaBonus150)
+'AMMw' / [AbilityIds.itemMaxManaBonus150](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemMaxManaBonus150)
 
 **Members:**
 
@@ -21049,7 +21049,7 @@ public class AbilityDefinitionItemMaxManaBonus150 extends AbilityDefinition
 public class AbilityDefinitionItemManaRegen70 extends AbilityDefinition
 ```
 
-'AMRe' / [AbilityIds.itemManaRegen70](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaRegen70)
+'AMRe' / [AbilityIds.itemManaRegen70](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemManaRegen70)
 
 **Members:**
 
@@ -21063,7 +21063,7 @@ public class AbilityDefinitionItemManaRegen70 extends AbilityDefinition
 public class AbilityDefinitionItemManaRegen75 extends AbilityDefinition
 ```
 
-'AMRi' / [AbilityIds.itemManaRegen75](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaRegen75)
+'AMRi' / [AbilityIds.itemManaRegen75](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemManaRegen75)
 
 **Members:**
 
@@ -21077,7 +21077,7 @@ public class AbilityDefinitionItemManaRegen75 extends AbilityDefinition
 public class AbilityDefinitionItemManaRegen65 extends AbilityDefinition
 ```
 
-'AMRo' / [AbilityIds.itemManaRegen65](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaRegen65)
+'AMRo' / [AbilityIds.itemManaRegen65](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemManaRegen65)
 
 **Members:**
 
@@ -21091,7 +21091,7 @@ public class AbilityDefinitionItemManaRegen65 extends AbilityDefinition
 public class AbilityDefinitionItemManaRegen40 extends AbilityDefinition
 ```
 
-'AMRp' / [AbilityIds.itemManaRegen40](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaRegen40)
+'AMRp' / [AbilityIds.itemManaRegen40](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemManaRegen40)
 
 **Members:**
 
@@ -21105,7 +21105,7 @@ public class AbilityDefinitionItemManaRegen40 extends AbilityDefinition
 public class AbilityDefinitionItemManaRegen100 extends AbilityDefinition
 ```
 
-'AMRq' / [AbilityIds.itemManaRegen100](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaRegen100)
+'AMRq' / [AbilityIds.itemManaRegen100](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemManaRegen100)
 
 **Members:**
 
@@ -21119,7 +21119,7 @@ public class AbilityDefinitionItemManaRegen100 extends AbilityDefinition
 public class AbilityDefinitionItemManaRegen35 extends AbilityDefinition
 ```
 
-'AMRt' / [AbilityIds.itemManaRegen35](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaRegen35)
+'AMRt' / [AbilityIds.itemManaRegen35](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemManaRegen35)
 
 **Members:**
 
@@ -21133,7 +21133,7 @@ public class AbilityDefinitionItemManaRegen35 extends AbilityDefinition
 public class AbilityDefinitionItemManaRegen30 extends AbilityDefinition
 ```
 
-'AMRu' / [AbilityIds.itemManaRegen30](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaRegen30)
+'AMRu' / [AbilityIds.itemManaRegen30](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemManaRegen30)
 
 **Members:**
 
@@ -21147,7 +21147,7 @@ public class AbilityDefinitionItemManaRegen30 extends AbilityDefinition
 public class AbilityDefinitionItemManaRegen50 extends AbilityDefinition
 ```
 
-'AMRw' / [AbilityIds.itemManaRegen50](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaRegen50)
+'AMRw' / [AbilityIds.itemManaRegen50](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemManaRegen50)
 
 **Members:**
 
@@ -21161,7 +21161,7 @@ public class AbilityDefinitionItemManaRegen50 extends AbilityDefinition
 public class AbilityDefinitionItemManaRegen25 extends AbilityDefinition
 ```
 
-'AMRy' / [AbilityIds.itemManaRegen25](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaRegen25)
+'AMRy' / [AbilityIds.itemManaRegen25](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemManaRegen25)
 
 **Members:**
 
@@ -21175,7 +21175,7 @@ public class AbilityDefinitionItemManaRegen25 extends AbilityDefinition
 public class AbilityDefinitionItemMoveSpeedBonus20 extends AbilityDefinition
 ```
 
-'AMSe' / [AbilityIds.itemMoveSpeedBonus20](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMoveSpeedBonus20)
+'AMSe' / [AbilityIds.itemMoveSpeedBonus20](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemMoveSpeedBonus20)
 
 **Members:**
 
@@ -21189,7 +21189,7 @@ public class AbilityDefinitionItemMoveSpeedBonus20 extends AbilityDefinition
 public class AbilityDefinitionItemMoveSpeedBonus10 extends AbilityDefinition
 ```
 
-'AMSq' / [AbilityIds.itemMoveSpeedBonus10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMoveSpeedBonus10)
+'AMSq' / [AbilityIds.itemMoveSpeedBonus10](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemMoveSpeedBonus10)
 
 **Members:**
 
@@ -21203,7 +21203,7 @@ public class AbilityDefinitionItemMoveSpeedBonus10 extends AbilityDefinition
 public class AbilityDefinitionItemMoveSpeedBonus30 extends AbilityDefinition
 ```
 
-'AMSr' / [AbilityIds.itemMoveSpeedBonus30](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMoveSpeedBonus30)
+'AMSr' / [AbilityIds.itemMoveSpeedBonus30](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemMoveSpeedBonus30)
 
 **Members:**
 
@@ -21217,7 +21217,7 @@ public class AbilityDefinitionItemMoveSpeedBonus30 extends AbilityDefinition
 public class AbilityDefinitionItemMoveSpeedBonus40 extends AbilityDefinition
 ```
 
-'AMSt' / [AbilityIds.itemMoveSpeedBonus40](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMoveSpeedBonus40)
+'AMSt' / [AbilityIds.itemMoveSpeedBonus40](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemMoveSpeedBonus40)
 
 **Members:**
 
@@ -21231,7 +21231,7 @@ public class AbilityDefinitionItemMoveSpeedBonus40 extends AbilityDefinition
 public class AbilityDefinitionItemMoveSpeedBonus15 extends AbilityDefinition
 ```
 
-'AMSw' / [AbilityIds.itemMoveSpeedBonus15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMoveSpeedBonus15)
+'AMSw' / [AbilityIds.itemMoveSpeedBonus15](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemMoveSpeedBonus15)
 
 **Members:**
 
@@ -21245,7 +21245,7 @@ public class AbilityDefinitionItemMoveSpeedBonus15 extends AbilityDefinition
 public class AbilityDefinitionRighteousFury extends AbilityDefinition
 ```
 
-'ANcp' / [AbilityIds.righteousFury](/stdlib/ref/_wurst/AbilityIds.html#abilityids-righteousFury)
+'ANcp' / [AbilityIds.righteousFury](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-righteousFury)
 
 **Members:**
 
@@ -21275,7 +21275,7 @@ public class AbilityDefinitionRighteousFury extends AbilityDefinition
 public class AbilityDefinitionAOwd extends AbilityDefinition
 ```
 
-'AOwd' / [AbilityIds.shadowHunterSerpentWard2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shadowHunterSerpentWard2)
+'AOwd' / [AbilityIds.shadowHunterSerpentWard2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-shadowHunterSerpentWard2)
 
 **Members:**
 
@@ -21291,7 +21291,7 @@ public class AbilityDefinitionAOwd extends AbilityDefinition
 public class AbilityDefinitionStrengthBonusPlus10 extends AbilityDefinition
 ```
 
-'AS10' / [AbilityIds.strengthBonusPlus10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-strengthBonusPlus10)
+'AS10' / [AbilityIds.strengthBonusPlus10](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-strengthBonusPlus10)
 
 **Members:**
 
@@ -21311,7 +21311,7 @@ public class AbilityDefinitionStrengthBonusPlus10 extends AbilityDefinition
 public class AbilityDefinitionStrengthBonusPlus12 extends AbilityDefinition
 ```
 
-'AS12' / [AbilityIds.strengthBonusPlus12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-strengthBonusPlus12)
+'AS12' / [AbilityIds.strengthBonusPlus12](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-strengthBonusPlus12)
 
 **Members:**
 
@@ -21331,7 +21331,7 @@ public class AbilityDefinitionStrengthBonusPlus12 extends AbilityDefinition
 public class AbilityDefinitionStrengthBonusPlus20 extends AbilityDefinition
 ```
 
-'AS20' / [AbilityIds.strengthBonusPlus20](/stdlib/ref/_wurst/AbilityIds.html#abilityids-strengthBonusPlus20)
+'AS20' / [AbilityIds.strengthBonusPlus20](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-strengthBonusPlus20)
 
 **Members:**
 
@@ -21351,7 +21351,7 @@ public class AbilityDefinitionStrengthBonusPlus20 extends AbilityDefinition
 public class AbilityDefinitionItemSpellCritChance8 extends AbilityDefinition
 ```
 
-'ASC8' / [AbilityIds.itemSpellCritChance8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellCritChance8)
+'ASC8' / [AbilityIds.itemSpellCritChance8](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellCritChance8)
 
 **Members:**
 
@@ -21367,7 +21367,7 @@ public class AbilityDefinitionItemSpellCritChance8 extends AbilityDefinition
 public class AbilityDefinitionItemSpellCritChance12 extends AbilityDefinition
 ```
 
-'ASCe' / [AbilityIds.itemSpellCritChance12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellCritChance12)
+'ASCe' / [AbilityIds.itemSpellCritChance12](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellCritChance12)
 
 **Members:**
 
@@ -21383,7 +21383,7 @@ public class AbilityDefinitionItemSpellCritChance12 extends AbilityDefinition
 public class AbilityDefinitionItemSpellCritChance15 extends AbilityDefinition
 ```
 
-'ASCq' / [AbilityIds.itemSpellCritChance15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellCritChance15)
+'ASCq' / [AbilityIds.itemSpellCritChance15](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellCritChance15)
 
 **Members:**
 
@@ -21399,7 +21399,7 @@ public class AbilityDefinitionItemSpellCritChance15 extends AbilityDefinition
 public class AbilityDefinitionItemSpellCritChance18 extends AbilityDefinition
 ```
 
-'ASCr' / [AbilityIds.itemSpellCritChance18](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellCritChance18)
+'ASCr' / [AbilityIds.itemSpellCritChance18](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellCritChance18)
 
 **Members:**
 
@@ -21415,7 +21415,7 @@ public class AbilityDefinitionItemSpellCritChance18 extends AbilityDefinition
 public class AbilityDefinitionItemSpellCritChance5 extends AbilityDefinition
 ```
 
-'ASCs' / [AbilityIds.itemSpellCritChance5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellCritChance5)
+'ASCs' / [AbilityIds.itemSpellCritChance5](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellCritChance5)
 
 **Members:**
 
@@ -21431,7 +21431,7 @@ public class AbilityDefinitionItemSpellCritChance5 extends AbilityDefinition
 public class AbilityDefinitionItemSpellCritChance6 extends AbilityDefinition
 ```
 
-'ASCt' / [AbilityIds.itemSpellCritChance6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellCritChance6)
+'ASCt' / [AbilityIds.itemSpellCritChance6](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellCritChance6)
 
 **Members:**
 
@@ -21447,7 +21447,7 @@ public class AbilityDefinitionItemSpellCritChance6 extends AbilityDefinition
 public class AbilityDefinitionItemSpellCritChance4 extends AbilityDefinition
 ```
 
-'ASCu' / [AbilityIds.itemSpellCritChance4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellCritChance4)
+'ASCu' / [AbilityIds.itemSpellCritChance4](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellCritChance4)
 
 **Members:**
 
@@ -21463,7 +21463,7 @@ public class AbilityDefinitionItemSpellCritChance4 extends AbilityDefinition
 public class AbilityDefinitionItemSpellCritChance10 extends AbilityDefinition
 ```
 
-'ASCw' / [AbilityIds.itemSpellCritChance10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellCritChance10)
+'ASCw' / [AbilityIds.itemSpellCritChance10](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellCritChance10)
 
 **Members:**
 
@@ -21479,7 +21479,7 @@ public class AbilityDefinitionItemSpellCritChance10 extends AbilityDefinition
 public class AbilityDefinitionItemSpellCritChance30 extends AbilityDefinition
 ```
 
-'ASCy' / [AbilityIds.itemSpellCritChance30](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellCritChance30)
+'ASCy' / [AbilityIds.itemSpellCritChance30](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellCritChance30)
 
 **Members:**
 
@@ -21495,7 +21495,7 @@ public class AbilityDefinitionItemSpellCritChance30 extends AbilityDefinition
 public class AbilityDefinitionItemSplashDamage4 extends AbilityDefinition
 ```
 
-'ASD4' / [AbilityIds.itemSplashDamage4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSplashDamage4)
+'ASD4' / [AbilityIds.itemSplashDamage4](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSplashDamage4)
 
 **Members:**
 
@@ -21511,7 +21511,7 @@ public class AbilityDefinitionItemSplashDamage4 extends AbilityDefinition
 public class AbilityDefinitionItemSpellCritDamage20 extends AbilityDefinition
 ```
 
-'ASDq' / [AbilityIds.itemSpellCritDamage20](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellCritDamage20)
+'ASDq' / [AbilityIds.itemSpellCritDamage20](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellCritDamage20)
 
 **Members:**
 
@@ -21527,7 +21527,7 @@ public class AbilityDefinitionItemSpellCritDamage20 extends AbilityDefinition
 public class AbilityDefinitionItemSpellCritDamage15 extends AbilityDefinition
 ```
 
-'ASDw' / [AbilityIds.itemSpellCritDamage15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellCritDamage15)
+'ASDw' / [AbilityIds.itemSpellCritDamage15](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellCritDamage15)
 
 **Members:**
 
@@ -21543,7 +21543,7 @@ public class AbilityDefinitionItemSpellCritDamage15 extends AbilityDefinition
 public class AbilityDefinitionItemSpellResistance5 extends AbilityDefinition
 ```
 
-'ASRe' / [AbilityIds.itemSpellResistance5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellResistance5)
+'ASRe' / [AbilityIds.itemSpellResistance5](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellResistance5)
 
 **Members:**
 
@@ -21559,7 +21559,7 @@ public class AbilityDefinitionItemSpellResistance5 extends AbilityDefinition
 public class AbilityDefinitionItemSpellResistance10 extends AbilityDefinition
 ```
 
-'ASRi' / [AbilityIds.itemSpellResistance10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellResistance10)
+'ASRi' / [AbilityIds.itemSpellResistance10](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellResistance10)
 
 **Members:**
 
@@ -21575,7 +21575,7 @@ public class AbilityDefinitionItemSpellResistance10 extends AbilityDefinition
 public class AbilityDefinitionItemSpellResistance25 extends AbilityDefinition
 ```
 
-'ASRo' / [AbilityIds.itemSpellResistance25](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellResistance25)
+'ASRo' / [AbilityIds.itemSpellResistance25](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellResistance25)
 
 **Members:**
 
@@ -21591,7 +21591,7 @@ public class AbilityDefinitionItemSpellResistance25 extends AbilityDefinition
 public class AbilityDefinitionItemSpellResistance33 extends AbilityDefinition
 ```
 
-'ASRp' / [AbilityIds.itemSpellResistance33](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellResistance33)
+'ASRp' / [AbilityIds.itemSpellResistance33](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellResistance33)
 
 **Members:**
 
@@ -21607,7 +21607,7 @@ public class AbilityDefinitionItemSpellResistance33 extends AbilityDefinition
 public class AbilityDefinitionItemSpellResistance7 extends AbilityDefinition
 ```
 
-'ASRq' / [AbilityIds.itemSpellResistance7](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellResistance7)
+'ASRq' / [AbilityIds.itemSpellResistance7](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellResistance7)
 
 **Members:**
 
@@ -21623,7 +21623,7 @@ public class AbilityDefinitionItemSpellResistance7 extends AbilityDefinition
 public class AbilityDefinitionItemSpellResistance14 extends AbilityDefinition
 ```
 
-'ASRt' / [AbilityIds.itemSpellResistance14](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellResistance14)
+'ASRt' / [AbilityIds.itemSpellResistance14](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellResistance14)
 
 **Members:**
 
@@ -21639,7 +21639,7 @@ public class AbilityDefinitionItemSpellResistance14 extends AbilityDefinition
 public class AbilityDefinitionItemSpellResistance4 extends AbilityDefinition
 ```
 
-'ASRu' / [AbilityIds.itemSpellResistance4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellResistance4)
+'ASRu' / [AbilityIds.itemSpellResistance4](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellResistance4)
 
 **Members:**
 
@@ -21655,7 +21655,7 @@ public class AbilityDefinitionItemSpellResistance4 extends AbilityDefinition
 public class AbilityDefinitionItemSpellResistance3 extends AbilityDefinition
 ```
 
-'ASRw' / [AbilityIds.itemSpellResistance3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellResistance3)
+'ASRw' / [AbilityIds.itemSpellResistance3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellResistance3)
 
 **Members:**
 
@@ -21671,7 +21671,7 @@ public class AbilityDefinitionItemSpellResistance3 extends AbilityDefinition
 public class AbilityDefinitionItemSpellResistance8 extends AbilityDefinition
 ```
 
-'ASRy' / [AbilityIds.itemSpellResistance8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellResistance8)
+'ASRy' / [AbilityIds.itemSpellResistance8](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellResistance8)
 
 **Members:**
 
@@ -21687,7 +21687,7 @@ public class AbilityDefinitionItemSpellResistance8 extends AbilityDefinition
 public class AbilityDefinitionItemSpellVamp7 extends AbilityDefinition
 ```
 
-'ASVe' / [AbilityIds.itemSpellVamp7](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellVamp7)
+'ASVe' / [AbilityIds.itemSpellVamp7](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellVamp7)
 
 **Members:**
 
@@ -21703,7 +21703,7 @@ public class AbilityDefinitionItemSpellVamp7 extends AbilityDefinition
 public class AbilityDefinitionItemSpellVamp8 extends AbilityDefinition
 ```
 
-'ASVi' / [AbilityIds.itemSpellVamp8](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellVamp8)
+'ASVi' / [AbilityIds.itemSpellVamp8](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellVamp8)
 
 **Members:**
 
@@ -21719,7 +21719,7 @@ public class AbilityDefinitionItemSpellVamp8 extends AbilityDefinition
 public class AbilityDefinitionItemSpellVamp5 extends AbilityDefinition
 ```
 
-'ASVq' / [AbilityIds.itemSpellVamp5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellVamp5)
+'ASVq' / [AbilityIds.itemSpellVamp5](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellVamp5)
 
 **Members:**
 
@@ -21735,7 +21735,7 @@ public class AbilityDefinitionItemSpellVamp5 extends AbilityDefinition
 public class AbilityDefinitionItemSpellVamp3 extends AbilityDefinition
 ```
 
-'ASVr' / [AbilityIds.itemSpellVamp3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellVamp3)
+'ASVr' / [AbilityIds.itemSpellVamp3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellVamp3)
 
 **Members:**
 
@@ -21751,7 +21751,7 @@ public class AbilityDefinitionItemSpellVamp3 extends AbilityDefinition
 public class AbilityDefinitionItemSpellVamp4 extends AbilityDefinition
 ```
 
-'ASVt' / [AbilityIds.itemSpellVamp4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellVamp4)
+'ASVt' / [AbilityIds.itemSpellVamp4](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellVamp4)
 
 **Members:**
 
@@ -21767,7 +21767,7 @@ public class AbilityDefinitionItemSpellVamp4 extends AbilityDefinition
 public class AbilityDefinitionItemSpellVamp6 extends AbilityDefinition
 ```
 
-'ASVu' / [AbilityIds.itemSpellVamp6](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellVamp6)
+'ASVu' / [AbilityIds.itemSpellVamp6](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellVamp6)
 
 **Members:**
 
@@ -21783,7 +21783,7 @@ public class AbilityDefinitionItemSpellVamp6 extends AbilityDefinition
 public class AbilityDefinitionItemSpellVamp2 extends AbilityDefinition
 ```
 
-'ASVw' / [AbilityIds.itemSpellVamp2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellVamp2)
+'ASVw' / [AbilityIds.itemSpellVamp2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellVamp2)
 
 **Members:**
 
@@ -21799,7 +21799,7 @@ public class AbilityDefinitionItemSpellVamp2 extends AbilityDefinition
 public class AbilityDefinitionItemSpellVamp10 extends AbilityDefinition
 ```
 
-'ASVy' / [AbilityIds.itemSpellVamp10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellVamp10)
+'ASVy' / [AbilityIds.itemSpellVamp10](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellVamp10)
 
 **Members:**
 
@@ -21815,7 +21815,7 @@ public class AbilityDefinitionItemSpellVamp10 extends AbilityDefinition
 public class AbilityDefinitionStatDetails extends AbilityDefinition
 ```
 
-'ASde' / [AbilityIds.statDetails](/stdlib/ref/_wurst/AbilityIds.html#abilityids-statDetails)
+'ASde' / [AbilityIds.statDetails](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-statDetails)
 
 **Members:**
 
@@ -21829,7 +21829,7 @@ public class AbilityDefinitionStatDetails extends AbilityDefinition
 public class AbilityDefinitionEquipmentInventoryInterface extends AbilityDefinition
 ```
 
-'ASpc' / [AbilityIds.equipmentInventoryInterface](/stdlib/ref/_wurst/AbilityIds.html#abilityids-equipmentInventoryInterface)
+'ASpc' / [AbilityIds.equipmentInventoryInterface](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-equipmentInventoryInterface)
 
 **Members:**
 
@@ -21841,7 +21841,7 @@ public class AbilityDefinitionEquipmentInventoryInterface extends AbilityDefinit
 public class AbilityDefinitionAnyaTalentTier1a extends AbilityDefinition
 ```
 
-'AT1a' / [AbilityIds.anyaTalentTier1a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaTalentTier1a)
+'AT1a' / [AbilityIds.anyaTalentTier1a](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-anyaTalentTier1a)
 
 **Members:**
 
@@ -21869,7 +21869,7 @@ public class AbilityDefinitionAnyaTalentTier1a extends AbilityDefinition
 public class AbilityDefinitionAnyaTalentTier1b extends AbilityDefinition
 ```
 
-'AT1b' / [AbilityIds.anyaTalentTier1b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaTalentTier1b)
+'AT1b' / [AbilityIds.anyaTalentTier1b](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-anyaTalentTier1b)
 
 **Members:**
 
@@ -21897,7 +21897,7 @@ public class AbilityDefinitionAnyaTalentTier1b extends AbilityDefinition
 public class AbilityDefinitionAnyaTalentTier1c extends AbilityDefinition
 ```
 
-'AT1c' / [AbilityIds.anyaTalentTier1c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaTalentTier1c)
+'AT1c' / [AbilityIds.anyaTalentTier1c](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-anyaTalentTier1c)
 
 **Members:**
 
@@ -21925,7 +21925,7 @@ public class AbilityDefinitionAnyaTalentTier1c extends AbilityDefinition
 public class AbilityDefinitionAnyaTalentTier2a extends AbilityDefinition
 ```
 
-'AT2a' / [AbilityIds.anyaTalentTier2a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaTalentTier2a)
+'AT2a' / [AbilityIds.anyaTalentTier2a](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-anyaTalentTier2a)
 
 **Members:**
 
@@ -21953,7 +21953,7 @@ public class AbilityDefinitionAnyaTalentTier2a extends AbilityDefinition
 public class AbilityDefinitionAnyaTalentTier2b extends AbilityDefinition
 ```
 
-'AT2b' / [AbilityIds.anyaTalentTier2b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaTalentTier2b)
+'AT2b' / [AbilityIds.anyaTalentTier2b](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-anyaTalentTier2b)
 
 **Members:**
 
@@ -21981,7 +21981,7 @@ public class AbilityDefinitionAnyaTalentTier2b extends AbilityDefinition
 public class AbilityDefinitionAnyaTalentTier2c extends AbilityDefinition
 ```
 
-'AT2c' / [AbilityIds.anyaTalentTier2c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaTalentTier2c)
+'AT2c' / [AbilityIds.anyaTalentTier2c](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-anyaTalentTier2c)
 
 **Members:**
 
@@ -22009,7 +22009,7 @@ public class AbilityDefinitionAnyaTalentTier2c extends AbilityDefinition
 public class AbilityDefinitionAnyaTalentTier3a extends AbilityDefinition
 ```
 
-'AT3a' / [AbilityIds.anyaTalentTier3a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaTalentTier3a)
+'AT3a' / [AbilityIds.anyaTalentTier3a](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-anyaTalentTier3a)
 
 **Members:**
 
@@ -22037,7 +22037,7 @@ public class AbilityDefinitionAnyaTalentTier3a extends AbilityDefinition
 public class AbilityDefinitionAnyaTalentTier3b extends AbilityDefinition
 ```
 
-'AT3b' / [AbilityIds.anyaTalentTier3b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaTalentTier3b)
+'AT3b' / [AbilityIds.anyaTalentTier3b](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-anyaTalentTier3b)
 
 **Members:**
 
@@ -22065,7 +22065,7 @@ public class AbilityDefinitionAnyaTalentTier3b extends AbilityDefinition
 public class AbilityDefinitionAnyaTalentTier3c extends AbilityDefinition
 ```
 
-'AT3c' / [AbilityIds.anyaTalentTier3c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaTalentTier3c)
+'AT3c' / [AbilityIds.anyaTalentTier3c](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-anyaTalentTier3c)
 
 **Members:**
 
@@ -22093,7 +22093,7 @@ public class AbilityDefinitionAnyaTalentTier3c extends AbilityDefinition
 public class AbilityDefinitionAnyaTalentTier4a extends AbilityDefinition
 ```
 
-'AT4a' / [AbilityIds.anyaTalentTier4a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaTalentTier4a)
+'AT4a' / [AbilityIds.anyaTalentTier4a](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-anyaTalentTier4a)
 
 **Members:**
 
@@ -22121,7 +22121,7 @@ public class AbilityDefinitionAnyaTalentTier4a extends AbilityDefinition
 public class AbilityDefinitionAnyaTalentTier4b extends AbilityDefinition
 ```
 
-'AT4b' / [AbilityIds.anyaTalentTier4b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaTalentTier4b)
+'AT4b' / [AbilityIds.anyaTalentTier4b](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-anyaTalentTier4b)
 
 **Members:**
 
@@ -22149,7 +22149,7 @@ public class AbilityDefinitionAnyaTalentTier4b extends AbilityDefinition
 public class AbilityDefinitionAnyaTalentTier4c extends AbilityDefinition
 ```
 
-'AT4c' / [AbilityIds.anyaTalentTier4c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaTalentTier4c)
+'AT4c' / [AbilityIds.anyaTalentTier4c](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-anyaTalentTier4c)
 
 **Members:**
 
@@ -22177,7 +22177,7 @@ public class AbilityDefinitionAnyaTalentTier4c extends AbilityDefinition
 public class AbilityDefinitionAnyaCritTalent extends AbilityDefinition
 ```
 
-'AT5a' / [AbilityIds.anyaCritTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaCritTalent)
+'AT5a' / [AbilityIds.anyaCritTalent](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-anyaCritTalent)
 
 **Members:**
 
@@ -22197,7 +22197,7 @@ public class AbilityDefinitionAnyaCritTalent extends AbilityDefinition
 public class AbilityDefinitionAnyaSpellCritTalent extends AbilityDefinition
 ```
 
-'AT5b' / [AbilityIds.anyaSpellCritTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaSpellCritTalent)
+'AT5b' / [AbilityIds.anyaSpellCritTalent](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-anyaSpellCritTalent)
 
 **Members:**
 
@@ -22213,7 +22213,7 @@ public class AbilityDefinitionAnyaSpellCritTalent extends AbilityDefinition
 public class AbilityDefinitionAnyaPoisonArrows extends AbilityDefinition
 ```
 
-'AT5c' / [AbilityIds.anyaPoisonArrows](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaPoisonArrows)
+'AT5c' / [AbilityIds.anyaPoisonArrows](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-anyaPoisonArrows)
 
 **Members:**
 
@@ -22233,7 +22233,7 @@ public class AbilityDefinitionAnyaPoisonArrows extends AbilityDefinition
 public class AbilityDefinitionAnyaPlusAgiStrTalent extends AbilityDefinition
 ```
 
-'AT6a' / [AbilityIds.anyaPlusAgiStrTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaPlusAgiStrTalent)
+'AT6a' / [AbilityIds.anyaPlusAgiStrTalent](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-anyaPlusAgiStrTalent)
 
 **Members:**
 
@@ -22253,7 +22253,7 @@ public class AbilityDefinitionAnyaPlusAgiStrTalent extends AbilityDefinition
 public class AbilityDefinitionAnyaEvasionTalent extends AbilityDefinition
 ```
 
-'AT6b' / [AbilityIds.anyaEvasionTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaEvasionTalent)
+'AT6b' / [AbilityIds.anyaEvasionTalent](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-anyaEvasionTalent)
 
 **Members:**
 
@@ -22267,7 +22267,7 @@ public class AbilityDefinitionAnyaEvasionTalent extends AbilityDefinition
 public class AbilityDefinitionAnyaSpellAmpTalent extends AbilityDefinition
 ```
 
-'AT6c' / [AbilityIds.anyaSpellAmpTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaSpellAmpTalent)
+'AT6c' / [AbilityIds.anyaSpellAmpTalent](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-anyaSpellAmpTalent)
 
 **Members:**
 
@@ -22285,7 +22285,7 @@ public class AbilityDefinitionAnyaSpellAmpTalent extends AbilityDefinition
 public class AbilityDefinitionTalents extends AbilityDefinition
 ```
 
-'ATal' / [AbilityIds.talents](/stdlib/ref/_wurst/AbilityIds.html#abilityids-talents)
+'ATal' / [AbilityIds.talents](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-talents)
 
 **Members:**
 
@@ -22299,7 +22299,7 @@ public class AbilityDefinitionTalents extends AbilityDefinition
 public class AbilityDefinitionGrantTalentPoint extends AbilityDefinition
 ```
 
-'ATap' / [AbilityIds.grantTalentPoint](/stdlib/ref/_wurst/AbilityIds.html#abilityids-grantTalentPoint)
+'ATap' / [AbilityIds.grantTalentPoint](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-grantTalentPoint)
 
 **Members:**
 
@@ -22311,7 +22311,7 @@ public class AbilityDefinitionGrantTalentPoint extends AbilityDefinition
 public class AbilityDefinitionTalentCleaving25 extends AbilityDefinition
 ```
 
-'ATce' / [AbilityIds.talentCleaving25](/stdlib/ref/_wurst/AbilityIds.html#abilityids-talentCleaving25)
+'ATce' / [AbilityIds.talentCleaving25](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-talentCleaving25)
 
 **Members:**
 
@@ -22325,7 +22325,7 @@ public class AbilityDefinitionTalentCleaving25 extends AbilityDefinition
 public class AbilityDefinitionTalentCooldownReduction15 extends AbilityDefinition
 ```
 
-'ATcr' / [AbilityIds.talentCooldownReduction15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-talentCooldownReduction15)
+'ATcr' / [AbilityIds.talentCooldownReduction15](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-talentCooldownReduction15)
 
 **Members:**
 
@@ -22341,7 +22341,7 @@ public class AbilityDefinitionTalentCooldownReduction15 extends AbilityDefinitio
 public class AbilityDefinitionTalentsHumanGarek extends AbilityDefinition
 ```
 
-'AThg' / [AbilityIds.talentsHumanGarek](/stdlib/ref/_wurst/AbilityIds.html#abilityids-talentsHumanGarek)
+'AThg' / [AbilityIds.talentsHumanGarek](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-talentsHumanGarek)
 
 **Members:**
 
@@ -22355,7 +22355,7 @@ public class AbilityDefinitionTalentsHumanGarek extends AbilityDefinition
 public class AbilityDefinitionTalentsHumanIlastar extends AbilityDefinition
 ```
 
-'AThi' / [AbilityIds.talentsHumanIlastar](/stdlib/ref/_wurst/AbilityIds.html#abilityids-talentsHumanIlastar)
+'AThi' / [AbilityIds.talentsHumanIlastar](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-talentsHumanIlastar)
 
 **Members:**
 
@@ -22369,7 +22369,7 @@ public class AbilityDefinitionTalentsHumanIlastar extends AbilityDefinition
 public class AbilityDefinitionTalentsHumanLanden extends AbilityDefinition
 ```
 
-'AThl' / [AbilityIds.talentsHumanLanden](/stdlib/ref/_wurst/AbilityIds.html#abilityids-talentsHumanLanden)
+'AThl' / [AbilityIds.talentsHumanLanden](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-talentsHumanLanden)
 
 **Members:**
 
@@ -22383,7 +22383,7 @@ public class AbilityDefinitionTalentsHumanLanden extends AbilityDefinition
 public class AbilityDefinitionTalentManaEfficiency15 extends AbilityDefinition
 ```
 
-'ATme' / [AbilityIds.talentManaEfficiency15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-talentManaEfficiency15)
+'ATme' / [AbilityIds.talentManaEfficiency15](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-talentManaEfficiency15)
 
 **Members:**
 
@@ -22399,7 +22399,7 @@ public class AbilityDefinitionTalentManaEfficiency15 extends AbilityDefinition
 public class AbilityDefinitionATst extends AbilityDefinition
 ```
 
-'ATst' / [AbilityIds.aTst](/stdlib/ref/_wurst/AbilityIds.html#abilityids-aTst)
+'ATst' / [AbilityIds.aTst](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-aTst)
 
 **Members:**
 
@@ -22415,7 +22415,7 @@ public class AbilityDefinitionATst extends AbilityDefinition
 public class AbilityDefinitionTalentsUndeadAnya extends AbilityDefinition
 ```
 
-'ATua' / [AbilityIds.talentsUndeadAnya](/stdlib/ref/_wurst/AbilityIds.html#abilityids-talentsUndeadAnya)
+'ATua' / [AbilityIds.talentsUndeadAnya](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-talentsUndeadAnya)
 
 **Members:**
 
@@ -22429,7 +22429,7 @@ public class AbilityDefinitionTalentsUndeadAnya extends AbilityDefinition
 public class AbilityDefinitionTalentsUndeadGarek extends AbilityDefinition
 ```
 
-'ATug' / [AbilityIds.talentsUndeadGarek](/stdlib/ref/_wurst/AbilityIds.html#abilityids-talentsUndeadGarek)
+'ATug' / [AbilityIds.talentsUndeadGarek](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-talentsUndeadGarek)
 
 **Members:**
 
@@ -22443,7 +22443,7 @@ public class AbilityDefinitionTalentsUndeadGarek extends AbilityDefinition
 public class AbilityDefinitionTalentsUndeadLeonid extends AbilityDefinition
 ```
 
-'ATul' / [AbilityIds.talentsUndeadLeonid](/stdlib/ref/_wurst/AbilityIds.html#abilityids-talentsUndeadLeonid)
+'ATul' / [AbilityIds.talentsUndeadLeonid](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-talentsUndeadLeonid)
 
 **Members:**
 
@@ -22457,7 +22457,7 @@ public class AbilityDefinitionTalentsUndeadLeonid extends AbilityDefinition
 public class AbilityDefinitionItemUnitDamageX125 extends AbilityDefinition
 ```
 
-'AUDq' / [AbilityIds.itemUnitDamageX125](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemUnitDamageX125)
+'AUDq' / [AbilityIds.itemUnitDamageX125](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemUnitDamageX125)
 
 **Members:**
 
@@ -22477,7 +22477,7 @@ public class AbilityDefinitionItemUnitDamageX125 extends AbilityDefinition
 public class AbilityDefinitionItemUnitDamageX115 extends AbilityDefinition
 ```
 
-'AUDw' / [AbilityIds.itemUnitDamageX115](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemUnitDamageX115)
+'AUDw' / [AbilityIds.itemUnitDamageX115](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemUnitDamageX115)
 
 **Members:**
 
@@ -22497,7 +22497,7 @@ public class AbilityDefinitionItemUnitDamageX115 extends AbilityDefinition
 public class AbilityDefinitionUndyingDefianceTalent1 extends AbilityDefinition
 ```
 
-'AUb1' / [AbilityIds.undyingDefianceTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-undyingDefianceTalent1)
+'AUb1' / [AbilityIds.undyingDefianceTalent1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-undyingDefianceTalent1)
 
 **Members:**
 
@@ -22530,7 +22530,7 @@ public class AbilityDefinitionUndyingDefianceTalent1 extends AbilityDefinition
 public class AbilityDefinitionUndyingDefianceTalent2 extends AbilityDefinition
 ```
 
-'AUb2' / [AbilityIds.undyingDefianceTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-undyingDefianceTalent2)
+'AUb2' / [AbilityIds.undyingDefianceTalent2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-undyingDefianceTalent2)
 
 **Members:**
 
@@ -22563,7 +22563,7 @@ public class AbilityDefinitionUndyingDefianceTalent2 extends AbilityDefinition
 public class AbilityDefinitionUndyingDefianceTalent3 extends AbilityDefinition
 ```
 
-'AUb3' / [AbilityIds.undyingDefianceTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-undyingDefianceTalent3)
+'AUb3' / [AbilityIds.undyingDefianceTalent3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-undyingDefianceTalent3)
 
 **Members:**
 
@@ -22596,7 +22596,7 @@ public class AbilityDefinitionUndyingDefianceTalent3 extends AbilityDefinition
 public class AbilityDefinitionUndyingDefianceUndead extends AbilityDefinition
 ```
 
-'AUbd' / [AbilityIds.undyingDefianceUndead](/stdlib/ref/_wurst/AbilityIds.html#abilityids-undyingDefianceUndead)
+'AUbd' / [AbilityIds.undyingDefianceUndead](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-undyingDefianceUndead)
 
 **Members:**
 
@@ -22629,7 +22629,7 @@ public class AbilityDefinitionUndyingDefianceUndead extends AbilityDefinition
 public class AbilityDefinitionBatteringRam extends AbilityDefinition
 ```
 
-'AUbr' / [AbilityIds.batteringRam](/stdlib/ref/_wurst/AbilityIds.html#abilityids-batteringRam)
+'AUbr' / [AbilityIds.batteringRam](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-batteringRam)
 
 **Members:**
 
@@ -22659,7 +22659,7 @@ public class AbilityDefinitionBatteringRam extends AbilityDefinition
 public class AbilityDefinitionDeathseekerBowTalent1 extends AbilityDefinition
 ```
 
-'AUd1' / [AbilityIds.deathseekerBowTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-deathseekerBowTalent1)
+'AUd1' / [AbilityIds.deathseekerBowTalent1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-deathseekerBowTalent1)
 
 **Members:**
 
@@ -22681,7 +22681,7 @@ public class AbilityDefinitionDeathseekerBowTalent1 extends AbilityDefinition
 public class AbilityDefinitionDeathseekerBowTalent2 extends AbilityDefinition
 ```
 
-'AUd2' / [AbilityIds.deathseekerBowTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-deathseekerBowTalent2)
+'AUd2' / [AbilityIds.deathseekerBowTalent2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-deathseekerBowTalent2)
 
 **Members:**
 
@@ -22703,7 +22703,7 @@ public class AbilityDefinitionDeathseekerBowTalent2 extends AbilityDefinition
 public class AbilityDefinitionDeathseekerBowTalent3 extends AbilityDefinition
 ```
 
-'AUd3' / [AbilityIds.deathseekerBowTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-deathseekerBowTalent3)
+'AUd3' / [AbilityIds.deathseekerBowTalent3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-deathseekerBowTalent3)
 
 **Members:**
 
@@ -22725,7 +22725,7 @@ public class AbilityDefinitionDeathseekerBowTalent3 extends AbilityDefinition
 public class AbilityDefinitionDeathseekerBow extends AbilityDefinition
 ```
 
-'AUdb' / [AbilityIds.deathseekerBow](/stdlib/ref/_wurst/AbilityIds.html#abilityids-deathseekerBow)
+'AUdb' / [AbilityIds.deathseekerBow](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-deathseekerBow)
 
 **Members:**
 
@@ -22747,7 +22747,7 @@ public class AbilityDefinitionDeathseekerBow extends AbilityDefinition
 public class AbilityDefinitionBansheeSCallWailTalent1 extends AbilityDefinition
 ```
 
-'AUi1' / [AbilityIds.bansheeSCallWailTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bansheeSCallWailTalent1)
+'AUi1' / [AbilityIds.bansheeSCallWailTalent1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-bansheeSCallWailTalent1)
 
 **Members:**
 
@@ -22775,7 +22775,7 @@ public class AbilityDefinitionBansheeSCallWailTalent1 extends AbilityDefinition
 public class AbilityDefinitionBansheeSCallWailTalent2 extends AbilityDefinition
 ```
 
-'AUi2' / [AbilityIds.bansheeSCallWailTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bansheeSCallWailTalent2)
+'AUi2' / [AbilityIds.bansheeSCallWailTalent2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-bansheeSCallWailTalent2)
 
 **Members:**
 
@@ -22803,7 +22803,7 @@ public class AbilityDefinitionBansheeSCallWailTalent2 extends AbilityDefinition
 public class AbilityDefinitionBansheeSCallWailTalent3 extends AbilityDefinition
 ```
 
-'AUi3' / [AbilityIds.bansheeSCallWailTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bansheeSCallWailTalent3)
+'AUi3' / [AbilityIds.bansheeSCallWailTalent3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-bansheeSCallWailTalent3)
 
 **Members:**
 
@@ -22831,7 +22831,7 @@ public class AbilityDefinitionBansheeSCallWailTalent3 extends AbilityDefinition
 public class AbilityDefinitionSoulLanternTalent1 extends AbilityDefinition
 ```
 
-'AUl1' / [AbilityIds.soulLanternTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-soulLanternTalent1)
+'AUl1' / [AbilityIds.soulLanternTalent1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-soulLanternTalent1)
 
 **Members:**
 
@@ -22859,7 +22859,7 @@ public class AbilityDefinitionSoulLanternTalent1 extends AbilityDefinition
 public class AbilityDefinitionSoulLanternTalent2 extends AbilityDefinition
 ```
 
-'AUl2' / [AbilityIds.soulLanternTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-soulLanternTalent2)
+'AUl2' / [AbilityIds.soulLanternTalent2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-soulLanternTalent2)
 
 **Members:**
 
@@ -22887,7 +22887,7 @@ public class AbilityDefinitionSoulLanternTalent2 extends AbilityDefinition
 public class AbilityDefinitionSoulLanternTalent3 extends AbilityDefinition
 ```
 
-'AUl3' / [AbilityIds.soulLanternTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-soulLanternTalent3)
+'AUl3' / [AbilityIds.soulLanternTalent3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-soulLanternTalent3)
 
 **Members:**
 
@@ -22915,7 +22915,7 @@ public class AbilityDefinitionSoulLanternTalent3 extends AbilityDefinition
 public class AbilityDefinitionSoulLantern extends AbilityDefinition
 ```
 
-'AUla' / [AbilityIds.soulLantern](/stdlib/ref/_wurst/AbilityIds.html#abilityids-soulLantern)
+'AUla' / [AbilityIds.soulLantern](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-soulLantern)
 
 **Members:**
 
@@ -22943,7 +22943,7 @@ public class AbilityDefinitionSoulLantern extends AbilityDefinition
 public class AbilityDefinitionBatteringRamTalent1 extends AbilityDefinition
 ```
 
-'AUr1' / [AbilityIds.batteringRamTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-batteringRamTalent1)
+'AUr1' / [AbilityIds.batteringRamTalent1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-batteringRamTalent1)
 
 **Members:**
 
@@ -22973,7 +22973,7 @@ public class AbilityDefinitionBatteringRamTalent1 extends AbilityDefinition
 public class AbilityDefinitionBatteringRamTalent2 extends AbilityDefinition
 ```
 
-'AUr2' / [AbilityIds.batteringRamTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-batteringRamTalent2)
+'AUr2' / [AbilityIds.batteringRamTalent2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-batteringRamTalent2)
 
 **Members:**
 
@@ -23003,7 +23003,7 @@ public class AbilityDefinitionBatteringRamTalent2 extends AbilityDefinition
 public class AbilityDefinitionBatteringRamTalent3 extends AbilityDefinition
 ```
 
-'AUr3' / [AbilityIds.batteringRamTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-batteringRamTalent3)
+'AUr3' / [AbilityIds.batteringRamTalent3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-batteringRamTalent3)
 
 **Members:**
 
@@ -23033,7 +23033,7 @@ public class AbilityDefinitionBatteringRamTalent3 extends AbilityDefinition
 public class AbilityDefinitionRelentlessCleaveTalent1 extends AbilityDefinition
 ```
 
-'AUs1' / [AbilityIds.relentlessCleaveTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-relentlessCleaveTalent1)
+'AUs1' / [AbilityIds.relentlessCleaveTalent1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-relentlessCleaveTalent1)
 
 **Members:**
 
@@ -23082,7 +23082,7 @@ public class AbilityDefinitionRelentlessCleaveTalent1 extends AbilityDefinition
 public class AbilityDefinitionRelentlessCleaveTalent2 extends AbilityDefinition
 ```
 
-'AUs2' / [AbilityIds.relentlessCleaveTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-relentlessCleaveTalent2)
+'AUs2' / [AbilityIds.relentlessCleaveTalent2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-relentlessCleaveTalent2)
 
 **Members:**
 
@@ -23131,7 +23131,7 @@ public class AbilityDefinitionRelentlessCleaveTalent2 extends AbilityDefinition
 public class AbilityDefinitionRelentlessCleaveTalent3 extends AbilityDefinition
 ```
 
-'AUs3' / [AbilityIds.relentlessCleaveTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-relentlessCleaveTalent3)
+'AUs3' / [AbilityIds.relentlessCleaveTalent3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-relentlessCleaveTalent3)
 
 **Members:**
 
@@ -23180,7 +23180,7 @@ public class AbilityDefinitionRelentlessCleaveTalent3 extends AbilityDefinition
 public class AbilityDefinitionThornyShieldStacking extends AbilityDefinition
 ```
 
-'AUss' / [AbilityIds.thornyShieldStacking](/stdlib/ref/_wurst/AbilityIds.html#abilityids-thornyShieldStacking)
+'AUss' / [AbilityIds.thornyShieldStacking](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-thornyShieldStacking)
 
 **Members:**
 
@@ -23198,7 +23198,7 @@ public class AbilityDefinitionThornyShieldStacking extends AbilityDefinition
 public class AbilityDefinitionRelentlessCleave extends AbilityDefinition
 ```
 
-'AUsw' / [AbilityIds.relentlessCleave](/stdlib/ref/_wurst/AbilityIds.html#abilityids-relentlessCleave)
+'AUsw' / [AbilityIds.relentlessCleave](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-relentlessCleave)
 
 **Members:**
 
@@ -23247,7 +23247,7 @@ public class AbilityDefinitionRelentlessCleave extends AbilityDefinition
 public class AbilityDefinitionGrimConvictionTalent1 extends AbilityDefinition
 ```
 
-'AUv1' / [AbilityIds.grimConvictionTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-grimConvictionTalent1)
+'AUv1' / [AbilityIds.grimConvictionTalent1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-grimConvictionTalent1)
 
 **Members:**
 
@@ -23276,7 +23276,7 @@ public class AbilityDefinitionGrimConvictionTalent1 extends AbilityDefinition
 public class AbilityDefinitionGrimConvictionTalent2 extends AbilityDefinition
 ```
 
-'AUv2' / [AbilityIds.grimConvictionTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-grimConvictionTalent2)
+'AUv2' / [AbilityIds.grimConvictionTalent2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-grimConvictionTalent2)
 
 **Members:**
 
@@ -23305,7 +23305,7 @@ public class AbilityDefinitionGrimConvictionTalent2 extends AbilityDefinition
 public class AbilityDefinitionGrimConvictionTalent3 extends AbilityDefinition
 ```
 
-'AUv3' / [AbilityIds.grimConvictionTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-grimConvictionTalent3)
+'AUv3' / [AbilityIds.grimConvictionTalent3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-grimConvictionTalent3)
 
 **Members:**
 
@@ -23334,7 +23334,7 @@ public class AbilityDefinitionGrimConvictionTalent3 extends AbilityDefinition
 public class AbilityDefinitionUndeadVengeanceAkaGrimConviction extends AbilityDefinition
 ```
 
-'AUvg' / [AbilityIds.undeadVengeanceAkaGrimConviction](/stdlib/ref/_wurst/AbilityIds.html#abilityids-undeadVengeanceAkaGrimConviction)
+'AUvg' / [AbilityIds.undeadVengeanceAkaGrimConviction](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-undeadVengeanceAkaGrimConviction)
 
 **Members:**
 
@@ -23363,7 +23363,7 @@ public class AbilityDefinitionUndeadVengeanceAkaGrimConviction extends AbilityDe
 public class AbilityDefinitionWitheringFireTalent1 extends AbilityDefinition
 ```
 
-'AUw1' / [AbilityIds.witheringFireTalent1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-witheringFireTalent1)
+'AUw1' / [AbilityIds.witheringFireTalent1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-witheringFireTalent1)
 
 **Members:**
 
@@ -23385,7 +23385,7 @@ public class AbilityDefinitionWitheringFireTalent1 extends AbilityDefinition
 public class AbilityDefinitionWitheringFireTalent2 extends AbilityDefinition
 ```
 
-'AUw2' / [AbilityIds.witheringFireTalent2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-witheringFireTalent2)
+'AUw2' / [AbilityIds.witheringFireTalent2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-witheringFireTalent2)
 
 **Members:**
 
@@ -23407,7 +23407,7 @@ public class AbilityDefinitionWitheringFireTalent2 extends AbilityDefinition
 public class AbilityDefinitionWitheringFireTalent3 extends AbilityDefinition
 ```
 
-'AUw3' / [AbilityIds.witheringFireTalent3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-witheringFireTalent3)
+'AUw3' / [AbilityIds.witheringFireTalent3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-witheringFireTalent3)
 
 **Members:**
 
@@ -23429,7 +23429,7 @@ public class AbilityDefinitionWitheringFireTalent3 extends AbilityDefinition
 public class AbilityDefinitionBansheeSCallWail extends AbilityDefinition
 ```
 
-'AUwc' / [AbilityIds.bansheeSCallWail](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bansheeSCallWail)
+'AUwc' / [AbilityIds.bansheeSCallWail](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-bansheeSCallWail)
 
 **Members:**
 
@@ -23457,7 +23457,7 @@ public class AbilityDefinitionBansheeSCallWail extends AbilityDefinition
 public class AbilityDefinitionWitheringFire extends AbilityDefinition
 ```
 
-'AUwf' / [AbilityIds.witheringFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-witheringFire)
+'AUwf' / [AbilityIds.witheringFire](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-witheringFire)
 
 **Members:**
 
@@ -23479,7 +23479,7 @@ public class AbilityDefinitionWitheringFire extends AbilityDefinition
 public class AbilityDefinitionItemVampiricAura4 extends AbilityDefinition
 ```
 
-'AVAq' / [AbilityIds.itemVampiricAura4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemVampiricAura4)
+'AVAq' / [AbilityIds.itemVampiricAura4](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemVampiricAura4)
 
 **Members:**
 
@@ -23494,7 +23494,7 @@ public class AbilityDefinitionItemVampiricAura4 extends AbilityDefinition
 public class AbilityDefinitionInquisitorFlamingHandsVFX extends AbilityDefinition
 ```
 
-'AViq' / [AbilityIds.inquisitorFlamingHandsVFX](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inquisitorFlamingHandsVFX)
+'AViq' / [AbilityIds.inquisitorFlamingHandsVFX](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-inquisitorFlamingHandsVFX)
 
 **Members:**
 
@@ -23508,7 +23508,7 @@ public class AbilityDefinitionInquisitorFlamingHandsVFX extends AbilityDefinitio
 public class AbilityDefinitionShopBagVFX extends AbilityDefinition
 ```
 
-'AVsb' / [AbilityIds.shopBagVFX](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shopBagVFX)
+'AVsb' / [AbilityIds.shopBagVFX](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-shopBagVFX)
 
 **Members:**
 
@@ -23522,7 +23522,7 @@ public class AbilityDefinitionShopBagVFX extends AbilityDefinition
 public class AbilityDefinitionItemAllStatsPlus10 extends AbilityDefinition
 ```
 
-'AX10' / [AbilityIds.itemAllStatsPlus10](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAllStatsPlus10)
+'AX10' / [AbilityIds.itemAllStatsPlus10](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAllStatsPlus10)
 
 **Members:**
 
@@ -23542,7 +23542,7 @@ public class AbilityDefinitionItemAllStatsPlus10 extends AbilityDefinition
 public class AbilityDefinitionItemArmorSCHeal extends AbilityDefinition
 ```
 
-'Aac1' / [AbilityIds.itemArmorSCHeal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorSCHeal)
+'Aac1' / [AbilityIds.itemArmorSCHeal](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemArmorSCHeal)
 
 **Members:**
 
@@ -23556,7 +23556,7 @@ public class AbilityDefinitionItemArmorSCHeal extends AbilityDefinition
 public class AbilityDefinitionItemArmorSCAttack extends AbilityDefinition
 ```
 
-'Aac2' / [AbilityIds.itemArmorSCAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorSCAttack)
+'Aac2' / [AbilityIds.itemArmorSCAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemArmorSCAttack)
 
 **Members:**
 
@@ -23577,7 +23577,7 @@ public class AbilityDefinitionItemArmorSCAttack extends AbilityDefinition
 public class AbilityDefinitionItemChillAttack3 extends AbilityDefinition
 ```
 
-'Aac3' / [AbilityIds.itemChillAttack3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemChillAttack3)
+'Aac3' / [AbilityIds.itemChillAttack3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemChillAttack3)
 
 **Members:**
 
@@ -23608,7 +23608,7 @@ public class AbilityDefinitionItemChillAttack3 extends AbilityDefinition
 public class AbilityDefinitionItemChillAttack5 extends AbilityDefinition
 ```
 
-'Aac5' / [AbilityIds.itemChillAttack5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemChillAttack5)
+'Aac5' / [AbilityIds.itemChillAttack5](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemChillAttack5)
 
 **Members:**
 
@@ -23639,7 +23639,7 @@ public class AbilityDefinitionItemChillAttack5 extends AbilityDefinition
 public class AbilityDefinitionRaiseTheStandardAura extends AbilityDefinition
 ```
 
-'Aaca' / [AbilityIds.raiseTheStandardAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-raiseTheStandardAura)
+'Aaca' / [AbilityIds.raiseTheStandardAura](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-raiseTheStandardAura)
 
 **Members:**
 
@@ -23653,7 +23653,7 @@ public class AbilityDefinitionRaiseTheStandardAura extends AbilityDefinition
 public class AbilityDefinitionCurseAnyaBanshee extends AbilityDefinition
 ```
 
-'Aacr' / [AbilityIds.curseAnyaBanshee](/stdlib/ref/_wurst/AbilityIds.html#abilityids-curseAnyaBanshee)
+'Aacr' / [AbilityIds.curseAnyaBanshee](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-curseAnyaBanshee)
 
 **Members:**
 
@@ -23667,7 +23667,7 @@ public class AbilityDefinitionCurseAnyaBanshee extends AbilityDefinition
 public class AbilityDefinitionItemAuraOfDarkness extends AbilityDefinition
 ```
 
-'Aadx' / [AbilityIds.itemAuraOfDarkness](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAuraOfDarkness)
+'Aadx' / [AbilityIds.itemAuraOfDarkness](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAuraOfDarkness)
 
 **Members:**
 
@@ -23679,7 +23679,7 @@ public class AbilityDefinitionItemAuraOfDarkness extends AbilityDefinition
 public class AbilityDefinitionItemAgitatingTotem extends AbilityDefinition
 ```
 
-'Aagt' / [AbilityIds.itemAgitatingTotem](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAgitatingTotem)
+'Aagt' / [AbilityIds.itemAgitatingTotem](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAgitatingTotem)
 
 **Members:**
 
@@ -23699,7 +23699,7 @@ public class AbilityDefinitionItemAgitatingTotem extends AbilityDefinition
 public class AbilityDefinitionItemArmorCorruptAttack2 extends AbilityDefinition
 ```
 
-'Aah2' / [AbilityIds.itemArmorCorruptAttack2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorCorruptAttack2)
+'Aah2' / [AbilityIds.itemArmorCorruptAttack2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemArmorCorruptAttack2)
 
 **Members:**
 
@@ -23730,7 +23730,7 @@ public class AbilityDefinitionItemArmorCorruptAttack2 extends AbilityDefinition
 public class AbilityDefinitionItemArmorCorruptAttack3 extends AbilityDefinition
 ```
 
-'Aah3' / [AbilityIds.itemArmorCorruptAttack3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorCorruptAttack3)
+'Aah3' / [AbilityIds.itemArmorCorruptAttack3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemArmorCorruptAttack3)
 
 **Members:**
 
@@ -23761,7 +23761,7 @@ public class AbilityDefinitionItemArmorCorruptAttack3 extends AbilityDefinition
 public class AbilityDefinitionItemArmorCorruptAttack5 extends AbilityDefinition
 ```
 
-'Aah5' / [AbilityIds.itemArmorCorruptAttack5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorCorruptAttack5)
+'Aah5' / [AbilityIds.itemArmorCorruptAttack5](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemArmorCorruptAttack5)
 
 **Members:**
 
@@ -23792,7 +23792,7 @@ public class AbilityDefinitionItemArmorCorruptAttack5 extends AbilityDefinition
 public class AbilityDefinitionOnBasicAttackSample extends AbilityDefinition
 ```
 
-'Aals' / [AbilityIds.onBasicAttackSample](/stdlib/ref/_wurst/AbilityIds.html#abilityids-onBasicAttackSample)
+'Aals' / [AbilityIds.onBasicAttackSample](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-onBasicAttackSample)
 
 **Members:**
 
@@ -23823,7 +23823,7 @@ public class AbilityDefinitionOnBasicAttackSample extends AbilityDefinition
 public class AbilityDefinitionAttributeModifierSkillRebirth extends AbilityDefinition
 ```
 
-'Aaml' / [AbilityIds.attributeModifierSkillRebirth](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attributeModifierSkillRebirth)
+'Aaml' / [AbilityIds.attributeModifierSkillRebirth](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-attributeModifierSkillRebirth)
 
 **Members:**
 
@@ -23843,7 +23843,7 @@ public class AbilityDefinitionAttributeModifierSkillRebirth extends AbilityDefin
 public class AbilityDefinitionItemArmorOfReanimationSummon extends AbilityDefinition
 ```
 
-'Aar1' / [AbilityIds.itemArmorOfReanimationSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorOfReanimationSummon)
+'Aar1' / [AbilityIds.itemArmorOfReanimationSummon](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemArmorOfReanimationSummon)
 
 **Members:**
 
@@ -23859,7 +23859,7 @@ public class AbilityDefinitionItemArmorOfReanimationSummon extends AbilityDefini
 public class AbilityDefinitionItemArmorOfReanimationAttack extends AbilityDefinition
 ```
 
-'Aar2' / [AbilityIds.itemArmorOfReanimationAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorOfReanimationAttack)
+'Aar2' / [AbilityIds.itemArmorOfReanimationAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemArmorOfReanimationAttack)
 
 **Members:**
 
@@ -23880,7 +23880,7 @@ public class AbilityDefinitionItemArmorOfReanimationAttack extends AbilityDefini
 public class AbilityDefinitionItemArmorCorruptSpell2 extends AbilityDefinition
 ```
 
-'Aas2' / [AbilityIds.itemArmorCorruptSpell2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorCorruptSpell2)
+'Aas2' / [AbilityIds.itemArmorCorruptSpell2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemArmorCorruptSpell2)
 
 **Members:**
 
@@ -23906,7 +23906,7 @@ public class AbilityDefinitionItemArmorCorruptSpell2 extends AbilityDefinition
 public class AbilityDefinitionItemArmorCorruptSpell3 extends AbilityDefinition
 ```
 
-'Aas3' / [AbilityIds.itemArmorCorruptSpell3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorCorruptSpell3)
+'Aas3' / [AbilityIds.itemArmorCorruptSpell3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemArmorCorruptSpell3)
 
 **Members:**
 
@@ -23932,7 +23932,7 @@ public class AbilityDefinitionItemArmorCorruptSpell3 extends AbilityDefinition
 public class AbilityDefinitionItemArmorCorruptSpell5 extends AbilityDefinition
 ```
 
-'Aas5' / [AbilityIds.itemArmorCorruptSpell5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorCorruptSpell5)
+'Aas5' / [AbilityIds.itemArmorCorruptSpell5](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemArmorCorruptSpell5)
 
 **Members:**
 
@@ -23958,7 +23958,7 @@ public class AbilityDefinitionItemArmorCorruptSpell5 extends AbilityDefinition
 public class AbilityDefinitionArcaneSpellblade extends AbilityDefinition
 ```
 
-'Aasb' / [AbilityIds.arcaneSpellblade](/stdlib/ref/_wurst/AbilityIds.html#abilityids-arcaneSpellblade)
+'Aasb' / [AbilityIds.arcaneSpellblade](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-arcaneSpellblade)
 
 **Members:**
 
@@ -23974,7 +23974,7 @@ public class AbilityDefinitionArcaneSpellblade extends AbilityDefinition
 public class AbilityDefinitionRaiseTheStandardSpellCritical extends AbilityDefinition
 ```
 
-'Aasc' / [AbilityIds.raiseTheStandardSpellCritical](/stdlib/ref/_wurst/AbilityIds.html#abilityids-raiseTheStandardSpellCritical)
+'Aasc' / [AbilityIds.raiseTheStandardSpellCritical](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-raiseTheStandardSpellCritical)
 
 **Members:**
 
@@ -23990,7 +23990,7 @@ public class AbilityDefinitionRaiseTheStandardSpellCritical extends AbilityDefin
 public class AbilityDefinitionItemAvianaSTalonsMana extends AbilityDefinition
 ```
 
-'Aat1' / [AbilityIds.itemAvianaSTalonsMana](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAvianaSTalonsMana)
+'Aat1' / [AbilityIds.itemAvianaSTalonsMana](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAvianaSTalonsMana)
 
 **Members:**
 
@@ -24002,7 +24002,7 @@ public class AbilityDefinitionItemAvianaSTalonsMana extends AbilityDefinition
 public class AbilityDefinitionItemAvianaSTalonsAttack1 extends AbilityDefinition
 ```
 
-'Aat2' / [AbilityIds.itemAvianaSTalonsAttack1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAvianaSTalonsAttack1)
+'Aat2' / [AbilityIds.itemAvianaSTalonsAttack1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAvianaSTalonsAttack1)
 
 **Members:**
 
@@ -24033,7 +24033,7 @@ public class AbilityDefinitionItemAvianaSTalonsAttack1 extends AbilityDefinition
 public class AbilityDefinitionItemAvianaSTalonsAttack2 extends AbilityDefinition
 ```
 
-'Aat3' / [AbilityIds.itemAvianaSTalonsAttack2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemAvianaSTalonsAttack2)
+'Aat3' / [AbilityIds.itemAvianaSTalonsAttack2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemAvianaSTalonsAttack2)
 
 **Members:**
 
@@ -24064,7 +24064,7 @@ public class AbilityDefinitionItemAvianaSTalonsAttack2 extends AbilityDefinition
 public class AbilityDefinitionRaiseTheStandardCritical extends AbilityDefinition
 ```
 
-'Aaxr' / [AbilityIds.raiseTheStandardCritical](/stdlib/ref/_wurst/AbilityIds.html#abilityids-raiseTheStandardCritical)
+'Aaxr' / [AbilityIds.raiseTheStandardCritical](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-raiseTheStandardCritical)
 
 **Members:**
 
@@ -24084,7 +24084,7 @@ public class AbilityDefinitionRaiseTheStandardCritical extends AbilityDefinition
 public class AbilityDefinitionButchersAura1 extends AbilityDefinition
 ```
 
-'Aba1' / [AbilityIds.butchersAura1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-butchersAura1)
+'Aba1' / [AbilityIds.butchersAura1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-butchersAura1)
 
 **Members:**
 
@@ -24099,7 +24099,7 @@ public class AbilityDefinitionButchersAura1 extends AbilityDefinition
 public class AbilityDefinitionButchersAura2 extends AbilityDefinition
 ```
 
-'Aba2' / [AbilityIds.butchersAura2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-butchersAura2)
+'Aba2' / [AbilityIds.butchersAura2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-butchersAura2)
 
 **Members:**
 
@@ -24114,7 +24114,7 @@ public class AbilityDefinitionButchersAura2 extends AbilityDefinition
 public class AbilityDefinitionItemBoneCommanderSSkullAura extends AbilityDefinition
 ```
 
-'Abcs' / [AbilityIds.itemBoneCommanderSSkullAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBoneCommanderSSkullAura)
+'Abcs' / [AbilityIds.itemBoneCommanderSSkullAura](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemBoneCommanderSSkullAura)
 
 **Members:**
 
@@ -24132,7 +24132,7 @@ public class AbilityDefinitionItemBoneCommanderSSkullAura extends AbilityDefinit
 public class AbilityDefinitionBlueDragonFigurine extends AbilityDefinition
 ```
 
-'Abdf' / [AbilityIds.blueDragonFigurine](/stdlib/ref/_wurst/AbilityIds.html#abilityids-blueDragonFigurine)
+'Abdf' / [AbilityIds.blueDragonFigurine](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-blueDragonFigurine)
 
 **Members:**
 
@@ -24154,7 +24154,7 @@ public class AbilityDefinitionBlueDragonFigurine extends AbilityDefinition
 public class AbilityDefinitionBladeOfFrozenHungerAttack extends AbilityDefinition
 ```
 
-'Abfa' / [AbilityIds.bladeOfFrozenHungerAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bladeOfFrozenHungerAttack)
+'Abfa' / [AbilityIds.bladeOfFrozenHungerAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-bladeOfFrozenHungerAttack)
 
 **Members:**
 
@@ -24185,7 +24185,7 @@ public class AbilityDefinitionBladeOfFrozenHungerAttack extends AbilityDefinitio
 public class AbilityDefinitionBladeOfFrozenHungerHeal extends AbilityDefinition
 ```
 
-'Abfh' / [AbilityIds.bladeOfFrozenHungerHeal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bladeOfFrozenHungerHeal)
+'Abfh' / [AbilityIds.bladeOfFrozenHungerHeal](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-bladeOfFrozenHungerHeal)
 
 **Members:**
 
@@ -24199,7 +24199,7 @@ public class AbilityDefinitionBladeOfFrozenHungerHeal extends AbilityDefinition
 public class AbilityDefinitionItemBindingsOfHelyaCW extends AbilityDefinition
 ```
 
-'Abh1' / [AbilityIds.itemBindingsOfHelyaCW](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBindingsOfHelyaCW)
+'Abh1' / [AbilityIds.itemBindingsOfHelyaCW](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemBindingsOfHelyaCW)
 
 **Members:**
 
@@ -24219,7 +24219,7 @@ public class AbilityDefinitionItemBindingsOfHelyaCW extends AbilityDefinition
 public class AbilityDefinitionItemBindingsOfHelyaAttack extends AbilityDefinition
 ```
 
-'Abh2' / [AbilityIds.itemBindingsOfHelyaAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBindingsOfHelyaAttack)
+'Abh2' / [AbilityIds.itemBindingsOfHelyaAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemBindingsOfHelyaAttack)
 
 **Members:**
 
@@ -24250,7 +24250,7 @@ public class AbilityDefinitionItemBindingsOfHelyaAttack extends AbilityDefinitio
 public class AbilityDefinitionItemBootsOfTheIcewalkerBoF extends AbilityDefinition
 ```
 
-'Abi1' / [AbilityIds.itemBootsOfTheIcewalkerBoF](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBootsOfTheIcewalkerBoF)
+'Abi1' / [AbilityIds.itemBootsOfTheIcewalkerBoF](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemBootsOfTheIcewalkerBoF)
 
 **Members:**
 
@@ -24272,7 +24272,7 @@ public class AbilityDefinitionItemBootsOfTheIcewalkerBoF extends AbilityDefiniti
 public class AbilityDefinitionItemBootsOfTheIcewalkerAttack extends AbilityDefinition
 ```
 
-'Abi2' / [AbilityIds.itemBootsOfTheIcewalkerAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBootsOfTheIcewalkerAttack)
+'Abi2' / [AbilityIds.itemBootsOfTheIcewalkerAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemBootsOfTheIcewalkerAttack)
 
 **Members:**
 
@@ -24303,7 +24303,7 @@ public class AbilityDefinitionItemBootsOfTheIcewalkerAttack extends AbilityDefin
 public class AbilityDefinitionBanshee extends AbilityDefinition
 ```
 
-'Abns' / [AbilityIds.banshee](/stdlib/ref/_wurst/AbilityIds.html#abilityids-banshee)
+'Abns' / [AbilityIds.banshee](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-banshee)
 
 **Members:**
 
@@ -24315,7 +24315,7 @@ public class AbilityDefinitionBanshee extends AbilityDefinition
 public class AbilityDefinitionItemBottledStormTrinket extends AbilityDefinition
 ```
 
-'Abos' / [AbilityIds.itemBottledStormTrinket](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBottledStormTrinket)
+'Abos' / [AbilityIds.itemBottledStormTrinket](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemBottledStormTrinket)
 
 **Members:**
 
@@ -24333,7 +24333,7 @@ public class AbilityDefinitionItemBottledStormTrinket extends AbilityDefinition
 public class AbilityDefinitionItemBrimstoneSpell1 extends AbilityDefinition
 ```
 
-'Abr1' / [AbilityIds.itemBrimstoneSpell1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBrimstoneSpell1)
+'Abr1' / [AbilityIds.itemBrimstoneSpell1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemBrimstoneSpell1)
 
 **Members:**
 
@@ -24359,7 +24359,7 @@ public class AbilityDefinitionItemBrimstoneSpell1 extends AbilityDefinition
 public class AbilityDefinitionItemBrimstoneSpell2 extends AbilityDefinition
 ```
 
-'Abr2' / [AbilityIds.itemBrimstoneSpell2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBrimstoneSpell2)
+'Abr2' / [AbilityIds.itemBrimstoneSpell2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemBrimstoneSpell2)
 
 **Members:**
 
@@ -24385,7 +24385,7 @@ public class AbilityDefinitionItemBrimstoneSpell2 extends AbilityDefinition
 public class AbilityDefinitionItemBottledStormCL extends AbilityDefinition
 ```
 
-'Abs1' / [AbilityIds.itemBottledStormCL](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBottledStormCL)
+'Abs1' / [AbilityIds.itemBottledStormCL](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemBottledStormCL)
 
 **Members:**
 
@@ -24403,7 +24403,7 @@ public class AbilityDefinitionItemBottledStormCL extends AbilityDefinition
 public class AbilityDefinitionItemBottledStormAttack1 extends AbilityDefinition
 ```
 
-'Abs2' / [AbilityIds.itemBottledStormAttack1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBottledStormAttack1)
+'Abs2' / [AbilityIds.itemBottledStormAttack1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemBottledStormAttack1)
 
 **Members:**
 
@@ -24434,7 +24434,7 @@ public class AbilityDefinitionItemBottledStormAttack1 extends AbilityDefinition
 public class AbilityDefinitionAnyaBansheeCurseOrb extends AbilityDefinition
 ```
 
-'Absc' / [AbilityIds.anyaBansheeCurseOrb](/stdlib/ref/_wurst/AbilityIds.html#abilityids-anyaBansheeCurseOrb)
+'Absc' / [AbilityIds.anyaBansheeCurseOrb](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-anyaBansheeCurseOrb)
 
 **Members:**
 
@@ -24461,7 +24461,7 @@ public class AbilityDefinitionAnyaBansheeCurseOrb extends AbilityDefinition
 public class AbilityDefinitionItemBorelgoreAttack extends AbilityDefinition
 ```
 
-'Abx1' / [AbilityIds.itemBorelgoreAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBorelgoreAttack)
+'Abx1' / [AbilityIds.itemBorelgoreAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemBorelgoreAttack)
 
 **Members:**
 
@@ -24492,7 +24492,7 @@ public class AbilityDefinitionItemBorelgoreAttack extends AbilityDefinition
 public class AbilityDefinitionItemBrimstoneAttack1 extends AbilityDefinition
 ```
 
-'Abz1' / [AbilityIds.itemBrimstoneAttack1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBrimstoneAttack1)
+'Abz1' / [AbilityIds.itemBrimstoneAttack1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemBrimstoneAttack1)
 
 **Members:**
 
@@ -24523,7 +24523,7 @@ public class AbilityDefinitionItemBrimstoneAttack1 extends AbilityDefinition
 public class AbilityDefinitionItemBrimstoneAttack2 extends AbilityDefinition
 ```
 
-'Abz2' / [AbilityIds.itemBrimstoneAttack2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBrimstoneAttack2)
+'Abz2' / [AbilityIds.itemBrimstoneAttack2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemBrimstoneAttack2)
 
 **Members:**
 
@@ -24554,7 +24554,7 @@ public class AbilityDefinitionItemBrimstoneAttack2 extends AbilityDefinition
 public class AbilityDefinitionItemConsecratedMixture extends AbilityDefinition
 ```
 
-'Accm' / [AbilityIds.itemConsecratedMixture](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemConsecratedMixture)
+'Accm' / [AbilityIds.itemConsecratedMixture](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemConsecratedMixture)
 
 **Members:**
 
@@ -24574,7 +24574,7 @@ public class AbilityDefinitionItemConsecratedMixture extends AbilityDefinition
 public class AbilityDefinitionItemHelmCenarionHeal extends AbilityDefinition
 ```
 
-'Ace1' / [AbilityIds.itemHelmCenarionHeal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHelmCenarionHeal)
+'Ace1' / [AbilityIds.itemHelmCenarionHeal](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHelmCenarionHeal)
 
 **Members:**
 
@@ -24592,7 +24592,7 @@ public class AbilityDefinitionItemHelmCenarionHeal extends AbilityDefinition
 public class AbilityDefinitionItemHelmCenarionAttack extends AbilityDefinition
 ```
 
-'Ace2' / [AbilityIds.itemHelmCenarionAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHelmCenarionAttack)
+'Ace2' / [AbilityIds.itemHelmCenarionAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHelmCenarionAttack)
 
 **Members:**
 
@@ -24623,7 +24623,7 @@ public class AbilityDefinitionItemHelmCenarionAttack extends AbilityDefinition
 public class AbilityDefinitionItemHelmCenarionSpellcast extends AbilityDefinition
 ```
 
-'Ace3' / [AbilityIds.itemHelmCenarionSpellcast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHelmCenarionSpellcast)
+'Ace3' / [AbilityIds.itemHelmCenarionSpellcast](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHelmCenarionSpellcast)
 
 **Members:**
 
@@ -24642,7 +24642,7 @@ public class AbilityDefinitionItemHelmCenarionSpellcast extends AbilityDefinitio
 public class AbilityDefinitionItemElixirOfCunning extends AbilityDefinition
 ```
 
-'Acec' / [AbilityIds.itemElixirOfCunning](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemElixirOfCunning)
+'Acec' / [AbilityIds.itemElixirOfCunning](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemElixirOfCunning)
 
 **Members:**
 
@@ -24662,7 +24662,7 @@ public class AbilityDefinitionItemElixirOfCunning extends AbilityDefinition
 public class AbilityDefinitionItemElixirOfTheMonsterHunter extends AbilityDefinition
 ```
 
-'Acem' / [AbilityIds.itemElixirOfTheMonsterHunter](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemElixirOfTheMonsterHunter)
+'Acem' / [AbilityIds.itemElixirOfTheMonsterHunter](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemElixirOfTheMonsterHunter)
 
 **Members:**
 
@@ -24682,7 +24682,7 @@ public class AbilityDefinitionItemElixirOfTheMonsterHunter extends AbilityDefini
 public class AbilityDefinitionItemElixirOfGreaterIntelligence extends AbilityDefinition
 ```
 
-'Acgi' / [AbilityIds.itemElixirOfGreaterIntelligence](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemElixirOfGreaterIntelligence)
+'Acgi' / [AbilityIds.itemElixirOfGreaterIntelligence](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemElixirOfGreaterIntelligence)
 
 **Members:**
 
@@ -24702,7 +24702,7 @@ public class AbilityDefinitionItemElixirOfGreaterIntelligence extends AbilityDef
 public class AbilityDefinitionCursedGoldenRingCrit extends AbilityDefinition
 ```
 
-'Acgr' / [AbilityIds.cursedGoldenRingCrit](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cursedGoldenRingCrit)
+'Acgr' / [AbilityIds.cursedGoldenRingCrit](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cursedGoldenRingCrit)
 
 **Members:**
 
@@ -24722,7 +24722,7 @@ public class AbilityDefinitionCursedGoldenRingCrit extends AbilityDefinition
 public class AbilityDefinitionItemStaffCHTC extends AbilityDefinition
 ```
 
-'Ach1' / [AbilityIds.itemStaffCHTC](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemStaffCHTC)
+'Ach1' / [AbilityIds.itemStaffCHTC](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemStaffCHTC)
 
 **Members:**
 
@@ -24742,7 +24742,7 @@ public class AbilityDefinitionItemStaffCHTC extends AbilityDefinition
 public class AbilityDefinitionItemStaffCHSpellcast extends AbilityDefinition
 ```
 
-'Ach2' / [AbilityIds.itemStaffCHSpellcast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemStaffCHSpellcast)
+'Ach2' / [AbilityIds.itemStaffCHSpellcast](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemStaffCHSpellcast)
 
 **Members:**
 
@@ -24761,7 +24761,7 @@ public class AbilityDefinitionItemStaffCHSpellcast extends AbilityDefinition
 public class AbilityDefinitionItemBladeCHDamage extends AbilityDefinition
 ```
 
-'Ach3' / [AbilityIds.itemBladeCHDamage](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBladeCHDamage)
+'Ach3' / [AbilityIds.itemBladeCHDamage](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemBladeCHDamage)
 
 **Members:**
 
@@ -24779,7 +24779,7 @@ public class AbilityDefinitionItemBladeCHDamage extends AbilityDefinition
 public class AbilityDefinitionItemBladeCHHeal extends AbilityDefinition
 ```
 
-'Ach4' / [AbilityIds.itemBladeCHHeal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBladeCHHeal)
+'Ach4' / [AbilityIds.itemBladeCHHeal](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemBladeCHHeal)
 
 **Members:**
 
@@ -24793,7 +24793,7 @@ public class AbilityDefinitionItemBladeCHHeal extends AbilityDefinition
 public class AbilityDefinitionItemBladeCHAttack1 extends AbilityDefinition
 ```
 
-'Ach5' / [AbilityIds.itemBladeCHAttack1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBladeCHAttack1)
+'Ach5' / [AbilityIds.itemBladeCHAttack1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemBladeCHAttack1)
 
 **Members:**
 
@@ -24824,7 +24824,7 @@ public class AbilityDefinitionItemBladeCHAttack1 extends AbilityDefinition
 public class AbilityDefinitionItemBladeCHAttack2 extends AbilityDefinition
 ```
 
-'Ach6' / [AbilityIds.itemBladeCHAttack2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBladeCHAttack2)
+'Ach6' / [AbilityIds.itemBladeCHAttack2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemBladeCHAttack2)
 
 **Members:**
 
@@ -24855,7 +24855,7 @@ public class AbilityDefinitionItemBladeCHAttack2 extends AbilityDefinition
 public class AbilityDefinitionItemElixirOfLesserIntelligence extends AbilityDefinition
 ```
 
-'Acli' / [AbilityIds.itemElixirOfLesserIntelligence](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemElixirOfLesserIntelligence)
+'Acli' / [AbilityIds.itemElixirOfLesserIntelligence](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemElixirOfLesserIntelligence)
 
 **Members:**
 
@@ -24875,7 +24875,7 @@ public class AbilityDefinitionItemElixirOfLesserIntelligence extends AbilityDefi
 public class AbilityDefinitionItemCleave15 extends AbilityDefinition
 ```
 
-'Aclq' / [AbilityIds.itemCleave15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCleave15)
+'Aclq' / [AbilityIds.itemCleave15](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCleave15)
 
 **Members:**
 
@@ -24889,7 +24889,7 @@ public class AbilityDefinitionItemCleave15 extends AbilityDefinition
 public class AbilityDefinitionItemColdbringersReachAttack extends AbilityDefinition
 ```
 
-'Acrx' / [AbilityIds.itemColdbringersReachAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemColdbringersReachAttack)
+'Acrx' / [AbilityIds.itemColdbringersReachAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemColdbringersReachAttack)
 
 **Members:**
 
@@ -24920,7 +24920,7 @@ public class AbilityDefinitionItemColdbringersReachAttack extends AbilityDefinit
 public class AbilityDefinitionItemColdbringersReachFrostNova extends AbilityDefinition
 ```
 
-'Acrz' / [AbilityIds.itemColdbringersReachFrostNova](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemColdbringersReachFrostNova)
+'Acrz' / [AbilityIds.itemColdbringersReachFrostNova](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemColdbringersReachFrostNova)
 
 **Members:**
 
@@ -24938,7 +24938,7 @@ public class AbilityDefinitionItemColdbringersReachFrostNova extends AbilityDefi
 public class AbilityDefinitionItemDeathbringerSBootsParasite extends AbilityDefinition
 ```
 
-'Adb1' / [AbilityIds.itemDeathbringerSBootsParasite](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDeathbringerSBootsParasite)
+'Adb1' / [AbilityIds.itemDeathbringerSBootsParasite](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemDeathbringerSBootsParasite)
 
 **Members:**
 
@@ -24964,7 +24964,7 @@ public class AbilityDefinitionItemDeathbringerSBootsParasite extends AbilityDefi
 public class AbilityDefinitionItemDeathbringerSBootsAttack extends AbilityDefinition
 ```
 
-'Adb2' / [AbilityIds.itemDeathbringerSBootsAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDeathbringerSBootsAttack)
+'Adb2' / [AbilityIds.itemDeathbringerSBootsAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemDeathbringerSBootsAttack)
 
 **Members:**
 
@@ -24985,7 +24985,7 @@ public class AbilityDefinitionItemDeathbringerSBootsAttack extends AbilityDefini
 public class AbilityDefinitionItemDeathbloomLeaves extends AbilityDefinition
 ```
 
-'Adbl' / [AbilityIds.itemDeathbloomLeaves](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDeathbloomLeaves)
+'Adbl' / [AbilityIds.itemDeathbloomLeaves](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemDeathbloomLeaves)
 
 **Members:**
 
@@ -25007,7 +25007,7 @@ public class AbilityDefinitionItemDeathbloomLeaves extends AbilityDefinition
 public class AbilityDefinitionItemDeepseaBagCW extends AbilityDefinition
 ```
 
-'Adbw' / [AbilityIds.itemDeepseaBagCW](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDeepseaBagCW)
+'Adbw' / [AbilityIds.itemDeepseaBagCW](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemDeepseaBagCW)
 
 **Members:**
 
@@ -25027,7 +25027,7 @@ public class AbilityDefinitionItemDeepseaBagCW extends AbilityDefinition
 public class AbilityDefinitionEndlessFlaskRejuvenation extends AbilityDefinition
 ```
 
-'Aefr' / [AbilityIds.endlessFlaskRejuvenation](/stdlib/ref/_wurst/AbilityIds.html#abilityids-endlessFlaskRejuvenation)
+'Aefr' / [AbilityIds.endlessFlaskRejuvenation](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-endlessFlaskRejuvenation)
 
 **Members:**
 
@@ -25047,7 +25047,7 @@ public class AbilityDefinitionEndlessFlaskRejuvenation extends AbilityDefinition
 public class AbilityDefinitionItemEssenciumMainSummon extends AbilityDefinition
 ```
 
-'Aes1' / [AbilityIds.itemEssenciumMainSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEssenciumMainSummon)
+'Aes1' / [AbilityIds.itemEssenciumMainSummon](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemEssenciumMainSummon)
 
 **Members:**
 
@@ -25065,7 +25065,7 @@ public class AbilityDefinitionItemEssenciumMainSummon extends AbilityDefinition
 public class AbilityDefinitionItemEssenciumBlizzard extends AbilityDefinition
 ```
 
-'Aes2' / [AbilityIds.itemEssenciumBlizzard](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEssenciumBlizzard)
+'Aes2' / [AbilityIds.itemEssenciumBlizzard](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemEssenciumBlizzard)
 
 **Members:**
 
@@ -25089,7 +25089,7 @@ public class AbilityDefinitionItemEssenciumBlizzard extends AbilityDefinition
 public class AbilityDefinitionItemEssenciumRainOfFire extends AbilityDefinition
 ```
 
-'Aes3' / [AbilityIds.itemEssenciumRainOfFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEssenciumRainOfFire)
+'Aes3' / [AbilityIds.itemEssenciumRainOfFire](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemEssenciumRainOfFire)
 
 **Members:**
 
@@ -25113,7 +25113,7 @@ public class AbilityDefinitionItemEssenciumRainOfFire extends AbilityDefinition
 public class AbilityDefinitionItemEssenciumChainLightning extends AbilityDefinition
 ```
 
-'Aes4' / [AbilityIds.itemEssenciumChainLightning](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEssenciumChainLightning)
+'Aes4' / [AbilityIds.itemEssenciumChainLightning](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemEssenciumChainLightning)
 
 **Members:**
 
@@ -25131,7 +25131,7 @@ public class AbilityDefinitionItemEssenciumChainLightning extends AbilityDefinit
 public class AbilityDefinitionItemEssenciumCrushingWave extends AbilityDefinition
 ```
 
-'Aes5' / [AbilityIds.itemEssenciumCrushingWave](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEssenciumCrushingWave)
+'Aes5' / [AbilityIds.itemEssenciumCrushingWave](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemEssenciumCrushingWave)
 
 **Members:**
 
@@ -25151,7 +25151,7 @@ public class AbilityDefinitionItemEssenciumCrushingWave extends AbilityDefinitio
 public class AbilityDefinitionItemEssenciumAttack1 extends AbilityDefinition
 ```
 
-'Aes6' / [AbilityIds.itemEssenciumAttack1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEssenciumAttack1)
+'Aes6' / [AbilityIds.itemEssenciumAttack1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemEssenciumAttack1)
 
 **Members:**
 
@@ -25182,7 +25182,7 @@ public class AbilityDefinitionItemEssenciumAttack1 extends AbilityDefinition
 public class AbilityDefinitionItemEssenciumAttack2 extends AbilityDefinition
 ```
 
-'Aes7' / [AbilityIds.itemEssenciumAttack2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEssenciumAttack2)
+'Aes7' / [AbilityIds.itemEssenciumAttack2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemEssenciumAttack2)
 
 **Members:**
 
@@ -25213,7 +25213,7 @@ public class AbilityDefinitionItemEssenciumAttack2 extends AbilityDefinition
 public class AbilityDefinitionItemEssenciumAttack3 extends AbilityDefinition
 ```
 
-'Aes8' / [AbilityIds.itemEssenciumAttack3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEssenciumAttack3)
+'Aes8' / [AbilityIds.itemEssenciumAttack3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemEssenciumAttack3)
 
 **Members:**
 
@@ -25244,7 +25244,7 @@ public class AbilityDefinitionItemEssenciumAttack3 extends AbilityDefinition
 public class AbilityDefinitionItemEssenciumAttack4 extends AbilityDefinition
 ```
 
-'Aes9' / [AbilityIds.itemEssenciumAttack4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEssenciumAttack4)
+'Aes9' / [AbilityIds.itemEssenciumAttack4](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemEssenciumAttack4)
 
 **Members:**
 
@@ -25275,7 +25275,7 @@ public class AbilityDefinitionItemEssenciumAttack4 extends AbilityDefinition
 public class AbilityDefinitionItemEarthenSignetAttack extends AbilityDefinition
 ```
 
-'Aesa' / [AbilityIds.itemEarthenSignetAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEarthenSignetAttack)
+'Aesa' / [AbilityIds.itemEarthenSignetAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemEarthenSignetAttack)
 
 **Members:**
 
@@ -25296,7 +25296,7 @@ public class AbilityDefinitionItemEarthenSignetAttack extends AbilityDefinition
 public class AbilityDefinitionEssenceOfTheSpiderQueen extends AbilityDefinition
 ```
 
-'Aesq' / [AbilityIds.essenceOfTheSpiderQueen](/stdlib/ref/_wurst/AbilityIds.html#abilityids-essenceOfTheSpiderQueen)
+'Aesq' / [AbilityIds.essenceOfTheSpiderQueen](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-essenceOfTheSpiderQueen)
 
 **Members:**
 
@@ -25314,7 +25314,7 @@ public class AbilityDefinitionEssenceOfTheSpiderQueen extends AbilityDefinition
 public class AbilityDefinitionItemEarthenSignetWS extends AbilityDefinition
 ```
 
-'Aesw' / [AbilityIds.itemEarthenSignetWS](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemEarthenSignetWS)
+'Aesw' / [AbilityIds.itemEarthenSignetWS](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemEarthenSignetWS)
 
 **Members:**
 
@@ -25328,7 +25328,7 @@ public class AbilityDefinitionItemEarthenSignetWS extends AbilityDefinition
 public class AbilityDefinitionApothecaryAcidBomb extends AbilityDefinition
 ```
 
-'Afab' / [AbilityIds.apothecaryAcidBomb](/stdlib/ref/_wurst/AbilityIds.html#abilityids-apothecaryAcidBomb)
+'Afab' / [AbilityIds.apothecaryAcidBomb](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-apothecaryAcidBomb)
 
 **Members:**
 
@@ -25354,7 +25354,7 @@ public class AbilityDefinitionApothecaryAcidBomb extends AbilityDefinition
 public class AbilityDefinitionItemForgottenFrostLotus extends AbilityDefinition
 ```
 
-'Affl' / [AbilityIds.itemForgottenFrostLotus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemForgottenFrostLotus)
+'Affl' / [AbilityIds.itemForgottenFrostLotus](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemForgottenFrostLotus)
 
 **Members:**
 
@@ -25370,7 +25370,7 @@ public class AbilityDefinitionItemForgottenFrostLotus extends AbilityDefinition
 public class AbilityDefinitionApothecaryHealingSpray extends AbilityDefinition
 ```
 
-'Afhs' / [AbilityIds.apothecaryHealingSpray](/stdlib/ref/_wurst/AbilityIds.html#abilityids-apothecaryHealingSpray)
+'Afhs' / [AbilityIds.apothecaryHealingSpray](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-apothecaryHealingSpray)
 
 **Members:**
 
@@ -25394,7 +25394,7 @@ public class AbilityDefinitionApothecaryHealingSpray extends AbilityDefinition
 public class AbilityDefinitionItemGlovesOfTheFlamewalkerSwarm extends AbilityDefinition
 ```
 
-'Afm1' / [AbilityIds.itemGlovesOfTheFlamewalkerSwarm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGlovesOfTheFlamewalkerSwarm)
+'Afm1' / [AbilityIds.itemGlovesOfTheFlamewalkerSwarm](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemGlovesOfTheFlamewalkerSwarm)
 
 **Members:**
 
@@ -25418,7 +25418,7 @@ public class AbilityDefinitionItemGlovesOfTheFlamewalkerSwarm extends AbilityDef
 public class AbilityDefinitionItemGlovesOfTheFlamewalkerAttack extends AbilityDefinition
 ```
 
-'Afm2' / [AbilityIds.itemGlovesOfTheFlamewalkerAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGlovesOfTheFlamewalkerAttack)
+'Afm2' / [AbilityIds.itemGlovesOfTheFlamewalkerAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemGlovesOfTheFlamewalkerAttack)
 
 **Members:**
 
@@ -25449,7 +25449,7 @@ public class AbilityDefinitionItemGlovesOfTheFlamewalkerAttack extends AbilityDe
 public class AbilityDefinitionItemFlameOfAlAr extends AbilityDefinition
 ```
 
-'Afoa' / [AbilityIds.itemFlameOfAlAr](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemFlameOfAlAr)
+'Afoa' / [AbilityIds.itemFlameOfAlAr](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemFlameOfAlAr)
 
 **Members:**
 
@@ -25473,7 +25473,7 @@ public class AbilityDefinitionItemFlameOfAlAr extends AbilityDefinition
 public class AbilityDefinitionApothecaryChemicalFrenzy extends AbilityDefinition
 ```
 
-'Afuf' / [AbilityIds.apothecaryChemicalFrenzy](/stdlib/ref/_wurst/AbilityIds.html#abilityids-apothecaryChemicalFrenzy)
+'Afuf' / [AbilityIds.apothecaryChemicalFrenzy](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-apothecaryChemicalFrenzy)
 
 **Members:**
 
@@ -25490,7 +25490,7 @@ public class AbilityDefinitionApothecaryChemicalFrenzy extends AbilityDefinition
 public class AbilityDefinitionItemGiftOfWrathAttack extends AbilityDefinition
 ```
 
-'Agga' / [AbilityIds.itemGiftOfWrathAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGiftOfWrathAttack)
+'Agga' / [AbilityIds.itemGiftOfWrathAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemGiftOfWrathAttack)
 
 **Members:**
 
@@ -25511,7 +25511,7 @@ public class AbilityDefinitionItemGiftOfWrathAttack extends AbilityDefinition
 public class AbilityDefinitionItemGiftOfGreedPillage extends AbilityDefinition
 ```
 
-'Aggp' / [AbilityIds.itemGiftOfGreedPillage](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGiftOfGreedPillage)
+'Aggp' / [AbilityIds.itemGiftOfGreedPillage](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemGiftOfGreedPillage)
 
 **Members:**
 
@@ -25527,7 +25527,7 @@ public class AbilityDefinitionItemGiftOfGreedPillage extends AbilityDefinition
 public class AbilityDefinitionItemGiftOfSlothSlow extends AbilityDefinition
 ```
 
-'Aggs' / [AbilityIds.itemGiftOfSlothSlow](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGiftOfSlothSlow)
+'Aggs' / [AbilityIds.itemGiftOfSlothSlow](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemGiftOfSlothSlow)
 
 **Members:**
 
@@ -25545,7 +25545,7 @@ public class AbilityDefinitionItemGiftOfSlothSlow extends AbilityDefinition
 public class AbilityDefinitionItemGiftOfWrathBloodlust extends AbilityDefinition
 ```
 
-'Aggw' / [AbilityIds.itemGiftOfWrathBloodlust](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGiftOfWrathBloodlust)
+'Aggw' / [AbilityIds.itemGiftOfWrathBloodlust](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemGiftOfWrathBloodlust)
 
 **Members:**
 
@@ -25565,7 +25565,7 @@ public class AbilityDefinitionItemGiftOfWrathBloodlust extends AbilityDefinition
 public class AbilityDefinitionItemCurseOfPride extends AbilityDefinition
 ```
 
-'Aggx' / [AbilityIds.itemCurseOfPride](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemCurseOfPride)
+'Aggx' / [AbilityIds.itemCurseOfPride](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemCurseOfPride)
 
 **Members:**
 
@@ -25577,7 +25577,7 @@ public class AbilityDefinitionItemCurseOfPride extends AbilityDefinition
 public class AbilityDefinitionItemGlixsBomb extends AbilityDefinition
 ```
 
-'Aglx' / [AbilityIds.itemGlixsBomb](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGlixsBomb)
+'Aglx' / [AbilityIds.itemGlixsBomb](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemGlixsBomb)
 
 **Members:**
 
@@ -25601,7 +25601,7 @@ public class AbilityDefinitionItemGlixsBomb extends AbilityDefinition
 public class AbilityDefinitionItemGlovesOfNecromancySummon extends AbilityDefinition
 ```
 
-'Agn1' / [AbilityIds.itemGlovesOfNecromancySummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGlovesOfNecromancySummon)
+'Agn1' / [AbilityIds.itemGlovesOfNecromancySummon](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemGlovesOfNecromancySummon)
 
 **Members:**
 
@@ -25617,7 +25617,7 @@ public class AbilityDefinitionItemGlovesOfNecromancySummon extends AbilityDefini
 public class AbilityDefinitionItemGlovesOfNecromancyAttack extends AbilityDefinition
 ```
 
-'Agn2' / [AbilityIds.itemGlovesOfNecromancyAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGlovesOfNecromancyAttack)
+'Agn2' / [AbilityIds.itemGlovesOfNecromancyAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemGlovesOfNecromancyAttack)
 
 **Members:**
 
@@ -25648,7 +25648,7 @@ public class AbilityDefinitionItemGlovesOfNecromancyAttack extends AbilityDefini
 public class AbilityDefinitionItemGoldenNecklaceHeal extends AbilityDefinition
 ```
 
-'Agnh' / [AbilityIds.itemGoldenNecklaceHeal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGoldenNecklaceHeal)
+'Agnh' / [AbilityIds.itemGoldenNecklaceHeal](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemGoldenNecklaceHeal)
 
 **Members:**
 
@@ -25662,7 +25662,7 @@ public class AbilityDefinitionItemGoldenNecklaceHeal extends AbilityDefinition
 public class AbilityDefinitionItemGoldenNecklaceSpellcast extends AbilityDefinition
 ```
 
-'Agns' / [AbilityIds.itemGoldenNecklaceSpellcast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGoldenNecklaceSpellcast)
+'Agns' / [AbilityIds.itemGoldenNecklaceSpellcast](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemGoldenNecklaceSpellcast)
 
 **Members:**
 
@@ -25681,7 +25681,7 @@ public class AbilityDefinitionItemGoldenNecklaceSpellcast extends AbilityDefinit
 public class AbilityDefinitionItemGlovesOfThePhoenixSpellcast extends AbilityDefinition
 ```
 
-'Agpa' / [AbilityIds.itemGlovesOfThePhoenixSpellcast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGlovesOfThePhoenixSpellcast)
+'Agpa' / [AbilityIds.itemGlovesOfThePhoenixSpellcast](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemGlovesOfThePhoenixSpellcast)
 
 **Members:**
 
@@ -25700,7 +25700,7 @@ public class AbilityDefinitionItemGlovesOfThePhoenixSpellcast extends AbilityDef
 public class AbilityDefinitionItemGlovesOfThePhoenixDamage extends AbilityDefinition
 ```
 
-'Agpd' / [AbilityIds.itemGlovesOfThePhoenixDamage](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGlovesOfThePhoenixDamage)
+'Agpd' / [AbilityIds.itemGlovesOfThePhoenixDamage](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemGlovesOfThePhoenixDamage)
 
 **Members:**
 
@@ -25718,7 +25718,7 @@ public class AbilityDefinitionItemGlovesOfThePhoenixDamage extends AbilityDefini
 public class AbilityDefinitionItemGravelightDoT extends AbilityDefinition
 ```
 
-'Agr1' / [AbilityIds.itemGravelightDoT](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGravelightDoT)
+'Agr1' / [AbilityIds.itemGravelightDoT](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemGravelightDoT)
 
 **Members:**
 
@@ -25738,7 +25738,7 @@ public class AbilityDefinitionItemGravelightDoT extends AbilityDefinition
 public class AbilityDefinitionItemGravelightMainSwarm extends AbilityDefinition
 ```
 
-'Agr2' / [AbilityIds.itemGravelightMainSwarm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGravelightMainSwarm)
+'Agr2' / [AbilityIds.itemGravelightMainSwarm](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemGravelightMainSwarm)
 
 **Members:**
 
@@ -25762,7 +25762,7 @@ public class AbilityDefinitionItemGravelightMainSwarm extends AbilityDefinition
 public class AbilityDefinitionItemGravelightSideSwarm extends AbilityDefinition
 ```
 
-'Agr3' / [AbilityIds.itemGravelightSideSwarm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGravelightSideSwarm)
+'Agr3' / [AbilityIds.itemGravelightSideSwarm](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemGravelightSideSwarm)
 
 **Members:**
 
@@ -25786,7 +25786,7 @@ public class AbilityDefinitionItemGravelightSideSwarm extends AbilityDefinition
 public class AbilityDefinitionItemGravelightAttackMain extends AbilityDefinition
 ```
 
-'Agr4' / [AbilityIds.itemGravelightAttackMain](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGravelightAttackMain)
+'Agr4' / [AbilityIds.itemGravelightAttackMain](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemGravelightAttackMain)
 
 **Members:**
 
@@ -25817,7 +25817,7 @@ public class AbilityDefinitionItemGravelightAttackMain extends AbilityDefinition
 public class AbilityDefinitionItemGravelightAttackSide extends AbilityDefinition
 ```
 
-'Agr5' / [AbilityIds.itemGravelightAttackSide](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGravelightAttackSide)
+'Agr5' / [AbilityIds.itemGravelightAttackSide](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemGravelightAttackSide)
 
 **Members:**
 
@@ -25848,7 +25848,7 @@ public class AbilityDefinitionItemGravelightAttackSide extends AbilityDefinition
 public class AbilityDefinitionItemGlacialShard extends AbilityDefinition
 ```
 
-'Agsh' / [AbilityIds.itemGlacialShard](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemGlacialShard)
+'Agsh' / [AbilityIds.itemGlacialShard](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemGlacialShard)
 
 **Members:**
 
@@ -25872,7 +25872,7 @@ public class AbilityDefinitionItemGlacialShard extends AbilityDefinition
 public class AbilityDefinitionHealingModifier extends AbilityDefinition
 ```
 
-'Ahem' / [AbilityIds.healingModifier](/stdlib/ref/_wurst/AbilityIds.html#abilityids-healingModifier)
+'Ahem' / [AbilityIds.healingModifier](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-healingModifier)
 
 **Members:**
 
@@ -25887,7 +25887,7 @@ public class AbilityDefinitionHealingModifier extends AbilityDefinition
 public class AbilityDefinitionItemHugeFlailWS extends AbilityDefinition
 ```
 
-'Ahf1' / [AbilityIds.itemHugeFlailWS](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHugeFlailWS)
+'Ahf1' / [AbilityIds.itemHugeFlailWS](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHugeFlailWS)
 
 **Members:**
 
@@ -25901,7 +25901,7 @@ public class AbilityDefinitionItemHugeFlailWS extends AbilityDefinition
 public class AbilityDefinitionItemHugeFlailAttack extends AbilityDefinition
 ```
 
-'Ahf2' / [AbilityIds.itemHugeFlailAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHugeFlailAttack)
+'Ahf2' / [AbilityIds.itemHugeFlailAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHugeFlailAttack)
 
 **Members:**
 
@@ -25932,7 +25932,7 @@ public class AbilityDefinitionItemHugeFlailAttack extends AbilityDefinition
 public class AbilityDefinitionHeartOfTheFirebenderBoF extends AbilityDefinition
 ```
 
-'Ahfb' / [AbilityIds.heartOfTheFirebenderBoF](/stdlib/ref/_wurst/AbilityIds.html#abilityids-heartOfTheFirebenderBoF)
+'Ahfb' / [AbilityIds.heartOfTheFirebenderBoF](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-heartOfTheFirebenderBoF)
 
 **Members:**
 
@@ -25954,7 +25954,7 @@ public class AbilityDefinitionHeartOfTheFirebenderBoF extends AbilityDefinition
 public class AbilityDefinitionHeartOfTheFirebenderOrb extends AbilityDefinition
 ```
 
-'Ahfo' / [AbilityIds.heartOfTheFirebenderOrb](/stdlib/ref/_wurst/AbilityIds.html#abilityids-heartOfTheFirebenderOrb)
+'Ahfo' / [AbilityIds.heartOfTheFirebenderOrb](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-heartOfTheFirebenderOrb)
 
 **Members:**
 
@@ -25981,7 +25981,7 @@ public class AbilityDefinitionHeartOfTheFirebenderOrb extends AbilityDefinition
 public class AbilityDefinitionHeadpieceOfTheHighInquisitor extends AbilityDefinition
 ```
 
-'Ahhi' / [AbilityIds.headpieceOfTheHighInquisitor](/stdlib/ref/_wurst/AbilityIds.html#abilityids-headpieceOfTheHighInquisitor)
+'Ahhi' / [AbilityIds.headpieceOfTheHighInquisitor](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-headpieceOfTheHighInquisitor)
 
 **Members:**
 
@@ -26001,7 +26001,7 @@ public class AbilityDefinitionHeadpieceOfTheHighInquisitor extends AbilityDefini
 public class AbilityDefinitionItemHelmOfTheRimelordSpellcast extends AbilityDefinition
 ```
 
-'Ahrx' / [AbilityIds.itemHelmOfTheRimelordSpellcast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHelmOfTheRimelordSpellcast)
+'Ahrx' / [AbilityIds.itemHelmOfTheRimelordSpellcast](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHelmOfTheRimelordSpellcast)
 
 **Members:**
 
@@ -26020,7 +26020,7 @@ public class AbilityDefinitionItemHelmOfTheRimelordSpellcast extends AbilityDefi
 public class AbilityDefinitionItemHelmOfTheRimelordTC extends AbilityDefinition
 ```
 
-'Ahrz' / [AbilityIds.itemHelmOfTheRimelordTC](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHelmOfTheRimelordTC)
+'Ahrz' / [AbilityIds.itemHelmOfTheRimelordTC](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHelmOfTheRimelordTC)
 
 **Members:**
 
@@ -26040,7 +26040,7 @@ public class AbilityDefinitionItemHelmOfTheRimelordTC extends AbilityDefinition
 public class AbilityDefinitionItemHammerOfTheSilverHandAttack extends AbilityDefinition
 ```
 
-'Ahsa' / [AbilityIds.itemHammerOfTheSilverHandAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHammerOfTheSilverHandAttack)
+'Ahsa' / [AbilityIds.itemHammerOfTheSilverHandAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHammerOfTheSilverHandAttack)
 
 **Members:**
 
@@ -26071,7 +26071,7 @@ public class AbilityDefinitionItemHammerOfTheSilverHandAttack extends AbilityDef
 public class AbilityDefinitionItemHammerOfTheSilverHandHeal extends AbilityDefinition
 ```
 
-'Ahsh' / [AbilityIds.itemHammerOfTheSilverHandHeal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHammerOfTheSilverHandHeal)
+'Ahsh' / [AbilityIds.itemHammerOfTheSilverHandHeal](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHammerOfTheSilverHandHeal)
 
 **Members:**
 
@@ -26085,7 +26085,7 @@ public class AbilityDefinitionItemHammerOfTheSilverHandHeal extends AbilityDefin
 public class AbilityDefinitionItemHandfulOfThrowingKnives extends AbilityDefinition
 ```
 
-'Ahtk' / [AbilityIds.itemHandfulOfThrowingKnives](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemHandfulOfThrowingKnives)
+'Ahtk' / [AbilityIds.itemHandfulOfThrowingKnives](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemHandfulOfThrowingKnives)
 
 **Members:**
 
@@ -26105,7 +26105,7 @@ public class AbilityDefinitionItemHandfulOfThrowingKnives extends AbilityDefinit
 public class AbilityDefinitionItemIcecrownRingFrostNova extends AbilityDefinition
 ```
 
-'Aic1' / [AbilityIds.itemIcecrownRingFrostNova](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemIcecrownRingFrostNova)
+'Aic1' / [AbilityIds.itemIcecrownRingFrostNova](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemIcecrownRingFrostNova)
 
 **Members:**
 
@@ -26123,7 +26123,7 @@ public class AbilityDefinitionItemIcecrownRingFrostNova extends AbilityDefinitio
 public class AbilityDefinitionItemIcecrownRingFrostAttack extends AbilityDefinition
 ```
 
-'Aic2' / [AbilityIds.itemIcecrownRingFrostAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemIcecrownRingFrostAttack)
+'Aic2' / [AbilityIds.itemIcecrownRingFrostAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemIcecrownRingFrostAttack)
 
 **Members:**
 
@@ -26144,7 +26144,7 @@ public class AbilityDefinitionItemIcecrownRingFrostAttack extends AbilityDefinit
 public class AbilityDefinitionItemBladeOfInfernoRainOfFire extends AbilityDefinition
 ```
 
-'Ain1' / [AbilityIds.itemBladeOfInfernoRainOfFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBladeOfInfernoRainOfFire)
+'Ain1' / [AbilityIds.itemBladeOfInfernoRainOfFire](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemBladeOfInfernoRainOfFire)
 
 **Members:**
 
@@ -26168,7 +26168,7 @@ public class AbilityDefinitionItemBladeOfInfernoRainOfFire extends AbilityDefini
 public class AbilityDefinitionItemBladeOfInfernoAttack extends AbilityDefinition
 ```
 
-'Ain2' / [AbilityIds.itemBladeOfInfernoAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBladeOfInfernoAttack)
+'Ain2' / [AbilityIds.itemBladeOfInfernoAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemBladeOfInfernoAttack)
 
 **Members:**
 
@@ -26199,7 +26199,7 @@ public class AbilityDefinitionItemBladeOfInfernoAttack extends AbilityDefinition
 public class AbilityDefinitionAttackSpeedIncreaseGreaterAisy extends AbilityDefinition
 ```
 
-'Aisy' / [AbilityIds.attackSpeedIncreaseGreaterAisy](/stdlib/ref/_wurst/AbilityIds.html#abilityids-attackSpeedIncreaseGreaterAisy)
+'Aisy' / [AbilityIds.attackSpeedIncreaseGreaterAisy](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-attackSpeedIncreaseGreaterAisy)
 
 **Members:**
 
@@ -26213,7 +26213,7 @@ public class AbilityDefinitionAttackSpeedIncreaseGreaterAisy extends AbilityDefi
 public class AbilityDefinitionItemKaldoreiMoonglaiveAttack extends AbilityDefinition
 ```
 
-'Akma' / [AbilityIds.itemKaldoreiMoonglaiveAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemKaldoreiMoonglaiveAttack)
+'Akma' / [AbilityIds.itemKaldoreiMoonglaiveAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemKaldoreiMoonglaiveAttack)
 
 **Members:**
 
@@ -26244,7 +26244,7 @@ public class AbilityDefinitionItemKaldoreiMoonglaiveAttack extends AbilityDefini
 public class AbilityDefinitionItemKaldoreiMoonglaiveSummon extends AbilityDefinition
 ```
 
-'Akms' / [AbilityIds.itemKaldoreiMoonglaiveSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemKaldoreiMoonglaiveSummon)
+'Akms' / [AbilityIds.itemKaldoreiMoonglaiveSummon](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemKaldoreiMoonglaiveSummon)
 
 **Members:**
 
@@ -26260,7 +26260,7 @@ public class AbilityDefinitionItemKaldoreiMoonglaiveSummon extends AbilityDefini
 public class AbilityDefinitionItemLanceOfTheFrozenPhoenix extends AbilityDefinition
 ```
 
-'Alfp' / [AbilityIds.itemLanceOfTheFrozenPhoenix](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLanceOfTheFrozenPhoenix)
+'Alfp' / [AbilityIds.itemLanceOfTheFrozenPhoenix](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemLanceOfTheFrozenPhoenix)
 
 **Members:**
 
@@ -26276,7 +26276,7 @@ public class AbilityDefinitionItemLanceOfTheFrozenPhoenix extends AbilityDefinit
 public class AbilityDefinitionItemLostForsakenQuiverSummon extends AbilityDefinition
 ```
 
-'Alfq' / [AbilityIds.itemLostForsakenQuiverSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLostForsakenQuiverSummon)
+'Alfq' / [AbilityIds.itemLostForsakenQuiverSummon](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemLostForsakenQuiverSummon)
 
 **Members:**
 
@@ -26292,7 +26292,7 @@ public class AbilityDefinitionItemLostForsakenQuiverSummon extends AbilityDefini
 public class AbilityDefinitionLionskinHelmetOfPrecision extends AbilityDefinition
 ```
 
-'Alhp' / [AbilityIds.lionskinHelmetOfPrecision](/stdlib/ref/_wurst/AbilityIds.html#abilityids-lionskinHelmetOfPrecision)
+'Alhp' / [AbilityIds.lionskinHelmetOfPrecision](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-lionskinHelmetOfPrecision)
 
 **Members:**
 
@@ -26312,7 +26312,7 @@ public class AbilityDefinitionLionskinHelmetOfPrecision extends AbilityDefinitio
 public class AbilityDefinitionLesserMarkOfTheForsaken extends AbilityDefinition
 ```
 
-'Almf' / [AbilityIds.lesserMarkOfTheForsaken](/stdlib/ref/_wurst/AbilityIds.html#abilityids-lesserMarkOfTheForsaken)
+'Almf' / [AbilityIds.lesserMarkOfTheForsaken](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-lesserMarkOfTheForsaken)
 
 **Members:**
 
@@ -26327,7 +26327,7 @@ public class AbilityDefinitionLesserMarkOfTheForsaken extends AbilityDefinition
 public class AbilityDefinitionItemPortableLightningRodAttack extends AbilityDefinition
 ```
 
-'Alra' / [AbilityIds.itemPortableLightningRodAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemPortableLightningRodAttack)
+'Alra' / [AbilityIds.itemPortableLightningRodAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemPortableLightningRodAttack)
 
 **Members:**
 
@@ -26348,7 +26348,7 @@ public class AbilityDefinitionItemPortableLightningRodAttack extends AbilityDefi
 public class AbilityDefinitionItemPortableLightningRodCL extends AbilityDefinition
 ```
 
-'Alrc' / [AbilityIds.itemPortableLightningRodCL](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemPortableLightningRodCL)
+'Alrc' / [AbilityIds.itemPortableLightningRodCL](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemPortableLightningRodCL)
 
 **Members:**
 
@@ -26366,7 +26366,7 @@ public class AbilityDefinitionItemPortableLightningRodCL extends AbilityDefiniti
 public class AbilityDefinitionItemMordoSClub extends AbilityDefinition
 ```
 
-'Amcx' / [AbilityIds.itemMordoSClub](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMordoSClub)
+'Amcx' / [AbilityIds.itemMordoSClub](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemMordoSClub)
 
 **Members:**
 
@@ -26388,7 +26388,7 @@ public class AbilityDefinitionItemMordoSClub extends AbilityDefinition
 public class AbilityDefinitionAbilityDamageAmpBClvl1 extends AbilityDefinition
 ```
 
-'Amda' / [AbilityIds.abilityDamageAmpBClvl1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-abilityDamageAmpBClvl1)
+'Amda' / [AbilityIds.abilityDamageAmpBClvl1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-abilityDamageAmpBClvl1)
 
 **Members:**
 
@@ -26402,7 +26402,7 @@ public class AbilityDefinitionAbilityDamageAmpBClvl1 extends AbilityDefinition
 public class AbilityDefinitionItemManuscriptOfTheForsakenSummon extends AbilityDefinition
 ```
 
-'Amfs' / [AbilityIds.itemManuscriptOfTheForsakenSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManuscriptOfTheForsakenSummon)
+'Amfs' / [AbilityIds.itemManuscriptOfTheForsakenSummon](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemManuscriptOfTheForsakenSummon)
 
 **Members:**
 
@@ -26418,7 +26418,7 @@ public class AbilityDefinitionItemManuscriptOfTheForsakenSummon extends AbilityD
 public class AbilityDefinitionItemMonasteryMaceHeal extends AbilityDefinition
 ```
 
-'Amm1' / [AbilityIds.itemMonasteryMaceHeal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMonasteryMaceHeal)
+'Amm1' / [AbilityIds.itemMonasteryMaceHeal](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemMonasteryMaceHeal)
 
 **Members:**
 
@@ -26436,7 +26436,7 @@ public class AbilityDefinitionItemMonasteryMaceHeal extends AbilityDefinition
 public class AbilityDefinitionItemMonasteryMaceAttack extends AbilityDefinition
 ```
 
-'Amm2' / [AbilityIds.itemMonasteryMaceAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMonasteryMaceAttack)
+'Amm2' / [AbilityIds.itemMonasteryMaceAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemMonasteryMaceAttack)
 
 **Members:**
 
@@ -26467,7 +26467,7 @@ public class AbilityDefinitionItemMonasteryMaceAttack extends AbilityDefinition
 public class AbilityDefinitionItemMarkOfThePhoenixBoF extends AbilityDefinition
 ```
 
-'Ampb' / [AbilityIds.itemMarkOfThePhoenixBoF](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemMarkOfThePhoenixBoF)
+'Ampb' / [AbilityIds.itemMarkOfThePhoenixBoF](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemMarkOfThePhoenixBoF)
 
 **Members:**
 
@@ -26489,7 +26489,7 @@ public class AbilityDefinitionItemMarkOfThePhoenixBoF extends AbilityDefinition
 public class AbilityDefinitionMalachiteSwordCurse extends AbilityDefinition
 ```
 
-'Amsc' / [AbilityIds.malachiteSwordCurse](/stdlib/ref/_wurst/AbilityIds.html#abilityids-malachiteSwordCurse)
+'Amsc' / [AbilityIds.malachiteSwordCurse](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-malachiteSwordCurse)
 
 **Members:**
 
@@ -26503,7 +26503,7 @@ public class AbilityDefinitionMalachiteSwordCurse extends AbilityDefinition
 public class AbilityDefinitionMalachiteSwordOrb extends AbilityDefinition
 ```
 
-'Amso' / [AbilityIds.malachiteSwordOrb](/stdlib/ref/_wurst/AbilityIds.html#abilityids-malachiteSwordOrb)
+'Amso' / [AbilityIds.malachiteSwordOrb](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-malachiteSwordOrb)
 
 **Members:**
 
@@ -26530,7 +26530,7 @@ public class AbilityDefinitionMalachiteSwordOrb extends AbilityDefinition
 public class AbilityDefinitionAndb extends AbilityDefinition
 ```
 
-'Andb' / [AbilityIds.andb](/stdlib/ref/_wurst/AbilityIds.html#abilityids-andb)
+'Andb' / [AbilityIds.andb](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-andb)
 
 **Members:**
 
@@ -26544,7 +26544,7 @@ public class AbilityDefinitionAndb extends AbilityDefinition
 public class AbilityDefinitionItemNevermeltingIce extends AbilityDefinition
 ```
 
-'Anmi' / [AbilityIds.itemNevermeltingIce](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemNevermeltingIce)
+'Anmi' / [AbilityIds.itemNevermeltingIce](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemNevermeltingIce)
 
 **Members:**
 
@@ -26564,7 +26564,7 @@ public class AbilityDefinitionItemNevermeltingIce extends AbilityDefinition
 public class AbilityDefinitionAoas extends AbilityDefinition
 ```
 
-'Aoas' / [AbilityIds.aoas](/stdlib/ref/_wurst/AbilityIds.html#abilityids-aoas)
+'Aoas' / [AbilityIds.aoas](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-aoas)
 
 **Members:**
 
@@ -26595,7 +26595,7 @@ public class AbilityDefinitionAoas extends AbilityDefinition
 public class AbilityDefinitionItemOrbChill3s extends AbilityDefinition
 ```
 
-'Aoc3' / [AbilityIds.itemOrbChill3s](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemOrbChill3s)
+'Aoc3' / [AbilityIds.itemOrbChill3s](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemOrbChill3s)
 
 **Members:**
 
@@ -26611,7 +26611,7 @@ public class AbilityDefinitionItemOrbChill3s extends AbilityDefinition
 public class AbilityDefinitionOnHitSpellChainLightning extends AbilityDefinition
 ```
 
-'Aohl' / [AbilityIds.onHitSpellChainLightning](/stdlib/ref/_wurst/AbilityIds.html#abilityids-onHitSpellChainLightning)
+'Aohl' / [AbilityIds.onHitSpellChainLightning](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-onHitSpellChainLightning)
 
 **Members:**
 
@@ -26632,7 +26632,7 @@ public class AbilityDefinitionOnHitSpellChainLightning extends AbilityDefinition
 public class AbilityDefinitionItemTotemOgreMagiAttack extends AbilityDefinition
 ```
 
-'Aoma' / [AbilityIds.itemTotemOgreMagiAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemTotemOgreMagiAttack)
+'Aoma' / [AbilityIds.itemTotemOgreMagiAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemTotemOgreMagiAttack)
 
 **Members:**
 
@@ -26663,7 +26663,7 @@ public class AbilityDefinitionItemTotemOgreMagiAttack extends AbilityDefinition
 public class AbilityDefinitionItemTotemOgreMagiBloodlust extends AbilityDefinition
 ```
 
-'Aomb' / [AbilityIds.itemTotemOgreMagiBloodlust](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemTotemOgreMagiBloodlust)
+'Aomb' / [AbilityIds.itemTotemOgreMagiBloodlust](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemTotemOgreMagiBloodlust)
 
 **Members:**
 
@@ -26683,7 +26683,7 @@ public class AbilityDefinitionItemTotemOgreMagiBloodlust extends AbilityDefiniti
 public class AbilityDefinitionItemBracersOgreMagiCL extends AbilityDefinition
 ```
 
-'Aomc' / [AbilityIds.itemBracersOgreMagiCL](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBracersOgreMagiCL)
+'Aomc' / [AbilityIds.itemBracersOgreMagiCL](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemBracersOgreMagiCL)
 
 **Members:**
 
@@ -26701,7 +26701,7 @@ public class AbilityDefinitionItemBracersOgreMagiCL extends AbilityDefinition
 public class AbilityDefinitionItemBracersOgreMagiHW extends AbilityDefinition
 ```
 
-'Aomh' / [AbilityIds.itemBracersOgreMagiHW](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBracersOgreMagiHW)
+'Aomh' / [AbilityIds.itemBracersOgreMagiHW](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemBracersOgreMagiHW)
 
 **Members:**
 
@@ -26719,7 +26719,7 @@ public class AbilityDefinitionItemBracersOgreMagiHW extends AbilityDefinition
 public class AbilityDefinitionItemTotemOgreMagiSummon extends AbilityDefinition
 ```
 
-'Aoms' / [AbilityIds.itemTotemOgreMagiSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemTotemOgreMagiSummon)
+'Aoms' / [AbilityIds.itemTotemOgreMagiSummon](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemTotemOgreMagiSummon)
 
 **Members:**
 
@@ -26735,7 +26735,7 @@ public class AbilityDefinitionItemTotemOgreMagiSummon extends AbilityDefinition
 public class AbilityDefinitionItemBracersOgreMagiAttack2 extends AbilityDefinition
 ```
 
-'Aomx' / [AbilityIds.itemBracersOgreMagiAttack2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBracersOgreMagiAttack2)
+'Aomx' / [AbilityIds.itemBracersOgreMagiAttack2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemBracersOgreMagiAttack2)
 
 **Members:**
 
@@ -26766,7 +26766,7 @@ public class AbilityDefinitionItemBracersOgreMagiAttack2 extends AbilityDefiniti
 public class AbilityDefinitionItemBracersOgreMagiAttack1 extends AbilityDefinition
 ```
 
-'Aomz' / [AbilityIds.itemBracersOgreMagiAttack1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBracersOgreMagiAttack1)
+'Aomz' / [AbilityIds.itemBracersOgreMagiAttack1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemBracersOgreMagiAttack1)
 
 **Members:**
 
@@ -26797,7 +26797,7 @@ public class AbilityDefinitionItemBracersOgreMagiAttack1 extends AbilityDefiniti
 public class AbilityDefinitionPlaguebearerShortsword extends AbilityDefinition
 ```
 
-'Apbs' / [AbilityIds.plaguebearerShortsword](/stdlib/ref/_wurst/AbilityIds.html#abilityids-plaguebearerShortsword)
+'Apbs' / [AbilityIds.plaguebearerShortsword](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-plaguebearerShortsword)
 
 **Members:**
 
@@ -26817,7 +26817,7 @@ public class AbilityDefinitionPlaguebearerShortsword extends AbilityDefinition
 public class AbilityDefinitionPlagueTossBlightweaver extends AbilityDefinition
 ```
 
-'Apbw' / [AbilityIds.plagueTossBlightweaver](/stdlib/ref/_wurst/AbilityIds.html#abilityids-plagueTossBlightweaver)
+'Apbw' / [AbilityIds.plagueTossBlightweaver](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-plagueTossBlightweaver)
 
 **Members:**
 
@@ -26831,7 +26831,7 @@ public class AbilityDefinitionPlagueTossBlightweaver extends AbilityDefinition
 public class AbilityDefinitionItemPlaguegreavesSpell extends AbilityDefinition
 ```
 
-'Apl1' / [AbilityIds.itemPlaguegreavesSpell](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemPlaguegreavesSpell)
+'Apl1' / [AbilityIds.itemPlaguegreavesSpell](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemPlaguegreavesSpell)
 
 **Members:**
 
@@ -26857,7 +26857,7 @@ public class AbilityDefinitionItemPlaguegreavesSpell extends AbilityDefinition
 public class AbilityDefinitionItemPlaguegreavesAttack extends AbilityDefinition
 ```
 
-'Apl2' / [AbilityIds.itemPlaguegreavesAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemPlaguegreavesAttack)
+'Apl2' / [AbilityIds.itemPlaguegreavesAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemPlaguegreavesAttack)
 
 **Members:**
 
@@ -26878,7 +26878,7 @@ public class AbilityDefinitionItemPlaguegreavesAttack extends AbilityDefinition
 public class AbilityDefinitionPoisonNettleAttack extends AbilityDefinition
 ```
 
-'Apna' / [AbilityIds.poisonNettleAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-poisonNettleAttack)
+'Apna' / [AbilityIds.poisonNettleAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-poisonNettleAttack)
 
 **Members:**
 
@@ -26909,7 +26909,7 @@ public class AbilityDefinitionPoisonNettleAttack extends AbilityDefinition
 public class AbilityDefinitionPoisonNettleER extends AbilityDefinition
 ```
 
-'Apne' / [AbilityIds.poisonNettleER](/stdlib/ref/_wurst/AbilityIds.html#abilityids-poisonNettleER)
+'Apne' / [AbilityIds.poisonNettleER](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-poisonNettleER)
 
 **Members:**
 
@@ -26923,7 +26923,7 @@ public class AbilityDefinitionPoisonNettleER extends AbilityDefinition
 public class AbilityDefinitionPintOfAle extends AbilityDefinition
 ```
 
-'Apoa' / [AbilityIds.pintOfAle](/stdlib/ref/_wurst/AbilityIds.html#abilityids-pintOfAle)
+'Apoa' / [AbilityIds.pintOfAle](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-pintOfAle)
 
 **Members:**
 
@@ -26944,7 +26944,7 @@ public class AbilityDefinitionPintOfAle extends AbilityDefinition
 public class AbilityDefinitionPhalanxShieldAura extends AbilityDefinition
 ```
 
-'Apsq' / [AbilityIds.phalanxShieldAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-phalanxShieldAura)
+'Apsq' / [AbilityIds.phalanxShieldAura](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-phalanxShieldAura)
 
 **Members:**
 
@@ -26960,7 +26960,7 @@ public class AbilityDefinitionPhalanxShieldAura extends AbilityDefinition
 public class AbilityDefinitionItemProtectorSHStun extends AbilityDefinition
 ```
 
-'Apsx' / [AbilityIds.itemProtectorSHStun](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemProtectorSHStun)
+'Apsx' / [AbilityIds.itemProtectorSHStun](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemProtectorSHStun)
 
 **Members:**
 
@@ -26974,7 +26974,7 @@ public class AbilityDefinitionItemProtectorSHStun extends AbilityDefinition
 public class AbilityDefinitionItemProtectorSHAttack extends AbilityDefinition
 ```
 
-'Apsz' / [AbilityIds.itemProtectorSHAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemProtectorSHAttack)
+'Apsz' / [AbilityIds.itemProtectorSHAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemProtectorSHAttack)
 
 **Members:**
 
@@ -26995,7 +26995,7 @@ public class AbilityDefinitionItemProtectorSHAttack extends AbilityDefinition
 public class AbilityDefinitionItemPlaguewroughtAttack extends AbilityDefinition
 ```
 
-'Apwa' / [AbilityIds.itemPlaguewroughtAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemPlaguewroughtAttack)
+'Apwa' / [AbilityIds.itemPlaguewroughtAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemPlaguewroughtAttack)
 
 **Members:**
 
@@ -27026,7 +27026,7 @@ public class AbilityDefinitionItemPlaguewroughtAttack extends AbilityDefinition
 public class AbilityDefinitionItemPlaguewroughtPoison extends AbilityDefinition
 ```
 
-'Apwp' / [AbilityIds.itemPlaguewroughtPoison](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemPlaguewroughtPoison)
+'Apwp' / [AbilityIds.itemPlaguewroughtPoison](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemPlaguewroughtPoison)
 
 **Members:**
 
@@ -27046,7 +27046,7 @@ public class AbilityDefinitionItemPlaguewroughtPoison extends AbilityDefinition
 public class AbilityDefinitionItemPlaguewroughtCS extends AbilityDefinition
 ```
 
-'Apws' / [AbilityIds.itemPlaguewroughtCS](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemPlaguewroughtCS)
+'Apws' / [AbilityIds.itemPlaguewroughtCS](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemPlaguewroughtCS)
 
 **Members:**
 
@@ -27066,7 +27066,7 @@ public class AbilityDefinitionItemPlaguewroughtCS extends AbilityDefinition
 public class AbilityDefinitionItemRestorativeBalm extends AbilityDefinition
 ```
 
-'Arba' / [AbilityIds.itemRestorativeBalm](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRestorativeBalm)
+'Arba' / [AbilityIds.itemRestorativeBalm](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemRestorativeBalm)
 
 **Members:**
 
@@ -27084,7 +27084,7 @@ public class AbilityDefinitionItemRestorativeBalm extends AbilityDefinition
 public class AbilityDefinitionItemDiamondRingCDR extends AbilityDefinition
 ```
 
-'Ardr' / [AbilityIds.itemDiamondRingCDR](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemDiamondRingCDR)
+'Ardr' / [AbilityIds.itemDiamondRingCDR](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemDiamondRingCDR)
 
 **Members:**
 
@@ -27100,7 +27100,7 @@ public class AbilityDefinitionItemDiamondRingCDR extends AbilityDefinition
 public class AbilityDefinitionItemRingOfHolyFireImmo extends AbilityDefinition
 ```
 
-'Arf1' / [AbilityIds.itemRingOfHolyFireImmo](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRingOfHolyFireImmo)
+'Arf1' / [AbilityIds.itemRingOfHolyFireImmo](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemRingOfHolyFireImmo)
 
 **Members:**
 
@@ -27118,7 +27118,7 @@ public class AbilityDefinitionItemRingOfHolyFireImmo extends AbilityDefinition
 public class AbilityDefinitionItemRingOfHolyFireFL extends AbilityDefinition
 ```
 
-'Arf2' / [AbilityIds.itemRingOfHolyFireFL](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRingOfHolyFireFL)
+'Arf2' / [AbilityIds.itemRingOfHolyFireFL](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemRingOfHolyFireFL)
 
 **Members:**
 
@@ -27138,7 +27138,7 @@ public class AbilityDefinitionItemRingOfHolyFireFL extends AbilityDefinition
 public class AbilityDefinitionItemRingOfHolyFireAttack extends AbilityDefinition
 ```
 
-'Arf3' / [AbilityIds.itemRingOfHolyFireAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRingOfHolyFireAttack)
+'Arf3' / [AbilityIds.itemRingOfHolyFireAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemRingOfHolyFireAttack)
 
 **Members:**
 
@@ -27169,7 +27169,7 @@ public class AbilityDefinitionItemRingOfHolyFireAttack extends AbilityDefinition
 public class AbilityDefinitionRingOfTheFirelandsAttack extends AbilityDefinition
 ```
 
-'Arfa' / [AbilityIds.ringOfTheFirelandsAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ringOfTheFirelandsAttack)
+'Arfa' / [AbilityIds.ringOfTheFirelandsAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ringOfTheFirelandsAttack)
 
 **Members:**
 
@@ -27200,7 +27200,7 @@ public class AbilityDefinitionRingOfTheFirelandsAttack extends AbilityDefinition
 public class AbilityDefinitionRingOfTheFirelandsCR extends AbilityDefinition
 ```
 
-'Arfc' / [AbilityIds.ringOfTheFirelandsCR](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ringOfTheFirelandsCR)
+'Arfc' / [AbilityIds.ringOfTheFirelandsCR](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ringOfTheFirelandsCR)
 
 **Members:**
 
@@ -27224,7 +27224,7 @@ public class AbilityDefinitionRingOfTheFirelandsCR extends AbilityDefinition
 public class AbilityDefinitionItemRazoriceAttack1 extends AbilityDefinition
 ```
 
-'Ari1' / [AbilityIds.itemRazoriceAttack1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRazoriceAttack1)
+'Ari1' / [AbilityIds.itemRazoriceAttack1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemRazoriceAttack1)
 
 **Members:**
 
@@ -27255,7 +27255,7 @@ public class AbilityDefinitionItemRazoriceAttack1 extends AbilityDefinition
 public class AbilityDefinitionItemRazoriceAttack2 extends AbilityDefinition
 ```
 
-'Ari2' / [AbilityIds.itemRazoriceAttack2](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRazoriceAttack2)
+'Ari2' / [AbilityIds.itemRazoriceAttack2](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemRazoriceAttack2)
 
 **Members:**
 
@@ -27271,7 +27271,7 @@ public class AbilityDefinitionItemRazoriceAttack2 extends AbilityDefinition
 public class AbilityDefinitionItemRazoriceBoF extends AbilityDefinition
 ```
 
-'Ari3' / [AbilityIds.itemRazoriceBoF](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRazoriceBoF)
+'Ari3' / [AbilityIds.itemRazoriceBoF](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemRazoriceBoF)
 
 **Members:**
 
@@ -27293,7 +27293,7 @@ public class AbilityDefinitionItemRazoriceBoF extends AbilityDefinition
 public class AbilityDefinitionItemRazoriceAttack4 extends AbilityDefinition
 ```
 
-'Ari4' / [AbilityIds.itemRazoriceAttack4](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRazoriceAttack4)
+'Ari4' / [AbilityIds.itemRazoriceAttack4](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemRazoriceAttack4)
 
 **Members:**
 
@@ -27324,7 +27324,7 @@ public class AbilityDefinitionItemRazoriceAttack4 extends AbilityDefinition
 public class AbilityDefinitionItemRuneOfFire extends AbilityDefinition
 ```
 
-'Arof' / [AbilityIds.itemRuneOfFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRuneOfFire)
+'Arof' / [AbilityIds.itemRuneOfFire](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemRuneOfFire)
 
 **Members:**
 
@@ -27338,7 +27338,7 @@ public class AbilityDefinitionItemRuneOfFire extends AbilityDefinition
 public class AbilityDefinitionItemRobesOfRevengeAttack extends AbilityDefinition
 ```
 
-'Arr1' / [AbilityIds.itemRobesOfRevengeAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemRobesOfRevengeAttack)
+'Arr1' / [AbilityIds.itemRobesOfRevengeAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemRobesOfRevengeAttack)
 
 **Members:**
 
@@ -27359,7 +27359,7 @@ public class AbilityDefinitionItemRobesOfRevengeAttack extends AbilityDefinition
 public class AbilityDefinitionOnSpellAttackSample extends AbilityDefinition
 ```
 
-'Asas' / [AbilityIds.onSpellAttackSample](/stdlib/ref/_wurst/AbilityIds.html#abilityids-onSpellAttackSample)
+'Asas' / [AbilityIds.onSpellAttackSample](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-onSpellAttackSample)
 
 **Members:**
 
@@ -27378,7 +27378,7 @@ public class AbilityDefinitionOnSpellAttackSample extends AbilityDefinition
 public class AbilityDefinitionItemSanctifiedChestplateHeal extends AbilityDefinition
 ```
 
-'Asc1' / [AbilityIds.itemSanctifiedChestplateHeal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSanctifiedChestplateHeal)
+'Asc1' / [AbilityIds.itemSanctifiedChestplateHeal](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSanctifiedChestplateHeal)
 
 **Members:**
 
@@ -27392,7 +27392,7 @@ public class AbilityDefinitionItemSanctifiedChestplateHeal extends AbilityDefini
 public class AbilityDefinitionItemSanctifiedChestplateSpellcast extends AbilityDefinition
 ```
 
-'Asc2' / [AbilityIds.itemSanctifiedChestplateSpellcast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSanctifiedChestplateSpellcast)
+'Asc2' / [AbilityIds.itemSanctifiedChestplateSpellcast](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSanctifiedChestplateSpellcast)
 
 **Members:**
 
@@ -27411,7 +27411,7 @@ public class AbilityDefinitionItemSanctifiedChestplateSpellcast extends AbilityD
 public class AbilityDefinitionItemChillNova3 extends AbilityDefinition
 ```
 
-'Asc3' / [AbilityIds.itemChillNova3](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemChillNova3)
+'Asc3' / [AbilityIds.itemChillNova3](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemChillNova3)
 
 **Members:**
 
@@ -27429,7 +27429,7 @@ public class AbilityDefinitionItemChillNova3 extends AbilityDefinition
 public class AbilityDefinitionItemChillNova5 extends AbilityDefinition
 ```
 
-'Asc5' / [AbilityIds.itemChillNova5](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemChillNova5)
+'Asc5' / [AbilityIds.itemChillNova5](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemChillNova5)
 
 **Members:**
 
@@ -27447,7 +27447,7 @@ public class AbilityDefinitionItemChillNova5 extends AbilityDefinition
 public class AbilityDefinitionItemShieldOfTheScarletCrusadeAttack extends AbilityDefinition
 ```
 
-'Asca' / [AbilityIds.itemShieldOfTheScarletCrusadeAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemShieldOfTheScarletCrusadeAttack)
+'Asca' / [AbilityIds.itemShieldOfTheScarletCrusadeAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemShieldOfTheScarletCrusadeAttack)
 
 **Members:**
 
@@ -27468,7 +27468,7 @@ public class AbilityDefinitionItemShieldOfTheScarletCrusadeAttack extends Abilit
 public class AbilityDefinitionItemShieldOfTheScarletCrusadeHeal extends AbilityDefinition
 ```
 
-'Asch' / [AbilityIds.itemShieldOfTheScarletCrusadeHeal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemShieldOfTheScarletCrusadeHeal)
+'Asch' / [AbilityIds.itemShieldOfTheScarletCrusadeHeal](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemShieldOfTheScarletCrusadeHeal)
 
 **Members:**
 
@@ -27482,7 +27482,7 @@ public class AbilityDefinitionItemShieldOfTheScarletCrusadeHeal extends AbilityD
 public class AbilityDefinitionItemSanctifiedChestplateImmo extends AbilityDefinition
 ```
 
-'Asci' / [AbilityIds.itemSanctifiedChestplateImmo](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSanctifiedChestplateImmo)
+'Asci' / [AbilityIds.itemSanctifiedChestplateImmo](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSanctifiedChestplateImmo)
 
 **Members:**
 
@@ -27500,7 +27500,7 @@ public class AbilityDefinitionItemSanctifiedChestplateImmo extends AbilityDefini
 public class AbilityDefinitionItemScepterOfDarknessSummon extends AbilityDefinition
 ```
 
-'Asdd' / [AbilityIds.itemScepterOfDarknessSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemScepterOfDarknessSummon)
+'Asdd' / [AbilityIds.itemScepterOfDarknessSummon](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemScepterOfDarknessSummon)
 
 **Members:**
 
@@ -27516,7 +27516,7 @@ public class AbilityDefinitionItemScepterOfDarknessSummon extends AbilityDefinit
 public class AbilityDefinitionClericDispelMagic extends AbilityDefinition
 ```
 
-'Asdi' / [AbilityIds.clericDispelMagic](/stdlib/ref/_wurst/AbilityIds.html#abilityids-clericDispelMagic)
+'Asdi' / [AbilityIds.clericDispelMagic](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-clericDispelMagic)
 
 **Members:**
 
@@ -27532,7 +27532,7 @@ public class AbilityDefinitionClericDispelMagic extends AbilityDefinition
 public class AbilityDefinitionItemScepterOfDarknessSpellcast extends AbilityDefinition
 ```
 
-'Asdx' / [AbilityIds.itemScepterOfDarknessSpellcast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemScepterOfDarknessSpellcast)
+'Asdx' / [AbilityIds.itemScepterOfDarknessSpellcast](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemScepterOfDarknessSpellcast)
 
 **Members:**
 
@@ -27551,7 +27551,7 @@ public class AbilityDefinitionItemScepterOfDarknessSpellcast extends AbilityDefi
 public class AbilityDefinitionClericHeal extends AbilityDefinition
 ```
 
-'Asea' / [AbilityIds.clericHeal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-clericHeal)
+'Asea' / [AbilityIds.clericHeal](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-clericHeal)
 
 **Members:**
 
@@ -27565,7 +27565,7 @@ public class AbilityDefinitionClericHeal extends AbilityDefinition
 public class AbilityDefinitionInquisitorFlamestrike extends AbilityDefinition
 ```
 
-'Asfs' / [AbilityIds.inquisitorFlamestrike](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inquisitorFlamestrike)
+'Asfs' / [AbilityIds.inquisitorFlamestrike](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-inquisitorFlamestrike)
 
 **Members:**
 
@@ -27589,7 +27589,7 @@ public class AbilityDefinitionInquisitorFlamestrike extends AbilityDefinition
 public class AbilityDefinitionItemSanctifiedGauntletsImpale extends AbilityDefinition
 ```
 
-'Asg1' / [AbilityIds.itemSanctifiedGauntletsImpale](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSanctifiedGauntletsImpale)
+'Asg1' / [AbilityIds.itemSanctifiedGauntletsImpale](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSanctifiedGauntletsImpale)
 
 **Members:**
 
@@ -27613,7 +27613,7 @@ public class AbilityDefinitionItemSanctifiedGauntletsImpale extends AbilityDefin
 public class AbilityDefinitionItemSanctifiedGauntletsAttack extends AbilityDefinition
 ```
 
-'Asg2' / [AbilityIds.itemSanctifiedGauntletsAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSanctifiedGauntletsAttack)
+'Asg2' / [AbilityIds.itemSanctifiedGauntletsAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSanctifiedGauntletsAttack)
 
 **Members:**
 
@@ -27644,7 +27644,7 @@ public class AbilityDefinitionItemSanctifiedGauntletsAttack extends AbilityDefin
 public class AbilityDefinitionItemSwordOfTheGhostlandsAttack extends AbilityDefinition
 ```
 
-'Asga' / [AbilityIds.itemSwordOfTheGhostlandsAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSwordOfTheGhostlandsAttack)
+'Asga' / [AbilityIds.itemSwordOfTheGhostlandsAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSwordOfTheGhostlandsAttack)
 
 **Members:**
 
@@ -27675,7 +27675,7 @@ public class AbilityDefinitionItemSwordOfTheGhostlandsAttack extends AbilityDefi
 public class AbilityDefinitionItemSwordOfTheGhostlandsHoT extends AbilityDefinition
 ```
 
-'Asgh' / [AbilityIds.itemSwordOfTheGhostlandsHoT](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSwordOfTheGhostlandsHoT)
+'Asgh' / [AbilityIds.itemSwordOfTheGhostlandsHoT](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSwordOfTheGhostlandsHoT)
 
 **Members:**
 
@@ -27702,7 +27702,7 @@ public class AbilityDefinitionItemSwordOfTheGhostlandsHoT extends AbilityDefinit
 public class AbilityDefinitionItemShepherdSCurse extends AbilityDefinition
 ```
 
-'Ashc' / [AbilityIds.itemShepherdSCurse](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemShepherdSCurse)
+'Ashc' / [AbilityIds.itemShepherdSCurse](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemShepherdSCurse)
 
 **Members:**
 
@@ -27724,7 +27724,7 @@ public class AbilityDefinitionItemShepherdSCurse extends AbilityDefinition
 public class AbilityDefinitionSummonInfectiousGhoul extends AbilityDefinition
 ```
 
-'Asic' / [AbilityIds.summonInfectiousGhoul](/stdlib/ref/_wurst/AbilityIds.html#abilityids-summonInfectiousGhoul)
+'Asic' / [AbilityIds.summonInfectiousGhoul](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-summonInfectiousGhoul)
 
 **Members:**
 
@@ -27740,7 +27740,7 @@ public class AbilityDefinitionSummonInfectiousGhoul extends AbilityDefinition
 public class AbilityDefinitionClericInnerFire extends AbilityDefinition
 ```
 
-'Asif' / [AbilityIds.clericInnerFire](/stdlib/ref/_wurst/AbilityIds.html#abilityids-clericInnerFire)
+'Asif' / [AbilityIds.clericInnerFire](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-clericInnerFire)
 
 **Members:**
 
@@ -27761,7 +27761,7 @@ public class AbilityDefinitionClericInnerFire extends AbilityDefinition
 public class AbilityDefinitionItemVestmentsStormKingMS extends AbilityDefinition
 ```
 
-'Ask1' / [AbilityIds.itemVestmentsStormKingMS](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemVestmentsStormKingMS)
+'Ask1' / [AbilityIds.itemVestmentsStormKingMS](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemVestmentsStormKingMS)
 
 **Members:**
 
@@ -27779,7 +27779,7 @@ public class AbilityDefinitionItemVestmentsStormKingMS extends AbilityDefinition
 public class AbilityDefinitionItemVestmentsStormKingSpellcast extends AbilityDefinition
 ```
 
-'Ask2' / [AbilityIds.itemVestmentsStormKingSpellcast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemVestmentsStormKingSpellcast)
+'Ask2' / [AbilityIds.itemVestmentsStormKingSpellcast](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemVestmentsStormKingSpellcast)
 
 **Members:**
 
@@ -27798,7 +27798,7 @@ public class AbilityDefinitionItemVestmentsStormKingSpellcast extends AbilityDef
 public class AbilityDefinitionItemTomeOfTheSpiderkindAttack extends AbilityDefinition
 ```
 
-'Aska' / [AbilityIds.itemTomeOfTheSpiderkindAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemTomeOfTheSpiderkindAttack)
+'Aska' / [AbilityIds.itemTomeOfTheSpiderkindAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemTomeOfTheSpiderkindAttack)
 
 **Members:**
 
@@ -27829,7 +27829,7 @@ public class AbilityDefinitionItemTomeOfTheSpiderkindAttack extends AbilityDefin
 public class AbilityDefinitionItemTomeOfTheSpiderkindSummon extends AbilityDefinition
 ```
 
-'Asks' / [AbilityIds.itemTomeOfTheSpiderkindSummon](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemTomeOfTheSpiderkindSummon)
+'Asks' / [AbilityIds.itemTomeOfTheSpiderkindSummon](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemTomeOfTheSpiderkindSummon)
 
 **Members:**
 
@@ -27845,7 +27845,7 @@ public class AbilityDefinitionItemTomeOfTheSpiderkindSummon extends AbilityDefin
 public class AbilityDefinitionBandOfTheSkeletalMageFrostNova extends AbilityDefinition
 ```
 
-'Asmn' / [AbilityIds.bandOfTheSkeletalMageFrostNova](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bandOfTheSkeletalMageFrostNova)
+'Asmn' / [AbilityIds.bandOfTheSkeletalMageFrostNova](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-bandOfTheSkeletalMageFrostNova)
 
 **Members:**
 
@@ -27863,7 +27863,7 @@ public class AbilityDefinitionBandOfTheSkeletalMageFrostNova extends AbilityDefi
 public class AbilityDefinitionBandOfTheSkeletalMageOrb extends AbilityDefinition
 ```
 
-'Asmo' / [AbilityIds.bandOfTheSkeletalMageOrb](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bandOfTheSkeletalMageOrb)
+'Asmo' / [AbilityIds.bandOfTheSkeletalMageOrb](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-bandOfTheSkeletalMageOrb)
 
 **Members:**
 
@@ -27890,7 +27890,7 @@ public class AbilityDefinitionBandOfTheSkeletalMageOrb extends AbilityDefinition
 public class AbilityDefinitionItemScytheOfFrostAura extends AbilityDefinition
 ```
 
-'Asof' / [AbilityIds.itemScytheOfFrostAura](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemScytheOfFrostAura)
+'Asof' / [AbilityIds.itemScytheOfFrostAura](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemScytheOfFrostAura)
 
 **Members:**
 
@@ -27908,7 +27908,7 @@ public class AbilityDefinitionItemScytheOfFrostAura extends AbilityDefinition
 public class AbilityDefinitionItemSoulstealerMana extends AbilityDefinition
 ```
 
-'Asr1' / [AbilityIds.itemSoulstealerMana](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSoulstealerMana)
+'Asr1' / [AbilityIds.itemSoulstealerMana](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSoulstealerMana)
 
 **Members:**
 
@@ -27920,7 +27920,7 @@ public class AbilityDefinitionItemSoulstealerMana extends AbilityDefinition
 public class AbilityDefinitionItemSoulstealerAttack extends AbilityDefinition
 ```
 
-'Asr2' / [AbilityIds.itemSoulstealerAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSoulstealerAttack)
+'Asr2' / [AbilityIds.itemSoulstealerAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSoulstealerAttack)
 
 **Members:**
 
@@ -27951,7 +27951,7 @@ public class AbilityDefinitionItemSoulstealerAttack extends AbilityDefinition
 public class AbilityDefinitionItemSeleneStarfall extends AbilityDefinition
 ```
 
-'Ass1' / [AbilityIds.itemSeleneStarfall](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSeleneStarfall)
+'Ass1' / [AbilityIds.itemSeleneStarfall](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSeleneStarfall)
 
 **Members:**
 
@@ -27969,7 +27969,7 @@ public class AbilityDefinitionItemSeleneStarfall extends AbilityDefinition
 public class AbilityDefinitionItemSeleneSpellcast extends AbilityDefinition
 ```
 
-'Ass2' / [AbilityIds.itemSeleneSpellcast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSeleneSpellcast)
+'Ass2' / [AbilityIds.itemSeleneSpellcast](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSeleneSpellcast)
 
 **Members:**
 
@@ -27988,7 +27988,7 @@ public class AbilityDefinitionItemSeleneSpellcast extends AbilityDefinition
 public class AbilityDefinitionInquisitorSoulburn extends AbilityDefinition
 ```
 
-'Assb' / [AbilityIds.inquisitorSoulburn](/stdlib/ref/_wurst/AbilityIds.html#abilityids-inquisitorSoulburn)
+'Assb' / [AbilityIds.inquisitorSoulburn](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-inquisitorSoulburn)
 
 **Members:**
 
@@ -28012,7 +28012,7 @@ public class AbilityDefinitionInquisitorSoulburn extends AbilityDefinition
 public class AbilityDefinitionItemSpellShield15 extends AbilityDefinition
 ```
 
-'Assq' / [AbilityIds.itemSpellShield15](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellShield15)
+'Assq' / [AbilityIds.itemSpellShield15](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellShield15)
 
 **Members:**
 
@@ -28024,7 +28024,7 @@ public class AbilityDefinitionItemSpellShield15 extends AbilityDefinition
 public class AbilityDefinitionItemSpellShield12 extends AbilityDefinition
 ```
 
-'Assw' / [AbilityIds.itemSpellShield12](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemSpellShield12)
+'Assw' / [AbilityIds.itemSpellShield12](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemSpellShield12)
 
 **Members:**
 
@@ -28036,7 +28036,7 @@ public class AbilityDefinitionItemSpellShield12 extends AbilityDefinition
 public class AbilityDefinitionItemStormwalkersTC extends AbilityDefinition
 ```
 
-'Asw1' / [AbilityIds.itemStormwalkersTC](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemStormwalkersTC)
+'Asw1' / [AbilityIds.itemStormwalkersTC](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemStormwalkersTC)
 
 **Members:**
 
@@ -28060,7 +28060,7 @@ public class AbilityDefinitionItemStormwalkersTC extends AbilityDefinition
 public class AbilityDefinitionItemStormwalkersSpellcast extends AbilityDefinition
 ```
 
-'Asw2' / [AbilityIds.itemStormwalkersSpellcast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemStormwalkersSpellcast)
+'Asw2' / [AbilityIds.itemStormwalkersSpellcast](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemStormwalkersSpellcast)
 
 **Members:**
 
@@ -28079,7 +28079,7 @@ public class AbilityDefinitionItemStormwalkersSpellcast extends AbilityDefinitio
 public class AbilityDefinitionOnHitChainLightningAttack extends AbilityDefinition
 ```
 
-'Asx1' / [AbilityIds.onHitChainLightningAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-onHitChainLightningAttack)
+'Asx1' / [AbilityIds.onHitChainLightningAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-onHitChainLightningAttack)
 
 **Members:**
 
@@ -28097,7 +28097,7 @@ public class AbilityDefinitionOnHitChainLightningAttack extends AbilityDefinitio
 public class AbilityDefinitionBagOfDust extends AbilityDefinition
 ```
 
-'Atbd' / [AbilityIds.bagOfDust](/stdlib/ref/_wurst/AbilityIds.html#abilityids-bagOfDust)
+'Atbd' / [AbilityIds.bagOfDust](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-bagOfDust)
 
 **Members:**
 
@@ -28111,7 +28111,7 @@ public class AbilityDefinitionBagOfDust extends AbilityDefinition
 public class AbilityDefinitionAtds extends AbilityDefinition
 ```
 
-'Atds' / [AbilityIds.atds](/stdlib/ref/_wurst/AbilityIds.html#abilityids-atds)
+'Atds' / [AbilityIds.atds](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-atds)
 
 **Members:**
 
@@ -28132,7 +28132,7 @@ public class AbilityDefinitionAtds extends AbilityDefinition
 public class AbilityDefinitionForsakenFangs extends AbilityDefinition
 ```
 
-'Atff' / [AbilityIds.forsakenFangs](/stdlib/ref/_wurst/AbilityIds.html#abilityids-forsakenFangs)
+'Atff' / [AbilityIds.forsakenFangs](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-forsakenFangs)
 
 **Members:**
 
@@ -28148,7 +28148,7 @@ public class AbilityDefinitionForsakenFangs extends AbilityDefinition
 public class AbilityDefinitionKnightSJavelin extends AbilityDefinition
 ```
 
-'Atkj' / [AbilityIds.knightSJavelin](/stdlib/ref/_wurst/AbilityIds.html#abilityids-knightSJavelin)
+'Atkj' / [AbilityIds.knightSJavelin](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-knightSJavelin)
 
 **Members:**
 
@@ -28162,7 +28162,7 @@ public class AbilityDefinitionKnightSJavelin extends AbilityDefinition
 public class AbilityDefinitionTiaraOfTheKirinTor extends AbilityDefinition
 ```
 
-'Atkt' / [AbilityIds.tiaraOfTheKirinTor](/stdlib/ref/_wurst/AbilityIds.html#abilityids-tiaraOfTheKirinTor)
+'Atkt' / [AbilityIds.tiaraOfTheKirinTor](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-tiaraOfTheKirinTor)
 
 **Members:**
 
@@ -28178,7 +28178,7 @@ public class AbilityDefinitionTiaraOfTheKirinTor extends AbilityDefinition
 public class AbilityDefinitionItemManaBauble extends AbilityDefinition
 ```
 
-'Atmb' / [AbilityIds.itemManaBauble](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemManaBauble)
+'Atmb' / [AbilityIds.itemManaBauble](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemManaBauble)
 
 **Members:**
 
@@ -28194,7 +28194,7 @@ public class AbilityDefinitionItemManaBauble extends AbilityDefinition
 public class AbilityDefinitionTalismanOfNightmaresOrb extends AbilityDefinition
 ```
 
-'Atno' / [AbilityIds.talismanOfNightmaresOrb](/stdlib/ref/_wurst/AbilityIds.html#abilityids-talismanOfNightmaresOrb)
+'Atno' / [AbilityIds.talismanOfNightmaresOrb](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-talismanOfNightmaresOrb)
 
 **Members:**
 
@@ -28221,7 +28221,7 @@ public class AbilityDefinitionTalismanOfNightmaresOrb extends AbilityDefinition
 public class AbilityDefinitionTalismanOfNightmaresSleep extends AbilityDefinition
 ```
 
-'Atns' / [AbilityIds.talismanOfNightmaresSleep](/stdlib/ref/_wurst/AbilityIds.html#abilityids-talismanOfNightmaresSleep)
+'Atns' / [AbilityIds.talismanOfNightmaresSleep](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-talismanOfNightmaresSleep)
 
 **Members:**
 
@@ -28235,7 +28235,7 @@ public class AbilityDefinitionTalismanOfNightmaresSleep extends AbilityDefinitio
 public class AbilityDefinitionThornguardRapierAttack extends AbilityDefinition
 ```
 
-'Atra' / [AbilityIds.thornguardRapierAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-thornguardRapierAttack)
+'Atra' / [AbilityIds.thornguardRapierAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-thornguardRapierAttack)
 
 **Members:**
 
@@ -28266,7 +28266,7 @@ public class AbilityDefinitionThornguardRapierAttack extends AbilityDefinition
 public class AbilityDefinitionThornguardRapierRejuvenation extends AbilityDefinition
 ```
 
-'Atrr' / [AbilityIds.thornguardRapierRejuvenation](/stdlib/ref/_wurst/AbilityIds.html#abilityids-thornguardRapierRejuvenation)
+'Atrr' / [AbilityIds.thornguardRapierRejuvenation](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-thornguardRapierRejuvenation)
 
 **Members:**
 
@@ -28286,7 +28286,7 @@ public class AbilityDefinitionThornguardRapierRejuvenation extends AbilityDefini
 public class AbilityDefinitionItemTheScreecherHoT extends AbilityDefinition
 ```
 
-'Ats1' / [AbilityIds.itemTheScreecherHoT](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemTheScreecherHoT)
+'Ats1' / [AbilityIds.itemTheScreecherHoT](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemTheScreecherHoT)
 
 **Members:**
 
@@ -28313,7 +28313,7 @@ public class AbilityDefinitionItemTheScreecherHoT extends AbilityDefinition
 public class AbilityDefinitionItemTheScreecherAttack extends AbilityDefinition
 ```
 
-'Ats2' / [AbilityIds.itemTheScreecherAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemTheScreecherAttack)
+'Ats2' / [AbilityIds.itemTheScreecherAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemTheScreecherAttack)
 
 **Members:**
 
@@ -28344,7 +28344,7 @@ public class AbilityDefinitionItemTheScreecherAttack extends AbilityDefinition
 public class AbilityDefinitionInfectiousClaws extends AbilityDefinition
 ```
 
-'Auic' / [AbilityIds.infectiousClaws](/stdlib/ref/_wurst/AbilityIds.html#abilityids-infectiousClaws)
+'Auic' / [AbilityIds.infectiousClaws](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-infectiousClaws)
 
 **Members:**
 
@@ -28364,7 +28364,7 @@ public class AbilityDefinitionInfectiousClaws extends AbilityDefinition
 public class AbilityDefinitionItemLostSpiritsHeal extends AbilityDefinition
 ```
 
-'Avb1' / [AbilityIds.itemLostSpiritsHeal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLostSpiritsHeal)
+'Avb1' / [AbilityIds.itemLostSpiritsHeal](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemLostSpiritsHeal)
 
 **Members:**
 
@@ -28382,7 +28382,7 @@ public class AbilityDefinitionItemLostSpiritsHeal extends AbilityDefinition
 public class AbilityDefinitionItemLostSpiritsSpellcast extends AbilityDefinition
 ```
 
-'Avb2' / [AbilityIds.itemLostSpiritsSpellcast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemLostSpiritsSpellcast)
+'Avb2' / [AbilityIds.itemLostSpiritsSpellcast](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemLostSpiritsSpellcast)
 
 **Members:**
 
@@ -28401,7 +28401,7 @@ public class AbilityDefinitionItemLostSpiritsSpellcast extends AbilityDefinition
 public class AbilityDefinitionItemVestmentsWaveHeal extends AbilityDefinition
 ```
 
-'Avm1' / [AbilityIds.itemVestmentsWaveHeal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemVestmentsWaveHeal)
+'Avm1' / [AbilityIds.itemVestmentsWaveHeal](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemVestmentsWaveHeal)
 
 **Members:**
 
@@ -28419,7 +28419,7 @@ public class AbilityDefinitionItemVestmentsWaveHeal extends AbilityDefinition
 public class AbilityDefinitionItemVestmentsWaveSpellcast extends AbilityDefinition
 ```
 
-'Avm2' / [AbilityIds.itemVestmentsWaveSpellcast](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemVestmentsWaveSpellcast)
+'Avm2' / [AbilityIds.itemVestmentsWaveSpellcast](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemVestmentsWaveSpellcast)
 
 **Members:**
 
@@ -28438,7 +28438,7 @@ public class AbilityDefinitionItemVestmentsWaveSpellcast extends AbilityDefiniti
 public class AbilityDefinitionItemBloodstoneHeal extends AbilityDefinition
 ```
 
-'Avs1' / [AbilityIds.itemBloodstoneHeal](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBloodstoneHeal)
+'Avs1' / [AbilityIds.itemBloodstoneHeal](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemBloodstoneHeal)
 
 **Members:**
 
@@ -28456,7 +28456,7 @@ public class AbilityDefinitionItemBloodstoneHeal extends AbilityDefinition
 public class AbilityDefinitionItemBloodstoneAttack extends AbilityDefinition
 ```
 
-'Avs2' / [AbilityIds.itemBloodstoneAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemBloodstoneAttack)
+'Avs2' / [AbilityIds.itemBloodstoneAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemBloodstoneAttack)
 
 **Members:**
 
@@ -28487,7 +28487,7 @@ public class AbilityDefinitionItemBloodstoneAttack extends AbilityDefinition
 public class AbilityDefinitionItemZandalariGiantcrusherWS extends AbilityDefinition
 ```
 
-'Azgw' / [AbilityIds.itemZandalariGiantcrusherWS](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemZandalariGiantcrusherWS)
+'Azgw' / [AbilityIds.itemZandalariGiantcrusherWS](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemZandalariGiantcrusherWS)
 
 **Members:**
 
@@ -28501,7 +28501,7 @@ public class AbilityDefinitionItemZandalariGiantcrusherWS extends AbilityDefinit
 public class AbilityDefinitionItemZandalariGiantcrusherAttack extends AbilityDefinition
 ```
 
-'Azgx' / [AbilityIds.itemZandalariGiantcrusherAttack](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemZandalariGiantcrusherAttack)
+'Azgx' / [AbilityIds.itemZandalariGiantcrusherAttack](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemZandalariGiantcrusherAttack)
 
 **Members:**
 
@@ -28532,7 +28532,7 @@ public class AbilityDefinitionItemZandalariGiantcrusherAttack extends AbilityDef
 public class AbilityDefinitionLeonidTalentTier1a extends AbilityDefinition
 ```
 
-'BT1a' / [AbilityIds.leonidTalentTier1a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidTalentTier1a)
+'BT1a' / [AbilityIds.leonidTalentTier1a](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-leonidTalentTier1a)
 
 **Members:**
 
@@ -28560,7 +28560,7 @@ public class AbilityDefinitionLeonidTalentTier1a extends AbilityDefinition
 public class AbilityDefinitionLeonidTalentTier1b extends AbilityDefinition
 ```
 
-'BT1b' / [AbilityIds.leonidTalentTier1b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidTalentTier1b)
+'BT1b' / [AbilityIds.leonidTalentTier1b](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-leonidTalentTier1b)
 
 **Members:**
 
@@ -28588,7 +28588,7 @@ public class AbilityDefinitionLeonidTalentTier1b extends AbilityDefinition
 public class AbilityDefinitionLeonidTalentTier1c extends AbilityDefinition
 ```
 
-'BT1c' / [AbilityIds.leonidTalentTier1c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidTalentTier1c)
+'BT1c' / [AbilityIds.leonidTalentTier1c](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-leonidTalentTier1c)
 
 **Members:**
 
@@ -28616,7 +28616,7 @@ public class AbilityDefinitionLeonidTalentTier1c extends AbilityDefinition
 public class AbilityDefinitionLeonidTalentTier2a extends AbilityDefinition
 ```
 
-'BT2a' / [AbilityIds.leonidTalentTier2a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidTalentTier2a)
+'BT2a' / [AbilityIds.leonidTalentTier2a](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-leonidTalentTier2a)
 
 **Members:**
 
@@ -28644,7 +28644,7 @@ public class AbilityDefinitionLeonidTalentTier2a extends AbilityDefinition
 public class AbilityDefinitionLeonidTalentTier2b extends AbilityDefinition
 ```
 
-'BT2b' / [AbilityIds.leonidTalentTier2b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidTalentTier2b)
+'BT2b' / [AbilityIds.leonidTalentTier2b](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-leonidTalentTier2b)
 
 **Members:**
 
@@ -28672,7 +28672,7 @@ public class AbilityDefinitionLeonidTalentTier2b extends AbilityDefinition
 public class AbilityDefinitionLeonidTalentTier2c extends AbilityDefinition
 ```
 
-'BT2c' / [AbilityIds.leonidTalentTier2c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidTalentTier2c)
+'BT2c' / [AbilityIds.leonidTalentTier2c](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-leonidTalentTier2c)
 
 **Members:**
 
@@ -28700,7 +28700,7 @@ public class AbilityDefinitionLeonidTalentTier2c extends AbilityDefinition
 public class AbilityDefinitionLeonidTalentTier3a extends AbilityDefinition
 ```
 
-'BT3a' / [AbilityIds.leonidTalentTier3a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidTalentTier3a)
+'BT3a' / [AbilityIds.leonidTalentTier3a](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-leonidTalentTier3a)
 
 **Members:**
 
@@ -28728,7 +28728,7 @@ public class AbilityDefinitionLeonidTalentTier3a extends AbilityDefinition
 public class AbilityDefinitionLeonidTalentTier3b extends AbilityDefinition
 ```
 
-'BT3b' / [AbilityIds.leonidTalentTier3b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidTalentTier3b)
+'BT3b' / [AbilityIds.leonidTalentTier3b](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-leonidTalentTier3b)
 
 **Members:**
 
@@ -28756,7 +28756,7 @@ public class AbilityDefinitionLeonidTalentTier3b extends AbilityDefinition
 public class AbilityDefinitionLeonidTalentTier3c extends AbilityDefinition
 ```
 
-'BT3c' / [AbilityIds.leonidTalentTier3c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidTalentTier3c)
+'BT3c' / [AbilityIds.leonidTalentTier3c](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-leonidTalentTier3c)
 
 **Members:**
 
@@ -28784,7 +28784,7 @@ public class AbilityDefinitionLeonidTalentTier3c extends AbilityDefinition
 public class AbilityDefinitionLeonidTalentTier4a extends AbilityDefinition
 ```
 
-'BT4a' / [AbilityIds.leonidTalentTier4a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidTalentTier4a)
+'BT4a' / [AbilityIds.leonidTalentTier4a](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-leonidTalentTier4a)
 
 **Members:**
 
@@ -28812,7 +28812,7 @@ public class AbilityDefinitionLeonidTalentTier4a extends AbilityDefinition
 public class AbilityDefinitionLeonidTalentTier4b extends AbilityDefinition
 ```
 
-'BT4b' / [AbilityIds.leonidTalentTier4b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidTalentTier4b)
+'BT4b' / [AbilityIds.leonidTalentTier4b](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-leonidTalentTier4b)
 
 **Members:**
 
@@ -28840,7 +28840,7 @@ public class AbilityDefinitionLeonidTalentTier4b extends AbilityDefinition
 public class AbilityDefinitionLeonidTalentTier4c extends AbilityDefinition
 ```
 
-'BT4c' / [AbilityIds.leonidTalentTier4c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidTalentTier4c)
+'BT4c' / [AbilityIds.leonidTalentTier4c](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-leonidTalentTier4c)
 
 **Members:**
 
@@ -28868,7 +28868,7 @@ public class AbilityDefinitionLeonidTalentTier4c extends AbilityDefinition
 public class AbilityDefinitionLeonidDamageReductionTalent extends AbilityDefinition
 ```
 
-'BT5a' / [AbilityIds.leonidDamageReductionTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidDamageReductionTalent)
+'BT5a' / [AbilityIds.leonidDamageReductionTalent](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-leonidDamageReductionTalent)
 
 **Members:**
 
@@ -28891,7 +28891,7 @@ public class AbilityDefinitionLeonidDamageReductionTalent extends AbilityDefinit
 public class AbilityDefinitionLeonidResolveTalent extends AbilityDefinition
 ```
 
-'BT5b' / [AbilityIds.leonidResolveTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidResolveTalent)
+'BT5b' / [AbilityIds.leonidResolveTalent](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-leonidResolveTalent)
 
 **Members:**
 
@@ -28907,7 +28907,7 @@ public class AbilityDefinitionLeonidResolveTalent extends AbilityDefinition
 public class AbilityDefinitionLeonidHealthRegenerationTalent extends AbilityDefinition
 ```
 
-'BT5c' / [AbilityIds.leonidHealthRegenerationTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidHealthRegenerationTalent)
+'BT5c' / [AbilityIds.leonidHealthRegenerationTalent](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-leonidHealthRegenerationTalent)
 
 **Members:**
 
@@ -28921,7 +28921,7 @@ public class AbilityDefinitionLeonidHealthRegenerationTalent extends AbilityDefi
 public class AbilityDefinitionLeonidPlusStrAgiTalent extends AbilityDefinition
 ```
 
-'BT6a' / [AbilityIds.leonidPlusStrAgiTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidPlusStrAgiTalent)
+'BT6a' / [AbilityIds.leonidPlusStrAgiTalent](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-leonidPlusStrAgiTalent)
 
 **Members:**
 
@@ -28941,7 +28941,7 @@ public class AbilityDefinitionLeonidPlusStrAgiTalent extends AbilityDefinition
 public class AbilityDefinitionLeonidMagicResistTalent extends AbilityDefinition
 ```
 
-'BT6b' / [AbilityIds.leonidMagicResistTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidMagicResistTalent)
+'BT6b' / [AbilityIds.leonidMagicResistTalent](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-leonidMagicResistTalent)
 
 **Members:**
 
@@ -28957,7 +28957,7 @@ public class AbilityDefinitionLeonidMagicResistTalent extends AbilityDefinition
 public class AbilityDefinitionLeonidManaEfficiencyTalent extends AbilityDefinition
 ```
 
-'BT6c' / [AbilityIds.leonidManaEfficiencyTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-leonidManaEfficiencyTalent)
+'BT6c' / [AbilityIds.leonidManaEfficiencyTalent](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-leonidManaEfficiencyTalent)
 
 **Members:**
 
@@ -28973,7 +28973,7 @@ public class AbilityDefinitionLeonidManaEfficiencyTalent extends AbilityDefiniti
 public class AbilityDefinitionGarekTalentTier1a extends AbilityDefinition
 ```
 
-'GT1a' / [AbilityIds.garekTalentTier1a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekTalentTier1a)
+'GT1a' / [AbilityIds.garekTalentTier1a](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-garekTalentTier1a)
 
 **Members:**
 
@@ -29001,7 +29001,7 @@ public class AbilityDefinitionGarekTalentTier1a extends AbilityDefinition
 public class AbilityDefinitionGarekTalentTier1b extends AbilityDefinition
 ```
 
-'GT1b' / [AbilityIds.garekTalentTier1b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekTalentTier1b)
+'GT1b' / [AbilityIds.garekTalentTier1b](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-garekTalentTier1b)
 
 **Members:**
 
@@ -29029,7 +29029,7 @@ public class AbilityDefinitionGarekTalentTier1b extends AbilityDefinition
 public class AbilityDefinitionGarekTalentTier1c extends AbilityDefinition
 ```
 
-'GT1c' / [AbilityIds.garekTalentTier1c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekTalentTier1c)
+'GT1c' / [AbilityIds.garekTalentTier1c](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-garekTalentTier1c)
 
 **Members:**
 
@@ -29057,7 +29057,7 @@ public class AbilityDefinitionGarekTalentTier1c extends AbilityDefinition
 public class AbilityDefinitionGarekTalentTier2a extends AbilityDefinition
 ```
 
-'GT2a' / [AbilityIds.garekTalentTier2a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekTalentTier2a)
+'GT2a' / [AbilityIds.garekTalentTier2a](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-garekTalentTier2a)
 
 **Members:**
 
@@ -29085,7 +29085,7 @@ public class AbilityDefinitionGarekTalentTier2a extends AbilityDefinition
 public class AbilityDefinitionGarekTalentTier2b extends AbilityDefinition
 ```
 
-'GT2b' / [AbilityIds.garekTalentTier2b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekTalentTier2b)
+'GT2b' / [AbilityIds.garekTalentTier2b](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-garekTalentTier2b)
 
 **Members:**
 
@@ -29113,7 +29113,7 @@ public class AbilityDefinitionGarekTalentTier2b extends AbilityDefinition
 public class AbilityDefinitionGarekTalentTier2c extends AbilityDefinition
 ```
 
-'GT2c' / [AbilityIds.garekTalentTier2c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekTalentTier2c)
+'GT2c' / [AbilityIds.garekTalentTier2c](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-garekTalentTier2c)
 
 **Members:**
 
@@ -29141,7 +29141,7 @@ public class AbilityDefinitionGarekTalentTier2c extends AbilityDefinition
 public class AbilityDefinitionGarekTalentTier3a extends AbilityDefinition
 ```
 
-'GT3a' / [AbilityIds.garekTalentTier3a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekTalentTier3a)
+'GT3a' / [AbilityIds.garekTalentTier3a](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-garekTalentTier3a)
 
 **Members:**
 
@@ -29169,7 +29169,7 @@ public class AbilityDefinitionGarekTalentTier3a extends AbilityDefinition
 public class AbilityDefinitionGarekTalentTier3b extends AbilityDefinition
 ```
 
-'GT3b' / [AbilityIds.garekTalentTier3b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekTalentTier3b)
+'GT3b' / [AbilityIds.garekTalentTier3b](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-garekTalentTier3b)
 
 **Members:**
 
@@ -29197,7 +29197,7 @@ public class AbilityDefinitionGarekTalentTier3b extends AbilityDefinition
 public class AbilityDefinitionGarekTalentTier3c extends AbilityDefinition
 ```
 
-'GT3c' / [AbilityIds.garekTalentTier3c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekTalentTier3c)
+'GT3c' / [AbilityIds.garekTalentTier3c](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-garekTalentTier3c)
 
 **Members:**
 
@@ -29225,7 +29225,7 @@ public class AbilityDefinitionGarekTalentTier3c extends AbilityDefinition
 public class AbilityDefinitionGarekTalentTier4a extends AbilityDefinition
 ```
 
-'GT4a' / [AbilityIds.garekTalentTier4a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekTalentTier4a)
+'GT4a' / [AbilityIds.garekTalentTier4a](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-garekTalentTier4a)
 
 **Members:**
 
@@ -29253,7 +29253,7 @@ public class AbilityDefinitionGarekTalentTier4a extends AbilityDefinition
 public class AbilityDefinitionGarekTalentTier4b extends AbilityDefinition
 ```
 
-'GT4b' / [AbilityIds.garekTalentTier4b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekTalentTier4b)
+'GT4b' / [AbilityIds.garekTalentTier4b](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-garekTalentTier4b)
 
 **Members:**
 
@@ -29281,7 +29281,7 @@ public class AbilityDefinitionGarekTalentTier4b extends AbilityDefinition
 public class AbilityDefinitionGarekTalentTier4c extends AbilityDefinition
 ```
 
-'GT4c' / [AbilityIds.garekTalentTier4c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekTalentTier4c)
+'GT4c' / [AbilityIds.garekTalentTier4c](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-garekTalentTier4c)
 
 **Members:**
 
@@ -29309,7 +29309,7 @@ public class AbilityDefinitionGarekTalentTier4c extends AbilityDefinition
 public class AbilityDefinitionIlastarTalentTier1a extends AbilityDefinition
 ```
 
-'IT1a' / [AbilityIds.ilastarTalentTier1a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarTalentTier1a)
+'IT1a' / [AbilityIds.ilastarTalentTier1a](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ilastarTalentTier1a)
 
 **Members:**
 
@@ -29337,7 +29337,7 @@ public class AbilityDefinitionIlastarTalentTier1a extends AbilityDefinition
 public class AbilityDefinitionIlastarTalentTier1b extends AbilityDefinition
 ```
 
-'IT1b' / [AbilityIds.ilastarTalentTier1b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarTalentTier1b)
+'IT1b' / [AbilityIds.ilastarTalentTier1b](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ilastarTalentTier1b)
 
 **Members:**
 
@@ -29365,7 +29365,7 @@ public class AbilityDefinitionIlastarTalentTier1b extends AbilityDefinition
 public class AbilityDefinitionIlastarTalentTier1c extends AbilityDefinition
 ```
 
-'IT1c' / [AbilityIds.ilastarTalentTier1c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarTalentTier1c)
+'IT1c' / [AbilityIds.ilastarTalentTier1c](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ilastarTalentTier1c)
 
 **Members:**
 
@@ -29393,7 +29393,7 @@ public class AbilityDefinitionIlastarTalentTier1c extends AbilityDefinition
 public class AbilityDefinitionIlastarTalentTier2a extends AbilityDefinition
 ```
 
-'IT2a' / [AbilityIds.ilastarTalentTier2a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarTalentTier2a)
+'IT2a' / [AbilityIds.ilastarTalentTier2a](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ilastarTalentTier2a)
 
 **Members:**
 
@@ -29421,7 +29421,7 @@ public class AbilityDefinitionIlastarTalentTier2a extends AbilityDefinition
 public class AbilityDefinitionIlastarTalentTier2b extends AbilityDefinition
 ```
 
-'IT2b' / [AbilityIds.ilastarTalentTier2b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarTalentTier2b)
+'IT2b' / [AbilityIds.ilastarTalentTier2b](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ilastarTalentTier2b)
 
 **Members:**
 
@@ -29449,7 +29449,7 @@ public class AbilityDefinitionIlastarTalentTier2b extends AbilityDefinition
 public class AbilityDefinitionIlastarTalentTier2c extends AbilityDefinition
 ```
 
-'IT2c' / [AbilityIds.ilastarTalentTier2c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarTalentTier2c)
+'IT2c' / [AbilityIds.ilastarTalentTier2c](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ilastarTalentTier2c)
 
 **Members:**
 
@@ -29477,7 +29477,7 @@ public class AbilityDefinitionIlastarTalentTier2c extends AbilityDefinition
 public class AbilityDefinitionIlastarTalentTier3a extends AbilityDefinition
 ```
 
-'IT3a' / [AbilityIds.ilastarTalentTier3a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarTalentTier3a)
+'IT3a' / [AbilityIds.ilastarTalentTier3a](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ilastarTalentTier3a)
 
 **Members:**
 
@@ -29505,7 +29505,7 @@ public class AbilityDefinitionIlastarTalentTier3a extends AbilityDefinition
 public class AbilityDefinitionIlastarTalentTier3b extends AbilityDefinition
 ```
 
-'IT3b' / [AbilityIds.ilastarTalentTier3b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarTalentTier3b)
+'IT3b' / [AbilityIds.ilastarTalentTier3b](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ilastarTalentTier3b)
 
 **Members:**
 
@@ -29533,7 +29533,7 @@ public class AbilityDefinitionIlastarTalentTier3b extends AbilityDefinition
 public class AbilityDefinitionIlastarTalentTier3c extends AbilityDefinition
 ```
 
-'IT3c' / [AbilityIds.ilastarTalentTier3c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarTalentTier3c)
+'IT3c' / [AbilityIds.ilastarTalentTier3c](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ilastarTalentTier3c)
 
 **Members:**
 
@@ -29561,7 +29561,7 @@ public class AbilityDefinitionIlastarTalentTier3c extends AbilityDefinition
 public class AbilityDefinitionIlastarTalentTier4a extends AbilityDefinition
 ```
 
-'IT4a' / [AbilityIds.ilastarTalentTier4a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarTalentTier4a)
+'IT4a' / [AbilityIds.ilastarTalentTier4a](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ilastarTalentTier4a)
 
 **Members:**
 
@@ -29589,7 +29589,7 @@ public class AbilityDefinitionIlastarTalentTier4a extends AbilityDefinition
 public class AbilityDefinitionIlastarTalentTier4b extends AbilityDefinition
 ```
 
-'IT4b' / [AbilityIds.ilastarTalentTier4b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarTalentTier4b)
+'IT4b' / [AbilityIds.ilastarTalentTier4b](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ilastarTalentTier4b)
 
 **Members:**
 
@@ -29617,7 +29617,7 @@ public class AbilityDefinitionIlastarTalentTier4b extends AbilityDefinition
 public class AbilityDefinitionIlastarTalentTier4c extends AbilityDefinition
 ```
 
-'IT4c' / [AbilityIds.ilastarTalentTier4c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarTalentTier4c)
+'IT4c' / [AbilityIds.ilastarTalentTier4c](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ilastarTalentTier4c)
 
 **Members:**
 
@@ -29645,7 +29645,7 @@ public class AbilityDefinitionIlastarTalentTier4c extends AbilityDefinition
 public class AbilityDefinitionIlastarTalentTier6c extends AbilityDefinition
 ```
 
-'IT6c' / [AbilityIds.ilastarTalentTier6c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ilastarTalentTier6c)
+'IT6c' / [AbilityIds.ilastarTalentTier6c](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ilastarTalentTier6c)
 
 **Members:**
 
@@ -29673,7 +29673,7 @@ public class AbilityDefinitionIlastarTalentTier6c extends AbilityDefinition
 public class AbilityDefinitionLandenTalentTier1a extends AbilityDefinition
 ```
 
-'LT1a' / [AbilityIds.landenTalentTier1a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-landenTalentTier1a)
+'LT1a' / [AbilityIds.landenTalentTier1a](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-landenTalentTier1a)
 
 **Members:**
 
@@ -29701,7 +29701,7 @@ public class AbilityDefinitionLandenTalentTier1a extends AbilityDefinition
 public class AbilityDefinitionLandenTalentTier1b extends AbilityDefinition
 ```
 
-'LT1b' / [AbilityIds.landenTalentTier1b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-landenTalentTier1b)
+'LT1b' / [AbilityIds.landenTalentTier1b](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-landenTalentTier1b)
 
 **Members:**
 
@@ -29729,7 +29729,7 @@ public class AbilityDefinitionLandenTalentTier1b extends AbilityDefinition
 public class AbilityDefinitionLandenTalentTier1c extends AbilityDefinition
 ```
 
-'LT1c' / [AbilityIds.landenTalentTier1c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-landenTalentTier1c)
+'LT1c' / [AbilityIds.landenTalentTier1c](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-landenTalentTier1c)
 
 **Members:**
 
@@ -29757,7 +29757,7 @@ public class AbilityDefinitionLandenTalentTier1c extends AbilityDefinition
 public class AbilityDefinitionLandenTalentTier2a extends AbilityDefinition
 ```
 
-'LT2a' / [AbilityIds.landenTalentTier2a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-landenTalentTier2a)
+'LT2a' / [AbilityIds.landenTalentTier2a](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-landenTalentTier2a)
 
 **Members:**
 
@@ -29785,7 +29785,7 @@ public class AbilityDefinitionLandenTalentTier2a extends AbilityDefinition
 public class AbilityDefinitionLandenTalentTier2b extends AbilityDefinition
 ```
 
-'LT2b' / [AbilityIds.landenTalentTier2b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-landenTalentTier2b)
+'LT2b' / [AbilityIds.landenTalentTier2b](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-landenTalentTier2b)
 
 **Members:**
 
@@ -29813,7 +29813,7 @@ public class AbilityDefinitionLandenTalentTier2b extends AbilityDefinition
 public class AbilityDefinitionLandenTalentTier2c extends AbilityDefinition
 ```
 
-'LT2c' / [AbilityIds.landenTalentTier2c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-landenTalentTier2c)
+'LT2c' / [AbilityIds.landenTalentTier2c](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-landenTalentTier2c)
 
 **Members:**
 
@@ -29841,7 +29841,7 @@ public class AbilityDefinitionLandenTalentTier2c extends AbilityDefinition
 public class AbilityDefinitionLandenTalentTier3a extends AbilityDefinition
 ```
 
-'LT3a' / [AbilityIds.landenTalentTier3a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-landenTalentTier3a)
+'LT3a' / [AbilityIds.landenTalentTier3a](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-landenTalentTier3a)
 
 **Members:**
 
@@ -29869,7 +29869,7 @@ public class AbilityDefinitionLandenTalentTier3a extends AbilityDefinition
 public class AbilityDefinitionLandenTalentTier3b extends AbilityDefinition
 ```
 
-'LT3b' / [AbilityIds.landenTalentTier3b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-landenTalentTier3b)
+'LT3b' / [AbilityIds.landenTalentTier3b](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-landenTalentTier3b)
 
 **Members:**
 
@@ -29897,7 +29897,7 @@ public class AbilityDefinitionLandenTalentTier3b extends AbilityDefinition
 public class AbilityDefinitionLandenTalentTier3c extends AbilityDefinition
 ```
 
-'LT3c' / [AbilityIds.landenTalentTier3c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-landenTalentTier3c)
+'LT3c' / [AbilityIds.landenTalentTier3c](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-landenTalentTier3c)
 
 **Members:**
 
@@ -29925,7 +29925,7 @@ public class AbilityDefinitionLandenTalentTier3c extends AbilityDefinition
 public class AbilityDefinitionLandenTalentTier4a extends AbilityDefinition
 ```
 
-'LT4a' / [AbilityIds.landenTalentTier4a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-landenTalentTier4a)
+'LT4a' / [AbilityIds.landenTalentTier4a](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-landenTalentTier4a)
 
 **Members:**
 
@@ -29953,7 +29953,7 @@ public class AbilityDefinitionLandenTalentTier4a extends AbilityDefinition
 public class AbilityDefinitionLandenTalentTier4b extends AbilityDefinition
 ```
 
-'LT4b' / [AbilityIds.landenTalentTier4b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-landenTalentTier4b)
+'LT4b' / [AbilityIds.landenTalentTier4b](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-landenTalentTier4b)
 
 **Members:**
 
@@ -29981,7 +29981,7 @@ public class AbilityDefinitionLandenTalentTier4b extends AbilityDefinition
 public class AbilityDefinitionLandenTalentTier4c extends AbilityDefinition
 ```
 
-'LT4c' / [AbilityIds.landenTalentTier4c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-landenTalentTier4c)
+'LT4c' / [AbilityIds.landenTalentTier4c](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-landenTalentTier4c)
 
 **Members:**
 
@@ -30009,7 +30009,7 @@ public class AbilityDefinitionLandenTalentTier4c extends AbilityDefinition
 public class AbilityDefinitionUgarekTalentTier1a extends AbilityDefinition
 ```
 
-'UT1a' / [AbilityIds.ugarekTalentTier1a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ugarekTalentTier1a)
+'UT1a' / [AbilityIds.ugarekTalentTier1a](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ugarekTalentTier1a)
 
 **Members:**
 
@@ -30037,7 +30037,7 @@ public class AbilityDefinitionUgarekTalentTier1a extends AbilityDefinition
 public class AbilityDefinitionUgarekTalentTier1b extends AbilityDefinition
 ```
 
-'UT1b' / [AbilityIds.ugarekTalentTier1b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ugarekTalentTier1b)
+'UT1b' / [AbilityIds.ugarekTalentTier1b](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ugarekTalentTier1b)
 
 **Members:**
 
@@ -30065,7 +30065,7 @@ public class AbilityDefinitionUgarekTalentTier1b extends AbilityDefinition
 public class AbilityDefinitionUgarekTalentTier1c extends AbilityDefinition
 ```
 
-'UT1c' / [AbilityIds.ugarekTalentTier1c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ugarekTalentTier1c)
+'UT1c' / [AbilityIds.ugarekTalentTier1c](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ugarekTalentTier1c)
 
 **Members:**
 
@@ -30093,7 +30093,7 @@ public class AbilityDefinitionUgarekTalentTier1c extends AbilityDefinition
 public class AbilityDefinitionUgarekTalentTier2a extends AbilityDefinition
 ```
 
-'UT2a' / [AbilityIds.ugarekTalentTier2a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ugarekTalentTier2a)
+'UT2a' / [AbilityIds.ugarekTalentTier2a](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ugarekTalentTier2a)
 
 **Members:**
 
@@ -30121,7 +30121,7 @@ public class AbilityDefinitionUgarekTalentTier2a extends AbilityDefinition
 public class AbilityDefinitionUgarekTalentTier2b extends AbilityDefinition
 ```
 
-'UT2b' / [AbilityIds.ugarekTalentTier2b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ugarekTalentTier2b)
+'UT2b' / [AbilityIds.ugarekTalentTier2b](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ugarekTalentTier2b)
 
 **Members:**
 
@@ -30149,7 +30149,7 @@ public class AbilityDefinitionUgarekTalentTier2b extends AbilityDefinition
 public class AbilityDefinitionUgarekTalentTier2c extends AbilityDefinition
 ```
 
-'UT2c' / [AbilityIds.ugarekTalentTier2c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ugarekTalentTier2c)
+'UT2c' / [AbilityIds.ugarekTalentTier2c](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ugarekTalentTier2c)
 
 **Members:**
 
@@ -30177,7 +30177,7 @@ public class AbilityDefinitionUgarekTalentTier2c extends AbilityDefinition
 public class AbilityDefinitionUgarekTalentTier3a extends AbilityDefinition
 ```
 
-'UT3a' / [AbilityIds.ugarekTalentTier3a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ugarekTalentTier3a)
+'UT3a' / [AbilityIds.ugarekTalentTier3a](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ugarekTalentTier3a)
 
 **Members:**
 
@@ -30205,7 +30205,7 @@ public class AbilityDefinitionUgarekTalentTier3a extends AbilityDefinition
 public class AbilityDefinitionUgarekTalentTier3b extends AbilityDefinition
 ```
 
-'UT3b' / [AbilityIds.ugarekTalentTier3b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ugarekTalentTier3b)
+'UT3b' / [AbilityIds.ugarekTalentTier3b](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ugarekTalentTier3b)
 
 **Members:**
 
@@ -30233,7 +30233,7 @@ public class AbilityDefinitionUgarekTalentTier3b extends AbilityDefinition
 public class AbilityDefinitionUgarekTalentTier3c extends AbilityDefinition
 ```
 
-'UT3c' / [AbilityIds.ugarekTalentTier3c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ugarekTalentTier3c)
+'UT3c' / [AbilityIds.ugarekTalentTier3c](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ugarekTalentTier3c)
 
 **Members:**
 
@@ -30261,7 +30261,7 @@ public class AbilityDefinitionUgarekTalentTier3c extends AbilityDefinition
 public class AbilityDefinitionUgarekTalentTier4a extends AbilityDefinition
 ```
 
-'UT4a' / [AbilityIds.ugarekTalentTier4a](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ugarekTalentTier4a)
+'UT4a' / [AbilityIds.ugarekTalentTier4a](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ugarekTalentTier4a)
 
 **Members:**
 
@@ -30289,7 +30289,7 @@ public class AbilityDefinitionUgarekTalentTier4a extends AbilityDefinition
 public class AbilityDefinitionUgarekTalentTier4b extends AbilityDefinition
 ```
 
-'UT4b' / [AbilityIds.ugarekTalentTier4b](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ugarekTalentTier4b)
+'UT4b' / [AbilityIds.ugarekTalentTier4b](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ugarekTalentTier4b)
 
 **Members:**
 
@@ -30317,7 +30317,7 @@ public class AbilityDefinitionUgarekTalentTier4b extends AbilityDefinition
 public class AbilityDefinitionUgarekTalentTier4c extends AbilityDefinition
 ```
 
-'UT4c' / [AbilityIds.ugarekTalentTier4c](/stdlib/ref/_wurst/AbilityIds.html#abilityids-ugarekTalentTier4c)
+'UT4c' / [AbilityIds.ugarekTalentTier4c](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-ugarekTalentTier4c)
 
 **Members:**
 
@@ -30345,7 +30345,7 @@ public class AbilityDefinitionUgarekTalentTier4c extends AbilityDefinition
 public class AbilityDefinitionGarekArmorTalent extends AbilityDefinition
 ```
 
-'UT5a' / [AbilityIds.garekArmorTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekArmorTalent)
+'UT5a' / [AbilityIds.garekArmorTalent](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-garekArmorTalent)
 
 **Members:**
 
@@ -30359,7 +30359,7 @@ public class AbilityDefinitionGarekArmorTalent extends AbilityDefinition
 public class AbilityDefinitionGarekSpellAmpTalent extends AbilityDefinition
 ```
 
-'UT5b' / [AbilityIds.garekSpellAmpTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekSpellAmpTalent)
+'UT5b' / [AbilityIds.garekSpellAmpTalent](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-garekSpellAmpTalent)
 
 **Members:**
 
@@ -30377,7 +30377,7 @@ public class AbilityDefinitionGarekSpellAmpTalent extends AbilityDefinition
 public class AbilityDefinitionGarekPlusStrengIntTalent extends AbilityDefinition
 ```
 
-'UT5c' / [AbilityIds.garekPlusStrengIntTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekPlusStrengIntTalent)
+'UT5c' / [AbilityIds.garekPlusStrengIntTalent](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-garekPlusStrengIntTalent)
 
 **Members:**
 
@@ -30397,7 +30397,7 @@ public class AbilityDefinitionGarekPlusStrengIntTalent extends AbilityDefinition
 public class AbilityDefinitionGarekCleaveTalent extends AbilityDefinition
 ```
 
-'UT6a' / [AbilityIds.garekCleaveTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekCleaveTalent)
+'UT6a' / [AbilityIds.garekCleaveTalent](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-garekCleaveTalent)
 
 **Members:**
 
@@ -30411,7 +30411,7 @@ public class AbilityDefinitionGarekCleaveTalent extends AbilityDefinition
 public class AbilityDefinitionGarekCooldownReductionTalent extends AbilityDefinition
 ```
 
-'UT6b' / [AbilityIds.garekCooldownReductionTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekCooldownReductionTalent)
+'UT6b' / [AbilityIds.garekCooldownReductionTalent](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-garekCooldownReductionTalent)
 
 **Members:**
 
@@ -30427,7 +30427,7 @@ public class AbilityDefinitionGarekCooldownReductionTalent extends AbilityDefini
 public class AbilityDefinitionGarekManaEfficiencyTalent extends AbilityDefinition
 ```
 
-'UT6c' / [AbilityIds.garekManaEfficiencyTalent](/stdlib/ref/_wurst/AbilityIds.html#abilityids-garekManaEfficiencyTalent)
+'UT6c' / [AbilityIds.garekManaEfficiencyTalent](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-garekManaEfficiencyTalent)
 
 **Members:**
 
@@ -30443,7 +30443,7 @@ public class AbilityDefinitionGarekManaEfficiencyTalent extends AbilityDefinitio
 public class AbilityDefinitionArmorBonus extends AbilityDefinitionDefenseBonusPlus1
 ```
 
-'AId1' / [AbilityIds.itemArmorBonus](/stdlib/ref/_wurst/AbilityIds.html#abilityids-itemArmorBonus)
+'AId1' / [AbilityIds.itemArmorBonus](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-itemArmorBonus)
 
 **Members:**
 
@@ -30455,7 +30455,7 @@ public class AbilityDefinitionArmorBonus extends AbilityDefinitionDefenseBonusPl
 public class AbilityDefinitionBeserk extends AbilityDefinitionBerserk
 ```
 
-'Absk' / [AbilityIds.berserkerRage1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-berserkerRage1)
+'Absk' / [AbilityIds.berserkerRage1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-berserkerRage1)
 
 **Members:**
 
@@ -30467,7 +30467,7 @@ public class AbilityDefinitionBeserk extends AbilityDefinitionBerserk
 public class AbilityDefinitionAlliedBuilding extends AbilityDefinitionShopSharing
 ```
 
-'Aall' / [AbilityIds.shopSharingAlliedBldg](/stdlib/ref/_wurst/AbilityIds.html#abilityids-shopSharingAlliedBldg)
+'Aall' / [AbilityIds.shopSharingAlliedBldg](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-shopSharingAlliedBldg)
 
 **Members:**
 
@@ -30479,7 +30479,7 @@ public class AbilityDefinitionAlliedBuilding extends AbilityDefinitionShopSharin
 public class AbilityDefinitionItemChainLightning extends AbilityDefinitionChainLightningcreep
 ```
 
-'ACcl' / [AbilityIds.chainLightning](/stdlib/ref/_wurst/AbilityIds.html#abilityids-chainLightning)
+'ACcl' / [AbilityIds.chainLightning](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-chainLightning)
 
 **Members:**
 
@@ -30491,7 +30491,7 @@ public class AbilityDefinitionItemChainLightning extends AbilityDefinitionChainL
 public class AbilityDefinitionSlow1 extends AbilityDefinitionSlowCreep
 ```
 
-'ACsw' / [AbilityIds.slow1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-slow1)
+'ACsw' / [AbilityIds.slow1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-slow1)
 
 **Members:**
 
@@ -30503,7 +30503,7 @@ public class AbilityDefinitionSlow1 extends AbilityDefinitionSlowCreep
 public class AbilityDefinitionCyclone1 extends AbilityDefinitionCyclone
 ```
 
-'Acyc' / [AbilityIds.cyclone1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-cyclone1)
+'Acyc' / [AbilityIds.cyclone1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-cyclone1)
 
 **Members:**
 
@@ -30515,7 +30515,7 @@ public class AbilityDefinitionCyclone1 extends AbilityDefinitionCyclone
 public class AbilityDefinitionColdArrows extends AbilityDefinitionRangerColdArrows
 ```
 
-'AHca' / [AbilityIds.coldArrows](/stdlib/ref/_wurst/AbilityIds.html#abilityids-coldArrows)
+'AHca' / [AbilityIds.coldArrows](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-coldArrows)
 
 **Members:**
 
@@ -30527,7 +30527,7 @@ public class AbilityDefinitionColdArrows extends AbilityDefinitionRangerColdArro
 public class AbilityDefinitionHealingWard1 extends AbilityDefinitionHealingWard
 ```
 
-'Ahwd' / [AbilityIds.healingWard1](/stdlib/ref/_wurst/AbilityIds.html#abilityids-healingWard1)
+'Ahwd' / [AbilityIds.healingWard1](/stdlib/ref/_wurst/AbilityIds.html#AbilityIds-healingWard1)
 
 **Members:**
 

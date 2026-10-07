@@ -40,7 +40,7 @@ enough. See `parser.ts` for the details and `types.ts` for the data model.
 
 Both tab and four-space indentation are supported. Public class constants retain their
 initializer values and documentation in the member list, alongside constructors and methods.
-Class constants have stable anchors such as `#abilityids-blizzard`. Compact generated rawcode
+Class constants have case-sensitive anchors such as `#AbilityIds-blizzard`. Compact generated rawcode
 comments (`'AHbz' / AbilityIds.blizzard`) link to those anchors when the referenced constant is
 part of the generated API. Code examples and unknown references are left unchanged.
 

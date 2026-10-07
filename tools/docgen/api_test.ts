@@ -76,7 +76,24 @@ public class AbilityIds
   const page = renderPackagePage(pkg, { outDir: "", curated: new Map(), includes: new Set() });
   expect(page.includes("static constant blizzard = 'AHbz'"), "Rendered docs omit rawcode");
   expect(page.includes("Choose a base ID."), "Rendered docs omit constructor documentation");
-  expect(page.includes('id="abilityids-blizzard"'), "Constant has no link target");
+  expect(page.includes('id="AbilityIds-blizzard"'), "Constant has no link target");
+});
+
+Deno.test("constant anchors distinguish case-sensitive class names", () => {
+  const pkg = parseFile({
+    category: "_wurst",
+    sourcePath: "wurst/_wurst/UnitAnimations.wurst",
+    text: `package UnitAnimations
+public class MurlocFlesheater_med
+    static constant stand2 = animationData(1, 2.)
+public class MurlocFleshEater_Med
+    static constant stand2 = animationData(2, 3.)
+`,
+  });
+  const page = renderPackagePage(pkg, { outDir: "", curated: new Map(), includes: new Set() });
+  const anchors = [...page.matchAll(/<a id="([^"]+)"/g)].map((m) => m[1]);
+  expect(anchors.length === 2, "Missing constant anchors");
+  expect(new Set(anchors).size === 2, "Case-sensitive declarations share an anchor");
 });
 
 Deno.test("compact rawcode docs link to known constants without changing code examples", () => {
@@ -90,7 +107,7 @@ public class AbilityDefinitionArchMageBlizzard
     construct(int newId)
 `,
   });
-  const href = "/stdlib/ref/_wurst/assets/AbilityIds.html#abilityids-blizzard";
+  const href = "/stdlib/ref/_wurst/assets/AbilityIds.html#AbilityIds-blizzard";
   const page = renderPackagePage(pkg, {
     outDir: "",
     curated: new Map(),

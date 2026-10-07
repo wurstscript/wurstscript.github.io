@@ -162,7 +162,7 @@ function renderEntity(e: Entity, ctx: EmitContext): string[] {
 }
 
 function constantAnchor(className: string, memberName: string): string {
-  return `${className.toLowerCase()}-${memberName}`;
+  return `${className}-${memberName}`;
 }
 
 function renderMember(m: Entity, className: string): string[] {
