@@ -2,7 +2,8 @@
 title: WurstScript Compiler Update v2.0
 excerpt: Versioned compiler releases replace nightlies, with compiler version pinning in VS Code, faster builds and tests, and more Lua improvements.
 date: 2026-10-15 00:00:00 +0200
-image: /assets/images/news/performance.png
+image: /assets/images/news/compiler-update-v2.webp
+image_fit: contain
 layout: newsarticle
 author: Frotty
 ---

@@ -38,7 +38,7 @@ layout: compress
 					{% assign posts = site.news | where_exp: "post", "post.date <= site.time" | sort: 'date' | reverse %}
 					{% for post in posts limit:3 %}
 					<a class="btn card" href="{{ post.url }}">
-						<div class="card-image"><img src="{{ post.image }}" alt=""></div>
+						<div class="card-image"><img src="{{ post.image }}" alt=""{% if post.image_fit == 'contain' %} style="object-fit: contain; background: #171717;"{% endif %}></div>
 						<div class="card-content date">
 							<p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
 							<h3>{{ post.title }}</h3>
@@ -52,7 +52,7 @@ layout: compress
 			<div class="why-wurst">
 				<h2 class="title">Why choose WurstScript?</h2>
 
-				<p class="why-intro">WurstScript is a WC3-first workflow built around maps, object data, assets, builds, and Jass or Lua output.</p>
+				<p class="why-intro">WurstScript is a programming language and toolkit for Warcraft III map development, with tools for object data, assets, builds, and tests.</p>
 
 				<div class="why-feature-stack">
 					<article class="why-feature">
@@ -87,6 +87,7 @@ layout: compress
 							<p class="why-feature-key">AI support</p>
 							<h3>Let agents build map objects</h3>
 							<p>Because object data is generated from Wurst code, AI coding agents can easily create and update Warcraft III abilities, units, items, and upgrades in your project. <a href="/features/agents.html">Learn about AI agent support.</a></p>
+							<img class="why-feature-shot" src="/assets/images/news/wurst-ai-thumb.webp" alt="WurstScript AI agent support" width="768" height="370" loading="lazy" decoding="async">
 						</div>
 					</article>
 
