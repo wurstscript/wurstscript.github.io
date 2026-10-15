@@ -24,7 +24,18 @@ This folder contains the complete source of the WurstScript website, configured 
     `bundler install`
 
 
-4. Run the server with:
+4. Generate the API reference from a sibling checkout of `WurstStdlib2`
+   (requires Deno 2.x):
+
+    ```shell
+    cd tools/docgen
+    deno task gen
+    cd ../..
+    ```
+
+    See [the doc generator guide](tools/docgen/README.md) for custom source paths.
+
+5. Run the server with:
 
     `bundler exec jekyll serve`
 
@@ -57,14 +68,13 @@ To create a new tutorial:
 
 Adding a standard library doc page works almost the same as tutorials.
 
-* Create a new table of contents file in `_doc/stdlib/`
-* Create a new set of tuturial pages in a subfolder of `_doc/stdlib/`, e.g. `_doc/stdlib/new_doc`
-* Define the pages by changing the contents of `_doc/stdlib/new_doc/`
-* __This part differs__ Add the new doc page to the stdlib index in `_doc/stdlib/intro.md`. Entries should be alphabetically sorted.
-* Setup `new_doc.md` as necessary for your pages:
-    - Edit the title, excerpt, date, color.
-    - Change the `sections` to match the uri of the pages of your tutorial.
-* Write your new_doc pages, being sure to update the heading sections as necessary.
+* Create a guide in `_doc/stdlib/` with the `stdlibdoc` layout. Use an existing guide as a starting point.
+* Put supporting section pages in a subfolder and list their document IDs in the guide's `sections` frontmatter.
+* Link the guide from the relevant category in `_doc/stdlib/intro.md`.
+* Add its package-to-guide mapping to `_data/stdlib_curated.yml` to link it from the generated API reference.
+
+API pages under `_doc/stdlib/ref/` are generated from standard-library source comments.
+See [the doc generator guide](tools/docgen/README.md) before updating them.
 
 ## Search Index
 

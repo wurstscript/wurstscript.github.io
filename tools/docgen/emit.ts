@@ -1,7 +1,7 @@
 import { dirname, join } from "@std/path";
 import { stringify as yamlStringify } from "@std/yaml";
 import type { Entity, PackageDoc } from "./types.ts";
-import { CATEGORIES, categoryLabel, categoryOrder } from "./categories.ts";
+import { categoryLabel, categoryOrder } from "./categories.ts";
 import { hotdocToMarkdown, normalizeDashes } from "./hotdoc.ts";
 
 export interface EmitContext {
@@ -338,4 +338,3 @@ async function removeIfExists(path: string): Promise<void> {
     if (!(err instanceof Deno.errors.NotFound)) throw err;
   }
 }
-export { CATEGORIES };
