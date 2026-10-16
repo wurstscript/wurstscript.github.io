@@ -61,12 +61,3 @@ function isBlankInExample(lines: string[], i: number): boolean {
 function stripExamplePrefix(line: string): string {
   return line.replace(/^(\s*)[>|]\s?/, "$1");
 }
-
-/** First sentence/line of a doc, plain text, for index cards. */
-export function summaryLine(doc: string): string {
-  for (const l of doc.split("\n")) {
-    const t = l.trim();
-    if (t !== "" && !t.startsWith("```")) return t;
-  }
-  return "";
-}

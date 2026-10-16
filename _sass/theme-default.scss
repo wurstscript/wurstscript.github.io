@@ -72,8 +72,6 @@
     --shadow-pop: 0 14px 36px rgba(0, 0, 0, 0.18);
 
     --overlay-dark-25: rgba(0, 0, 0, 0.25);
-    --overlay-dark-35: rgba(0, 0, 0, 0.35);
-    --overlay-dark-50: rgba(0, 0, 0, 0.5);
     --overlay-light-65: rgba(255, 255, 255, 0.65);
 
     --search-item-hover-bg: var(--divider);
@@ -131,21 +129,18 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  /* For the scrollbar track (background) */
   ::-webkit-scrollbar {
-      background-color: #2e2e2e; /* Dark grey background */
+      background-color: #2e2e2e;
   }
 
-  /* For the scrollbar handle */
   ::-webkit-scrollbar-thumb {
-      background-color: #555; /* Darker grey scrollbar handle */
-      border-radius: 6px; /* Rounded corners on the scrollbar handle */
-      border: 3px solid #2e2e2e; /* Creates a small border with the same color as the track */
+      background-color: #555;
+      border-radius: 6px;
+      border: 3px solid #2e2e2e;
   }
 
-  /* For the scrollbar handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-      background-color: #888; /* Lighter grey on hover */
+      background-color: #888;
   }
   /*
    * Dark Colors
@@ -153,50 +148,11 @@
    */
 
   body {
-    --color-primary: hsl(181, 49%, 50%);
-    --color-primary-light: hsl(181, 49%, 55%);
-    --color-primary-lightest: hsl(181, 49%, 70%);
-    --color-primary-dark: hsl(181, 49%, 45%);
-    --color-primary-darker: hsl(181, 49%, 40%);
-    --color-primary-darkest: hsl(181, 49%, 35%);
-    --color-green: hsl(129, 38%, 61%);
-    --color-green-lightest: hsl(129, 38%, 81%);
-    --color-green-dark: hsl(129, 38%, 56%);
-    --color-green-darker: hsl(129, 38%, 51%);
-    --color-green-darkest: hsl(129, 38%, 46%);
-    --color-red: hsl(7, 90%, 69%);
-    --color-red-lightest: hsl(7, 90%, 89%);
-    --color-red-dark: hsl(7, 90%, 64%);
-    --color-red-darker: hsl(7, 90%, 59%);
-    --color-red-darkest: hsl(7, 90%, 54%);
-    --color-blue: hsl(200, 82%, 64%);
-    --color-blue-lightest: hsl(200, 82%, 84%);
-    --color-blue-dark: hsl(200, 82%, 59%);
-    --color-blue-darker: hsl(200, 82%, 54%);
-    --color-blue-darkest: hsl(200, 82%, 49%);
-    --color-orange: hsl(28, 93%, 58%);
-    --color-orange-lightest: hsl(28, 93%, 78%);
-    --color-orange-dark: hsl(28, 93%, 53%);
-    --color-orange-darker: hsl(28, 93%, 48%);
-    --color-orange-darkest: hsl(28, 93%, 43%);
-    --color-pink: hsl(334, 78%, 62%);
-    --color-pink-lightest: hsl(334, 78%, 82%);
-    --color-pink-dark: hsl(334, 78%, 57%);
-    --color-pink-darker: hsl(334, 78%, 52%);
-    --color-pink-darkest: hsl(334, 78%, 47%);
-    --color-purple: hsl(283, 45%, 45%);
-    --color-purple-lightest: hsl(283, 45%, 65%);
-    --color-purple-dark: hsl(283, 45%, 40%);
-    --color-purple-darker: hsl(283, 45%, 35%);
-    --color-purple-darkest: hsl(283, 45%, 30%);
-
-    --banner-color: hsl(216, 24%, 31%);
     --text-color: hsl(222, 28%, 95%);
     --text-color-dark: hsl(222, 26%, 89%);
     --text-color-secondary: hsl(220, 21%, 70%);
     --grey: hsl(215, 21%, 68%);
     --light-grey: hsl(216, 24%, 46%);
-    --black: #000;
     --smoky-white: #1e2023;
     --smoky-grey: #222428;
     --divider: #383a3e;
@@ -225,8 +181,6 @@
     --shadow-pop: 0 14px 36px rgba(0, 0, 0, 0.55);
 
     --overlay-dark-25: rgba(0, 0, 0, 0.35);
-    --overlay-dark-35: rgba(0, 0, 0, 0.45);
-    --overlay-dark-50: rgba(0, 0, 0, 0.62);
     --overlay-light-65: rgba(255, 255, 255, 0.12);
 
     --search-item-hover-bg: #2e333c;
