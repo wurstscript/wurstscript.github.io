@@ -43,35 +43,6 @@ A polished, rebalanced take on the classic team strategy map. Build an army and 
 <div class="col-sm-6 col-xs-12">
 <div class="card-showcase" markdown="1">
 
-[![screenshot](/assets/images/showcase/smashcraft.jpg){: .img-responsive .center-block}](https://github.com/tompassarelli/smashcraft)
-
-<div class="card-block" markdown="1">
-
-{: .card-title}
-
-#### Smashcraft
-
-{: .card-text}
-A Melee-inspired Warcraft III platform fighter authored in WurstScript.
-
-[_&nbsp;_{: .fa .fa-external-link-square} Git Repo](https://github.com/tompassarelli/smashcraft)
-
-</div>
-
-</div>
-</div>
-<!-- End Card -->
-
-</div>
-<!-- End Row -->
-
-<!-- Start Row -->
-<div class="row showcase-row">
-
-<!-- Begin Card -->
-<div class="col-sm-6 col-xs-12">
-<div class="card-showcase" markdown="1">
-
 [![screenshot](/assets/images/showcase/zombiedef.png){: .img-responsive .center-block}](https://maps.w3reforged.com/maps/categories/castle-defense/Zombie%20Defense%20by%20Eejin%20%26%20Frotty)
 
 <div class="card-block" markdown="1">
@@ -90,6 +61,12 @@ Defend against the undead! PvE Survival base building map with ranomized terrain
 </div>
 </div>
 <!-- End Card -->
+
+</div>
+<!-- End Row -->
+
+<!-- Start Row -->
+<div class="row showcase-row">
 
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
@@ -115,12 +92,7 @@ Multiplayer post-apocalyptic base-building survival game. Build your base during
 </div>
 <!-- End Card -->
 
-</div>
-<!-- End Row -->
-
-<!-- Start Row -->
-<div class="row showcase-row">
-
+<!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
 <div class="card-showcase" markdown="1">
 
@@ -141,6 +113,15 @@ A fast paced mix of coop TD and Survival. Players build walls and towers to defe
 
 </div>
 </div>
+<!-- End Card -->
+
+</div>
+<!-- End Row -->
+
+<!-- Start Row -->
+<div class="row showcase-row">
+
+<!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
 <div class="card-showcase" markdown="1">
 
@@ -163,10 +144,6 @@ A PvE Hero Survival where you fight each god in their arena. Comes with a fancy 
 </div>
 <!-- End Card -->
 
-</div>
-<!-- End Row -->
-
-<div class="row showcase-row">
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
 <div class="card-showcase" markdown="1">
@@ -189,6 +166,14 @@ Allows players to build and escape mazes created ingame. Basically an ingame edi
 </div>
 <!-- End Card -->
 </div>
+<!-- End Card -->
+
+</div>
+<!-- End Row -->
+
+<!-- Start Row -->
+<div class="row showcase-row">
+
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
 <div class="card-showcase" markdown="1">
@@ -211,10 +196,7 @@ Combines survival and PvP melee combat in a fight to the death for domination of
 </div>
 </div>
 <!-- End Card -->
-</div>
-<!-- End Row -->
 
-<div class="row showcase-row">
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
 <div class="card-showcase" markdown="1">
@@ -237,6 +219,14 @@ A tag-style FFA map where players switch between hunter and hunted. Each player 
 </div>
 <!-- End Card -->
 </div>
+<!-- End Card -->
+
+</div>
+<!-- End Row -->
+
+<!-- Start Row -->
+<div class="row showcase-row">
+
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
 <div class="card-showcase" markdown="1">
@@ -260,10 +250,6 @@ Battleships-style aos that focuses on simplicity. Uses automatically firing weap
 <!-- End Card -->
 </div>
 <!-- End Card -->
-</div>
-<!-- End Row -->
-
-<div class="row showcase-row">
 
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
@@ -288,6 +274,12 @@ Brings the immensely popular gamemmode from Dota 2 to Warcraft 3 melee maps.
 </div>
 <!-- End Card -->
 
+</div>
+<!-- End Row -->
+
+<!-- Start Row -->
+<div class="row showcase-row">
+
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
 <div class="card-showcase" markdown="1">
@@ -310,11 +302,7 @@ A charmful skirmish between two teams in a snowy landscape.
 </div>
 <!-- End Card -->
 </div>
-
-</div>
-<!-- End Row -->
-
-<div class="row showcase-row">
+<!-- End Card -->
 
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
@@ -339,6 +327,12 @@ Build a maze of towers to protect your lives from invading creeps. Send creeps t
 </div>
 <!-- End Card -->
 
+</div>
+<!-- End Row -->
+
+<!-- Start Row -->
+<div class="row showcase-row">
+
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
 <div class="card-showcase" markdown="1">
@@ -361,11 +355,6 @@ Based in ancient japan, you and your pals try to escape from a Giant Enemy Crab.
 </div>
 </div>
 <!-- End Card -->
-
-</div>
-<!-- End Row -->
-
-<div class="row showcase-row">
 
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
@@ -391,6 +380,12 @@ This map is inspired from a boss in the original Half- Life story called "Gonarc
 </div>
 <!-- End Card -->
 
+</div>
+<!-- End Row -->
+
+<!-- Start Row -->
+<div class="row showcase-row">
+
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
 <div class="card-showcase" markdown="1">
@@ -413,11 +408,6 @@ Hunter's Hall is a team-oriented PvP game which consists of short, objective-bas
 </div>
 </div>
 <!-- End Card -->
-
-</div>
-<!-- End Row -->
-
-<div class="row showcase-row">
 
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
@@ -442,6 +432,14 @@ A new direction for Sheep Tag Revolution powered by Wurst.
 </div>
 </div>
 <!-- End Card -->
+
+</div>
+<!-- End Row -->
+
+<!-- Start Row -->
+<div class="row showcase-row">
+
+<!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
 <div class="card-showcase" markdown="1">
 
@@ -462,11 +460,7 @@ A TD where players controls a fragile runner which must evade enemy creeps while
 
 </div>
 </div>
-</div>
-<!-- End Row -->
-
-<!-- Start Row -->
-<div class="row showcase-row">
+<!-- End Card -->
 
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
@@ -491,6 +485,12 @@ Lightweight entity framework for a sleek, bootstrapped map development experienc
 </div>
 <!-- End Card -->
 
+</div>
+<!-- End Row -->
+
+<!-- Start Row -->
+<div class="row showcase-row">
+
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
 <div class="card-showcase" markdown="1">
@@ -513,12 +513,6 @@ Functional Programming Utilities for WurstScript inspired by Lodash.
 </div>
 </div>
 <!-- End Card -->
-
-</div>
-<!-- End Row -->
-
-<!-- Start Row -->
-<div class="row showcase-row">
 
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
@@ -543,6 +537,12 @@ A lightweight and easy to use API for creating stunning custom user interfaces. 
 </div>
 <!-- End Card -->
 
+</div>
+<!-- End Row -->
+
+<!-- Start Row -->
+<div class="row showcase-row">
+
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
 <div class="card-showcase" markdown="1">
@@ -566,12 +566,6 @@ A minimal, non-intrusive shop UI and item management system. Uses wurst-table-la
 </div>
 <!-- End Card -->
 
-</div>
-<!-- End Row -->
-
-<!-- Start Row -->
-<div class="row showcase-row">
-
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
 <div class="card-showcase" markdown="1">
@@ -594,6 +588,12 @@ This library allows you to have control over almost everything related to bounti
 </div>
 </div>
 <!-- End Card -->
+
+</div>
+<!-- End Row -->
+
+<!-- Start Row -->
+<div class="row showcase-row">
 
 <!-- Begin Card -->
 <div class="col-sm-6 col-xs-12">
